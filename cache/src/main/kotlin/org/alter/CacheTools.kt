@@ -19,6 +19,7 @@ import org.alter.impl.skills.PrayerTable
 import org.alter.impl.StatComponents
 import org.alter.impl.misc.TeleTabs
 import org.alter.impl.skills.Woodcutting
+import org.alter.impl.skills.Mining
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.StandardCopyOption
@@ -65,7 +66,9 @@ fun downloadRev(type : TaskType) {
                 FoodTable.consumableFood(),
                 Firemaking.logs(),
                 Woodcutting.trees(),
-                Woodcutting.axes()
+                Woodcutting.axes(),
+                Mining.pickaxes(),
+                Mining.rocks()
             )))
 
             builder.extraTasks(*tasksNew.toTypedArray()).build().initialize()
@@ -89,7 +92,9 @@ fun downloadRev(type : TaskType) {
                 FoodTable.consumableFood(),
                 Firemaking.logs(),
                 Woodcutting.trees(),
-                Woodcutting.axes()
+                Woodcutting.axes(),
+                Mining.pickaxes(),
+                Mining.rocks()
             )))
 
             builder.extraTasks(*tasksNew.toTypedArray()).build().initialize()
