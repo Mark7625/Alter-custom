@@ -1,19 +1,17 @@
 package org.alter.skills.herblore
 
-import org.alter.game.util.DbHelper
 import org.alter.game.util.DbHelper.Companion.table
-import org.alter.game.util.DbHelper.Companion.tableAs
 import org.alter.game.util.column
 import org.alter.game.util.columnOptional
 import org.alter.game.util.multiColumnOptional
 import org.alter.game.util.vars.IntType
 import org.alter.game.util.vars.ObjType
-import org.alter.tables.herblore.HerbloreBarbarianMixesData
-import org.alter.tables.herblore.HerbloreCleaningData
-import org.alter.tables.herblore.HerbloreCrushingData
-import org.alter.tables.herblore.HerbloreFinishedData
-import org.alter.tables.herblore.HerbloreSwampTarData
-import org.alter.tables.herblore.HerbloreUnfinishedData
+import org.alter.tables.herblore.HerbloreBarbarianMixesRow
+import org.alter.tables.herblore.HerbloreCleaningRow
+import org.alter.tables.herblore.HerbloreCrushingRow
+import org.alter.tables.herblore.HerbloreFinishedRow
+import org.alter.tables.herblore.HerbloreSwampTarRow
+import org.alter.tables.herblore.HerbloreUnfinishedRow
 
 /**
  * Definitions for herblore potions.
@@ -38,13 +36,13 @@ object HerbloreDefinitions {
         val requiredItems: Set<Int> = setOf(unfinishedPotion) + secondaries
     }
 
-    val HerbloreFinishedData.requiredItems: Set<Int>
+    val HerbloreFinishedRow.requiredItems: Set<Int>
         get() = setOf(potPrimary) + secondaries
 
     /**
      * Loads unfinished potion data from cache table.
      */
-    val unfinishedPotions: List<HerbloreUnfinishedData> = tableAs<HerbloreUnfinishedData>("tables.herblore_unfinished")
+    val unfinishedPotions: List<HerbloreUnfinishedRow> = HerbloreUnfinishedRow.all()
 
     /**
      * Loads finished potion data from cache table.
@@ -92,16 +90,16 @@ object HerbloreDefinitions {
     /**
      * Loads cleaning herb data from cache table.
      */
-    val cleaningHerbs: List<HerbloreCleaningData> = tableAs<HerbloreCleaningData>("tables.herblore_cleaning")
+    val cleaningHerbs: List<HerbloreCleaningRow> = HerbloreCleaningRow.all()
 
     /**
      * Loads barbarian mix data from cache table.
      */
-    val barbarianMixes: List<HerbloreBarbarianMixesData> = tableAs<HerbloreBarbarianMixesData>("tables.herblore_barbarian_mixes")
+    val barbarianMixes: List<HerbloreBarbarianMixesRow> = HerbloreBarbarianMixesRow.all()
     /**
      * Map for quick lookup of barbarian mixes by two-dose potion and ingredient
      */
-    val mixLookup: Map<Pair<Int, Int>, HerbloreBarbarianMixesData> = barbarianMixes.associateBy { mix ->
+    val mixLookup: Map<Pair<Int, Int>, HerbloreBarbarianMixesRow> = barbarianMixes.associateBy { mix ->
         Pair(mix.twoDosePotion, mix.mixIngredient)
     }
 
@@ -124,31 +122,31 @@ object HerbloreDefinitions {
     /**
      * Finds a barbarian mix recipe for the given two items.
      */
-    fun findBarbarianMix(potion: Int, ingredient: Int): HerbloreBarbarianMixesData? {
+    fun findBarbarianMix(potion: Int, ingredient: Int): HerbloreBarbarianMixesRow? {
         return mixLookup[Pair(potion, ingredient)] ?: mixLookup[Pair(ingredient, potion)]
     }
 
     /**
      * Loads swamp tar data from cache table.
      */
-    val swampTars: List<HerbloreSwampTarData> = tableAs<HerbloreSwampTarData>("tables.herblore_swamp_tar")
+    val swampTars: List<HerbloreSwampTarRow> = HerbloreSwampTarRow.all()
 
     /**
      * Map for quick lookup of swamp tar recipes by herb
      */
-    val swampTarLookup: Map<Int, HerbloreSwampTarData> = swampTars.associateBy { it.herb }
+    val swampTarLookup: Map<Int, HerbloreSwampTarRow> = swampTars.associateBy { it.herb }
 
     /**
      * Finds a swamp tar recipe for the given herb.
      */
-    fun findSwampTar(herb: Int): HerbloreSwampTarData? {
+    fun findSwampTar(herb: Int): HerbloreSwampTarRow? {
         return swampTarLookup[herb]
     }
 
     /**
      * Loads crushing data from cache table.
      */
-    val crushingRecipes: List<HerbloreCrushingData> = tableAs<HerbloreCrushingData>("tables.herblore_crushing")
+    val crushingRecipes: List<HerbloreCrushingRow> = HerbloreCrushingRow.all()
 
 }
 

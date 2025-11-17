@@ -5,10 +5,9 @@ import com.google.devtools.ksp.symbol.KSAnnotated
 import com.squareup.kotlinpoet.*
 import com.squareup.kotlinpoet.ParameterizedTypeName.Companion.parameterizedBy
 import com.squareup.kotlinpoet.ksp.writeTo
-import com.squareup.kotlinpoet.KModifier
+import dev.openrune.definition.util.BaseVarType
 import dev.openrune.definition.util.VarType
 import java.io.File
-import com.google.devtools.ksp.processing.CodeGenerator
 
 class TableDataClassGeneratorSymbolProcessor(
     private val environment: SymbolProcessorEnvironment
@@ -16,37 +15,48 @@ class TableDataClassGeneratorSymbolProcessor(
 
     private val logger = environment.logger
     private val generatedTables = mutableSetOf<String>()
+    private val writtenFiles = mutableSetOf<String>()
+    private val tableToClassInfo = mutableMapOf<String, Pair<String, String?>>()
+
+    companion object {
+        private val PACKAGE_PREFIXES = listOf(
+            "fletching", "cluehelper", "fsw", "herblore", "woodcutting", "mining",
+            "fishing", "cooking", "smithing", "crafting", "runecrafting",
+            "agility", "thieving", "slayer", "construction", "hunter",
+            "farming", "prayer", "magic", "ranged", "melee", "combat", "sailing"
+        )
+
+        private val BASE_PACKAGE = "org.alter.tables"
+        private val DB_HELPER_PACKAGE = "org.alter.game.util"
+        private val VAR_TYPES_PACKAGE = "org.alter.game.util.vars"
+        private val RSCM_PACKAGE = "org.alter.rscm"
+    }
 
     override fun process(resolver: Resolver): List<KSAnnotated> {
         val moduleDir = environment.options["moduleDir"]
             ?: throw IllegalArgumentException("moduleDir KSP option not provided!")
 
-        // Try relative to module dir first, then absolute path
         val symFile = File(moduleDir, "../data/sym/dbcolumn.sym")
             .takeIf { it.exists() }
             ?: File("../data/sym/dbcolumn.sym")
-            .takeIf { it.exists() }
+                .takeIf { it.exists() }
             ?: run {
-                logger.warn("DB column sym file does not exist. Tried: ${File(moduleDir, "../data/sym/dbcolumn.sym")} and ../data/sym/dbcolumn.sym")
+                logger.warn("DB column sym file not found: ${File(moduleDir, "../data/sym/dbcolumn.sym")} or ../data/sym/dbcolumn.sym")
                 return emptyList()
             }
 
-        val tableColumns = parseSymFile(symFile)
-        generateDataClasses(tableColumns)
-
+        generateDataClasses(parseSymFile(symFile))
         return emptyList()
     }
-    
 
     private fun parseSymFile(file: File): Map<String, List<ColumnInfo>> {
         val tableColumns = mutableMapOf<String, MutableList<ColumnInfo>>()
-        val processedColumns = mutableSetOf<String>() // Track columns we've already processed
+        val processedColumns = mutableSetOf<String>()
 
         file.forEachLine { line ->
             val trimmed = line.trim()
             if (trimmed.isEmpty() || trimmed.startsWith("#")) return@forEachLine
 
-            // Format: offset	table:column	type
             val parts = trimmed.split("\t")
             if (parts.size < 3) return@forEachLine
 
@@ -54,307 +64,277 @@ class TableDataClassGeneratorSymbolProcessor(
             val columnKey = parts[1].trim()
             val typeStr = parts[2].trim()
 
-            // Skip sub-columns (like quest:releasedate:0) - we'll handle the parent column
             if (columnKey.count { it == ':' } > 1) return@forEachLine
 
-            // Parse table_name:column_name format
             val colonIndex = columnKey.indexOf(':')
             if (colonIndex == -1) return@forEachLine
 
             val tableName = columnKey.substring(0, colonIndex)
             val columnName = columnKey.substring(colonIndex + 1)
-
-            // Skip if we've already processed this column
             val fullKey = "$tableName:$columnName"
-            if (processedColumns.contains(fullKey)) return@forEachLine
-            processedColumns.add(fullKey)
 
-            // Parse type
-            val type = parseType(typeStr)
+            if (!processedColumns.add(fullKey)) return@forEachLine
 
             tableColumns.getOrPut(tableName) { mutableListOf() }
-                .add(ColumnInfo(columnName, offset, type))
+                .add(ColumnInfo(columnName, offset, parseType(typeStr)))
         }
 
         return tableColumns
     }
 
     private fun parseType(typeStr: String): ColumnType {
-        // Handle array types like "int,int" or "boolean,string"
         val types = typeStr.split(",").map { it.trim() }
-        
         return if (types.size > 1) {
-            // Array type - store VarType enums
-            ColumnType.Array(
-                varTypes = types.map { parseVarType(it) }
-            )
+            ColumnType.Array(types.map(::parseVarType))
         } else {
-            ColumnType.Single(
-                varType = parseVarType(types[0])
-            )
+            ColumnType.Single(parseVarType(types[0]))
         }
     }
 
-    private fun parseVarType(typeStr: String): VarType {
-        // Map sym file type strings to VarType enum names
-        val varTypeName = when (typeStr.lowercase()) {
-            "int" -> "INT"
-            "string" -> "STRING"
-            "boolean" -> "BOOLEAN"
-            "npc" -> "NPC"
-            "loc" -> "LOC"
-            "coord" -> "COORDGRID"
-            "mapelement" -> "MAPELEMENT"
-            "dbrow" -> "DBROW"
-            else -> "INT" // Default
-        }
-        
-        return try {
-            VarType.valueOf(varTypeName)
-        } catch (e: IllegalArgumentException) {
-            VarType.INT // Fallback if VarType not found
-        }
-    }
+    private fun parseVarType(typeStr: String) = VarType.valueOf(typeStr.replace("coord","coordgrid").uppercase())
 
     private fun generateDataClasses(tableColumns: Map<String, List<ColumnInfo>>) {
-        // Predefined list of prefixes to extract into sub-packages
-        val prefixes = listOf(
-            "fletching", "cluehelper", "fsw", "herblore", "woodcutting", "mining",
-            "fishing", "cooking", "smithing", "crafting", "runecrafting",
-            "agility", "thieving", "slayer", "construction", "hunter",
-            "farming", "prayer", "magic", "ranged", "melee", "combat", "sailing"
-        )
-        
-        tableColumns.forEach { (tableName, columns) ->
+        collectTableInfo(tableColumns)
+        generateClasses(tableColumns)
+    }
+
+    private fun collectTableInfo(tableColumns: Map<String, List<ColumnInfo>>) {
+        tableColumns.keys.forEach { tableName ->
             if (generatedTables.add(tableName)) {
-                try {
-                    val className = tableName.split("_")
-                        .joinToString("") { it.replaceFirstChar { char -> char.uppercase() } } + "Data"
-                    val packagePrefix = findMatchingPrefix(className, prefixes)
-                    generateDataClass(tableName, columns, packagePrefix)
-                } catch (e: Exception) {
-                    logger.error("Error generating data class for table $tableName: ${e.message}", null)
-                    generatedTables.remove(tableName)
+                tableToClassInfo[tableName] = tableName.toClassName() to findMatchingPrefix(tableName.toClassName())
+            }
+        }
+
+        tableColumns.forEach { (tableName, columns) ->
+            columns.forEach { column ->
+                if (column.isRowType) {
+                    val referencedTableName = column.name
+                    if (!tableToClassInfo.containsKey(referencedTableName)) {
+                        tableToClassInfo[referencedTableName] = referencedTableName.toClassName() to findMatchingPrefix(referencedTableName.toClassName())
+                    }
                 }
             }
         }
     }
-    
-    private fun findMatchingPrefix(className: String, prefixes: List<String>): String? {
-        val classNameLower = className.lowercase()
-        // Find the longest matching prefix (sorted by length descending)
-        return prefixes.sortedByDescending { it.length }
-            .firstOrNull { prefix ->
-                classNameLower.startsWith(prefix)
+
+    private fun generateClasses(tableColumns: Map<String, List<ColumnInfo>>) {
+        tableColumns.forEach { (tableName, columns) ->
+            if (generatedTables.contains(tableName) && writtenFiles.add(tableName)) {
+                generateClassSafely(tableName, columns, tableToClassInfo[tableName]!!)
             }
+        }
+
+        tableToClassInfo.forEach { (tableName, pair) ->
+            if (!tableColumns.containsKey(tableName) && writtenFiles.add(tableName)) {
+                generateClassSafely(tableName, emptyList(), pair)
+            }
+        }
     }
 
-    private fun generateDataClass(tableName: String, columns: List<ColumnInfo>, packagePrefix: String?) {
-        val className = tableName.split("_")
-            .joinToString("") { it.replaceFirstChar { char -> char.uppercase() } } + "Data"
-
-        // Keep the full class name, just organize into sub-packages
-        val packageName = if (packagePrefix != null) {
-            "org.alter.tables.$packagePrefix"
-        } else {
-            "org.alter.tables"
+    private fun generateClassSafely(tableName: String, columns: List<ColumnInfo>, classInfo: Pair<String, String?>) {
+        try {
+            generateRowClass(tableName, columns, classInfo.second)
+        } catch (e: Exception) {
+            logger.error("Error generating row class for table $tableName: ${e.message}", null)
+            logger.error("Stack trace: ${e.stackTraceToString()}", null)
+            generatedTables.remove(tableName)
+            tableToClassInfo.remove(tableName)
         }
+    }
 
-        val constructor = FunSpec.constructorBuilder()
+    private fun String.toClassName() = split("_")
+        .joinToString("") { it.replaceFirstChar { char -> char.uppercase() } } + "Row"
+
+    private fun findMatchingPrefix(className: String): String? =
+        PACKAGE_PREFIXES.sortedByDescending { it.length }
+            .firstOrNull { className.lowercase().startsWith(it) }
+
+    private fun generateRowClass(tableName: String, columns: List<ColumnInfo>, packagePrefix: String?) {
+        val className = tableName.toClassName()
+        val packageName = if (packagePrefix != null) "$BASE_PACKAGE.$packagePrefix" else BASE_PACKAGE
+        val rowClassType = ClassName(packageName, className)
+        val dbHelperType = ClassName(DB_HELPER_PACKAGE, "DbHelper")
 
         val properties = columns.map { column ->
-            val name = column.name.toCamelCase()
-            val type = getKotlinType(column.type)
-
-            // Add parameter to constructor
-            constructor.addParameter(name, type)
-
-            // Create property initialized from constructor
-            PropertySpec.builder(name, type)
-                .initializer(name)
-                .build()
+            val propertyName = column.name.toCamelCase()
+            val columnPath = "columns.$tableName:${column.name}"
+            val (kotlinType, initializer) = buildPropertyTypeAndInitializer(column, columnPath)
+            PropertySpec.builder(propertyName, kotlinType).initializer(initializer).build()
         }
 
-        val dataClassType = ClassName(packageName, className)
-        val tableDataInterface = ClassName("org.alter.tables", "TableData")
-            .parameterizedBy(dataClassType)
-        
-        // Create companion object with convert function
-        val companionConvertFun = FunSpec.builder("convert")
-            .addParameter("table", ClassName("org.alter.game.util", "DbHelper"))
-            .returns(dataClassType)
-            .addCode(buildConvertCode(tableName, columns, className, packagePrefix))
-            .build()
-        
         val companionObject = TypeSpec.companionObjectBuilder()
-            .addFunction(companionConvertFun)
+            .addFunction(createAllFunction(rowClassType, dbHelperType, tableName))
+            .addFunction(createGetRowByIdFunction(rowClassType, dbHelperType))
+            .addFunction(createGetRowByColumnFunction(rowClassType))
             .build()
-        
-        // Instance method that delegates to companion object (satisfies interface)
-        val instanceConvertFun = FunSpec.builder("convert")
-            .addModifiers(KModifier.OVERRIDE)
-            .addParameter("table", ClassName("org.alter.game.util", "DbHelper"))
-            .returns(dataClassType)
-            .addCode("return Companion.convert(table)\n")
-            .build()
-        
-        val dataClass = TypeSpec.classBuilder(className)
-            .addModifiers(KModifier.DATA)
-            .addSuperinterface(tableDataInterface)
-            .primaryConstructor(constructor.build())
+
+        val rowClass = TypeSpec.classBuilder(className)
+            .primaryConstructor(FunSpec.constructorBuilder().addParameter("row", dbHelperType).build())
             .addProperties(properties)
-            .addFunction(instanceConvertFun)
             .addType(companionObject)
             .build()
 
-        val fileSpec = FileSpec.builder(packageName, className)
+        val fileSpecBuilder = FileSpec.builder(packageName, className)
             .indent("    ")
-            .addImport("org.alter.game.util", "DbHelper", "column", "multiColumnOptional")
-            .addImport("org.alter.game.util.vars", "IntType", "ObjType")
-            .addImport("org.alter.tables", "TableData")
-            .addType(dataClass)
+            .addImport(DB_HELPER_PACKAGE, "DbHelper", "column", "multiColumnOptional")
+            .addImport(VAR_TYPES_PACKAGE, "IntType", "ObjType", "BooleanType", "StringType",
+                "LongType", "NpcType", "LocType", "CoordType", "MapElementType", "RowType")
+            .addImport("$RSCM_PACKAGE.RSCM", "asRSCM", "requireRSCM")
+            .addImport(RSCM_PACKAGE, "RSCMType")
+
+        columns.filter { it.isRowType }.forEach { column ->
+            tableToClassInfo[column.name]?.let { (referencedClassName, referencedPackagePrefix) ->
+                val referencedPackageName = if (referencedPackagePrefix != null) "$BASE_PACKAGE.$referencedPackagePrefix" else BASE_PACKAGE
+                fileSpecBuilder.addImport(referencedPackageName, referencedClassName)
+            }
+        }
+
+        if (columns.any { it.isCoordType }) {
+            fileSpecBuilder.addImport("org.alter.game.model", "Tile")
+        }
+
+        try {
+            fileSpecBuilder.addType(rowClass)
+                .build()
+                .writeTo(environment.codeGenerator, aggregating = false)
+            logger.info("Generated row class $className for table $tableName")
+        } catch (e: Exception) {
+            logger.error("Failed to write file for table $tableName: ${e.message}", null)
+            throw e
+        }
+    }
+
+    private fun createAllFunction(rowClassType: ClassName, dbHelperType: ClassName, tableName: String) =
+        FunSpec.builder("all")
+            .returns(ClassName("kotlin.collections", "List").parameterizedBy(rowClassType))
+            .addCode(
+                """
+                |return %T.table(%S)
+                |    .map {
+                |        %T(it)
+                |    }
+                """.trimMargin(),
+                dbHelperType, "tables.$tableName", rowClassType
+            )
             .build()
 
-        fileSpec.writeTo(environment.codeGenerator, aggregating = false)
-        logger.info("Generated data class $className for table $tableName")
+    private fun createGetRowByIdFunction(rowClassType: ClassName, dbHelperType: ClassName) =
+        FunSpec.builder("getRow")
+            .addParameter("row", ClassName("kotlin", "Int"))
+            .returns(rowClassType)
+            .addCode("return %T(%T.row(row))", rowClassType, dbHelperType)
+            .build()
+
+    private fun createGetRowByColumnFunction(rowClassType: ClassName) =
+        FunSpec.builder("getRow")
+            .addParameter("column", ClassName("kotlin", "String"))
+            .returns(rowClassType)
+            .addCode(
+                CodeBlock.builder()
+                    .addStatement("requireRSCM(%T.COLUMNS, column)", ClassName(RSCM_PACKAGE, "RSCMType"))
+                    .addStatement("return getRow(column.asRSCM() and 0xFFFF)")
+                    .build()
+            )
+            .build()
+
+    private fun getKotlinType(columnType: ColumnType): TypeName = when (columnType) {
+        is ColumnType.Single -> getKotlinTypeFromVarType(columnType.varType)
+        is ColumnType.Array -> ClassName("kotlin.collections", "List")
+            .parameterizedBy(getKotlinTypeFromVarType(columnType.varTypes.firstOrNull() ?: VarType.INT))
     }
 
-    private fun buildMappingCode(tableName: String, columns: List<ColumnInfo>, className: String, packagePrefix: String?): CodeBlock {
-        val packageName = if (packagePrefix != null) {
-            "org.alter.tables.$packagePrefix"
-        } else {
-            "org.alter.tables"
-        }
-        
-        val builder = CodeBlock.builder()
-        builder.add("return %T(\n", ClassName(packageName, className))
-        
-        columns.forEachIndexed { index, column ->
-            val propertyName = column.name.toCamelCase()
-            val kotlinType = getKotlinType(column.type)
-            val typeClass = getVarTypeImplClass(column.type)
-            val indent = "    "
-            
-            if (kotlinType.toString().startsWith("kotlin.collections.List")) {
-                builder.add("$indent$propertyName = this.multiColumnOptional(%S, %T).filterNotNull(),\n", 
-                    "columns.$tableName:${column.name}", typeClass)
-            } else {
-                builder.add("$indent$propertyName = this.column(%S, %T),\n", 
-                    "columns.$tableName:${column.name}", typeClass)
-            }
-        }
-        
-        builder.add(")")
-        return builder.build()
-    }
-    
-    private fun buildConvertCode(tableName: String, columns: List<ColumnInfo>, className: String, packagePrefix: String?): CodeBlock {
-        val packageName = if (packagePrefix != null) {
-            "org.alter.tables.$packagePrefix"
-        } else {
-            "org.alter.tables"
-        }
-        
-        val builder = CodeBlock.builder()
-        builder.add("return %T(\n", ClassName(packageName, className))
-        
-        columns.forEachIndexed { index, column ->
-            val propertyName = column.name.toCamelCase()
-            val kotlinType = getKotlinType(column.type)
-            val typeClass = getVarTypeImplClass(column.type)
-            val indent = "    "
-            
-            if (kotlinType.toString().startsWith("kotlin.collections.List")) {
-                builder.add("$indent$propertyName = table.multiColumnOptional(%S, %T).filterNotNull(),\n", 
-                    "columns.$tableName:${column.name}", typeClass)
-            } else {
-                builder.add("$indent$propertyName = table.column(%S, %T),\n", 
-                    "columns.$tableName:${column.name}", typeClass)
-            }
-        }
-        
-        builder.add(")")
-        return builder.build()
-    }
-
-    private fun getKotlinType(columnType: ColumnType): TypeName {
-        return when (columnType) {
-            is ColumnType.Single -> {
-                getKotlinTypeFromVarType(columnType.varType)
-            }
-            is ColumnType.Array -> {
-                // For arrays, determine the element type from the first VarType in the list
-                val elementVarType: VarType = columnType.varTypes.firstOrNull() ?: VarType.INT
-                val elementType = getKotlinTypeFromVarType(elementVarType)
-                ClassName("kotlin.collections", "List")
-                    .parameterizedBy(elementType)
-            }
+    private fun getKotlinTypeFromVarType(varType: VarType): TypeName = when {
+        varType == VarType.BOOLEAN -> ClassName("kotlin", "Boolean")
+        else -> when (varType.baseType) {
+            BaseVarType.INTEGER -> ClassName("kotlin", "Int")
+            BaseVarType.LONG -> ClassName("kotlin", "Long")
+            BaseVarType.STRING -> ClassName("kotlin", "String")
+            else -> ClassName("kotlin", "Int")
         }
     }
 
-    private fun getKotlinTypeFromVarType(varType: VarType): TypeName {
-        // For BOOLEAN, use Boolean directly, otherwise use baseType
-        return if (varType == VarType.BOOLEAN) {
-            ClassName("kotlin", "Boolean")
-        } else {
-            when (varType.baseType) {
-                dev.openrune.definition.util.BaseVarType.INTEGER -> ClassName("kotlin", "Int")
-                dev.openrune.definition.util.BaseVarType.LONG -> ClassName("kotlin", "Long")
-                dev.openrune.definition.util.BaseVarType.STRING -> ClassName("kotlin", "String")
-                else -> ClassName("kotlin", "Int") // Default fallback
-            }
-        }
-    }
-    
     private fun getVarTypeImplClass(columnType: ColumnType): ClassName {
-        val varType: VarType = when (columnType) {
+        val varType = when (columnType) {
             is ColumnType.Single -> columnType.varType
             is ColumnType.Array -> columnType.varTypes.firstOrNull() ?: VarType.INT
         }
-        
         return when (varType) {
-            VarType.BOOLEAN -> ClassName("org.alter.game.util.vars", "BooleanType")
-            VarType.STRING -> ClassName("org.alter.game.util.vars", "StringType")
-            VarType.LONG -> ClassName("org.alter.game.util.vars", "LongType")
-            VarType.NPC -> ClassName("org.alter.game.util.vars", "NpcType")
-            VarType.LOC -> ClassName("org.alter.game.util.vars", "LocType")
-            VarType.COORDGRID -> ClassName("org.alter.game.util.vars", "CoordType")
-            VarType.MAPELEMENT -> ClassName("org.alter.game.util.vars", "MapElementType")
-            VarType.DBROW -> ClassName("org.alter.game.util.vars", "RowType")
-            else -> ClassName("org.alter.game.util.vars", "IntType")
+            VarType.BOOLEAN -> ClassName(VAR_TYPES_PACKAGE, "BooleanType")
+            VarType.INT -> ClassName(VAR_TYPES_PACKAGE, "IntType")
+            VarType.STRING -> ClassName(VAR_TYPES_PACKAGE, "StringType")
+            VarType.LONG -> ClassName(VAR_TYPES_PACKAGE, "LongType")
+            VarType.NPC -> ClassName(VAR_TYPES_PACKAGE, "NpcType")
+            VarType.LOC -> ClassName(VAR_TYPES_PACKAGE, "LocType")
+            VarType.OBJ -> ClassName(VAR_TYPES_PACKAGE, "ObjType")
+            VarType.COORDGRID -> ClassName(VAR_TYPES_PACKAGE, "CoordType")
+            VarType.MAPELEMENT -> ClassName(VAR_TYPES_PACKAGE, "MapElementType")
+            VarType.DBROW -> ClassName(VAR_TYPES_PACKAGE, "RowType")
+            VarType.NAMEDOBJ -> ClassName(VAR_TYPES_PACKAGE, "NamedObjType")
+            VarType.GRAPHIC -> ClassName(VAR_TYPES_PACKAGE, "GraphicType")
+            VarType.SEQ -> ClassName(VAR_TYPES_PACKAGE, "SeqType")
+            VarType.MODEL -> ClassName(VAR_TYPES_PACKAGE, "ModelType")
+            VarType.STAT -> ClassName(VAR_TYPES_PACKAGE, "StatType")
+            VarType.CATEGORY -> ClassName(VAR_TYPES_PACKAGE, "CategoryType")
+            VarType.COMPONENT -> ClassName(VAR_TYPES_PACKAGE, "ComponentType")
+            VarType.INV -> ClassName(VAR_TYPES_PACKAGE, "InvType")
+            VarType.IDKIT -> ClassName(VAR_TYPES_PACKAGE, "IdkType")
+            VarType.ENUM -> ClassName(VAR_TYPES_PACKAGE, "EnumType")
+            VarType.MIDI -> ClassName(VAR_TYPES_PACKAGE, "MidiType")
+            VarType.VARP -> ClassName(VAR_TYPES_PACKAGE, "VarpType")
+            VarType.STRUCT -> ClassName(VAR_TYPES_PACKAGE, "StructType")
+            VarType.DBTABLE -> ClassName(VAR_TYPES_PACKAGE, "TableType")
+
+            else -> error("Unmapped Type: $varType")
         }
     }
 
-    private fun extractPackagePrefix(className: String): Pair<String?, String> {
-        // Common prefixes to extract (e.g., "Fletching", "Cluehelper")
-        val prefixes = listOf(
-            "Fletching", "Cluehelper", "Herblore", "Woodcutting", "Mining", 
-            "Fishing", "Cooking", "Smithing", "Crafting", "Runecrafting",
-            "Agility", "Thieving", "Slayer", "Construction", "Hunter",
-            "Farming", "Prayer", "Magic", "Ranged", "Melee", "Combat"
-        )
-        
-        for (prefix in prefixes) {
-            if (className.startsWith(prefix)) {
-                val remaining = className.substring(prefix.length)
-                return Pair(prefix.lowercase(), remaining)
-            }
+    private fun buildPropertyTypeAndInitializer(column: ColumnInfo, columnPath: String): Pair<TypeName, CodeBlock> {
+        val typeClass = getVarTypeImplClass(column.type)
+        return when {
+            column.isRowType -> buildRowTypeProperty(column, columnPath, typeClass)
+            column.isCoordType -> buildCoordTypeProperty(columnPath, typeClass)
+            column.type.isListType -> buildListTypeProperty(column, columnPath, typeClass)
+            else -> buildStandardProperty(column, columnPath, typeClass)
         }
-        
-        return Pair(null, className)
+    }
+
+    private fun buildRowTypeProperty(column: ColumnInfo, columnPath: String, typeClass: ClassName): Pair<TypeName, CodeBlock> {
+        val (referencedClassName, referencedPackagePrefix) = tableToClassInfo[column.name]
+            ?: error("RowType column '${column.name}' references unknown table '${column.name}'")
+        val referencedPackageName = if (referencedPackagePrefix != null) "$BASE_PACKAGE.$referencedPackagePrefix" else BASE_PACKAGE
+        val referencedRowClassType = ClassName(referencedPackageName, referencedClassName)
+        return referencedRowClassType to CodeBlock.of("%T.getRow(row.column(%S, %T))", referencedRowClassType, columnPath, typeClass)
+    }
+
+    private fun buildCoordTypeProperty(columnPath: String, typeClass: ClassName): Pair<TypeName, CodeBlock> {
+        val tileType = ClassName("org.alter.game.model", "Tile")
+        return tileType to CodeBlock.of("%T.from30BitHash(row.column(%S, %T))", tileType, columnPath, typeClass)
+    }
+
+    private fun buildListTypeProperty(column: ColumnInfo, columnPath: String, typeClass: ClassName): Pair<TypeName, CodeBlock> {
+        val kotlinType = getKotlinType(column.type)
+        return kotlinType to CodeBlock.of("row.multiColumnOptional(%S, %T).filterNotNull()", columnPath, typeClass)
+    }
+
+    private fun buildStandardProperty(column: ColumnInfo, columnPath: String, typeClass: ClassName): Pair<TypeName, CodeBlock> {
+        val kotlinType = getKotlinType(column.type)
+        return kotlinType to CodeBlock.of("row.column(%S, %T)", columnPath, typeClass)
     }
 
     private fun String.toCamelCase(): String {
-        val result = split("_").joinToString("") { part ->
-            part.lowercase().replaceFirstChar { it.uppercase() }
-        }.replaceFirstChar { it.lowercase() }
-        
-        // Handle Kotlin keywords
-        return when (result) {
-            "object" -> "objectID"
-            else -> result
-        }
+        val result = split("_").joinToString("") { it.lowercase().replaceFirstChar(Char::uppercase) }
+            .replaceFirstChar(Char::lowercase)
+        return if (result == "object") "objectID" else result
     }
+
+    private val ColumnInfo.isRowType: Boolean
+        get() = type is ColumnType.Single && type.varType == VarType.DBROW
+
+    private val ColumnInfo.isCoordType: Boolean
+        get() = type is ColumnType.Single && type.varType == VarType.COORDGRID
+
+    private val ColumnType.isListType: Boolean
+        get() = this is ColumnType.Array
 
     private sealed class ColumnType {
         data class Single(val varType: VarType) : ColumnType()
@@ -367,4 +347,3 @@ class TableDataClassGeneratorSymbolProcessor(
         val type: ColumnType
     )
 }
-

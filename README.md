@@ -37,7 +37,7 @@ Alter adheres to OSRS protocols, giving you the freedom to connect any compliant
 
 2. **Install dependencies**  
    - Ensure you have [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows).  
-   - Set the project SDK to Java 17: `File → Project Structure → SDK`.
+   - Set the project SDK to Java 22: `File → Project Structure → SDK`.
    - Recommended: install the [rscm-plugin](https://github.com/blurite/rscm-plugin) for better entity reference tooling.
 
 3. **Gradle bootstrap**  

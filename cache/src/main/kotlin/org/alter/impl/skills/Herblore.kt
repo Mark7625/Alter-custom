@@ -179,7 +179,7 @@ object Herblore {
         // Attack potion (Guam + Eye of newt)
         row("dbrows.herblore_attack_potion") {
             columnRSCM(COL_POT_PRIMARY, "items.guamvial")
-            columnRSCM(COL_SECONDARIES, "items.eye_of_newt")
+            columnRSCM(COL_SECONDARIES, "items.eye_of_newt","items.dttd_follower_obj")
             column(COL_LEVEL_REQUIRED, 3)
             column(COL_XP_FINISHED, 25)
             columnRSCM(COL_FINISHED_POTION, "items.3dose1attack")

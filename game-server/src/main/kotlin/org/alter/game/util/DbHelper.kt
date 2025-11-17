@@ -8,20 +8,12 @@ import dev.openrune.definition.util.VarType
 import dev.openrune.filesystem.Cache
 import org.alter.game.util.DbHelper.Companion.table
 import org.alter.game.util.vars.BooleanVarType
-import org.alter.game.util.vars.ComponentType
-import org.alter.game.util.vars.IntType
-import org.alter.game.util.vars.NpcType
-import org.alter.game.util.vars.ObjType
 import org.alter.game.util.vars.VarTypeImpl
 import org.alter.rscm.RSCM
 import org.alter.rscm.RSCM.asRSCM
 import org.alter.rscm.RSCM.requireRSCM
 import org.alter.rscm.RSCMType
-import org.alter.tables.TableData
-import java.io.File
-import java.nio.file.Paths
 import java.util.concurrent.ConcurrentHashMap
-import kotlin.io.path.Path
 
 fun <K, V> DbHelper.column(name: String, type: VarTypeImpl<K, V>): V =
     getNValue(name, type, 0)
@@ -175,16 +167,6 @@ class DbHelper private constructor(private val row: DBRowType) {
                     .map { DbHelper(it.value) }
                     .distinctBy { it.id }
                     .toList()
-            }
-        }
-
-        inline fun <reified T : TableData<T>> tableAs(tableName: String): List<T> {
-            val rows = table(tableName)
-            val companion = T::class.java.getDeclaredField("Companion").get(null)
-            val convertMethod = T::class.java.getDeclaredMethod("convert", DbHelper::class.java)
-
-            return rows.map { row ->
-                convertMethod.invoke(companion, row) as T
             }
         }
 
