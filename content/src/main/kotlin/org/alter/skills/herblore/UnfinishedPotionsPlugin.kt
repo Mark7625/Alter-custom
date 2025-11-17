@@ -11,6 +11,7 @@ import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.impl.ItemOnItemEvent
 import org.alter.rscm.RSCM
 import org.alter.rscm.RSCM.asRSCM
+import org.alter.tables.herblore.HerbloreUnfinishedData
 
 /**
  * Plugin for creating unfinished potions (clean herb + vial of water)
@@ -91,7 +92,7 @@ class UnfinishedPotionsPlugin : PluginEvent() {
      */
     private fun createUnfinishedPotion(
         player: Player,
-        potionData: HerbloreDefinitions.UnfinishedPotionData,
+        potionData: HerbloreUnfinishedData,
         quantity: Int
     ) {
         val herbloreLevel = player.getSkills().getCurrentLevel(Skills.HERBLORE)

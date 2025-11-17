@@ -1,3 +1,3 @@
 org.alter.plugin.settings.PluginSettingsSymbolProcessorProvider
 org.alter.plugin.dialogue.DialogueGeneratorSymbolProcessorProvider
-
+org.alter.plugin.rscm.TableDataClassGeneratorSymbolProcessorProvider

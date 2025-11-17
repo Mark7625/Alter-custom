@@ -6,6 +6,7 @@ import org.alter.api.ext.filterableMessage
 import org.alter.game.model.entity.Player
 import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.impl.ItemClickEvent
+import org.alter.tables.herblore.HerbloreCleaningData
 
 /**
  * Plugin for cleaning grimy herbs.
@@ -27,7 +28,7 @@ class CleaningHerbsPlugin : PluginEvent() {
 
     private fun cleanHerb(
         player: Player,
-        cleaningData: HerbloreDefinitions.CleaningHerbData,
+        cleaningData: HerbloreCleaningData,
         grimyHerb: Int,
         slot: Int
     ) {

@@ -10,6 +10,7 @@ import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.impl.onItemOnItem
 import org.alter.rscm.RSCM
 import org.alter.rscm.RSCM.asRSCM
+import org.alter.tables.herblore.HerbloreCrushingData
 
 /**
  * Plugin for crushing items with pestle and mortar.
@@ -33,7 +34,7 @@ class CrushingPlugin : PluginEvent() {
      */
     private fun crushItem(
         player: Player,
-        crushingData: HerbloreDefinitions.CrushingData
+        crushingData: HerbloreCrushingData
     ) {
         val herbloreLevel = player.getSkills().getCurrentLevel(Skills.HERBLORE)
 

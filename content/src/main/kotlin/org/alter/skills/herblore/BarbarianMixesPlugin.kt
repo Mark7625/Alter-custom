@@ -10,6 +10,7 @@ import org.alter.game.model.entity.Player
 import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.impl.ItemOnItemEvent
 import org.alter.rscm.RSCM
+import org.alter.tables.herblore.HerbloreBarbarianMixesData
 
 /**
  * Plugin for creating barbarian mixes (two-dose potion + roe/caviar)
@@ -86,7 +87,7 @@ class BarbarianMixesPlugin : PluginEvent() {
      */
     private fun createBarbarianMix(
         player: Player,
-        mixData: HerbloreDefinitions.BarbarianMixData,
+        mixData: HerbloreBarbarianMixesData,
         quantity: Int
     ) {
         val herbloreLevel = player.getSkills().getCurrentLevel(Skills.HERBLORE)

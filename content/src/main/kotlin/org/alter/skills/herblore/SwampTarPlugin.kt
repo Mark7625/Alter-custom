@@ -10,6 +10,7 @@ import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.impl.onItemOnItem
 import org.alter.rscm.RSCM
 import org.alter.rscm.RSCM.asRSCM
+import org.alter.tables.herblore.HerbloreSwampTarData
 
 /**
  * Plugin for creating swamp tar (herb + 15x swamp tar = 15x finished tar)
@@ -39,7 +40,7 @@ class SwampTarPlugin : PluginEvent() {
      */
     private fun createSwampTar(
         player: Player,
-        tarData: HerbloreDefinitions.SwampTarData
+        tarData: HerbloreSwampTarData
     ) {
         val herbloreLevel = player.getSkills().getCurrentLevel(Skills.HERBLORE)
 

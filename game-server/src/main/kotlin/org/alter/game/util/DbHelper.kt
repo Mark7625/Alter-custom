@@ -17,6 +17,7 @@ import org.alter.rscm.RSCM
 import org.alter.rscm.RSCM.asRSCM
 import org.alter.rscm.RSCM.requireRSCM
 import org.alter.rscm.RSCMType
+import org.alter.tables.TableData
 import java.io.File
 import java.nio.file.Paths
 import java.util.concurrent.ConcurrentHashMap
@@ -174,6 +175,16 @@ class DbHelper private constructor(private val row: DBRowType) {
                     .map { DbHelper(it.value) }
                     .distinctBy { it.id }
                     .toList()
+            }
+        }
+
+        inline fun <reified T : TableData<T>> tableAs(tableName: String): List<T> {
+            val rows = table(tableName)
+            val companion = T::class.java.getDeclaredField("Companion").get(null)
+            val convertMethod = T::class.java.getDeclaredMethod("convert", DbHelper::class.java)
+
+            return rows.map { row ->
+                convertMethod.invoke(companion, row) as T
             }
         }
 

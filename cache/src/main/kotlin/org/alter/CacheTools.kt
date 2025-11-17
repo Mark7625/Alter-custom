@@ -1,8 +1,11 @@
 package org.alter
 
+import dev.openrune.OsrsCacheProvider
 import dev.openrune.cache.gameval.Format
 import dev.openrune.cache.gameval.GameValHandler
+import dev.openrune.cache.gameval.GameValHandler.elementAs
 import dev.openrune.cache.gameval.dump
+import dev.openrune.cache.gameval.impl.Table
 import dev.openrune.cache.tools.Builder
 import dev.openrune.cache.tools.CacheEnvironment
 import dev.openrune.cache.tools.dbtables.PackDBTables
@@ -10,6 +13,7 @@ import dev.openrune.cache.tools.tasks.CacheTask
 import dev.openrune.cache.tools.tasks.TaskType
 import dev.openrune.cache.tools.tasks.impl.defs.PackConfig
 import dev.openrune.definition.GameValGroupTypes
+import dev.openrune.definition.type.DBTableType
 import dev.openrune.filesystem.Cache
 import dev.openrune.tools.PackServerConfig
 import io.github.oshai.kotlinlogging.KotlinLogging
@@ -25,8 +29,8 @@ import java.nio.file.Files
 import java.nio.file.StandardCopyOption
 import kotlin.system.exitProcess
 
-fun getCacheLocation() = File("../data/","cache").path
-fun getRawCacheLocation(dir : String) = File("../data/","raw-cache/$dir/")
+fun getCacheLocation() = File("../data/", "cache").path
+fun getRawCacheLocation(dir: String) = File("../data/", "raw-cache/$dir/")
 
 fun tablesToPack() = listOf(
     PrayerTable.skillTable(),
@@ -46,7 +50,7 @@ fun tablesToPack() = listOf(
 
 private val logger = KotlinLogging.logger {}
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     if (args.isEmpty()) {
         println("Usage: <buildType>")
         exitProcess(1)
@@ -54,18 +58,18 @@ fun main(args : Array<String>) {
     downloadRev(TaskType.valueOf(args.first().uppercase()))
 }
 
-fun downloadRev(type : TaskType) {
+fun downloadRev(type: TaskType) {
 
     val rev = readRevision()
 
     logger.error { "Using Revision: $rev" }
 
-    val tasks : List<CacheTask> = listOf(
+    val tasks: List<CacheTask> = listOf(
         PackConfig(File("../data/raw-cache/server")),
         PackServerConfig(),
     ).toMutableList()
 
-    when(type) {
+    when (type) {
         TaskType.FRESH_INSTALL -> {
             val builder = Builder(type = TaskType.FRESH_INSTALL, File(getCacheLocation()))
             builder.registerRSCM(File("../data/cfg/rscm2"))
@@ -81,10 +85,11 @@ fun downloadRev(type : TaskType) {
 
             Files.move(
                 File(getCacheLocation(), "xteas.json").toPath(),
-                File("../data/","xteas.json").toPath(),
+                File("../data/", "xteas.json").toPath(),
                 StandardCopyOption.REPLACE_EXISTING
             )
         }
+
         TaskType.BUILD -> {
             val builder = Builder(type = TaskType.BUILD, cacheLocation = File(getCacheLocation()))
             builder.registerRSCM(File("../data/cfg/rscm2"))
@@ -95,18 +100,73 @@ fun downloadRev(type : TaskType) {
 
             builder.extraTasks(*tasksNew.toTypedArray()).build().initialize()
 
+            val cache = Cache.load(File(getCacheLocation()).toPath(),true)
+
             GameValGroupTypes.entries.forEach {
-                val type = GameValHandler.readGameVal(it, cache = Cache.load(File(getCacheLocation()).toPath(), true),rev.first)
-                type.dump(Format.RSCM_V2, File("../data/cfg/rscm2"), it)
-                    .packed(true)
-                    .write()
+                val type = GameValHandler.readGameVal(it, cache = cache, rev.first)
+                type.dump(Format.RSCM_V2, File("../data/cfg/rscm2"), it).packed(true).write()
+            }
+
+            val basePath = File("../data/sym")
+            
+            symDumper(basePath,cache,"dbrow", GameValGroupTypes.ROWTYPES)
+            symDumperDBTables(basePath,cache)
+
         }
     }
 
+
+
+}
+
+fun symDumper(basePath: File,cache: Cache, name: String, group: GameValGroupTypes) {
+    if (group == GameValGroupTypes.TABLETYPES) return
+
+    val transformed = GameValHandler.readGameVal(group, cache).map { "${it.id}\t${it.name}" }
+    File(basePath, "$name.sym").writeText(transformed.joinToString("\n") + "\n")
+}
+
+fun symDumperDBTables(basePath: File, cache: Cache) {
+
+    val dbTableTypes = mutableMapOf<Int, DBTableType>()
+    OsrsCacheProvider.DBTableDecoder().load(cache, dbTableTypes)
+
+    val tables = GameValHandler.readGameVal(GameValGroupTypes.TABLETYPES, cache)
+
+    val dbTables = tables.map { "${it.id}\t${it.name}" }
+    File(basePath, "dbtable.sym").writeText(dbTables.joinToString("\n") + "\n")
+
+    val dbColumns = tables.mapNotNull { it.elementAs<Table>() }.flatMap { table ->
+        val tableType = dbTableTypes[table.id] ?: return@flatMap emptyList()
+        val tableName = table.name
+        val packedBase = table.id shl 12
+
+        buildList {
+            table.columns.forEach { column ->
+                val colId = column.id
+                val colName = column.name
+                val packedColumn = packedBase or (colId shl 4)
+
+                val types = tableType.columns[colId]?.types
+                    ?.map { it.name.lowercase().replace("coordgrid", "coord") }
+                    ?: return@forEach
+
+                if (types.isEmpty()) return@forEach
+
+                if (types.size > 1) {
+                    add("$packedColumn\t$tableName:$colName\t${types.joinToString(",")}")
+                }
+
+                types.forEachIndexed { index, typeName ->
+                    val indexedName = if (types.size > 1) "$colName:$index" else colName
+                    val indexedId = if (types.size > 1) packedColumn + (index + 1) else packedColumn
+                    add("$indexedId\t$tableName:$indexedName\t$typeName")
+                }
+            }
+        }
     }
 
-
-
+    File(basePath, "dbcolumn.sym").writeText(dbColumns.joinToString("\n") + "\n")
 }
 
 fun readRevision(): Triple<Int, Int, String> {
