@@ -10,6 +10,7 @@ import org.alter.game.model.attr.INTERACTING_ITEM_SLOT
 import org.alter.game.model.attr.OTHER_ITEM_SLOT_ATTR
 import org.alter.game.model.queue.*
 import org.alter.game.plugin.*
+import org.alter.game.pluginnew.event.impl.ContainerType
 import org.alter.plugins.content.interfaces.bank.Bank.deposit
 import org.alter.plugins.content.interfaces.bank.Bank.insert
 import org.alter.plugins.content.interfaces.bank.Bank.removePlaceholder
@@ -403,7 +404,7 @@ class BankPlugin(
             val opt = player.getInteractingOption()
             val item = player.inventory[slot] ?: return@onButton
             if (opt == 0) {
-                val result = EquipAction.equip(player, item, inventorySlot = slot)
+                val result = EquipAction.equip(player, item, inventorySlot = slot, ContainerType.BANK_SIDE)
                 if (result == EquipAction.Result.SUCCESS) {
                     player.calculateBonuses()
                     Bank.sendBonuses(player)
@@ -423,7 +424,7 @@ class BankPlugin(
         onButton(interfaceId = "interfaces.bankmain".asRSCM(), component = component) {
             val opt = player.getInteractingOption()
             if (opt == 0) {
-                EquipAction.unequip(player, equipment.id)
+                EquipAction.unequip(player, equipment.id, ContainerType.BANK)
                 player.calculateBonuses()
                 Bank.sendBonuses(player)
             } else if (opt == 9) {

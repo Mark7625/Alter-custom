@@ -20,6 +20,7 @@ import org.alter.game.model.queue.*
 import org.alter.game.model.shop.*
 import org.alter.game.model.timer.*
 import org.alter.game.plugin.*
+import org.alter.game.pluginnew.event.impl.ContainerType
 
 class InventoryPlugin(
     r: PluginRepository,
@@ -61,7 +62,7 @@ class InventoryPlugin(
                         }
                     }
                     3 -> {
-                        val result = EquipAction.equip(player, item, slot)
+                        val result = EquipAction.equip(player, item, slot, ContainerType.INVENTORY)
                         if (result == EquipAction.Result.UNHANDLED && world.devContext.debugItemActions) {
                             player.message("Unhandled item action: [item=${item.id}, slot=$slot, option=$option]")
                         }

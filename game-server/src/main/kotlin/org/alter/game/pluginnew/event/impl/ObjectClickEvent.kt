@@ -8,6 +8,7 @@ import org.alter.game.pluginnew.MenuOption
 import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.EventListener
 import org.alter.game.pluginnew.event.PlayerEvent
+import org.alter.rscm.RSCM
 import org.alter.rscm.RSCM.asRSCM
 import org.alter.rscm.RSCM.requireRSCM
 import org.alter.rscm.RSCMType
@@ -16,11 +17,12 @@ class ItemOnObject(
     val item : Item,
     val gameObject: GameObject,
     val slot : Int,
+    val id : Int = gameObject.internalID,
     override val player: Player
 ) : PlayerEvent(player) {
 
     val option: String
-        get() = resolveOptionName(gameObject.internalID, MenuOption.OP1.id)
+        get() = resolveOptionName(id, MenuOption.OP1.id)
 
     companion object {
         private fun resolveOptionName(id: Int, opId: Int): String {
@@ -36,18 +38,22 @@ class ItemOnObject(
 open class ObjectClickEvent(
     open val gameObject: GameObject,
     open val op: MenuOption,
+    /**
+     * The ID of the object.
+     * Note: This returns the transformed ID if the object has a varbit/varp transform applied,
+     * not necessarily the original internal ID.
+     */
+    val id : Int = gameObject.internalID,
     player: Player
 ) : EntityInteractionEvent<GameObject>(gameObject, op, player) {
 
-    val id : Int = gameObject.internalID
-
     override fun resolveOptionName(): String {
-        val def = getObject(gameObject.internalID) ?: error("Object not found for id=${gameObject.id}[${gameObject.id}]")
-        return def.actions.getOrNull(op.id - 1) ?: error("No action found at index ${op.id} for object id=${gameObject.id}[${gameObject.id}]")
+        val def = getObject(id) ?: error("Object not found for id=${id}[${id}]")
+        return def.actions.getOrNull(op.id - 1) ?: error("No action found at index ${op.id} for object id=${id}[${id}]")
     }
 
     fun objHasOption(option: String, ignoreCase: Boolean = true): Boolean {
-        val def = getObject(gameObject.internalID) ?: return false
+        val def = getObject(id) ?: return false
         return def.actions.any { it?.equals(option, ignoreCase) == true }
     }
 
@@ -69,7 +75,7 @@ fun PluginEvent.onObjectOption(
     requireRSCM(RSCMType.LOCTYPES,obj)
     return on<ObjectClickEvent> {
         where {
-            gameObject.id == obj && options.any { it.equals(optionName, ignoreCase = true) }
+            RSCM.getReverseMapping(RSCMType.LOCTYPES, id) == obj && options.any { it.equals(optionName, ignoreCase = true) }
         }
         then { action(this) }
     }
@@ -82,7 +88,7 @@ fun PluginEvent.onObjectOption(
 ): EventListener<ObjectClickEvent> {
     return on<ObjectClickEvent> {
         where {
-            gameObject.internalID == obj && options.any { it.equals(optionName, ignoreCase = true) }
+            id == obj && options.any { it.equals(optionName, ignoreCase = true) }
         }
         then { action(this) }
     }

@@ -5,6 +5,9 @@ import dev.openrune.ServerCacheManager.getItem
 import org.alter.game.info.PlayerInfo
 import org.alter.game.model.entity.Player
 import org.alter.game.model.item.Item
+import org.alter.game.pluginnew.event.impl.ContainerType
+import org.alter.game.pluginnew.event.impl.EquipEvent
+import org.alter.game.pluginnew.event.impl.UnequipEvent
 
 
 /**
@@ -85,6 +88,7 @@ object EquipAction {
         p: Player,
         item: Item,
         inventorySlot: Int = -1,
+        containerType: ContainerType
     ): Result {
         val def = getItem(item.id)
         if (def == null) {
@@ -166,6 +170,7 @@ object EquipAction {
             PlayerInfo(p).syncAppearance()
             plugins.executeEquipSlot(p, equipSlot)
             plugins.executeEquipItem(p, replace.id)
+            EquipEvent(replace.id, equipSlot, containerType, p).post()
 
         } else {
             /*
@@ -260,12 +265,14 @@ object EquipAction {
                         p.equipment[slot] = null
                     }
                     onItemUnequip(p, equipmentId, slot)
+                    UnequipEvent(item.id, slot, containerType, p).post()
                 }
 
                 p.equipment[equipSlot] = newEquippedItem
                 PlayerInfo(p).syncAppearance()
                 plugins.executeEquipSlot(p, equipSlot)
                 plugins.executeEquipItem(p, newEquippedItem.id)
+                EquipEvent(newEquippedItem.id, equipSlot, containerType, p).post()
             }
         }
 
@@ -275,6 +282,7 @@ object EquipAction {
     fun unequip(
         p: Player,
         equipmentSlot: Int,
+        containerType : ContainerType
     ): Result {
         val item = p.equipment[equipmentSlot] ?: return Result.INVALID_ITEM
 
@@ -295,6 +303,7 @@ object EquipAction {
 
         PlayerInfo(p).syncAppearance()
         onItemUnequip(p, item.id, equipmentSlot)
+        UnequipEvent(item.id, equipmentSlot, containerType, p).post()
 
         return Result.SUCCESS
     }

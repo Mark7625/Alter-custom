@@ -514,22 +514,22 @@ open class Player(world: World) : Pawn(world) {
         Arrays.fill(equipmentBonuses, 0)
         for (i in 0 until equipment.capacity) {
             val item = equipment[i] ?: continue
-            val def = item.getDef()
+            val params = item.getDef().params?: continue
             val bonuses = intArrayOf(
-                def.params!!.getInt(ParamMapper.item.STAB_ATTACK_BONUS),
-                def.params!!.getInt(ParamMapper.item.SLASH_ATTACK_BONUS),
-                def.params!!.getInt(ParamMapper.item.CRUSH_ATTACK_BONUS),
-                def.params!!.getInt(ParamMapper.item.MAGIC_ATTACK_BONUS),
-                def.params!!.getInt(ParamMapper.item.RANGED_ATTACK_BONUS),
-                def.params!!.getInt(ParamMapper.item.STAB_DEFENCE_BONUS),
-                def.params!!.getInt(ParamMapper.item.SLASH_DEFENCE_BONUS),
-                def.params!!.getInt(ParamMapper.item.CRUSH_DEFENCE_BONUS),
-                def.params!!.getInt(ParamMapper.item.MAGIC_DEFENCE_BONUS),
-                def.params!!.getInt(ParamMapper.item.RANGED_DEFENCE_BONUS),
-                def.params!!.getInt(ParamMapper.item.MELEE_STRENGTH),
-                def.params!!.getInt(ParamMapper.item.RANGED_STRENGTH_BONUS),
-                def.params!!.getInt(ParamMapper.item.MAGIC_DAMAGE_STRENGTH) / 10,
-                def.params!!.getInt(ParamMapper.item.PRAYER_BONUS),
+                params.getInt(ParamMapper.item.STAB_ATTACK_BONUS),
+                params.getInt(ParamMapper.item.SLASH_ATTACK_BONUS),
+                params.getInt(ParamMapper.item.CRUSH_ATTACK_BONUS),
+                params.getInt(ParamMapper.item.MAGIC_ATTACK_BONUS),
+                params.getInt(ParamMapper.item.RANGED_ATTACK_BONUS),
+                params.getInt(ParamMapper.item.STAB_DEFENCE_BONUS),
+                params.getInt(ParamMapper.item.SLASH_DEFENCE_BONUS),
+                params.getInt(ParamMapper.item.CRUSH_DEFENCE_BONUS),
+                params.getInt(ParamMapper.item.MAGIC_DEFENCE_BONUS),
+                params.getInt(ParamMapper.item.RANGED_DEFENCE_BONUS),
+                params.getInt(ParamMapper.item.MELEE_STRENGTH),
+                params.getInt(ParamMapper.item.RANGED_STRENGTH_BONUS),
+                params.getInt(ParamMapper.item.MAGIC_DAMAGE_STRENGTH) / 10,
+                params.getInt(ParamMapper.item.PRAYER_BONUS),
             )
             bonuses.forEachIndexed { index, bonus -> equipmentBonuses[index] += bonus }
         }

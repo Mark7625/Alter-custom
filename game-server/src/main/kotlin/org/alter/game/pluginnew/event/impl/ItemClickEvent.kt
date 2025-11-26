@@ -11,7 +11,7 @@ import org.alter.rscm.RSCMType
 
 open class ItemClickEvent(
     open val item: Int,
-    val slot : Int,
+    val slot: Int,
     open val op: MenuOption,
     val container: ContainerType,
     player: Player
@@ -20,33 +20,31 @@ open class ItemClickEvent(
     public override fun resolveOptionName(): String {
         val indexSlot = op.id - 2
         val def = getItem(item) ?: error("Item not found for id=$item")
-        return def.interfaceOptions.getOrNull(indexSlot) ?: error("No action found at index $indexSlot for item id=$item")
+        return def.interfaceOptions.getOrNull(indexSlot)
+            ?: error("No action found at index $indexSlot for item id=$item")
     }
 
-    fun hasOption(option : String) = optionName.equals(optionName,true)
+    fun hasOption(option: String) = resolveOptionName().equals(option, ignoreCase = true)
 
-    fun isContainer(type: ContainerType): Boolean = container == type
-
-    fun isInventory(): Boolean = container == ContainerType.INVENTORY
-
-    fun isWornEquipment(): Boolean = container == ContainerType.WORN_EQUIPMENT
-
-    fun isEquipment(): Boolean = container == ContainerType.EQUIPMENT
-
+    fun isContainer(type: ContainerType) = container == type
+    fun isInventory() = container == ContainerType.INVENTORY
+    fun isWornEquipment() = container == ContainerType.WORN_EQUIPMENT
+    fun isEquipment() = container == ContainerType.EQUIPMENT
 }
 
-fun PluginEvent.onItemOption(
-    item: String,
+private fun PluginEvent.onItemOptionInternal(
+    itemMatches: (ItemClickEvent) -> Boolean,
     option: String? = null,
     op: MenuOption? = null,
     action: suspend ItemClickEvent.() -> Unit
 ): EventListener<ItemClickEvent> {
-    require(!(option != null && op != null)) { "You cannot provide both `option` and `op` at the same time." }
-    requireRSCM(RSCMType.OBJTYPES,item)
-    val rscmItem = item.asRSCM()
+    require(!(option != null && op != null)) {
+        "You cannot provide both `option` and `op` at the same time."
+    }
+
     return on<ItemClickEvent> {
         where {
-            this.item == rscmItem &&
+            itemMatches(this) &&
                     (op == null || this.op == op) &&
                     (option == null || runCatching {
                         resolveOptionName().equals(option, ignoreCase = true) ||
@@ -56,6 +54,35 @@ fun PluginEvent.onItemOption(
         then { action(this) }
     }
 }
+
+fun PluginEvent.onItemOption(
+    item: String,
+    option: String? = null,
+    op: MenuOption? = null,
+    action: suspend ItemClickEvent.() -> Unit
+): EventListener<ItemClickEvent> {
+    requireRSCM(RSCMType.OBJTYPES, item)
+    val rscmItem = item.asRSCM()
+    return onItemOptionInternal(
+        itemMatches = { it.item == rscmItem },
+        option = option,
+        op = op,
+        action = action
+    )
+}
+
+fun PluginEvent.onItemOption(
+    item: Int,
+    option: String? = null,
+    op: MenuOption? = null,
+    action: suspend ItemClickEvent.() -> Unit
+): EventListener<ItemClickEvent> =
+    onItemOptionInternal(
+        itemMatches = { it.item == item },
+        option = option,
+        op = op,
+        action = action
+    )
 
 class ItemDropEvent(
     val itemId: Int,
@@ -71,15 +98,53 @@ class EquipEvent(
     player: Player
 ) : ValueEvent<Int>(itemId, player)
 
+class UnequipEvent(
+    val itemId: Int,
+    val slot: Int,
+    val container: ContainerType,
+    player: Player
+) : ValueEvent<Int>(itemId, player)
 
+private fun PluginEvent.onItemEquipInternal(
+    matchesItem: (EquipEvent) -> Boolean,
+    action: suspend EquipEvent.() -> Unit
+) = on<EquipEvent> {
+    where { matchesItem(this) }
+    then { action(this) }
+}
 
 fun PluginEvent.onItemEquip(
     item: String,
     action: suspend EquipEvent.() -> Unit
 ): EventListener<EquipEvent> {
-    requireRSCM(RSCMType.OBJTYPES,item)
-    return on<EquipEvent> {
-        where { item.asRSCM() == itemId }
-        then { action(this) }
-    }
+    requireRSCM(RSCMType.OBJTYPES, item)
+    val rscmItem = item.asRSCM()
+    return onItemEquipInternal(matchesItem = { it.itemId == rscmItem }, action = action)
 }
+
+fun PluginEvent.onItemEquip(
+    item: Int,
+    action: suspend EquipEvent.() -> Unit
+) = onItemEquipInternal(matchesItem = { it.itemId == item }, action = action)
+
+private fun PluginEvent.onItemUnequipInternal(
+    matchesItem: (UnequipEvent) -> Boolean,
+    action: suspend UnequipEvent.() -> Unit
+) = on<UnequipEvent> {
+    where { matchesItem(this) }
+    then { action(this) }
+}
+
+fun PluginEvent.onItemUnequip(
+    item: String,
+    action: suspend UnequipEvent.() -> Unit
+): EventListener<UnequipEvent> {
+    requireRSCM(RSCMType.OBJTYPES, item)
+    val rscmItem = item.asRSCM()
+    return onItemUnequipInternal(matchesItem = { it.itemId == rscmItem }, action = action)
+}
+
+fun PluginEvent.onItemUnequip(
+    item: Int,
+    action: suspend UnequipEvent.() -> Unit
+) = onItemUnequipInternal(matchesItem = { it.itemId == item }, action = action)

@@ -770,6 +770,11 @@ fun Player.getVarbit(id: String): Int {
     return varps.getBit(def.varp, def.startBit, def.endBit)
 }
 
+fun Player.getVarbit(id: Int): Int {
+    val def = ServerCacheManager.getVarbit(id)?: return -1
+    return varps.getBit(def.varp, def.startBit, def.endBit)
+}
+
 fun Player.incrementVarbit(
     id: String,
     amount: Int = 1,
@@ -797,6 +802,18 @@ fun Player.setVarbit(
         message("Varbit: $id was changed from: ${getVarbit(id)} to $value")
     }
     val def = ServerCacheManager.getVarbit(id.asRSCM())!!
+    varps.setBit(def.varp, def.startBit, def.endBit, value)
+}
+
+
+fun Player.setVarbit(
+    id: Int,
+    value: Int,
+) {
+    if (attr.has(CHANGE_LOGGING) && getVarbit(id) != value) {
+        message("Varbit: $id was changed from: ${getVarbit(id)} to $value")
+    }
+    val def = ServerCacheManager.getVarbit(id)!!
     varps.setBit(def.varp, def.startBit, def.endBit, value)
 }
 

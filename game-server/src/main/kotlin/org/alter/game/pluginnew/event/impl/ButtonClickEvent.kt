@@ -18,7 +18,9 @@ enum class ContainerType(val id: String) {
     INVENTORY("interfaces.inventory"),
     WORN_EQUIPMENT("interfaces.wornitems"),
     EQUIPMENT("interfaces.equipment"),
-    SHOP("interfaces.shopmain");
+    SHOP("interfaces.shopmain"),
+    BANK_SIDE("interfaces.bankside"),
+    BANK("interfaces.bankmain");
 
     companion object {
         val logger = KotlinLogging.logger {}
@@ -50,14 +52,6 @@ data class ButtonClickEvent(
 
             if (containerType != null) {
                 when (menuOption) {
-                    MenuOption.OP3 -> {
-                        val itemDef = ServerCacheManager.getItem(item)
-                        if (itemDef?.equipment != null) {
-                            EquipEvent(item, slot, containerType, player)
-                        } else {
-                            ItemClickEvent(item, slot, menuOption, containerType, player)
-                        }
-                    }
                     MenuOption.OP7 -> ItemDropEvent(item, slot, containerType, player)
                     MenuOption.OP10 -> ExamineEvent(item, ExamineEntityType.ITEM, player)
                     else -> ItemClickEvent(item, slot, menuOption, containerType, player)

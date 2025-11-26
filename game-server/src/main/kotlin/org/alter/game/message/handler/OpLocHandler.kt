@@ -1,5 +1,6 @@
 package org.alter.game.message.handler
 
+import dev.openrune.cache.CacheManager
 import net.rsprot.protocol.game.incoming.locs.OpLoc
 import org.alter.game.message.MessageHandler
 import org.alter.game.model.EntityType
@@ -52,7 +53,6 @@ class OpLocHandler : MessageHandler<OpLoc> {
             .firstOrNull { it.internalID == message.id }
             ?: return
 
-        log(client, "Object action %d: id=%d, x=%d, y=%d, movement=%b", message.op, message.id, message.x, message.z, message.controlKey)
 
         client.stopMovement()
         client.closeInterfaceModal()
@@ -68,11 +68,33 @@ class OpLocHandler : MessageHandler<OpLoc> {
 
         client.attr[INTERACTING_OPT_ATTR] = message.op
         client.attr[INTERACTING_OBJ_ATTR] = WeakReference(obj)
+
         val lineOfSightRange = client.world.plugins.getObjInteractionDistance(obj.internalID)
 
+        val transform = obj.getTransform(client)
+        val extraInfo = if (transform != message.id) {
+            val def = CacheManager.getObject(obj.internalID)
+           "multiloc=[${def?.transforms?.joinToString(", ")}]"
+        } else {
+            ""
+        }
+
+        log(
+            client,
+            "Object action %d: old=%d, new=%d, x=%d, y=%d, movement=%b%s",
+            message.op,
+            message.id,
+            transform,
+            message.x,
+            message.z,
+            message.controlKey,
+            extraInfo
+        )
+
         walk(client, obj, lineOfSightRange) {
-            val handledByNewSystem = EventManager.postWithResult(ObjectClickEvent(obj, MenuOption.fromId(message.op), client))
-            val handledByOldSystem = client.world.plugins.executeObject(client, obj.getTransform(client), message.op)
+
+            val handledByNewSystem = EventManager.postWithResult(ObjectClickEvent(obj, MenuOption.fromId(message.op), transform,client))
+            val handledByOldSystem = client.world.plugins.executeObject(client, transform, message.op)
 
             if (!handledByNewSystem && !handledByOldSystem) {
                 client.writeMessage(Entity.NOTHING_INTERESTING_HAPPENS)

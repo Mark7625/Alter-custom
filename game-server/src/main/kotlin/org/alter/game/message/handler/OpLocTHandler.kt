@@ -1,5 +1,6 @@
 package org.alter.game.message.handler
 
+import dev.openrune.cache.CacheManager
 import net.rsprot.protocol.game.incoming.locs.OpLocT
 import org.alter.game.message.MessageHandler
 import org.alter.game.model.EntityType
@@ -67,8 +68,6 @@ class OpLocTHandler : MessageHandler<OpLocT> {
             )
         }
 
-        log(client, "Item on object: item=%d, slot=%d, obj=%d, x=%d, y=%d", sobj, slot, sloc, message.x, message.z)
-
         client.stopMovement()
         client.closeInterfaceModal()
         client.interruptQueues()
@@ -80,10 +79,20 @@ class OpLocTHandler : MessageHandler<OpLocT> {
 
 
         val lineOfSightRange = client.world.plugins.getObjInteractionDistance(obj.internalID)
+        val transform = obj.getTransform(client)
+        val extraInfo = if (transform != message.id) {
+            val def = CacheManager.getObject(obj.internalID)
+            "multiloc=[${def?.transforms?.joinToString(", ")}]"
+        } else {
+            ""
+        }
+
+
+        log(client, "Item on object: item=%d, slot=%d, obj=%d, x=%d, y=%d%s", sobj, slot, sloc, message.x, message.z,extraInfo)
 
         walk(client, obj, lineOfSightRange) {
-            val handledByNewSystem = EventManager.postWithResult( ItemOnObject(item,obj,slot,client))
-            val handledByOldSystem = client.world.plugins.executeItemOnObject(client, obj.getTransform(client), item.id)
+            val handledByNewSystem = EventManager.postWithResult( ItemOnObject(item,obj,slot,transform,client))
+            val handledByOldSystem = client.world.plugins.executeItemOnObject(client,transform, item.id)
 
             if (!handledByNewSystem && !handledByOldSystem) {
                 client.writeMessage(Entity.NOTHING_INTERESTING_HAPPENS)

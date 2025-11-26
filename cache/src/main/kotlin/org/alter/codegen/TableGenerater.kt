@@ -110,6 +110,7 @@ private fun getKotlinType(varType: BaseVarType, optional: Boolean, isList: Boole
         BaseVarType.INTEGER -> INT
         BaseVarType.STRING -> STRING
         BaseVarType.LONG -> LONG
+        else -> LONG
     }
     return if (isList) {
         val elemType = if (optional) baseType.copy(nullable = true) else baseType

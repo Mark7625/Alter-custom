@@ -19,6 +19,7 @@ import org.alter.game.model.queue.*
 import org.alter.game.model.shop.*
 import org.alter.game.model.timer.*
 import org.alter.game.plugin.*
+import org.alter.game.pluginnew.event.impl.ContainerType
 import org.alter.plugins.content.interfaces.equipstats.EquipmentStats.EQUIPMENTSTATS_INTERFACE_ID
 import org.alter.plugins.content.interfaces.equipstats.EquipmentStats.EQUIPMENTSTATS_TAB_INTERFACE_ID
 import org.alter.plugins.content.interfaces.equipstats.EquipmentStats.sendBonuses
@@ -36,7 +37,7 @@ class EquipmentStatsPlugin(
             val item = player.inventory[slot] ?: return@onButton
 
             if (opt == 1) {
-                val result = EquipAction.equip(player, item, inventorySlot = slot)
+                val result = EquipAction.equip(player, item, inventorySlot = slot, ContainerType.WORN_EQUIPMENT)
                 if (result == EquipAction.Result.SUCCESS) {
                     player.calculateBonuses()
                     sendBonuses(player)
@@ -105,7 +106,7 @@ class EquipmentStatsPlugin(
             val opt = player.getInteractingOption()
 
             if (opt == 1) {
-                EquipAction.unequip(player, equipment.id)
+                EquipAction.unequip(player, equipment.id, ContainerType.WORN_EQUIPMENT)
                 player.calculateBonuses()
                 sendBonuses(player)
             } else if (opt == 10) {

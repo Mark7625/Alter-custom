@@ -2,6 +2,7 @@ package org.alter.game.model.entity
 
 import dev.openrune.ServerCacheManager
 import dev.openrune.ServerCacheManager.getObject
+import dev.openrune.cache.CacheManager
 import dev.openrune.definition.type.ObjectType
 import dev.openrune.types.ObjectServerType
 import gg.rsmod.util.toStringHelper
@@ -104,7 +105,7 @@ abstract class GameObject : Entity {
     /**
      * The object id.
      */
-    val id: String
+    var id: String
 
     /**
      * The object id.
@@ -200,21 +201,18 @@ abstract class GameObject : Entity {
      * [ObjectType.transforms] and [ObjectType.varp]/[ObjectType.varbit].
      */
     fun getTransform(player: Player): Int {
-        val world = player.world
-        val def = getDef()
+        val def = CacheManager.getObject(internalID) ?: return internalID
 
-        if (def.varbit != -1) {
-            val varbitDef = ServerCacheManager.getVarbit(def.varbit)?: return internalID
-            val state = player.varps.getBit(varbitDef.varp, varbitDef.startBit, varbitDef.endBit)
-            return def.transforms!![state]
+        val state = when {
+            def.varbit != -1 -> {
+                val varbitDef = ServerCacheManager.getVarbit(def.varbit)
+                varbitDef?.let { player.varps.getBit(it.varp, it.startBit, it.endBit) } ?: return internalID
+            }
+            def.varp != -1 -> player.varps.getState(def.varp)
+            else -> -1
         }
 
-        if (def.varp != -1) {
-            val state = player.varps.getState(def.varp)
-            return def.transforms!![state]
-        }
-
-        return internalID
+        return if (state != -1) def.transforms?.getOrNull(state) ?: internalID else internalID
     }
 
 

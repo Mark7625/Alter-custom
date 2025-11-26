@@ -1,6 +1,7 @@
 package dev.openrune
 
 import dev.openrune.OsrsCacheProvider.*
+import dev.openrune.cache.CacheManager
 import dev.openrune.filesystem.Cache
 import java.nio.BufferUnderflowException
 import dev.openrune.cache.getOrDefault
@@ -31,12 +32,14 @@ object ServerCacheManager {
 
     val logger = KotlinLogging.logger {}
 
-    fun init(cache : Path) {
-        init(Cache.load(cache))
+    fun init(cachePath : Path) {
+        val cache = Cache.load(cachePath)
+        init(cache)
     }
 
     fun init(cache : Cache) {
         ItemRenderDataManager.init()
+        CacheManager.init(OsrsCacheProvider(cache,234))
         try {
             EnumDecoder().load(cache, enums)
             ObjectDecoder().load(cache, objects)

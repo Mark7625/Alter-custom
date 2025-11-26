@@ -18,6 +18,7 @@ import org.alter.game.model.queue.*
 import org.alter.game.model.shop.*
 import org.alter.game.model.timer.*
 import org.alter.game.plugin.*
+import org.alter.game.pluginnew.event.impl.ContainerType
 
 class EquipmentPlugin(
     r: PluginRepository,
@@ -56,7 +57,7 @@ class EquipmentPlugin(
             val opt = player.getInteractingOption()
             when (opt) {
                 1 -> {
-                    val result = EquipAction.unequip(player, equipment.id)
+                    val result = EquipAction.unequip(player, equipment.id, ContainerType.EQUIPMENT)
                     if (equipment == EquipmentType.WEAPON && result == EquipAction.Result.SUCCESS) {
                         player.sendWeaponComponentInformation()
                     }
