@@ -1,10 +1,12 @@
 package org.alter.game.model.attr
 
+import org.alter.game.model.Tile
 import org.alter.game.model.container.ItemTransaction
 import org.alter.game.model.entity.*
 import org.alter.game.model.item.Item
 import org.alter.game.model.shop.Shop
 import java.lang.ref.WeakReference
+import java.util.UUID
 
 /**
  * A decoupled file that holds AttributeKeys that require read-access from our
