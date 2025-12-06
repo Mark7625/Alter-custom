@@ -208,7 +208,7 @@ class World(val gameContext: GameContext, val devContext: DevContext) {
      * not use [ChunkSet]s to iterate through this as it takes quite a bit of
      * time to do so every cycle.
      */
-    private val groundItems = ObjectArrayList<GroundItem>()
+    val groundItems = ObjectArrayList<GroundItem>()
 
     /**
      * Any ground item that should be spawned in the future. For example, when

@@ -7,6 +7,9 @@ import org.alter.game.model.Tile
 import org.alter.game.model.World
 import org.alter.game.model.item.Item
 import org.alter.game.model.item.ItemAttribute
+import org.alter.rscm.RSCM
+import org.alter.rscm.RSCM.asRSCM
+import org.alter.rscm.RSCMType
 import java.util.*
 
 /**
@@ -19,8 +22,17 @@ import java.util.*
  *
  * @author Tom <rspsmods@gmail.com>
  */
-class GroundItem private constructor(val item: Int, var amount: Int, internal var ownerUID: PlayerUID?) : Entity() {
+class GroundItem(val item: Int, var amount: Int, internal var ownerUID: PlayerUID?) : Entity() {
     constructor(item: Int, amount: Int, tile: Tile, owner: Player? = null) : this(item, amount, owner?.uid) {
+        this.tile = tile
+    }
+
+    constructor(item: String, amount: Int, ownerUID: PlayerUID?) : this(item.asRSCM(), amount, ownerUID) {
+        RSCM.requireRSCM(RSCMType.OBJTYPES, item)
+    }
+
+    constructor(item: String, amount: Int, tile: Tile, owner: Player? = null) : this(item.asRSCM(), amount, owner?.uid) {
+        RSCM.requireRSCM(RSCMType.OBJTYPES, item)
         this.tile = tile
     }
 
