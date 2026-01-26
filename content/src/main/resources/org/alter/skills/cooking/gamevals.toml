@@ -1,0 +1,16 @@
+[gamevals.tables]
+cooking_recipes=1236
+
+[gamevals.dbrows]
+cooking_shrimps=982014
+cooking_anchovies=982015
+cooking_sardine=982016
+cooking_herring=982017
+cooking_mackerel=982018
+cooking_trout=982019
+cooking_salmon=982020
+cooking_lobster=982021
+cooking_swordfish=982022
+cooking_shark=982023
+cooking_beef=982024
+cooking_chicken=982025

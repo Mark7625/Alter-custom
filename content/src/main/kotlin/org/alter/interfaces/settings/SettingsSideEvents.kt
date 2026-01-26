@@ -6,6 +6,7 @@ import org.alter.game.model.entity.Player
 import org.alter.game.pluginnew.PluginEvent
 import org.alter.game.pluginnew.event.impl.onButton
 import org.alter.game.pluginnew.event.impl.onIfOpen
+import org.alter.interfaces.ifCloseOverlay
 import org.alter.interfaces.ifOpenOverlay
 import org.alter.interfaces.ifSetEvents
 import org.alter.interfaces.settings.configs.setting_components
@@ -16,6 +17,11 @@ class SettingsSideScript : PluginEvent() {
     override fun init() {
         onIfOpen("interfaces.settings_side") { player.updateIfEvents() }
 
+        onIfOpen("interfaces.settings") {
+            player.ifSetEvents("components.settings:close", 0..0, IfEvent.Op1)
+            player.ifSetEvents("components.settings:dropdown_close", 0..0, IfEvent.Op1)
+        }
+
         SettingsTabView.entries.forEach {
             onButton(it.component) {
                 player.setVarbit("varbits.settings_side_panel_tab",it.varValue)
@@ -24,6 +30,14 @@ class SettingsSideScript : PluginEvent() {
 
         onButton(setting_components.settings_open) {
             player.ifOpenOverlay("interfaces.settings")
+        }
+
+        onButton("components.settings:close") {
+            player.ifCloseOverlay("interfaces.settings")
+        }
+
+        onButton("components.settings:dropdown_close") {
+            player.ifCloseOverlay("interfaces.settings")
         }
     }
 

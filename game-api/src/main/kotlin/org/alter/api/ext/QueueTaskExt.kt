@@ -20,6 +20,7 @@ import org.alter.game.pluginnew.event.impl.DialogMessageOption
 import org.alter.game.pluginnew.event.impl.DialogNpcOpen
 import org.alter.game.pluginnew.event.impl.DialogPlayerOpen
 import org.alter.game.pluginnew.event.impl.DialogSkillMulti
+import org.alter.game.pluginnew.event.EventManager
 import org.alter.rscm.RSCM.asRSCM
 
 
@@ -273,22 +274,44 @@ suspend fun QueueTask.doubleItemMessageBox(
  * Prompts the player with skill menu for making things.
  *
  * @param items
- * The possible [Item] products the menu presents as options.
- * Note| max is 10
+ * The possible product item ids the menu presents as options.
+ * This UI supports up to 18 items (components a..r). Extra items are ignored.
  *
  * @param title
- * Title String to display atop the prompt.
+ * Title string to display atop the prompt.
  *
  * @param maxProducable
  * The possible number of products which could be made from the available input mats.
  * Note| defaults to full inventory as being possible
  *
  * @param logic
- * The logic to be executed upon response using selected [Item] from prompt
- * and quantity as indicated by response slot message.
+ * Callback invoked with `(selectedItemId, quantity)` after the player responds.
+ *
+ * ## ClientScript contract
+ * This function is a server-side wrapper around the clientscript `skillmulti_setup`.
+ * The reference dump for the script (signature + behaviour) is:
+ * https://github.com/Joshua-F/osrs-dumps/blob/ef7ba91167f84b05792373056ad4c9d374041394/script/%5Bclientscript%2Cskillmulti_setup%5D.cs2
+ *
+ * The script expects arguments in this shape:
+ * - `int0`: mode/type (we pass `0`)
+ * - `string0`: payload formatted as `Title|Name1|Name2|...`
+ * - `int1`: max producible (used for quantity button setup/clamping)
+ * - `obj2..obj19`: up to 18 item ids; unused obj slots should be sent as `-1` (treated as null obj)
+ * - `int20`: suggested quantity
+ *
+ * If the argument count/order is wrong, the interface can open but appear blank.
+ *
+ * ## Ordering / race avoidance
+ * The interface must be opened client-side before `skillmulti_setup` runs. Since dialog open events
+ * are posted through an async event bus, we open the interface synchronously (`postAndWait`) to
+ * avoid races where the script runs before the modal exists.
+ *
+ * ## Selection mapping
+ * Mapping from the incoming resume packet (`ResumePauseButton.componentId`) to an item index is
+ * revision-dependent. The current implementation assumes item components start at child id `15`.
  *
  * @return
- * The id of the option chosen. The id can range from [1] inclusive to [9] inclusive.
+ * The selected item id and quantity are delivered to [logic].
  */
 suspend fun QueueTask.produceItemBox(
     player: Player,
@@ -298,24 +321,49 @@ suspend fun QueueTask.produceItemBox(
     logic: Player.(Int, Int) -> Unit,
 ) {
 
-    val itemDefs = items.map { getItem(it) }
+    // `skillmulti_setup` (CS2) takes 18 obj slots (obj2..obj19) and a trailing suggested quantity (int20).
+    // If we call it with the wrong argument count/order, the clientscript can fail and the interface appears blank.
+    val maxSelectable = 18
+    val scriptSlots = 18
+
+    val displayedItems = items.take(maxSelectable)
+    val displayedDefs = displayedItems.mapNotNull { itemId -> getItem(itemId)?.let { def -> itemId to def } }
+    if (displayedDefs.isEmpty()) {
+        player.message("You can't think of any options.")
+        return
+    }
 
     val baseChild = 15
-    val itemArray = Array(15) { -1 }
-    val nameArray = Array(15) { "|" }
-
-    itemDefs.withIndex().forEach {
-        val def = it.value
-        itemArray[it.index] = def!!.id
-        nameArray[it.index] = "|${def.name}"
+    val itemArray = Array(scriptSlots) { -1 }
+    displayedDefs.withIndex().forEach { (index, pair) ->
+        itemArray[index] = pair.second.id
     }
+
+    val nameString = buildString {
+        append(title)
+        displayedDefs.forEach { (_, def) ->
+            append("|")
+            append(def.name)
+        }
+    }
+
+    val suggestedQuantity = 1
 
     player.runClientScript(CommonClientScripts.CHATBOX_RESET_BACKGROUND)
     player.sendTempVarbit("varbits.chatmodal_unclamp", 1)
 
-    DialogSkillMulti(player).post()
+    // Open the interface synchronously; the async event bus can otherwise race and
+    // run the clientscript before the interface exists client-side.
+    EventManager.postAndWait(DialogSkillMulti(player))
 
-    player.runClientScript(CommonClientScripts.SKILL_MULTI_SETUP, 0, "$title${nameArray.joinToString("")}", maxProducable, *itemArray)
+    player.runClientScript(
+        CommonClientScripts.SKILL_MULTI_SETUP,
+        0,
+        nameString,
+        maxProducable,
+        *itemArray,
+        suggestedQuantity
+    )
 
     terminateAction = closeDialog(player)
     waitReturnValue()
@@ -325,11 +373,11 @@ suspend fun QueueTask.produceItemBox(
 
     val child = msg.componentId
 
-    if (child < baseChild || child >= baseChild + items.size) {
+    if (child < baseChild || child >= baseChild + displayedDefs.size) {
         return
     }
 
-    val item = items[child - baseChild]
+    val item = displayedDefs[child - baseChild].first
     val qty = msg.sub
 
     logic(player, item, qty)

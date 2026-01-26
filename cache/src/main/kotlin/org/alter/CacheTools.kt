@@ -18,6 +18,7 @@ import org.alter.codegen.startGeneration
 import org.alter.gamevals.GameValProvider
 import org.alter.gamevals.GamevalDumper
 import org.alter.impl.GameframeTable
+import org.alter.impl.skills.Cooking
 import org.alter.impl.skills.Firemaking
 import org.alter.impl.misc.FoodTable
 import org.alter.impl.skills.PrayerTable
@@ -43,6 +44,7 @@ fun tablesToPack() = listOf(
     TeleTabs.teleTabs(),
     StatComponents.statsComponents(),
     FoodTable.consumableFood(),
+    Cooking.recipes(),
     Firemaking.logs(),
     Woodcutting.trees(),
     Woodcutting.axes(),
