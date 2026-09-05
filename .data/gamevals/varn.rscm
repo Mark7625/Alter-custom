@@ -11,3 +11,4 @@ gorilla_protect_damage=9
 gorilla_protect_hits=10
 gorilla_miss_streak=11
 gorilla_protect_switching=12
+npc_poison_severity=13

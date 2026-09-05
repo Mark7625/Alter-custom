@@ -35,4 +35,7 @@ id = "varn.gorilla_protect_hits"
 id = "varn.gorilla_miss_streak"
 
 [[varn]]
+id = "varn.npc_poison_severity"
+
+[[varn]]
 id = "varn.gorilla_protect_switching"

@@ -33,3 +33,4 @@ potion_moonlight=33
 food_delayed_heal=34
 heart_cooldown=35
 boss_hp_bar_check=114
+npc_poison=36
