@@ -9,6 +9,7 @@ import dev.or2.central.account.Rights
 import jakarta.inject.Inject
 import kotlin.math.max
 import kotlin.math.min
+import org.rsmod.api.combat.commons.magic.Spellbook
 import org.rsmod.api.config.Constants
 import org.rsmod.api.invtx.invAdd
 import org.rsmod.api.player.cheat.adminGodMode
@@ -30,6 +31,7 @@ import org.rsmod.api.player.stat.statSub
 import org.rsmod.api.player.ui.PlayerInterfaceUpdates
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.script.onCommand
+import org.rsmod.api.spells.autocast.MagicSpellbookManager
 import org.rsmod.game.cheat.Cheat
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.player.Appearance
@@ -40,8 +42,8 @@ import org.rsmod.plugin.scripts.ScriptContext
 
 /**
  * An administrator cheat menu: a single `::cheat` command that opens a nested menu for spawning
- * objs, teleporting, restoring stats, editing skills and appearance, and toggling the god mode /
- * one-hit-kill / no-rune-cost / no-clip cheats.
+ * objs, teleporting, restoring stats, editing skills and appearance, switching spellbook, and
+ * toggling the god mode / one-hit-kill / no-rune-cost / no-clip cheats.
  *
  * Everything is presented through the chatbox option dialogue ([ProtectedAccess.choice2] and
  * friends) rather than [ProtectedAccess.menu], which opens a main modal over the middle of the
@@ -52,11 +54,18 @@ import org.rsmod.plugin.scripts.ScriptContext
  * Every toggle is backed by an attribute in `org.rsmod.api.player.cheat`, so the cheats stay active
  * until switched off (or until the player logs out) rather than only for the duration of the menu.
  */
-class CheatMenuScript @Inject constructor(private val protectedAccess: ProtectedAccessLauncher) :
-    PluginScript() {
+class CheatMenuScript
+@Inject
+constructor(
+    private val protectedAccess: ProtectedAccessLauncher,
+    private val spellbooks: MagicSpellbookManager,
+) : PluginScript() {
     override fun ScriptContext.startup() {
         adminCommand("cheat", "Open the admin cheat menu", ::openMenu)
         adminCommand("cheatmenu", "Open the admin cheat menu", ::openMenu)
+        adminCommand("spellbook", "Switch spellbook: standard, ancient, lunar or arceuus") {
+            switchSpellbook(this)
+        }
         adminCommand("ohk", "Toggle one-hit-kill on npcs", ::toggleOneHitKill)
         adminCommand("norunes", "Toggle casting spells without runes", ::toggleInfiniteRunes)
         adminCommand("noclip", "Toggle walking through walls and objects", ::toggleNoClip)
@@ -100,6 +109,17 @@ class CheatMenuScript @Inject constructor(private val protectedAccess: Protected
         with(cheat) {
             player.fullRestore()
             player.mes("Stats, hitpoints, prayer points and run energy restored.")
+        }
+
+    private fun switchSpellbook(cheat: Cheat) =
+        with(cheat) {
+            val query = args.firstOrNull().orEmpty()
+            val spellbook = findSpellbook(query)
+            if (spellbook == null) {
+                player.mes("Usage: ::spellbook standard|ancient|lunar|arceuus")
+                return@with
+            }
+            player.setSpellbook(spellbook)
         }
 
     /* Chatbox dialogue plumbing */
@@ -179,6 +199,10 @@ class CheatMenuScript @Inject constructor(private val protectedAccess: Protected
                             Choice("Teleport...", MainOption.Teleport),
                             Choice("Skills and experience...", MainOption.Skills),
                             Choice("Items and appearance...", MainOption.Items),
+                            Choice(
+                                "Spellbook: ${spellbookName(spellbooks.activeSpellbook(player))}",
+                                MainOption.Spellbook,
+                            ),
                         ),
                     exitLabel = "Close",
                 ) ?: return
@@ -187,6 +211,7 @@ class CheatMenuScript @Inject constructor(private val protectedAccess: Protected
                 MainOption.Teleport -> teleportMenu()
                 MainOption.Skills -> skillsMenu()
                 MainOption.Items -> itemsMenu()
+                MainOption.Spellbook -> spellbookMenu()
             }
         }
     }
@@ -573,6 +598,32 @@ class CheatMenuScript @Inject constructor(private val protectedAccess: Protected
         }
     }
 
+    /* Spellbook */
+
+    /**
+     * Switches the player's active spellbook. [MagicSpellbookManager] also clears any autocast
+     * selection, since the autocast spell belongs to the previous book.
+     */
+    private suspend fun ProtectedAccess.spellbookMenu() {
+        val current = spellbooks.activeSpellbook(player)
+        val choices =
+            Spellbook.entries.map { book ->
+                val label = if (book == current) "${spellbookName(book)} (current)" else spellbookName(book)
+                Choice(label, book)
+            }
+        val chosen = select("Which spellbook?", choices) ?: return
+        player.setSpellbook(chosen)
+    }
+
+    private fun Player.setSpellbook(spellbook: Spellbook) {
+        when (val result = spellbooks.setSpellbook(this, spellbook)) {
+            is MagicSpellbookManager.ChangeResult.Changed ->
+                mes("Spellbook switched to ${spellbookName(result.current)}.")
+            is MagicSpellbookManager.ChangeResult.Unchanged ->
+                mes("Your spellbook is already ${spellbookName(result.current)}.")
+        }
+    }
+
     /* Player helpers */
 
     private fun Player.fullRestore() {
@@ -673,6 +724,7 @@ class CheatMenuScript @Inject constructor(private val protectedAccess: Protected
         Teleport,
         Skills,
         Items,
+        Spellbook,
     }
 
     private enum class ToggleOption {
@@ -778,6 +830,25 @@ class CheatMenuScript @Inject constructor(private val protectedAccess: Protected
         fun enabledText(enabled: Boolean): String = if (enabled) "enabled" else "disabled"
 
         fun runeCostText(infinite: Boolean): String = if (infinite) "removed" else "restored"
+
+        fun spellbookName(spellbook: Spellbook): String =
+            when (spellbook) {
+                Spellbook.Standard -> "Standard"
+                Spellbook.Ancients -> "Ancient"
+                Spellbook.Lunars -> "Lunar"
+                Spellbook.Arceuus -> "Arceuus"
+            }
+
+        /** Matches a typed spellbook name: `ancient`, `ancients`, `lunar`, `arc`... */
+        fun findSpellbook(input: String): Spellbook? {
+            val query = input.trim().lowercase()
+            if (query.isEmpty()) {
+                return null
+            }
+            return Spellbook.entries.firstOrNull { spellbookName(it).lowercase() == query }
+                ?: Spellbook.entries.firstOrNull { it.name.lowercase() == query }
+                ?: Spellbook.entries.firstOrNull { spellbookName(it).lowercase().startsWith(query) }
+        }
 
         fun bodyTypeName(bodyType: Int): String =
             if (bodyType == Appearance.BODY_TYPE_B) "B" else "A"

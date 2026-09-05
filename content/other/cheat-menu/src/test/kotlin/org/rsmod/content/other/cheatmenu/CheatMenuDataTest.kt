@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
+import org.rsmod.api.combat.commons.magic.Spellbook
 import org.rsmod.api.player.cheat.adminGodMode
 import org.rsmod.api.player.cheat.adminInfiniteRunes
 import org.rsmod.api.player.cheat.adminMaxHit
@@ -105,6 +106,24 @@ class CheatMenuDataTest {
             CheatMenuScript.findDestination("exchange")?.name,
             "Substring should match.",
         )
+    }
+
+    @Test
+    fun `spellbook search accepts display names, enum names and prefixes`() {
+        assertEquals(Spellbook.Standard, CheatMenuScript.findSpellbook("standard"))
+        assertEquals(Spellbook.Ancients, CheatMenuScript.findSpellbook("Ancient"))
+        assertEquals(Spellbook.Ancients, CheatMenuScript.findSpellbook("ancients"))
+        assertEquals(Spellbook.Lunars, CheatMenuScript.findSpellbook("lun"))
+        assertEquals(Spellbook.Arceuus, CheatMenuScript.findSpellbook("arc"))
+        assertNull(CheatMenuScript.findSpellbook(""))
+        assertNull(CheatMenuScript.findSpellbook("necromancy"))
+    }
+
+    @Test
+    fun `every spellbook has a distinct display name`() {
+        val names = Spellbook.entries.map(CheatMenuScript::spellbookName)
+        assertEquals(names.size, names.toSet().size)
+        assertTrue(names.none { it.contains('|') })
     }
 
     @Test

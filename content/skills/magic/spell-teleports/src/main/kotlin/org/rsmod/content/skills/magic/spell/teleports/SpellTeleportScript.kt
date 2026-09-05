@@ -8,10 +8,10 @@ import dev.openrune.types.ItemServerType
 import dev.openrune.types.aconverted.interf.IfButtonOp
 import jakarta.inject.Inject
 import org.rsmod.api.area.checker.AreaChecker
-import org.rsmod.api.config.refs.params
 import org.rsmod.api.combat.commons.magic.MagicSpell
 import org.rsmod.api.combat.manager.MagicRuneManager
 import org.rsmod.api.combat.manager.MagicRuneManager.Companion.isFailure
+import org.rsmod.api.config.refs.params
 import org.rsmod.api.invtx.invTransaction
 import org.rsmod.api.invtx.select
 import org.rsmod.api.player.hook.PlayerTeleportValidator
@@ -267,6 +267,9 @@ constructor(
         }
 
         fun canCast(access: ProtectedAccess): Boolean {
+            if (!ENFORCE_QUEST_REQUIREMENTS) {
+                return true
+            }
             val questKey = requiredQuest ?: return true
             val quest = Quest.get(questKey)
             if (quest?.isQuestCompleted(access.player) == true) {
@@ -284,6 +287,12 @@ constructor(
     )
 
     private companion object {
+        /**
+         * Quest requirements on spells are recorded per spell but not enforced: every spell is
+         * castable without its quest. Flip this to lock them again.
+         */
+        private const val ENFORCE_QUEST_REQUIREMENTS = false
+
         private val TeleportStartAnim = RSCM.getReverseMapping(RSCMType.SEQ, 714)
         private val TeleportEndAnim = RSCM.getReverseMapping(RSCMType.SEQ, 715)
         private val TeleportSpotanim = RSCM.getReverseMapping(RSCMType.SPOTANIM, 111)
