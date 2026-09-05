@@ -54,7 +54,44 @@ class AnimationFamiliesTest {
             "thzaar_magic_attack",
             "maiden_idle",
             "maiden_attack",
+            "ork_update_weapon_ready",
+            "ork_update_weapon_walk",
+            "ork_update_double_grip_attack",
+            "ork_update_defend",
+            "ork_update_death",
+            "olaf2_undead_ready",
+            "olaf2_undead_walk",
+            "olaf2_undead_sword_lunge",
+            "olaf2_undead_sword_def",
+            "mummy_update_soldier_ready",
+            "mummy_update_civillian_attack",
+            "mummy_update_sword_attack",
+            "mummy_update_defend",
+            "mummy_update_death",
         )
+
+    @Test
+    fun `a stance word before the ready marker still finds the family`() {
+        val ork = AnimationFamilies.resolve("ork_update_weapon_ready", sequences)
+        assertEquals("ork_update_double_grip_attack", ork.attack)
+        assertEquals("ork_update_defend", ork.defend)
+        assertEquals("ork_update_death", ork.death)
+    }
+
+    @Test
+    fun `a lunge or slash counts as the attack when the family has no attack member`() {
+        val undead = AnimationFamilies.resolve("olaf2_undead_ready", sequences)
+        assertEquals("olaf2_undead_sword_lunge", undead.attack)
+        assertEquals("olaf2_undead_sword_def", undead.defend)
+    }
+
+    @Test
+    fun `two equally plausible named attacks stay unresolved`() {
+        val mummy = AnimationFamilies.resolve("mummy_update_soldier_ready", sequences)
+        assertNull(mummy.attack)
+        assertEquals("mummy_update_defend", mummy.defend)
+        assertEquals("mummy_update_death", mummy.death)
+    }
 
     @Test
     fun `plain family resolves every member`() {

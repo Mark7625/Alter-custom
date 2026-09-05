@@ -9,4 +9,19 @@
 #     { id = "npc.wizard", attack_anim = "seq.human_caststrike", proj_travel = "spotanim.firestrike_travel" },
 
 npc = [
+    # Dark wizards cast their own spells (content/generic/generic-npcs DarkWizardScript); these keep
+    # the generic caster data on the right element for anything that reads the params directly.
+    { id = "npc.young_dark_wizard", proj_travel = "spotanim.waterstrike_travel" },
+    { id = "npc.fai_dark_wizard_young_1", proj_travel = "spotanim.waterstrike_travel" },
+    { id = "npc.fai_dark_wizard_young_2", proj_travel = "spotanim.waterstrike_travel" },
+    { id = "npc.qip_ds_young_dark_wizard1", proj_travel = "spotanim.waterstrike_travel" },
+    { id = "npc.qip_ds_young_dark_wizard2", proj_travel = "spotanim.waterstrike_travel" },
+    { id = "npc.bearded_dark_wizard", proj_travel = "spotanim.earthstrike_travel" },
+    { id = "npc.fai_dark_wizard_old_1", proj_travel = "spotanim.earthstrike_travel" },
+    { id = "npc.fai_dark_wizard_old_2", proj_travel = "spotanim.earthstrike_travel" },
+    { id = "npc.qip_ds_young_dark_wizard3", proj_travel = "spotanim.earthstrike_travel" },
+    { id = "npc.qip_ds_young_dark_wizard4", proj_travel = "spotanim.earthstrike_travel" },
+    # Barrows brothers whose animation sets do not follow a family the generator understands.
+    { id = "npc.barrows_guthan", attack_anim = "seq.barrow_guthan_crush", attack_type = "category.attacktype_crush", attack_sound = 2562, defend_anim = "seq.barrow_guthan_defend" },
+    { id = "npc.barrows_torag", attack_anim = "seq.barrow_torag_crush", attack_type = "category.attacktype_crush", attack_sound = 2567, defend_anim = "seq.human_blunt_block" },
 ]

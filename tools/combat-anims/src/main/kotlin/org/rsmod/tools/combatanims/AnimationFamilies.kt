@@ -17,6 +17,13 @@ object AnimationFamilies {
             get() = attack == null && defend == null && death == null
     }
 
+    /**
+     * Suffixes that mark a sequence as an attack when the family does not use `_attack`:
+     * `olaf2_undead_sword_lunge`, `barrow_dharok_slash`.
+     */
+    private val attackWords =
+        listOf("_attack", "_slash", "_lunge", "_stab", "_crush", "_hack", "_punch")
+
     /** Ready-animation markers, longest first so `_ready_update` wins over `_ready`. */
     private val readyMarkers =
         listOf("_just_ready_update", "_ready_update", "_readyanim", "_ready", "_idle", "_stand")
@@ -48,6 +55,13 @@ object AnimationFamilies {
             if (variant.isNotEmpty()) {
                 out += prefix to ""
             }
+            // The variant can also sit before the marker: `ork_update_weapon_ready` pairs with
+            // `ork_update_defend`, and `mummy_update_soldier_ready` with `mummy_update_death`.
+            val infix = prefix.lastIndexOf('_')
+            if (infix > 0 && variant.isEmpty()) {
+                out += prefix.substring(0, infix) to prefix.substring(infix)
+                out += prefix.substring(0, infix) to ""
+            }
         }
         return out.distinct()
     }
@@ -65,6 +79,13 @@ object AnimationFamilies {
                 "${prefix}_attack_melee",
                 "${prefix}_melee$variant",
                 "${prefix}_melee",
+                "${prefix}_slash$variant",
+                "${prefix}_slash",
+                "${prefix}_crush",
+                "${prefix}_stab",
+                "${prefix}_lunge",
+                "${prefix}_hack",
+                "${prefix}_punch",
             )
         exact.firstOrNull { it in sequences }?.let {
             return it
@@ -75,7 +96,7 @@ object AnimationFamilies {
         val candidates =
             sequences.filter { seq ->
                 seq.startsWith("${prefix}_") &&
-                    (seq.startsWith("${prefix}_attack") || seq.endsWith("_attack")) &&
+                    (seq.startsWith("${prefix}_attack") || attackWords.any { seq.endsWith(it) }) &&
                     !seq.endsWith("_transparent") &&
                     !seq.contains("_spotanim") &&
                     !seq.contains("_projanim") &&
@@ -107,6 +128,9 @@ object AnimationFamilies {
                 "${prefix}_parry",
                 "${prefix}_def",
                 "${prefix}_defence",
+                "${prefix}_sword_def",
+                "${prefix}_sword_defend",
+                "${prefix}_sword_block",
             )
         return exact.firstOrNull { it in sequences }
     }

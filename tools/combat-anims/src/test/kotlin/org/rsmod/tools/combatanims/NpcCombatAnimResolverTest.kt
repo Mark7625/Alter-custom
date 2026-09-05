@@ -16,6 +16,15 @@ class NpcCombatAnimResolverTest {
             "giant_update_basic_attack",
             "giant_update_basic_defend",
             "giant_update_basic_death",
+            "human_dh_weapon_ready",
+            "human_dhsword_chop",
+            "human_dhsword_block",
+            "human_transready",
+            "human_trans_axe_chop",
+            "human_trans_axe_def",
+            "human_staffready",
+            "human_staff_pound",
+            "human_staff_block",
         )
 
     private val sword =
@@ -77,6 +86,17 @@ class NpcCombatAnimResolverTest {
             defendAnim = "human_stafforb_block",
         )
 
+    private val spear =
+        sword.copy(
+            rscm = "obj.bronze_spear",
+            category = WeaponCategory.Spear,
+            attackAnim = "human_spear_spike",
+            attackSound = 2562,
+            defendAnim = "human_spear_block",
+            lungeAnim = "human_spear_lunge",
+            lungeSound = 2555,
+        )
+
     private val kiteshield = ShieldFacts("obj.iron_kiteshield", "Iron kiteshield")
     private val defender = ShieldFacts("obj.iron_defender", "Iron defender")
 
@@ -96,7 +116,9 @@ class NpcCombatAnimResolverTest {
     @Test
     fun `battleaxe and mace use their own animations and attack types`() {
         val axe = NpcCombatAnimResolver.resolve(human("Barbarian"), battleaxe, null, sequences)!!
-        assertEquals("human_axe_hack", axe.attackAnim)
+        // Axe npcs chop rather than hack; the chop is the same stance's sound.
+        assertEquals("human_axe_chop", axe.attackAnim)
+        assertEquals(2498, axe.attackSound)
         assertEquals("category.attacktype_slash", axe.attackType)
         assertEquals("human_axe_block", axe.defendAnim)
 
@@ -130,6 +152,87 @@ class NpcCombatAnimResolverTest {
         assertEquals(7, result.attackRange)
         // The bow's bare-handed block is not worth writing; the default already is that.
         assertNull(result.defendAnim)
+    }
+
+    @Test
+    fun `a halberd npc lunges like a spear`() {
+        // Halberds spike but have no lunge stance of their own; they borrow the spear's.
+        val halberd =
+            spear.copy(
+                rscm = "obj.bronze_halberd",
+                category = WeaponCategory.Polearm,
+                lungeAnim = null,
+                lungeSound = null,
+            )
+        val result = NpcCombatAnimResolver.resolve(human("Guard", attack = 20), halberd, null, sequences)!!
+        assertEquals("human_spear_lunge", result.attackAnim)
+        assertEquals(2555, result.attackSound)
+    }
+
+    @Test
+    fun `a spear npc lunges with the lunge sound`() {
+        val guard = human("Guard", attack = 20)
+        val result = NpcCombatAnimResolver.resolve(guard, spear, null, sequences)!!
+        assertEquals("human_spear_lunge", result.attackAnim)
+        assertEquals(2555, result.attackSound)
+        assertEquals("category.attacktype_stab", result.attackType)
+        assertEquals("human_spear_block", result.defendAnim)
+    }
+
+    @Test
+    fun `a two-handed stance with no item weapon chops with a two-handed weapon`() {
+        val barbarian = human("Barbarian", attack = 20).copy(readyAnim = "human_dh_weapon_ready")
+        val result = NpcCombatAnimResolver.resolve(barbarian, null, null, sequences)!!
+        assertEquals("human_dhsword_chop", result.attackAnim)
+        assertEquals("category.attacktype_slash", result.attackType)
+        assertEquals(2502, result.attackSound)
+        assertEquals("human_dhsword_block", result.defendAnim)
+        assertEquals("weapon:stance:human_dh_weapon_ready", result.source)
+    }
+
+    @Test
+    fun `an ice warrior in the transformed stance chops with its sword`() {
+        val warrior = human("Ice warrior", attack = 40).copy(readyAnim = "human_transready")
+        val result = NpcCombatAnimResolver.resolve(warrior, null, null, sequences)!!
+        assertEquals("human_trans_axe_chop", result.attackAnim)
+        assertEquals("human_trans_axe_def", result.defendAnim)
+    }
+
+    @Test
+    fun `a staff stance bashes unless the npc is a caster`() {
+        val man = human("Man", attack = 5).copy(readyAnim = "human_staffready")
+        val bash = NpcCombatAnimResolver.resolve(man, null, null, sequences)!!
+        assertEquals("human_staff_pound", bash.attackAnim)
+        assertEquals("category.attacktype_crush", bash.attackType)
+
+        val wizard = human("Wizard", attack = 5, magic = 20).copy(readyAnim = "human_staffready")
+        val cast = NpcCombatAnimResolver.resolve(wizard, null, null, sequences)!!
+        assertEquals("human_caststrike", cast.attackAnim)
+        assertEquals("category.attacktype_magic", cast.attackType)
+    }
+
+    @Test
+    fun `a caster is recognised by its gameval name when the display name says nothing`() {
+        val seer =
+            human("Fremennik warband seer", attack = 60, magic = 60)
+                .copy(rscm = "npc.colosseum_warbander_mage_male", readyAnim = "human_staffready")
+        val result = NpcCombatAnimResolver.resolve(seer, null, null, sequences)!!
+        assertEquals("human_caststrike", result.attackAnim)
+        assertEquals("category.attacktype_magic", result.attackType)
+    }
+
+    @Test
+    fun `a two-handed stance is ignored when the ready animation is unknown to the cache`() {
+        val barbarian = human("Barbarian", attack = 20).copy(readyAnim = "human_dh_weapon_ready")
+        val without = sequences - "human_dhsword_chop"
+        assertNull(NpcCombatAnimResolver.resolve(barbarian, null, null, without))
+    }
+
+    @Test
+    fun `npc-only weapon models map to the two-handed chop set`() {
+        val weapon = NpcCombatAnimResolver.npcOnlyWeapons.getValue(11793)
+        assertEquals(WeaponCategory.TwoHandedSword, weapon.category)
+        assertEquals("human_dhsword_chop", weapon.attackAnim)
     }
 
     @Test

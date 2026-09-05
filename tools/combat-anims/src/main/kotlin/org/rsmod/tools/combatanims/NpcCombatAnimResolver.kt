@@ -25,6 +25,9 @@ data class WeaponFacts(
     val projTravel: String?,
     val projType: String?,
     val attackRange: Int?,
+    /** The weapon's third-stance attack (`attack_anim_stance3`): the spear lunge, the axe smash. */
+    val lungeAnim: String? = null,
+    val lungeSound: Int? = null,
 )
 
 /** The shield an npc is holding, identified by its wear model. */
@@ -60,7 +63,10 @@ data class NpcCombatAnims(
  *   they hold: the weapon's own `attack_anim_stance1`, `defend_anim`, sound and projectile. A
  *   shield overrides the block animation, as it does for players. Casters - staff or bare-handed
  *   npcs whose magic level leads, or whose name says wizard, druid, necromancer and so on - cast
- *   a strike spell instead of hitting with the staff.
+ *   a strike spell instead of hitting with the staff. A humanoid whose weapon is not an item at
+ *   all (the barbarians' giant axes, great hammers and two-handed swords, the ice warriors'
+ *   swords) is recognised by its ready stance instead - see [stanceWeapons] - so it swings
+ *   rather than punches.
  * - **Monsters** get their animation family from the name of their ready animation, via
  *   [AnimationFamilies].
  *
@@ -81,12 +87,103 @@ object NpcCombatAnimResolver {
     private const val DEFAULT_RANGED_RANGE = 7
     private const val DEFAULT_MAGIC_RANGE = 7
 
+    /** The player sounds for the weapon kinds the stance fallbacks stand in for. */
+    private const val TWO_HANDED_SOUND = 2503
+    private const val TWO_HANDED_CHOP_SOUND = 2502
+    private const val AXE_SOUND = 2498
+    private const val STAFF_SOUND = 2555
+
+    /** Weapon categories whose npcs use the third-stance (lunge) attack rather than the first. */
+    private val lungeCategories = setOf(WeaponCategory.Spear, WeaponCategory.Polearm)
+
+    /**
+     * The spear spike; any weapon that spikes lunges instead. Halberds spike but have no lunge
+     * stance of their own, so they borrow the spear's.
+     */
+    private const val SPEAR_SPIKE = "human_spear_spike"
+    private const val SPEAR_LUNGE = "human_spear_lunge"
+    private const val SPEAR_LUNGE_SOUND = 2555
+
+    /** Axe npcs chop rather than hack. */
+    private const val AXE_HACK = "human_axe_hack"
+    private const val AXE_CHOP = "human_axe_chop"
+
     /** Ready animations that are humanoid but do not start with `human_`. */
     private val humanoidReadyAnims =
         setOf("barrow_dharok_ready", "wanted_ranger_ready", "walk_walkingstick")
 
+    /**
+     * Player-skeleton weapons that exist only as npc models, so no item wear model matches them.
+     * These are the weapons the barbarian villagers, Gunthor and the skeleton heavies are drawn
+     * with: giant axes, great hammers and two-handed swords, all swung with the two-handed sword
+     * animations.
+     */
+    val npcOnlyWeapons: Map<Int, WeaponFacts> =
+        listOf(11789, 11790, 11792, 11793).associateWith { model ->
+            twoHanded("model:$model")
+        }
+
+    /**
+     * What a humanoid with no recognisable weapon is holding, going by the stance it stands in.
+     * `human_dh_weapon_ready` is the two-handed stance, `human_transready` the ice and earth
+     * warriors' sword stance, and `human_staffready` a staff (used only when the npc is not a
+     * caster, who would cast instead).
+     */
+    private val stanceWeapons: Map<String, WeaponFacts> =
+        mapOf(
+            "human_dh_weapon_ready" to twoHanded("stance:human_dh_weapon_ready"),
+            "human_transready" to
+                WeaponFacts(
+                    rscm = "stance:human_transready",
+                    category = WeaponCategory.Axe,
+                    attackAnim = "human_trans_axe_chop",
+                    attackSound = AXE_SOUND,
+                    defendAnim = "human_trans_axe_def",
+                    projTravel = null,
+                    projType = null,
+                    attackRange = null,
+                ),
+            "human_staffready" to
+                WeaponFacts(
+                    rscm = "stance:human_staffready",
+                    category = WeaponCategory.Staff,
+                    attackAnim = "human_staff_pound",
+                    attackSound = STAFF_SOUND,
+                    defendAnim = "human_staff_block",
+                    projTravel = null,
+                    projType = null,
+                    attackRange = null,
+                ),
+            "barrow_dharok_ready" to
+                WeaponFacts(
+                    rscm = "stance:barrow_dharok_ready",
+                    category = WeaponCategory.Axe,
+                    attackAnim = "barrow_dharok_slash",
+                    attackSound = TWO_HANDED_SOUND,
+                    defendAnim = null,
+                    projTravel = null,
+                    projType = null,
+                    attackRange = null,
+                ),
+        )
+
+    /** Giant axes, great hammers and two-handed swords all chop with the two-handed chop. */
+    private fun twoHanded(rscm: String): WeaponFacts =
+        WeaponFacts(
+            rscm = rscm,
+            category = WeaponCategory.TwoHandedSword,
+            attackAnim = "human_dhsword_chop",
+            attackSound = TWO_HANDED_CHOP_SOUND,
+            defendAnim = "human_dhsword_block",
+            projTravel = null,
+            projType = null,
+            attackRange = null,
+        )
+
     private val casterNames =
-        Regex("wizard|mage|magus|druid|necromancer|sorcer|warlock|witch|shaman|mystic|priest|cultist")
+        Regex(
+            "wizard|mage|magus|druid|necromancer|sorcer|warlock|witch|shaman|mystic|priest|cultist|seer"
+        )
 
     private val rangedNames = Regex("archer|ranger|bowman|marksman")
 
@@ -156,11 +253,27 @@ object NpcCombatAnimResolver {
         }
         val result =
             if (isHumanoid(npc, weapon, shield)) {
-                resolveHumanoid(npc, weapon, shield, sequences)
+                resolveHumanoid(npc, weapon ?: stanceWeapon(npc, sequences), shield, sequences)
             } else {
                 resolveMonster(npc, sequences)
             }
         return result?.takeUnless { it.isEmpty }
+    }
+
+    /**
+     * The weapon a humanoid with no item weapon is holding, judged by its stance. Casters keep
+     * their hands free so they cast instead; everyone else in a weapon stance swings it.
+     */
+    private fun stanceWeapon(npc: NpcFacts, sequences: Set<String>): WeaponFacts? {
+        val ready = npc.readyAnim ?: return null
+        val weapon = stanceWeapons[ready] ?: return null
+        if (isCaster(npc, null)) {
+            return null
+        }
+        if (weapon.attackAnim != null && weapon.attackAnim !in sequences) {
+            return null
+        }
+        return weapon
     }
 
     fun isHumanoid(npc: NpcFacts, weapon: WeaponFacts?, shield: ShieldFacts?): Boolean {
@@ -195,7 +308,11 @@ object NpcCombatAnimResolver {
         }
         // Strictly ahead: a villager with every stat at 1 is not a caster.
         val magicLeads = npc.magic > npc.attack && npc.magic > npc.ranged
-        return magicLeads || casterNames.containsMatchIn(npc.name.lowercase())
+        // The gameval name often says what the display name does not: `colosseum_warbander_mage`
+        // is shown as "Fremennik warband seer".
+        return magicLeads ||
+            casterNames.containsMatchIn(npc.name.lowercase()) ||
+            casterNames.containsMatchIn(npc.rscm.lowercase())
     }
 
     private fun isUnarmedRanger(npc: NpcFacts): Boolean =
@@ -269,15 +386,27 @@ object NpcCombatAnimResolver {
             else -> null to null
         }
 
-    private fun melee(npc: NpcFacts, weapon: WeaponFacts, shieldBlock: String?): NpcCombatAnims =
-        NpcCombatAnims(
+    private fun melee(npc: NpcFacts, weapon: WeaponFacts, shieldBlock: String?): NpcCombatAnims {
+        // Spear and halberd npcs lunge rather than spike, and axe npcs chop rather than hack,
+        // each with that stance's own sound so the audio matches the swing.
+        val lunge = weapon.category in lungeCategories || weapon.attackAnim == SPEAR_SPIKE
+        val chop = weapon.category == WeaponCategory.Axe && weapon.attackAnim == AXE_HACK
+        val attackAnim =
+            when {
+                lunge -> weapon.lungeAnim ?: SPEAR_LUNGE
+                chop -> AXE_CHOP
+                else -> weapon.attackAnim
+            }
+        val attackSound = if (lunge) weapon.lungeSound ?: SPEAR_LUNGE_SOUND else weapon.attackSound
+        return NpcCombatAnims(
             npc = npc.rscm,
             source = "weapon:${weapon.rscm}",
-            attackAnim = weapon.attackAnim,
+            attackAnim = attackAnim,
             attackType = attackTypes[weapon.category] ?: TYPE_CRUSH,
-            attackSound = weapon.attackSound,
+            attackSound = attackSound,
             defendAnim = shieldBlock ?: weaponBlock(weapon),
         )
+    }
 
     private fun weaponBlock(weapon: WeaponFacts): String? =
         weapon.defendAnim ?: categoryBlocks[weapon.category]

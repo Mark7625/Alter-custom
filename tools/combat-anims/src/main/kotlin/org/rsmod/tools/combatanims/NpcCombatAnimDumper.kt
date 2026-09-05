@@ -76,7 +76,9 @@ class NpcCombatAnimDumper(private val root: Path) {
                     hasAttackAnim = server.paramMap?.contains(params.attack_anim) == true,
                 )
             val models = client.models.orEmpty()
-            val weapon = models.firstNotNullOfOrNull(weaponsByModel::get)
+            val weapon =
+                models.firstNotNullOfOrNull(weaponsByModel::get)
+                    ?: models.firstNotNullOfOrNull(NpcCombatAnimResolver.npcOnlyWeapons::get)
             val shield = models.firstNotNullOfOrNull(shieldsByModel::get)
             val resolved = NpcCombatAnimResolver.resolve(facts, weapon, shield, sequences) ?: continue
             results += resolved
@@ -95,6 +97,8 @@ class NpcCombatAnimDumper(private val root: Path) {
     private fun indexWeapons(clientItems: Map<Int, ItemType>): Map<Int, WeaponFacts> {
         val stanceAttackAnim = "param.attack_anim_stance1".asRSCM(RSCMType.PARAM)
         val stanceAttackSound = "param.attack_sound_stance1".asRSCM(RSCMType.PARAM)
+        val lungeAttackAnim = "param.attack_anim_stance3".asRSCM(RSCMType.PARAM)
+        val lungeAttackSound = "param.attack_sound_stance3".asRSCM(RSCMType.PARAM)
         val index = HashMap<Int, WeaponFacts>()
         for ((id, server) in ServerCacheManager.getItems().toSortedMap()) {
             if (server.wearpos1 != Wearpos.RightHand.slot) {
@@ -115,6 +119,8 @@ class NpcCombatAnimDumper(private val root: Path) {
                     projTravel = paramName(server, params.proj_travel.id, RSCMType.SPOTANIM),
                     projType = paramName(server, params.proj_type.id, RSCMType.PROJANIM),
                     attackRange = paramInt(server, params.attackrange.id),
+                    lungeAnim = paramName(server, lungeAttackAnim, RSCMType.SEQ),
+                    lungeSound = paramInt(server, lungeAttackSound),
                 )
             for (model in wearModels(client)) {
                 index.putIfAbsent(model, facts)
