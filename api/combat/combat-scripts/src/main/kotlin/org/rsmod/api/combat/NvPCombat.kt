@@ -18,7 +18,6 @@ import org.rsmod.api.npc.access.StandardNpcAccess
 import org.rsmod.api.npc.isInCombat
 import org.rsmod.api.player.hit.modifier.PlayerHitModifier
 import org.rsmod.api.player.isValidTarget
-import org.rsmod.api.player.output.soundSynth
 import org.rsmod.api.repo.world.WorldRepository
 import org.rsmod.game.entity.Player
 import org.rsmod.game.hit.HitType
@@ -112,7 +111,10 @@ constructor(
         val attackAnim =
             RSCM.getReverseMapping(RSCMType.SEQ, npc.visType.param(params.attack_anim).id)
         anim(attackAnim)
-        npc.visType.paramOrNull(params.attack_sound)?.let(target::soundSynth)
+        // Attack sounds are area sounds so that everyone nearby hears the npc strike, not only its
+        // target.
+        val attackSound = npc.visType.paramOrNull(params.attack_sound) ?: return
+        worldRepo.soundArea(npc, attackSound.id, radius = ATTACK_SOUND_RADIUS)
     }
 
     /**
@@ -155,6 +157,7 @@ constructor(
 
     private companion object {
         private const val MELEE_HIT_DELAY = 1
+        private const val ATTACK_SOUND_RADIUS = 10
         private const val DEFAULT_PROJECTILE_HIT_DELAY = 2
 
         /**

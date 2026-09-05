@@ -52832,3 +52832,31 @@ contentGroup = "content.max_cape"
 id = "obj.skillcape_max_mythical"
 inherit = "obj.skillcape_max_mythical"
 contentGroup = "content.max_cape"
+
+
+[[item]]
+id = "obj.deal_wrench"
+inherit = "obj.deal_wrench"
+weaponCategory="Blunt"
+[item.params]
+"param.attack_anim_stance1"="seq.human_blunt_pound"
+"param.attack_sound_stance1"=2567
+"param.attack_anim_stance2"="seq.human_blunt_pound"
+"param.attack_sound_stance2"=2567
+"param.attack_anim_stance4"="seq.human_blunt_pound"
+"param.attack_sound_stance4"=2567
+"param.defend_anim"="seq.human_blunt_block"
+
+
+[[item]]
+id = "obj.deal_wrench_blessed"
+inherit = "obj.deal_wrench_blessed"
+weaponCategory="Blunt"
+[item.params]
+"param.attack_anim_stance1"="seq.human_blunt_pound"
+"param.attack_sound_stance1"=2567
+"param.attack_anim_stance2"="seq.human_blunt_pound"
+"param.attack_sound_stance2"=2567
+"param.attack_anim_stance4"="seq.human_blunt_pound"
+"param.attack_sound_stance4"=2567
+"param.defend_anim"="seq.human_blunt_block"
