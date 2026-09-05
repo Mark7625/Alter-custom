@@ -4588,3 +4588,26 @@ defaultMode = "Wander"
 "param.attack_sound_stance3"=9253
 "param.npc_attack_type"="category.attacktype_crush"
 
+[[npc]]
+id = "npc.venenatis_singles"
+inherit = "npc.venenatis_singles"
+huntMode = 8
+huntRange = 30
+maxRange = 30
+defaultMode = "Wander"
+[npc.params]
+"param.death_anim"="seq.npc_venenatis_death_01"
+"param.killcount_varp"="varp.total_spindel_kills"
+"param.boss_hp_bar_mode"=1
+
+[[npc]]
+id = "npc.spindel_spiderling"
+inherit = "npc.spindel_spiderling"
+huntMode = 6
+huntRange = 20
+maxRange = 25
+defaultMode = "Wander"
+[npc.params]
+"param.attack_anim"="seq.small_spider_update_attack"
+"param.defend_anim"="seq.small_spider_update_defend"
+"param.death_anim"="seq.small_spider_update_death"

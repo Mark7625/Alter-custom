@@ -1,0 +1,12 @@
+[[area]]
+name = "Spindel's Lair"
+area_id = "area.spindel_lair"
+levels = [2]
+
+[[area.polygons]]
+vertices = [
+    [1615, 11515],
+    [1650, 11515],
+    [1650, 11565],
+    [1615, 11565],
+]

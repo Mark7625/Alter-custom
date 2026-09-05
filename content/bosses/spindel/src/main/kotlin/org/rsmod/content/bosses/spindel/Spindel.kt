@@ -1,0 +1,358 @@
+package org.rsmod.content.bosses.spindel
+
+import dev.openrune.rscm.RSCM.asRSCM
+import dev.openrune.rscm.RSCMType
+import dev.openrune.types.aconverted.SpotanimType
+import jakarta.inject.Inject
+import kotlin.math.abs
+import org.rsmod.api.bosses.dsl.*
+import org.rsmod.api.bosses.runtime.BossCombat
+import org.rsmod.api.bosses.runtime.BossDeps
+import org.rsmod.api.bosses.runtime.BossPluginScript
+import org.rsmod.api.bosses.runtime.EffectInterpreter
+import org.rsmod.api.bosses.runtime.bossProjectile
+import org.rsmod.api.bosses.runtime.encounter
+import org.rsmod.api.bosses.runtime.repeatTick
+import org.rsmod.api.bosses.spec.Condition
+import org.rsmod.api.bosses.spec.Effect
+import org.rsmod.api.bosses.spec.ProjectileConfig
+import org.rsmod.api.combat.commons.CombatEffects
+import org.rsmod.api.combat.commons.player.finishNpcHit
+import org.rsmod.api.npc.access.StandardNpcAccess
+import org.rsmod.api.npc.apPlayer2
+import org.rsmod.api.npc.interact.AiPlayerInteractions
+import org.rsmod.api.player.isValidTarget
+import org.rsmod.api.player.stat.hitpoints
+import org.rsmod.api.repo.loc.LocRepository
+import org.rsmod.api.route.RouteFactory
+import org.rsmod.api.route.walkTo
+import org.rsmod.api.script.onEvent
+import org.rsmod.game.entity.Npc
+import org.rsmod.game.entity.Player
+import org.rsmod.game.entity.npc.NpcStateEvents
+import org.rsmod.game.hit.HitType
+import org.rsmod.game.loc.LocAngle
+import org.rsmod.game.loc.LocShape
+import org.rsmod.game.movement.MoveSpeed
+import org.rsmod.map.CoordGrid
+import org.rsmod.plugin.scripts.ScriptContext
+
+class Spindel
+@Inject
+constructor(
+    deps: BossDeps,
+    private val routeFactory: RouteFactory,
+    private val locRepo: LocRepository,
+    private val aiPlayerInteractions: AiPlayerInteractions,
+) : BossPluginScript(deps) {
+
+    override val spec =
+        boss("npc.venenatis_singles") {
+            stats(attackRate = ATTACK_RATE, aggressionRadius = AGGRO_RANGE)
+
+            val melee =
+                ability("melee") {
+                    anim("seq.npc_venenatis_melee_01")
+                    hit {
+                        damage(0..MELEE_MAX_HIT).roll()
+                        type(Melee)
+                    }
+                    include(external("spindel.post_attack"))
+                }
+
+            val rangedAttack =
+                ability("ranged_attack") {
+                    anim("seq.npc_venenatis_ranged_01")
+                    include(
+                        onEach(
+                            AllInRadius(radius = ARENA_ATTACK_RADIUS),
+                            Effect.Projectile(
+                                spotanim = "spotanim.fx_venenatis_ranged_projectile",
+                                config = RANGED_PROJECTILE_CONFIG,
+                                hit =
+                                    Effect.Hit(
+                                        damage = Roll(0..RANGED_MAX_HIT),
+                                        type = Ranged,
+                                        spotanim = "spotanim.fx_venenatis_ranged_impact",
+                                        spotanimHeight = RANGED_IMPACT_HEIGHT,
+                                    ),
+                            ),
+                        )
+                    )
+                    include(external("spindel.post_attack"))
+                }
+
+            val magicAttack =
+                ability("magic_attack") {
+                    anim("seq.npc_venenatis_magic_01")
+                    include(
+                        onEach(
+                            AllInRadius(radius = ARENA_ATTACK_RADIUS),
+                            Effect.Projectile(
+                                spotanim = "spotanim.fx_venenatis_magic_projectile",
+                                config = MAGIC_PROJECTILE_CONFIG,
+                                hit =
+                                    Effect.Hit(
+                                        damage = Roll(0..MAGIC_MAX_HIT),
+                                        type = Magic,
+                                        spotanim = "spotanim.fx_venenatis_magic_impact",
+                                        spotanimHeight = MAGIC_IMPACT_HEIGHT,
+                                    ),
+                            ),
+                        )
+                    )
+                    include(external("spindel.post_attack"))
+                }
+
+            phase(PHASE_RANGED) {
+                weightedSelectorRandom {
+                    +random(melee, weight = 1, requires = WithinMeleeRange)
+                    +random(rangedAttack, weight = 1, requires = Condition.Not(WithinMeleeRange))
+                }
+            }
+            phase(PHASE_MAGIC) {
+                weightedSelectorRandom {
+                    +random(melee, weight = 1, requires = WithinMeleeRange)
+                    +random(magicAttack, weight = 1, requires = Condition.Not(WithinMeleeRange))
+                }
+            }
+        }
+
+    private val bossTypeId: Int by lazy { "npc.venenatis_singles".asRSCM(RSCMType.NPC) }
+
+    override fun ScriptContext.startup() {
+        BossCombat.register(this, spec, deps)
+        deps.extensionRegistry.register("spindel.post_attack") { access, npc, target, _ ->
+            onStyleAttackResolved(access, npc, target)
+        }
+        onEvent<NpcStateEvents.Spawn>(bossTypeId) { resetFightState(npc) }
+        onEvent<NpcStateEvents.Respawn> { if (npc.id == bossTypeId) resetFightState(npc) }
+    }
+
+    private fun resetFightState(npc: Npc) {
+        applyPhaseApRange(npc)
+        npc.vars["varn.spindel_slot"] = 0
+    }
+
+    private fun applyPhaseApRange(npc: Npc) {
+        npc.apRangeOverride = PHASE_AP_RANGE
+    }
+
+    private suspend fun onStyleAttackResolved(access: StandardNpcAccess, npc: Npc, target: Player) {
+        val encounter = deps.encounter(npc)
+        val style = encounter.currentPhaseName
+        val slotBefore = npc.vars["varn.spindel_slot"]
+
+        if (style == PHASE_RANGED && slotBefore == 0) {
+            summonSpiderlings(access, npc, target)
+        }
+
+        val slot = slotBefore + 1
+        when (slot) {
+            BLOCK_SIZE -> {
+                fleeFromTarget(npc, target)
+                val nextStyle = if (style == PHASE_RANGED) PHASE_MAGIC else PHASE_RANGED
+                encounter.transitionTo(nextStyle, deps.mapClock.cycle)
+                applyPhaseApRange(npc)
+                npc.vars["varn.spindel_slot"] = 0
+            }
+            WEB_SLOT -> {
+                fleeFromTarget(npc, target)
+                if (style == PHASE_MAGIC) deployStickyWeb(npc, target)
+                npc.vars["varn.spindel_slot"] = slot
+            }
+            else -> npc.vars["varn.spindel_slot"] = slot
+        }
+    }
+
+    private suspend fun summonSpiderlings(access: StandardNpcAccess, npc: Npc, target: Player) {
+        val encounter = deps.encounter(npc)
+        val interpreter = EffectInterpreter(npc, target, spec, encounter, deps)
+        val effect =
+            summon(
+                npc = "npc.spindel_spiderling",
+                count = SPIDERLING_COUNT,
+                radius = SPIDERLING_SUMMON_RADIUS,
+                centeredOn = Self,
+            )
+        interpreter.run(access, effect)
+    }
+
+    private fun fleeFromTarget(npc: Npc, fallback: Player) {
+        val dest = randomArenaTile(npc.coords)
+        npc.ignoreCombatInteractions = true
+        npc.resetFaceEntity()
+        npc.clearFacingLock()
+        npc.walkTo(routeFactory, dest, speed = MoveSpeed.Run) {
+            npc.ignoreCombatInteractions = false
+            val next = pickArenaTarget(npc) ?: fallback.takeIf(Player::isValidTarget) ?: return@walkTo
+            npc.apPlayer2(next, aiPlayerInteractions)
+        }
+    }
+
+    private fun pickArenaTarget(npc: Npc): Player? {
+        val candidates =
+            deps.playerList.filter {
+                it.isValidTarget() &&
+                    it.coords.level == ARENA_LEVEL &&
+                    it.coords.chebyshevDistance(npc.coords) <= RETARGET_RANGE
+            }
+        return if (candidates.isEmpty()) null else candidates[deps.random.of(candidates.size)]
+    }
+
+    private fun randomArenaTile(from: CoordGrid): CoordGrid {
+        repeat(FLEE_TILE_ATTEMPTS) {
+            val dx = deps.random.of(FLEE_MAX_MOVE * 2 + 1) - FLEE_MAX_MOVE
+            val dz = deps.random.of(FLEE_MAX_MOVE * 2 + 1) - FLEE_MAX_MOVE
+            val x = (from.x + dx).coerceIn(ARENA_MIN_X, ARENA_MAX_X)
+            val z = (from.z + dz).coerceIn(ARENA_MIN_Z, ARENA_MAX_Z)
+            val tile = CoordGrid(x, z, ARENA_LEVEL)
+            if (from.chebyshevDistance(tile) in FLEE_MIN_MOVE..FLEE_MAX_MOVE) return tile
+        }
+        return from
+    }
+
+    private fun deployStickyWeb(npc: Npc, target: Player) {
+        val centerTile = target.coords
+        deps.bossProjectile(
+            spotanim = "spotanim.fx_venenatis_web_projectile".asRSCM(RSCMType.SPOTANIM),
+            src = npc.coords,
+            target = centerTile,
+            startHeight = WEB_PROJ_START_HEIGHT,
+            endHeight = WEB_PROJ_END_HEIGHT,
+            delay = WEB_PROJ_DELAY,
+            travel = WEB_PROJ_TRAVEL,
+            curve = WEB_PROJ_ANGLE,
+        )
+        deps.worldQueues.add(WEB_LAND_TICKS) { deployWebZone(npc, centerTile) }
+    }
+
+    private fun deployWebZone(npc: Npc, centerTile: CoordGrid) {
+        val footprint = webFootprint(centerTile)
+        val impactSpot = SpotanimType("spotanim.fx_venenatis_web_impact".asRSCM(RSCMType.SPOTANIM))
+        for (tile in footprint) {
+            deps.worldRepo.spotanimMap(impactSpot, tile.coord)
+            locRepo.add(tile.coord, tile.locName, WEB_DURATION_TICKS, LocAngle[tile.rotation], LocShape.CentrepieceStraight)
+        }
+        val tiles = footprint.mapTo(mutableSetOf()) { it.coord }
+        deps.repeatTick(
+            ticks = WEB_DURATION_TICKS,
+            onTick = { _ ->
+                if (!npc.isSlotAssigned) return@repeatTick false
+                for (player in deps.playerList) {
+                    if (player.hitpoints > 0 && player.coords in tiles) {
+                        player.finishNpcHit(
+                            npc,
+                            1,
+                            HitType.Typeless,
+                            WEB_TICK_DAMAGE,
+                            deps.playerHitModifier,
+                        )
+                        CombatEffects.statDrain(player, listOf("stat.prayer"), WEB_PRAYER_DRAIN)
+                        player.runEnergy = (player.runEnergy - WEB_RUN_ENERGY_DRAIN).coerceAtLeast(0)
+                    }
+                }
+                true
+            },
+        )
+    }
+
+    private data class WebTile(val coord: CoordGrid, val locName: String, val rotation: Int)
+
+    private fun webFootprint(center: CoordGrid): List<WebTile> {
+        val tiles = mutableListOf<WebTile>()
+        for (dx in -3..3) {
+            for (dz in -3..3) {
+                if (abs(dx) + abs(dz) > 4) continue
+                val coord = center.translate(dx, dz)
+                val (locName, rotation) =
+                    when {
+                        abs(dx) == 3 -> "loc.wbr_venenatis_web_edge" to if (dx > 0) ROT_EAST else ROT_WEST
+                        abs(dz) == 3 -> "loc.wbr_venenatis_web_edge" to if (dz > 0) ROT_NORTH else ROT_SOUTH
+                        abs(dx) == 2 && abs(dz) == 2 ->
+                            "loc.wbr_venenatis_web_corner" to
+                                when {
+                                    dx > 0 && dz < 0 -> ROT_EAST
+                                    dx < 0 && dz < 0 -> ROT_SOUTH
+                                    dx < 0 && dz > 0 -> ROT_WEST
+                                    else -> ROT_NORTH
+                                }
+                        else -> "loc.wbr_venenatis_web_centre" to ROT_EAST
+                    }
+                tiles += WebTile(coord, locName, rotation)
+            }
+        }
+        return tiles
+    }
+
+    private companion object {
+
+        private const val PHASE_RANGED = "ranged_style"
+        private const val PHASE_MAGIC = "magic_style"
+
+        private const val ATTACK_RATE = 4
+        private const val AGGRO_RANGE = 8
+
+        private const val PHASE_AP_RANGE = 10
+        private const val BLOCK_SIZE = 8
+        private const val WEB_SLOT = 4
+
+        private const val ARENA_LEVEL = 2
+        private const val ARENA_MIN_X = 1624
+        private const val ARENA_MAX_X = 1636
+        private const val ARENA_MIN_Z = 11541
+        private const val ARENA_MAX_Z = 11553
+        private const val FLEE_MIN_MOVE = 4
+        private const val FLEE_MAX_MOVE = 9
+        private const val FLEE_TILE_ATTEMPTS = 8
+
+        private const val RETARGET_RANGE = 15
+
+        // Chebyshev radius (from the boss) the ranged / magic AoE attacks reach - covers the arena.
+        private const val ARENA_ATTACK_RADIUS = 15
+
+        private const val SPIDERLING_COUNT = 2
+        private const val SPIDERLING_SUMMON_RADIUS = 6
+
+        private const val MELEE_MAX_HIT = 20
+        private const val RANGED_MAX_HIT = 30
+        private const val MAGIC_MAX_HIT = 30
+
+        private const val RANGED_IMPACT_HEIGHT = 30
+        private val RANGED_PROJECTILE_CONFIG = ProjectileConfig(
+                startHeight = 150,
+                endHeight = 90,
+                startDelay = 25,
+                travelTime = 0,
+                angle = 14,
+                progress = 48,
+                stepMultiplier = 5,
+            )
+
+        private const val MAGIC_IMPACT_HEIGHT = 90
+        private val MAGIC_PROJECTILE_CONFIG = ProjectileConfig(
+                startHeight = 150,
+                endHeight = 124,
+                startDelay = 25,
+                travelTime = 0,
+                angle = 14,
+                progress = 48,
+                stepMultiplier = 5,
+            )
+
+        private const val ROT_EAST = 0
+        private const val ROT_SOUTH = 1
+        private const val ROT_WEST = 2
+        private const val ROT_NORTH = 3
+        private const val WEB_PROJ_START_HEIGHT = 150
+        private const val WEB_PROJ_END_HEIGHT = 0
+        private const val WEB_PROJ_DELAY = 0
+        private const val WEB_PROJ_TRAVEL = 120
+        private const val WEB_PROJ_ANGLE = 30
+        private const val WEB_LAND_TICKS = 4
+        private const val WEB_DURATION_TICKS = 39
+        private const val WEB_TICK_DAMAGE = 3
+        private const val WEB_PRAYER_DRAIN = 3
+        private const val WEB_RUN_ENERGY_DRAIN = 100
+    }
+}

@@ -45,3 +45,6 @@ id = "varn.td_overhead_style"
 
 [[varn]]
 id = "varn.guaranteed_hit"
+
+[[varn]]
+id = "varn.spindel_slot"
