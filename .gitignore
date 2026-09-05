@@ -49,6 +49,7 @@ bin/
 .DS_Store
 /api/tables/src/main/kotlin/org/rsmod/api/table
 game.yml
+xp-rates.yml
 /.idea
 /api/generated
 CLAUDE.md
