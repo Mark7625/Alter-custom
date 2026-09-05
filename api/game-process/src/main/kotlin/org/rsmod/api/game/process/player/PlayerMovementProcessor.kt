@@ -1,6 +1,7 @@
 package org.rsmod.api.game.process.player
 
 import jakarta.inject.Inject
+import org.rsmod.api.player.cheat.adminNoClip
 import org.rsmod.api.player.events.PlayerMovementEvent
 import org.rsmod.api.player.output.MapFlag.setMapFlag
 import org.rsmod.api.player.output.clearMapFlag
@@ -12,6 +13,9 @@ import org.rsmod.game.entity.Player
 import org.rsmod.game.movement.MoveSpeed
 import org.rsmod.game.movement.RouteDestination
 import org.rsmod.game.movement.RouteRequest
+import org.rsmod.game.movement.RouteRequestCoord
+import org.rsmod.game.movement.RouteRequestLoc
+import org.rsmod.game.movement.RouteRequestPathingEntity
 import org.rsmod.map.CoordGrid
 import org.rsmod.routefinder.Route
 import org.rsmod.routefinder.collision.CollisionFlagMap
@@ -37,11 +41,40 @@ constructor(
     }
 
     private fun Player.routeTo(request: RouteRequest) {
-        val route = routeFactory.create(avatar, request)
         cachedMoveSpeed = tempMoveSpeed ?: varMoveSpeed
         moveSpeed = cachedMoveSpeed
+        val route = routeFactory.create(avatar, request)
+        // Admin "no clip" cheat: only take over when normal pathfinding cannot actually reach the
+        // requested destination. Routes that do reach it are kept as-is so that loc and npc
+        // interactions still resolve at their proper approach tile.
+        if (adminNoClip && (route.failed || route.alternative)) {
+            consumeNoClipRoute(request)
+            return
+        }
         consumeRoute(route)
     }
+
+    /**
+     * Queues the raw destination as the only waypoint; [validatedStep] then walks straight toward
+     * it, ignoring collision flags.
+     */
+    private fun Player.consumeNoClipRoute(request: RouteRequest) {
+        routeDestination.clear()
+        val dest = request.noClipDestination()
+        if (dest == coords) {
+            clearMapFlag()
+            return
+        }
+        routeDestination.add(dest)
+        setMapFlag(this, dest.x, dest.z)
+    }
+
+    private fun RouteRequest.noClipDestination(): CoordGrid =
+        when (this) {
+            is RouteRequestCoord -> destination
+            is RouteRequestLoc -> destination
+            is RouteRequestPathingEntity -> destination.coords
+        }
 
     private fun Player.consumeRoute(route: Route) {
         routeDestination.clear()
@@ -109,13 +142,20 @@ constructor(
         coords = current
     }
 
-    private fun Player.validatedStep(current: CoordGrid, target: CoordGrid): CoordGrid =
-        stepFactory.validated(
+    private fun Player.validatedStep(current: CoordGrid, target: CoordGrid): CoordGrid {
+        if (adminNoClip) {
+            if (current == target) {
+                return CoordGrid.NULL
+            }
+            return stepFactory.unvalidated(current, target)
+        }
+        return stepFactory.validated(
             source = current,
             dest = target,
             size = size,
             extraFlag = CollisionFlag.BLOCK_PLAYERS,
         )
+    }
 
     private fun Player.addBlockWalkCollision(coords: CoordGrid) {
         if (!hidden) {
