@@ -135,4 +135,18 @@ internal enum class TeleportRegion(val label: String, val destinations: List<Tel
             TeleportDestination("Mage Arena bank", CoordGrid(3094, 3956)),
         ),
     ),
+    RooftopCourses(
+        "Rooftop courses",
+        listOf(
+            TeleportDestination("Draynor Village Rooftop (1)", CoordGrid(3104, 3279)),
+            TeleportDestination("Al Kharid Rooftop (20)", CoordGrid(3273, 3196)),
+            TeleportDestination("Varrock Rooftop (30)", CoordGrid(3222, 3414)),
+            TeleportDestination("Canifis Rooftop (40)", CoordGrid(3506, 3487)),
+            TeleportDestination("Falador Rooftop (50)", CoordGrid(3036, 3340)),
+            TeleportDestination("Seers' Village Rooftop (60)", CoordGrid(2729, 3488)),
+            TeleportDestination("Pollnivneach Rooftop (70)", CoordGrid(3351, 2960)),
+            TeleportDestination("Rellekka Rooftop (80)", CoordGrid(2625, 3678)),
+            TeleportDestination("Ardougne Rooftop (90)", CoordGrid(2673, 3297)),
+        ),
+    ),
 }
