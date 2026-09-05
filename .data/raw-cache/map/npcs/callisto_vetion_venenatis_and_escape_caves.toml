@@ -106,3 +106,7 @@ coords = "0_52_160_8_37"
 [[spawn]]
 npc = "npc.venenatis_singles"
 coords = "2_25_180_29_26"
+
+[[spawn]]
+npc = "npc.venenatis"
+coords = "2_53_159_29_26"

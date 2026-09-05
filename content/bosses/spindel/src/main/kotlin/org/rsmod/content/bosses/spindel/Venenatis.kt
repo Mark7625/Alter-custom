@@ -18,6 +18,8 @@ import org.rsmod.api.bosses.spec.Effect
 import org.rsmod.api.bosses.spec.ProjectileConfig
 import org.rsmod.api.combat.commons.CombatEffects
 import org.rsmod.api.combat.commons.player.finishNpcHit
+import org.rsmod.api.death.NpcAttackValidateHook
+import org.rsmod.api.death.NpcAttackValidateResult
 import org.rsmod.api.npc.access.StandardNpcAccess
 import org.rsmod.api.npc.apPlayer2
 import org.rsmod.api.npc.interact.AiPlayerInteractions
@@ -35,19 +37,48 @@ import org.rsmod.game.loc.LocAngle
 import org.rsmod.game.loc.LocShape
 import org.rsmod.game.movement.MoveSpeed
 import org.rsmod.map.CoordGrid
+import org.rsmod.plugin.module.PluginModule
 import org.rsmod.plugin.scripts.ScriptContext
 
-class Spindel
+data class LairConfig(
+    val key: String,
+    val bossNpc: String,
+    val spiderlingNpc: String,
+    val level: Int,
+    val minX: Int,
+    val maxX: Int,
+    val minZ: Int,
+    val maxZ: Int,
+) {
+    fun contains(coord: CoordGrid, margin: Int = 0): Boolean =
+        coord.level == level &&
+            coord.x in (minX - margin)..(maxX + margin) &&
+            coord.z in (minZ - margin)..(maxZ + margin)
+}
+
+val SPINDEL_LAIR =
+    LairConfig("spindel", "npc.venenatis_singles", "npc.spindel_spiderling", 2, 1624, 1636, 11541, 11553)
+
+val VENENATIS_LAIR =
+    LairConfig("venenatis", "npc.venenatis", "npc.venenatis_spiderling", 2, 3410, 3432, 10188, 10214)
+
+class Venenatis
 @Inject
 constructor(
     deps: BossDeps,
     private val routeFactory: RouteFactory,
-    private val locRepo: LocRepository,
     private val aiPlayerInteractions: AiPlayerInteractions,
+    private val locRepo: LocRepository,
 ) : BossPluginScript(deps) {
 
+    private val lairsById: Map<Int, LairConfig> by lazy {
+        listOf(SPINDEL_LAIR, VENENATIS_LAIR).associateBy { it.bossNpc.asRSCM(RSCMType.NPC) }
+    }
+
+    private fun lairFor(npc: Npc): LairConfig = lairsById.getValue(npc.id)
+
     override val spec =
-        boss("npc.venenatis_singles") {
+        boss(SPINDEL_LAIR.bossNpc, VENENATIS_LAIR.bossNpc) {
             stats(attackRate = ATTACK_RATE, aggressionRadius = AGGRO_RANGE)
 
             val melee =
@@ -57,7 +88,7 @@ constructor(
                         damage(0..MELEE_MAX_HIT).roll()
                         type(Melee)
                     }
-                    include(external("spindel.post_attack"))
+                    include(external("venenatis.post_attack"))
                 }
 
             val rangedAttack =
@@ -79,7 +110,7 @@ constructor(
                             ),
                         )
                     )
-                    include(external("spindel.post_attack"))
+                    include(external("venenatis.post_attack"))
                 }
 
             val magicAttack =
@@ -101,7 +132,7 @@ constructor(
                             ),
                         )
                     )
-                    include(external("spindel.post_attack"))
+                    include(external("venenatis.post_attack"))
                 }
 
             phase(PHASE_RANGED) {
@@ -118,24 +149,20 @@ constructor(
             }
         }
 
-    private val bossTypeId: Int by lazy { "npc.venenatis_singles".asRSCM(RSCMType.NPC) }
-
     override fun ScriptContext.startup() {
         BossCombat.register(this, spec, deps)
-        deps.extensionRegistry.register("spindel.post_attack") { access, npc, target, _ ->
+        deps.extensionRegistry.register("venenatis.post_attack") { access, npc, target, _ ->
             onStyleAttackResolved(access, npc, target)
         }
-        onEvent<NpcStateEvents.Spawn>(bossTypeId) { resetFightState(npc) }
-        onEvent<NpcStateEvents.Respawn> { if (npc.id == bossTypeId) resetFightState(npc) }
+        for (typeId in lairsById.keys) {
+            onEvent<NpcStateEvents.Spawn>(typeId) { resetFightState(npc) }
+        }
+        onEvent<NpcStateEvents.Respawn> { if (npc.id in lairsById) resetFightState(npc) }
     }
 
     private fun resetFightState(npc: Npc) {
-        applyPhaseApRange(npc)
-        npc.vars["varn.spindel_slot"] = 0
-    }
-
-    private fun applyPhaseApRange(npc: Npc) {
         npc.apRangeOverride = PHASE_AP_RANGE
+        npc.vars["varn.spindel_slot"] = 0
     }
 
     private suspend fun onStyleAttackResolved(access: StandardNpcAccess, npc: Npc, target: Player) {
@@ -153,7 +180,7 @@ constructor(
                 fleeFromTarget(npc, target)
                 val nextStyle = if (style == PHASE_RANGED) PHASE_MAGIC else PHASE_RANGED
                 encounter.transitionTo(nextStyle, deps.mapClock.cycle)
-                applyPhaseApRange(npc)
+                npc.apRangeOverride = PHASE_AP_RANGE
                 npc.vars["varn.spindel_slot"] = 0
             }
             WEB_SLOT -> {
@@ -170,7 +197,7 @@ constructor(
         val interpreter = EffectInterpreter(npc, target, spec, encounter, deps)
         val effect =
             summon(
-                npc = "npc.spindel_spiderling",
+                npc = lairFor(npc).spiderlingNpc,
                 count = SPIDERLING_COUNT,
                 radius = SPIDERLING_SUMMON_RADIUS,
                 centeredOn = Self,
@@ -179,34 +206,36 @@ constructor(
     }
 
     private fun fleeFromTarget(npc: Npc, fallback: Player) {
-        val dest = randomArenaTile(npc.coords)
+        val lair = lairFor(npc)
+        val dest = randomArenaTile(lair, npc.coords)
         npc.ignoreCombatInteractions = true
         npc.resetFaceEntity()
         npc.clearFacingLock()
         npc.walkTo(routeFactory, dest, speed = MoveSpeed.Run) {
             npc.ignoreCombatInteractions = false
-            val next = pickArenaTarget(npc) ?: fallback.takeIf(Player::isValidTarget) ?: return@walkTo
+            val next =
+                pickArenaTarget(lair, npc) ?: fallback.takeIf(Player::isValidTarget) ?: return@walkTo
             npc.apPlayer2(next, aiPlayerInteractions)
         }
     }
 
-    private fun pickArenaTarget(npc: Npc): Player? {
+    private fun pickArenaTarget(lair: LairConfig, npc: Npc): Player? {
         val candidates =
             deps.playerList.filter {
                 it.isValidTarget() &&
-                    it.coords.level == ARENA_LEVEL &&
+                    it.coords.level == lair.level &&
                     it.coords.chebyshevDistance(npc.coords) <= RETARGET_RANGE
             }
         return if (candidates.isEmpty()) null else candidates[deps.random.of(candidates.size)]
     }
 
-    private fun randomArenaTile(from: CoordGrid): CoordGrid {
+    private fun randomArenaTile(lair: LairConfig, from: CoordGrid): CoordGrid {
         repeat(FLEE_TILE_ATTEMPTS) {
             val dx = deps.random.of(FLEE_MAX_MOVE * 2 + 1) - FLEE_MAX_MOVE
             val dz = deps.random.of(FLEE_MAX_MOVE * 2 + 1) - FLEE_MAX_MOVE
-            val x = (from.x + dx).coerceIn(ARENA_MIN_X, ARENA_MAX_X)
-            val z = (from.z + dz).coerceIn(ARENA_MIN_Z, ARENA_MAX_Z)
-            val tile = CoordGrid(x, z, ARENA_LEVEL)
+            val x = (from.x + dx).coerceIn(lair.minX, lair.maxX)
+            val z = (from.z + dz).coerceIn(lair.minZ, lair.maxZ)
+            val tile = CoordGrid(x, z, lair.level)
             if (from.chebyshevDistance(tile) in FLEE_MIN_MOVE..FLEE_MAX_MOVE) return tile
         }
         return from
@@ -232,7 +261,13 @@ constructor(
         val impactSpot = SpotanimType("spotanim.fx_venenatis_web_impact".asRSCM(RSCMType.SPOTANIM))
         for (tile in footprint) {
             deps.worldRepo.spotanimMap(impactSpot, tile.coord)
-            locRepo.add(tile.coord, tile.locName, WEB_DURATION_TICKS, LocAngle[tile.rotation], LocShape.CentrepieceStraight)
+            locRepo.add(
+                tile.coord,
+                tile.locName,
+                WEB_DURATION_TICKS,
+                LocAngle[tile.rotation],
+                LocShape.CentrepieceStraight,
+            )
         }
         val tiles = footprint.mapTo(mutableSetOf()) { it.coord }
         deps.repeatTick(
@@ -249,7 +284,8 @@ constructor(
                             deps.playerHitModifier,
                         )
                         CombatEffects.statDrain(player, listOf("stat.prayer"), WEB_PRAYER_DRAIN)
-                        player.runEnergy = (player.runEnergy - WEB_RUN_ENERGY_DRAIN).coerceAtLeast(0)
+                        player.runEnergy =
+                            (player.runEnergy - WEB_RUN_ENERGY_DRAIN).coerceAtLeast(0)
                     }
                 }
                 true
@@ -267,8 +303,10 @@ constructor(
                 val coord = center.translate(dx, dz)
                 val (locName, rotation) =
                     when {
-                        abs(dx) == 3 -> "loc.wbr_venenatis_web_edge" to if (dx > 0) ROT_EAST else ROT_WEST
-                        abs(dz) == 3 -> "loc.wbr_venenatis_web_edge" to if (dz > 0) ROT_NORTH else ROT_SOUTH
+                        abs(dx) == 3 ->
+                            "loc.wbr_venenatis_web_edge" to if (dx > 0) ROT_EAST else ROT_WEST
+                        abs(dz) == 3 ->
+                            "loc.wbr_venenatis_web_edge" to if (dz > 0) ROT_NORTH else ROT_SOUTH
                         abs(dx) == 2 && abs(dz) == 2 ->
                             "loc.wbr_venenatis_web_corner" to
                                 when {
@@ -292,23 +330,14 @@ constructor(
 
         private const val ATTACK_RATE = 4
         private const val AGGRO_RANGE = 8
-
         private const val PHASE_AP_RANGE = 10
         private const val BLOCK_SIZE = 8
         private const val WEB_SLOT = 4
 
-        private const val ARENA_LEVEL = 2
-        private const val ARENA_MIN_X = 1624
-        private const val ARENA_MAX_X = 1636
-        private const val ARENA_MIN_Z = 11541
-        private const val ARENA_MAX_Z = 11553
         private const val FLEE_MIN_MOVE = 4
         private const val FLEE_MAX_MOVE = 9
         private const val FLEE_TILE_ATTEMPTS = 8
-
         private const val RETARGET_RANGE = 15
-
-        // Chebyshev radius (from the boss) the ranged / magic AoE attacks reach - covers the arena.
         private const val ARENA_ATTACK_RADIUS = 15
 
         private const val SPIDERLING_COUNT = 2
@@ -319,7 +348,8 @@ constructor(
         private const val MAGIC_MAX_HIT = 30
 
         private const val RANGED_IMPACT_HEIGHT = 30
-        private val RANGED_PROJECTILE_CONFIG = ProjectileConfig(
+        private val RANGED_PROJECTILE_CONFIG =
+            ProjectileConfig(
                 startHeight = 150,
                 endHeight = 90,
                 startDelay = 25,
@@ -330,7 +360,8 @@ constructor(
             )
 
         private const val MAGIC_IMPACT_HEIGHT = 90
-        private val MAGIC_PROJECTILE_CONFIG = ProjectileConfig(
+        private val MAGIC_PROJECTILE_CONFIG =
+            ProjectileConfig(
                 startHeight = 150,
                 endHeight = 124,
                 startDelay = 25,
@@ -355,4 +386,40 @@ constructor(
         private const val WEB_PRAYER_DRAIN = 3
         private const val WEB_RUN_ENERGY_DRAIN = 100
     }
+}
+
+class VenenatisSpiderling
+@Inject
+constructor(deps: BossDeps) : BossPluginScript(deps) {
+    override val spec =
+        boss(SPINDEL_LAIR.spiderlingNpc, VENENATIS_LAIR.spiderlingNpc) {
+            stats(attackRate = 4, aggressionRadius = 1)
+            val bite =
+                ability("bite") {
+                    anim("seq.small_spider_update_attack")
+                    hit {
+                        damage(0..1).roll()
+                        type(Melee)
+                    }
+                    statDrain("stat.prayer", amount = 1)
+                }
+            phase("combat") { weightedSelectorRandom { +random(bite, weight = 1) } }
+        }
+}
+
+class VenenatisModule : PluginModule() {
+    override fun bind() {
+        addSetBinding<NpcAttackValidateHook>(SpindelAttackValidateHook::class.java)
+    }
+}
+
+internal class SpindelAttackValidateHook @Inject constructor() : NpcAttackValidateHook {
+    private val spindelId by lazy { SPINDEL_LAIR.bossNpc.asRSCM(RSCMType.NPC) }
+
+    override fun validate(player: Player, npc: Npc): NpcAttackValidateResult =
+        if (npc.id == spindelId) {
+            NpcAttackValidateResult.BypassSingleWayPvnRestriction
+        } else {
+            NpcAttackValidateResult.Pass
+        }
 }

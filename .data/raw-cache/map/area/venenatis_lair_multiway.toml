@@ -1,0 +1,12 @@
+[[area]]
+name = "Venenatis Lair"
+area_id = "area.multiway"
+levels = [2]
+
+[[area.polygons]]
+vertices = [
+    [3405, 10178],
+    [3438, 10178],
+    [3438, 10220],
+    [3405, 10220],
+]
