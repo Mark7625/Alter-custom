@@ -2,14 +2,14 @@ package org.rsmod.api.account.character.main
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
+import dev.openrune.ServerCacheManager
+import dev.openrune.types.varp.VarpLifetime
 import dev.or2.central.account.AccountData
 import dev.or2.central.account.CharacterData
 import dev.or2.central.account.Rights
 import dev.or2.central.account.TrustedDeviceData
 import dev.or2.central.account.TwoFactorAuthData
 import dev.or2.sql.OpenRuneSql
-import dev.openrune.ServerCacheManager
-import dev.openrune.types.varp.VarpLifetime
 import jakarta.inject.Inject
 import java.sql.Statement
 import java.sql.Timestamp
@@ -18,12 +18,12 @@ import java.time.temporal.ChronoUnit
 import kotlin.math.roundToInt
 import org.rsmod.api.account.character.CharacterAccountLoginSegment
 import org.rsmod.api.account.character.CharacterMetadataList
+import org.rsmod.api.account.character.appearance.CharacterAppearancePersistence
 import org.rsmod.api.account.persistence.GamePersistenceRscmKeys
 import org.rsmod.api.db.DatabaseConnection
 import org.rsmod.api.db.util.getIntOrNull
 import org.rsmod.api.db.util.getLocalDateTime
 import org.rsmod.api.db.util.getStringOrNull
-import org.rsmod.api.db.util.setNullableInt
 import org.rsmod.api.db.util.setNullableString
 import org.rsmod.api.parsers.json.Json
 import org.rsmod.game.entity.Player
@@ -221,7 +221,10 @@ constructor(
                 ServerCacheManager.getVarp(id)?.scope == VarpLifetime.Perm
             }
 
-        val persistentAttrs = player.attr.toPersistentMap()
+        // Appearance has no columns of its own; it rides along in `character_attrs`.
+        val persistentAttrs =
+            player.attr.toPersistentMap() +
+                CharacterAppearancePersistence.encode(player.appearance)
 
         connection.prepareStatement(sql).use {
             it.setInt(1, player.x)
