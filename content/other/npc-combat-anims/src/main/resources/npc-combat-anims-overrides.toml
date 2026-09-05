@@ -1,0 +1,12 @@
+# Hand corrections to npc-combat-anims.toml. Same format; these are applied after the generated
+# file and replace whatever the npc has, so use them for the npcs the generator gets wrong.
+#
+# Fields (all optional but id): attack_anim, defend_anim, death_anim (seq.*), attack_type
+# (category.attacktype_stab|slash|crush|standard|magic), attack_sound (synth id), proj_travel
+# (spotanim.*), proj_type (projanim.*), attack_range (tiles).
+#
+# Example:
+#     { id = "npc.wizard", attack_anim = "seq.human_caststrike", proj_travel = "spotanim.firestrike_travel" },
+
+npc = [
+]
