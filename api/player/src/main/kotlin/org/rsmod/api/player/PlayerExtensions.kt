@@ -24,8 +24,13 @@ public fun Player.clearInteractionRoute() {
     clearMapFlag()
 }
 
+/**
+ * Queues the player's death. A strong queue is used so the death sequence interrupts whatever the
+ * player is doing - a normal queue can never launch while the player is busy, and a player who has
+ * just been killed is almost always busy fighting back.
+ */
 public fun Player.queueDeath() {
-    queue("queue.death", 1)
+    strongQueue("queue.death", 1)
 }
 
 public fun Player.combatClearQueue() {
@@ -159,4 +164,3 @@ public fun Player.hasAtLeast99s(requiredCount: Int): Boolean {
         return statMap.getBaseLevel("stat.${enum.value?.lowercase()}") >= 99
     } >= requiredCount
 }
-

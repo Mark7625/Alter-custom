@@ -1,23 +1,25 @@
 package org.rsmod.api.death
 
-import dev.or2.central.account.Rights
 import dev.openrune.ServerCacheManager
 import dev.openrune.rscm.RSCM
 import dev.openrune.rscm.RSCMType
+import dev.or2.central.account.Rights
 import jakarta.inject.Inject
 import jakarta.inject.Singleton
 import org.rsmod.api.area.checker.AreaChecker
 import org.rsmod.api.area.checker.isInWildernessBasic
+import org.rsmod.api.mechanics.toxins.Toxin.cureAllToxins
 import org.rsmod.api.player.death.DEATH_CAUSE_ATTR
 import org.rsmod.api.player.death.DeathCause
-import org.rsmod.api.player.hasProtectItemPrayer
-import org.rsmod.api.player.hook.TeleportType
-import org.rsmod.api.mechanics.toxins.Toxin.cureAllToxins
 import org.rsmod.api.player.deathResetTimers
 import org.rsmod.api.player.disablePrayers
+import org.rsmod.api.player.hasProtectItemPrayer
+import org.rsmod.api.player.hook.TeleportType
+import org.rsmod.api.player.midiJingle
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.boolVarBit
 import org.rsmod.api.player.vars.intVarp
+import org.rsmod.api.repo.world.WorldRepository
 import org.rsmod.game.MapClock
 import org.rsmod.game.entity.Player
 import org.rsmod.map.CoordGrid
@@ -31,6 +33,7 @@ constructor(
     private val handlingResolver: PlayerDeathHandlingResolver,
     private val cleanupHooks: Set<PlayerDeathCleanupHook>,
     private val areaChecker: AreaChecker,
+    private val worldRepo: WorldRepository,
 ) {
     private var Player.specialAttackType by intVarp("varp.sa_attack")
     private var Player.inInstance by boolVarBit("varbit.player_in_instance")
@@ -46,7 +49,8 @@ constructor(
 
         stopAction()
         delay(2)
-        soundSynth("synth.human_death")
+        // An area sound, so players nearby hear the death as well as the one dying.
+        worldRepo.soundArea(player, "synth.human_death", radius = DEATH_SOUND_RADIUS)
         anim("seq.human_death")
         delay(4)
         combatClearQueue()
@@ -56,7 +60,7 @@ constructor(
         handleDeathDrops(player, deathCoords)
 
         midiSong("midi.stop_music")
-        midiJingle("jingle.air_guitar_jingle")
+        player.midiJingle(DEATH_JINGLE_GROUP)
         mes("Oh dear, you are dead!")
         telejump(randomRespawn ?: respawn, TeleportType.Exempt)
         resetAnim()
@@ -142,6 +146,15 @@ constructor(
     }
 
     private companion object {
+        private const val DEATH_SOUND_RADIUS = 10
+
+        /**
+         * Js5 archive 11 group of the death jingle. The `jingle.death` gameval id is not the group
+         * id the client plays (see [org.rsmod.api.player.midiJingle]); this number was confirmed
+         * in-game by ear with the `::jingle` command.
+         */
+        private const val DEATH_JINGLE_GROUP = 90
+
         private fun CoordGrid.wildernessLevel(): Int {
             if (!isInWildernessBasic()) return -1
             val y = z

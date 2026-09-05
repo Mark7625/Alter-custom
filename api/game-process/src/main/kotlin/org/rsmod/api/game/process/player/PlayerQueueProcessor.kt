@@ -14,10 +14,29 @@ public class PlayerQueueProcessor
 constructor(private val eventBus: EventBus, private val protectedAccess: ProtectedAccessLauncher) {
     public fun process(player: Player) {
         if (player.queueList.strongQueues > 0) {
-            player.ifClose(eventBus)
+            player.interruptForStrongQueue()
         }
         player.publishExpiredQueues()
         player.publishExpiredWeakQueues()
+    }
+
+    /**
+     * Strong queues interrupt the player: modals close and the current interaction and route are
+     * dropped so the queue can launch.
+     *
+     * A script that is already mid-way - suspended in a delay or a dialogue - is left to finish:
+     * closing the modals is enough to unwind a dialogue, and a delayed script (the death sequence
+     * itself, for one) must not be cancelled by the very queue it is servicing. The strong queue
+     * launches once the script has ended, which [canLaunchQueue] enforces.
+     */
+    private fun Player.interruptForStrongQueue() {
+        ifClose(eventBus)
+        // Delayed, or a coroutine is suspended: the same test [canLaunchQueue] applies.
+        if (isModalButtonProtected) {
+            return
+        }
+        clearInteraction()
+        abortRoute()
     }
 
     private fun Player.publishExpiredQueues() {
@@ -64,7 +83,13 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
         category == QueueCategory.Strong.id || category == QueueCategory.Soft.id
 
     private fun Player.canLaunchQueue(queue: PlayerQueueList.Queue): Boolean =
-        queue.category == QueueCategory.Soft.id || !isAccessProtected
+        when (queue.category) {
+            QueueCategory.Soft.id -> true
+            // The interaction was cleared by [interruptForStrongQueue]; only a coroutine that is
+            // still suspended (mid-delay) holds a strong queue back.
+            QueueCategory.Strong.id -> !isModalButtonProtected
+            else -> !isAccessProtected
+        }
 
     private fun Player.publish(queue: PlayerQueueList.Queue) {
         if (queue.category == QueueCategory.Soft.id) {
