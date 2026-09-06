@@ -138,6 +138,7 @@ constructor(
                         targetLength = destination.size,
                     )
                     .toCoordGrid()
+                    .copy(level = source.coords.level)
             is RouteRequestLoc -> destination
         }
 
