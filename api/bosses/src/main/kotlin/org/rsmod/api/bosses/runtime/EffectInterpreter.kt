@@ -306,8 +306,17 @@ class EffectInterpreter(
     private fun resolveMulti(expr: TargetExpr): List<Player> {
         return when (expr) {
             is TargetExpr.AllInRadius -> {
-                val center = resolveTile(expr.of)
-                deps.playerList.filter { it.coords.chebyshevDistance(center) <= expr.radius }
+                if (expr.of is TargetExpr.Self) {
+                    deps.playerList.filter {
+                        it.coords.level == npc.coords.level && npc.isWithinDistance(it, expr.radius)
+                    }
+                } else {
+                    val center = resolveTile(expr.of)
+                    deps.playerList.filter {
+                        it.coords.level == center.level &&
+                            it.coords.chebyshevDistance(center) <= expr.radius
+                    }
+                }
             }
             is TargetExpr.TopN -> listOf(target)
             is TargetExpr.Single -> listOfNotNull(resolveSingle(expr))
