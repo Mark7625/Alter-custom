@@ -1,0 +1,12 @@
+[[area]]
+name = "Draynor Village"
+area_id = "area.draynor_village"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3070, 3222],
+    [3130, 3222],
+    [3130, 3280],
+    [3070, 3280],
+]

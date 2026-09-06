@@ -1,0 +1,12 @@
+[[area]]
+name = "Edgeville"
+area_id = "area.edgeville"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3070, 3465],
+    [3130, 3465],
+    [3130, 3523],
+    [3070, 3523],
+]

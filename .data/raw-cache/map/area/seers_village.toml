@@ -1,0 +1,14 @@
+[[area]]
+name = "Seers' Village"
+area_id = "area.seers_village"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2690, 3440],
+    [2790, 3440],
+    [2790, 3469],
+    [2740, 3469],
+    [2740, 3520],
+    [2690, 3520],
+]

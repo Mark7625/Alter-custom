@@ -1,0 +1,15 @@
+[[area]]
+name = "West Ardougne"
+area_id = "area.west_ardougne"
+levels = [0, 1, 2, 3]
+
+# Inside the plague walls, up to the main gate shared with East Ardougne.
+[[area.polygons]]
+vertices = [
+    [2460, 3279],
+    [2510, 3279],
+    [2510, 3264],
+    [2558, 3264],
+    [2558, 3335],
+    [2460, 3335],
+]

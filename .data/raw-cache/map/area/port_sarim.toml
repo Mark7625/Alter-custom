@@ -1,0 +1,12 @@
+[[area]]
+name = "Port Sarim"
+area_id = "area.port_sarim"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2995, 3195],
+    [3060, 3195],
+    [3060, 3260],
+    [2995, 3260],
+]

@@ -30,24 +30,102 @@ fun packVertex(mx: Int, mz: Int, lx: Int, lz: Int): Int {
 
 object Music {
 
+    /**
+     * A music area and the tracks that shuffle inside it. [area] is the bare area gameval name
+     * (`area.<area>` must exist in `.data/gamevals/area.rscm` and have a polygon under
+     * `.data/raw-cache/map/area`), and [tracks] are `dbrow.music_*` rows from the cache.
+     */
+    private data class ModernArea(val row: String, val area: String, val tracks: List<String>)
+
+    private fun modern(area: String, vararg tracks: String) =
+        ModernArea("dbrow.music_modern_$area", area, tracks.map { "dbrow.music_$it" })
+
+    /** Track lists follow the OSRS wiki "Music" section of each location. */
+    private val MODERN_AREAS =
+        listOf(
+            modern("lumbridge", "autumn_voyage", "book_of_spells", "dream", "flute_salad", "harmony", "yesteryear"),
+            modern("draynor_village", "start", "unknown_land", "wander"),
+            modern("draynor_manor", "spooky"),
+            modern(
+                "varrock",
+                "adventure",
+                "garden",
+                "medieval",
+                "spirit",
+                "looking_back",
+                "doorways",
+                "expanse",
+                "greatness",
+                "still_night",
+            ),
+            modern("barbarian_village", "barbarianism"),
+            modern("edgeville", "forever"),
+            // The Wilderness gameplay area already has an onArea script, and an area may only have
+            // one, so its music lives on a twin area with the same polygon.
+            modern(
+                "wilderness_music",
+                "army_of_darkness",
+                "close_quarters",
+                "dangerous",
+                "everlasting_fire",
+                "faithless",
+                "forbidden",
+                "inspiration",
+                "moody",
+                "pirates_of_peril",
+                "regal",
+                "scape_sad",
+                "scape_wild",
+                "shining",
+                "troubled",
+                "undercurrent",
+                "underground",
+                "wild_isle",
+                "wild_side",
+                "wilderness",
+                "wilderness2",
+                "wilderness3",
+                "witching",
+                "wonder",
+            ),
+            modern("falador", "arrival", "fanfare", "workshop"),
+            modern("falador_south", "long_way_home", "miles_away", "nightfall", "wander"),
+            modern("falador_north", "lightness", "scape_soft"),
+            modern("taverley", "horizon", "splendour"),
+            modern("rimmington", "attention", "emperor", "long_way_home"),
+            modern("burthorpe", "principality", "kingdom"),
+            modern("goblin_village", "goblin_village", "too_many_cooks"),
+            modern("ice_mountain", "alone"),
+            modern("asgarnian_ice_dungeon", "starlight", "woe_of_the_wyvern"),
+            modern("taverley_dungeon", "arabique", "courage", "dunjun", "royale", "underground"),
+            modern("catherby", "fishing"),
+            modern("seers_village", "overture", "prime_time", "twilight"),
+            modern("camelot", "camelot"),
+            modern("rellekka", "rellekka"),
+            modern("brineratcavern", "rising_damp"),
+            modern("barbarian_outpost", "legion"),
+            modern("al_kharid", "al_kharid"),
+            modern("port_sarim", "sea_shanty2"),
+            modern("east_ardougne", "baroque", "knightly", "the_tower"),
+            modern("west_ardougne", "sad_meadow"),
+            modern("ardougne_sewers", "the_cellar_dwellers"),
+            modern("south_ardougne", "ballad_of_enchantment", "upcoming"),
+            modern("legends_guild", "trinity"),
+            modern("mourner_tunnels", "fight_or_flight"),
+        )
+
     fun musicModern() =
         dbTable("dbtable.music_modern", serverOnly = true) {
             column("area", 0, VarType.STRING)
             column("tracks", 1, VarType.DBROW)
             column("auto_script", 2, VarType.BOOLEAN)
 
-            row("dbrow.music_modern_lumbridge") {
-                column(0, "lumbridge")
-                columnRSCM(
-                    1,
-                    "dbrow.music_autumn_voyage",
-                    "dbrow.music_book_of_spells",
-                    "dbrow.music_dream",
-                    "dbrow.music_flute_salad",
-                    "dbrow.music_harmony",
-                    "dbrow.music_yesteryear",
-                )
-                column(2, true)
+            for (entry in MODERN_AREAS) {
+                row(entry.row) {
+                    column(0, entry.area)
+                    columnRSCM(1, *entry.tracks.toTypedArray())
+                    column(2, true)
+                }
             }
         }
 

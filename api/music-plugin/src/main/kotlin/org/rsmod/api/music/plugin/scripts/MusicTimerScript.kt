@@ -3,7 +3,6 @@ package org.rsmod.api.music.plugin.scripts
 import jakarta.inject.Inject
 import org.rsmod.api.player.music.MusicPlayer
 import org.rsmod.api.player.vars.intVarBit
-import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.script.onPlayerLogin
 import org.rsmod.api.script.onPlayerSoftTimer
 import org.rsmod.game.entity.Player
@@ -59,7 +58,7 @@ public class MusicTimerScript @Inject constructor(private val musicPlayer: Music
 
         val endMusic = musicClock > musicDuration
         if (endMusic) {
-            musicPlayer.stop(this)
+            musicPlayer.trackEnded(this)
             return
         }
     }

@@ -1,0 +1,22 @@
+[[area]]
+name = "South Ardougne"
+area_id = "area.south_ardougne"
+levels = [0, 1, 2, 3]
+
+# South of the city wall: the Clock Tower, Ardougne Monastery and the Necromancer Tower.
+[[area.polygons]]
+vertices = [
+    [2545, 3195],
+    [2680, 3195],
+    [2680, 3262],
+    [2545, 3262],
+]
+
+# Clock Tower dungeon.
+[[area.polygons]]
+vertices = [
+    [2560, 9600],
+    [2623, 9600],
+    [2623, 9663],
+    [2560, 9663],
+]

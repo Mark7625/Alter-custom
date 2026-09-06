@@ -1,0 +1,12 @@
+[[area]]
+name = "Camelot"
+area_id = "area.camelot"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2740, 3470],
+    [2790, 3470],
+    [2790, 3515],
+    [2740, 3515],
+]

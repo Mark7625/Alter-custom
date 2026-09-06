@@ -1,0 +1,12 @@
+[[area]]
+name = "Rellekka"
+area_id = "area.rellekka"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2600, 3620],
+    [2720, 3620],
+    [2720, 3720],
+    [2600, 3720],
+]

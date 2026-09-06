@@ -1,0 +1,12 @@
+[[area]]
+name = "Ice Mountain"
+area_id = "area.ice_mountain"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2985, 3445],
+    [3040, 3445],
+    [3040, 3523],
+    [2985, 3523],
+]

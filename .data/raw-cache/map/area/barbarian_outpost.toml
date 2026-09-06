@@ -1,0 +1,12 @@
+[[area]]
+name = "Barbarian Outpost"
+area_id = "area.barbarian_outpost"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2495, 3545],
+    [2545, 3545],
+    [2545, 3590],
+    [2495, 3590],
+]

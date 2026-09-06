@@ -1,0 +1,17 @@
+[[area]]
+name = "East Ardougne"
+area_id = "area.east_ardougne"
+levels = [0, 1, 2, 3]
+
+# Inside the city walls: castle, market, zoo, docks and the north gate road.
+[[area.polygons]]
+vertices = [
+    [2559, 3263],
+    [2690, 3263],
+    [2690, 3339],
+    [2623, 3339],
+    [2623, 3349],
+    [2561, 3349],
+    [2561, 3339],
+    [2559, 3339],
+]

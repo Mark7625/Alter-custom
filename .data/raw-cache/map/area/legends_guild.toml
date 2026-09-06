@@ -1,0 +1,13 @@
+[[area]]
+name = "Legends' Guild"
+area_id = "area.legends_guild"
+levels = [0, 1, 2, 3]
+
+# The fenced guild grounds from the front gate to the north fence.
+[[area.polygons]]
+vertices = [
+    [2712, 3348],
+    [2748, 3348],
+    [2748, 3392],
+    [2712, 3392],
+]

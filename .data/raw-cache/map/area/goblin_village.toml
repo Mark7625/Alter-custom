@@ -1,0 +1,12 @@
+[[area]]
+name = "Goblin Village"
+area_id = "area.goblin_village"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2940, 3480],
+    [2975, 3480],
+    [2975, 3520],
+    [2940, 3520],
+]
