@@ -91,6 +91,7 @@ constructor(
                     hit {
                         damage(0..MELEE_MAX_HIT).roll()
                         type(Melee)
+                        target = AllInRadius(radius = 1)
                     }
                     include(external("venenatis.post_attack"))
                 }
