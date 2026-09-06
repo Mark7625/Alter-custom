@@ -4594,6 +4594,7 @@ inherit = "npc.venenatis_singles"
 huntMode = 2
 huntRange = 30
 maxRange = 30
+attackRange = 10
 defaultMode = "Wander"
 [npc.params]
 "param.death_anim"="seq.npc_venenatis_death_01"
@@ -4618,6 +4619,7 @@ inherit = "npc.venenatis"
 huntMode = 2
 huntRange = 30
 maxRange = 30
+attackRange = 10
 defaultMode = "Wander"
 [npc.params]
 "param.death_anim"="seq.npc_venenatis_death_01"

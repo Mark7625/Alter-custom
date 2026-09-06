@@ -165,7 +165,6 @@ constructor(
     }
 
     private fun resetFightState(npc: Npc) {
-        npc.apRangeOverride = PHASE_AP_RANGE
         npc.vars["varn.spindel_slot"] = 0
     }
 
@@ -181,14 +180,13 @@ constructor(
         val slot = slotBefore + 1
         when (slot) {
             BLOCK_SIZE -> {
-                fleeFromTarget(npc, target)
+                fleeFromTarget(npc)
                 val nextStyle = if (style == PHASE_RANGED) PHASE_MAGIC else PHASE_RANGED
                 encounter.transitionTo(nextStyle, deps.mapClock.cycle)
-                npc.apRangeOverride = PHASE_AP_RANGE
                 npc.vars["varn.spindel_slot"] = 0
             }
             WEB_SLOT -> {
-                fleeFromTarget(npc, target)
+                fleeFromTarget(npc)
                 if (style == PHASE_MAGIC) deployStickyWeb(npc, target)
                 npc.vars["varn.spindel_slot"] = slot
             }
@@ -209,7 +207,7 @@ constructor(
         interpreter.run(access, effect)
     }
 
-    private fun fleeFromTarget(npc: Npc, fallback: Player) {
+    private fun fleeFromTarget(npc: Npc) {
         val lair = lairFor(npc)
         val dest = randomArenaTile(lair, npc.coords)
         npc.ignoreCombatInteractions = true
@@ -217,22 +215,25 @@ constructor(
         npc.clearFacingLock()
         npc.walkTo(routeFactory, dest, speed = MoveSpeed.Run) {
             npc.ignoreCombatInteractions = false
-            val next =
-                pickArenaTarget(lair, npc)
-                    ?: fallback.takeIf { it.isValidTarget() && lair.contains(it.coords) }
-                    ?: return@walkTo
-            npc.apPlayer2(next, aiPlayerInteractions)
+            val next = pickArenaTarget(npc)
+            if (next != null) {
+                npc.apPlayer2(next, aiPlayerInteractions)
+            }
         }
     }
 
-    private fun pickArenaTarget(lair: LairConfig, npc: Npc): Player? {
+    private fun pickArenaTarget(npc: Npc): Player? {
         val candidates =
             deps.playerList.filter {
                 it.isValidTarget() &&
-                    it.coords.level == lair.level &&
-                    it.coords.chebyshevDistance(npc.coords) <= RETARGET_RANGE
+                    it.coords.level == npc.coords.level &&
+                    it.coords.chebyshevDistance(npc.spawnCoords) <= npc.type.maxRange
             }
-        return if (candidates.isEmpty()) null else candidates[deps.random.of(candidates.size)]
+        if (candidates.isEmpty()) return null
+        val inAttackRange =
+            candidates.filter { it.coords.chebyshevDistance(npc.coords) <= npc.attackRange }
+        val pool = inAttackRange.ifEmpty { candidates }
+        return pool[deps.random.of(pool.size)]
     }
 
     private fun randomArenaTile(lair: LairConfig, from: CoordGrid): CoordGrid {
@@ -336,14 +337,12 @@ constructor(
 
         private const val ATTACK_RATE = 4
         private const val AGGRO_RANGE = 8
-        private const val PHASE_AP_RANGE = 10
         private const val BLOCK_SIZE = 8
         private const val WEB_SLOT = 4
 
         private const val FLEE_MIN_MOVE = 4
         private const val FLEE_MAX_MOVE = 9
         private const val FLEE_TILE_ATTEMPTS = 8
-        private const val RETARGET_RANGE = 15
         private const val ARENA_ATTACK_RADIUS = 15
 
         private const val SPIDERLING_COUNT = 2
