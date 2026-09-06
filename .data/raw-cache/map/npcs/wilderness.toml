@@ -2165,10 +2165,6 @@ npc = "npc.thug"
 coords = "0_49_55_48_60"
 
 [[spawn]]
-npc = "npc.venenatis"
-coords = "0_51_59_55_22"
-
-[[spawn]]
 npc = "npc.wbr_poisonspider"
 coords = "0_51_59_10_36"
 
