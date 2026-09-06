@@ -165,32 +165,32 @@ constructor(
     }
 
     private fun resetFightState(npc: Npc) {
-        npc.vars["varn.spindel_slot"] = 0
+        npc.vars["varn.venenatis_attacks"] = 0
     }
 
     private suspend fun onStyleAttackResolved(access: StandardNpcAccess, npc: Npc, target: Player) {
         val encounter = deps.encounter(npc)
         val style = encounter.currentPhaseName
-        val slotBefore = npc.vars["varn.spindel_slot"]
+        val attacksBefore = npc.vars["varn.venenatis_attacks"]
 
-        if (style == PHASE_RANGED && slotBefore == 0) {
+        if (style == PHASE_RANGED && attacksBefore == 0) {
             summonSpiderlings(access, npc, target)
         }
 
-        val slot = slotBefore + 1
-        when (slot) {
+        val attacks = attacksBefore + 1
+        when (attacks) {
             BLOCK_SIZE -> {
                 fleeFromTarget(npc)
                 val nextStyle = if (style == PHASE_RANGED) PHASE_MAGIC else PHASE_RANGED
                 encounter.transitionTo(nextStyle, deps.mapClock.cycle)
-                npc.vars["varn.spindel_slot"] = 0
+                npc.vars["varn.venenatis_attacks"] = 0
             }
-            WEB_SLOT -> {
+            WEB_ATTACK -> {
                 fleeFromTarget(npc)
                 if (style == PHASE_MAGIC) deployStickyWeb(npc, target)
-                npc.vars["varn.spindel_slot"] = slot
+                npc.vars["varn.venenatis_attacks"] = attacks
             }
-            else -> npc.vars["varn.spindel_slot"] = slot
+            else -> npc.vars["varn.venenatis_attacks"] = attacks
         }
     }
 
@@ -338,7 +338,7 @@ constructor(
         private const val ATTACK_RATE = 4
         private const val AGGRO_RANGE = 8
         private const val BLOCK_SIZE = 8
-        private const val WEB_SLOT = 4
+        private const val WEB_ATTACK = 4
 
         private const val FLEE_MIN_MOVE = 4
         private const val FLEE_MAX_MOVE = 9
