@@ -54,6 +54,10 @@ data class LairConfig(
         coord.level == level &&
             coord.x in (minX - margin)..(maxX + margin) &&
             coord.z in (minZ - margin)..(maxZ + margin)
+
+    fun clampX(x: Int): Int = x.coerceIn(minX, maxX)
+
+    fun clampZ(z: Int): Int = z.coerceIn(minZ, maxZ)
 }
 
 val SPINDEL_LAIR =
@@ -214,7 +218,9 @@ constructor(
         npc.walkTo(routeFactory, dest, speed = MoveSpeed.Run) {
             npc.ignoreCombatInteractions = false
             val next =
-                pickArenaTarget(lair, npc) ?: fallback.takeIf(Player::isValidTarget) ?: return@walkTo
+                pickArenaTarget(lair, npc)
+                    ?: fallback.takeIf { it.isValidTarget() && lair.contains(it.coords) }
+                    ?: return@walkTo
             npc.apPlayer2(next, aiPlayerInteractions)
         }
     }
@@ -233,8 +239,8 @@ constructor(
         repeat(FLEE_TILE_ATTEMPTS) {
             val dx = deps.random.of(FLEE_MAX_MOVE * 2 + 1) - FLEE_MAX_MOVE
             val dz = deps.random.of(FLEE_MAX_MOVE * 2 + 1) - FLEE_MAX_MOVE
-            val x = (from.x + dx).coerceIn(lair.minX, lair.maxX)
-            val z = (from.z + dz).coerceIn(lair.minZ, lair.maxZ)
+            val x = lair.clampX(from.x + dx)
+            val z = lair.clampZ(from.z + dz)
             val tile = CoordGrid(x, z, lair.level)
             if (from.chebyshevDistance(tile) in FLEE_MIN_MOVE..FLEE_MAX_MOVE) return tile
         }
