@@ -15,9 +15,9 @@ import org.rsmod.api.area.checker.AreaChecker
 import org.rsmod.api.death.NpcDeathKillContext
 import org.rsmod.api.death.NpcDeathKillHook
 import org.rsmod.api.death.prepareAdminDieTest
+import org.rsmod.api.death.preparePvpDeath
 import org.rsmod.api.instances.BossInstanceRegistry
 import org.rsmod.api.instances.InstanceArea
-import org.rsmod.api.death.preparePvpDeath
 import org.rsmod.api.invtx.invAdd
 import org.rsmod.api.invtx.invClear
 import org.rsmod.api.mechanics.toxins.impl.PlayerDisease
@@ -25,10 +25,10 @@ import org.rsmod.api.mechanics.toxins.impl.PlayerPoison
 import org.rsmod.api.mechanics.toxins.impl.PlayerVenom
 import org.rsmod.api.player.cheat.adminGodMode
 import org.rsmod.api.player.cheat.adminMaxHit
-import org.rsmod.api.player.ironman.PlayerGamemode
-import org.rsmod.api.player.ironman.setGamemode
 import org.rsmod.api.player.debug.componentClickDebug
 import org.rsmod.api.player.hook.TeleportType
+import org.rsmod.api.player.ironman.PlayerGamemode
+import org.rsmod.api.player.ironman.setGamemode
 import org.rsmod.api.player.output.MiscOutput
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.output.soundSynth
