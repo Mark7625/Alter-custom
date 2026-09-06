@@ -294,6 +294,7 @@ constructor(
     private fun mypos(cheat: Cheat) =
         with(cheat) {
             player.mes("${player.coords}:")
+            player.mes("  ${player.coords.x} ${player.coords.z} ${player.coords.level}")
             player.mes("  ${ZoneKey.from(player.coords)} - ${ZoneGrid.from(player.coords)}")
             player.mes(
                 "  ${MapSquareKey.from(player.coords)} - ${MapSquareGrid.from(player.coords)}"
