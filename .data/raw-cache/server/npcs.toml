@@ -4591,7 +4591,7 @@ defaultMode = "Wander"
 [[npc]]
 id = "npc.venenatis_singles"
 inherit = "npc.venenatis_singles"
-huntMode = 8
+huntMode = 2
 huntRange = 30
 maxRange = 30
 defaultMode = "Wander"
@@ -4615,7 +4615,7 @@ defaultMode = "Wander"
 [[npc]]
 id = "npc.venenatis"
 inherit = "npc.venenatis"
-huntMode = 8
+huntMode = 2
 huntRange = 30
 maxRange = 30
 defaultMode = "Wander"
