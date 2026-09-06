@@ -57,10 +57,10 @@ data class LairConfig(
 }
 
 val SPINDEL_LAIR =
-    LairConfig("spindel", "npc.venenatis_singles", "npc.spindel_spiderling", 2, 1624, 1636, 11541, 11553)
+    LairConfig("spindel", "npc.venenatis_singles", "npc.spindel_spiderling", 2, 1610, 1650, 11525, 11570)
 
 val VENENATIS_LAIR =
-    LairConfig("venenatis", "npc.venenatis", "npc.venenatis_spiderling", 2, 3410, 3432, 10188, 10214)
+    LairConfig("venenatis", "npc.venenatis", "npc.venenatis_spiderling", 2, 3405, 3440, 10180, 10220)
 
 class Venenatis
 @Inject
