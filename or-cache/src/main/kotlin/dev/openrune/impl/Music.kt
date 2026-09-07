@@ -112,6 +112,8 @@ object Music {
             modern("south_ardougne", "ballad_of_enchantment", "upcoming"),
             modern("legends_guild", "trinity"),
             modern("mourner_tunnels", "fight_or_flight"),
+            modern("emirs_arena_music", "duelarena"),
+            modern("mage_training_arena", "shine"),
         )
 
     fun musicModern() =

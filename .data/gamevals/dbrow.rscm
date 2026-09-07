@@ -69,3 +69,6 @@ mining_ancientessence=55512
 mining_infernalshale=55513
 shop_currency_standard_gp=64596
 shop_currency_stardust=64595
+shop_currency_pvp_arena_points=63500
+music_modern_emirs_arena_music=63863
+music_modern_mage_training_arena=63862

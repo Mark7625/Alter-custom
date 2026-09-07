@@ -1,0 +1,3 @@
+[gamevals.inv]
+# Persisted holding inventory for duel stakes (see .data/raw-cache/server/inv.toml).
+emirs_arena_stake = 1101

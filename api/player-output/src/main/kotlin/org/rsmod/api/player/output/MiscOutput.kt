@@ -10,7 +10,10 @@ import org.rsmod.game.entity.Player
 public object MiscOutput {
     /** @see [SetPlayerOp] */
     public fun setPlayerOp(player: Player, slot: Int, op: String?, priority: Boolean = false) {
-        player.options.add(slot ,op)
+        while (player.options.size <= slot) {
+            player.options.add(null)
+        }
+        player.options[slot] = op
         player.client.write(SetPlayerOp(slot, priority, op))
     }
 

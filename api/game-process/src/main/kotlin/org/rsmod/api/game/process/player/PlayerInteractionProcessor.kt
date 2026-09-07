@@ -32,6 +32,7 @@ import org.rsmod.game.interact.InteractionNpcOp
 import org.rsmod.game.interact.InteractionNpcT
 import org.rsmod.game.interact.InteractionObj
 import org.rsmod.game.interact.InteractionPlayer
+import org.rsmod.game.interact.InteractionOp
 import org.rsmod.game.interact.InteractionPlayerOp
 import org.rsmod.game.interact.InteractionPlayerT
 import org.rsmod.game.movement.RouteRequestPathingEntity
@@ -64,7 +65,13 @@ constructor(
         // new one (e.g., combat calling `opnpc2`), the original interaction completes before the
         // new one is processed.
         val interaction = player.interaction
-        val followOp = interaction is InteractionPlayerOp && interaction.isFollowOp()
+        // Player option 3 is "Follow" by default, but content may relabel the slot (Emir's Arena
+        // puts "Challenge" there); only follow when the slot still says so, otherwise let the
+        // op reach its script like any other option.
+        val followOp =
+            interaction is InteractionPlayerOp &&
+                interaction.isFollowOp() &&
+                player.options.getOrNull(InteractionOp.Op3.slot) == FOLLOW_OPTION
         var interacted = false
 
         if (interaction != null && !player.isAccessProtected) {
@@ -581,3 +588,5 @@ constructor(
         }
     }
 }
+
+private const val FOLLOW_OPTION = "Follow"

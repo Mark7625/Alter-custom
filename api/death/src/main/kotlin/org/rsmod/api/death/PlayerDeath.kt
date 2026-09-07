@@ -32,6 +32,7 @@ constructor(
     private val drops: PlayerDeathDrops,
     private val handlingResolver: PlayerDeathHandlingResolver,
     private val cleanupHooks: Set<PlayerDeathCleanupHook>,
+    private val respawnHooks: Set<PlayerRespawnHook>,
     private val areaChecker: AreaChecker,
     private val worldRepo: WorldRepository,
 ) {
@@ -44,7 +45,7 @@ constructor(
     }
 
     private suspend fun ProtectedAccess.deathSequence() {
-        val respawn = CoordGrid(0, 50, 50, 21, 18)
+        val respawn = respawnHooks.firstNotNullOfOrNull { it.respawn(player) } ?: DEFAULT_RESPAWN
         val randomRespawn = mapFindSquareLineOfWalk(respawn, minRadius = 0, maxRadius = 2)
 
         stopAction()
@@ -147,6 +148,8 @@ constructor(
 
     private companion object {
         private const val DEATH_SOUND_RADIUS = 10
+
+        private val DEFAULT_RESPAWN = CoordGrid(0, 50, 50, 21, 18)
 
         /**
          * Js5 archive 11 group of the death jingle. The `jingle.death` gameval id is not the group

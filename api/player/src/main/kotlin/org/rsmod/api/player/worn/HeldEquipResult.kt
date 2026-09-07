@@ -15,6 +15,9 @@ public sealed class HeldEquipResult {
 
         public class NotEnoughWornSpace(message: String) : Fail(listOf(message))
 
+        /** A [org.rsmod.api.player.hook.PlayerRestrictionHook] forbade the equip. */
+        public class Restricted(message: String) : Fail(listOf(message))
+
         public class StatRequirements(messages: List<String>) : Fail(messages) {
             public constructor(
                 messages: Pair<String, String>

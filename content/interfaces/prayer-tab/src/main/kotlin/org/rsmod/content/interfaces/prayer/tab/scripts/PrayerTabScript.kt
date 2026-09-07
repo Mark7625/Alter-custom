@@ -7,6 +7,8 @@ import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.output.soundSynth
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.player.hook.PlayerRestrictions
+import org.rsmod.api.player.hook.RestrictedAction
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.prayerLvl
 import org.rsmod.api.player.ui.ifClose
@@ -30,6 +32,7 @@ private constructor(
     private val repo: PrayerRepository,
     private val eventBus: EventBus,
     private val protectedAccess: ProtectedAccessLauncher,
+    private val restrictions: PlayerRestrictions,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         for ((component, prayer) in repo.prayerComponents.map { RSCM.getReverseMapping(RSCMType.COMPONENT,it.key.packed) to it.value }) {
@@ -62,6 +65,12 @@ private constructor(
     }
 
     private suspend fun ProtectedAccess.enablePrayer(prayer: Prayer) {
+        val restriction = restrictions.check(player, RestrictedAction.Prayer)
+        if (restriction != null) {
+            player.resyncVar(prayer.enabled)
+            mes(restriction)
+            return
+        }
         if (player.prayerLvl == 0) {
             // Note: This is probably implicitly called by some other function, but as of now, we do
             // not know what that is.

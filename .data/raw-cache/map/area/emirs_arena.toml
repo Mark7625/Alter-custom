@@ -1,0 +1,30 @@
+[[area]]
+name = "Emir's Arena"
+area_id = "area.emirs_arena"
+levels = [0, 1]
+
+# The whole complex north-east of Al Kharid: the welcome centre and ring of dueling landing on
+# the west side, the four walled combat areas with their spectator walkways, and the hospital,
+# chapel and bank along the north.
+[[area.polygons]]
+vertices = [
+    [3308, 3200],
+    [3392, 3200],
+    [3392, 3292],
+    [3308, 3292],
+]
+
+# Same footprint again under a second id for the music table: the music plugin registers its own
+# enter/exit handlers per music area, and the arena plugin already owns area.emirs_arena.
+[[area]]
+name = "Emir's Arena (music)"
+area_id = "area.emirs_arena_music"
+levels = [0, 1]
+
+[[area.polygons]]
+vertices = [
+    [3308, 3200],
+    [3392, 3200],
+    [3392, 3292],
+    [3308, 3292],
+]

@@ -25,3 +25,5 @@ runmode_toggle=23
 preserve_activation=24
 client_mode=25
 fullscreen_map=26
+emirs_arena_start=28
+emirs_arena_leave=29

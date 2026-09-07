@@ -23,6 +23,7 @@ import net.rsprot.protocol.game.outgoing.interfaces.IfSetNpcHead
 import net.rsprot.protocol.game.outgoing.interfaces.IfSetNpcHeadActive
 import net.rsprot.protocol.game.outgoing.interfaces.IfSetObject
 import net.rsprot.protocol.game.outgoing.interfaces.IfSetPlayerHead
+import net.rsprot.protocol.game.outgoing.interfaces.IfSetPosition
 import net.rsprot.protocol.game.outgoing.interfaces.IfSetText
 import net.rsprot.protocol.game.outgoing.misc.player.TriggerOnDialogAbort
 import org.rsmod.annotations.InternalApi
@@ -233,6 +234,12 @@ public fun Player.ifSetEvents(internal: String, range: IntRange, vararg event: I
             events2 = packedHigh,
         )
     client.write(prot)
+}
+
+/** Moves a component to ([x], [y]) within its parent, keeping its position modes. */
+public fun Player.ifSetPosition(internal: String, x: Int, y: Int) {
+    val target = ServerCacheManager.fromComponent(internal.asRSCM(RSCMType.COMPONENT))
+    client.write(IfSetPosition(target.interfaceId, target.component, x, y))
 }
 
 public fun Player.ifSetText(internal: String, text: String) {

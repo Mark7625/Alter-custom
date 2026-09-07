@@ -10,4 +10,7 @@ public sealed class PvPAttackValidateResult {
     public data object Pass : PvPAttackValidateResult()
 
     public data class Deny(val message: String) : PvPAttackValidateResult()
+
+    /** Drop the attack without a message; the hook has already acted on the click itself. */
+    public data object Silent : PvPAttackValidateResult()
 }

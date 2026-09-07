@@ -4,6 +4,7 @@ import dev.openrune.rscm.RSCM
 import dev.openrune.rscm.RSCMType
 import jakarta.inject.Inject
 import org.rsmod.api.combat.commons.CombatAttack
+import org.rsmod.api.combat.commons.hook.PvPAttackRestrictionHook
 import org.rsmod.api.combat.manager.PlayerAttackManager
 import org.rsmod.api.combat.manager.RangedAmmoManager
 import org.rsmod.api.combat.player.activateMagicSpecial
@@ -45,6 +46,7 @@ constructor(
     private val spellsReg: SpellAttackRegistry,
     private val skullHooks: Set<PvPSkullHook>,
     private val specialAttackHooks: Set<PvPSpecialAttackHook>,
+    private val attackRestrictionHooks: Set<PvPAttackRestrictionHook>,
 ) {
     suspend fun attack(access: ProtectedAccess, target: Player, attack: CombatAttack.PlayerAttack) {
         when (attack) {
@@ -53,6 +55,27 @@ constructor(
             is CombatAttack.Spell -> access.attackMagicSpell(target, attack)
             is CombatAttack.Staff -> access.attackMagicStaff(target, attack)
         }
+    }
+
+    /**
+     * Returns `false` (and stops combat) when a registered [PvPAttackRestrictionHook] forbids this
+     * particular attack against [target].
+     */
+    private fun ProtectedAccess.isAttackAllowed(
+        target: Player,
+        attack: CombatAttack.PlayerAttack,
+    ): Boolean {
+        val special = specialAttackType != SpecialAttackType.None
+        for (hook in attackRestrictionHooks) {
+            val message = hook.restriction(player, target, attack, special) ?: continue
+            if (special) {
+                specialAttackType = SpecialAttackType.None
+            }
+            manager.stopCombat(player)
+            mes(message)
+            return false
+        }
+        return true
     }
 
     private fun ProtectedAccess.applyPkVars(target: Player) {
@@ -70,6 +93,9 @@ constructor(
 
     private suspend fun ProtectedAccess.attackMelee(target: Player, attack: CombatAttack.Melee) {
         if (!canAttack(target)) {
+            return
+        }
+        if (!isAttackAllowed(target, attack)) {
             return
         }
 
@@ -131,6 +157,9 @@ constructor(
 
     private suspend fun ProtectedAccess.attackRanged(target: Player, attack: CombatAttack.Ranged) {
         if (!canAttack(target)) {
+            return
+        }
+        if (!isAttackAllowed(target, attack)) {
             return
         }
 
@@ -274,6 +303,9 @@ constructor(
         if (!canAttack(target)) {
             return
         }
+        if (!isAttackAllowed(target, attack)) {
+            return
+        }
 
         if (manager.isAttackDelayed(player)) {
             manager.continueCombat(player, target, attack.spell)
@@ -300,6 +332,9 @@ constructor(
         attack: CombatAttack.Staff,
     ) {
         if (!canAttack(target)) {
+            return
+        }
+        if (!isAttackAllowed(target, attack)) {
             return
         }
 
