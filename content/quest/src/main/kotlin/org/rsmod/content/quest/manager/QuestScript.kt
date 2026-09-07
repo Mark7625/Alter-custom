@@ -75,12 +75,14 @@ abstract class QuestScript(
     val questKey: String,
     val questVarp : String,
     val rewards: QuestReward,
-    val completedQuestItemDisplay: ItemRewardDisplay
+    val completedQuestItemDisplay: ItemRewardDisplay,
+    /** Jingle played alongside the completion scroll; quests with their own variant override it. */
+    val completionJingle: String = Quest.DEFAULT_COMPLETION_JINGLE,
 ) : PluginScript() {
 
     private var Player.questState by intVarp(questVarp)
 
-    val quest = Quest.register(questKey, questVarp, completedQuestItemDisplay, rewards)
+    val quest = Quest.register(questKey, questVarp, completedQuestItemDisplay, rewards, completionJingle)
 
     abstract fun subTitle(): String
 

@@ -27,7 +27,9 @@ data class Quest(
     val questPoints: Int,
     val questVarp: String,
     val rewards : QuestReward,
-    val itemDisplay : ItemRewardDisplay
+    val itemDisplay : ItemRewardDisplay,
+    /** Played when the quest is completed; see [QuestScript.completionJingle]. */
+    val completionJingle: String = DEFAULT_COMPLETION_JINGLE,
 ) {
 
     private var Player.questState by intVarp(questVarp)
@@ -46,11 +48,18 @@ data class Quest(
 
         fun all(): Collection<Quest> = questsByKey.values
 
+        /**
+         * "Quest Complete 3", the variant that plays for beginner and easy quests. Longer quests
+         * pass their own variant (`jingle.quest_complete_2` or `_1`) to [QuestScript].
+         */
+        const val DEFAULT_COMPLETION_JINGLE = "jingle.quest_complete_3"
+
         fun register(
             rowKey: String,
             varp: String,
             itemDisplay : ItemRewardDisplay,
-            rewards : QuestReward
+            rewards : QuestReward,
+            completionJingle: String = DEFAULT_COMPLETION_JINGLE,
         ): Quest {
 
             val rowKeyID = "dbrow.${rowKey}".asRSCM()
@@ -66,7 +75,8 @@ data class Quest(
                 questPoints = questRow.questpoints,
                 questVarp = varp,
                 itemDisplay = itemDisplay,
-                rewards = rewards
+                rewards = rewards,
+                completionJingle = completionJingle,
             )
             questsByKey[rowKey.normalizedQuestKey()] = quest
             return quest
@@ -123,6 +133,35 @@ data class Quest(
         return newStage
     }
 
+    /**
+     * Puts the quest back to "not started" for [player]: stage, varp, every registered quest
+     * attribute, and the quest points and completion count if it had been finished. Intended for
+     * testing via the `::resetquest` command.
+     */
+    fun resetQuest(player: Player) {
+        val wasCompleted = isQuestCompleted(player)
+        player.attr[QUEST_STAGE_MAP_ATTR]?.remove(key)
+        player.questState = 0
+        for (attribute in attributeRegistry.values) {
+            attribute.clear(player)
+        }
+        if (wasCompleted) {
+            player.questPoints = (player.questPoints - questPoints).coerceAtLeast(0)
+            player.questsCompleted = (player.questsCompleted - 1).coerceAtLeast(0)
+        }
+    }
+
+    /**
+     * Jumps the quest to [stage] for [player] without running completion rewards. Intended for
+     * testing via the `::queststage` command; attributes are left untouched.
+     */
+    fun jumpToStage(player: Player, stage: Int) {
+        val clamped = stage.coerceIn(0, maxSteps)
+        val stages = player.attr.getOrPut(QUEST_STAGE_MAP_ATTR) { mutableMapOf() }
+        stages[key] = clamped
+        player.questState = clamped
+    }
+
     fun <T> attribute(
         name: String,
         default: T,
@@ -154,6 +193,7 @@ data class Quest(
 
         access.player.questPoints += questPoints
         access.player.questsCompleted++
+        access.midiJingle(completionJingle)
 
         access.ifOpenMain("interface.questscroll")
         access.ifSetText("component.questscroll:quest_title", "You have completed ${displayName}!")

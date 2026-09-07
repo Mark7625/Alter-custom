@@ -1,0 +1,14 @@
+# The stone circle south of Varrock where Delrith is summoned. Walking in here with Silverlight
+# during Demon Slayer moves the player into a private copy of the circle for the fight.
+[[area]]
+name = "Demon Slayer stone circle"
+area_id = "area.demon_slayer_stone_circle"
+levels = [0]
+
+[[area.polygons]]
+vertices = [
+    [3220, 3361],
+    [3236, 3361],
+    [3236, 3378],
+    [3220, 3378],
+]
