@@ -244,7 +244,7 @@ here so it at least shows up. Nothing is ticked until someone claims it.
 - [ ] Deadfall trapping
 - [ ] Drift net fishing
 - [ ] Falconry
-- [ ] Goat Hunting
+- [ ] Goat hunting
 - [ ] Net trapping
 - [ ] Magic box trapping
 - [ ] Pitfall trapping
