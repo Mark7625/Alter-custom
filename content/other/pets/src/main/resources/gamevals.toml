@@ -1,0 +1,12 @@
+# Cat sound effects. The vanilla gamevals dump carries no synth names, so the raw cache ids are
+# declared here (ids taken from the OSRS wiki "List of sound IDs").
+[gamevals.synth]
+kittens_mew = 339
+purr = 340
+cat_hiss = 335
+meeoow = 1169
+sad_meeoow = 1176
+
+[gamevals.timer]
+# Per-cycle soft timer that drives a following cat: follow upkeep, growth, hunger and attention.
+pet_cat_tick = 120
