@@ -29,7 +29,11 @@ public class CharacterAccountApplier @Inject constructor() :
         player.trustedDevices = d.trustedDevices.toMutableList()
         player.twoFactorAuth = d.twoFactorAuth
         player.lastKnownDevice = d.trustedDevices.maxByOrNull { it.verifiedAt }?.deviceId
-        player.members = c.members
+        // Every account is a member: all of the server's content is members content, and the
+        // client only counts rune pouch and combination runes (and draws member spells as
+        // castable) when the login response flags the player as a member. The stored flag is
+        // ignored and written back as `true` on the next save.
+        player.members = true
         player.username = d.accountName
         player.displayName = c.displayName ?: ""
         player.previousDisplayName = c.previousDisplayName ?: ""
