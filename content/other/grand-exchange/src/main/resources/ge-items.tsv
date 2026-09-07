@@ -1,0 +1,4663 @@
+# id	buy_limit	guide_price	name  (OSRS wiki prices API + Module:GELimits)
+2	11000	243	Steel cannonball
+6	70	196416	Cannon base
+8	70	182936	Cannon stand
+10	70	166004	Cannon barrels
+12	70	199851	Cannon furnace
+28	15	173	Insect repellent
+30	15	1250	Bucket of wax
+36	40	249	Candle
+39	10000	4	Bronze arrowtips
+40	10000	12	Iron arrowtips
+41	10000	52	Steel arrowtips
+42	10000	83	Mithril arrowtips
+43	10000	104	Adamant arrowtips
+44	10000	210	Rune arrowtips
+45	11000	39	Opal bolt tips
+46	11000	6	Pearl bolt tips
+47	11000	79	Barb bolttips
+48	10000	6	Longbow (u)
+50	10000	6	Shortbow (u)
+52	7000	1	Arrow shaft
+53	11000	10	Headless arrow
+54	10000	7	Oak shortbow (u)
+56	10000	8	Oak longbow (u)
+58	10000	16	Willow longbow (u)
+60	10000	6	Willow shortbow (u)
+62	10000	61	Maple longbow (u)
+64	10000	15	Maple shortbow (u)
+66	10000	147	Yew longbow (u)
+68	10000	114	Yew shortbow (u)
+70	10000	756	Magic longbow (u)
+72	10000	505	Magic shortbow (u)
+91	10000	414	Guam potion (unf)
+93	10000	418	Marrentill potion (unf)
+95	10000	366	Tarromin potion (unf)
+97	10000	588	Harralander potion (unf)
+99	10000	6121	Ranarr potion (unf)
+101	10000	1707	Irit potion (unf)
+103	10000	2050	Avantoe potion (unf)
+105	10000	2629	Kwuarm potion (unf)
+107	10000	2526	Cadantine potion (unf)
+109	10000	1714	Dwarf weed potion (unf)
+111	10000	3755	Torstol potion (unf)
+113	2000	106	Strength potion(4)
+115	2000	71	Strength potion(3)
+117	2000	42	Strength potion(2)
+119	2000	25	Strength potion(1)
+121	2000	10	Attack potion(3)
+123	2000	10	Attack potion(2)
+125	2000	6	Attack potion(1)
+127	2000	25	Restore potion(3)
+129	2000	21	Restore potion(2)
+131	2000	1	Restore potion(1)
+133	2000	355	Defence potion(3)
+135	2000	177	Defence potion(2)
+137	2000	98	Defence potion(1)
+139	2000	6816	Prayer potion(3)
+141	2000	4762	Prayer potion(2)
+143	2000	2434	Prayer potion(1)
+145	2000	1480	Super attack(3)
+147	2000	960	Super attack(2)
+149	2000	475	Super attack(1)
+151	2000	20	Fishing potion(3)
+153	2000	64	Fishing potion(2)
+155	2000	13	Fishing potion(1)
+157	2000	2378	Super strength(3)
+159	2000	1450	Super strength(2)
+161	2000	711	Super strength(1)
+163	2000	2412	Super defence(3)
+165	2000	1064	Super defence(2)
+167	2000	947	Super defence(1)
+169	2000	1457	Ranging potion(3)
+171	2000	1087	Ranging potion(2)
+173	2000	478	Ranging potion(1)
+175	2000	292	Antipoison(3)
+177	2000	134	Antipoison(2)
+179	2000	126	Antipoison(1)
+181	2000	1319	Superantipoison(3)
+183	2000	608	Superantipoison(2)
+185	2000	750	Superantipoison(1)
+187	2000	294	Weapon poison
+189	2000	421	Zamorak brew(3)
+191	2000	241	Zamorak brew(2)
+193	2000	226	Zamorak brew(1)
+197	2000	2249	Poison chalice
+199	13000	235	Grimy guam leaf
+201	13000	204	Grimy marrentill
+203	13000	219	Grimy tarromin
+205	13000	328	Grimy harralander
+207	11000	5707	Grimy ranarr weed
+209	13000	1362	Grimy irit leaf
+211	13000	1655	Grimy avantoe
+213	13000	2151	Grimy kwuarm
+215	11000	2084	Grimy cadantine
+217	11000	1266	Grimy dwarf weed
+219	11000	3403	Grimy torstol
+221	13000	5	Eye of newt
+223	13000	186	Red spiders' eggs
+225	13000	230	Limpwurt root
+227	13000	4	Vial of water
+229	13000	2	Vial
+231	13000	776	Snape grass
+233	40	204	Pestle and mortar
+235	13000	701	Unicorn horn dust
+237	13000	574	Unicorn horn
+239	13000	686	White berries
+241	13000	74	Dragon scale dust
+243	13000	20	Blue dragon scale
+245	11000	950	Wine of Zamorak
+247	13000	348	Jangerberries
+249	13000	350	Guam leaf
+251	13000	304	Marrentill
+253	13000	380	Tarromin
+255	13000	385	Harralander
+257	11000	5882	Ranarr weed
+259	13000	1459	Irit leaf
+261	13000	1838	Avantoe
+263	13000	2361	Kwuarm
+265	11000	2226	Cadantine
+267	11000	1365	Dwarf weed
+269	11000	3527	Torstol
+272	15	175	Fish food
+273	15	672	Poison (item)
+288	15	225	Goblin mail
+299	18000	705	Mithril seeds
+301	40	124	Lobster pot
+303	40	174	Small fishing net
+305	40	104	Big fishing net
+307	40	96	Fishing rod
+309	40	96	Fly fishing rod
+311	40	89	Harpoon
+313	8000	5	Fishing bait
+314	30000	2	Feather
+315	6000	24	Shrimps
+317	15000	24	Raw shrimps
+319	15000	40	Anchovies
+321	13000	15	Raw anchovies
+325	6000	17	Sardine
+327	15000	25	Raw sardine
+329	6000	27	Salmon
+331	15000	29	Raw salmon
+333	6000	20	Trout
+335	15000	43	Raw trout
+339	6000	22	Cod
+341	15000	30	Raw cod
+345	15000	51	Raw herring
+347	6000	13	Herring
+349	15000	112	Raw pike
+351	6000	51	Pike
+353	15000	12	Raw mackerel
+355	6000	6	Mackerel
+359	15000	41	Raw tuna
+361	6000	33	Tuna
+363	15000	9	Raw bass
+365	6000	39	Bass
+371	15000	192	Raw swordfish
+373	6000	197	Swordfish
+377	15000	114	Raw lobster
+379	6000	98	Lobster
+383	15000	716	Raw shark
+385	10000	1000	Shark
+389	15000	1040	Raw manta ray
+391	10000	1404	Manta ray
+395	15000	658	Raw sea turtle
+397	10000	1045	Sea turtle
+401	13000	6	Seaweed
+403	13000	145	Edible seaweed
+405	50	610	Casket
+407	11000	27	Oyster
+411	11000	30	Oyster pearl
+413	11000	569	Oyster pearls
+426	150	17	Priest gown (top)
+428	150	17	Priest gown (bottom)
+434	13000	74	Clay
+436	13000	12	Copper ore
+438	13000	14	Tin ore
+440	13000	71	Iron ore
+442	13000	69	Silver ore
+444	30000	152	Gold ore
+447	13000	157	Mithril ore
+449	4500	554	Adamantite ore
+451	4500	10121	Runite ore
+453	13000	137	Coal
+464	2000	448	Strange fruit
+526	3000	37	Bones
+528	3000	538	Burnt bones
+530	3000	775	Bat bones
+532	3000	276	Big bones
+534	3000	1072	Babydragon bones
+536	7500	3438	Dragon bones
+538	125	15763	Druid's robe
+540	125	11944	Druid's robe top
+542	125	106	Monk's robe
+544	125	351	Monk's robe top
+546	125	359	Shade robe top
+548	125	60	Shade robe
+554	50000	5	Fire rune
+555	50000	5	Water rune
+556	50000	5	Air rune
+557	50000	5	Earth rune
+558	18000	2	Mind rune
+559	18000	4	Body rune
+560	25000	191	Death rune
+561	18000	136	Nature rune
+562	18000	105	Chaos rune
+563	18000	126	Law rune
+564	18000	118	Cosmic rune
+565	25000	347	Blood rune
+566	25000	379	Soul rune
+567	10000	74	Unpowered orb
+569	11000	1602	Fire orb
+571	11000	1087	Water orb
+573	11000	1697	Air orb
+575	11000	1221	Earth orb
+577	125	1149	Blue wizard robe
+579	125	319	Blue wizard hat
+581	125	475	Black robe
+590	40	98	Tinderbox
+592	13000	25	Ashes
+596	40	28	Unlit torch
+621	18000	460	Ship ticket
+626	150	1704	Pink boots
+628	150	260	Green boots
+630	150	1399	Blue boots
+632	150	1943	Cream boots
+634	150	147	Turquoise boots
+636	150	980	Pink robe top
+638	150	1575	Green robe top
+640	150	3140	Blue robe top
+642	150	1258	Cream robe top
+644	150	710	Turquoise robe top
+646	150	6500	Pink robe bottoms
+648	150	782	Green robe bottoms
+650	150	670	Blue robe bottoms
+652	150	1132	Cream robe bottoms
+654	150	1350	Turquoise robe bottoms
+656	150	538	Pink hat
+658	150	213	Green hat
+660	150	449	Blue hat
+662	150	1230	Cream hat
+664	150	591	Turquoise hat
+751	150	31392	Gnomeball
+753	600	64	Cadava berries
+800	7000	4	Bronze thrownaxe
+801	7000	15	Iron thrownaxe
+802	7000	4240	Steel thrownaxe
+803	7000	43	Mithril thrownaxe
+804	11000	141	Adamant thrownaxe
+805	11000	166	Rune thrownaxe
+806	7000	22	Bronze dart
+807	7000	7	Iron dart
+808	7000	4	Steel dart
+809	7000	7	Mithril dart
+810	11000	28	Adamant dart
+811	11000	239	Rune dart
+812	7000	39	Bronze dart(p)
+813	7000	35027	Iron dart (p)
+814	7000	42	Steel dart(p)
+815	7000	166	Mithril dart(p)
+816	11000	25	Adamant dart(p)
+817	11000	244	Rune dart(p)
+819	13000	36	Bronze dart tip
+820	13000	51	Iron dart tip
+821	13000	84	Steel dart tip
+822	20000	109	Mithril dart tip
+823	20000	191	Adamant dart tip
+824	11000	1070	Rune dart tip
+825	7000	10	Bronze javelin
+826	7000	3	Iron javelin
+827	7000	2	Steel javelin
+828	7000	4	Mithril javelin
+829	11000	39	Adamant javelin
+830	11000	134	Rune javelin
+831	7000	751	Bronze javelin(p)
+832	7000	1	Iron javelin(p)
+833	7000	125047	Steel javelin(p)
+834	7000	75012	Mithril javelin(p)
+835	11000	37604	Adamant javelin(p)
+836	7000	114	Rune javelin(p)
+837	125	5132	Crossbow
+839	18000	61	Longbow
+841	18000	51	Shortbow
+843	18000	21	Oak shortbow
+845	18000	37	Oak longbow
+847	18000	107	Willow longbow
+849	18000	95	Willow shortbow
+851	18000	270	Maple longbow
+853	18000	163	Maple shortbow
+855	18000	532	Yew longbow
+857	18000	215	Yew shortbow
+859	18000	1127	Magic longbow
+861	18000	728	Magic shortbow
+863	7000	36	Iron knife
+864	7000	51	Bronze knife
+865	7000	61	Steel knife
+866	7000	180	Mithril knife
+867	11000	312	Adamant knife
+868	11000	113	Rune knife
+869	7000	37	Black knife
+870	7000	12641	Bronze knife(p)
+871	7000	253	Iron knife(p)
+872	7000	181	Steel knife(p)
+873	7000	400	Mithril knife(p)
+874	7000	277	Black knife(p)
+875	11000	290	Adamant knife(p)
+876	7000	392	Rune knife(p)
+877	7000	2	Bronze bolts
+878	11000	560	Bronze bolts (p)
+879	11000	29	Opal bolts
+880	11000	34	Pearl bolts
+881	7000	47	Barbed bolts
+882	7000	3	Bronze arrow
+883	7000	69	Bronze arrow(p)
+884	7000	4	Iron arrow
+885	7000	2642	Iron arrow(p)
+886	7000	5	Steel arrow
+887	7000	75	Steel arrow(p)
+888	7000	4	Mithril arrow
+889	7000	34	Mithril arrow(p)
+890	11000	22	Adamant arrow
+891	11000	30	Adamant arrow(p)
+892	11000	44	Rune arrow
+893	11000	193	Rune arrow(p)
+946	40	84	Knife
+948	18000	7	Bear fur
+950	18000	242	Silk
+952	40	137	Spade
+954	250	47	Rope
+958	18000	10	Grey wolf fur
+960	13000	137	Plank
+962	4	75247	Christmas cracker
+970	13000	76	Papyrus
+973	13000	175	Charcoal
+975	15	5	Machete
+981	50	13261	Disk of Returning
+983	15	205	Brass key
+985	11000	9167	Tooth half of key
+987	11000	9465	Loop half of key
+989	11000	20095	Crystal key
+991	11000	6133	Muddy key
+993	11000	21797	Sinister key
+1005	150	37	White apron
+1007	150	79	Red cape
+1009	150	248	Brass necklace
+1011	150	39	Blue skirt
+1013	150	1	Pink skirt
+1015	150	11	Black skirt
+1017	125	230	Wizard hat
+1019	150	378	Black cape
+1021	150	79	Blue cape
+1023	150	78	Yellow cape
+1025	150	200	Right eye patch
+1027	150	566	Green cape
+1029	150	748	Purple cape
+1031	150	678	Orange cape
+1033	15	2411	Zamorak monk bottom
+1035	15	764	Zamorak monk top
+1038	5	12711	Red partyhat
+1040	5	10830	Yellow partyhat
+1042	5	20622	Blue partyhat
+1044	5	12976	Green partyhat
+1046	5	19440	Purple partyhat
+1048	5	25940	White partyhat
+1050	5	27138	Santa hat
+1053	5	8163	Green halloween mask
+1055	5	7790	Blue halloween mask
+1057	5	8599	Red halloween mask
+1059	125	8	Leather gloves
+1061	125	29	Leather boots
+1063	125	13	Leather vambraces
+1065	125	1354	Green d'hide vambraces
+1067	125	52	Iron platelegs
+1069	125	336	Steel platelegs
+1071	125	1163	Mithril platelegs
+1073	125	3496	Adamant platelegs
+1075	125	265	Bronze platelegs
+1077	125	1143	Black platelegs
+1079	70	37599	Rune platelegs
+1081	125	12	Iron plateskirt
+1083	125	344	Steel plateskirt
+1085	125	1332	Mithril plateskirt
+1087	125	45	Bronze plateskirt
+1089	125	2034	Black plateskirt
+1091	125	3576	Adamant plateskirt
+1093	70	37900	Rune plateskirt
+1095	125	13	Leather chaps
+1097	125	280	Studded chaps
+1099	125	2099	Green d'hide chaps
+1101	125	175	Iron chainbody
+1103	125	26	Bronze chainbody
+1105	125	200	Steel chainbody
+1107	125	3101	Black chainbody
+1109	125	973	Mithril chainbody
+1111	125	2517	Adamant chainbody
+1113	70	29578	Rune chainbody
+1115	125	60	Iron platebody
+1117	125	61	Bronze platebody
+1119	125	1028	Steel platebody
+1121	125	2890	Mithril platebody
+1123	125	9264	Adamant platebody
+1125	125	2227	Black platebody
+1127	70	38164	Rune platebody
+1129	125	5	Leather body
+1131	125	15	Hardleather body
+1133	125	210	Studded body
+1135	125	4403	Green d'hide body
+1137	125	19	Iron med helm
+1139	125	110	Bronze med helm
+1141	125	77	Steel med helm
+1143	125	275	Mithril med helm
+1145	125	854	Adamant med helm
+1147	70	10898	Rune med helm
+1149	8	59666	Dragon med helm
+1151	125	2155	Black med helm
+1153	125	30	Iron full helm
+1155	125	92	Bronze full helm
+1157	125	143	Steel full helm
+1159	125	536	Mithril full helm
+1161	125	1696	Adamant full helm
+1163	70	20474	Rune full helm
+1165	125	789	Black full helm
+1167	125	5	Leather cowl
+1169	125	40	Coif
+1171	125	230	Wooden shield
+1173	125	36	Bronze sq shield
+1175	125	35	Iron sq shield
+1177	125	113	Steel sq shield
+1179	125	261	Black sq shield
+1181	125	526	Mithril sq shield
+1183	125	1911	Adamant sq shield
+1185	70	22127	Rune sq shield
+1187	70	301021	Dragon sq shield
+1189	125	129	Bronze kiteshield
+1191	125	60	Iron kiteshield
+1193	125	205	Steel kiteshield
+1195	125	447	Black kiteshield
+1197	125	1047	Mithril kiteshield
+1199	125	2958	Adamant kiteshield
+1201	70	31843	Rune kiteshield
+1203	125	39	Iron dagger
+1205	125	101	Bronze dagger
+1207	125	54	Steel dagger
+1209	125	126	Mithril dagger
+1211	125	178	Adamant dagger
+1213	70	4299	Rune dagger
+1215	70	17148	Dragon dagger
+1217	125	337	Black dagger
+1219	125	1	Iron dagger(p)
+1221	125	268	Bronze dagger(p)
+1223	125	344	Steel dagger(p)
+1225	125	20	Mithril dagger(p)
+1227	125	209	Adamant dagger(p)
+1229	70	5152	Rune dagger(p)
+1231	70	18090	Dragon dagger(p)
+1233	125	91	Black dagger(p)
+1237	125	104	Bronze spear
+1239	125	469	Iron spear
+1241	125	5178	Steel spear
+1243	125	188	Mithril spear
+1245	125	635	Adamant spear
+1247	70	11503	Rune spear
+1249	70	42180	Dragon spear
+1251	125	1088	Bronze spear(p)
+1253	125	277	Iron spear(p)
+1255	125	28	Steel spear(p)
+1257	125	119	Mithril spear(p)
+1259	125	730	Adamant spear(p)
+1261	70	12680	Rune spear(p)
+1263	70	39312	Dragon spear(p)
+1265	40	82	Bronze pickaxe
+1267	40	53	Iron pickaxe
+1269	40	157	Steel pickaxe
+1271	40	1587	Adamant pickaxe
+1273	40	492	Mithril pickaxe
+1275	40	18326	Rune pickaxe
+1277	125	54	Bronze sword
+1279	125	32	Iron sword
+1281	125	19	Steel sword
+1283	125	685	Black sword
+1285	125	217	Mithril sword
+1287	125	976	Adamant sword
+1289	70	11704	Rune sword
+1291	125	63	Bronze longsword
+1293	125	33	Iron longsword
+1295	125	117	Steel longsword
+1297	125	301	Black longsword
+1299	125	354	Mithril longsword
+1301	125	1501	Adamant longsword
+1303	70	18417	Rune longsword
+1305	70	59279	Dragon longsword
+1307	125	547	Bronze 2h sword
+1309	125	79	Iron 2h sword
+1311	125	341	Steel 2h sword
+1313	125	1033	Black 2h sword
+1315	125	1338	Mithril 2h sword
+1317	125	3364	Adamant 2h sword
+1319	70	37738	Rune 2h sword
+1321	125	87	Bronze scimitar
+1323	125	33	Iron scimitar
+1325	125	10	Steel scimitar
+1327	125	1414	Black scimitar
+1329	125	336	Mithril scimitar
+1331	125	1435	Adamant scimitar
+1333	70	14978	Rune scimitar
+1335	125	36	Iron warhammer
+1337	125	30	Bronze warhammer
+1339	125	115	Steel warhammer
+1341	125	830	Black warhammer
+1343	125	802	Mithril warhammer
+1345	125	2385	Adamant warhammer
+1347	70	24235	Rune warhammer
+1349	40	197	Iron axe
+1351	40	91	Bronze axe
+1353	40	173	Steel axe
+1355	40	123	Mithril axe
+1357	40	347	Adamant axe
+1359	40	7087	Rune axe
+1361	40	1045	Black axe
+1363	125	30	Iron battleaxe
+1365	125	141	Steel battleaxe
+1367	125	571	Black battleaxe
+1369	125	861	Mithril battleaxe
+1371	125	2546	Adamant battleaxe
+1373	70	24141	Rune battleaxe
+1375	125	69	Bronze battleaxe
+1377	70	119315	Dragon battleaxe
+1379	125	27	Staff
+1381	125	1391	Staff of air
+1383	125	842	Staff of water
+1385	125	950	Staff of earth
+1387	125	902	Staff of fire
+1389	125	365	Magic staff
+1391	11000	7776	Battlestaff
+1393	18000	8874	Fire battlestaff
+1395	18000	8799	Water battlestaff
+1397	18000	8737	Air battlestaff
+1399	18000	8805	Earth battlestaff
+1401	18000	25241	Mystic fire staff
+1403	18000	25425	Mystic water staff
+1405	18000	25174	Mystic air staff
+1407	18000	25248	Mystic earth staff
+1420	125	25	Iron mace
+1422	125	59	Bronze mace
+1424	125	14	Steel mace
+1426	125	801	Black mace
+1428	125	96	Mithril mace
+1430	125	625	Adamant mace
+1432	70	8340	Rune mace
+1434	70	29120	Dragon mace
+1436	20000	12	Rune essence
+1438	11000	140	Air talisman
+1440	11000	622	Earth talisman
+1442	11000	2589	Fire talisman
+1444	11000	276	Water talisman
+1446	11000	1420	Body talisman
+1448	11000	1415	Mind talisman
+1450	0	140145	Blood talisman
+1452	11000	225	Chaos talisman
+1454	11000	256	Cosmic talisman
+1456	11000	2350	Death talisman
+1462	11000	181	Nature talisman
+1464	18000	22	Archery ticket
+1470	11000	1582	Red bead
+1472	11000	1036	Yellow bead
+1474	11000	1121	Black bead
+1476	11000	1037	White bead
+1478	5	2015	Amulet of accuracy
+1511	15000	23	Logs
+1513	12000	730	Magic logs
+1515	12000	106	Yew logs
+1517	15000	11	Maple logs
+1519	15000	22	Willow logs
+1521	15000	38	Oak logs
+1523	250	229	Lockpick
+1539	13000	39	Steel nails
+1540	125	161	Anti-dragon shield
+1550	11000	19	Garlic
+1552	15	500	Seasoned sardine
+1573	15	130	Doogle leaves
+1592	40	163	Ring mould
+1595	40	210	Amulet mould
+1597	40	450	Necklace mould
+1599	40	11	Holy mould
+1601	11000	1628	Diamond
+1603	13000	719	Ruby
+1605	13000	296	Emerald
+1607	13000	176	Sapphire
+1609	13000	227	Opal
+1611	13000	327	Jade
+1613	11000	1848	Red topaz
+1615	11000	10715	Dragonstone
+1617	10000	2431	Uncut diamond
+1619	10000	1021	Uncut ruby
+1621	10000	397	Uncut emerald
+1623	10000	215	Uncut sapphire
+1625	10000	77	Uncut opal
+1627	10000	113	Uncut jade
+1629	10000	1427	Uncut red topaz
+1631	10000	14799	Uncut dragonstone
+1635	18000	135	Gold ring
+1637	10000	443	Sapphire ring
+1639	10000	628	Emerald ring
+1641	10000	1014	Ruby ring
+1643	10000	1924	Diamond ring
+1645	10000	10403	Dragonstone ring
+1654	18000	158	Gold necklace
+1656	18000	553	Sapphire necklace
+1658	18000	707	Emerald necklace
+1660	18000	1129	Ruby necklace
+1662	18000	2017	Diamond necklace
+1664	10000	11132	Dragon necklace
+1673	18000	145	Gold amulet (u)
+1675	10000	395	Sapphire amulet (u)
+1677	10000	600	Emerald amulet (u)
+1679	10000	1041	Ruby amulet (u)
+1681	10000	1935	Diamond amulet (u)
+1683	10000	11019	Dragonstone amulet (u)
+1692	18000	136	Gold amulet
+1694	10000	449	Sapphire amulet
+1696	10000	650	Emerald amulet
+1698	10000	1161	Ruby amulet
+1700	10000	2034	Diamond amulet
+1702	10000	12249	Dragonstone amulet
+1704	10000	11922	Amulet of glory
+1712	10000	12477	Amulet of glory(4)
+1714	10000	50	Unstrung symbol
+1716	10000	46	Unblessed symbol
+1718	125	249	Holy symbol
+1720	10000	100	Unstrung emblem
+1722	10000	226	Unpowered symbol
+1724	125	425	Unholy symbol
+1725	125	1068	Amulet of strength
+1727	125	665	Amulet of magic
+1729	125	655	Amulet of defence
+1731	125	1875	Amulet of power
+1733	40	102	Needle
+1734	18000	6	Thread
+1735	40	96	Shears
+1737	13000	16	Wool
+1739	13000	130	Cowhide
+1741	13000	191	Leather
+1743	13000	187	Hard leather
+1745	13000	1830	Green dragon leather
+1747	11000	3761	Black dragonhide
+1749	11000	2263	Red dragonhide
+1751	13000	1851	Blue dragonhide
+1753	13000	1522	Green dragonhide
+1755	40	88	Chisel
+1757	40	37	Brown apron
+1759	13000	51	Ball of wool
+1761	13000	132	Soft clay
+1763	150	1000	Red dye
+1765	150	270	Yellow dye
+1767	150	305	Blue dye
+1769	150	709	Orange dye
+1771	150	195	Green dye
+1773	150	441	Purple dye
+1775	13000	84	Molten glass
+1777	13000	231	Bow string
+1779	13000	2	Flax
+1781	13000	21	Soda ash
+1783	13000	7	Bucket of sand
+1785	40	55	Glassblowing pipe
+1787	10000	61	Unfired pot
+1789	10000	100	Unfired pie dish
+1791	10000	375	Unfired bowl
+1793	11000	80	Woad leaf
+1794	15	120	Bronze wire
+1823	2000	78	Waterskin(4)
+1831	10000	2	Waterskin(0)
+1833	150	258	Desert shirt
+1835	150	194	Desert robe
+1837	150	139	Desert boots
+1854	18000	26	Shantay pass (item)
+1859	11000	956	Raw ugthanki meat
+1861	11000	4185	Ugthanki meat
+1865	11000	74	Pitta bread
+1869	11000	334	Chopped tomato
+1871	11000	127	Chopped onion
+1873	11000	6528	Chopped ugthanki
+1875	11000	10	Onion & tomato
+1877	11000	200	Ugthanki & onion
+1879	11000	25006	Ugthanki & tomato
+1881	11000	2068	Kebab mix
+1885	10000	744	Ugthanki kebab
+1887	40	53	Cake tin
+1891	6000	123	Cake
+1897	6000	146	Chocolate cake
+1905	2000	126	Asgarnian ale
+1907	2000	219	Wizard's mind bomb
+1909	2000	275	Greenman's ale
+1911	2000	623	Dragon bitter
+1913	2000	149	Dwarven stout
+1915	2000	1608	Grog
+1917	2000	82	Beer
+1919	10000	26	Beer glass
+1921	13000	35	Bowl of water
+1923	13000	21	Bowl
+1925	13000	8	Bucket
+1927	13000	38	Bucket of milk
+1929	13000	30	Bucket of water
+1931	13000	11	Pot
+1933	13000	88	Pot of flour
+1935	13000	2	Jug
+1937	13000	14	Jug of water
+1939	13000	3	Swamp tar
+1941	13000	17	Swamp paste
+1942	13000	15	Potato
+1944	13000	22	Egg
+1947	13000	10	Grain
+1949	150	319	Chef's hat
+1951	13000	53	Redberries
+1953	13000	137	Pastry dough
+1955	13000	35	Cooking apple
+1957	13000	24	Onion
+1959	50	9108	Pumpkin
+1961	50	5276	Easter egg
+1963	13000	63	Banana
+1965	6000	25	Cabbage
+1969	50	375	Spinach roll
+1971	6000	68	Kebab
+1973	13000	28	Chocolate bar
+1975	13000	56	Chocolate dust
+1978	2000	62	Cup of tea
+1980	13000	4	Empty cup
+1982	13000	21	Tomato
+1985	13000	58	Cheese
+1987	20000	69	Grapes
+1989	50	12483	Half full wine jug
+1993	6000	3	Jug of wine
+2003	10000	129	Stew
+2007	11000	28	Spice
+2011	10000	420	Curry
+2015	13000	75	Vodka
+2017	13000	151	Whisky
+2019	13000	189	Gin
+2021	13000	138	Brandy
+2023	15	161	Cocktail guide
+2025	40	50	Cocktail shaker
+2026	13000	89	Cocktail glass
+2028	2000	698	Premade blurb' sp.
+2030	2000	1060	Premade choc s'dy
+2032	2000	49	Premade dr' dragon
+2034	2000	52	Premade fr' blast
+2036	2000	1017	Premade p' punch
+2038	2000	70	Premade sgg
+2040	2000	42	Premade wiz blz'd
+2048	2000	4889	Pineapple punch
+2054	2000	7249	Wizard blizzard
+2064	2000	2450	Blurberry special
+2074	2000	2593	Choc saturday
+2080	2000	3725	Short green guy
+2084	2000	1925	Fruit blast
+2092	2000	1877	Drunk dragon
+2102	13000	135	Lemon
+2104	13000	28	Lemon chunks
+2106	13000	115	Lemon slices
+2108	13000	226	Orange
+2110	13000	196	Orange chunks
+2112	13000	178	Orange slices
+2114	13000	168	Pineapple
+2116	13000	1165	Pineapple chunks
+2118	13000	96	Pineapple ring
+2120	13000	120	Lime
+2122	13000	208	Lime chunks
+2124	13000	257	Lime slices
+2126	13000	32	Dwellberries
+2128	13000	195	Equa leaves
+2130	13000	27	Pot of cream
+2132	13000	45	Raw beef
+2134	13000	55	Raw rat meat
+2136	13000	284	Raw bear meat
+2138	13000	25	Raw chicken
+2140	6000	81	Cooked chicken
+2142	6000	70	Cooked meat
+2150	13000	225	Swamp toad (item)
+2152	13000	301	Toad's legs
+2162	13000	482	King worm
+2164	40	155	Batta tin
+2165	40	150	Crunchy tray
+2166	40	208	Gnomebowl mould
+2167	15	114	Gianne's cook book
+2169	13000	200	Gnome spice
+2171	13000	13	Gianne dough
+2185	6000	541	Chocolate bomb
+2187	6000	7408	Tangled toad's legs
+2191	6000	9250	Worm hole
+2195	6000	6780	Veg ball
+2203	0	1	Rock-climbing boots
+2205	6000	3331	Worm crunchies
+2209	6000	839	Chocchip crunchies
+2213	6000	6105	Spicy crunchies
+2217	6000	3344	Toad crunchies
+2219	6000	25038	Premade w'm batta
+2221	6000	2522	Premade t'd batta
+2223	6000	25175	Premade c+t batta
+2225	6000	3535	Premade fr't batta
+2227	6000	25053	Premade veg batta
+2229	6000	10175	Premade choc bomb
+2231	6000	479	Premade ttl
+2233	6000	2533	Premade worm hole
+2235	6000	25030	Premade veg ball
+2237	6000	25051	Premade w'm crun'
+2239	6000	3906	Premade ch' crunch
+2241	6000	4750	Premade s'y crunch
+2243	6000	446	Premade t'd crunch
+2253	6000	11595	Worm batta
+2255	6000	1471	Toad batta
+2259	6000	1147	Cheese+tom batta
+2277	6000	5068	Fruit batta
+2281	6000	5202	Vegetable batta
+2283	11000	123	Pizza base
+2289	10000	449	Plain pizza
+2293	10000	255	Meat pizza
+2297	10000	467	Anchovy pizza
+2301	10000	819	Pineapple pizza
+2307	13000	132	Bread dough
+2309	6000	92	Bread
+2313	500	34	Pie dish
+2315	13000	290	Pie shell
+2317	13000	432	Uncooked apple pie
+2319	13000	400	Uncooked meat pie
+2321	13000	368	Uncooked berry pie
+2323	10000	79	Apple pie
+2325	15	368	Redberry pie
+2327	10000	43	Meat pie
+2337	15	2195	Raw oomlie
+2341	15	5050	Wrapped oomlie
+2343	15	1404	Cooked oomlie wrap
+2347	40	104	Hammer
+2349	10000	57	Bronze bar
+2351	10000	170	Iron bar
+2353	10000	569	Steel bar
+2355	10000	108	Silver bar
+2357	10000	65	Gold bar
+2359	10000	966	Mithril bar
+2361	10000	1876	Adamantite bar
+2363	10000	12244	Runite bar
+2366	50	65247	Shield left half
+2368	50	782499	Shield right half
+2370	13000	477	Steel studs
+2428	2000	15	Attack potion(4)
+2430	2000	50	Restore potion(4)
+2432	2000	600	Defence potion(4)
+2434	2000	9348	Prayer potion(4)
+2436	2000	2141	Super attack(4)
+2438	2000	37	Fishing potion(4)
+2440	2000	3154	Super strength(4)
+2442	2000	3313	Super defence(4)
+2444	2000	2005	Ranging potion(4)
+2446	2000	423	Antipoison(4)
+2448	2000	1612	Superantipoison(4)
+2450	2000	579	Zamorak brew(4)
+2452	2000	880	Antifire potion(4)
+2454	2000	677	Antifire potion(3)
+2456	2000	275	Antifire potion(2)
+2458	2000	146	Antifire potion(1)
+2460	150	316	Assorted flowers
+2462	150	82	Red flowers
+2464	150	57	Blue flowers
+2466	150	130	Yellow flowers
+2468	150	232	Purple flowers
+2470	150	150	Orange flowers
+2472	150	150	Mixed flowers
+2474	150	102455	White flowers
+2476	150	34426	Black flowers
+2481	11000	1280	Lantadyme
+2483	10000	1548	Lantadyme potion (unf)
+2485	11000	1160	Grimy lantadyme
+2487	125	1292	Blue d'hide vambraces
+2489	70	1588	Red d'hide vambraces
+2491	70	2482	Black d'hide vambraces
+2493	125	1982	Blue d'hide chaps
+2495	70	2565	Red d'hide chaps
+2497	70	3396	Black d'hide chaps
+2499	125	5005	Blue d'hide body
+2501	70	5647	Red d'hide body
+2503	70	7307	Black d'hide body
+2505	13000	2103	Blue dragon leather
+2507	11000	2609	Red dragon leather
+2509	11000	4125	Black dragon leather
+2520	150	2881	Brown toy horsey
+2522	150	3629	White toy horsey
+2524	150	3150	Black toy horsey
+2526	150	301	Grey toy horsey
+2550	15000	1218	Ring of recoil
+2552	15000	883	Ring of dueling(8)
+2568	10000	1037	Ring of forging
+2570	10000	1761	Ring of life
+2572	10000	10826	Ring of wealth
+2577	8	35170019	Ranger boots
+2579	8	122722	Wizard boots
+2581	8	5738000	Robin hood hat
+2583	8	11364	Black platebody (t)
+2585	8	6042	Black platelegs (t)
+2587	8	12919	Black full helm (t)
+2589	8	7283	Black kiteshield (t)
+2591	8	108148	Black platebody (g)
+2593	8	21749	Black platelegs (g)
+2595	8	62343	Black full helm (g)
+2597	8	98870	Black kiteshield (g)
+2599	8	9450	Adamant platebody (t)
+2601	8	3647	Adamant platelegs (t)
+2603	8	6583	Adamant kiteshield (t)
+2605	8	6925	Adamant full helm (t)
+2607	8	18357	Adamant platebody (g)
+2609	8	7355	Adamant platelegs (g)
+2611	8	14102	Adamant kiteshield (g)
+2613	8	10368	Adamant full helm (g)
+2615	8	43202	Rune platebody (g)
+2617	8	41535	Rune platelegs (g)
+2619	8	76374	Rune full helm (g)
+2621	8	65676	Rune kiteshield (g)
+2623	8	38837	Rune platebody (t)
+2625	8	37304	Rune platelegs (t)
+2627	8	21568	Rune full helm (t)
+2629	8	32596	Rune kiteshield (t)
+2631	4	56487	Highwayman mask
+2633	4	851	Blue beret
+2635	4	26242	Black beret
+2637	4	19354	White beret
+2639	4	2870	Tan cavalier
+2641	4	2132	Dark cavalier
+2643	4	31571	Black cavalier
+2645	4	1156	Red headband
+2647	4	4224	Black headband
+2649	4	373	Brown headband
+2651	4	25298	Pirate's hat
+2653	8	38942	Zamorak platebody
+2655	8	39550	Zamorak platelegs
+2657	8	420624	Zamorak full helm
+2659	8	34235	Zamorak kiteshield
+2661	8	56119	Saradomin platebody
+2663	8	41832	Saradomin platelegs
+2665	8	72500	Saradomin full helm
+2667	8	50000	Saradomin kiteshield
+2669	8	46825	Guthix platebody
+2671	8	42101	Guthix platelegs
+2673	8	24606	Guthix full helm
+2675	8	33147	Guthix kiteshield
+2859	13000	480	Wolf bones
+2861	7000	123	Wolfbone arrowtips
+2862	13000	631	Achey tree logs
+2864	7000	108	Ogre arrow shaft
+2865	7000	138	Flighted ogre arrow
+2866	7000	179	Ogre arrow
+2876	13000	1330	Raw chompy
+2878	6000	1339	Cooked chompy
+2890	70	7594	Elemental shield
+2894	150	1225	Grey boots
+2896	150	626	Grey robe top
+2898	150	519	Grey robe bottoms
+2900	150	739	Grey hat
+2902	150	1994	Grey gloves
+2904	150	1300	Red boots
+2906	150	1941	Red robe top
+2908	150	6399	Red robe bottoms
+2910	150	2800	Red hat
+2912	150	679	Red gloves
+2914	150	2149	Yellow boots
+2916	150	500	Yellow robe top
+2918	150	402	Yellow robe bottoms
+2920	150	1535	Yellow hat
+2922	150	909	Yellow gloves
+2924	150	1907	Teal boots
+2926	150	662	Teal robe top
+2928	150	673	Teal robe bottoms
+2930	150	1825	Teal hat
+2932	150	517	Teal gloves
+2934	150	1589	Purple boots
+2936	150	412	Purple robe top
+2938	150	496	Purple robe bottoms
+2940	150	2427	Purple hat
+2942	150	934	Purple gloves
+2955	2000	214	Moonlight mead
+2961	15	215	Silver sickle
+2970	13000	193	Mort myre fungus
+2972	13000	674	Mort myre stem
+2974	13000	8200	Mort myre pear
+2976	40	51	Sickle mould
+2997	4	957169	Pirate's hook
+2998	13000	2191	Toadflax
+3000	11000	7545	Snapdragon
+3002	10000	2471	Toadflax potion (unf)
+3004	10000	8001	Snapdragon potion (unf)
+3008	2000	178	Energy potion(4)
+3010	2000	126	Energy potion(3)
+3012	2000	85	Energy potion(2)
+3014	2000	42	Energy potion(1)
+3016	2000	2621	Super energy(4)
+3018	2000	1836	Super energy(3)
+3020	2000	1040	Super energy(2)
+3022	2000	535	Super energy(1)
+3024	2000	10184	Super restore(4)
+3026	2000	7482	Super restore(3)
+3028	2000	5038	Super restore(2)
+3030	2000	2513	Super restore(1)
+3032	2000	686	Agility potion(4)
+3034	2000	1103	Agility potion(3)
+3036	2000	121	Agility potion(2)
+3038	2000	53	Agility potion(1)
+3040	2000	138	Magic potion(4)
+3042	2000	78	Magic potion(3)
+3044	2000	74	Magic potion(2)
+3046	2000	32	Magic potion(1)
+3049	13000	1976	Grimy toadflax
+3051	11000	7520	Grimy snapdragon
+3053	8	9210	Lava battlestaff
+3054	8	26845	Mystic lava staff
+3093	7000	2420	Black dart
+3094	7000	50049	Black dart(p)
+3095	125	25151	Bronze claws
+3096	125	155	Iron claws
+3097	125	368	Steel claws
+3098	125	3027	Black claws
+3099	125	1544	Mithril claws
+3100	125	782	Adamant claws
+3101	70	6501	Rune claws
+3105	200	789	Climbing boots
+3107	15	4454	Spiked boots
+3122	70	35631	Granite shield
+3123	7500	4872	Shaikahan bones
+3125	3000	941	Jogre bones
+3138	11000	63	Potato cactus
+3140	70	187049	Dragon chainbody
+3142	13000	267	Raw karambwan
+3144	10000	417	Cooked karambwan
+3157	15	3470	Karambwan vessel
+3159	15	3356	Karambwan vessel (baited)
+3162	15	199	Sliced banana
+3183	3000	254	Monkey bones
+3188	40	505	Cleaning cloth
+3190	125	436	Bronze halberd
+3192	125	5	Iron halberd
+3194	125	2438	Steel halberd
+3196	125	4687	Black halberd
+3198	125	53386	Mithril halberd
+3200	125	3685	Adamant halberd
+3202	70	37406	Rune halberd
+3204	70	151360	Dragon halberd
+3211	13000	161	Limestone
+3216	15	353	Barrel
+3226	13000	104	Raw rabbit
+3228	6000	650	Cooked rabbit
+3239	13000	62	Bark
+3325	11000	1155	Vampyre dust
+3327	150	370	Myre snelm
+3329	150	13004	Blood'n'tar snelm
+3331	150	53	Ochre snelm
+3333	150	999	Bruise blue snelm
+3335	150	96	Broken bark snelm
+3337	150	41	Pointed myre snelm
+3339	150	1100	Pointed blood'n'tar snelm
+3341	150	44	Pointed ochre snelm
+3343	150	2693	Pointed bruise blue snelm
+3345	13000	197	Blamish myre shell (round)
+3347	13000	7000	Blamish red shell (round)
+3349	13000	234	Blamish ochre shell (round)
+3351	13000	22450	Blamish blue shell (round)
+3353	13000	1620	Blamish bark shell
+3355	13000	208	Blamish myre shell (pointed)
+3357	13000	708	Blamish red shell (pointed)
+3359	13000	165	Blamish ochre shell (pointed)
+3361	13000	5749	Blamish blue shell (pointed)
+3363	13000	1141	Thin snail
+3365	13000	2467	Lean snail
+3367	13000	1643	Fat snail
+3369	6000	1416	Thin snail meat
+3371	6000	1665	Lean snail meat
+3373	6000	1450	Fat snail meat
+3379	13000	68	Raw slimy eel
+3381	6000	23	Cooked slimy eel
+3385	70	5305	Splitbark helm
+3387	70	29525	Splitbark body
+3389	70	23126	Splitbark legs
+3391	70	2635	Splitbark gauntlets
+3393	70	10450	Splitbark boots
+3396	7500	208	Loar remains
+3398	7500	4612	Phrin remains
+3400	7500	797	Riyl remains
+3402	7500	2290	Asyn remains
+3404	7500	6047	Fiyr remains
+3406	10000	295	Unfinished potion
+3408	2000	42	Serum 207 (4)
+3410	2000	16	Serum 207 (3)
+3412	2000	4	Serum 207 (2)
+3414	2000	81	Serum 207 (1)
+3420	10000	168	Limestone brick
+3422	10000	56	Olive oil(4)
+3424	10000	30	Olive oil(3)
+3426	10000	27	Olive oil(2)
+3428	10000	31	Olive oil(1)
+3430	2000	3445	Sacred oil(4)
+3432	2000	2685	Sacred oil(3)
+3434	2000	1418	Sacred oil(2)
+3436	2000	839	Sacred oil(1)
+3438	11000	3405	Pyre logs
+3440	11000	3179	Oak pyre logs
+3442	11000	2556	Willow pyre logs
+3444	11000	4590	Maple pyre logs
+3446	11000	4063	Yew pyre logs
+3448	11000	4623	Magic pyre logs
+3470	11000	7277	Fine cloth
+3472	8	1618	Black plateskirt (t)
+3473	8	4706	Black plateskirt (g)
+3474	8	4205	Adamant plateskirt (t)
+3475	8	3776	Adamant plateskirt (g)
+3476	8	38424	Rune plateskirt (g)
+3477	8	43500	Rune plateskirt (t)
+3478	8	37497	Zamorak plateskirt
+3479	8	45443	Saradomin plateskirt
+3480	8	39313	Guthix plateskirt
+3481	8	9096661	Gilded platebody
+3483	8	6297559	Gilded platelegs
+3485	8	767116	Gilded plateskirt
+3486	8	7592481	Gilded full helm
+3488	8	6663750	Gilded kiteshield
+3678	40	5095	Flamtaer hammer
+3749	70	40527	Archer helm
+3751	70	40258	Berserker helm
+3753	70	39201	Warrior helm
+3755	70	40615	Farseer helm
+3759	150	2215	Fremennik cyan cloak
+3761	150	17	Fremennik brown cloak
+3763	150	472	Fremennik blue cloak
+3765	150	198282	Fremennik green cloak
+3767	150	5035	Fremennik brown shirt
+3769	150	9613	Fremennik grey shirt
+3771	150	10235	Fremennik beige shirt
+3773	150	325	Fremennik red shirt
+3775	150	11985	Fremennik blue shirt
+3777	150	5905	Fremennik red cloak
+3779	150	1000	Fremennik grey cloak
+3781	150	581	Fremennik yellow cloak
+3783	150	25340	Fremennik teal cloak
+3785	150	507	Fremennik purple cloak
+3787	150	1056	Fremennik pink cloak
+3789	150	1677	Fremennik black cloak
+3791	150	33	Fremennik boots
+3793	150	366	Fremennik robe
+3795	150	758	Fremennik skirt
+3797	150	3665	Fremennik hat
+3799	150	216	Fremennik gloves
+3801	2000	554	Keg of beer
+3803	2000	356	Beer tankard
+3827	5	1013	Saradomin page 1
+3828	5	813	Saradomin page 2
+3829	5	921	Saradomin page 3
+3830	5	755	Saradomin page 4
+3831	5	2894	Zamorak page 1
+3832	5	3569	Zamorak page 2
+3833	5	3454	Zamorak page 3
+3834	5	6473	Zamorak page 4
+3835	5	738	Guthix page 1
+3836	5	703	Guthix page 2
+3837	5	740	Guthix page 3
+3838	5	989	Guthix page 4
+3853	10000	1010	Games necklace(8)
+4012	6000	131	Monkey nuts
+4014	6000	1250	Monkey bar
+4016	6000	2272	Banana stew
+4087	70	163331	Dragon platelegs
+4089	125	11099	Mystic hat
+4091	125	71220	Mystic robe top
+4093	125	47180	Mystic robe bottom
+4095	125	5659	Mystic gloves
+4097	125	5649	Mystic boots
+4099	70	40089	Mystic hat (dark)
+4101	70	71804	Mystic robe top (dark)
+4103	70	48693	Mystic robe bottom (dark)
+4105	70	5252	Mystic gloves (dark)
+4107	70	38108	Mystic boots (dark)
+4109	70	8900	Mystic hat (light)
+4111	70	71298	Mystic robe top (light)
+4113	70	47233	Mystic robe bottom (light)
+4115	70	5310	Mystic gloves (light)
+4117	70	7822	Mystic boots (light)
+4119	125	160	Bronze boots
+4121	125	6240	Iron boots
+4123	125	1308	Steel boots
+4125	125	346	Black boots
+4127	125	999	Mithril boots
+4129	125	746	Adamant boots
+4131	70	7113	Rune boots
+4151	70	803441	Abyssal whip
+4153	70	90812	Granite maul
+4156	40	4907	Mirror shield
+4161	8000	26	Bag of salt
+4162	40	26	Rock hammer
+4164	70	186	Facemask
+4166	70	815	Earmuffs
+4168	70	319	Nose peg
+4170	70	23483	Slayer's staff
+4207	70	334919	Crystal weapon seed
+4298	15	2	Ham shirt
+4300	15	1879	Ham robe
+4302	15	344	Ham hood
+4304	15	2027	Ham cloak
+4306	15	2111	Ham logo
+4308	15	1832	Ham gloves
+4310	15	2685	Ham boots
+4315	150	1058	Team-1 cape
+4317	150	505	Team-2 cape
+4319	150	150	Team-3 cape
+4321	150	342	Team-4 cape
+4323	150	240	Team-5 cape
+4325	150	148	Team-6 cape
+4327	150	229	Team-7 cape
+4329	150	505	Team-8 cape
+4331	150	54	Team-9 cape
+4333	150	208	Team-10 cape
+4335	150	673	Team-11 cape
+4337	150	341	Team-12 cape
+4339	150	135	Team-13 cape
+4341	150	676	Team-14 cape
+4343	150	979	Team-15 cape
+4345	150	75	Team-16 cape
+4347	150	275	Team-17 cape
+4349	150	555	Team-18 cape
+4351	150	169	Team-19 cape
+4353	150	144	Team-20 cape
+4355	150	278	Team-21 cape
+4357	150	206	Team-22 cape
+4359	150	381	Team-23 cape
+4361	150	6238	Team-24 cape
+4363	150	400	Team-25 cape
+4365	150	209	Team-26 cape
+4367	150	555	Team-27 cape
+4369	150	253	Team-28 cape
+4371	150	131	Team-29 cape
+4373	150	647	Team-30 cape
+4375	150	435	Team-31 cape
+4377	150	786	Team-32 cape
+4379	150	261	Team-33 cape
+4381	150	932	Team-34 cape
+4383	150	325	Team-35 cape
+4385	150	49	Team-36 cape
+4387	150	231	Team-37 cape
+4389	150	773	Team-38 cape
+4391	150	153	Team-39 cape
+4393	150	184	Team-40 cape
+4395	150	550	Team-41 cape
+4397	150	719	Team-42 cape
+4399	150	582	Team-43 cape
+4401	150	390	Team-44 cape
+4403	150	600	Team-45 cape
+4405	150	140	Team-46 cape
+4407	150	270	Team-47 cape
+4409	150	258	Team-48 cape
+4411	150	561	Team-49 cape
+4413	150	175	Team-50 cape
+4417	2000	2819	Guthix rest(4)
+4419	2000	2004	Guthix rest(3)
+4421	2000	1354	Guthix rest(2)
+4423	2000	718	Guthix rest(1)
+4436	15	2089	Airtight pot
+4438	100	5051	Unfired pot lid
+4440	15	743	Pot lid
+4456	13000	147	Bowl of hot water
+4458	13000	42	Cup of water
+4460	13000	427	Cup of hot water
+4517	6000	6426	Giant frog legs
+4522	40	970	Oil lamp
+4525	10000	14	Empty oil lamp
+4527	10000	9	Empty candle lantern
+4529	40	236	Candle lantern (white)
+4532	40	6869	Candle lantern (black)
+4535	10000	4012	Empty oil lantern
+4537	40	25	Oil lantern
+4540	10000	5	Oil lantern frame
+4542	10000	4	Lantern lens
+4544	10000	508	Bullseye lantern (unf)
+4546	10000	421	Bullseye lantern (empty)
+4548	10000	1588	Bullseye lantern
+4551	125	813	Spiny helmet
+4580	8	3991	Black spear
+4582	8	8515	Black spear(p)
+4585	70	161060	Dragon plateskirt
+4587	70	59318	Dragon scimitar
+4591	15	232	Kharidian headpiece
+4593	15	366	Fake beard
+4595	15	1	Karidian disguise
+4600	125	139	Willow blackjack
+4608	15	1586	Super kebab
+4627	2000	2313	Bandit's brew
+4668	15	450	Garlic powder
+4675	70	60242	Ancient staff
+4684	15	1397	Linen (Icthlarin's Little Helper)
+4687	15	233	Bucket of sap
+4689	15	1440	Pile of salt
+4694	18000	96	Steam rune
+4695	18000	90	Mist rune
+4696	18000	8	Dust rune
+4697	18000	62	Smoke rune
+4698	18000	87	Mud rune
+4699	18000	25	Lava rune
+4708	15	394098	Ahrim's hood
+4710	15	142133	Ahrim's staff
+4712	15	1429731	Ahrim's robetop
+4714	15	1467735	Ahrim's robeskirt
+4716	15	310344	Dharok's helm
+4718	15	1852532	Dharok's greataxe
+4720	15	857500	Dharok's platebody
+4722	15	934831	Dharok's platelegs
+4724	15	182261	Guthan's helm
+4726	15	89589	Guthan's warspear
+4728	15	218032	Guthan's platebody
+4730	15	204991	Guthan's chainskirt
+4732	15	49714	Karil's coif
+4734	15	101500	Karil's crossbow
+4736	15	818973	Karil's leathertop
+4738	15	404973	Karil's leatherskirt
+4740	11000	73	Bolt rack
+4745	15	179873	Torag's helm
+4747	15	122497	Torag's hammers
+4749	15	297987	Torag's platebody
+4751	15	329054	Torag's platelegs
+4753	15	133179	Verac's helm
+4755	15	100752	Verac's flail
+4757	15	169000	Verac's brassard
+4759	15	328954	Verac's plateskirt
+4773	11000	116	Bronze brutal
+4778	11000	136	Iron brutal
+4783	11000	185	Steel brutal
+4788	11000	1480	Black brutal
+4793	11000	219	Mithril brutal
+4798	11000	305	Adamant brutal
+4803	11000	1033	Rune brutal
+4812	3000	596	Zogre bones
+4819	13000	2	Bronze nails
+4820	13000	7	Iron nails
+4821	13000	1634	Black nails
+4822	13000	66	Mithril nails
+4823	13000	120	Adamantite nails
+4824	13000	817	Rune nails
+4825	10000	699	Unstrung comp bow
+4827	70	1247	Comp ogre bow
+4830	7500	5036	Fayrg bones
+4832	7500	7141	Raurg bones
+4834	7500	42800	Ourg bones
+4842	2000	939	Relicym's balm(4)
+4844	2000	5433	Relicym's balm(3)
+4846	2000	256	Relicym's balm(2)
+4848	2000	59	Relicym's balm(1)
+4850	3000	2038	Ogre coffin key
+4860	15	326589	Ahrim's hood 0
+4866	15	83380	Ahrim's staff 0
+4872	15	1335889	Ahrim's robetop 0
+4878	15	1393633	Ahrim's robeskirt 0
+4884	15	266033	Dharok's helm 0
+4890	15	1820950	Dharok's greataxe 0
+4896	15	779120	Dharok's platebody 0
+4902	15	845694	Dharok's platelegs 0
+4908	15	115108	Guthan's helm 0
+4914	15	59192	Guthan's warspear 0
+4920	15	166663	Guthan's platebody 0
+4926	15	164012	Guthan's chainskirt 0
+4932	15	14182	Karil's coif 0
+4938	15	96575	Karil's crossbow 0
+4944	15	711666	Karil's leathertop 0
+4950	15	345269	Karil's leatherskirt 0
+4956	15	124029	Torag's helm 0
+4962	15	95679	Torag's hammers 0
+4968	15	245192	Torag's platebody 0
+4974	15	284756	Torag's platelegs 0
+4980	15	97500	Verac's helm 0
+4986	15	95052	Verac's flail 0
+4992	15	166908	Verac's brassard 0
+4998	15	291034	Verac's plateskirt 0
+5001	13000	85	Raw cave eel
+5003	10000	31	Cave eel
+5014	4	428	Mining helmet
+5016	4	1147	Bone spear
+5018	4	1446	Bone club
+5024	150	841	Woven top (brown)
+5026	150	500413	Woven top (yellow)
+5028	150	93	Woven top (blue)
+5030	150	391	Shirt (brown)
+5032	150	4892	Shirt (yellow)
+5034	150	27500	Shirt (lilac)
+5036	150	503	Trousers (brown)
+5038	150	275	Trousers (lilac)
+5040	150	777	Trousers (blue)
+5042	150	696	Shorts (brown)
+5044	150	878	Shorts (yellow)
+5046	150	2018	Shorts (blue)
+5048	150	1150	Skirt (brown)
+5050	150	200	Skirt (lilac)
+5052	150	1497	Skirt (blue)
+5075	11000	4137	Bird nest (empty)
+5096	600	21	Marigold seed
+5097	600	54	Rosemary seed
+5098	200	9	Nasturtium seed
+5099	600	10	Woad seed
+5100	600	21	Limpwurt seed
+5101	600	5	Redberry seed
+5102	600	6	Cadavaberry seed
+5103	600	11	Dwellberry seed
+5104	200	4	Jangerberry seed
+5105	200	7	Whiteberry seed
+5106	200	36	Poison ivy seed
+5280	200	48	Cactus seed
+5281	200	137	Belladonna seed
+5282	200	107	Mushroom spore
+5283	200	5	Apple tree seed
+5284	200	4	Banana tree seed
+5285	200	21	Orange tree seed
+5286	200	23	Curry tree seed
+5287	200	135	Pineapple seed
+5288	200	992	Papaya tree seed
+5289	200	14799	Palm tree seed
+5290	200	245	Calquat tree seed
+5291	600	23	Guam seed
+5292	600	15	Marrentill seed
+5293	600	13	Tarromin seed
+5294	600	53	Harralander seed
+5295	200	29418	Ranarr seed
+5296	600	971	Toadflax seed
+5297	600	40	Irit seed
+5298	200	250	Avantoe seed
+5299	200	1746	Kwuarm seed
+5300	200	45233	Snapdragon seed
+5301	200	2907	Cadantine seed
+5302	200	150	Lantadyme seed
+5303	200	577	Dwarf weed seed
+5304	200	12525	Torstol seed
+5305	2000	10	Barley seed
+5306	2000	8	Jute seed
+5307	2000	5	Hammerstone seed
+5308	2000	8	Asgarnian seed
+5309	2000	10	Yanillian seed
+5310	2000	14	Krandorian seed
+5311	2000	32	Wildblood seed
+5312	200	84	Acorn
+5313	200	85	Willow seed
+5314	200	3186	Maple seed
+5315	200	20315	Yew seed
+5316	200	68829	Magic seed
+5318	600	3	Potato seed
+5319	600	6	Onion seed
+5320	600	7	Sweetcorn seed
+5321	200	86	Watermelon seed
+5322	600	9	Tomato seed
+5323	600	13	Strawberry seed
+5324	600	5	Cabbage seed
+5325	40	128	Gardening trowel
+5329	40	124	Secateurs
+5331	40	155	Watering can
+5341	40	172	Rake
+5343	40	72	Seed dibber
+5345	150	27500	Gardening boots
+5350	10000	4	Empty plant pot
+5352	10000	5053	Unfired plant pot
+5354	2000	3	Filled plant pot
+5370	200	396	Oak sapling
+5371	200	364	Willow sapling
+5372	200	4062	Maple sapling
+5373	200	22509	Yew sapling
+5374	200	71845	Magic sapling
+5376	10000	3	Basket
+5386	600	778	Apples(5)
+5396	600	1805	Oranges(5)
+5406	200	534	Strawberries(5)
+5416	600	877	Bananas(5)
+5418	10000	3	Empty sack
+5438	600	1286	Potatoes(10)
+5458	600	754	Onions(10)
+5478	600	934	Cabbages(10)
+5496	200	405	Apple sapling
+5497	200	252	Banana sapling
+5498	200	92	Orange sapling
+5499	200	265	Curry sapling
+5500	200	275	Pineapple sapling
+5501	200	1760	Papaya sapling
+5502	200	16698	Palm sapling
+5503	200	1155	Calquat sapling
+5504	11000	59	Strawberry
+5516	40	1735	Elemental talisman
+5521	10000	659	Binding necklace
+5523	40	195	Tiara mould
+5525	10000	105	Tiara
+5527	40	27	Air tiara
+5529	40	4	Mind tiara
+5531	40	6	Water tiara
+5533	40	11	Body tiara
+5535	40	13	Earth tiara
+5537	40	42	Fire tiara
+5539	40	125	Cosmic tiara
+5541	40	8	Nature tiara
+5543	40	650	Chaos tiara
+5547	40	1991	Death tiara
+5549	0	120380	Blood tiara
+5574	125	3020	Initiate sallet
+5575	125	5349	Initiate hauberk
+5576	125	4216	Initiate cuisse
+5616	7000	34	Bronze arrow(p+)
+5617	7000	27	Iron arrow(p+)
+5618	7000	221	Steel arrow(p+)
+5619	7000	215	Mithril arrow(p+)
+5620	11000	380	Adamant arrow(p+)
+5621	11000	425	Rune arrow(p+)
+5622	7000	59	Bronze arrow(p++)
+5623	7000	1096	Iron arrow(p++)
+5624	7000	829	Steel arrow(p++)
+5625	7000	265	Mithril arrow(p++)
+5626	11000	23	Adamant arrow(p++)
+5627	11000	387	Rune arrow(p++)
+5628	7000	5249	Bronze dart(p+)
+5629	7000	5050	Iron dart(p+)
+5630	7000	47088	Steel dart(p+)
+5631	7000	262	Black dart(p+)
+5632	7000	36714	Mithril dart(p+)
+5633	11000	179	Adamant dart(p+)
+5634	11000	309	Rune dart(p+)
+5635	7000	2166	Bronze dart(p++)
+5636	7000	127	Iron dart(p++)
+5637	7000	67	Steel dart(p++)
+5638	7000	50000	Black dart(p++)
+5639	7000	255	Mithril dart(p++)
+5640	11000	575	Adamant dart(p++)
+5641	11000	856	Rune dart(p++)
+5642	7000	5006	Bronze javelin(p+)
+5643	7000	60052	Iron javelin(p+)
+5644	7000	50000	Steel javelin(p+)
+5645	7000	124500	Mithril javelin(p+)
+5646	11000	523	Adamant javelin(p+)
+5647	11000	150001	Rune javelin(p+)
+5648	7000	7000	Bronze javelin(p++)
+5649	7000	9944	Iron javelin(p++)
+5650	7000	34	Steel javelin(p++)
+5651	7000	2	Mithril javelin(p++)
+5652	11000	155	Adamant javelin(p++)
+5653	11000	188	Rune javelin(p++)
+5654	7000	57000	Bronze knife(p+)
+5655	7000	50000	Iron knife(p+)
+5656	7000	4999	Steel knife(p+)
+5657	7000	34595	Mithril knife(p+)
+5658	7000	50079	Black knife(p+)
+5659	7000	750	Adamant knife(p+)
+5660	7000	559	Rune knife(p+)
+5661	7000	222	Bronze knife(p++)
+5662	7000	1263	Iron knife(p++)
+5663	7000	596	Steel knife(p++)
+5664	7000	757	Mithril knife(p++)
+5665	7000	4018	Black knife(p++)
+5666	7000	1773	Adamant knife(p++)
+5667	7000	129	Rune knife(p++)
+5668	125	697	Iron dagger(p+)
+5670	125	112	Bronze dagger(p+)
+5672	125	266	Steel dagger(p+)
+5674	125	650	Mithril dagger(p+)
+5676	125	2239	Adamant dagger(p+)
+5678	70	4152	Rune dagger(p+)
+5680	70	16901	Dragon dagger(p+)
+5682	125	2277	Black dagger(p+)
+5686	125	5499	Iron dagger(p++)
+5688	125	1030	Bronze dagger(p++)
+5690	125	3916	Steel dagger(p++)
+5692	125	24922	Mithril dagger(p++)
+5694	125	3454	Adamant dagger(p++)
+5696	70	11636	Rune dagger(p++)
+5698	70	17287	Dragon dagger(p++)
+5700	125	1979	Black dagger(p++)
+5704	125	796	Bronze spear(p+)
+5706	125	193259	Iron spear(p+)
+5708	125	85	Steel spear(p+)
+5710	125	3736	Mithril spear(p+)
+5712	125	1390	Adamant spear(p+)
+5714	70	14329	Rune spear(p+)
+5716	70	37002	Dragon spear(p+)
+5718	125	1039	Bronze spear(p++)
+5720	125	5676	Iron spear(p++)
+5722	125	252	Steel spear(p++)
+5724	125	8628	Mithril spear(p++)
+5726	125	3353	Adamant spear(p++)
+5728	70	98776	Rune spear(p++)
+5730	70	54952	Dragon spear(p++)
+5734	8	12106	Black spear(p+)
+5736	8	12953	Black spear(p++)
+5739	2000	50500	Asgarnian ale(m)
+5741	2000	59699	Mature wmb
+5743	2000	31156	Greenman's ale(m)
+5745	2000	89511	Dragon bitter(m)
+5747	2000	17940	Dwarven stout(m)
+5749	2000	52747	Moonlight mead(m)
+5751	2000	340	Axeman's folly
+5753	2000	45044	Axeman's folly(m)
+5755	2000	136	Chef's delight
+5757	2000	36080	Chef's delight(m)
+5759	2000	101	Slayer's respite
+5761	2000	30376	Slayer's respite(m)
+5763	2000	122	Cider
+5765	2000	135000	Mature cider
+5767	11000	1304	Ale yeast
+5769	10000	875	Calquat keg
+5777	2000	13334	Dwarven stout(4)
+5785	2000	34919	Asgarnian ale(4)
+5793	2000	19500	Greenmans ale(4)
+5801	2000	57710	Mind bomb(4)
+5809	2000	21447	Dragon bitter(4)
+5817	2000	28266	Moonlight mead(4)
+5825	2000	9400	Axeman's folly(4)
+5833	2000	12900	Chef's delight(4)
+5841	2000	10135	Slayer's respite(4)
+5849	2000	9249	Cider(4)
+5857	2000	215728	Dwarven stout(m4)
+5865	2000	100000	Asgarnian ale(m4)
+5873	2000	150000	Greenmans ale(m4)
+5881	2000	250000	Mind bomb(m4)
+5889	2000	100000	Dragon bitter(m4)
+5897	2000	133102	Moonlight mead(m4)
+5905	2000	176508	Axeman's folly(m4)
+5913	2000	182500	Chef's delight(m4)
+5921	2000	146500	Slayer's respite(m4)
+5929	2000	547500	Cider(m4)
+5931	13000	652	Jute fibre
+5933	11000	1591	Willow branch
+5935	11000	259	Coconut milk
+5937	2000	959	Weapon poison(+)
+5940	2000	2165	Weapon poison(++)
+5943	4000	1654	Antidote+(4)
+5945	4000	1410	Antidote+(3)
+5947	4000	717	Antidote+(2)
+5949	4000	820	Antidote+(1)
+5952	4000	9173	Antidote++(4)
+5954	4000	6185	Antidote++(3)
+5956	4000	4100	Antidote++(2)
+5958	4000	2422	Antidote++(1)
+5968	600	667	Tomatoes(5)
+5970	11000	68	Curry leaf
+5972	11000	1458	Papaya fruit
+5974	11000	1352	Coconut
+5980	11000	107	Calquat fruit
+5982	11000	15	Watermelon
+5984	11000	28	Watermelon slice
+5986	11000	63	Sweetcorn
+5988	11000	69	Cooked sweetcorn
+5992	11000	5000	Apple mush
+5994	11000	413	Hammerstone hops
+5996	11000	360	Asgarnian hops
+5998	11000	851	Yanillian hops
+6000	11000	321	Krandorian hops
+6002	11000	133	Wildblood hops
+6004	11000	188	Mushroom
+6006	11000	421	Barley
+6008	11000	1205	Barley malt
+6010	600	10	Marigolds
+6012	600	253	Nasturtiums
+6014	600	57	Rosemary
+6016	11000	1530	Cactus spine
+6018	11000	212	Poison ivy berries
+6020	13000	15	Leaves
+6022	0	44	Oak leaves
+6024	0	131	Willow leaves
+6026	7500	530	Yew leaves
+6028	0	319	Maple leaves
+6030	0	672	Magic leaves
+6032	2000	11	Compost
+6034	2000	14	Supercompost
+6036	2000	140	Plant cure
+6038	11000	1001	Magic string
+6043	11000	157	Oak roots
+6045	11000	21	Willow roots
+6047	11000	20	Maple roots
+6049	11000	67	Yew roots
+6051	11000	8136	Magic roots
+6055	600	137	Weeds
+6061	11000	5000	Bronze bolts (p+)
+6062	11000	505	Bronze bolts (p++)
+6128	70	17836	Rock-shell helm
+6129	70	39526	Rock-shell plate
+6130	70	39157	Rock-shell legs
+6131	70	36424	Spined helm
+6133	70	4080	Spined body
+6135	70	19500	Spined chaps
+6137	70	139925	Skeletal helm
+6139	70	26075	Skeletal top
+6141	70	24576	Skeletal bottoms
+6143	125	3628	Spined boots
+6145	125	25502	Rock-shell boots
+6147	125	77074	Skeletal boots
+6149	125	1500	Spined gloves
+6151	125	800	Rock-shell gloves
+6153	125	260275	Skeletal gloves
+6155	11000	220	Dagannoth hide
+6157	11000	10145	Rock-shell chunk
+6159	11000	16751	Rock-shell shard
+6161	11000	21297	Rock-shell splinter
+6163	11000	77344	Skull piece
+6165	11000	6785	Ribcage piece
+6167	11000	11824	Fibula piece
+6169	11000	26755	Circular hide
+6171	11000	1	Flattened hide
+6173	11000	1966	Stretched hide
+6211	11000	3212	Teak pyre logs
+6213	11000	3696	Mahogany pyre logs
+6215	125	3623	Broodoo shield (10) (poison)
+6235	125	3000	Broodoo shield (poison)
+6237	125	2780	Broodoo shield (10) (disease)
+6257	125	3000	Broodoo shield (disease)
+6259	125	1890	Broodoo shield (10) (combat)
+6279	125	6100	Broodoo shield (combat)
+6281	100	118	Thatch spar light
+6283	100	1393	Thatch spar med
+6285	100	557	Thatch spar dense
+6287	13000	67	Snake hide
+6289	13000	10	Snakeskin
+6291	13000	52	Spider carcass
+6297	6000	367	Spider on stick
+6299	6000	12	Spider on shaft
+6305	13000	64	Skewer stick
+6306	18000	5	Trading sticks
+6311	5	580009	Gout tuber
+6313	15	1366	Opal machete
+6315	15	11644	Jade machete
+6317	15	16750	Red topaz machete
+6319	100	299	Proboscis
+6322	125	768	Snakeskin body
+6324	125	532	Snakeskin chaps
+6326	125	300	Snakeskin bandana
+6328	125	276	Snakeskin boots
+6330	125	25084	Snakeskin vambraces
+6332	11000	105	Mahogany logs
+6333	13000	120	Teak logs
+6335	150	1317	Tribal mask (poison)
+6337	150	1290	Tribal mask (disease)
+6339	150	1037	Tribal mask (combat)
+6341	150	3900	Tribal top (brown)
+6343	150	3755	Villager robe (brown)
+6345	150	4249	Villager hat (brown)
+6347	150	12534	Villager armband (brown)
+6349	150	2673	Villager sandals (brown)
+6351	150	4608	Tribal top (blue)
+6353	150	4427	Villager robe (blue)
+6355	150	354	Villager hat (blue)
+6357	150	4267	Villager sandals (blue)
+6359	150	5500	Villager armband (blue)
+6361	150	501397	Tribal top (yellow)
+6363	150	1671	Villager robe (yellow)
+6365	150	1902	Villager hat (yellow)
+6367	150	598	Villager sandals (yellow)
+6369	150	772	Villager armband (yellow)
+6371	150	5530	Tribal top (pink)
+6373	150	4886	Villager robe (pink)
+6375	150	1242	Villager hat (pink)
+6377	150	2943	Villager sandals (pink)
+6379	150	5750	Villager armband (pink)
+6382	150	1002	Fez
+6384	150	430	Desert top
+6386	150	2110	Desert robes
+6388	150	11975	Desert top (overcoat)
+6390	150	1715	Desert legs
+6392	150	3115	Menaphite purple hat
+6394	150	469	Menaphite purple top
+6396	150	489	Menaphite purple robe
+6398	150	10520	Menaphite purple kilt
+6400	150	10454	Menaphite red hat
+6402	150	734	Menaphite red top
+6404	150	10325	Menaphite red robe
+6406	150	10158	Menaphite red kilt
+6408	125	3902	Oak blackjack(o)
+6410	125	976	Oak blackjack(d)
+6412	125	6177	Willow blackjack(o)
+6414	125	1862	Willow blackjack(d)
+6416	125	1529	Maple blackjack
+6418	125	3574	Maple blackjack(o)
+6420	125	19	Maple blackjack(d)
+6470	50	12	Compost potion(4)
+6472	50	1	Compost potion(3)
+6474	50	5	Compost potion(2)
+6476	50	1	Compost potion(1)
+6522	11000	2356	Toktz-xil-ul
+6523	70	451515	Toktz-xil-ak
+6524	70	268216	Toktz-ket-xil
+6525	70	417529	Toktz-xil-ek
+6526	70	480065	Toktz-mej-tal
+6527	70	208338	Tzhaar-ket-em
+6528	70	170748	Tzhaar-ket-om
+6562	8	24997	Mud battlestaff
+6563	8	77174	Mystic mud staff
+6568	70	445805	Obsidian cape
+6571	11000	2782757	Uncut onyx
+6573	11000	2889384	Onyx
+6575	10000	1173996	Onyx ring
+6577	10000	2712775	Onyx necklace
+6579	10000	1633347	Onyx amulet (u)
+6581	10000	2682664	Onyx amulet
+6583	70	1017772	Ring of stone
+6585	8	2794142	Amulet of fury
+6587	125	629	White claws
+6589	125	1036	White battleaxe
+6591	125	1080	White dagger
+6593	125	79	White dagger(p)
+6595	125	140	White dagger(p+)
+6597	125	12588	White dagger(p++)
+6599	125	47565	White halberd
+6601	125	571	White mace
+6603	125	6411	White magic staff
+6605	125	2610	White sword
+6607	125	1357	White longsword
+6609	125	1225	White 2h sword
+6611	125	606	White scimitar
+6613	125	1746	White warhammer
+6615	125	682	White chainbody
+6617	125	4137	White platebody
+6619	125	2203	White boots
+6621	125	100663	White med helm
+6623	125	3465	White full helm
+6625	125	2679	White platelegs
+6627	125	1451	White plateskirt
+6629	125	603	White gloves
+6631	125	432	White sq shield
+6633	125	70500	White kiteshield
+6667	100	101	Empty fishbowl
+6681	100	14	Ground guam
+6685	2000	7037	Saradomin brew(4)
+6687	2000	5304	Saradomin brew(3)
+6689	2000	3464	Saradomin brew(2)
+6691	2000	1639	Saradomin brew(1)
+6693	11000	4334	Crushed nest
+6697	11000	47	Pat of butter
+6701	13000	99	Baked potato
+6703	13000	261	Potato with butter
+6705	13000	270	Potato with cheese
+6724	8	47752	Seercull
+6729	7500	12743	Dagannoth bones
+6731	8	886614	Seers ring
+6733	8	2501644	Archers ring
+6735	8	52156	Warrior ring
+6737	8	3765458	Berserker ring
+6739	40	67390	Dragon axe
+6750	15	273	Black desert shirt
+6752	15	93	Black desert robe
+6760	8	7573	Guthix mjolnir
+6762	8	5109	Saradomin mjolnir
+6764	8	6042	Zamorak mjolnir
+6794	6000	100	Choc-ice
+6809	70	42541	Granite legs
+6812	7500	3552	Wyvern bones
+6814	18000	303	Fur
+6889	15	4492914	Mage's book
+6891	15	211949	Arena book
+6908	125	497646	Beginner wand
+6910	125	1152650	Apprentice wand
+6912	70	4200292	Teacher wand
+6914	70	7035176	Master wand
+6916	125	1976279	Infinity top
+6918	125	2459795	Infinity hat
+6920	125	938636	Infinity boots
+6922	125	846856	Infinity gloves
+6924	125	1961695	Infinity bottoms
+6959	150	433	Pink cape
+6962	6000	421	Triangle sandwich
+6971	100	25001	Sandstone (1kg)
+6973	100	146	Sandstone (2kg)
+6975	100	262	Sandstone (5kg)
+6977	100	3104	Sandstone (10kg)
+6979	100	18	Granite (500g)
+6981	100	39	Granite (2kg)
+6983	100	245	Granite (5kg)
+7051	40	348	Unlit bug lantern
+7054	13000	305	Chilli potato
+7056	13000	198	Egg potato
+7058	13000	983	Mushroom potato
+7060	13000	1398	Tuna potato
+7062	13000	4371	Chilli con carne
+7064	13000	175	Egg and tomato
+7066	13000	1073	Mushroom & onion
+7068	13000	1019	Tuna and corn
+7070	13000	2643	Minced meat
+7072	13000	5661	Spicy sauce
+7074	13000	987	Chopped garlic
+7076	13000	250	Uncooked egg
+7078	13000	2474	Scrambled egg
+7080	13000	118	Sliced mushrooms
+7082	13000	49750	Fried mushrooms
+7084	13000	90	Fried onions
+7086	13000	153	Chopped tuna
+7088	13000	255	Sweetcorn (bowl)
+7110	150	1	Stripy pirate shirt (beige)
+7112	150	198	Pirate bandana (white)
+7114	150	860	Pirate boots
+7116	150	22	Pirate leggings (beige)
+7122	150	88	Stripy pirate shirt (red)
+7124	150	134	Pirate bandana (red)
+7126	150	126	Pirate leggings (red)
+7128	150	210	Stripy pirate shirt (blue)
+7130	150	1280	Pirate bandana (blue)
+7132	150	116	Pirate leggings (blue)
+7134	150	978	Stripy pirate shirt (brown)
+7136	150	52	Pirate bandana (brown)
+7138	150	151	Pirate leggings (brown)
+7158	8	132242	Dragon 2h sword
+7159	70	585	Insulated boots
+7162	15	400	Pie recipe book
+7168	13000	1588	Raw mud pie
+7170	11000	1001	Mud pie
+7176	13000	1427	Raw garden pie
+7178	10000	98	Garden pie
+7186	13000	1950	Raw fish pie
+7188	10000	147	Fish pie
+7196	13000	2175	Raw admiral pie
+7198	10000	109	Admiral pie
+7206	13000	4026	Raw wild pie
+7208	10000	539	Wild pie
+7216	13000	1813	Raw summer pie
+7218	10000	667	Summer pie
+7223	6000	2537	Roast rabbit
+7225	11000	269	Iron spit
+7228	100	85	Cooked chompy (roasted)
+7319	4	4279	Red boater
+7321	4	2550	Orange boater
+7323	4	7500	Green boater
+7325	4	1603	Blue boater
+7327	4	5889	Black boater
+7329	250	16	Red firelighter
+7330	250	61	Green firelighter
+7331	250	54	Blue firelighter
+7332	70	5614	Black shield (h1)
+7334	70	3704	Adamant shield (h1)
+7336	70	68035	Rune shield (h1)
+7338	70	2150	Black shield (h2)
+7340	70	2445	Adamant shield (h2)
+7342	70	35501	Rune shield (h2)
+7344	70	1880	Black shield (h3)
+7346	70	2771	Adamant shield (h3)
+7348	70	40999	Rune shield (h3)
+7350	70	1595	Black shield (h4)
+7352	70	2646	Adamant shield (h4)
+7354	70	34000	Rune shield (h4)
+7356	70	1000	Black shield (h5)
+7358	70	2461	Adamant shield (h5)
+7360	70	35450	Rune shield (h5)
+7362	8	6500	Studded body (g)
+7364	8	16318	Studded body (t)
+7366	8	16713	Studded chaps (g)
+7368	8	3774	Studded chaps (t)
+7370	8	4106	Green d'hide body (g)
+7372	8	4067	Green d'hide body (t)
+7374	8	4814	Blue d'hide body (g)
+7376	8	4188	Blue d'hide body (t)
+7378	8	51858	Green d'hide chaps (g)
+7380	8	5720	Green d'hide chaps (t)
+7382	8	1698	Blue d'hide chaps (g)
+7384	8	1725	Blue d'hide chaps (t)
+7386	4	20632	Blue skirt (g)
+7388	4	9828	Blue skirt (t)
+7390	4	168394	Blue wizard robe (g)
+7392	4	26007	Blue wizard robe (t)
+7394	4	122042	Blue wizard hat (g)
+7396	4	34901	Blue wizard hat (t)
+7398	8	47660	Enchanted robe
+7399	8	71639	Enchanted top
+7400	8	7593	Enchanted hat
+7416	50	6363	Mole claw
+7418	50	5182	Mole skin
+7433	50	1579	Wooden spoon
+7435	50	242	Egg whisk
+7437	50	2308	Spork
+7439	50	555	Spatula
+7441	50	673	Frying pan
+7443	50	1176	Skewer
+7445	50	20074	Rolling pin
+7447	50	7228	Kitchen knife
+7449	50	24652	Meat tenderiser
+7451	50	13369	Cleaver
+7466	15	1	Cornflour
+7468	15	1456	Pot of cornflour
+7521	6000	296	Cooked giant crab meat
+7566	11000	709	Raw jubbly
+7568	10000	982	Cooked jubbly
+7650	13000	1247	Silver dust
+7660	2000	1570	Guthix balance(4)
+7662	2000	628	Guthix balance(3)
+7664	2000	6	Guthix balance(2)
+7666	2000	1753	Guthix balance(1)
+7668	8	1194	Gadderhammer
+7759	150	3066	Toy soldier
+7761	150	2642	Toy soldier (wound)
+7763	150	4049	Toy doll
+7765	150	4925	Toy doll (wound)
+7767	150	4572	Toy mouse
+7769	150	6550	Toy mouse (wound)
+7771	150	3916	Toy cat
+7801	11000	153	Snake hide (swamp)
+7919	10000	1023	Bottle of wine
+7936	30000	1	Pure essence
+7939	7500	250	Tortoise shell
+7944	13000	114	Raw monkfish
+7946	13000	158	Monkfish
+8007	15000	605	Varrock teleport (tablet)
+8008	10000	575	Lumbridge teleport (tablet)
+8009	15000	582	Falador teleport (tablet)
+8010	15000	383	Camelot teleport (tablet)
+8011	10000	420	Ardougne teleport (tablet)
+8012	10000	249	Watchtower teleport (tablet)
+8013	15000	570	Teleport to house (tablet)
+8014	10000	384	Bones to bananas (tablet)
+8015	10000	990	Bones to peaches (tablet)
+8016	10000	104	Enchant sapphire or opal
+8017	10000	172	Enchant emerald or jade
+8018	10000	504	Enchant ruby or topaz
+8019	10000	2692	Enchant diamond
+8020	10000	131	Enchant dragonstone
+8021	10000	170	Enchant onyx
+8417	10000	1937	Bagged dead tree
+8419	10000	3174	Bagged nice tree
+8421	10000	8166	Bagged oak tree
+8423	10000	12999	Bagged willow tree
+8425	10000	21000	Bagged maple tree
+8427	10000	32247	Bagged yew tree
+8429	10000	54542	Bagged magic tree
+8431	10000	1910	Bagged plant 1
+8433	10000	6188	Bagged plant 2
+8435	10000	13865	Bagged plant 3
+8437	10000	3827	Thorny hedge (bagged)
+8439	10000	11297	Nice hedge (bagged)
+8441	10000	20000	Small box hedge (bagged)
+8443	10000	28629	Topiary hedge (bagged)
+8445	10000	20415	Fancy hedge (bagged)
+8447	10000	36806	Tall fancy hedge (bagged)
+8449	10000	107053	Tall box hedge (bagged)
+8451	10000	7864	Bagged flower
+8453	10000	30000	Bagged daffodils
+8455	10000	19265	Bagged bluebells
+8457	10000	7280	Bagged sunflower
+8459	10000	6609	Bagged marigolds
+8461	10000	15708	Bagged roses
+8496	500	2188	Crude chair (flatpack)
+8498	500	911	Wooden chair (flatpack)
+8500	500	25061	Rocking chair (flatpack)
+8502	500	540	Oak chair (flatpack)
+8504	500	49570	Oak armchair (flatpack)
+8506	500	71	Teak armchair (flatpack)
+8508	500	5154	Mahogany armchair (flatpack)
+8510	500	16	Bookcase (flatpack)
+8512	500	13	Oak bookcase (flatpack)
+8514	500	512	Mahogany bookcase (flatpack)
+8516	500	2750	Beer barrel (flatpack)
+8518	500	5000	Cider barrel (flatpack)
+8520	500	14523	Asgarnian ale (flatpack)
+8522	500	13281	Greenman's ale (flatpack)
+8524	500	172	Dragon bitter (flatpack)
+8526	500	12752	Chef's delight (flatpack)
+8528	500	9	Kitchen table (flatpack)
+8530	500	8	Oak kitchen table (flatpack)
+8532	500	29	Teak kitchen table (flatpack)
+8548	500	2	Wood dining table (flatpack)
+8550	500	1	Oak dining table (flatpack)
+8552	500	14	Carved oak table (flatpack)
+8554	500	5	Teak table (flatpack)
+8556	500	197	Carved teak table (flatpack)
+8558	500	10	Mahogany table (flatpack)
+8560	500	1050000	Opulent table (flatpack)
+8562	500	23	Wooden bench (flatpack)
+8564	500	50000	Oak bench (flatpack)
+8566	500	5	Carved oak bench (flatpack)
+8568	500	51	Teak dining bench (flatpack)
+8570	500	5	Carved teak bench (flatpack)
+8572	500	53	Mahogany bench (flatpack)
+8574	500	476246	Gilded bench (flatpack)
+8576	500	1530	Wooden bed (flatpack)
+8578	500	7042	Oak bed (flatpack)
+8580	500	691	Large oak bed (flatpack)
+8582	500	2110	Teak bed (flatpack)
+8584	500	3824	Large teak bed (flatpack)
+8586	500	5276	Four-poster bed (flatpack)
+8588	500	109388	Gilded four-poster (flatpack)
+8590	500	331	Oak clock (flatpack)
+8592	500	1646	Teak clock (flatpack)
+8594	500	327272	Gilded clock (flatpack)
+8596	500	100000	Shaving stand (flatpack)
+8598	500	289	Oak shaving stand (flatpack)
+8600	500	120	Oak dresser (flatpack)
+8602	500	198	Teak dresser (flatpack)
+8604	500	2942	Fancy teak dresser (flatpack)
+8606	500	26584	Mahogany dresser (flatpack)
+8608	500	135000	Gilded dresser (flatpack)
+8610	500	28	Shoe box (flatpack)
+8612	500	33	Oak drawers (flatpack)
+8614	500	37	Oak wardrobe (flatpack)
+8616	500	96	Teak drawers (flatpack)
+8618	500	2501	Teak wardrobe (flatpack)
+8620	500	1188	Mahogany wardrobe (flatpack)
+8622	500	278988	Gilded wardrobe (flatpack)
+8624	500	10	Crystal ball (flatpack)
+8626	500	10	Elemental sphere (flatpack)
+8628	500	10	Crystal of power (flatpack)
+8778	13000	531	Oak plank
+8780	13000	839	Teak plank
+8782	13000	2172	Mahogany plank
+8784	11000	138271	Gold leaf
+8786	11000	335749	Marble block
+8788	11000	1003002	Magic stone
+8790	13000	365	Bolt of cloth
+8792	11000	869	Clockwork
+8794	40	284	Saw
+8837	13000	1081	Timber beam
+8872	70	3800	Bone dagger
+8874	70	4467	Bone dagger (p)
+8876	70	2790	Bone dagger (p+)
+8878	70	7150	Bone dagger (p++)
+8880	70	3302	Dorgeshuun crossbow
+8882	11000	6	Bone bolts
+8901	70	841999	Black mask (10)
+8921	70	837071	Black mask
+8924	150	133000	Bandana eyepatch (white)
+8925	150	331	Bandana eyepatch (red)
+8926	150	164	Bandana eyepatch (blue)
+8927	150	1923	Bandana eyepatch (brown)
+8928	150	47411	Hat eyepatch
+8940	0	42285	Rum (red)
+8941	0	45285	Rum (blue)
+9003	15	51	Security book
+9004	15	309	Stronghold notes
+9026	13000	906	Ivory comb
+9028	13000	1006	Golden scarab
+9030	13000	174	Stone scarab
+9032	13000	120	Pottery scarab
+9034	13000	1341	Golden statuette
+9036	13000	87	Pottery statuette
+9038	13000	189	Stone statuette
+9040	13000	751	Gold seal
+9042	13000	259	Stone seal
+9052	6000	2300	Locust meat
+9075	25000	110	Astral rune
+9140	7000	19	Iron bolts
+9141	7000	48	Steel bolts
+9142	7000	21	Mithril bolts
+9143	11000	144	Adamant bolts
+9144	11000	85	Runite bolts
+9145	11000	8	Silver bolts
+9174	125	177	Bronze crossbow
+9177	125	717	Iron crossbow
+9179	125	118	Steel crossbow
+9181	125	232	Mithril crossbow
+9183	70	620	Adamant crossbow
+9185	70	9449	Rune crossbow
+9187	11000	6	Jade bolt tips
+9188	11000	121	Topaz bolt tips
+9189	11000	6	Sapphire bolt tips
+9190	11000	44	Emerald bolt tips
+9191	11000	86	Ruby bolt tips
+9192	11000	173	Diamond bolt tips
+9193	11000	421	Dragonstone bolt tips
+9194	11000	8139	Onyx bolt tips
+9236	11000	43	Opal bolts (e)
+9238	11000	6	Pearl bolts (e)
+9239	11000	2	Topaz bolts (e)
+9240	11000	25	Sapphire bolts (e)
+9241	11000	17	Emerald bolts (e)
+9242	11000	175	Ruby bolts (e)
+9243	11000	129	Diamond bolts (e)
+9244	11000	345	Dragonstone bolts (e)
+9245	11000	8553	Onyx bolts (e)
+9287	11000	383	Iron bolts (p)
+9288	11000	239	Steel bolts (p)
+9289	11000	212	Mithril bolts (p)
+9290	11000	375	Adamant bolts (p)
+9291	11000	344	Runite bolts (p)
+9292	11000	2646	Silver bolts (p)
+9294	11000	322	Iron bolts (p+)
+9295	11000	19655	Steel bolts (p+)
+9296	11000	498	Mithril bolts (p+)
+9297	11000	371	Adamant bolts (p+)
+9298	11000	475	Runite bolts (p+)
+9299	11000	105	Silver bolts (p+)
+9301	11000	875	Iron bolts (p++)
+9302	11000	498	Steel bolts (p++)
+9303	11000	654	Mithril bolts (p++)
+9304	11000	608	Adamant bolts (p++)
+9305	11000	745	Runite bolts (p++)
+9306	11000	204	Silver bolts (p++)
+9336	11000	180	Topaz bolts
+9337	11000	35	Sapphire bolts
+9338	11000	75	Emerald bolts
+9339	11000	246	Ruby bolts
+9340	11000	362	Diamond bolts
+9341	11000	524	Dragonstone bolts
+9342	11000	8321	Onyx bolts
+9375	13000	16	Bronze bolts (unf)
+9377	13000	28	Iron bolts (unf)
+9378	13000	63	Steel bolts (unf)
+9379	13000	102	Mithril bolts (unf)
+9380	13000	175	Adamant bolts(unf)
+9381	13000	126	Runite bolts (unf)
+9382	13000	12	Silver bolts (unf)
+9416	11000	860	Mith grapple tip
+9418	11000	1157	Mith grapple (unf)
+9419	11000	1780	Mith grapple
+9420	10000	37	Bronze limbs
+9423	10000	100	Iron limbs
+9425	10000	256	Steel limbs
+9427	10000	334	Mithril limbs
+9429	10000	1727	Adamantite limbs
+9431	10000	9109	Runite limbs
+9434	40	21	Bolt mould
+9436	13000	282	Sinew
+9438	11000	482	Crossbow string
+9440	10000	10	Wooden stock
+9442	10000	4	Oak stock
+9444	10000	3	Willow stock
+9446	10000	43	Teak stock
+9448	10000	13	Maple stock
+9450	10000	2	Mahogany stock
+9452	10000	138	Yew stock
+9454	10000	80	Bronze crossbow (u)
+9457	10000	2805	Iron crossbow (u)
+9459	10000	99	Steel crossbow (u)
+9461	10000	325	Mithril crossbow (u)
+9463	10000	603	Adamant crossbow (u)
+9465	10000	9186	Runite crossbow (u)
+9469	15	228898	Grand seed pod
+9470	4	886114	Gnome scarf
+9472	4	31049	Gnome goggles
+9475	10000	64274	Mint cake
+9629	150	1017	Tyras helm
+9634	150	915	Vyrewatch top
+9636	150	1078	Vyrewatch legs
+9638	150	2556	Vyrewatch shoes
+9640	150	25296	Citizen top
+9642	150	50000	Citizen trousers
+9644	150	50394	Citizen shoes
+9666	70	165950	Proselyte harness m
+9668	70	23179	Initiate harness m
+9670	70	29877	Proselyte harness f
+9672	70	4687	Proselyte sallet
+9674	70	8565	Proselyte hauberk
+9676	70	5794	Proselyte cuisse
+9678	70	5949	Proselyte tasset
+9729	70	367	Elemental helmet
+9731	70	42806	Mind shield
+9733	70	1410	Mind helmet
+9735	13000	58	Goat horn
+9736	13000	152	Goat horn dust
+9739	2000	152	Combat potion(4)
+9741	2000	103	Combat potion(3)
+9743	2000	183	Combat potion(2)
+9745	2000	67	Combat potion(1)
+9843	500	30	Oak cape rack (flatpack)
+9844	500	1	Teak cape rack (flatpack)
+9845	500	1389	Mahogany cape rack (flatpack)
+9846	500	350000	Gilded cape rack (flatpack)
+9847	500	366734	Marble cape rack (flatpack)
+9848	500	906107	Magic cape rack (flatpack)
+9849	500	7507	Oak toy box (flatpack)
+9850	500	47	Teak toy box (flatpack)
+9851	500	25490	Mahogany toy box (flatpack)
+9852	500	500	Oak magic wardrobe (flatpack)
+9853	500	5000	Carved oak magic wardrobe (flatpack)
+9854	500	1283	Teak magic wardrobe (flatpack)
+9855	500	2500	Carved teak magic wardrobe (flatpack)
+9856	500	1072	Mahogany magic wardrobe (flatpack)
+9857	500	235000	Gilded magic wardrobe (flatpack)
+9858	500	361398	Marble magic wardrobe (flatpack)
+9859	500	25500	Oak armour case (flatpack)
+9860	500	3499	Teak armour case (flatpack)
+9861	500	4535	Mahogany armour case (flatpack)
+9862	500	522	Oak treasure chest (flatpack)
+9863	500	70000	Teak treasure chest (flatpack)
+9864	500	6134	M. treasure chest (flatpack)
+9865	500	22	Oak fancy dress box (flatpack)
+9866	500	8000	Teak fancy dress box (flatpack)
+9867	500	3699	Mahogany fancy dress box (flatpack)
+9978	11000	53	Raw bird meat
+9980	6000	18	Roast bird meat
+9986	11000	10	Raw beast meat
+9988	6000	1989	Roast beast meat
+9994	8000	1145	Spicy tomato
+9996	8000	1125	Spicy minced meat
+9998	2000	645	Hunter potion(4)
+10000	2000	246	Hunter potion(3)
+10002	2000	504	Hunter potion(2)
+10004	2000	1	Hunter potion(1)
+10006	250	32	Bird snare
+10008	250	50	Box trap
+10010	125	40	Butterfly net
+10012	40	30	Butterfly jar
+10014	125	162	Black warlock (item)
+10016	125	1575	Snowy knight (item)
+10018	125	72	Sapphire glacialis (item)
+10020	125	64	Ruby harvest (item)
+10025	250	498	Magic box
+10029	40	4	Teasing stick
+10031	250	11	Rabbit snare
+10033	7000	922	Chinchompa
+10034	7000	1440	Red chinchompa
+10035	150	594	Kyatt legs
+10037	150	267	Kyatt top
+10039	150	3335	Kyatt hat
+10041	150	140	Larupia legs
+10043	150	489	Larupia top
+10045	150	4292	Larupia hat
+10047	150	680	Graahk legs
+10049	150	648	Graahk top
+10051	150	1038	Graahk headdress
+10053	0	5271	Wood camo top
+10055	0	6565	Wood camo legs
+10057	0	1146	Jungle camo top
+10059	0	4513	Jungle camo legs
+10061	0	3549	Desert camo top
+10063	0	6410	Desert camo legs
+10065	0	9077	Polar camo top
+10067	0	11583	Polar camo legs
+10069	125	2477	Spotted cape
+10071	125	908	Spottier cape
+10075	8000	1894	Gloves of silence
+10077	125	50100	Spiky vambraces
+10079	125	1052	Green spiky vambraces
+10081	125	1904	Blue spiky vambraces
+10083	125	1732	Red spiky vambraces
+10085	125	2671	Black spiky vambraces
+10087	8000	17	Stripy feather
+10088	8000	12	Red feather
+10089	8000	10	Blue feather
+10090	8000	86	Yellow feather
+10091	8000	9	Orange feather
+10093	10000	61	Tatty larupia fur
+10095	10000	337	Larupia fur
+10097	10000	206	Tatty graahk fur
+10099	10000	338	Graahk fur
+10101	10000	20	Tatty kyatt fur
+10103	10000	585	Kyatt fur
+10105	10000	965	Kebbit spike
+10107	10000	10	Long kebbit spike
+10109	10000	674	Kebbit teeth
+10111	10000	625	Kebbit teeth dust
+10113	10000	99	Kebbit claws
+10115	10000	110	Dark kebbit fur
+10117	100	2937	Polar kebbit fur
+10119	10000	142	Feldip weasel fur
+10121	10000	1025	Common kebbit fur
+10123	10000	769	Desert devil fur
+10125	10000	78	Spotted kebbit fur
+10127	10000	122	Dashing kebbit fur
+10129	40	187	Barb-tail harpoon
+10132	150	1879	Strung rabbit foot
+10134	100	1474	Rabbit foot
+10136	6000	120	Rainbow fish
+10138	13000	233	Raw rainbow fish
+10142	7000	4	Guam tar
+10143	7000	2	Marrentill tar
+10144	7000	2	Tarromin tar
+10145	11000	4	Harralander tar
+10146	125	165	Orange salamander
+10147	125	6	Red salamander
+10148	125	235	Black salamander
+10149	125	28	Swamp lizard
+10150	40	30	Noose wand
+10156	70	1488	Hunters' crossbow
+10158	11000	110	Kebbit bolts
+10159	11000	13	Long kebbit bolts
+10280	8	3852	Willow comp bow
+10282	8	1309	Yew comp bow
+10284	8	1055	Magic comp bow
+10286	70	52491	Rune helm (h1)
+10288	70	20504	Rune helm (h2)
+10290	70	20965	Rune helm (h3)
+10292	70	20524	Rune helm (h4)
+10294	70	22198	Rune helm (h5)
+10296	70	1983	Adamant helm (h1)
+10298	70	2842	Adamant helm (h2)
+10300	70	3554	Adamant helm (h3)
+10302	70	2582	Adamant helm (h4)
+10304	70	2360	Adamant helm (h5)
+10306	70	46999	Black helm (h1)
+10308	70	4793	Black helm (h2)
+10310	70	2432	Black helm (h3)
+10312	70	2323	Black helm (h4)
+10314	70	2000	Black helm (h5)
+10316	4	10354	Bob's red shirt
+10318	4	19000	Bob's blue shirt
+10320	4	11361	Bob's green shirt
+10322	4	33420	Bob's black shirt
+10324	4	12316	Bob's purple shirt
+10326	250	60	Purple firelighter
+10327	250	76	White firelighter
+10330	8	30249995	3rd Age range top
+10332	8	14763285	3rd Age range legs
+10334	8	16825999	3rd Age range coif
+10336	8	10888500	3rd Age vambraces
+10338	8	122444923	3rd Age robe top
+10340	8	32125374	3rd Age robe
+10342	8	15927771	3rd Age mage hat
+10344	8	42961421	3rd Age amulet
+10346	8	82475263	3rd Age platelegs
+10348	8	140216536	3rd Age platebody
+10350	8	27798044	3rd Age full helmet
+10352	8	66375725	3rd Age kiteshield
+10354	5	45942	Amulet of glory (t4)
+10362	5	51158	Amulet of glory (t)
+10364	5	20193	Strength amulet (t)
+10366	5	12375	Amulet of magic (t)
+10368	8	64827	Zamorak bracers
+10370	8	106776	Zamorak d'hide body
+10372	8	163963	Zamorak chaps
+10374	8	33825	Zamorak coif
+10376	8	10332	Guthix bracers
+10378	8	92584	Guthix d'hide body
+10380	8	133806	Guthix chaps
+10382	8	69990	Guthix coif
+10384	8	16199	Saradomin bracers
+10386	8	82005	Saradomin d'hide body
+10388	8	154610	Saradomin chaps
+10390	8	31772	Saradomin coif
+10392	4	3474	A powdered wig
+10394	4	2401389	Flared trousers
+10396	4	1227	Pantaloons
+10398	4	10760	Sleeping cap
+10400	4	3734	Black elegant shirt
+10402	4	1091	Black elegant legs
+10404	4	9200	Red elegant shirt
+10406	4	5574	Red elegant legs
+10408	4	6541	Blue elegant shirt
+10410	4	7772	Blue elegant legs
+10412	4	9778	Green elegant shirt
+10414	4	6330	Green elegant legs
+10416	4	899	Purple elegant shirt
+10418	4	7722	Purple elegant legs
+10420	4	3280	White elegant blouse
+10422	4	935	White elegant skirt
+10424	4	19629	Red elegant blouse
+10426	4	4691	Red elegant skirt
+10428	4	33683	Blue elegant blouse
+10430	4	7668	Blue elegant skirt
+10432	4	26853	Green elegant blouse
+10434	4	7732	Green elegant skirt
+10436	4	1165	Purple elegant blouse
+10438	4	494	Purple elegant skirt
+10440	8	3075	Saradomin crozier
+10442	8	3343	Guthix crozier
+10444	8	2523	Zamorak crozier
+10446	8	17887	Saradomin cloak
+10448	8	10299	Guthix cloak
+10450	8	18000	Zamorak cloak
+10452	8	13132	Saradomin mitre
+10454	8	8547	Guthix mitre
+10456	8	17322	Zamorak mitre
+10458	8	21199	Saradomin robe top
+10460	8	58218	Zamorak robe top
+10462	8	27391	Guthix robe top
+10464	8	30785	Saradomin robe legs
+10466	8	15498	Guthix robe legs
+10468	8	39229	Zamorak robe legs
+10470	8	3894	Saradomin stole
+10472	8	11500	Guthix stole
+10474	8	4553	Zamorak stole
+10476	10000	4790	Purple sweets
+10496	15	752	Polished buttons
+10564	70	51954	Granite body
+10589	70	47500	Granite helm
+10808	11000	2051	Arctic pyre logs
+10810	11000	664	Arctic pine logs
+10812	11000	1011	Split log
+10814	13000	103	Hair
+10816	11000	305	Raw yak meat
+10818	13000	340	Yak-hide
+10820	13000	300	Cured yak-hide
+10822	70	1392	Yak-hide armour (top)
+10824	70	660	Yak-hide armour (legs)
+10826	70	1988	Neitiznot shield
+10828	70	48323	Helm of Neitiznot
+10891	15	3400	Wooden cat
+10925	2000	18500	Sanfew serum(4)
+10927	2000	13292	Sanfew serum(3)
+10929	2000	8421	Sanfew serum(2)
+10931	2000	5130	Sanfew serum(1)
+10937	11000	842	Nail beast nails
+10952	40	99	Slayer bell
+10954	70	513	Frog-leather body
+10956	70	2794	Frog-leather chaps
+10958	70	471	Frog-leather boots
+10973	10000	239	Light orb
+10978	13000	206	Swamp weed
+10981	11000	1250	Cave goblin wire
+10999	15	508	Goblin book
+11037	8	399158	Brine sabre
+11061	8	5699	Ancient mace
+11065	40	286	Bracelet mould
+11069	18000	221	Gold bracelet
+11072	10000	468	Sapphire bracelet
+11074	10000	447	Bracelet of clay
+11076	10000	669	Emerald bracelet
+11079	10000	618	Castle wars bracelet(3)
+11085	10000	1118	Ruby bracelet
+11088	10000	1085	Inoculation bracelet
+11090	10000	2190	Phoenix necklace
+11092	10000	1920	Diamond bracelet
+11095	10000	2076	Abyssal bracelet(5)
+11105	10000	11957	Skills necklace(4)
+11113	10000	11566	Skills necklace
+11115	10000	11427	Dragonstone bracelet
+11118	10000	12100	Combat bracelet(4)
+11126	10000	12122	Combat bracelet
+11128	70	2873087	Berserker necklace
+11130	10000	2611630	Onyx bracelet
+11133	70	2843784	Regen bracelet
+11200	50	35087	Dwarven helmet
+11205	15	875	Shrunk ogleroot
+11212	11000	1822	Dragon arrow
+11227	11000	1800	Dragon arrow(p)
+11228	11000	1749	Dragon arrow(p+)
+11229	11000	1935	Dragon arrow(p++)
+11230	11000	1053	Dragon dart
+11231	11000	1081	Dragon dart(p)
+11232	11000	1291	Dragon dart tip
+11233	11000	958	Dragon dart(p+)
+11234	11000	1686	Dragon dart(p++)
+11235	8	520401	Dark bow
+11237	10000	1890	Dragon arrowtips
+11238	18000	2106	Baby impling jar
+11240	18000	4526	Young impling jar
+11242	18000	4495	Gourmet impling jar
+11244	18000	1543	Earth impling jar
+11246	18000	2228	Essence impling jar
+11248	18000	4653	Eclectic impling jar
+11250	18000	4370	Nature impling jar
+11252	18000	23829	Magpie impling jar
+11254	18000	40513	Ninja impling jar
+11256	18000	462992	Dragon impling jar
+11260	13000	320	Impling jar
+11280	150	107137	Cavalier mask
+11284	8	3179555	Dragonfire shield
+11286	5	3299999	Draconic visage
+11324	13000	37	Roe
+11326	13000	65	Caviar
+11328	13000	6	Leaping trout
+11330	13000	5	Leaping salmon
+11332	13000	9	Leaping sturgeon
+11334	8000	14	Fish offcuts
+11335	8	48061987	Dragon full helm
+11367	125	2280	Bronze hasta
+11369	125	5149	Iron hasta
+11371	125	35	Steel hasta
+11373	125	94	Mithril hasta
+11375	125	937	Adamant hasta
+11377	70	11947	Rune hasta
+11379	125	27111	Bronze hasta(p)
+11382	125	108000	Bronze hasta(p+)
+11384	125	2449	Bronze hasta(p++)
+11386	125	247750	Iron hasta(p)
+11389	125	2506	Iron hasta(p+)
+11391	125	1710	Iron hasta(p++)
+11393	125	504	Steel hasta(p)
+11396	125	2743	Steel hasta(p+)
+11398	125	5913	Steel hasta(p++)
+11400	125	405	Mithril hasta(p)
+11403	125	3525	Mithril hasta(p+)
+11405	125	3828	Mithril hasta(p++)
+11407	125	1646	Adamant hasta(p)
+11410	125	3907	Adamant hasta(p+)
+11412	125	6415	Adamant hasta(p++)
+11414	70	18420	Rune hasta(p)
+11417	70	19750	Rune hasta(p+)
+11419	70	12671	Rune hasta(p++)
+11429	2000	25	Attack mix(2)
+11431	2000	5086	Attack mix(1)
+11433	2000	245	Antipoison mix(2)
+11435	2000	296	Antipoison mix(1)
+11437	2000	335	Relicym's mix(2)
+11439	2000	37633	Relicym's mix(1)
+11441	2000	145	Strength mix(1)
+11443	2000	20	Strength mix(2)
+11445	2000	100	Combat mix(2)
+11447	2000	240	Combat mix(1)
+11449	2000	55	Restore mix(2)
+11451	2000	82	Restore mix(1)
+11453	2000	54	Energy mix(2)
+11455	2000	290	Energy mix(1)
+11457	2000	28063	Defence mix(2)
+11459	2000	247512	Defence mix(1)
+11461	2000	260	Agility mix(2)
+11463	2000	473	Agility mix(1)
+11465	2000	4105	Prayer mix(2)
+11467	2000	1756	Prayer mix(1)
+11469	2000	165	Superattack mix(2)
+11471	2000	16	Superattack mix(1)
+11473	2000	539	Anti-poison supermix(2)
+11475	2000	456	Anti-poison supermix(1)
+11477	2000	81	Fishing mix(2)
+11479	2000	77	Fishing mix(1)
+11481	2000	125	Super energy mix(2)
+11483	2000	998	Super energy mix(1)
+11485	2000	744	Super str. mix(2)
+11487	2000	251	Super str. mix(1)
+11489	2000	193916	Magic essence mix(2)
+11491	2000	10	Magic essence mix(1)
+11493	2000	3837	Super restore mix(2)
+11495	2000	1640	Super restore mix(1)
+11497	2000	541	Super def. mix(2)
+11499	2000	200	Super def. mix(1)
+11501	2000	599	Antidote+ mix(2)
+11503	2000	100981	Antidote+ mix(1)
+11505	2000	82	Antifire mix(2)
+11507	2000	126	Antifire mix(1)
+11509	2000	666	Ranging mix(2)
+11511	2000	448	Ranging mix(1)
+11513	2000	34	Magic mix(2)
+11515	2000	199	Magic mix(1)
+11517	2000	182	Hunting mix(2)
+11519	2000	171	Hunting mix(1)
+11521	2000	300	Zamorak mix(2)
+11523	2000	89	Zamorak mix(1)
+11785	8	35207549	Armadyl crossbow
+11787	8	51778	Steam battlestaff
+11789	8	66179	Mystic steam staff
+11791	8	5362366	Staff of the Dead
+11798	10000	492489	Godsword blade
+11802	8	7677363	Armadyl godsword
+11804	8	17889467	Bandos godsword
+11806	8	25408772	Saradomin godsword
+11808	8	20060971	Zamorak godsword
+11810	10000	6886985	Armadyl hilt
+11812	10000	17305000	Bandos hilt
+11814	10000	24227780	Saradomin hilt
+11816	10000	18967500	Zamorak hilt
+11818	11000	155227	Godsword shard 1
+11820	11000	155374	Godsword shard 2
+11822	11000	158473	Godsword shard 3
+11824	8	1254481	Zamorakian spear
+11826	8	9090924	Armadyl helmet
+11828	8	36215572	Armadyl chestplate
+11830	8	26962102	Armadyl chainskirt
+11832	8	23475000	Bandos chestplate
+11834	8	15761617	Bandos tassets
+11836	8	749223	Bandos boots
+11838	8	121809	Saradomin sword
+11840	70	207537	Dragon boots
+11874	7000	56	Broad arrowheads
+11875	7000	53	Broad bolts
+11876	7000	64	Unfinished broad bolts
+11889	8	1480520	Zamorakian hasta
+11902	70	39733	Leaf-bladed sword
+11905	8	897135	Trident of the Seas (full)
+11908	8	44675	Uncharged trident
+11920	40	608736	Dragon pickaxe
+11924	8	1909188	Malediction ward
+11926	8	2810859	Odium ward
+11928	10000	1703000	Odium shard 1
+11929	10000	493239	Odium shard 2
+11930	10000	235511	Odium shard 3
+11931	10000	1113000	Malediction shard 1
+11932	10000	392500	Malediction shard 2
+11933	10000	166022	Malediction shard 3
+11934	15000	1028	Raw dark crab
+11936	10000	1375	Dark crab
+11940	8000	4	Dark fishing bait
+11943	7500	5909	Lava dragon bones
+11951	2000	281	Extended antifire(4)
+11953	2000	185	Extended antifire(3)
+11955	2000	200	Extended antifire(2)
+11957	2000	169	Extended antifire(1)
+11959	11000	3122	Black chinchompa
+11960	2000	215	Extended antifire mix(2)
+11962	2000	191	Extended antifire mix(1)
+11964	5	60686	Amulet of glory (t6)
+11968	10000	11781	Skills necklace(6)
+11972	10000	12224	Combat bracelet(6)
+11978	10000	10117	Amulet of glory(6)
+11980	10000	13254	Ring of wealth (5)
+11990	4	5481	Fedora
+11992	11000	417	Lava scale
+11994	11000	88	Lava scale shard
+11998	8	1894986	Smoke battlestaff
+12000	8	1966519	Mystic smoke staff
+12002	8	416996	Occult necklace
+12004	70	259087	Kraken tentacle
+12007	4	40466	Jar of Dirt
+12193	8	28711	Ancient robe top
+12195	8	19950	Ancient robe legs
+12197	8	13192	Ancient cloak
+12199	8	7150	Ancient crozier
+12201	8	2519	Ancient stole
+12203	8	13417	Ancient mitre
+12205	4	25978	Bronze platebody (g)
+12207	4	5049	Bronze platelegs (g)
+12209	4	1650	Bronze plateskirt (g)
+12211	4	43385	Bronze full helm (g)
+12213	4	28479	Bronze kiteshield (g)
+12215	4	2665	Bronze platebody (t)
+12217	4	1604	Bronze platelegs (t)
+12219	4	2681	Bronze plateskirt (t)
+12221	4	4205	Bronze full helm (t)
+12223	4	26976	Bronze kiteshield (t)
+12225	4	31388	Iron platebody (t)
+12227	4	4837	Iron platelegs (t)
+12229	4	1129	Iron plateskirt (t)
+12231	4	30844	Iron full helm (t)
+12233	4	11575	Iron kiteshield (t)
+12235	4	111900	Iron platebody (g)
+12237	4	45301	Iron platelegs (g)
+12239	4	6040	Iron plateskirt (g)
+12241	4	105200	Iron full helm (g)
+12243	4	43250	Iron kiteshield (g)
+12245	4	8144	Beanie
+12247	4	4198	Red beret
+12249	4	4576	Imp mask
+12251	4	34894	Goblin mask
+12253	8	28446	Armadyl robe top
+12255	8	20993	Armadyl robe legs
+12257	8	2538	Armadyl stole
+12259	8	10002	Armadyl mitre
+12261	8	9129	Armadyl cloak
+12263	8	3184	Armadyl crozier
+12265	8	34408	Bandos robe top
+12267	8	15499	Bandos robe legs
+12269	8	2187	Bandos stole
+12271	8	12206	Bandos mitre
+12273	8	43908	Bandos cloak
+12275	8	3326	Bandos crozier
+12277	8	4202	Mithril platebody (g)
+12279	8	2565	Mithril platelegs (g)
+12281	8	6289	Mithril kiteshield (g)
+12283	8	4383	Mithril full helm (g)
+12285	8	2028	Mithril plateskirt (g)
+12287	8	6376	Mithril platebody (t)
+12289	8	3508	Mithril platelegs (t)
+12291	8	2237	Mithril kiteshield (t)
+12293	8	4030	Mithril full helm (t)
+12295	8	2586	Mithril plateskirt (t)
+12297	4	1805	Black pickaxe
+12299	4	545	White headband
+12301	4	3650	Blue headband
+12303	4	460	Gold headband
+12305	4	5538	Pink headband
+12307	4	583	Green headband
+12309	4	4145	Pink boater
+12311	4	1670	Purple boater
+12313	4	1102	White boater
+12315	4	10739	Pink elegant shirt
+12317	4	1533	Pink elegant legs
+12319	4	2216	Crier hat
+12321	4	2278	White cavalier
+12323	4	6027	Red cavalier
+12325	4	1895	Navy cavalier
+12327	8	5923	Red d'hide body (g)
+12329	8	4592	Red d'hide chaps (g)
+12331	8	5928	Red d'hide body (t)
+12333	8	2770	Red d'hide chaps (t)
+12335	4	120607	Briefcase
+12337	4	371498	Sagacious spectacles
+12339	4	1593	Pink elegant blouse
+12341	4	2269	Pink elegant skirt
+12343	4	2530	Gold elegant blouse
+12345	4	1127	Gold elegant skirt
+12347	4	1472	Gold elegant shirt
+12349	4	429	Gold elegant legs
+12351	4	40949	Musketeer hat
+12353	4	2416	Monocle
+12355	4	62935	Big pirate hat
+12357	8	32740	Katana
+12359	4	5184	Leprechaun hat
+12361	4	14744	Cat mask
+12363	4	5920	Bronze dragon mask
+12365	4	5664	Iron dragon mask
+12367	4	4610	Steel dragon mask
+12369	4	4379	Mithril dragon mask
+12371	4	814774	Lava dragon mask
+12373	4	27685	Dragon cane
+12375	4	2544	Black cane
+12377	4	232	Adamant cane
+12379	4	7671	Rune cane
+12381	8	15647	Black d'hide body (g)
+12383	8	65143	Black d'hide chaps (g)
+12385	8	12226	Black d'hide body (t)
+12387	8	39011	Black d'hide chaps (t)
+12389	8	11911678	Gilded scimitar
+12391	8	977612	Gilded boots
+12393	4	208	Royal gown top
+12395	4	4759	Royal gown bottom
+12397	4	110838	Royal crown
+12399	4	428761	Partyhat & specs
+12402	10000	14279	Nardah teleport
+12403	10000	4745	Digsite teleport
+12404	10000	927	Feldip hills teleport
+12405	10000	2634	Lunar isle teleport
+12406	10000	13954	Mort'ton teleport
+12407	10000	406	Pest control teleport
+12408	10000	2988	Piscatoris teleport
+12409	10000	3893	Tai bwo wannai teleport
+12410	10000	6079	Iorwerth camp teleport
+12411	10000	925	Mos le'harmless teleport
+12412	150	107000	Pirate hat & patch
+12422	8	255005000	3rd Age wand
+12424	8	984000000	3rd Age bow
+12426	8	940999999	3rd Age longsword
+12428	4	34746	Penguin mask
+12430	4	20398	Afro
+12432	4	105408	Top hat
+12434	4	103971	Top hat & monocle
+12437	8	280000000	3rd Age cloak
+12439	4	16604	Royal sceptre
+12441	4	11092	Musketeer tabard
+12443	4	5894	Musketeer pants
+12445	4	25975	Black skirt (g)
+12447	4	12750	Black skirt (t)
+12449	4	170853	Black wizard robe (g)
+12451	4	58367	Black wizard robe (t)
+12453	4	192457	Black wizard hat (g)
+12455	4	87170	Black wizard hat (t)
+12460	8	40409	Ancient platebody
+12462	8	39769	Ancient platelegs
+12464	8	37118	Ancient plateskirt
+12466	8	21207	Ancient full helm
+12468	8	32375	Ancient kiteshield
+12470	8	42409	Armadyl platebody
+12472	8	37432	Armadyl platelegs
+12474	8	37565	Armadyl plateskirt
+12476	8	21548	Armadyl full helm
+12478	8	32534	Armadyl kiteshield
+12480	8	61256	Bandos platebody
+12482	8	37681	Bandos platelegs
+12484	8	37667	Bandos plateskirt
+12486	8	23526	Bandos full helm
+12488	8	32317	Bandos kiteshield
+12490	8	16240	Ancient bracers
+12492	8	90712	Ancient d'hide body
+12494	8	108578	Ancient chaps
+12496	8	49428	Ancient coif
+12498	8	11702	Bandos bracers
+12500	8	74938	Bandos d'hide body
+12502	8	115500	Bandos chaps
+12504	8	42242	Bandos coif
+12506	8	37576	Armadyl bracers
+12508	8	87006	Armadyl d'hide body
+12510	8	148482	Armadyl chaps
+12512	8	46796	Armadyl coif
+12514	4	2361	Explorer backpack
+12516	4	637	Pith helmet
+12518	4	6519	Green dragon mask
+12520	4	5066	Blue dragon mask
+12522	4	2591	Red dragon mask
+12524	4	45005	Black dragon mask
+12526	4	237912	Fury ornament kit
+12528	4	10398	Dark infinity colour kit
+12530	4	4525	Light infinity colour kit
+12532	4	7221	Dragon sq shield ornament kit
+12534	4	45607	Dragon chainbody ornament kit
+12536	4	2875	Dragon legs/skirt ornament kit
+12538	4	15491	Dragon full helm ornament kit
+12540	4	20890	Deerstalker
+12596	4	2113895	Rangers' tunic
+12598	4	850301	Holy sandals
+12601	8	961578	Ring of the gods
+12603	8	196520	Tyrannical ring
+12605	8	91083	Treasonous ring
+12613	5	901	Bandos page 1
+12614	5	841	Bandos page 2
+12615	5	900	Bandos page 3
+12616	5	987	Bandos page 4
+12617	5	3807	Armadyl page 1
+12618	5	3884	Armadyl page 2
+12619	5	2654	Armadyl page 3
+12620	5	2174	Armadyl page 4
+12621	5	1742	Ancient page 1
+12622	5	1524	Ancient page 2
+12623	5	1902	Ancient page 3
+12624	5	1319	Ancient page 4
+12625	2000	3982	Stamina potion(4)
+12627	2000	3074	Stamina potion(3)
+12629	2000	1986	Stamina potion(2)
+12631	2000	999	Stamina potion(1)
+12633	2000	1276	Stamina mix(2)
+12635	2000	1405	Stamina mix(1)
+12640	11000	521	Amylase crystal
+12642	15000	4907	Lumberyard teleport
+12695	2000	12157	Super combat potion(4)
+12697	2000	9303	Super combat potion(3)
+12699	2000	6265	Super combat potion(2)
+12701	2000	3214	Super combat potion(1)
+12746	0	50000	Archaic emblem (tier 1)
+12751	0	50004	Archaic emblem (tier 5)
+12757	4	260878	Blue dark bow paint
+12759	4	229507	Green dark bow paint
+12761	4	97451	Yellow dark bow paint
+12763	4	879766	White dark bow paint
+12769	4	1101000	Frozen whip mix
+12771	4	1174620	Volcanic whip mix
+12775	10000	3127	Annakarl teleport (tablet)
+12776	10000	1692	Carrallanger teleport (tablet)
+12777	10000	1604	Dareeyak teleport (tablet)
+12778	10000	2335	Ghorrock teleport (tablet)
+12779	10000	1942	Kharyrll teleport (tablet)
+12780	10000	1771	Lassar teleport (tablet)
+12781	10000	140	Paddewwa teleport (tablet)
+12782	10000	1874	Senntisten teleport (tablet)
+12783	10000	2947	Ring of wealth scroll
+12786	10000	44216	Magic shortbow scroll
+12789	50	189730	Clue box
+12798	50	575167	Steam staff upgrade kit
+12800	50	647927	Dragon pickaxe upgrade kit
+12802	50	894160	Ward upgrade kit
+12804	50	4892097	Saradomin's tear
+12817	8	500790461	Elysian spirit shield
+12819	5	495683499	Elysian sigil
+12821	8	25205134	Spectral spirit shield
+12823	5	23584578	Spectral sigil
+12825	8	135440010	Arcane spirit shield
+12827	5	136585987	Arcane sigil
+12829	8	92962	Spirit shield
+12831	8	990049	Blessed spirit shield
+12833	5	880416	Holy elixir
+12846	5	7175000	Target teleport scroll
+12849	50	926766	Granite clamp
+12851	8	33931	Amulet of the Damned (full)
+12863	40	762310	Dwarf cannon set
+12865	125	8088	Green dragonhide set
+12867	125	10724	Blue dragonhide set
+12869	70	17787	Red dragonhide set
+12871	70	14808	Black dragonhide set
+12873	8	716575	Guthan's armour set
+12875	8	842132	Verac's armour set
+12877	8	3996692	Dharok's armour set
+12879	8	1092247	Torag's armour set
+12881	8	3550526	Ahrim's armour set
+12883	8	1490164	Karil's armour set
+12885	5	673003	Jar of Sand
+12900	8	3173307	Uncharged toxic trident
+12902	8	8410918	Toxic staff (uncharged)
+12905	2000	10328	Anti-venom(4)
+12907	2000	7947	Anti-venom(3)
+12909	2000	5625	Anti-venom(2)
+12911	2000	2565	Anti-venom(1)
+12913	2000	14417	Anti-venom+(4)
+12915	2000	11393	Anti-venom+(3)
+12917	2000	8728	Anti-venom+(2)
+12919	2000	3146	Anti-venom+(1)
+12922	5	9526055	Tanzanite fang
+12924	8	9662270	Toxic blowpipe (empty)
+12927	5	3070429	Serpentine visage
+12929	8	3153989	Serpentine helm (uncharged)
+12932	5	3160832	Magic fang
+12934	30000	156	Zulrah's scales
+12936	4	45337	Jar of Swamp
+12938	10000	12568	Zul-andra teleport
+12960	8	357	Bronze set (lg)
+12962	8	472	Bronze set (sk)
+12964	8	37363	Bronze trimmed set (lg)
+12966	8	35000	Bronze trimmed set (sk)
+12968	8	116516	Bronze gold-trimmed set (lg)
+12970	8	147361	Bronze gold-trimmed set (sk)
+12972	8	475	Iron set (lg)
+12974	8	500	Iron set (sk)
+12976	8	85132	Iron trimmed set (lg)
+12978	8	97117	Iron trimmed set (sk)
+12980	8	350542	Iron gold-trimmed set (lg)
+12982	8	342937	Iron gold-trimmed set (sk)
+12984	8	1671	Steel set (lg)
+12986	8	2826	Steel set (sk)
+12988	8	5608	Black set (lg)
+12990	8	7233	Black set (sk)
+12992	8	68833	Black trimmed set (lg)
+12994	8	90683	Black trimmed set (sk)
+12996	8	338790	Black gold-trimmed set (lg)
+12998	8	283906	Black gold-trimmed set (sk)
+13000	8	4650	Mithril set (lg)
+13002	8	7569	Mithril set (sk)
+13004	8	25193	Mithril trimmed set (lg)
+13006	8	22929	Mithril trimmed set (sk)
+13008	8	21588	Mithril gold-trimmed set (lg)
+13010	8	31301	Mithril gold-trimmed set (sk)
+13012	8	17225	Adamant set (lg)
+13014	8	19333	Adamant set (sk)
+13016	8	47541	Adamant trimmed set (lg)
+13018	8	32500	Adamant trimmed set (sk)
+13020	8	63996	Adamant gold-trimmed set (lg)
+13022	8	47730	Adamant gold-trimmed set (sk)
+13024	8	131948	Rune armour set (lg)
+13026	8	142599	Rune armour set (sk)
+13028	8	132600	Rune trimmed set (lg)
+13030	8	149925	Rune trimmed set (sk)
+13032	8	252647	Rune gold-trimmed set (lg)
+13034	8	248395	Rune gold-trimmed set (sk)
+13036	8	30282496	Gilded armour set (lg)
+13038	8	25651237	Gilded armour set (sk)
+13040	8	226688	Saradomin armour set (lg)
+13042	8	254105	Saradomin armour set (sk)
+13044	8	596263	Zamorak armour set (lg)
+13046	8	580369	Zamorak armour set (sk)
+13048	8	140356	Guthix armour set (lg)
+13050	8	154694	Guthix armour set (sk)
+13052	8	143000	Armadyl rune armour set (lg)
+13054	8	131997	Armadyl rune armour set (sk)
+13056	8	179381	Bandos rune armour set (lg)
+13058	8	175000	Bandos rune armour set (sk)
+13060	8	162537	Ancient rune armour set (lg)
+13062	8	164403	Ancient rune armour set (sk)
+13064	2000	355	Combat potion set
+13066	2000	9216	Super potion set
+13149	5	13876	Holy book page set
+13151	5	27572	Unholy book page set
+13153	5	13085	Book of Balance page set
+13155	5	11933	Book of War page set
+13157	5	22292	Book of Law page set
+13159	5	16593	Book of Darkness page set
+13161	8	420326	Zamorak dragonhide set
+13163	8	304944	Saradomin dragonhide set
+13165	8	306694	Guthix dragonhide set
+13167	8	289060	Bandos dragonhide set
+13169	8	314068	Armadyl dragonhide set
+13171	8	307499	Ancient dragonhide set
+13173	5	110756	Partyhat set
+13175	5	30301	Halloween mask set
+13190	100	11106256	Old school bond
+13227	15	3067165	Eternal crystal
+13229	15	105005	Pegasian crystal
+13231	15	18200161	Primordial crystal
+13233	5	3685036	Smouldering stone
+13235	15	4101276	Eternal boots
+13237	15	35360575	Pegasian boots
+13239	15	18571694	Primordial boots
+13245	4	49371	Jar of Souls
+13249	0	25306	Key master teleport
+13256	5	58000	Saradomin's light
+13263	8	17301723	Abyssal bludgeon
+13265	8	1002199	Abyssal dagger
+13267	8	1084853	Abyssal dagger (p)
+13269	8	1055802	Abyssal dagger (p+)
+13271	8	1025254	Abyssal dagger (p++)
+13277	4	28199	Jar of Miasma
+13383	13000	1528	Xerician fabric
+13385	125	5550	Xerician hat
+13387	125	6919	Xerician top
+13389	125	7317	Xerician robe
+13391	13000	10	Lizardman fang
+13421	13000	5	Saltpetre
+13431	8000	101	Sandworms
+13439	15000	1582	Raw anglerfish
+13441	10000	1774	Anglerfish
+13448	3000	230	Ensouled goblin head
+13451	3000	563	Ensouled monkey head
+13454	3000	1307	Ensouled imp head
+13457	3000	643	Ensouled minotaur head
+13460	3000	556	Ensouled scorpion head
+13463	3000	544	Ensouled bear head
+13466	3000	800	Ensouled unicorn head
+13469	3000	2151	Ensouled dog head
+13472	3000	318	Ensouled chaos druid head
+13475	3000	483	Ensouled giant head
+13478	3000	725	Ensouled ogre head
+13481	7500	1041	Ensouled elf head
+13484	7500	1665	Ensouled troll head
+13487	7500	2859	Ensouled horror head
+13490	7500	969	Ensouled kalphite head
+13493	7500	1220	Ensouled dagannoth head
+13496	3000	1800	Ensouled bloodveld head
+13499	3000	2378	Ensouled tzhaar head
+13502	7500	3902	Ensouled demon head
+13505	7500	2198	Ensouled aviansie head
+13508	3000	2760	Ensouled abyssal head
+13511	7500	5857	Ensouled dragon head
+13573	13000	175	Dynamite
+13576	8	16017315	Dragon warhammer
+13652	8	38753326	Dragon claws
+13657	200	4822	Grape seed
+13658	500	245	Teleport card
+19478	8	619096	Light ballista
+19481	8	956554	Heavy ballista
+19484	11000	565	Dragon javelin
+19486	11000	816	Dragon javelin(p)
+19488	11000	870	Dragon javelin(p+)
+19490	11000	1157	Dragon javelin(p++)
+19493	11000	19499500	Zenyte
+19496	10000	20148495	Uncut zenyte
+19501	10000	15847465	Zenyte amulet (u)
+19529	11000	16915833	Zenyte shard
+19532	8	20066666	Zenyte bracelet
+19535	8	20604993	Zenyte necklace
+19538	8	20622221	Zenyte ring
+19541	8	19498962	Zenyte amulet
+19544	8	20230985	Tormented bracelet
+19547	8	19973276	Necklace of anguish
+19550	8	20041677	Ring of suffering
+19553	8	19905527	Amulet of torture
+19570	10000	24	Bronze javelin tips
+19572	10000	102	Iron javelin tips
+19574	10000	96	Steel javelin tips
+19576	10000	182	Mithril javelin tips
+19578	10000	393	Adamant javelin tips
+19580	10000	371	Rune javelin tips
+19582	10000	705	Dragon javelin tips
+19584	7000	1	Javelin shaft
+19586	8	28953	Light frame
+19589	8	306147	Heavy frame
+19592	8	30451	Ballista limbs
+19595	8	53788	Incomplete light ballista
+19598	8	400000	Incomplete heavy ballista
+19601	8	28870	Ballista spring
+19604	8	73410	Unstrung light ballista
+19607	8	424998	Unstrung heavy ballista
+19610	8	519000	Monkey tail
+19613	10000	2176	Arceuus library teleport (tablet)
+19615	10000	2350	Draynor manor teleport (tablet)
+19617	10000	2372	Mind altar teleport (tablet)
+19619	10000	2811	Salve graveyard teleport (tablet)
+19621	15000	2657	Fenkenstrain's castle teleport (tablet)
+19623	10000	3560	West ardougne teleport (tablet)
+19625	10000	3042	Harmony island teleport (tablet)
+19627	10000	2912	Cemetery teleport (tablet)
+19629	10000	4117	Barrows teleport (tablet)
+19631	10000	4625	Ape atoll teleport (tablet)
+19653	100	769	Golovanova fruit top
+19656	13000	1946	Uncooked botanical pie
+19662	10000	711	Botanical pie
+19665	13000	118	Damaged monkey tail
+19669	12000	716	Redwood logs
+19672	11000	4875	Redwood pyre logs
+19701	4	186581	Jar of Darkness
+19707	5	59365832	Amulet of eternal glory
+19724	4	2638	Left eye patch
+19727	4	9201	Double eye patch
+19912	4	3948	Zombie head (Treasure Trails)
+19915	4	2943	Cyclops head
+19918	8	4159	Nunchaku
+19921	8	161553	Ancient d'hide boots
+19924	8	110547	Bandos d'hide boots
+19927	8	108709	Guthix d'hide boots
+19930	8	282514	Armadyl d'hide boots
+19933	8	121410	Saradomin d'hide boots
+19936	8	168822	Zamorak d'hide boots
+19943	4	5131	Arceuus scarf
+19946	4	6499	Hosidius scarf
+19949	4	5303	Lovakengj scarf
+19952	4	27492	Piscarilius scarf
+19955	4	5263	Shayzien scarf
+19958	4	1177851	Dark tuxedo jacket
+19961	4	354819	Dark tuxedo cuffs
+19964	4	768241	Dark trousers
+19967	4	452762	Dark tuxedo shoes
+19970	4	419983	Dark bow tie
+19973	4	979444	Light tuxedo jacket
+19976	4	320000	Light tuxedo cuffs
+19979	4	357999	Light trousers
+19982	4	519901	Light tuxedo shoes
+19985	4	188203	Light bow tie
+19988	125	22298	Blacksmith's helm
+19991	4	15020	Bucket helm
+19994	8	208217	Ranger gloves
+19997	4	841668	Holy wraps
+20002	4	121542	Dragon scimitar ornament kit
+20005	4	6629798	Ring of nature
+20008	4	4476	Fancy tiara
+20011	40	2147483647	3rd Age axe
+20014	40	2147483647	3rd Age pickaxe
+20017	4	11200309	Ring of coins
+20020	4	2727	Lesser demon mask
+20023	4	2998	Greater demon mask
+20026	4	31907	Black demon mask
+20029	4	13363	Old demon mask
+20032	4	12613	Jungle demon mask
+20035	70	30500	Samurai kasa
+20038	70	52308	Samurai shirt
+20041	70	27955	Samurai gloves
+20044	70	17056	Samurai greaves
+20047	70	13259	Samurai boots
+20050	70	370000	Obsidian cape (r)
+20053	4	18389	Half moon spectacles
+20056	4	169888	Ale of the gods
+20059	4	2563865	Bucket helm (g)
+20062	4	51050	Torture ornament kit
+20065	4	2596531	Occult ornament kit
+20068	4	85788	Armadyl godsword ornament kit
+20071	4	2760903	Bandos godsword ornament kit
+20074	4	5907278	Saradomin godsword ornament kit
+20077	4	214353	Zamorak godsword ornament kit
+20080	4	776132	Mummy's head
+20083	4	1122000	Mummy's body
+20086	4	341338	Mummy's hands
+20089	4	779310	Mummy's legs
+20092	4	405061	Mummy's feet
+20095	4	8261997	Ankou mask
+20098	4	13575534	Ankou top
+20101	4	2218510	Ankou gloves
+20104	4	6425739	Ankou's leggings
+20107	4	2133096	Ankou socks
+20110	4	33163	Bowl wig
+20113	4	1921	Arceuus hood
+20116	4	1341	Hosidius hood
+20119	4	2199	Lovakengj hood
+20122	4	3588	Piscarilius hood
+20125	4	1000	Shayzien hood
+20128	70	7051	Hood of darkness
+20131	70	76731	Robe top of darkness
+20134	70	5325	Gloves of darkness
+20137	70	49000	Robe bottom of darkness
+20140	70	5321	Boots of darkness
+20143	4	19490	Dragon defender ornament kit
+20146	70	1366531	Gilded med helm
+20149	70	1981738	Gilded chainbody
+20152	70	1091537	Gilded sq shield
+20155	70	4050718	Gilded 2h sword
+20158	70	775124	Gilded spear
+20161	70	702063	Gilded hasta
+20166	125	63312	Wooden shield (g)
+20169	125	16910	Steel platebody (g)
+20172	125	5389	Steel platelegs (g)
+20175	125	2564	Steel plateskirt (g)
+20178	125	10092	Steel full helm (g)
+20181	125	3000	Steel kiteshield (g)
+20184	125	11266	Steel platebody (t)
+20187	125	39500	Steel platelegs (t)
+20190	125	2546	Steel plateskirt (t)
+20193	125	11500	Steel full helm (t)
+20196	125	11930	Steel kiteshield (t)
+20199	4	4093615	Monk's robe top (g)
+20202	4	1069892	Monk's robe (g)
+20205	4	378195	Golden chef's hat
+20208	4	196741	Golden apron
+20211	4	2780494	Team cape zero
+20214	4	1203261	Team cape x
+20217	4	1120683	Team cape i
+20220	5	1108	Holy blessing
+20223	5	9340	Unholy blessing
+20226	5	2765	Peaceful blessing
+20229	5	5874	Honourable blessing
+20232	5	8755	War blessing
+20235	5	2091	Ancient blessing
+20238	10000	170	Charge dragonstone jewellery scroll
+20240	4	2368	Crier coat
+20243	4	3569	Crier bell
+20246	4	3256	Black leprechaun hat
+20251	4	1534	Arceuus banner
+20254	4	977	Hosidius banner
+20257	4	1519	Lovakengj banner
+20260	4	9187	Piscarilius banner
+20263	4	454	Shayzien banner
+20266	4	12014	Black unicorn mask
+20269	4	51956	White unicorn mask
+20272	125	4059	Cabbage round shield
+20275	40	2902	Gnomish firelighter
+20376	8	46031	Steel trimmed set (lg)
+20379	8	47442	Steel trimmed set (sk)
+20382	8	52437	Steel gold-trimmed set (lg)
+20385	8	70531	Steel gold-trimmed set (sk)
+20433	4	171613	Evil chicken feet
+20436	4	92441	Evil chicken wings
+20439	4	147328	Evil chicken head
+20442	4	224832	Evil chicken legs
+20517	8	280827	Elder chaos top
+20520	8	248588	Elder chaos robe
+20590	5	615842	Stale baguette
+20595	8	268067	Elder chaos hood
+20716	15	1938447	Tome of Fire (empty)
+20718	11000	8096	Burnt page
+20724	8	73104534	Imbued heart
+20727	70	70119	Leaf-bladed battleaxe
+20730	8	35154	Mist battlestaff
+20733	8	60808	Mystic mist staff
+20736	8	8674	Dust battlestaff
+20739	8	37550	Mystic dust staff
+20749	11000	1772	Zamorak's grapes
+20756	125	1109000	Hill giant club
+20849	11000	322	Dragon thrownaxe
+20997	8	1391050660	Twisted bow
+21000	8	12017074	Twisted buckler
+21003	8	93379620	Elder maul
+21006	8	57027835	Kodai wand
+21009	70	79771	Dragon sword
+21012	8	29440053	Dragon hunter crossbow
+21015	8	11942846	Dinh's bulwark
+21018	8	47048222	Ancestral hat
+21021	8	96337500	Ancestral robe top
+21024	8	68230529	Ancestral robe bottom
+21028	5	2149752	Dragon harpoon
+21034	5	15727999	Dexterous prayer scroll
+21043	8	47975012	Kodai insignia
+21047	5	47750	Torn prayer scroll
+21049	5	213625000	Ancestral robes set
+21079	5	5176838	Arcane prayer scroll
+21081	10000	804	Opal ring
+21084	10000	682	Jade ring
+21087	10000	1028	Topaz ring
+21090	10000	1021	Opal necklace
+21093	10000	819	Jade necklace
+21096	10000	1126	Topaz necklace
+21099	10000	385	Opal amulet (u)
+21102	10000	1095	Jade amulet (u)
+21105	10000	1885	Topaz amulet (u)
+21108	10000	303	Opal amulet
+21111	10000	1455	Jade amulet
+21114	10000	2198	Topaz amulet
+21117	10000	559	Opal bracelet
+21120	10000	601	Jade bracelet
+21123	10000	2300	Topaz bracelet
+21126	100	1647	Ring of pursuit
+21129	10000	1597	Ring of returning(5)
+21140	15000	1790	Efaritay's aid
+21143	10000	1496	Dodgy necklace
+21146	10000	1052	Necklace of passage(5)
+21157	10000	504	Necklace of faith
+21160	10000	689	Amulet of bounty
+21163	15000	1824	Amulet of chemistry
+21166	10000	2344	Burning amulet(5)
+21177	15000	1048	Expeditious bracelet
+21180	10000	1071	Flamtaer bracelet
+21183	15000	2504	Bracelet of slaughter
+21202	50	470632	Lava staff upgrade kit
+21257	500	1107	Slayer's enchantment
+21270	8	9621153	Eternal gem
+21279	5	2836186	Obsidian armour set
+21298	70	709813	Obsidian helmet
+21301	70	1139581	Obsidian platebody
+21304	70	915096	Obsidian platelegs
+21316	11000	205	Amethyst broad bolts
+21318	11000	244	Amethyst javelin
+21320	7000	375	Amethyst javelin(p)
+21322	7000	1070	Amethyst javelin(p+)
+21324	7000	723	Amethyst javelin(p++)
+21326	11000	126	Amethyst arrow
+21332	11000	287	Amethyst arrow(p)
+21334	11000	399	Amethyst arrow(p+)
+21336	11000	706	Amethyst arrow(p++)
+21338	11000	156	Amethyst bolt tips
+21347	13000	2866	Amethyst
+21350	10000	187	Amethyst arrowtips
+21352	10000	538	Amethyst javelin tips
+21387	100	62315	Master scroll book (empty)
+21477	200	293	Teak sapling
+21480	200	403	Mahogany sapling
+21483	2000	499	Ultracompost
+21486	200	62	Teak seed
+21488	200	277	Mahogany seed
+21490	600	190	Seaweed spore
+21504	11000	66	Giant seaweed
+21512	250	302	Bird house
+21515	250	304	Oak bird house
+21518	250	1223	Willow bird house
+21521	250	1072	Teak bird house
+21543	13000	94	Calcite
+21545	13000	152	Pyrophosphite
+21555	30000	35	Numulite
+21622	13000	143	Volcanic ash
+21626	100	11128	Sulliuscep cap
+21634	8	28247307	Ancient wyvern shield
+21637	5	30275482	Wyvern visage
+21643	70	304079	Granite boots
+21646	70	20605	Granite longsword
+21649	125	1137369	Merfolk trident
+21652	600	1668	Drift net
+21684	13000	17862	Uncooked mushroom pie
+21690	10000	11801	Mushroom pie
+21730	5	481823	Black tourmaline core
+21733	8	1377709	Guardian boots
+21736	8	29086	Granite gloves
+21739	70	26274	Granite ring
+21742	8	7883345	Granite hammer
+21745	4	1038888	Jar of Stone
+21754	11000	261	Rock thrownhammer
+21802	15000	593	Revenant cave teleport
+21804	250	150572	Ancient crystal
+21807	250	498365	Ancient emblem
+21810	250	997751	Ancient totem
+21813	250	1998000	Ancient statuette
+21817	10000	42712	Bracelet of ethereum (uncharged)
+21820	30000	173	Revenant ether
+21838	125	59085	Shaman mask
+21880	25000	347	Wrath rune
+21882	8	114500000	Dragon armour set (lg)
+21885	8	119949997	Dragon armour set (sk)
+21892	70	1960227	Dragon platebody
+21895	70	64645504	Dragon kiteshield
+21902	70	594504	Dragon crossbow
+21905	11000	2640	Dragon bolts
+21918	10000	572000	Dragon limbs
+21921	10000	584152	Dragon crossbow (u)
+21924	11000	2113	Dragon bolts (p)
+21926	11000	2149	Dragon bolts (p+)
+21928	11000	3394	Dragon bolts (p++)
+21930	13000	2624	Dragon bolts (unf)
+21932	11000	2971	Opal dragon bolts (e)
+21934	11000	930	Jade dragon bolts (e)
+21936	11000	1679	Pearl dragon bolts (e)
+21938	11000	1654	Topaz dragon bolts (e)
+21940	11000	2932	Sapphire dragon bolts (e)
+21942	11000	1554	Emerald dragon bolts (e)
+21944	11000	2992	Ruby dragon bolts (e)
+21946	11000	2831	Diamond dragon bolts (e)
+21948	11000	2983	Dragonstone dragon bolts (e)
+21950	11000	9649	Onyx dragon bolts (e)
+21952	10000	304	Magic stock
+21955	11000	2814	Opal dragon bolts
+21957	11000	2040	Jade dragon bolts
+21959	11000	1296	Pearl dragon bolts
+21961	11000	1410	Topaz dragon bolts
+21963	11000	2700	Sapphire dragon bolts
+21965	11000	2625	Emerald dragon bolts
+21967	11000	2827	Ruby dragon bolts
+21969	11000	2831	Diamond dragon bolts
+21971	11000	2952	Dragonstone dragon bolts
+21973	11000	10251	Onyx dragon bolts
+21975	11000	20325	Crushed superior dragon bones
+21978	2000	19545	Super antifire potion(4)
+21981	2000	14990	Super antifire potion(3)
+21984	2000	10580	Super antifire potion(2)
+21987	2000	4812	Super antifire potion(1)
+21994	2000	52859	Super antifire mix(2)
+21997	2000	110399	Super antifire mix(1)
+22003	8	11828268	Dragonfire ward
+22006	5	11607096	Skeletal visage
+22097	50	1625000	Dragon metal shard
+22100	50	58250000	Dragon metal slice
+22103	50	135134	Dragon metal lump
+22106	4	85213	Jar of Decay
+22111	8	141702	Dragonbone necklace
+22118	11000	293	Wrath talisman
+22121	40	251	Wrath tiara
+22124	7500	20150	Superior dragon bones
+22192	250	712	Maple bird house
+22195	250	1162	Mahogany bird house
+22198	250	1176	Yew bird house
+22201	250	2106	Magic bird house
+22204	250	2302	Redwood bird house
+22209	2000	18226	Extended super antifire(4)
+22212	2000	14705	Extended super antifire(3)
+22215	2000	9825	Extended super antifire(2)
+22218	2000	3683	Extended super antifire(1)
+22221	2000	40000	Extended super antifire mix(2)
+22224	2000	101475	Extended super antifire mix(1)
+22231	4	4973	Dragon boots ornament kit
+22236	4	5453799	Dragon platebody ornament kit
+22239	4	3836605	Dragon kiteshield ornament kit
+22246	4	207291	Anguish ornament kit
+22251	18000	22	Oak shield
+22254	18000	17	Willow shield
+22257	18000	33	Maple shield
+22260	18000	231	Yew shield
+22263	18000	550	Magic shield
+22266	18000	735	Redwood shield
+22269	125	103	Hard leather shield
+22272	125	230	Snakeskin shield
+22275	125	2741	Green d'hide shield
+22278	125	6164	Blue d'hide shield
+22281	125	10312	Red d'hide shield
+22284	125	17138	Black d'hide shield
+22290	8	2137404	Uncharged trident (e)
+22294	8	5562327	Uncharged toxic trident (e)
+22296	8	5334785	Staff of Light
+22299	250	3996500	Ancient medallion
+22302	250	7991798	Ancient effigy
+22305	250	15988291	Ancient relic
+22324	8	23960641	Ghrazi rapier
+22326	8	12586410	Justiciar faceguard
+22327	8	11245882	Justiciar chestguard
+22328	8	9769315	Justiciar legguards
+22368	8	4353164	Bryophyta's staff (uncharged)
+22372	100	4241666	Bryophyta's essence
+22430	2000	1738	Bloody bracer
+22438	5	33826441	Justiciar armour set
+22443	10000	11118	Cadantine blood potion (unf)
+22446	13000	8378	Vial of blood
+22449	2000	15064	Battlemage potion(4)
+22452	2000	10135	Battlemage potion(3)
+22455	2000	5129	Battlemage potion(2)
+22458	2000	2440	Battlemage potion(1)
+22461	2000	14742	Bastion potion(4)
+22464	2000	11275	Bastion potion(3)
+22467	2000	6049	Bastion potion(2)
+22470	2000	3323	Bastion potion(1)
+22477	8	30045487	Avernic defender hilt
+22481	8	17803357	Sanguinesti staff (uncharged)
+22486	8	1231200000	Scythe of Vitur (uncharged)
+22542	8	4034511	Viggora's chainmace (u)
+22547	8	14214395	Craw's bow (u)
+22552	8	2844428	Thammaron's sceptre (u)
+22557	8	415395	Amulet of avarice
+22593	10000	98	Te salt
+22595	10000	97	Efh salt
+22597	10000	110	Urt salt
+22599	10000	1229	Icy basalt
+22601	10000	1224	Stony basalt
+22603	10000	1863	Basalt
+22610	10	300000	Vesta's spear
+22613	10	300000	Vesta's longsword
+22616	10	500000	Vesta's chainbody
+22619	10	500000	Vesta's plateskirt
+22622	10	300000	Statius's warhammer
+22625	10	250000	Statius's full helm
+22628	10	500000	Statius's platebody
+22631	10	500000	Statius's platelegs
+22634	100	4000	Morrigan's throwing axe
+22636	100	20001	Morrigan's javelin
+22638	10	250000	Morrigan's coif
+22641	10	500000	Morrigan's leather body
+22644	10	500000	Morrigan's leather chaps
+22647	10	300000	Zuriel's staff
+22650	10	250000	Zuriel's hood
+22653	10	500000	Zuriel's robe top
+22656	10	500000	Zuriel's robe bottom
+22731	70	35014	Dragon hasta
+22734	70	40275	Dragon hasta(p)
+22737	70	39000	Dragon hasta(p+)
+22740	70	47375	Dragon hasta(p++)
+22780	7500	1980	Wyrm bones
+22783	7500	5385	Drake bones
+22786	7500	7947	Hydra bones
+22789	10000	1506	Uncooked dragonfruit pie
+22795	10000	389	Dragonfruit pie
+22804	11000	3409	Dragon knife
+22806	7000	3614	Dragon knife(p)
+22808	7000	3566	Dragon knife(p+)
+22810	7000	4084	Dragon knife(p++)
+22818	13000	50	Fish chunks
+22826	13000	85	Bluegill
+22829	13000	100	Common tench
+22832	13000	180	Mottled eel
+22835	13000	250	Greater siren
+22856	100	18492	Celastrus sapling
+22859	100	14869	Redwood sapling
+22866	200	146425	Dragonfruit sapling
+22869	200	17247	Celastrus seed
+22871	200	16800	Redwood tree seed
+22873	200	20	Potato cactus seed
+22877	200	142079	Dragonfruit tree seed
+22879	200	6993	Snape grass seed
+22887	600	2372	White lily seed
+22929	11000	877	Dragonfruit
+22932	600	508	White lily
+22935	12000	7719	Celastrus bark
+22949	10000	2514	Battlefront teleport (tablet)
+22951	70	234084	Boots of Brimstone
+22954	70	1002070	Devout boots
+22957	15	227800	Drake's claw
+22960	70	67650	Drake's tooth
+22963	70	37350	Broken dragon hasta
+22966	15	46008322	Hydra's claw
+22975	8	1880832	Brimstone ring
+22978	8	49153390	Dragon hunter lance
+22983	15	9101470	Hydra leather
+22988	15	79952	Hydra tail
+22994	5	499874	Bottomless compost bucket
+22999	50	9793	Bottled dragonbreath (unpowered)
+23002	50	11472	Bottled dragonbreath
+23037	125	328	Boots of stone
+23047	70	45103	Mystic hat (dusk)
+23050	70	109049	Mystic robe top (dusk)
+23053	70	61744	Mystic robe bottom (dusk)
+23056	70	48162	Mystic gloves (dusk)
+23059	70	92577	Mystic boots (dusk)
+23064	4	68671	Jar of Chemicals
+23110	70	151477	Mystic set (light)
+23113	70	145818	Mystic set (blue)
+23116	70	257635	Mystic set (dark)
+23119	70	365398	Mystic set (dusk)
+23124	8	11583353	Gilded dragonhide set
+23185	4	1296794	Ring of 3rd Age
+23188	8	125067	Guthix d'hide shield
+23191	8	126942	Saradomin d'hide shield
+23194	8	127833	Zamorak d'hide shield
+23197	8	144288	Ancient d'hide shield
+23200	8	156603	Armadyl d'hide shield
+23203	8	135610	Bandos d'hide shield
+23206	8	1630	Dual sai
+23209	8	38427	Rune platebody (h1)
+23212	8	39217	Rune platebody (h2)
+23215	8	38303	Rune platebody (h3)
+23218	8	38103	Rune platebody (h4)
+23221	8	51287	Rune platebody (h5)
+23224	8	9569	Thieving bag
+23227	4	7152	Rune defender ornament kit
+23232	4	5125	Tzhaar-ket-om ornament kit
+23237	4	3452	Berserker necklace ornament kit
+23242	8	30012784	3rd Age plateskirt
+23246	8	1860962	Fremennik kilt
+23249	8	145734	Rangers' tights
+23252	4	27527	Giant boot
+23255	4	21872	Uri's hat
+23258	8	383758	Gilded coif
+23261	8	3966842	Gilded d'hide vambraces
+23264	8	1654457	Gilded d'hide body
+23267	8	5236822	Gilded d'hide chaps
+23270	4	5226	Adamant dragon mask
+23273	4	23003	Rune dragon mask
+23276	4	3390717	Gilded pickaxe
+23279	4	4277458	Gilded axe
+23282	4	2231812	Gilded spade
+23285	4	163751	Mole slippers
+23288	4	24986	Frog slippers
+23291	4	16576	Bear feet
+23294	4	79500	Demon feet
+23297	4	17811	Jester cape
+23300	4	74101	Shoulder parrot
+23303	4	32825	Monk's robe top (t)
+23306	4	7138	Monk's robe (t)
+23309	4	3331	Amulet of defence (t)
+23312	4	1999	Sandwich lady hat
+23315	4	3421	Sandwich lady top
+23318	4	999	Sandwich lady bottom
+23321	4	2718	Rune scimitar ornament kit (Guthix)
+23324	4	3190	Rune scimitar ornament kit (Saradomin)
+23327	4	3075	Rune scimitar ornament kit (Zamorak)
+23336	4	2147483647	3rd Age druidic robe top
+23339	4	1673834710	3rd Age druidic robe bottoms
+23342	8	460221437	3rd Age druidic staff
+23345	8	813327327	3rd Age druidic cloak
+23348	4	30480	Tormented ornament kit
+23351	8	3599140	Cape of skulls
+23354	5	296783	Amulet of power (t)
+23357	18000	88022	Rain bow
+23360	100	1224309	Ham joint
+23363	8	87436	Staff of Bob the Cat
+23366	8	1383	Black platebody (h1)
+23369	8	1442	Black platebody (h2)
+23372	8	1752	Black platebody (h3)
+23375	8	3045	Black platebody (h4)
+23378	8	1861	Black platebody (h5)
+23381	8	55235	Leather body (g)
+23384	8	13769	Leather chaps (g)
+23387	10000	4328	Watson teleport
+23389	8	381101	Spiked manacles
+23392	8	10132	Adamant platebody (h1)
+23395	8	9330	Adamant platebody (h2)
+23398	8	9360	Adamant platebody (h3)
+23401	8	9114	Adamant platebody (h4)
+23404	8	9189	Adamant platebody (h5)
+23407	4	23396	Wolf mask
+23410	4	16044	Wolf cloak
+23413	4	46750	Climbing boots (g)
+23490	250	120270	Larran's key
+23499	11000	31639	Grubby key
+23517	100	17422	Giant egg sac(full)
+23522	70	8899	Mask of Ranul
+23525	4	33210	Jar of Eyes
+23528	70	117777	Sarachnis cudgel
+23667	0	2664921	Dragonstone armour set
+23685	2000	18624	Divine super combat potion(4)
+23688	2000	13943	Divine super combat potion(3)
+23691	2000	8957	Divine super combat potion(2)
+23694	2000	4621	Divine super combat potion(1)
+23697	2000	5251	Divine super attack potion(4)
+23700	2000	3057	Divine super attack potion(3)
+23703	2000	1929	Divine super attack potion(2)
+23706	2000	603	Divine super attack potion(1)
+23709	2000	5677	Divine super strength potion(4)
+23712	2000	4056	Divine super strength potion(3)
+23715	2000	1847	Divine super strength potion(2)
+23718	2000	951	Divine super strength potion(1)
+23721	2000	7206	Divine super defence potion(4)
+23724	2000	3914	Divine super defence potion(3)
+23727	2000	909	Divine super defence potion(2)
+23730	2000	1019	Divine super defence potion(1)
+23733	2000	6237	Divine ranging potion(4)
+23736	2000	4652	Divine ranging potion(3)
+23739	2000	2952	Divine ranging potion(2)
+23742	2000	1510	Divine ranging potion(1)
+23745	2000	3563	Divine magic potion(4)
+23748	2000	1864	Divine magic potion(3)
+23751	2000	2093	Divine magic potion(2)
+23754	2000	1720	Divine magic potion(1)
+23908	50	93518	Zalcano shard
+23943	5	1569044	Elven signet
+23948	0	2000	Elven dawn
+23953	100	23741000	Crystal tool seed
+23956	100	5695000	Crystal armour seed
+23959	100	3231800	Enhanced crystal teleport seed
+23997	8	111272585	Blade of Saeldor (inactive)
+24000	0	321640	Crystal grail
+24003	125	11094	Elven boots
+24006	0	10424	Elven gloves
+24009	0	7115	Elven top (yellow)
+24012	0	5250	Elven skirt (yellow)
+24015	0	6455	Elven top (white)
+24018	0	4250	Elven skirt (white)
+24021	0	2138	Elven top (yellow vest)
+24024	0	10249	Elven legwear
+24027	0	4396	Elven top (white vest)
+24034	0	811616	Dragonstone full helm
+24037	0	729499	Dragonstone platebody
+24040	0	620357	Dragonstone platelegs
+24043	0	177966	Dragonstone boots
+24046	0	215204	Dragonstone gauntlets
+24144	0	24968756	Staff of Balance
+24187	500	230375	Trouver parchment
+24219	0	2991466	Swift blade
+24229	50	638708	Ornate maul handle
+24251	0	18037	Wilderness crabs teleport
+24268	0	13592551	Basilisk jaw
+24288	0	272534	Dagon'hai hat
+24291	0	402636	Dagon'hai robe top
+24294	0	395603	Dagon'hai robe bottom
+24333	0	1154213	Dagon'hai robes set
+24336	0	779	Target teleport
+24387	5	493000	Twisted hat (t3)
+24389	5	1071500	Twisted coat (t3)
+24391	5	174356	Twisted trousers (t3)
+24393	5	180500	Twisted boots (t3)
+24395	10	1305999	Twisted cane
+24397	5	159832	Twisted hat (t2)
+24399	5	579405	Twisted coat (t2)
+24401	5	81124	Twisted trousers (t2)
+24403	5	23874	Twisted boots (t2)
+24405	5	57502	Twisted hat (t1)
+24407	5	60427	Twisted coat (t1)
+24409	5	8216	Twisted trousers (t1)
+24411	5	118626	Twisted boots (t1)
+24413	5	57500	Twisted banner
+24417	8	308782096	Inquisitor's mace
+24419	8	69895404	Inquisitor's great helm
+24420	8	121955718	Inquisitor's hauberk
+24421	8	115006998	Inquisitor's plateskirt
+24422	8	28818855	Nightmare staff
+24460	5	160500	Twisted teleport scroll
+24463	5	1446446	Twisted blueprints
+24466	5	2001666	Twisted horns
+24469	5	221500	Twisted relic hunter (t1) armour set
+24472	5	405000	Twisted relic hunter (t2) armour set
+24475	5	2247500	Twisted relic hunter (t3) armour set
+24488	0	308500000	Inquisitor's armour set
+24495	4	1180314	Jar of Dreams
+24511	8	457151984	Harmonised orb
+24514	8	32866435	Volatile orb
+24517	8	111939270	Eldritch orb
+24585	40	40028	Looting bag note
+24587	40	3275015	Rune pouch note
+24589	10000	91	Blighted manta ray
+24592	10000	85	Blighted anglerfish
+24595	10000	43	Blighted karambwan
+24598	2000	3076	Blighted super restore(4)
+24607	15000	439	Blighted ancient ice sack
+24609	10000	27	Blighted bind sack
+24611	10000	91	Blighted snare sack
+24613	15000	44	Blighted entangle sack
+24615	10000	88	Blighted teleport spell sack
+24621	10000	78	Blighted vengeance sack
+24623	2000	18715	Divine battlemage potion(4)
+24626	2000	13755	Divine battlemage potion(3)
+24629	2000	8827	Divine battlemage potion(2)
+24632	2000	351908	Divine battlemage potion(1)
+24635	2000	18957	Divine bastion potion(4)
+24638	2000	15900	Divine bastion potion(3)
+24641	2000	10726	Divine bastion potion(2)
+24644	2000	4820	Divine bastion potion(1)
+24740	50	20214	Strange old lockpick (full)
+24774	2000	81	Blood pint
+24777	8	7765257	Blood shard
+24782	0	1170	Raw mystery meat
+24785	0	959	Cooked mystery meat
+24844	5	3332660	Ring of endurance (uncharged)
+24949	10000	977	Moonclan teleport (tablet)
+24951	10000	1128	Ourania teleport (tablet)
+24953	10000	3072	Waterbirth teleport (tablet)
+24955	10000	519	Barbarian teleport (tablet)
+24957	10000	1817	Khazard teleport (tablet)
+24959	10000	2409	Fishing guild teleport (tablet)
+24961	10000	1267	Catherby teleport (tablet)
+24963	10000	1568	Ice plateau teleport (tablet)
+25001	5	111646	Trailblazer hood (t3)
+25004	5	437473	Trailblazer top (t3)
+25007	5	165000	Trailblazer trousers (t3)
+25010	5	172175	Trailblazer boots (t3)
+25013	5	1237879	Trailblazer cane
+25016	5	75847	Trailblazer hood (t2)
+25019	5	93726	Trailblazer top (t2)
+25022	5	252848	Trailblazer trousers (t2)
+25025	5	233931	Trailblazer boots (t2)
+25028	5	17502	Trailblazer hood (t1)
+25031	5	22333	Trailblazer top (t1)
+25034	5	3102	Trailblazer trousers (t1)
+25037	5	70000	Trailblazer boots (t1)
+25056	5	83001	Trailblazer banner
+25087	5	325367	Trailblazer teleport scroll
+25090	5	562832	Trailblazer tool ornament kit
+25093	5	768386	Trailblazer globe
+25096	5	1385348	Trailblazer rug
+25099	6	290000	Trailblazer graceful ornament kit
+25139	500	637	Bone fragments
+25380	0	79500	Trailblazer relic hunter (t1) armour set
+25383	0	623397	Trailblazer relic hunter (t2) armour set
+25386	0	1525000	Trailblazer relic hunter (t3) armour set
+25389	0	82308	Swampbark body
+25392	0	16773	Swampbark gauntlets
+25395	0	36026	Swampbark boots
+25398	0	52888	Swampbark helm
+25401	0	81274	Swampbark legs
+25404	70	209640	Bloodbark body
+25407	70	41237	Bloodbark gauntlets
+25410	0	48669	Bloodbark boots
+25413	0	97325	Bloodbark helm
+25416	70	193328	Bloodbark legs
+25419	7500	8579	Urium remains
+25442	8	280	Bronze locks
+25445	8	481	Steel locks
+25448	8	1559	Black locks
+25451	8	10294	Silver locks
+25454	8	18420	Gold locks
+25478	50	266	Runescroll of swampbark
+25481	50	246	Runescroll of bloodbark
+25521	4	139500	Jar of Spirits
+25524	4	80819	Jar of Smoke
+25576	15	764500	Tome of Water (empty)
+25578	11000	3148	Soaked page
+25766	3000	56	Fiendish ashes
+25769	3000	119	Vile ashes
+25772	0	1117	Malicious ashes
+25775	7500	2003	Abyssal ashes
+25778	7500	3978	Infernal ashes
+25826	0	4415	Lizardkicker
+25833	0	579	Raw boar meat
+25849	11000	185	Amethyst dart
+25851	11000	346	Amethyst dart(p)
+25853	11000	356	Amethyst dart tip
+25855	11000	392	Amethyst dart(p+)
+25857	11000	715	Amethyst dart(p++)
+25859	70	113420755	Enhanced crystal weapon seed
+25862	0	110193454	Bow of Faerdhinen (inactive)
+25975	8	4081081	Lightbearer
+25985	8	3706499	Elidinis' ward
+25991	10	10000	Sigil of resilience
+25994	10	10000	Sigil of consistency
+25997	10	10000	Sigil of the formidable fighter
+26000	10	10000	Sigil of the rigorous ranger
+26003	10	10000	Sigil of the meticulous mage
+26006	10	10000	Sigil of fortification
+26009	10	10000	Sigil of barrows
+26012	10	10000	Sigil of deft strikes
+26015	10	10000	Sigil of freedom
+26018	10	10000	Sigil of enhanced harvest
+26021	10	10000	Sigil of storage
+26024	10	10000	Sigil of the smith
+26027	10	10000	Sigil of the alchemist
+26030	10	10000	Sigil of the fletcher
+26033	10	10000	Sigil of the chef
+26036	10	10000	Sigil of the craftsman
+26039	10	10000	Sigil of the abyss
+26042	10	10000	Sigil of stamina
+26045	10	10000	Sigil of the potion master
+26048	10	10000	Sigil of the eternal jeweller
+26051	10	10000	Sigil of the treasure hunter
+26054	10	10000	Sigil of mobility
+26057	10	10000	Sigil of exaggeration
+26060	8	20000	Sigil of specialised strikes
+26063	8	20000	Sigil of the porcupine
+26066	8	20000	Sigil of binding
+26069	8	20000	Sigil of escaping
+26072	8	20000	Sigil of the ruthless ranger
+26075	8	20000	Sigil of the feral fighter
+26078	8	20000	Sigil of the menacing mage
+26081	8	20000	Sigil of prosperity
+26084	8	20000	Sigil of the dwarves
+26087	8	20000	Sigil of the elves
+26090	8	20000	Sigil of the barbarians
+26093	8	20000	Sigil of the gnomes
+26096	8	20000	Sigil of nature
+26099	8	20000	Sigil of devotion
+26102	8	20000	Sigil of the forager
+26105	8	20000	Sigil of garments
+26108	8	20000	Sigil of slaughter
+26111	8	20000	Sigil of the fortune farmer
+26114	8	20000	Sigil of versatility
+26117	8	20000	Sigil of the serpent
+26120	8	20000	Sigil of supreme stamina
+26123	8	20000	Sigil of preservation
+26126	4	30000	Sigil of finality
+26129	4	30000	Sigil of pious protection
+26132	4	30000	Sigil of aggression
+26135	4	30000	Sigil of rampage
+26138	4	30000	Sigil of the skiller
+26141	4	30000	Sigil of remote storage
+26144	4	30000	Sigil of last recall
+26147	4	30000	Sigil of the guardian angel
+26219	8	17469926	Osmumten's fang
+26221	8	58949	Ancient ceremonial top
+26223	8	47045	Ancient ceremonial legs
+26225	8	64250	Ancient ceremonial mask
+26227	8	22884	Ancient ceremonial gloves
+26229	8	26890	Ancient ceremonial boots
+26231	30000	3236	Nihil shard
+26233	8	36073961	Ancient godsword
+26235	7	72917500	Zaryte vambraces
+26241	8	4660739	Virtus mask
+26243	8	32648930	Virtus robe top
+26245	8	22821961	Virtus robe bottom
+26266	0	10225411	Condensed gold
+26340	2000	2839	Ancient brew(4)
+26342	2000	2076	Ancient brew(3)
+26344	2000	1338	Ancient brew(2)
+26346	2000	711	Ancient brew(1)
+26350	0	101000	Ancient mix(2)
+26353	0	470000	Ancient mix(1)
+26368	11000	3390	Nihil dust
+26370	0	34641000	Ancient hilt
+26372	0	325745145	Nihil horn
+26374	8	356254816	Zaryte crossbow
+26376	8	199435726	Torva full helm (damaged)
+26378	8	154316461	Torva platebody (damaged)
+26380	8	92171417	Torva platelegs (damaged)
+26382	8	210469110	Torva full helm
+26384	8	171338719	Torva platebody
+26386	8	109457033	Torva platelegs
+26390	500	87349	Blood essence
+26394	0	8200000	Bandosian components
+26421	5	419687	Shattered relics variety ornament kit
+26424	0	209895	Shattered banner
+26427	0	53489	Shattered hood (t1)
+26430	0	36723	Shattered top (t1)
+26433	0	41813	Shattered trousers (t1)
+26436	0	56952	Shattered boots (t1)
+26439	0	404938	Shattered hood (t2)
+26442	0	544388	Shattered top (t2)
+26445	0	50000	Shattered trousers (t2)
+26448	0	142925	Shattered boots (t2)
+26451	0	1616889	Shattered hood (t3)
+26454	0	601833	Shattered top (t3)
+26457	0	150624	Shattered trousers (t3)
+26460	0	210913	Shattered boots (t3)
+26479	5	435034	Shattered relics void ornament kit
+26500	0	250000	Shattered teleport scroll
+26517	0	2239055	Shattered cane
+26528	5	430000	Shattered cannon ornament kit
+26541	5	42220	Shattered relics mystic ornament kit
+26554	0	258813	Shattered relic hunter (t1) armour set
+26557	0	1033276	Shattered relic hunter (t2) armour set
+26560	0	4840372	Shattered relic hunter (t3) armour set
+26602	0	1	Osman's report
+26788	10000	45	Gold tiara
+26798	40	1145	Catalytic talisman
+26801	40	128	Catalytic tiara
+26804	40	325	Elemental tiara
+26815	0	791220	Ring of the elements
+26945	0	9473486	Pharaoh's sceptre (uncharged)
+26997	0	3633	Ensouled hellhound head
+27014	0	84760	Kovac's grog
+27202	2000	2056	Menaphite remedy(4)
+27205	0	1688	Menaphite remedy(3)
+27208	0	467	Menaphite remedy(2)
+27211	0	612	Menaphite remedy(1)
+27226	8	9004244	Masori mask
+27229	8	44817221	Masori body
+27232	8	29414165	Masori chaps
+27235	8	17903500	Masori mask (f)
+27238	8	80956070	Masori body (f)
+27241	8	57580646	Masori chaps (f)
+27269	0	9144494	Armadylean plate
+27272	13000	1773	Lily of the Sands
+27277	8	792792537	Tumeken's shadow (uncharged)
+27355	5	157849099	Masori armour set (f)
+27612	8	63126185	Venator bow (uncharged)
+27614	8	12263433	Venator shard
+27616	300000	18	Ancient essence
+27629	2000	4249	Forgotten brew(4)
+27632	0	3538	Forgotten brew(3)
+27635	0	1925	Forgotten brew(2)
+27638	0	1115	Forgotten brew(1)
+27641	8	76851142	Saturated heart
+27652	0	14549954	Webweaver bow (u)
+27657	8	4250219	Ursine chainmace (u)
+27662	8	2834621	Accursed sceptre (u)
+27667	0	58329	Claws of Callisto
+27670	8	49398	Fangs of Venenatis
+27673	8	48583	Skull of Vet'ion
+27676	8	2939109	Accursed sceptre (au)
+27681	8	1323920	Voidwaker hilt
+27684	8	939123	Voidwaker blade
+27687	8	33350186	Voidwaker gem
+27690	70	37130965	Voidwaker
+27785	8	3357507	Thammaron's sceptre (au)
+27897	0	517	Scaly blue dragonhide
+28146	40	621056	Log brace
+28149	0	745049	Sturdy harness
+28152	0	975	Nature offerings
+28154	0	26775	Ritual mulch
+28157	6000	41	Forester's ration
+28159	0	3998	Secateurs blade
+28161	10000	102	Secateurs attachment
+28163	0	2224555	Clothes pouch
+28166	0	2123000	Clothes pouch blueprint
+28177	0	1950127	Felling axe handle
+28193	0	33	Unfired cup
+28196	0	1199999	Bronze felling axe
+28199	0	1002775	Iron felling axe
+28202	0	1500000	Steel felling axe
+28205	0	2060000	Black felling axe
+28208	0	1575000	Mithril felling axe
+28211	0	2100000	Adamant felling axe
+28214	0	1883285	Rune felling axe
+28217	0	2040618	Dragon felling axe
+28220	0	520000	Crystal 2h axe
+28223	0	520000	Crystal 2h axe (inactive)
+28226	0	2118000000	3rd Age felling axe
+28276	8	36669	Chromium ingot
+28295	0	4010520	Berserker icon
+28298	0	2486998	Archer icon
+28301	0	65522	Warrior icon
+28304	0	1116832	Seers icon
+28307	0	110023166	Ultor ring
+28310	0	48090777	Venator ring
+28313	0	22625267	Magus ring
+28316	0	19846940	Bellator ring
+28334	50	279202	Awakener's orb
+28338	5	409349500	Soulreaper axe
+28478	0	10000	Sigil of sustenance
+28481	0	10000	Sigil of hoarding
+28484	0	10000	Sigil of the alchemaniac
+28487	0	20000	Sigil of the hunter
+28490	0	10000	Sigil of resistance
+28493	0	10000	Sigil of agile fortune
+28496	0	30000	Sigil of the food master
+28499	0	10000	Sigil of the well fed
+28502	0	10000	Sigil of the infernal chef
+28505	0	10000	Sigil of the infernal smith
+28508	0	10000	Sigil of the lightbearer
+28511	0	10000	Sigil of the bloodhound
+28514	0	10000	Sigil of precision
+28517	0	10000	Sigil of the augmented thrall
+28520	0	10000	Sigil of faith
+28523	0	10000	Sigil of titanium
+28526	0	10000	Sigil of the ninja
+28529	0	10000	Sigil of woodcraft
+28531	0	250000	Corrupted voidwaker
+28534	0	250000	Corrupted dragon claws
+28537	0	250000	Corrupted armadyl godsword
+28540	0	250000	Corrupted twisted bow
+28545	0	250000	Corrupted scythe of vitur (uncharged)
+28549	0	250000	Corrupted tumeken's shadow (uncharged)
+28561	0	10000	Trinket of vengeance
+28564	0	10000	Trinket of fairies
+28567	0	10000	Trinket of advanced weaponry
+28570	0	10000	Trinket of undead
+28583	0	89068	Warped sceptre (uncharged)
+28628	10000	3300	Sawmill voucher
+28684	0	3601684	Trailblazer reloaded bulwark ornament kit
+28690	0	1977921	Trailblazer reloaded blowpipe ornament kit
+28693	0	774220	Trailblazer reloaded alchemy scroll
+28696	0	2468342	Trailblazer reloaded vengeance scroll
+28699	5	1116547	Trailblazer reloaded death scroll
+28702	0	76000	Trailblazer reloaded banner
+28705	5	308205	Trailblazer reloaded home teleport scroll
+28708	0	3159690	Trailblazer reloaded rejuvenation pool scroll
+28712	0	77660	Trailblazer reloaded headband (t1)
+28715	0	48322	Trailblazer reloaded top (t1)
+28718	0	16986	Trailblazer reloaded trousers (t1)
+28721	0	112804	Trailblazer reloaded boots (t1)
+28724	0	232762	Trailblazer reloaded headband (t2)
+28727	0	207488	Trailblazer reloaded top (t2)
+28730	0	193833	Trailblazer reloaded trousers (t2)
+28733	0	191275	Trailblazer reloaded boots (t2)
+28736	0	986793	Trailblazer reloaded headband (t3)
+28739	0	1229500	Trailblazer reloaded top (t3)
+28742	0	1054999	Trailblazer reloaded trousers (t3)
+28745	0	289715	Trailblazer reloaded boots (t3)
+28748	0	819420	Trailblazer reloaded torch
+28777	0	65000	Trailblazer reloaded relic hunter (t1) armour set
+28780	0	2364083	Trailblazer reloaded relic hunter (t2) armour set
+28783	0	3003750	Trailblazer reloaded relic hunter (t3) armour set
+28790	0	833	Kourend castle teleport (tablet)
+28810	0	1733629	Zombie axe
+28813	0	1725000	Broken zombie axe
+28824	0	668	Civitas illa fortis teleport
+28831	0	154	Immature tecu salamander
+28834	125	352977	Tecu salamander
+28837	11000	34	Irit tar
+28839	0	20	Wood camo top (equipped)
+28842	0	20	Wood camo legs (equipped)
+28845	0	20	Jungle camo top (equipped)
+28848	0	20	Jungle camo legs (equipped)
+28851	0	20	Desert camo top (equipped)
+28854	0	20	Desert camo legs (equipped)
+28857	0	20	Polar camo top (equipped)
+28860	0	20	Polar camo legs (equipped)
+28869	70	4739	Hunters' sunlight crossbow
+28872	11000	211	Sunlight antler bolts
+28878	11000	234	Moonlight antler bolts
+28890	0	1052	Sunlight moth (item)
+28893	125	1233	Moonlight moth (item)
+28896	0	100	Rum
+28899	3000	474	Wyrmling bones
+28919	0	44865283	Tonalztics of Ralos (uncharged)
+28924	30000	366	Sunfire splinters
+28929	18000	105	Sunfire rune
+28931	11000	19452	Searing page
+28933	0	1350901	Sunfire fanatic helm
+28936	0	2267149	Sunfire fanatic cuirass
+28939	0	3797528	Sunfire fanatic chausses
+28942	8	2548518	Echo crystal
+28988	15	335333	Blue moon spear
+28991	11000	112	Atlatl dart
+28997	15	5158336	Dual macuahuitl
+29000	15	689034	Eclipse atlatl
+29004	15	1493550	Eclipse moon chestplate
+29007	15	2529167	Eclipse moon tassets
+29010	15	818806	Eclipse moon helm
+29013	15	1471273	Blue moon chestplate
+29016	15	4415624	Blue moon tassets
+29019	15	698343	Blue moon helm
+29022	15	3624716	Blood moon chestplate
+29025	15	8870190	Blood moon tassets
+29028	15	952873	Blood moon helm
+29049	15	676474	Eclipse moon chestplate (broken)
+29052	15	1677500	Eclipse moon tassets (broken)
+29055	15	64252	Eclipse moon helm (broken)
+29058	15	582029	Blue moon chestplate (broken)
+29061	15	3038362	Blue moon tassets (broken)
+29064	15	69898	Blue moon helm (broken)
+29067	15	2824066	Blood moon chestplate (broken)
+29070	15	7885000	Blood moon tassets (broken)
+29073	15	72581	Blood moon helm (broken)
+29084	15	114586	Sulphur blades
+29090	100	4039	Calcified moth
+29098	0	226	Not meat
+29101	13000	1259	Raw barb-tailed kebbit
+29104	13000	900	Raw wild kebbit
+29107	13000	1600	Raw dashing kebbit
+29110	13000	1182	Raw pyre fox
+29113	13000	2270	Raw moonlight antelope
+29116	13000	1765	Raw sunlight antelope
+29119	13000	1181	Raw graahk
+29122	13000	4247	Raw larupia
+29125	13000	1129	Raw kyatt
+29128	10000	832	Cooked wild kebbit
+29131	10000	200	Cooked barb-tailed kebbit
+29134	6000	1540	Cooked dashing kebbit
+29137	10000	327	Cooked pyre fox
+29140	10000	1128	Cooked sunlight antelope
+29143	6000	2769	Cooked moonlight antelope
+29146	10000	381	Cooked larupia
+29149	10000	44	Cooked graahk
+29152	10000	478	Cooked kyatt
+29163	0	2197	Fox fur
+29166	18000	253	Jerboa tail
+29168	0	2250	Sunlight antelope antler
+29171	18000	2695	Moonlight antelope antler
+29174	18000	323	Moonlight antelope fur
+29177	0	390	Sunlight antelope fur
+29180	0	1080	Sapphire glacialis mix (2)
+29183	0	4253	Snowy knight mix (2)
+29186	0	745	Ruby harvest mix (2)
+29189	0	939	Black warlock mix (2)
+29192	125	4388	Sunlight moth mix (2)
+29195	125	3571	Moonlight moth mix (2)
+29198	0	350	Sapphire glacialis mix (1)
+29201	0	1500	Snowy knight mix (1)
+29204	0	846	Ruby harvest mix (1)
+29207	0	128	Black warlock mix (1)
+29210	0	50505	Sunlight moth mix (1)
+29213	0	2667	Moonlight moth mix (1)
+29218	10000	2205	Jaguar fur
+29253	0	30741	Enhanced quetzal whistle blueprint
+29256	50	31021	Perfected quetzal whistle blueprint
+29277	0	152	Trapper's tipple
+29280	100	15501	Mixed hide top
+29283	100	22670	Mixed hide legs
+29286	100	17453	Mixed hide boots
+29289	100	21707	Mixed hide cape
+29292	0	14511	Mixed hide base
+29305	0	486	Hunter's spear
+29307	100	3318	Quetzal feed
+29311	10000	2	Hunter spear tips
+29409	0	200	Sunbeam ale
+29412	0	118	Steamforge brew
+29415	2000	1343	Eclipse red
+29418	0	107	Moon-lite
+29421	0	12599	Sun-shine
+29424	0	7700808	Sunfire fanatic armour set
+29449	250	14911	Zombie pirate key
+29455	5	39318	Teleport anchoring scroll
+29458	18000	99	Adamant seeds
+29486	125	18412	Cursed amulet of magic
+29574	8	1770921	Burning claw
+29577	8	3679164	Burning claws
+29580	5	38047513	Tormented synapse
+29599	0	250000	Corrupted dark bow
+29602	0	250000	Corrupted Volatile Nightmare staff
+29619	5	3806679	Armageddon rug
+29622	5	11847590	Armageddon teleport scroll
+29625	5	14684946	Armageddon weapon scroll
+29628	5	8899401	Armageddon cape fabric
+29631	50	50	Blighted overload (4)
+29634	50	50	Blighted overload (3)
+29637	50	50	Blighted overload (2)
+29640	50	50	Blighted overload (1)
+29643	0	2600	Chitin
+29649	0	30000	Sigil of meticulousness
+29652	0	30000	Sigil of revoked limitation
+29655	0	10000	Sigil of the rampart
+29658	0	10000	Sigil of deception
+29661	0	10000	Sigil of litheness
+29664	0	10000	Sigil of the adroit
+29667	0	10000	Sigil of onslaught
+29670	0	10000	Sigil of restoration
+29673	0	10000	Sigil of the swashbuckler
+29676	0	10000	Sigil of the gunslinger
+29679	0	10000	Sigil of arcane swiftness
+29684	0	11050	Guthixian temple teleport
+29782	0	29089	Spider cave teleport
+29784	11000	1046	Araxyte venom sac
+29796	8	38577500	Noxious halberd
+29801	8	49866806	Amulet of rancour
+29806	8	673376	Aranea boots
+29824	2000	19346	Extended anti-venom+(4)
+29827	2000	13931	Extended anti-venom+(3)
+29830	2000	8690	Extended anti-venom+(2)
+29833	2000	4723	Extended anti-venom+(1)
+29889	15	65040	Glacial temotli
+29895	13000	251	Frozen tear
+29900	0	12763	Varlamorian kebab
+29944	0	906	Blackbird red
+29947	0	535	Chilhuac red
+29952	0	366	Ixcoztic white
+29955	0	316	Metztonalli white
+29958	0	920	Tonameyo white
+29963	0	5500	Chichilihui rosé
+29966	0	332	Imperial rosé
+29993	13000	56261	Aldarium
+30002	5	10255772	Chugging barrel (disassembled)
+30040	0	22658	Colossal wyrm teleport scroll
+30066	15	831833	Tome of Earth (empty)
+30068	11000	3209	Soiled page
+30070	8	9292401	Dragon hunter wand
+30073	0	1027689	Hueycoatl hide coif
+30076	0	1493175	Hueycoatl hide body
+30079	0	974595	Hueycoatl hide chaps
+30082	0	515348	Hueycoatl hide vambraces
+30085	0	492100	Hueycoatl hide
+30088	200	39395	Huasca seed
+30094	0	6642	Grimy huasca
+30097	0	6887	Huasca
+30100	10000	7544	Huasca potion (unf)
+30125	2000	76770	Prayer regeneration potion(4)
+30128	2000	53655	Prayer regeneration potion(3)
+30131	2000	37890	Prayer regeneration potion(2)
+30134	2000	18183	Prayer regeneration potion(1)
+30137	2000	66572	Goading potion(4)
+30140	0	47482	Goading potion(3)
+30143	0	33880	Goading potion(2)
+30146	0	15600	Goading potion(1)
+30321	50	269027	Zombie helmet
+30324	70	116516	Broken zombie helmet
+30328	250	1500	Dust
+30331	0	180500	Raging echoes relic hunter (t1) armour set
+30334	0	1192709	Raging echoes relic hunter (t2) armour set
+30337	0	2912631	Raging echoes relic hunter (t3) armour set
+30404	0	33991	Raging echoes hat (t1)
+30406	0	9752	Raging echoes top (t1)
+30408	0	19097	Raging echoes robeskirt (t1)
+30410	0	69820	Raging echoes boots (t1)
+30412	0	171837	Raging echoes hat (t2)
+30414	0	164181	Raging echoes top (t2)
+30416	0	123012	Raging echoes robeskirt (t2)
+30418	0	288715	Raging echoes boots (t2)
+30420	0	1882999	Raging echoes hat (t3)
+30422	0	556349	Raging echoes top (t3)
+30424	0	83109	Raging echoes robeskirt (t3)
+30426	0	784644	Raging echoes boots (t3)
+30428	0	1317343	Raging echoes cane
+30430	0	46193	Raging echoes banner
+30432	0	2069708	Echo venator bow ornament kit
+30443	0	891507	Echo virtus ornament kit
+30451	0	188890	Echo ahrim's ornament kit
+30453	0	377375	Echo home teleport scroll
+30455	0	794730	Raging echoes death scroll
+30457	0	2035000	Raging echoes astral contact scroll
+30459	0	1341828	Raging echoes nexus scroll
+30461	0	513991	Raging echoes portal scroll
+30554	0	127868	Raging echoes rug
+30557	5	166351	Raging echoes curtains
+30560	0	341582	Raging echoes scrying pool scroll
+30563	0	2443729	Raging echoes spirit tree scroll
+30576	0	10000	Bounty supply crate
+30616	100	5250	Bounty supply crate (manta ray)
+30619	100	6562	Bounty supply crate (anglerfish)
+30628	8	4625325	Ice element staff crown
+30631	8	4476388	Fire element staff crown
+30634	8	9426435	Twinflame staff
+30676	0	10000	Nimbleness charm
+30679	0	10000	Stockpiling charm
+30682	0	10000	Accumulation charm
+30685	0	10000	Vulnerability charm
+30744	0	250113635	Oathplate armour set
+30750	0	81090000	Oathplate helm
+30753	0	83125000	Oathplate chest
+30756	0	83570959	Oathplate legs
+30759	5	3801265	Soulflame horn
+30765	0	171600	Oathplate shards
+30771	25000	344	Aether catalyst
+30773	8000	2341	Diabolic worms
+30775	0	40288	Chasm teleport scroll
+30795	0	17037	Barrel of demonic tallow (full)
+30800	11000	184	Demonic tallow
+30810	50	245744	Contract of Glyphic Attenuation
+30813	50	198748	Contract of Sensory Clouding
+30816	50	39646	Contract of Bloodied Blows
+30819	50	36421	Contract of Divine Severance
+30822	50	39383	Contract of Forfeit Breath
+30825	50	80111319	Contract of Oathplate Acquisition
+30828	50	5975000	Contract of Shard Acquisition
+30831	50	95460	Contract of Catalyst Acquisition
+30834	50	71342	Contract of Worm Acquisition
+30837	50	2681620	Contract of Harmony Acquisition
+30840	50	110887	Contract of Familiar Acquisition
+30843	25000	785	Aether rune
+30848	25000	1792	Crushed infernal shale
+30864	0	9350000	Infernal plate
+30895	0	139960	Steel ring
+30900	10000	241	Shark lure
+30957	0	94925	Earthbound tecpatl
+30998	10000	31	Atlatl dart tips
+31004	11000	34	Atlatl dart shaft
+31010	11000	52	Headless atlatl dart
+31024	0	54456	Greenman carving
+31027	0	97741	Greenman statue
+31032	0	3221	Ent branch
+31034	4	22832	Greenman mask
+31045	13000	124	Bale of flax
+31049	0	797	Redwood hiking staff
+31081	0	425098	Antler guard
+31086	0	3637	Broken antler
+31088	8	143375000	Avernic treads
+31099	100	44069	Mokhaiotl waystone
+31106	0	65376936	Confliction gauntlets
+31111	13000	240	Demon tear
+31115	8	38452642	Eye of Ayak (uncharged)
+31136	2	19178785	Blood moon armour set
+31139	2	6392874	Blue moon armour set
+31142	2	5741867	Eclipse moon armour set
+31145	2	487500000	Torva armour set
+31148	2	60418205	Virtus armour set
+31151	0	134385	Rock-shell armour set
+31154	2	486400	Skeletal armour set
+31157	0	132775	Spined armour set
+31160	2	269000	Swampbark armour set
+31163	2	639654	Bloodbark armour set
+31166	0	86499	Mixed hide armour set
+31169	0	3984617	Hueycoatl hide armour set
+31181	0	62210	Grid master tabard
+31184	0	18630	Grid master tabard (b)
+31187	0	24129	Grid master tabard (p)
+31190	0	26974	Grid master tabard (g)
+31193	0	22780	Swords and emblem
+31196	0	5750	Swords and emblem (b)
+31199	0	38956	Swords and emblem (p)
+31202	0	25077	Swords and emblem (g)
+31205	0	143871	Grid master altar icon scroll
+31208	0	101453	Grid master torch scroll
+31235	11000	22	Gryphon feather
+31243	15	481316	Horn of Plenty (empty)
+31245	0	101956	Belle's folly (tarnished)
+31248	15	97408	Belle's folly
+31255	0	100	Barnacle blaster
+31258	0	3987	Kraken colada
+31261	0	225	Sailor's mirage
+31383	0	4397	Camphor pyre logs
+31386	0	4897	Ironwood pyre logs
+31389	0	4417	Rosewood pyre logs
+31406	13000	11981	Dragon nails
+31432	13000	3956	Camphor plank
+31435	13000	4187	Ironwood plank
+31438	0	5425	Rosewood plank
+31441	0	733	Summon boat
+31443	0	615	Teleport to boat
+31454	0	2	Ball of cotton
+31457	13000	990	Hemp
+31460	0	2057	Cotton boll
+31463	13000	132	Linen yarn
+31466	13000	850	Hemp yarn
+31469	13000	1738	Cotton yarn
+31472	13000	509	Bolt of linen
+31475	13000	2081	Bolt of canvas
+31478	13000	3281	Bolt of cotton
+31481	13000	1088	Elkhorn coral
+31484	13000	2198	Pillar coral
+31487	11000	2614	Umbral coral
+31502	0	5174	Camphor sapling
+31505	0	39353	Ironwood sapling
+31508	0	144483	Rosewood sapling
+31511	600	150	Elkhorn frag
+31513	600	261	Pillar frag
+31515	200	1525	Umbral frag
+31541	2000	11	Flax seed
+31543	2000	1004	Hemp seed
+31545	2000	2513	Cotton seed
+31547	200	3774	Camphor seed
+31549	200	37934	Ironwood seed
+31551	200	145400	Rosewood seed
+31553	0	850	Raw swordtip squid
+31556	0	205	Swordtip squid
+31561	0	2521	Raw jumbo squid
+31564	0	345	Jumbo squid
+31569	0	787	Squid paste
+31572	0	1544303	Squid beak
+31577	8	1100889	Camphor blowpipe (empty)
+31581	8	1313919	Ironwood blowpipe (empty)
+31585	8	1373518	Rosewood blowpipe (empty)
+31587	2000	1663	Haemostatic poultice
+31590	2000	4254	Haemostatic dressing (4)
+31593	0	3152	Haemostatic dressing (3)
+31596	0	1996	Haemostatic dressing (2)
+31599	0	1049	Haemostatic dressing (1)
+31602	0	3474	Super fishing potion(4)
+31605	0	2296	Super fishing potion(3)
+31608	0	2095	Super fishing potion(2)
+31611	0	1085	Super fishing potion(1)
+31614	0	2916	Extreme energy potion(4)
+31617	0	1303	Extreme energy potion(3)
+31620	0	1251	Extreme energy potion(2)
+31623	0	535	Extreme energy potion(1)
+31626	0	883	Super hunter potion(4)
+31629	0	615	Super hunter potion(3)
+31632	0	133	Super hunter potion(2)
+31635	0	250	Super hunter potion(1)
+31638	0	7868	Extended stamina potion(4)
+31641	0	5742	Extended stamina potion(3)
+31644	0	3577	Extended stamina potion(2)
+31647	0	1747	Extended stamina potion(1)
+31650	2000	1272	Armadyl brew(4)
+31653	2000	867	Armadyl brew(3)
+31656	2000	551	Armadyl brew(2)
+31659	2000	373	Armadyl brew(1)
+31662	10000	1222	Elkhorn potion (unf)
+31665	0	2302	Pillar potion (unf)
+31668	0	2873	Umbral potion (unf)
+31671	0	73	Red crab
+31674	0	440	Blue crab
+31677	0	5599	Rainbow crab (1)
+31680	0	5600	Rainbow crab (2)
+31683	0	2250	Rainbow crab (3)
+31686	0	101	Raw red crab meat
+31689	0	460	Red crab meat
+31692	0	443	Raw blue crab meat
+31695	0	507	Blue crab meat
+31700	0	1222	Raw rainbow crab meat
+31703	0	950	Rainbow crab meat
+31708	13000	77	Crab paste
+31710	13000	1351	Rainbow crab paste
+31712	0	184	Anti-odour salt
+31716	0	466	Lead ore
+31719	0	1962	Nickel ore
+31722	30000	143	Rubium splinters
+31726	0	2305	Strykewyrm bones
+31729	7500	6752	Frost dragon bones
+31906	11000	4	Bronze cannonball
+31908	11000	10	Iron cannonball
+31910	11000	146	Mithril cannonball
+31912	11000	223	Adamant cannonball
+31914	11000	692	Rune cannonball
+31916	11000	1259	Dragon cannonball
+31918	0	47	Bronze chainshot cannonball
+31920	0	500	Iron chainshot cannonball
+31922	0	311	Steel chainshot cannonball
+31924	0	587	Mithril chainshot cannonball
+31926	0	497	Adamant chainshot cannonball
+31928	0	1918	Rune chainshot cannonball
+31930	0	3600	Dragon chainshot cannonball
+31932	0	115	Bronze incendiary cannonball
+31934	0	617	Iron incendiary cannonball
+31936	0	742	Steel incendiary cannonball
+31938	0	759	Mithril incendiary cannonball
+31940	0	1043	Adamant incendiary cannonball
+31942	0	1498	Rune incendiary cannonball
+31944	0	3600	Dragon incendiary cannonball
+31946	0	41032	Echo pearl
+31949	0	2431448	Bottled storm
+31952	15	286776	Swift albatross feather
+31954	15	17000	Narwhal horn
+31959	15	125924	Ray barbs
+31961	0	1228659	Broken dragon hook
+31964	13000	70	Repair kit
+31967	13000	107	Oak repair kit
+31970	13000	305	Teak repair kit
+31973	13000	1104	Mahogany repair kit
+31976	13000	1682	Camphor repair kit
+31979	13000	2049	Ironwood repair kit
+31982	13000	14443	Rosewood repair kit
+31989	100	16617	Boat bottle (empty)
+31996	64	174923	Dragon metal sheet
+31999	100	285	Bronze keel parts
+32002	100	792	Iron keel parts
+32005	100	1228	Steel keel parts
+32008	100	2202	Mithril keel parts
+32011	100	7850	Adamant keel parts
+32014	100	59950	Rune keel parts
+32017	100	277506	Dragon keel parts
+32020	100	3935	Large bronze keel parts
+32023	100	3275	Large iron keel parts
+32026	100	16714	Large steel keel parts
+32029	100	15322	Large mithril keel parts
+32032	100	45894	Large adamant keel parts
+32035	100	301515	Large rune keel parts
+32038	100	583900	Large dragon keel parts
+32041	100	35	Wooden hull parts
+32044	100	406	Oak hull parts
+32047	100	1774	Teak hull parts
+32050	100	5596	Mahogany hull parts
+32053	100	8739	Camphor hull parts
+32056	100	11410	Ironwood hull parts
+32059	100	10171	Rosewood hull parts
+32062	100	100	Large wooden hull parts
+32065	0	4067	Large oak hull parts
+32068	100	10185	Large teak hull parts
+32071	100	38247	Large mahogany hull parts
+32074	100	48716	Large camphor hull parts
+32077	100	56867	Large ironwood hull parts
+32080	100	77013	Large rosewood hull parts
+32087	0	3089953	Barracuda paint
+32090	5	800	Shark paint
+32093	5	892145	Inky paint
+32096	0	12778975	Angler's paint
+32099	0	313964	Salvor's paint
+32110	0	10185802	Merchant's paint
+32115	100	495660	Dragon cannon barrel
+32307	8000	365	Fine fish offcuts
+32309	15000	46	Raw giant krill
+32312	0	249	Giant krill
+32317	15000	209	Raw haddock
+32320	0	485	Haddock
+32325	15000	616	Raw yellowfin
+32328	0	1081	Yellowfin
+32333	15000	1797	Raw halibut
+32336	10000	2653	Halibut
+32341	15000	1419	Raw bluefin
+32344	0	1840	Bluefin
+32349	15000	3497	Raw marlin
+32352	10000	3869	Marlin
+32357	0	546	Haddock eye
+32360	11000	156	Yellow fin
+32362	11000	1250	Marlin scales
+32364	250	1150	Camphor crate
+32366	250	1282	Fish crate (empty)
+32368	250	1032	Fish crate (giant krill)
+32371	250	2420	Fish crate (haddock)
+32374	250	6500	Fish crate (yellowfin)
+32377	250	17025	Fish crate (halibut)
+32380	250	13888	Fish crate (bluefin)
+32383	250	33875	Fish crate (marlin)
+32876	0	1200000	Aquanite tendon
+32879	0	1313702	Aquanite hopper
+32886	0	514	Chain
+32889	10000	1343	Lead bar
+32892	10000	2558	Cupronickel bar
+32904	0	299	Camphor logs
+32907	12000	106	Ironwood logs
+32910	12000	420	Rosewood logs
+33012	5	14190200	Annihilation weapon scroll
+33015	5	19318462	Annihilation blueprints
+33018	5	11730174	Annihilation teleport scroll
+33038	0	1	The dogsword
+33041	0	1	Thunder khopesh
+33044	0	1	Trinket of avarice
+33047	0	1	Trinket of fortuity (inactive)
+33050	0	1	Trinket of fortuity (active)
+33074	100	33435	Facility bottle (empty)
+33093	4	2496	Cow slippers
+33106	13000	182	Raw t-bone steak
+33109	6000	77	Cooked t-bone steak
+33260	4	43564	Demonic hood (t1)
+33263	4	13000	Demonic robe top (t1)
+33266	4	7595	Demonic robe bottom (t1)
+33269	4	12135	Demonic boots (t1)
+33272	4	380516	Demonic hood (t2)
+33275	4	54342	Demonic robe top (t2)
+33278	4	33004	Demonic robe bottom (t2)
+33281	4	65452	Demonic boots (t2)
+33284	4	4297991	Demonic hood (t3)
+33287	4	515892	Demonic robe top (t3)
+33290	4	295328	Demonic robe bottom (t3)
+33293	4	347487	Demonic boots (t3)
+33296	0	677944	Demonic sceptre
+33299	0	105000	Demonic pacts banner
+33302	0	881506	Demonic skin contract
+33305	0	1960044	Demonic axe ornament kit
+33308	0	192519	Demonic staff ornament kit
+33311	0	839473	Demonic trident ornament kit
+33342	0	123491	Demonic quill
+33359	0	285752	Impish ritual scroll
+33362	0	255145	Demonic pacts throne scroll
+33365	0	2248965	Impish whistle
+33368	0	1182084	Demonic pacts demon butler scroll
+33428	0	1	Trinket of vengeance (2)
+33431	0	1	Trinket of vengeance (1)
+33451	0	89304	Demonic pacts relic hunter (t1) armour set
+33454	0	468432	Demonic pacts relic hunter (t2) armour set
+33457	0	5846910	Demonic pacts relic hunter (t3) armour set
+33534	0	28619777	Etched araxyte fang
+33553	0	1900	Seeking bronze arrow
+33559	0	292	Seeking iron arrow
+33565	0	130	Seeking steel arrow
+33571	0	434	Seeking mithril arrow
+33577	0	309	Seeking adamant arrow
+33583	0	296	Seeking rune arrow
+33589	0	589	Seeking amethyst arrow
+33595	11000	2343	Seeking dragon arrow
+33625	0	1542	Letvek
+33631	5	51264722	Crimson kisten
+33636	0	125041732	Etched elder venator fang
+33639	8	146790000	Necklace of rupture
+33644	0	1	Dummy stymphike feather
+33651	0	22	Stymphike feather
+33657	0	102465	Orikalkum gravel
+33661	0	1819	Venator fang
+33663	0	1200	Venator tooth
+33821	0	2239	Raw impaler meat
+33836	0	61748	Noble robe top (green)
+33839	0	65801	Noble robe top (blue)
+33842	0	150000	Noble robe top (red)
+33845	0	36250	Noble robe top (yellow)
+33848	0	68699	Noble robe top (white)
+33851	0	54363	Noble robe top (black)
+33854	0	65414	Noble robe top (pink)
+33857	0	32875	Wyrmscraig noble skirt (green)
+33860	0	29839	Wyrmscraig noble skirt (blue)
+33863	0	242000	Wyrmscraig noble skirt (red)
+33866	0	28752	Wyrmscraig noble skirt (yellow)
+33869	0	56578	Wyrmscraig noble skirt (white)
+33872	0	43881	Wyrmscraig noble skirt (black)
+33875	0	100790	Wyrmscraig noble skirt (pink)
+33878	0	4779	Wyrmscraig shoes
+33881	0	15756	Wyrmscraig boots
+33884	0	15024	Wyrmscraig villager robe top (A, green)
+33887	0	1500	Wyrmscraig villager robe top (A, blue)
+33890	0	323	Wyrmscraig villager robe top (A, red)
+33893	0	267	Wyrmscraig villager robe top (A, yellow)
+33896	0	2505	Wyrmscraig villager robe top (A, white)
+33899	0	50000	Wyrmscraig villager robe top (A, black)
+33902	0	19500	Wyrmscraig villager robe top (A, pink)
+33905	0	1240	Wyrmscraig villager robe top (A, beige)
+33908	0	973	Wyrmscraig villager robe bottom (A, green)
+33911	0	1383	Wyrmscraig villager robe bottom (A, blue)
+33914	0	500200	Wyrmscraig villager robe bottom (A, red)
+33917	0	7700	Wyrmscraig villager robe bottom (A, yellow)
+33920	0	2155	Wyrmscraig villager robe bottom (A, white)
+33923	0	5000	Wyrmscraig villager robe bottom (A, black)
+33926	0	2937	Wyrmscraig villager robe bottom (A, pink)
+33929	0	50200	Wyrmscraig villager robe bottom (B, green)
+33932	0	700	Wyrmscraig villager robe bottom (B, blue)
+33935	0	2700	Wyrmscraig villager robe bottom (B, red)
+33938	0	400	Wyrmscraig villager robe bottom (B, yellow)
+33941	0	268	Wyrmscraig villager robe bottom (B, white)
+33944	0	50176	Wyrmscraig villager robe bottom (B, black)
+33947	0	398	Wyrmscraig villager robe bottom (B, pink)
+33950	0	472	Wyrmscraig villager robe top (B, green)
+33953	0	25203	Wyrmscraig villager robe top (B, blue)
+33956	0	1916	Wyrmscraig villager robe top (B, red)
+33959	0	1737	Wyrmscraig villager robe top (B, yellow)
+33962	0	453000	Wyrmscraig villager robe top (B, white)
+33965	0	1278	Wyrmscraig villager robe top (B, black)
+33968	0	1500	Wyrmscraig villager robe top (B, pink)
+33971	0	12663	Wyrmscraig villager skirt (green)
+33974	0	371	Wyrmscraig villager skirt (blue)
+33977	0	1107	Wyrmscraig villager skirt (red)
+33980	0	445	Wyrmscraig villager skirt (yellow)
+33983	0	246	Wyrmscraig villager skirt (white)
+33986	0	2678	Wyrmscraig villager skirt (black)
+33989	0	2675	Wyrmscraig villager skirt (pink)
+33992	0	598	Wyrmscraig villager work skirt (green)
+33995	0	647	Wyrmscraig villager work skirt (blue)
+33998	0	2476	Wyrmscraig villager work skirt (red)
+34001	0	5180	Wyrmscraig villager work skirt (yellow)
+34004	0	50199	Wyrmscraig villager work skirt (white)
+34007	0	6358	Wyrmscraig villager work skirt (black)
+34010	0	557	Wyrmscraig villager work skirt (pink)
+34013	0	2690	Wyrmscraig villager work skirt (beige)
+34017	0	121	Wyrmscraig goat fur
+34027	100	1682681	Hallowfell
+34033	0	37451	Ardeaglais teleport
+34035	0	1	Placeholder
+34401	0	82051	Necklace of fangs
+34404	0	265000	Air diamond
+34407	0	301833	Amulet of air
+34410	0	238898	Water sapphire
+34413	0	277363	Amulet of water
+34416	0	367036	Earth emerald
+34419	0	441610	Amulet of earth
+34422	0	85500	Fire ruby
+34425	0	73092	Amulet of fire
+34428	0	1260964	Elemental amulet

@@ -58,6 +58,9 @@ object Music {
                 "greatness",
                 "still_night",
             ),
+            // The Grand Exchange plays its own track; its footprint is carved out of the Varrock
+            // polygon so the two areas never overlap.
+            modern("grand_exchange", "the_trade_parade"),
             modern("barbarian_village", "barbarianism"),
             modern("edgeville", "forever"),
             // The Wilderness gameplay area already has an onArea script, and an area may only have

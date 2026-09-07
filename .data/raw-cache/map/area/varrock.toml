@@ -3,10 +3,41 @@ name = "Varrock"
 area_id = "area.varrock"
 levels = [0, 1, 2, 3]
 
+# The city minus the Grand Exchange rectangle (x 3143-3187, z 3462-3510), which is its own music
+# area (see grand_exchange.toml). Four pieces cover everything around it.
+
+# South of the exchange: the whole city below z 3462.
 [[area.polygons]]
 vertices = [
     [3135, 3372],
     [3305, 3372],
-    [3305, 3515],
+    [3305, 3461],
+    [3135, 3461],
+]
+
+# West strip beside the exchange.
+[[area.polygons]]
+vertices = [
+    [3135, 3462],
+    [3142, 3462],
+    [3142, 3515],
     [3135, 3515],
+]
+
+# Everything east of the exchange, up to the north edge.
+[[area.polygons]]
+vertices = [
+    [3188, 3462],
+    [3305, 3462],
+    [3305, 3515],
+    [3188, 3515],
+]
+
+# The sliver north of the exchange walls.
+[[area.polygons]]
+vertices = [
+    [3143, 3511],
+    [3187, 3511],
+    [3187, 3515],
+    [3143, 3515],
 ]

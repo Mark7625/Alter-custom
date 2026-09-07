@@ -4544,3 +4544,101 @@ contentGroup = "content.dark_crab_fishing_spot"
 moveRestrict = "NoMove"
 wanderRange = 0
 
+# Grand Exchange staff stand at their desks: the clerks, pricing experts, bankers, the bond
+# clerk and James do not wander in OSRS (the engine default is a five-tile wander range).
+[[npc]]
+id = "npc.ge_clerk_1"
+inherit = "npc.ge_clerk_1"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_clerk_2"
+inherit = "npc.ge_clerk_2"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_clerk_3"
+inherit = "npc.ge_clerk_3"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_clerk_4"
+inherit = "npc.ge_clerk_4"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_boss"
+inherit = "npc.ge_boss"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_expert_ores"
+inherit = "npc.ge_expert_ores"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_expert_herbs"
+inherit = "npc.ge_expert_herbs"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_expert_runes"
+inherit = "npc.ge_expert_runes"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_expert_logs"
+inherit = "npc.ge_expert_logs"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.ge_expert_combat"
+inherit = "npc.ge_expert_combat"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.banker1_west"
+inherit = "npc.banker1_west"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.banker1_east"
+inherit = "npc.banker1_east"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.banker2_east"
+inherit = "npc.banker2_east"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.deadman_banker_grey_west"
+inherit = "npc.deadman_banker_grey_west"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.bond_james_visible"
+inherit = "npc.bond_james_visible"
+moveRestrict = "NoMove"
+wanderRange = 0
+
+[[npc]]
+id = "npc.clan_clerk"
+inherit = "npc.clan_clerk"
+moveRestrict = "NoMove"
+wanderRange = 0
+
