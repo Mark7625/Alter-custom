@@ -28,6 +28,10 @@ constructor(
             return
         }
 
+        if (npc.ignoreCombatInteractions) {
+            return
+        }
+
         val huntMode = npc.huntMode
         val huntDisabled = npc.huntRange == 0 || huntMode == null
         if (huntDisabled) {
