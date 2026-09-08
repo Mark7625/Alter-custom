@@ -8,7 +8,6 @@ import dev.openrune.types.StatType
 import dev.or2.central.account.Rights
 import jakarta.inject.Inject
 import kotlin.math.max
-import kotlin.math.min
 import org.rsmod.api.combat.commons.magic.Spellbook
 import org.rsmod.api.config.Constants
 import org.rsmod.api.invtx.invAdd
@@ -317,11 +316,11 @@ constructor(
         val x = countDialog("Enter the destination x coordinate:")
         val z = countDialog("Enter the destination z coordinate:")
         val level = countDialog("Enter the destination level (0-3):")
-        if (x > CoordGrid.X_BIT_MASK || z > CoordGrid.Z_BIT_MASK) {
+        if (x !in 0..CoordGrid.X_BIT_MASK || z !in 0..CoordGrid.Z_BIT_MASK) {
             mes("Those coordinates are out of bounds.")
             return false
         }
-        val dest = CoordGrid(x, z, min(level, CoordGrid.LEVEL_BIT_MASK))
+        val dest = CoordGrid(x, z, level.coerceIn(0, CoordGrid.LEVEL_BIT_MASK))
         telejump(dest, TeleportType.Exempt)
         mes("Teleported to $dest.")
         return true
