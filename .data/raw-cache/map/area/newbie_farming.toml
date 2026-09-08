@@ -1,0 +1,108 @@
+# Newbie Farming music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Newbie Farming.
+# Bounds x 1184-1279, z 3665-3711; 4158 tiles as 16 rectangles.
+
+[[area]]
+name = "Newbie Farming"
+area_id = "area.newbie_farming"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1184, 3665],
+    [1242, 3665],
+    [1242, 3711],
+    [1184, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1243, 3666],
+    [1243, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1244, 3667],
+    [1244, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1245, 3668],
+    [1245, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1246, 3669],
+    [1246, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1247, 3670],
+    [1247, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1248, 3671],
+    [1248, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1249, 3672],
+    [1271, 3672],
+    [1271, 3711],
+    [1249, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1272, 3683],
+    [1272, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1273, 3684],
+    [1273, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1274, 3685],
+    [1274, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1275, 3686],
+    [1275, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1276, 3687],
+    [1276, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1277, 3688],
+    [1277, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1278, 3689],
+    [1278, 3711],
+]
+
+[[area.polygons]]
+vertices = [
+    [1279, 3690],
+    [1279, 3711],
+]

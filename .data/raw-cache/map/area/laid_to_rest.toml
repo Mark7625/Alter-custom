@@ -1,0 +1,16 @@
+# Laid to Rest music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Laid to Rest.
+# Bounds x 3648-3711, z 5120-5183; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Laid to Rest"
+area_id = "area.laid_to_rest"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 5120],
+    [3711, 5120],
+    [3711, 5183],
+    [3648, 5183],
+]

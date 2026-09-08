@@ -1,0 +1,16 @@
+# Cave of Beasts music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Cave of Beasts.
+# Bounds x 2752-2815, z 10048-10111; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Cave of Beasts"
+area_id = "area.cave_of_beasts"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 10048],
+    [2815, 10048],
+    [2815, 10111],
+    [2752, 10111],
+]

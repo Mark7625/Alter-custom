@@ -1,0 +1,16 @@
+# Gill Bill music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Gill Bill.
+# Bounds x 1352-1383, z 3624-3647; 768 tiles as 1 rectangles.
+
+[[area]]
+name = "Gill Bill"
+area_id = "area.gill_bill"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1352, 3624],
+    [1383, 3624],
+    [1383, 3647],
+    [1352, 3647],
+]

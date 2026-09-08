@@ -1,0 +1,70 @@
+# The Forsaken Tower music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Forsaken Tower.
+# Bounds x 1368-1399, z 3817-10239; 1171 tiles as 9 rectangles.
+
+[[area]]
+name = "The Forsaken Tower"
+area_id = "area.the_forsaken_tower"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1381, 3817],
+    [1382, 3817],
+    [1382, 3829],
+    [1381, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1378, 3818],
+    [1380, 3818],
+    [1380, 3829],
+    [1378, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1383, 3818],
+    [1385, 3818],
+    [1385, 3829],
+    [1383, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1377, 3819],
+    [1377, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1386, 3819],
+    [1386, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1387, 3820],
+    [1387, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1376, 3821],
+    [1376, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1388, 3822],
+    [1388, 3829],
+]
+
+[[area.polygons]]
+vertices = [
+    [1368, 10208],
+    [1399, 10208],
+    [1399, 10239],
+    [1368, 10239],
+]

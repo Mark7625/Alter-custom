@@ -1,3 +1,6 @@
+# Regenerated as rectangles from the OSRS wiki music map: 21 tiles moved to
+# neighbouring music areas and 80 tiles were added.
+
 [[area]]
 name = "Camelot"
 area_id = "area.camelot"
@@ -7,6 +10,40 @@ levels = [0, 1, 2, 3]
 vertices = [
     [2740, 3470],
     [2790, 3470],
-    [2790, 3515],
+    [2790, 3494],
+    [2740, 3494],
+]
+
+[[area.polygons]]
+vertices = [
+    [2740, 3495],
+    [2789, 3495],
+]
+
+[[area.polygons]]
+vertices = [
+    [2740, 3496],
+    [2788, 3496],
+    [2788, 3515],
     [2740, 3515],
+]
+
+[[area.polygons]]
+vertices = [
+    [2789, 3505],
+    [2789, 3515],
+]
+
+[[area.polygons]]
+vertices = [
+    [2790, 3507],
+    [2790, 3515],
+]
+
+[[area.polygons]]
+vertices = [
+    [2744, 3516],
+    [2783, 3516],
+    [2783, 3517],
+    [2744, 3517],
 ]

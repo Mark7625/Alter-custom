@@ -1,0 +1,16 @@
+# The Part Where You Die music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Part Where You Die.
+# Bounds x 3008-3071, z 5925-5951; 1728 tiles as 1 rectangles.
+
+[[area]]
+name = "The Part Where You Die"
+area_id = "area.the_part_where_you_die"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5925],
+    [3071, 5925],
+    [3071, 5951],
+    [3008, 5951],
+]

@@ -1,0 +1,32 @@
+# Lament of Meiyerditch music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lament of Meiyerditch.
+# Bounds x 2368-3647, z 4608-9727; 9696 tiles as 3 rectangles.
+
+[[area]]
+name = "Lament of Meiyerditch"
+area_id = "area.lament_of_meiyerditch"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 4608],
+    [2431, 4608],
+    [2431, 4671],
+    [2368, 4671],
+]
+
+[[area.polygons]]
+vertices = [
+    [3584, 9600],
+    [3647, 9600],
+    [3647, 9663],
+    [3584, 9663],
+]
+
+[[area.polygons]]
+vertices = [
+    [3616, 9681],
+    [3647, 9681],
+    [3647, 9727],
+    [3616, 9727],
+]

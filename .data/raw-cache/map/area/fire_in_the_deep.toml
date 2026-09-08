@@ -1,0 +1,16 @@
+# Fire in the Deep music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Fire in the Deep.
+# Bounds x 3200-3263, z 5696-5759; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Fire in the Deep"
+area_id = "area.fire_in_the_deep"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3200, 5696],
+    [3263, 5696],
+    [3263, 5759],
+    [3200, 5759],
+]

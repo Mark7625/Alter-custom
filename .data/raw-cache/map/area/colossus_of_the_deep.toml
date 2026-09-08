@@ -1,0 +1,16 @@
+# Colossus of the Deep music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Colossus of the Deep.
+# Bounds x 2048-2111, z 6336-6399; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Colossus of the Deep"
+area_id = "area.colossus_of_the_deep"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 6336],
+    [2111, 6336],
+    [2111, 6399],
+    [2048, 6399],
+]

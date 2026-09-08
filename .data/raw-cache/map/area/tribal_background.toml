@@ -1,0 +1,300 @@
+# Tribal Background music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Tribal Background.
+# Bounds x 2771-2829, z 3052-3113; 2760 tiles as 46 rectangles.
+
+[[area]]
+name = "Tribal Background"
+area_id = "area.tribal_background"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2788, 3052],
+    [2791, 3052],
+    [2791, 3112],
+    [2788, 3112],
+]
+
+[[area.polygons]]
+vertices = [
+    [2785, 3053],
+    [2787, 3053],
+    [2787, 3112],
+    [2785, 3112],
+]
+
+[[area.polygons]]
+vertices = [
+    [2792, 3053],
+    [2794, 3053],
+    [2794, 3113],
+    [2792, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2784, 3054],
+    [2784, 3111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2795, 3054],
+    [2795, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2778, 3055],
+    [2781, 3055],
+    [2781, 3107],
+    [2778, 3107],
+]
+
+[[area.polygons]]
+vertices = [
+    [2783, 3055],
+    [2783, 3111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2796, 3055],
+    [2796, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2798, 3055],
+    [2801, 3055],
+    [2801, 3113],
+    [2798, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2782, 3056],
+    [2782, 3110],
+]
+
+[[area.polygons]]
+vertices = [
+    [2797, 3056],
+    [2797, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2802, 3056],
+    [2802, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2803, 3057],
+    [2805, 3057],
+    [2805, 3113],
+    [2803, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2777, 3058],
+    [2777, 3106],
+]
+
+[[area.polygons]]
+vertices = [
+    [2806, 3058],
+    [2806, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2776, 3059],
+    [2776, 3105],
+]
+
+[[area.polygons]]
+vertices = [
+    [2807, 3059],
+    [2808, 3059],
+    [2808, 3113],
+    [2807, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2775, 3060],
+    [2775, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2809, 3060],
+    [2809, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2773, 3061],
+    [2774, 3061],
+    [2774, 3068],
+    [2773, 3068],
+]
+
+[[area.polygons]]
+vertices = [
+    [2810, 3061],
+    [2810, 3112],
+]
+
+[[area.polygons]]
+vertices = [
+    [2811, 3062],
+    [2811, 3112],
+]
+
+[[area.polygons]]
+vertices = [
+    [2812, 3063],
+    [2813, 3063],
+    [2813, 3111],
+    [2812, 3111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2772, 3064],
+    [2772, 3067],
+]
+
+[[area.polygons]]
+vertices = [
+    [2814, 3064],
+    [2814, 3110],
+]
+
+[[area.polygons]]
+vertices = [
+    [2815, 3065],
+    [2815, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2816, 3067],
+    [2816, 3108],
+]
+
+[[area.polygons]]
+vertices = [
+    [2817, 3068],
+    [2818, 3068],
+    [2818, 3106],
+    [2817, 3106],
+]
+
+[[area.polygons]]
+vertices = [
+    [2774, 3069],
+    [2774, 3070],
+]
+
+[[area.polygons]]
+vertices = [
+    [2819, 3069],
+    [2819, 3105],
+]
+
+[[area.polygons]]
+vertices = [
+    [2820, 3071],
+    [2820, 3104],
+]
+
+[[area.polygons]]
+vertices = [
+    [2821, 3072],
+    [2821, 3101],
+]
+
+[[area.polygons]]
+vertices = [
+    [2775, 3073],
+    [2775, 3104],
+]
+
+[[area.polygons]]
+vertices = [
+    [2822, 3073],
+    [2822, 3100],
+]
+
+[[area.polygons]]
+vertices = [
+    [2774, 3075],
+    [2774, 3103],
+]
+
+[[area.polygons]]
+vertices = [
+    [2823, 3075],
+    [2823, 3097],
+]
+
+[[area.polygons]]
+vertices = [
+    [2824, 3076],
+    [2827, 3076],
+    [2827, 3090],
+    [2824, 3090],
+]
+
+[[area.polygons]]
+vertices = [
+    [2773, 3077],
+    [2773, 3100],
+]
+
+[[area.polygons]]
+vertices = [
+    [2828, 3077],
+    [2828, 3089],
+]
+
+[[area.polygons]]
+vertices = [
+    [2829, 3078],
+    [2829, 3088],
+]
+
+[[area.polygons]]
+vertices = [
+    [2772, 3079],
+    [2772, 3099],
+]
+
+[[area.polygons]]
+vertices = [
+    [2771, 3082],
+    [2771, 3097],
+]
+
+[[area.polygons]]
+vertices = [[2817, 3107]]
+
+[[area.polygons]]
+vertices = [
+    [2779, 3108],
+    [2781, 3108],
+]
+
+[[area.polygons]]
+vertices = [[2781, 3109]]
+
+[[area.polygons]]
+vertices = [
+    [2789, 3113],
+    [2791, 3113],
+]

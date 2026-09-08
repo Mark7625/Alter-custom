@@ -1,0 +1,40 @@
+# Scape Cave music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Scape Cave.
+# Bounds x 1536-3286, z 9344-9919; 21952 tiles as 4 rectangles.
+
+[[area]]
+name = "Scape Cave"
+area_id = "area.scape_cave"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 9344],
+    [3071, 9344],
+    [3071, 9407],
+    [3008, 9407],
+]
+
+[[area.polygons]]
+vertices = [
+    [3072, 9472],
+    [3135, 9472],
+    [3135, 9535],
+    [3072, 9535],
+]
+
+[[area.polygons]]
+vertices = [
+    [1536, 9856],
+    [1599, 9856],
+    [1599, 9919],
+    [1536, 9919],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9856],
+    [3286, 9856],
+    [3286, 9919],
+    [3136, 9919],
+]

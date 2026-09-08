@@ -1,0 +1,24 @@
+# Clan Wars music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Clan Wars.
+# Bounds x 3136-3583, z 4672-5119; 167936 tiles as 2 rectangles.
+
+[[area]]
+name = "Clan Wars"
+area_id = "area.clan_wars"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 4672],
+    [3583, 4672],
+    [3583, 5119],
+    [3264, 5119],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 4928],
+    [3263, 4928],
+    [3263, 5119],
+    [3136, 5119],
+]

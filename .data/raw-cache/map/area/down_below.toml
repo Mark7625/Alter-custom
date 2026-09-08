@@ -1,0 +1,16 @@
+# Down Below music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Down Below.
+# Bounds x 3072-3135, z 9600-9727; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Down Below"
+area_id = "area.down_below"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3072, 9600],
+    [3135, 9600],
+    [3135, 9727],
+    [3072, 9727],
+]

@@ -1,0 +1,24 @@
+# The Ruins of Camdozaal music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Ruins of Camdozaal.
+# Bounds x 2880-3071, z 5760-5887; 16384 tiles as 2 rectangles.
+
+[[area]]
+name = "The Ruins of Camdozaal"
+area_id = "area.the_ruins_of_camdozaal"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2880, 5760],
+    [3071, 5760],
+    [3071, 5823],
+    [2880, 5823],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 5824],
+    [2943, 5824],
+    [2943, 5887],
+    [2880, 5887],
+]

@@ -1,0 +1,74 @@
+# A Desolate Past music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: A Desolate Past.
+# Bounds x 1280-1343, z 9344-9557; 12857 tiles as 9 rectangles.
+
+[[area]]
+name = "A Desolate Past"
+area_id = "area.a_desolate_past"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1280, 9344],
+    [1299, 9344],
+    [1299, 9557],
+    [1280, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1338, 9358],
+    [1343, 9358],
+    [1343, 9557],
+    [1338, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1321, 9360],
+    [1337, 9360],
+    [1337, 9557],
+    [1321, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1300, 9363],
+    [1308, 9363],
+    [1308, 9557],
+    [1300, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 9363],
+    [1320, 9363],
+    [1320, 9557],
+    [1315, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1314, 9376],
+    [1314, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1309, 9377],
+    [1311, 9377],
+    [1311, 9557],
+    [1309, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1313, 9377],
+    [1313, 9557],
+]
+
+[[area.polygons]]
+vertices = [
+    [1312, 9378],
+    [1312, 9557],
+]

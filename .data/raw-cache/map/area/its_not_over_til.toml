@@ -1,0 +1,16 @@
+# It's not over 'til... music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: It's not over 'til... (plus verzik_combat from wiki polygons sharing this footprint).
+# Bounds x 3136-3199, z 4288-4351; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "It's not over 'til..."
+area_id = "area.its_not_over_til"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 4288],
+    [3199, 4288],
+    [3199, 4351],
+    [3136, 4351],
+]

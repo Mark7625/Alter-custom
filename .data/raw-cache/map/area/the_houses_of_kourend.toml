@@ -1,0 +1,16 @@
+# The Houses of Kourend music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Houses of Kourend.
+# Bounds x 1536-1599, z 9920-9983; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Houses of Kourend"
+area_id = "area.the_houses_of_kourend"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1536, 9920],
+    [1599, 9920],
+    [1599, 9983],
+    [1536, 9983],
+]

@@ -1,0 +1,222 @@
+# The Doors of Dinh music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Doors of Dinh.
+# Bounds x 1472-1727, z 3860-3967; 19686 tiles as 31 rectangles.
+
+[[area]]
+name = "The Doors of Dinh"
+area_id = "area.the_doors_of_dinh"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1528, 3860],
+    [1594, 3860],
+    [1594, 3967],
+    [1528, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1595, 3876],
+    [1599, 3876],
+    [1599, 3967],
+    [1595, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1600, 3891],
+    [1619, 3891],
+    [1619, 3967],
+    [1600, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1620, 3892],
+    [1620, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1621, 3893],
+    [1621, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1622, 3894],
+    [1622, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1623, 3895],
+    [1623, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1624, 3896],
+    [1624, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1625, 3897],
+    [1625, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1626, 3898],
+    [1626, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1627, 3899],
+    [1627, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1628, 3900],
+    [1628, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1629, 3901],
+    [1629, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1630, 3902],
+    [1630, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1631, 3903],
+    [1631, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1472, 3904],
+    [1527, 3904],
+    [1527, 3967],
+    [1472, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1632, 3904],
+    [1727, 3904],
+    [1727, 3956],
+    [1632, 3956],
+]
+
+[[area.polygons]]
+vertices = [
+    [1632, 3957],
+    [1709, 3957],
+    [1709, 3960],
+    [1632, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [1711, 3957],
+    [1712, 3957],
+    [1712, 3965],
+    [1711, 3965],
+]
+
+[[area.polygons]]
+vertices = [
+    [1714, 3957],
+    [1727, 3957],
+    [1727, 3958],
+    [1714, 3958],
+]
+
+[[area.polygons]]
+vertices = [
+    [1715, 3959],
+    [1727, 3959],
+    [1727, 3961],
+    [1715, 3961],
+]
+
+[[area.polygons]]
+vertices = [
+    [1632, 3961],
+    [1699, 3961],
+]
+
+[[area.polygons]]
+vertices = [
+    [1703, 3961],
+    [1708, 3961],
+]
+
+[[area.polygons]]
+vertices = [
+    [1632, 3962],
+    [1698, 3962],
+    [1698, 3967],
+    [1632, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1716, 3962],
+    [1727, 3962],
+    [1727, 3963],
+    [1716, 3963],
+]
+
+[[area.polygons]]
+vertices = [
+    [1717, 3964],
+    [1718, 3964],
+]
+
+[[area.polygons]]
+vertices = [
+    [1721, 3964],
+    [1727, 3964],
+]
+
+[[area.polygons]]
+vertices = [
+    [1699, 3965],
+    [1700, 3965],
+    [1700, 3967],
+    [1699, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1722, 3965],
+    [1727, 3965],
+]
+
+[[area.polygons]]
+vertices = [
+    [1701, 3966],
+    [1702, 3966],
+    [1702, 3967],
+    [1701, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [1723, 3966],
+    [1727, 3966],
+    [1727, 3967],
+    [1723, 3967],
+]

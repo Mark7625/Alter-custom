@@ -1,0 +1,16 @@
+# On the Wing music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: On the Wing.
+# Bounds x 3008-3071, z 4480-4543; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "On the Wing"
+area_id = "area.on_the_wing"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 4480],
+    [3071, 4480],
+    [3071, 4543],
+    [3008, 4543],
+]

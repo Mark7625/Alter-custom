@@ -1,0 +1,16 @@
+# The Ancient Prison music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Ancient Prison.
+# Bounds x 2816-2908, z 5184-5247; 5952 tiles as 1 rectangles.
+
+[[area]]
+name = "The Ancient Prison"
+area_id = "area.the_ancient_prison"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 5184],
+    [2908, 5184],
+    [2908, 5247],
+    [2816, 5247],
+]

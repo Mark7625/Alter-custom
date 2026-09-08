@@ -1,0 +1,16 @@
+# Undead Dungeon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Undead Dungeon.
+# Bounds x 3136-3199, z 4544-4671; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Undead Dungeon"
+area_id = "area.undead_dungeon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 4544],
+    [3199, 4544],
+    [3199, 4671],
+    [3136, 4671],
+]

@@ -1,0 +1,16 @@
+# Troubled Waters music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Troubled Waters.
+# Bounds x 2240-2303, z 9984-10047; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Troubled Waters"
+area_id = "area.troubled_waters"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2240, 9984],
+    [2303, 9984],
+    [2303, 10047],
+    [2240, 10047],
+]

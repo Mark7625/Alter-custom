@@ -1,0 +1,16 @@
+# Waste Defaced music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Waste Defaced.
+# Bounds x 1472-1535, z 4224-4351; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Waste Defaced"
+area_id = "area.waste_defaced"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1472, 4224],
+    [1535, 4224],
+    [1535, 4351],
+    [1472, 4351],
+]

@@ -1,0 +1,121 @@
+# The Enclave music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Enclave.
+# Bounds x 3123-3199, z 3617-10047; 4880 tiles as 16 rectangles.
+
+[[area]]
+name = "The Enclave"
+area_id = "area.the_enclave"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3130, 3617],
+    [3138, 3617],
+    [3138, 3639],
+    [3130, 3639],
+]
+
+[[area.polygons]]
+vertices = [
+    [3126, 3618],
+    [3129, 3618],
+    [3129, 3639],
+    [3126, 3639],
+]
+
+[[area.polygons]]
+vertices = [
+    [3139, 3618],
+    [3143, 3618],
+    [3143, 3645],
+    [3139, 3645],
+]
+
+[[area.polygons]]
+vertices = [
+    [3144, 3620],
+    [3150, 3620],
+    [3150, 3644],
+    [3144, 3644],
+]
+
+[[area.polygons]]
+vertices = [
+    [3123, 3622],
+    [3125, 3622],
+    [3125, 3632],
+    [3123, 3632],
+]
+
+[[area.polygons]]
+vertices = [
+    [3151, 3624],
+    [3151, 3646],
+]
+
+[[area.polygons]]
+vertices = [
+    [3152, 3626],
+    [3152, 3646],
+]
+
+[[area.polygons]]
+vertices = [
+    [3153, 3628],
+    [3157, 3628],
+    [3157, 3633],
+    [3153, 3633],
+]
+
+[[area.polygons]]
+vertices = [
+    [3125, 3633],
+    [3125, 3639],
+]
+
+[[area.polygons]]
+vertices = [
+    [3153, 3634],
+    [3154, 3634],
+    [3154, 3646],
+    [3153, 3646],
+]
+
+[[area.polygons]]
+vertices = [
+    [3155, 3636],
+    [3157, 3636],
+    [3157, 3640],
+    [3155, 3640],
+]
+
+[[area.polygons]]
+vertices = [
+    [3138, 3640],
+    [3138, 3645],
+]
+
+[[area.polygons]]
+vertices = [
+    [3155, 3641],
+    [3155, 3646],
+]
+
+[[area.polygons]]
+vertices = [[3144, 3645]]
+
+[[area.polygons]]
+vertices = [
+    [3148, 3645],
+    [3150, 3645],
+    [3150, 3646],
+    [3148, 3646],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9984],
+    [3199, 9984],
+    [3199, 10047],
+    [3136, 10047],
+]

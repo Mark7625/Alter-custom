@@ -1,0 +1,16 @@
+# The Monsters Below music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Monsters Below.
+# Bounds x 2432-2495, z 10112-10175; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Monsters Below"
+area_id = "area.the_monsters_below"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 10112],
+    [2495, 10112],
+    [2495, 10175],
+    [2432, 10175],
+]

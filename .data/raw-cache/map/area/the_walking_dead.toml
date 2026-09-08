@@ -1,0 +1,16 @@
+# The Walking Dead music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Walking Dead.
+# Bounds x 1472-1535, z 9920-9983; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Walking Dead"
+area_id = "area.the_walking_dead"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1472, 9920],
+    [1535, 9920],
+    [1535, 9983],
+    [1472, 9983],
+]

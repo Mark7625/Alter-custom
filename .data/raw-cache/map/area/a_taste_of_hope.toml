@@ -1,0 +1,16 @@
+# A Taste of Hope music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: A Taste of Hope.
+# Bounds x 2048-2111, z 4864-4927; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "A Taste of Hope"
+area_id = "area.a_taste_of_hope"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 4864],
+    [2111, 4864],
+    [2111, 4927],
+    [2048, 4927],
+]

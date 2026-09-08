@@ -1,0 +1,24 @@
+# Brimstail's Scales music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Brimstail's Scales.
+# Bounds x 2368-2415, z 9792-9855; 2816 tiles as 2 rectangles.
+
+[[area]]
+name = "Brimstail's Scales"
+area_id = "area.brimstails_scales"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 9792],
+    [2399, 9792],
+    [2399, 9855],
+    [2368, 9855],
+]
+
+[[area.polygons]]
+vertices = [
+    [2400, 9808],
+    [2415, 9808],
+    [2415, 9855],
+    [2400, 9855],
+]

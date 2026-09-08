@@ -1,0 +1,289 @@
+# The Galleon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Galleon.
+# Bounds x 2186-2229, z 3784-3834; 1008 tiles as 45 rectangles.
+
+[[area]]
+name = "The Galleon"
+area_id = "area.the_galleon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2219, 3784],
+    [2229, 3784],
+    [2229, 3807],
+    [2219, 3807],
+]
+
+[[area.polygons]]
+vertices = [
+    [2212, 3794],
+    [2213, 3794],
+    [2213, 3795],
+    [2212, 3795],
+]
+
+[[area.polygons]]
+vertices = [
+    [2213, 3796],
+    [2216, 3796],
+    [2216, 3800],
+    [2213, 3800],
+]
+
+[[area.polygons]]
+vertices = [
+    [2217, 3797],
+    [2218, 3797],
+]
+
+[[area.polygons]]
+vertices = [
+    [2206, 3798],
+    [2207, 3798],
+]
+
+[[area.polygons]]
+vertices = [
+    [2205, 3799],
+    [2206, 3799],
+    [2206, 3800],
+    [2205, 3800],
+]
+
+[[area.polygons]]
+vertices = [
+    [2204, 3801],
+    [2205, 3801],
+    [2205, 3833],
+    [2204, 3833],
+]
+
+[[area.polygons]]
+vertices = [
+    [2213, 3801],
+    [2215, 3801],
+    [2215, 3810],
+    [2213, 3810],
+]
+
+[[area.polygons]]
+vertices = [
+    [2191, 3802],
+    [2191, 3810],
+]
+
+[[area.polygons]]
+vertices = [
+    [2203, 3802],
+    [2203, 3830],
+]
+
+[[area.polygons]]
+vertices = [
+    [2210, 3802],
+    [2210, 3803],
+]
+
+[[area.polygons]]
+vertices = [
+    [2190, 3803],
+    [2190, 3810],
+]
+
+[[area.polygons]]
+vertices = [
+    [2192, 3803],
+    [2192, 3811],
+]
+
+[[area.polygons]]
+vertices = [
+    [2196, 3803],
+    [2198, 3803],
+    [2198, 3824],
+    [2196, 3824],
+]
+
+[[area.polygons]]
+vertices = [
+    [2202, 3803],
+    [2202, 3828],
+]
+
+[[area.polygons]]
+vertices = [
+    [2206, 3803],
+    [2206, 3834],
+]
+
+[[area.polygons]]
+vertices = [
+    [2211, 3803],
+    [2212, 3803],
+    [2212, 3830],
+    [2211, 3830],
+]
+
+[[area.polygons]]
+vertices = [
+    [2189, 3804],
+    [2189, 3810],
+]
+
+[[area.polygons]]
+vertices = [
+    [2193, 3804],
+    [2193, 3812],
+]
+
+[[area.polygons]]
+vertices = [
+    [2195, 3804],
+    [2195, 3814],
+]
+
+[[area.polygons]]
+vertices = [
+    [2199, 3804],
+    [2199, 3827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2201, 3804],
+    [2201, 3827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2207, 3804],
+    [2208, 3804],
+    [2208, 3834],
+    [2207, 3834],
+]
+
+[[area.polygons]]
+vertices = [
+    [2188, 3805],
+    [2188, 3810],
+]
+
+[[area.polygons]]
+vertices = [
+    [2194, 3805],
+    [2194, 3814],
+]
+
+[[area.polygons]]
+vertices = [
+    [2200, 3805],
+    [2200, 3827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2209, 3805],
+    [2209, 3833],
+]
+
+[[area.polygons]]
+vertices = [
+    [2186, 3806],
+    [2187, 3806],
+    [2187, 3809],
+    [2186, 3809],
+]
+
+[[area.polygons]]
+vertices = [
+    [2210, 3806],
+    [2210, 3831],
+]
+
+[[area.polygons]]
+vertices = [
+    [2220, 3808],
+    [2228, 3808],
+    [2228, 3810],
+    [2220, 3810],
+]
+
+[[area.polygons]]
+vertices = [[2187, 3810]]
+
+[[area.polygons]]
+vertices = [
+    [2213, 3811],
+    [2214, 3811],
+    [2214, 3828],
+    [2213, 3828],
+]
+
+[[area.polygons]]
+vertices = [
+    [2221, 3811],
+    [2227, 3811],
+    [2227, 3812],
+    [2221, 3812],
+]
+
+[[area.polygons]]
+vertices = [
+    [2215, 3812],
+    [2215, 3827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2222, 3813],
+    [2226, 3813],
+]
+
+[[area.polygons]]
+vertices = [
+    [2216, 3816],
+    [2216, 3827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2217, 3817],
+    [2217, 3827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2195, 3818],
+    [2195, 3823],
+]
+
+[[area.polygons]]
+vertices = [
+    [2218, 3818],
+    [2218, 3820],
+]
+
+[[area.polygons]]
+vertices = [
+    [2218, 3824],
+    [2218, 3826],
+]
+
+[[area.polygons]]
+vertices = [
+    [2197, 3825],
+    [2198, 3825],
+]
+
+[[area.polygons]]
+vertices = [[2198, 3826]]
+
+[[area.polygons]]
+vertices = [[2213, 3829]]
+
+[[area.polygons]]
+vertices = [[2211, 3831]]
+
+[[area.polygons]]
+vertices = [[2205, 3834]]

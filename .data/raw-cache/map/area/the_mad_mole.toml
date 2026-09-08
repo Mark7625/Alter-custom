@@ -1,0 +1,16 @@
+# The Mad Mole music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Mad Mole.
+# Bounds x 1728-1791, z 5120-5247; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "The Mad Mole"
+area_id = "area.the_mad_mole"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1728, 5120],
+    [1791, 5120],
+    [1791, 5247],
+    [1728, 5247],
+]

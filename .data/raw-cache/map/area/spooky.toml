@@ -1,0 +1,16 @@
+# Spooky music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Spooky.
+# Bounds x 1920-1951, z 4992-5023; 1024 tiles as 1 rectangles.
+
+[[area]]
+name = "Spooky"
+area_id = "area.spooky"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1920, 4992],
+    [1951, 4992],
+    [1951, 5023],
+    [1920, 5023],
+]

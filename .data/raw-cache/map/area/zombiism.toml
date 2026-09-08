@@ -1,0 +1,24 @@
+# Zombiism music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Zombiism.
+# Bounds x 3776-3839, z 2816-9279; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Zombiism"
+area_id = "area.zombiism"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3776, 2816],
+    [3839, 2816],
+    [3839, 2879],
+    [3776, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [3776, 9216],
+    [3839, 9216],
+    [3839, 9279],
+    [3776, 9279],
+]

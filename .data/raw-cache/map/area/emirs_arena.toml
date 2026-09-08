@@ -28,3 +28,46 @@ vertices = [
     [3392, 3292],
     [3308, 3292],
 ]
+
+# Extension traced from the OSRS wiki music map (2066 tiles).
+
+[[area.polygons]]
+vertices = [
+    [3328, 3196],
+    [3330, 3196],
+    [3330, 3199],
+    [3328, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3326, 3197],
+    [3327, 3197],
+    [3327, 3199],
+    [3326, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3331, 3197],
+    [3331, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3332, 3198],
+    [3333, 3198],
+    [3333, 3199],
+    [3332, 3199],
+]
+
+[[area.polygons]]
+vertices = [[3334, 3199]]
+
+[[area.polygons]]
+vertices = [
+    [3393, 3200],
+    [3422, 3200],
+    [3422, 3267],
+    [3393, 3267],
+]

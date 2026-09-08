@@ -1,0 +1,86 @@
+# Attack 4 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Attack 4.
+# Bounds x 2176-2611, z 3151-9727; 4686 tiles as 12 rectangles.
+
+[[area]]
+name = "Attack 4"
+area_id = "area.attack_4"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2585, 3151],
+    [2602, 3151],
+    [2602, 3172],
+    [2585, 3172],
+]
+
+[[area.polygons]]
+vertices = [
+    [2604, 3151],
+    [2604, 3170],
+]
+
+[[area.polygons]]
+vertices = [
+    [2584, 3152],
+    [2584, 3171],
+]
+
+[[area.polygons]]
+vertices = [
+    [2603, 3152],
+    [2603, 3171],
+]
+
+[[area.polygons]]
+vertices = [
+    [2605, 3152],
+    [2605, 3169],
+]
+
+[[area.polygons]]
+vertices = [
+    [2583, 3153],
+    [2583, 3170],
+]
+
+[[area.polygons]]
+vertices = [
+    [2606, 3153],
+    [2606, 3168],
+]
+
+[[area.polygons]]
+vertices = [
+    [2582, 3154],
+    [2582, 3169],
+]
+
+[[area.polygons]]
+vertices = [
+    [2581, 3155],
+    [2581, 3168],
+]
+
+[[area.polygons]]
+vertices = [
+    [2607, 3156],
+    [2607, 3167],
+]
+
+[[area.polygons]]
+vertices = [
+    [2608, 3158],
+    [2611, 3158],
+    [2611, 3167],
+    [2608, 3167],
+]
+
+[[area.polygons]]
+vertices = [
+    [2176, 9664],
+    [2239, 9664],
+    [2239, 9727],
+    [2176, 9727],
+]

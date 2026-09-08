@@ -1,0 +1,16 @@
+# The Fragment music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Fragment.
+# Bounds x 3264-3327, z 5888-5951; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Fragment"
+area_id = "area.the_fragment"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 5888],
+    [3327, 5888],
+    [3327, 5951],
+    [3264, 5951],
+]

@@ -1,0 +1,246 @@
+# Business as Unusual music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Business as Unusual.
+# Bounds x 2782-2812, z 2495-2535; 658 tiles as 37 rectangles.
+
+[[area]]
+name = "Business as Unusual"
+area_id = "area.business_as_unusual"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2808, 2495],
+    [2809, 2495],
+    [2809, 2504],
+    [2808, 2504],
+]
+
+[[area.polygons]]
+vertices = [
+    [2810, 2496],
+    [2810, 2503],
+]
+
+[[area.polygons]]
+vertices = [
+    [2793, 2498],
+    [2794, 2498],
+    [2794, 2530],
+    [2793, 2530],
+]
+
+[[area.polygons]]
+vertices = [
+    [2800, 2498],
+    [2801, 2498],
+    [2801, 2522],
+    [2800, 2522],
+]
+
+[[area.polygons]]
+vertices = [
+    [2795, 2499],
+    [2795, 2529],
+]
+
+[[area.polygons]]
+vertices = [
+    [2802, 2499],
+    [2802, 2522],
+]
+
+[[area.polygons]]
+vertices = [
+    [2790, 2501],
+    [2792, 2501],
+    [2792, 2510],
+    [2790, 2510],
+]
+
+[[area.polygons]]
+vertices = [
+    [2796, 2501],
+    [2799, 2501],
+    [2799, 2523],
+    [2796, 2523],
+]
+
+[[area.polygons]]
+vertices = [
+    [2803, 2501],
+    [2805, 2501],
+    [2805, 2523],
+    [2803, 2523],
+]
+
+[[area.polygons]]
+vertices = [
+    [2806, 2502],
+    [2807, 2502],
+]
+
+[[area.polygons]]
+vertices = [
+    [2806, 2509],
+    [2808, 2509],
+    [2808, 2510],
+    [2806, 2510],
+]
+
+[[area.polygons]]
+vertices = [
+    [2806, 2511],
+    [2806, 2513],
+]
+
+[[area.polygons]]
+vertices = [
+    [2789, 2514],
+    [2792, 2514],
+    [2792, 2531],
+    [2789, 2531],
+]
+
+[[area.polygons]]
+vertices = [
+    [2787, 2515],
+    [2788, 2515],
+    [2788, 2531],
+    [2787, 2531],
+]
+
+[[area.polygons]]
+vertices = [
+    [2786, 2516],
+    [2786, 2531],
+]
+
+[[area.polygons]]
+vertices = [
+    [2784, 2517],
+    [2785, 2517],
+    [2785, 2530],
+    [2784, 2530],
+]
+
+[[area.polygons]]
+vertices = [
+    [2783, 2520],
+    [2783, 2527],
+]
+
+[[area.polygons]]
+vertices = [
+    [2806, 2520],
+    [2806, 2523],
+]
+
+[[area.polygons]]
+vertices = [
+    [2782, 2521],
+    [2782, 2523],
+]
+
+[[area.polygons]]
+vertices = [
+    [2807, 2521],
+    [2809, 2521],
+    [2809, 2522],
+    [2807, 2522],
+]
+
+[[area.polygons]]
+vertices = [
+    [2796, 2524],
+    [2798, 2524],
+    [2798, 2529],
+    [2796, 2529],
+]
+
+[[area.polygons]]
+vertices = [
+    [2808, 2526],
+    [2809, 2526],
+    [2809, 2533],
+    [2808, 2533],
+]
+
+[[area.polygons]]
+vertices = [
+    [2799, 2527],
+    [2799, 2530],
+]
+
+[[area.polygons]]
+vertices = [
+    [2810, 2527],
+    [2810, 2532],
+]
+
+[[area.polygons]]
+vertices = [
+    [2800, 2528],
+    [2800, 2531],
+]
+
+[[area.polygons]]
+vertices = [
+    [2807, 2528],
+    [2807, 2535],
+]
+
+[[area.polygons]]
+vertices = [
+    [2811, 2528],
+    [2812, 2528],
+    [2812, 2530],
+    [2811, 2530],
+]
+
+[[area.polygons]]
+vertices = [
+    [2801, 2529],
+    [2801, 2532],
+]
+
+[[area.polygons]]
+vertices = [
+    [2806, 2529],
+    [2806, 2533],
+]
+
+[[area.polygons]]
+vertices = [
+    [2802, 2530],
+    [2802, 2532],
+]
+
+[[area.polygons]]
+vertices = [
+    [2805, 2530],
+    [2805, 2532],
+]
+
+[[area.polygons]]
+vertices = [[2785, 2531]]
+
+[[area.polygons]]
+vertices = [
+    [2803, 2531],
+    [2804, 2531],
+]
+
+[[area.polygons]]
+vertices = [[2811, 2531]]
+
+[[area.polygons]]
+vertices = [
+    [2789, 2532],
+    [2791, 2532],
+]
+
+[[area.polygons]]
+vertices = [[2803, 2532]]
+
+[[area.polygons]]
+vertices = [[2808, 2534]]

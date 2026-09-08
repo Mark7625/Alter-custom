@@ -1,0 +1,16 @@
+# In the Clink music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: In the Clink.
+# Bounds x 2048-2111, z 4416-4479; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "In the Clink"
+area_id = "area.in_the_clink"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 4416],
+    [2111, 4416],
+    [2111, 4479],
+    [2048, 4479],
+]

@@ -1,0 +1,16 @@
+# The Maiden's Anger music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Maiden's Anger.
+# Bounds x 3136-3263, z 4416-4479; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "The Maiden's Anger"
+area_id = "area.the_maidens_anger"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 4416],
+    [3263, 4416],
+    [3263, 4479],
+    [3136, 4479],
+]

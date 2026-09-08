@@ -1,0 +1,16 @@
+# Righteousness music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Righteousness.
+# Bounds x 2432-2495, z 4800-4863; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Righteousness"
+area_id = "area.righteousness"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 4800],
+    [2495, 4800],
+    [2495, 4863],
+    [2432, 4863],
+]

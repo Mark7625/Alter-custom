@@ -1,0 +1,174 @@
+# Expecting music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Expecting.
+# Bounds x 2432-2595, z 3211-9759; 7066 tiles as 26 rectangles.
+
+[[area]]
+name = "Expecting"
+area_id = "area.expecting"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2486, 3211],
+    [2492, 3211],
+    [2492, 3241],
+    [2486, 3241],
+]
+
+[[area.polygons]]
+vertices = [
+    [2485, 3212],
+    [2485, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2484, 3213],
+    [2484, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2483, 3214],
+    [2483, 3254],
+]
+
+[[area.polygons]]
+vertices = [
+    [2482, 3215],
+    [2482, 3255],
+]
+
+[[area.polygons]]
+vertices = [
+    [2481, 3216],
+    [2481, 3256],
+]
+
+[[area.polygons]]
+vertices = [
+    [2450, 3217],
+    [2480, 3217],
+    [2480, 3249],
+    [2450, 3249],
+]
+
+[[area.polygons]]
+vertices = [
+    [2449, 3218],
+    [2449, 3248],
+]
+
+[[area.polygons]]
+vertices = [
+    [2448, 3219],
+    [2448, 3247],
+]
+
+[[area.polygons]]
+vertices = [
+    [2447, 3220],
+    [2447, 3246],
+]
+
+[[area.polygons]]
+vertices = [
+    [2446, 3221],
+    [2446, 3245],
+]
+
+[[area.polygons]]
+vertices = [
+    [2486, 3242],
+    [2487, 3242],
+    [2487, 3253],
+    [2486, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2451, 3250],
+    [2480, 3250],
+]
+
+[[area.polygons]]
+vertices = [
+    [2452, 3251],
+    [2480, 3251],
+]
+
+[[area.polygons]]
+vertices = [
+    [2453, 3252],
+    [2480, 3252],
+]
+
+[[area.polygons]]
+vertices = [
+    [2454, 3253],
+    [2480, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2461, 3254],
+    [2480, 3254],
+]
+
+[[area.polygons]]
+vertices = [
+    [2462, 3255],
+    [2480, 3255],
+]
+
+[[area.polygons]]
+vertices = [
+    [2463, 3256],
+    [2480, 3256],
+]
+
+[[area.polygons]]
+vertices = [
+    [2464, 3257],
+    [2480, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2465, 3258],
+    [2479, 3258],
+]
+
+[[area.polygons]]
+vertices = [
+    [2466, 3259],
+    [2478, 3259],
+]
+
+[[area.polygons]]
+vertices = [
+    [2467, 3260],
+    [2477, 3260],
+]
+
+[[area.polygons]]
+vertices = [
+    [2468, 3261],
+    [2476, 3261],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 9600],
+    [2495, 9600],
+    [2495, 9663],
+    [2432, 9663],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9728],
+    [2595, 9728],
+    [2595, 9759],
+    [2560, 9759],
+]

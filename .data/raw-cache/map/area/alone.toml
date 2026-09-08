@@ -1,0 +1,16 @@
+# Alone music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Alone.
+# Bounds x 2560-2623, z 9600-9663; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Alone"
+area_id = "area.alone"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9600],
+    [2623, 9600],
+    [2623, 9663],
+    [2560, 9663],
+]

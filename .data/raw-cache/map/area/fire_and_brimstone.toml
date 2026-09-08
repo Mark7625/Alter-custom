@@ -1,0 +1,16 @@
+# Fire and Brimstone music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Fire and Brimstone.
+# Bounds x 2368-2431, z 5120-5183; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Fire and Brimstone"
+area_id = "area.fire_and_brimstone"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 5120],
+    [2431, 5120],
+    [2431, 5183],
+    [2368, 5183],
+]

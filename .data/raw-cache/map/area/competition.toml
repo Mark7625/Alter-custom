@@ -1,0 +1,16 @@
+# Competition music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Competition.
+# Bounds x 2176-2239, z 4928-4991; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Competition"
+area_id = "area.competition"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2176, 4928],
+    [2239, 4928],
+    [2239, 4991],
+    [2176, 4991],
+]

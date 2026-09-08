@@ -1,0 +1,16 @@
+# Narnode's Theme music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Narnode's Theme.
+# Bounds x 2432-2495, z 9856-9919; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Narnode's Theme"
+area_id = "area.narnodes_theme"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 9856],
+    [2495, 9856],
+    [2495, 9919],
+    [2432, 9919],
+]

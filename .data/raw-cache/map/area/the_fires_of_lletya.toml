@@ -1,0 +1,16 @@
+# The Fires of Lletya music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Fires of Lletya.
+# Bounds x 2880-2943, z 6144-6207; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Fires of Lletya"
+area_id = "area.the_fires_of_lletya"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2880, 6144],
+    [2943, 6144],
+    [2943, 6207],
+    [2880, 6207],
+]

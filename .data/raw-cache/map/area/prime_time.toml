@@ -1,0 +1,16 @@
+# Prime Time music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Prime Time.
+# Bounds x 1920-1983, z 5120-5183; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Prime Time"
+area_id = "area.prime_time"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1920, 5120],
+    [1983, 5120],
+    [1983, 5183],
+    [1920, 5183],
+]

@@ -1,0 +1,24 @@
+# Stalkers music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Stalkers.
+# Bounds x 1240-1343, z 9728-9831; 9216 tiles as 2 rectangles.
+
+[[area]]
+name = "Stalkers"
+area_id = "area.stalkers"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1240, 9728],
+    [1343, 9728],
+    [1343, 9791],
+    [1240, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [1280, 9792],
+    [1343, 9792],
+    [1343, 9831],
+    [1280, 9831],
+]

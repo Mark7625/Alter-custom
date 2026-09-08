@@ -1,0 +1,32 @@
+# Fear and Loathing music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Fear and Loathing.
+# Bounds x 3040-3327, z 5216-9855; 2003 tiles as 3 rectangles.
+
+[[area]]
+name = "Fear and Loathing"
+area_id = "area.fear_and_loathing"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3040, 5216],
+    [3071, 5216],
+    [3071, 5247],
+    [3040, 5247],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 9824],
+    [3327, 9824],
+    [3327, 9852],
+    [3296, 9852],
+]
+
+[[area.polygons]]
+vertices = [
+    [3311, 9853],
+    [3327, 9853],
+    [3327, 9855],
+    [3311, 9855],
+]

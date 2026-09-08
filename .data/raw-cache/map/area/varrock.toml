@@ -1,21 +1,465 @@
+# The city minus the Grand Exchange rectangle (x 3143-3187, z 3462-3510), which is its own music
+# area (see grand_exchange.toml). Four pieces cover everything around it.
+# South of the exchange: the whole city below z 3462.
+# West strip beside the exchange.
+# Everything east of the exchange, up to the north edge.
+# The sliver north of the exchange walls.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 741 tiles moved to
+# neighbouring music areas and 10571 tiles were added.
+
 [[area]]
 name = "Varrock"
 area_id = "area.varrock"
 levels = [0, 1, 2, 3]
 
-# The city minus the Grand Exchange rectangle (x 3143-3187, z 3462-3510), which is its own music
-# area (see grand_exchange.toml). Four pieces cover everything around it.
+[[area.polygons]]
+vertices = [
+    [3267, 3329],
+    [3270, 3329],
+    [3270, 3522],
+    [3267, 3522],
+]
 
-# South of the exchange: the whole city below z 3462.
+[[area.polygons]]
+vertices = [
+    [3307, 3329],
+    [3311, 3329],
+    [3311, 3358],
+    [3307, 3358],
+]
+
+[[area.polygons]]
+vertices = [
+    [3253, 3330],
+    [3266, 3330],
+    [3266, 3522],
+    [3253, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3271, 3330],
+    [3299, 3330],
+    [3299, 3383],
+    [3271, 3383],
+]
+
+[[area.polygons]]
+vertices = [
+    [3304, 3330],
+    [3306, 3330],
+    [3306, 3359],
+    [3304, 3359],
+]
+
+[[area.polygons]]
+vertices = [
+    [3227, 3331],
+    [3233, 3331],
+    [3233, 3522],
+    [3227, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3251, 3331],
+    [3252, 3331],
+    [3252, 3522],
+    [3251, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3300, 3331],
+    [3303, 3331],
+    [3303, 3382],
+    [3300, 3382],
+]
+
+[[area.polygons]]
+vertices = [
+    [3226, 3332],
+    [3226, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3234, 3332],
+    [3234, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3250, 3332],
+    [3250, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3209, 3333],
+    [3209, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3225, 3333],
+    [3225, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3235, 3333],
+    [3235, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3208, 3334],
+    [3208, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3210, 3334],
+    [3210, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3216, 3334],
+    [3224, 3334],
+    [3224, 3522],
+    [3216, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3236, 3334],
+    [3236, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3249, 3334],
+    [3249, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3206, 3335],
+    [3207, 3335],
+    [3207, 3522],
+    [3206, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3211, 3335],
+    [3211, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3215, 3335],
+    [3215, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3237, 3335],
+    [3248, 3335],
+    [3248, 3522],
+    [3237, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3204, 3336],
+    [3205, 3336],
+    [3205, 3522],
+    [3204, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3212, 3336],
+    [3214, 3336],
+    [3214, 3522],
+    [3212, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3202, 3337],
+    [3203, 3337],
+    [3203, 3522],
+    [3202, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3200, 3338],
+    [3201, 3338],
+    [3201, 3522],
+    [3200, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3198, 3339],
+    [3199, 3339],
+    [3199, 3522],
+    [3198, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3196, 3340],
+    [3197, 3340],
+    [3197, 3522],
+    [3196, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3195, 3341],
+    [3195, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3193, 3342],
+    [3194, 3342],
+    [3194, 3522],
+    [3193, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3191, 3343],
+    [3192, 3343],
+    [3192, 3522],
+    [3191, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3189, 3344],
+    [3190, 3344],
+    [3190, 3522],
+    [3189, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3187, 3345],
+    [3188, 3345],
+    [3188, 3461],
+    [3187, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3185, 3346],
+    [3186, 3346],
+    [3186, 3461],
+    [3185, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3183, 3347],
+    [3184, 3347],
+    [3184, 3461],
+    [3183, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3161, 3348],
+    [3182, 3348],
+    [3182, 3461],
+    [3161, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3160, 3349],
+    [3160, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3159, 3350],
+    [3159, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3157, 3351],
+    [3158, 3351],
+    [3158, 3461],
+    [3157, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3156, 3352],
+    [3156, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3155, 3353],
+    [3155, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3312, 3353],
+    [3312, 3354],
+]
+
+[[area.polygons]]
+vertices = [
+    [3154, 3354],
+    [3154, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3153, 3355],
+    [3153, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3152, 3356],
+    [3152, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3151, 3357],
+    [3151, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3307, 3359],
+    [3310, 3359],
+]
+
+[[area.polygons]]
+vertices = [
+    [3304, 3363],
+    [3304, 3364],
+]
+
 [[area.polygons]]
 vertices = [
     [3135, 3372],
-    [3305, 3372],
-    [3305, 3461],
+    [3150, 3372],
+    [3150, 3461],
     [3135, 3461],
 ]
 
-# West strip beside the exchange.
+[[area.polygons]]
+vertices = [
+    [3300, 3383],
+    [3302, 3383],
+]
+
+[[area.polygons]]
+vertices = [
+    [3271, 3384],
+    [3295, 3384],
+    [3295, 3522],
+    [3271, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3121, 3388],
+    [3134, 3388],
+    [3134, 3463],
+    [3121, 3463],
+]
+
+[[area.polygons]]
+vertices = [
+    [3120, 3389],
+    [3120, 3462],
+]
+
+[[area.polygons]]
+vertices = [
+    [3119, 3390],
+    [3119, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3118, 3391],
+    [3118, 3394],
+]
+
+[[area.polygons]]
+vertices = [
+    [3117, 3392],
+    [3117, 3394],
+]
+
+[[area.polygons]]
+vertices = [
+    [3116, 3393],
+    [3116, 3394],
+]
+
+[[area.polygons]]
+vertices = [[3115, 3394]]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3438],
+    [3296, 3439],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3449],
+    [3296, 3450],
+]
+
+[[area.polygons]]
+vertices = [
+    [3103, 3451],
+    [3118, 3451],
+    [3118, 3461],
+    [3103, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3456],
+    [3311, 3456],
+    [3311, 3482],
+    [3296, 3482],
+]
+
+[[area.polygons]]
+vertices = [
+    [3312, 3459],
+    [3312, 3472],
+]
+
+[[area.polygons]]
+vertices = [
+    [3103, 3462],
+    [3107, 3462],
+]
+
 [[area.polygons]]
 vertices = [
     [3135, 3462],
@@ -24,20 +468,151 @@ vertices = [
     [3135, 3515],
 ]
 
-# Everything east of the exchange, up to the north edge.
 [[area.polygons]]
 vertices = [
     [3188, 3462],
-    [3305, 3462],
-    [3305, 3515],
     [3188, 3515],
 ]
 
-# The sliver north of the exchange walls.
+[[area.polygons]]
+vertices = [
+    [3313, 3462],
+    [3313, 3472],
+]
+
+[[area.polygons]]
+vertices = [
+    [3103, 3463],
+    [3106, 3463],
+]
+
+[[area.polygons]]
+vertices = [
+    [3314, 3463],
+    [3314, 3471],
+]
+
+[[area.polygons]]
+vertices = [
+    [3122, 3464],
+    [3134, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3315, 3464],
+    [3317, 3464],
+    [3317, 3471],
+    [3315, 3471],
+]
+
+[[area.polygons]]
+vertices = [
+    [3132, 3465],
+    [3134, 3465],
+]
+
+[[area.polygons]]
+vertices = [
+    [3318, 3465],
+    [3318, 3470],
+]
+
+[[area.polygons]]
+vertices = [
+    [3133, 3466],
+    [3134, 3466],
+]
+
+[[area.polygons]]
+vertices = [
+    [3319, 3466],
+    [3319, 3468],
+]
+
+[[area.polygons]]
+vertices = [[3134, 3467]]
+
+[[area.polygons]]
+vertices = [
+    [3312, 3478],
+    [3312, 3479],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3483],
+    [3310, 3483],
+    [3310, 3522],
+    [3296, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3316, 3487],
+    [3319, 3487],
+    [3319, 3522],
+    [3316, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3311, 3488],
+    [3315, 3488],
+    [3315, 3522],
+    [3311, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3320, 3488],
+    [3326, 3488],
+    [3326, 3522],
+    [3320, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3327, 3489],
+    [3327, 3522],
+]
+
 [[area.polygons]]
 vertices = [
     [3143, 3511],
     [3187, 3511],
     [3187, 3515],
     [3143, 3515],
+]
+
+[[area.polygons]]
+vertices = [
+    [3158, 3516],
+    [3169, 3516],
+    [3169, 3522],
+    [3158, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3143, 3517],
+    [3157, 3517],
+    [3157, 3522],
+    [3143, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3170, 3517],
+    [3188, 3517],
+    [3188, 3522],
+    [3170, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3228, 9760],
+    [3255, 9760],
+    [3255, 9809],
+    [3228, 9809],
 ]

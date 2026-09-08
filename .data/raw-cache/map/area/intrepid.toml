@@ -1,0 +1,16 @@
+# Intrepid music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Intrepid.
+# Bounds x 2304-2367, z 9792-9919; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Intrepid"
+area_id = "area.intrepid"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 9792],
+    [2367, 9792],
+    [2367, 9919],
+    [2304, 9919],
+]

@@ -1,0 +1,274 @@
+# Barren Land music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Barren Land.
+# Bounds x 2814-2886, z 3911-3972; 1353 tiles as 43 rectangles.
+
+[[area]]
+name = "Barren Land"
+area_id = "area.barren_land"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 3911],
+    [2886, 3911],
+    [2886, 3916],
+    [2816, 3916],
+]
+
+[[area.polygons]]
+vertices = [
+    [2815, 3912],
+    [2815, 3916],
+]
+
+[[area.polygons]]
+vertices = [[2814, 3915]]
+
+[[area.polygons]]
+vertices = [
+    [2818, 3917],
+    [2851, 3917],
+]
+
+[[area.polygons]]
+vertices = [
+    [2856, 3917],
+    [2886, 3917],
+]
+
+[[area.polygons]]
+vertices = [
+    [2819, 3918],
+    [2848, 3918],
+]
+
+[[area.polygons]]
+vertices = [
+    [2857, 3918],
+    [2886, 3918],
+]
+
+[[area.polygons]]
+vertices = [
+    [2821, 3919],
+    [2847, 3919],
+]
+
+[[area.polygons]]
+vertices = [
+    [2862, 3919],
+    [2872, 3919],
+]
+
+[[area.polygons]]
+vertices = [
+    [2875, 3919],
+    [2886, 3919],
+]
+
+[[area.polygons]]
+vertices = [
+    [2822, 3920],
+    [2847, 3920],
+]
+
+[[area.polygons]]
+vertices = [
+    [2866, 3920],
+    [2870, 3920],
+]
+
+[[area.polygons]]
+vertices = [
+    [2877, 3920],
+    [2886, 3920],
+]
+
+[[area.polygons]]
+vertices = [
+    [2826, 3921],
+    [2847, 3921],
+]
+
+[[area.polygons]]
+vertices = [
+    [2882, 3921],
+    [2885, 3921],
+]
+
+[[area.polygons]]
+vertices = [
+    [2829, 3922],
+    [2847, 3922],
+]
+
+[[area.polygons]]
+vertices = [
+    [2830, 3923],
+    [2847, 3923],
+]
+
+[[area.polygons]]
+vertices = [
+    [2831, 3924],
+    [2847, 3924],
+]
+
+[[area.polygons]]
+vertices = [
+    [2832, 3925],
+    [2847, 3925],
+    [2847, 3932],
+    [2832, 3932],
+]
+
+[[area.polygons]]
+vertices = [[2831, 3930]]
+
+[[area.polygons]]
+vertices = [
+    [2848, 3930],
+    [2849, 3930],
+    [2849, 3967],
+    [2848, 3967],
+]
+
+[[area.polygons]]
+vertices = [
+    [2850, 3931],
+    [2850, 3938],
+]
+
+[[area.polygons]]
+vertices = [
+    [2833, 3933],
+    [2847, 3933],
+]
+
+[[area.polygons]]
+vertices = [
+    [2834, 3934],
+    [2847, 3934],
+    [2847, 3937],
+    [2834, 3937],
+]
+
+[[area.polygons]]
+vertices = [
+    [2835, 3938],
+    [2847, 3938],
+    [2847, 3939],
+    [2835, 3939],
+]
+
+[[area.polygons]]
+vertices = [
+    [2836, 3940],
+    [2847, 3940],
+]
+
+[[area.polygons]]
+vertices = [
+    [2837, 3941],
+    [2847, 3941],
+    [2847, 3944],
+    [2837, 3944],
+]
+
+[[area.polygons]]
+vertices = [
+    [2838, 3945],
+    [2847, 3945],
+    [2847, 3946],
+    [2838, 3946],
+]
+
+[[area.polygons]]
+vertices = [
+    [2839, 3947],
+    [2847, 3947],
+]
+
+[[area.polygons]]
+vertices = [
+    [2840, 3948],
+    [2847, 3948],
+    [2847, 3953],
+    [2840, 3953],
+]
+
+[[area.polygons]]
+vertices = [
+    [2841, 3954],
+    [2847, 3954],
+]
+
+[[area.polygons]]
+vertices = [
+    [2844, 3955],
+    [2847, 3955],
+]
+
+[[area.polygons]]
+vertices = [
+    [2845, 3956],
+    [2847, 3956],
+]
+
+[[area.polygons]]
+vertices = [
+    [2846, 3957],
+    [2847, 3957],
+    [2847, 3964],
+    [2846, 3964],
+]
+
+[[area.polygons]]
+vertices = [
+    [2845, 3959],
+    [2845, 3964],
+]
+
+[[area.polygons]]
+vertices = [
+    [2844, 3961],
+    [2844, 3962],
+]
+
+[[area.polygons]]
+vertices = [
+    [2850, 3961],
+    [2863, 3961],
+    [2863, 3968],
+    [2850, 3968],
+]
+
+[[area.polygons]]
+vertices = [[2847, 3965]]
+
+[[area.polygons]]
+vertices = [[2849, 3968]]
+
+[[area.polygons]]
+vertices = [
+    [2851, 3969],
+    [2863, 3969],
+]
+
+[[area.polygons]]
+vertices = [
+    [2852, 3970],
+    [2862, 3970],
+]
+
+[[area.polygons]]
+vertices = [
+    [2859, 3971],
+    [2862, 3971],
+]
+
+[[area.polygons]]
+vertices = [
+    [2860, 3972],
+    [2861, 3972],
+]

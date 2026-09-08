@@ -1,0 +1,32 @@
+# Shipwrecked music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Shipwrecked.
+# Bounds x 3589-3623, z 3539-3573; 1129 tiles as 3 rectangles.
+
+[[area]]
+name = "Shipwrecked"
+area_id = "area.shipwrecked"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3600, 3539],
+    [3623, 3539],
+    [3623, 3573],
+    [3600, 3573],
+]
+
+[[area.polygons]]
+vertices = [
+    [3598, 3542],
+    [3599, 3542],
+    [3599, 3573],
+    [3598, 3573],
+]
+
+[[area.polygons]]
+vertices = [
+    [3589, 3549],
+    [3597, 3549],
+    [3597, 3573],
+    [3589, 3573],
+]

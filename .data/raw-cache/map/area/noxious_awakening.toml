@@ -1,0 +1,16 @@
+# Noxious Awakening music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Noxious Awakening.
+# Bounds x 3584-3647, z 9792-9855; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Noxious Awakening"
+area_id = "area.noxious_awakening"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3584, 9792],
+    [3647, 9792],
+    [3647, 9855],
+    [3584, 9855],
+]

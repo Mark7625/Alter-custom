@@ -1,0 +1,135 @@
+# Saga music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Saga.
+# Bounds x 1936-1960, z 4056-4082; 470 tiles as 20 rectangles.
+
+[[area]]
+name = "Saga"
+area_id = "area.saga"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1952, 4056],
+    [1954, 4056],
+    [1954, 4079],
+    [1952, 4079],
+]
+
+[[area.polygons]]
+vertices = [
+    [1951, 4057],
+    [1951, 4081],
+]
+
+[[area.polygons]]
+vertices = [
+    [1955, 4057],
+    [1957, 4057],
+    [1957, 4072],
+    [1955, 4072],
+]
+
+[[area.polygons]]
+vertices = [
+    [1950, 4058],
+    [1950, 4081],
+]
+
+[[area.polygons]]
+vertices = [
+    [1958, 4058],
+    [1958, 4069],
+]
+
+[[area.polygons]]
+vertices = [
+    [1949, 4059],
+    [1949, 4082],
+]
+
+[[area.polygons]]
+vertices = [
+    [1942, 4060],
+    [1948, 4060],
+    [1948, 4082],
+    [1942, 4082],
+]
+
+[[area.polygons]]
+vertices = [
+    [1940, 4061],
+    [1941, 4061],
+    [1941, 4081],
+    [1940, 4081],
+]
+
+[[area.polygons]]
+vertices = [
+    [1959, 4061],
+    [1959, 4067],
+]
+
+[[area.polygons]]
+vertices = [
+    [1939, 4062],
+    [1939, 4068],
+]
+
+[[area.polygons]]
+vertices = [
+    [1960, 4063],
+    [1960, 4066],
+]
+
+[[area.polygons]]
+vertices = [
+    [1938, 4064],
+    [1938, 4067],
+]
+
+[[area.polygons]]
+vertices = [
+    [1939, 4070],
+    [1939, 4081],
+]
+
+[[area.polygons]]
+vertices = [
+    [1938, 4073],
+    [1938, 4080],
+]
+
+[[area.polygons]]
+vertices = [
+    [1955, 4073],
+    [1956, 4073],
+    [1956, 4076],
+    [1955, 4076],
+]
+
+[[area.polygons]]
+vertices = [
+    [1937, 4076],
+    [1937, 4080],
+]
+
+[[area.polygons]]
+vertices = [
+    [1955, 4077],
+    [1955, 4078],
+]
+
+[[area.polygons]]
+vertices = [
+    [1936, 4078],
+    [1936, 4079],
+]
+
+[[area.polygons]]
+vertices = [
+    [1952, 4080],
+    [1953, 4080],
+]
+
+[[area.polygons]]
+vertices = [[1952, 4081]]

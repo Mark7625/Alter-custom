@@ -1,0 +1,32 @@
+# Watch Your Step music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Watch Your Step.
+# Bounds x 2176-2623, z 5760-6079; 135168 tiles as 3 rectangles.
+
+[[area]]
+name = "Watch Your Step"
+area_id = "area.watch_your_step"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2176, 5760],
+    [2623, 5760],
+    [2623, 5951],
+    [2176, 5951],
+]
+
+[[area.polygons]]
+vertices = [
+    [2176, 5952],
+    [2367, 5952],
+    [2367, 6079],
+    [2176, 6079],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5952],
+    [2623, 5952],
+    [2623, 6079],
+    [2432, 6079],
+]

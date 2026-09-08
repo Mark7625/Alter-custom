@@ -1,25 +1,103 @@
 # Castle Wars above ground: the arena map square with both castles and the lobby building with
 # the team portals (2436,3082-3096). Music area for "Castle Wars". The waiting rooms and tunnels
 # underneath are castle_wars_underground.toml.
+# The arena.
+# The lobby.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 630 tiles moved to
+# neighbouring music areas.
+
 [[area]]
 name = "Castle Wars"
 area_id = "area.castle_wars"
 levels = [0, 1, 2, 3]
 
-# The arena.
 [[area.polygons]]
 vertices = [
-    [2368, 3072],
+    [2379, 3072],
     [2431, 3072],
-    [2431, 3135],
+    [2431, 3119],
+    [2379, 3119],
+]
+
+[[area.polygons]]
+vertices = [
+    [2378, 3073],
+    [2378, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2377, 3074],
+    [2377, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2376, 3075],
+    [2376, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2375, 3076],
+    [2375, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2374, 3077],
+    [2374, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2373, 3078],
+    [2373, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2368, 3079],
     [2368, 3135],
 ]
 
-# The lobby.
 [[area.polygons]]
 vertices = [
-    [2432, 3076],
-    [2450, 3076],
-    [2450, 3102],
-    [2432, 3102],
+    [2372, 3079],
+    [2372, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2369, 3080],
+    [2371, 3080],
+    [2371, 3135],
+    [2369, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2379, 3120],
+    [2430, 3120],
+]
+
+[[area.polygons]]
+vertices = [
+    [2379, 3121],
+    [2429, 3121],
+]
+
+[[area.polygons]]
+vertices = [
+    [2379, 3122],
+    [2428, 3122],
+]
+
+[[area.polygons]]
+vertices = [
+    [2379, 3123],
+    [2427, 3123],
+    [2427, 3135],
+    [2379, 3135],
 ]

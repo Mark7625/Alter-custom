@@ -1,0 +1,134 @@
+# Lumbering music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lumbering.
+# Bounds x 2816-2897, z 3917-10367; 6074 tiles as 17 rectangles.
+
+[[area]]
+name = "Lumbering"
+area_id = "area.lumbering"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2852, 3917],
+    [2855, 3917],
+    [2855, 3960],
+    [2852, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2849, 3918],
+    [2851, 3918],
+    [2851, 3929],
+    [2849, 3929],
+]
+
+[[area.polygons]]
+vertices = [
+    [2856, 3918],
+    [2856, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2848, 3919],
+    [2848, 3929],
+]
+
+[[area.polygons]]
+vertices = [
+    [2857, 3919],
+    [2861, 3919],
+    [2861, 3960],
+    [2857, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2873, 3919],
+    [2874, 3919],
+    [2874, 3960],
+    [2873, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2862, 3920],
+    [2865, 3920],
+    [2865, 3960],
+    [2862, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2871, 3920],
+    [2872, 3920],
+    [2872, 3960],
+    [2871, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2875, 3920],
+    [2876, 3920],
+    [2876, 3960],
+    [2875, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2866, 3921],
+    [2870, 3921],
+    [2870, 3960],
+    [2866, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2877, 3921],
+    [2881, 3921],
+    [2881, 3960],
+    [2877, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2886, 3921],
+    [2897, 3921],
+    [2897, 3960],
+    [2886, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2882, 3922],
+    [2885, 3922],
+    [2885, 3960],
+    [2882, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2850, 3930],
+    [2851, 3930],
+]
+
+[[area.polygons]]
+vertices = [
+    [2851, 3931],
+    [2851, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2850, 3939],
+    [2850, 3960],
+]
+
+[[area.polygons]]
+vertices = [
+    [2816, 10304],
+    [2879, 10304],
+    [2879, 10367],
+    [2816, 10367],
+]

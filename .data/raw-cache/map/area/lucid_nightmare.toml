@@ -1,0 +1,16 @@
+# Lucid Nightmare music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lucid Nightmare.
+# Bounds x 1792-1855, z 5213-5247; 2240 tiles as 1 rectangles.
+
+[[area]]
+name = "Lucid Nightmare"
+area_id = "area.lucid_nightmare"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 5213],
+    [1855, 5213],
+    [1855, 5247],
+    [1792, 5247],
+]

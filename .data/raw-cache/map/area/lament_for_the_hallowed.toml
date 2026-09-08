@@ -1,0 +1,96 @@
+# Lament for the Hallowed music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lament for the Hallowed.
+# Bounds x 3648-3729, z 3170-3263; 5203 tiles as 13 rectangles.
+
+[[area]]
+name = "Lament for the Hallowed"
+area_id = "area.lament_for_the_hallowed"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 3170],
+    [3729, 3170],
+    [3729, 3199],
+    [3648, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3683, 3200],
+    [3729, 3200],
+]
+
+[[area.polygons]]
+vertices = [
+    [3684, 3201],
+    [3729, 3201],
+]
+
+[[area.polygons]]
+vertices = [
+    [3685, 3202],
+    [3729, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [3686, 3203],
+    [3729, 3203],
+]
+
+[[area.polygons]]
+vertices = [
+    [3687, 3204],
+    [3729, 3204],
+    [3729, 3210],
+    [3687, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [3699, 3211],
+    [3729, 3211],
+    [3729, 3263],
+    [3699, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3687, 3228],
+    [3698, 3228],
+    [3698, 3263],
+    [3687, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3686, 3235],
+    [3686, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3685, 3236],
+    [3685, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3684, 3237],
+    [3684, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3683, 3238],
+    [3683, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3680, 3239],
+    [3682, 3239],
+    [3682, 3263],
+    [3680, 3263],
+]

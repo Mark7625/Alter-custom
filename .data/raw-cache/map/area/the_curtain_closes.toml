@@ -1,0 +1,16 @@
+# The Curtain Closes music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Curtain Closes.
+# Bounds x 3200-3263, z 4288-4351; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Curtain Closes"
+area_id = "area.the_curtain_closes"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3200, 4288],
+    [3263, 4288],
+    [3263, 4351],
+    [3200, 4351],
+]

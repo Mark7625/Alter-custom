@@ -1,0 +1,16 @@
+# Monkey Trouble music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Monkey Trouble.
+# Bounds x 2304-2687, z 9024-9279; 98304 tiles as 1 rectangles.
+
+[[area]]
+name = "Monkey Trouble"
+area_id = "area.monkey_trouble"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 9024],
+    [2687, 9024],
+    [2687, 9279],
+    [2304, 9279],
+]

@@ -1,0 +1,258 @@
+# Servants of Strife music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Servants of Strife.
+# Bounds x 1272-1343, z 3651-10111; 6674 tiles as 40 rectangles.
+
+[[area]]
+name = "Servants of Strife"
+area_id = "area.servants_of_strife"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1272, 3651],
+    [1299, 3651],
+    [1299, 3682],
+    [1272, 3682],
+]
+
+[[area.polygons]]
+vertices = [
+    [1300, 3652],
+    [1300, 3689],
+]
+
+[[area.polygons]]
+vertices = [
+    [1301, 3653],
+    [1301, 3690],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3653],
+    [1343, 3653],
+    [1343, 3670],
+    [1315, 3670],
+]
+
+[[area.polygons]]
+vertices = [
+    [1302, 3654],
+    [1302, 3691],
+]
+
+[[area.polygons]]
+vertices = [
+    [1314, 3654],
+    [1314, 3694],
+]
+
+[[area.polygons]]
+vertices = [
+    [1303, 3655],
+    [1313, 3655],
+    [1313, 3692],
+    [1303, 3692],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3671],
+    [1342, 3671],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3672],
+    [1341, 3672],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3673],
+    [1340, 3673],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3674],
+    [1339, 3674],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3675],
+    [1338, 3675],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3676],
+    [1337, 3676],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3677],
+    [1336, 3677],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3678],
+    [1335, 3678],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3679],
+    [1334, 3679],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3680],
+    [1333, 3680],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3681],
+    [1332, 3681],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3682],
+    [1331, 3682],
+    [1331, 3683],
+    [1315, 3683],
+]
+
+[[area.polygons]]
+vertices = [
+    [1273, 3683],
+    [1299, 3683],
+]
+
+[[area.polygons]]
+vertices = [
+    [1274, 3684],
+    [1299, 3684],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3684],
+    [1330, 3684],
+]
+
+[[area.polygons]]
+vertices = [
+    [1275, 3685],
+    [1299, 3685],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3685],
+    [1329, 3685],
+]
+
+[[area.polygons]]
+vertices = [
+    [1276, 3686],
+    [1299, 3686],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3686],
+    [1328, 3686],
+]
+
+[[area.polygons]]
+vertices = [
+    [1277, 3687],
+    [1299, 3687],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3687],
+    [1326, 3687],
+]
+
+[[area.polygons]]
+vertices = [
+    [1278, 3688],
+    [1299, 3688],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3688],
+    [1325, 3688],
+]
+
+[[area.polygons]]
+vertices = [
+    [1279, 3689],
+    [1299, 3689],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3689],
+    [1324, 3689],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3690],
+    [1323, 3690],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3691],
+    [1322, 3691],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3692],
+    [1321, 3692],
+]
+
+[[area.polygons]]
+vertices = [
+    [1304, 3693],
+    [1313, 3693],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3693],
+    [1320, 3693],
+]
+
+[[area.polygons]]
+vertices = [
+    [1305, 3694],
+    [1313, 3694],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3694],
+    [1319, 3694],
+]
+
+[[area.polygons]]
+vertices = [
+    [1280, 10048],
+    [1343, 10048],
+    [1343, 10111],
+    [1280, 10111],
+]

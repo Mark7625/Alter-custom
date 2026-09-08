@@ -1,0 +1,16 @@
+# Zanik's Theme music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Zanik's Theme.
+# Bounds x 3840-3903, z 4352-4415; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Zanik's Theme"
+area_id = "area.zaniks_theme"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3840, 4352],
+    [3903, 4352],
+    [3903, 4415],
+    [3840, 4415],
+]

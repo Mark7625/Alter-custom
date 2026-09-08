@@ -1,0 +1,16 @@
+# Blistering Barnacles music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Blistering Barnacles.
+# Bounds x 2112-2175, z 5120-5183; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Blistering Barnacles"
+area_id = "area.blistering_barnacles"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2112, 5120],
+    [2175, 5120],
+    [2175, 5183],
+    [2112, 5183],
+]

@@ -1,0 +1,336 @@
+# Shadowland music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Shadowland.
+# Bounds x 3456-3527, z 3242-3327; 5088 tiles as 52 rectangles.
+
+[[area]]
+name = "Shadowland"
+area_id = "area.shadowland"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3488, 3242],
+    [3488, 3324],
+]
+
+[[area.polygons]]
+vertices = [
+    [3477, 3243],
+    [3478, 3243],
+    [3478, 3327],
+    [3477, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3487, 3243],
+    [3487, 3324],
+]
+
+[[area.polygons]]
+vertices = [
+    [3476, 3244],
+    [3476, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3479, 3244],
+    [3480, 3244],
+    [3480, 3327],
+    [3479, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3482, 3244],
+    [3486, 3244],
+    [3486, 3325],
+    [3482, 3325],
+]
+
+[[area.polygons]]
+vertices = [
+    [3495, 3244],
+    [3499, 3244],
+    [3499, 3323],
+    [3495, 3323],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 3244],
+    [3518, 3244],
+    [3518, 3318],
+    [3512, 3318],
+]
+
+[[area.polygons]]
+vertices = [
+    [3475, 3245],
+    [3475, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3481, 3245],
+    [3481, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3489, 3245],
+    [3494, 3245],
+    [3494, 3323],
+    [3489, 3323],
+]
+
+[[area.polygons]]
+vertices = [
+    [3500, 3245],
+    [3504, 3245],
+    [3504, 3323],
+    [3500, 3323],
+]
+
+[[area.polygons]]
+vertices = [
+    [3507, 3245],
+    [3511, 3245],
+    [3511, 3323],
+    [3507, 3323],
+]
+
+[[area.polygons]]
+vertices = [
+    [3519, 3245],
+    [3520, 3245],
+    [3520, 3247],
+    [3519, 3247],
+]
+
+[[area.polygons]]
+vertices = [
+    [3474, 3246],
+    [3474, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3505, 3246],
+    [3506, 3246],
+    [3506, 3323],
+    [3505, 3323],
+]
+
+[[area.polygons]]
+vertices = [
+    [3473, 3247],
+    [3473, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3472, 3248],
+    [3472, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3519, 3248],
+    [3519, 3317],
+]
+
+[[area.polygons]]
+vertices = [
+    [3520, 3252],
+    [3520, 3316],
+]
+
+[[area.polygons]]
+vertices = [
+    [3471, 3253],
+    [3471, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3470, 3254],
+    [3470, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3469, 3255],
+    [3469, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3521, 3255],
+    [3521, 3315],
+]
+
+[[area.polygons]]
+vertices = [
+    [3468, 3256],
+    [3468, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3467, 3257],
+    [3467, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3522, 3257],
+    [3523, 3257],
+    [3523, 3313],
+    [3522, 3313],
+]
+
+[[area.polygons]]
+vertices = [
+    [3466, 3258],
+    [3466, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3465, 3259],
+    [3465, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3464, 3260],
+    [3464, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3463, 3261],
+    [3463, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3462, 3262],
+    [3462, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3461, 3263],
+    [3461, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3460, 3264],
+    [3460, 3298],
+]
+
+[[area.polygons]]
+vertices = [
+    [3459, 3265],
+    [3459, 3296],
+]
+
+[[area.polygons]]
+vertices = [
+    [3524, 3267],
+    [3524, 3293],
+]
+
+[[area.polygons]]
+vertices = [
+    [3525, 3269],
+    [3525, 3291],
+]
+
+[[area.polygons]]
+vertices = [
+    [3526, 3271],
+    [3526, 3289],
+]
+
+[[area.polygons]]
+vertices = [
+    [3527, 3273],
+    [3527, 3287],
+]
+
+[[area.polygons]]
+vertices = [
+    [3460, 3311],
+    [3460, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3459, 3312],
+    [3459, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3458, 3313],
+    [3458, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3457, 3314],
+    [3457, 3327],
+]
+
+[[area.polygons]]
+vertices = [[3522, 3314]]
+
+[[area.polygons]]
+vertices = [
+    [3456, 3315],
+    [3456, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 3319],
+    [3517, 3319],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 3320],
+    [3516, 3320],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 3321],
+    [3515, 3321],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 3322],
+    [3514, 3322],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 3323],
+    [3513, 3323],
+]
+
+[[area.polygons]]
+vertices = [
+    [3482, 3326],
+    [3484, 3326],
+]
+
+[[area.polygons]]
+vertices = [[3482, 3327]]

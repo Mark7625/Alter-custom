@@ -1,0 +1,16 @@
+# Fangs for the Memory music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Fangs for the Memory.
+# Bounds x 2816-2879, z 4544-4607; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Fangs for the Memory"
+area_id = "area.fangs_for_the_memory"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 4544],
+    [2879, 4544],
+    [2879, 4607],
+    [2816, 4607],
+]

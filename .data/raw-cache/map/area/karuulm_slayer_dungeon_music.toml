@@ -1,0 +1,24 @@
+# Karuulm Slayer Dungeon music music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Ful to the Brim; Kanon of Kahlith; Way of the Wyrm.
+# Bounds x 1216-1367, z 10112-10303; 28596 tiles as 2 rectangles.
+
+[[area]]
+name = "Karuulm Slayer Dungeon music"
+area_id = "area.karuulm_slayer_dungeon_music"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1216, 10112],
+    [1367, 10112],
+    [1367, 10254],
+    [1216, 10254],
+]
+
+[[area.polygons]]
+vertices = [
+    [1216, 10255],
+    [1355, 10255],
+    [1355, 10303],
+    [1216, 10303],
+]

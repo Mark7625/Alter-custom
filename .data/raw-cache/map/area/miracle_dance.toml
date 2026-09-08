@@ -1,0 +1,16 @@
+# Miracle Dance music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Miracle Dance.
+# Bounds x 2752-2815, z 4800-4863; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Miracle Dance"
+area_id = "area.miracle_dance"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 4800],
+    [2815, 4800],
+    [2815, 4863],
+    [2752, 4863],
+]

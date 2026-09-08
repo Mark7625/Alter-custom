@@ -1,0 +1,16 @@
+# What Happens Below... music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: What Happens Below....
+# Bounds x 1728-1855, z 10112-10175; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "What Happens Below..."
+area_id = "area.what_happens_below"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1728, 10112],
+    [1855, 10112],
+    [1855, 10175],
+    [1728, 10175],
+]

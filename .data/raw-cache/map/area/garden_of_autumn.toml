@@ -1,0 +1,16 @@
+# Garden of Autumn music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Garden of Autumn.
+# Bounds x 2897-2918, z 5447-5462; 352 tiles as 1 rectangles.
+
+[[area]]
+name = "Garden of Autumn"
+area_id = "area.garden_of_autumn"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2897, 5447],
+    [2918, 5447],
+    [2918, 5462],
+    [2897, 5462],
+]

@@ -1,0 +1,16 @@
+# Fe Fi Fo Fum music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Fe Fi Fo Fum.
+# Bounds x 2112-2175, z 5504-5567; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Fe Fi Fo Fum"
+area_id = "area.fe_fi_fo_fum"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2112, 5504],
+    [2175, 5504],
+    [2175, 5567],
+    [2112, 5567],
+]

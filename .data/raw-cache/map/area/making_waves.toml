@@ -1,0 +1,142 @@
+# Making Waves music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Making Waves.
+# Bounds x 2305-2356, z 3663-3703; 1727 tiles as 21 rectangles.
+
+[[area]]
+name = "Making Waves"
+area_id = "area.making_waves"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2312, 3663],
+    [2347, 3663],
+    [2347, 3699],
+    [2312, 3699],
+]
+
+[[area.polygons]]
+vertices = [
+    [2348, 3664],
+    [2348, 3701],
+]
+
+[[area.polygons]]
+vertices = [
+    [2349, 3673],
+    [2355, 3673],
+    [2355, 3701],
+    [2349, 3701],
+]
+
+[[area.polygons]]
+vertices = [
+    [2356, 3674],
+    [2356, 3700],
+]
+
+[[area.polygons]]
+vertices = [
+    [2311, 3686],
+    [2311, 3694],
+]
+
+[[area.polygons]]
+vertices = [
+    [2310, 3687],
+    [2310, 3693],
+]
+
+[[area.polygons]]
+vertices = [
+    [2309, 3688],
+    [2309, 3691],
+]
+
+[[area.polygons]]
+vertices = [
+    [2305, 3689],
+    [2308, 3689],
+    [2308, 3690],
+    [2305, 3690],
+]
+
+[[area.polygons]]
+vertices = [
+    [2311, 3697],
+    [2311, 3703],
+]
+
+[[area.polygons]]
+vertices = [
+    [2309, 3698],
+    [2310, 3698],
+    [2310, 3703],
+    [2309, 3703],
+]
+
+[[area.polygons]]
+vertices = [
+    [2308, 3699],
+    [2308, 3702],
+]
+
+[[area.polygons]]
+vertices = [
+    [2312, 3700],
+    [2323, 3700],
+]
+
+[[area.polygons]]
+vertices = [
+    [2329, 3700],
+    [2347, 3700],
+]
+
+[[area.polygons]]
+vertices = [
+    [2312, 3701],
+    [2318, 3701],
+]
+
+[[area.polygons]]
+vertices = [
+    [2320, 3701],
+    [2322, 3701],
+]
+
+[[area.polygons]]
+vertices = [
+    [2330, 3701],
+    [2347, 3701],
+]
+
+[[area.polygons]]
+vertices = [
+    [2312, 3702],
+    [2315, 3702],
+]
+
+[[area.polygons]]
+vertices = [
+    [2331, 3702],
+    [2333, 3702],
+]
+
+[[area.polygons]]
+vertices = [
+    [2335, 3702],
+    [2338, 3702],
+]
+
+[[area.polygons]]
+vertices = [
+    [2351, 3702],
+    [2354, 3702],
+]
+
+[[area.polygons]]
+vertices = [
+    [2312, 3703],
+    [2313, 3703],
+]

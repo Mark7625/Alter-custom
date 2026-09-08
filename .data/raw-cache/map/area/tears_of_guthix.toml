@@ -1,0 +1,16 @@
+# Tears of Guthix music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Tears of Guthix.
+# Bounds x 3200-3253, z 9472-9535; 3456 tiles as 1 rectangles.
+
+[[area]]
+name = "Tears of Guthix"
+area_id = "area.tears_of_guthix"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3200, 9472],
+    [3253, 9472],
+    [3253, 9535],
+    [3200, 9535],
+]

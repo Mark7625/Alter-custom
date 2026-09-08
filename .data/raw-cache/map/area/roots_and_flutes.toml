@@ -1,0 +1,16 @@
+# Roots and Flutes music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Roots and Flutes.
+# Bounds x 3200-3263, z 9920-9983; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Roots and Flutes"
+area_id = "area.roots_and_flutes"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3200, 9920],
+    [3263, 9920],
+    [3263, 9983],
+    [3200, 9983],
+]

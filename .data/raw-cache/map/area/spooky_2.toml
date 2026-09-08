@@ -1,0 +1,32 @@
+# Spooky 2 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Spooky 2.
+# Bounds x 1920-3519, z 9280-9663; 16384 tiles as 3 rectangles.
+
+[[area]]
+name = "Spooky 2"
+area_id = "area.spooky_2"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2112, 9280],
+    [2175, 9280],
+    [2175, 9343],
+    [2112, 9343],
+]
+
+[[area.polygons]]
+vertices = [
+    [1920, 9408],
+    [1983, 9408],
+    [1983, 9471],
+    [1920, 9471],
+]
+
+[[area.polygons]]
+vertices = [
+    [3392, 9600],
+    [3519, 9600],
+    [3519, 9663],
+    [3392, 9663],
+]

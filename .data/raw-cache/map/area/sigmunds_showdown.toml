@@ -1,0 +1,16 @@
+# Sigmund's Showdown music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sigmund's Showdown.
+# Bounds x 1984-2047, z 5056-5119; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Sigmund's Showdown"
+area_id = "area.sigmunds_showdown"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1984, 5056],
+    [2047, 5056],
+    [2047, 5119],
+    [1984, 5119],
+]

@@ -1,0 +1,16 @@
+# Miles Away music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Miles Away.
+# Bounds x 2624-2687, z 4672-4735; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Miles Away"
+area_id = "area.miles_away"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 4672],
+    [2687, 4672],
+    [2687, 4735],
+    [2624, 4735],
+]

@@ -1,0 +1,16 @@
+# Lair of the Basilisk music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lair of the Basilisk.
+# Bounds x 2368-2495, z 10368-10495; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "Lair of the Basilisk"
+area_id = "area.lair_of_the_basilisk"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 10368],
+    [2495, 10368],
+    [2495, 10495],
+    [2368, 10495],
+]

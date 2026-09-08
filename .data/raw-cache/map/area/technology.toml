@@ -1,0 +1,16 @@
+# Technology music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Technology.
+# Bounds x 2368-2431, z 9856-9919; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Technology"
+area_id = "area.technology"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 9856],
+    [2431, 9856],
+    [2431, 9919],
+    [2368, 9919],
+]

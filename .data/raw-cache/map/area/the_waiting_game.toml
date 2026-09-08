@@ -1,0 +1,170 @@
+# The Waiting Game music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Waiting Game.
+# Bounds x 2181-2234, z 2827-2879; 2481 tiles as 25 rectangles.
+
+[[area]]
+name = "The Waiting Game"
+area_id = "area.the_waiting_game"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2185, 2827],
+    [2202, 2827],
+    [2202, 2859],
+    [2185, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [2218, 2827],
+    [2229, 2827],
+    [2229, 2861],
+    [2218, 2861],
+]
+
+[[area.polygons]]
+vertices = [
+    [2184, 2828],
+    [2184, 2858],
+]
+
+[[area.polygons]]
+vertices = [
+    [2203, 2828],
+    [2203, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2217, 2828],
+    [2217, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2230, 2828],
+    [2230, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [2183, 2829],
+    [2183, 2856],
+]
+
+[[area.polygons]]
+vertices = [
+    [2204, 2829],
+    [2204, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2216, 2829],
+    [2216, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2231, 2829],
+    [2231, 2857],
+]
+
+[[area.polygons]]
+vertices = [
+    [2182, 2830],
+    [2182, 2854],
+]
+
+[[area.polygons]]
+vertices = [
+    [2205, 2830],
+    [2205, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2215, 2830],
+    [2215, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2232, 2830],
+    [2232, 2856],
+]
+
+[[area.polygons]]
+vertices = [
+    [2181, 2831],
+    [2181, 2853],
+]
+
+[[area.polygons]]
+vertices = [
+    [2206, 2831],
+    [2206, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2214, 2831],
+    [2214, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2233, 2831],
+    [2233, 2854],
+]
+
+[[area.polygons]]
+vertices = [
+    [2207, 2832],
+    [2213, 2832],
+    [2213, 2879],
+    [2207, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2234, 2832],
+    [2234, 2853],
+]
+
+[[area.polygons]]
+vertices = [
+    [2186, 2860],
+    [2202, 2860],
+    [2202, 2861],
+    [2186, 2861],
+]
+
+[[area.polygons]]
+vertices = [
+    [2187, 2862],
+    [2202, 2862],
+]
+
+[[area.polygons]]
+vertices = [
+    [2218, 2862],
+    [2228, 2862],
+]
+
+[[area.polygons]]
+vertices = [
+    [2188, 2863],
+    [2202, 2863],
+    [2202, 2879],
+    [2188, 2879],
+]
+
+[[area.polygons]]
+vertices = [
+    [2218, 2863],
+    [2227, 2863],
+    [2227, 2879],
+    [2218, 2879],
+]

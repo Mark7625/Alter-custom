@@ -1,0 +1,16 @@
+# Serene music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Serene.
+# Bounds x 2816-2879, z 4800-4863; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Serene"
+area_id = "area.serene"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 4800],
+    [2879, 4800],
+    [2879, 4863],
+    [2816, 4863],
+]

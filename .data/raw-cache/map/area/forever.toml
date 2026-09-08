@@ -1,0 +1,16 @@
+# Forever music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Forever.
+# Bounds x 3072-3135, z 9792-10047; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "Forever"
+area_id = "area.forever"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3072, 9792],
+    [3135, 9792],
+    [3135, 10047],
+    [3072, 10047],
+]

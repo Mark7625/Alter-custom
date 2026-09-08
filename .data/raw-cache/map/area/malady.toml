@@ -1,0 +1,16 @@
+# Malady music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Malady.
+# Bounds x 2112-2175, z 5248-5311; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Malady"
+area_id = "area.malady"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2112, 5248],
+    [2175, 5248],
+    [2175, 5311],
+    [2112, 5311],
+]

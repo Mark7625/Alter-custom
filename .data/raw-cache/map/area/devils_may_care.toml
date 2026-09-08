@@ -1,0 +1,16 @@
+# Devils May Care music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Devils May Care.
+# Bounds x 2304-2431, z 9408-9471; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Devils May Care"
+area_id = "area.devils_may_care"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 9408],
+    [2431, 9408],
+    [2431, 9471],
+    [2304, 9471],
+]

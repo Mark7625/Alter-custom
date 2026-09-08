@@ -1,0 +1,84 @@
+# Rose music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Rose.
+# Bounds x 1152-1291, z 3755-10303; 4504 tiles as 12 rectangles.
+
+[[area]]
+name = "Rose"
+area_id = "area.rose"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1273, 3755],
+    [1288, 3755],
+    [1288, 3771],
+    [1273, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1272, 3756],
+    [1272, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1289, 3756],
+    [1289, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1271, 3757],
+    [1271, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1290, 3757],
+    [1290, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1270, 3758],
+    [1270, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1291, 3758],
+    [1291, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1269, 3759],
+    [1269, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1268, 3760],
+    [1268, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1267, 3761],
+    [1267, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1266, 3762],
+    [1266, 3771],
+]
+
+[[area.polygons]]
+vertices = [
+    [1152, 10240],
+    [1215, 10240],
+    [1215, 10303],
+    [1152, 10303],
+]

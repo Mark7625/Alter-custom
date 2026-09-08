@@ -1,0 +1,184 @@
+# Dwarf Theme music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dwarf Theme.
+# Bounds x 2988-3030, z 3439-3466; 892 tiles as 29 rectangles.
+
+[[area]]
+name = "Dwarf Theme"
+area_id = "area.dwarf_theme"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2998, 3439],
+    [3016, 3439],
+    [3016, 3461],
+    [2998, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [2997, 3440],
+    [2997, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3017, 3440],
+    [3017, 3465],
+]
+
+[[area.polygons]]
+vertices = [
+    [2996, 3441],
+    [2996, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3018, 3441],
+    [3018, 3465],
+]
+
+[[area.polygons]]
+vertices = [
+    [2995, 3442],
+    [2995, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3019, 3442],
+    [3019, 3465],
+]
+
+[[area.polygons]]
+vertices = [
+    [2994, 3443],
+    [2994, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3020, 3443],
+    [3020, 3465],
+]
+
+[[area.polygons]]
+vertices = [
+    [2993, 3444],
+    [2993, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3021, 3444],
+    [3021, 3466],
+]
+
+[[area.polygons]]
+vertices = [
+    [2992, 3445],
+    [2992, 3460],
+]
+
+[[area.polygons]]
+vertices = [
+    [3022, 3445],
+    [3022, 3466],
+]
+
+[[area.polygons]]
+vertices = [
+    [2991, 3446],
+    [2991, 3459],
+]
+
+[[area.polygons]]
+vertices = [
+    [3023, 3446],
+    [3023, 3466],
+]
+
+[[area.polygons]]
+vertices = [
+    [2990, 3447],
+    [2990, 3458],
+]
+
+[[area.polygons]]
+vertices = [
+    [3024, 3447],
+    [3024, 3466],
+]
+
+[[area.polygons]]
+vertices = [
+    [2989, 3448],
+    [2989, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3025, 3448],
+    [3025, 3466],
+]
+
+[[area.polygons]]
+vertices = [
+    [2988, 3449],
+    [2988, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3026, 3449],
+    [3026, 3465],
+]
+
+[[area.polygons]]
+vertices = [
+    [3027, 3450],
+    [3027, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3028, 3451],
+    [3028, 3463],
+]
+
+[[area.polygons]]
+vertices = [
+    [3029, 3452],
+    [3029, 3462],
+]
+
+[[area.polygons]]
+vertices = [
+    [3030, 3453],
+    [3030, 3461],
+]
+
+[[area.polygons]]
+vertices = [
+    [3009, 3462],
+    [3016, 3462],
+]
+
+[[area.polygons]]
+vertices = [
+    [3010, 3463],
+    [3016, 3463],
+]
+
+[[area.polygons]]
+vertices = [
+    [3011, 3464],
+    [3016, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3012, 3465],
+    [3016, 3465],
+]

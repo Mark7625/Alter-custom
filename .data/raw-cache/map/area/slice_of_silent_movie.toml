@@ -1,0 +1,16 @@
+# Slice of Silent Movie music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Slice of Silent Movie.
+# Bounds x 2528-2559, z 5504-5567; 2048 tiles as 1 rectangles.
+
+[[area]]
+name = "Slice of Silent Movie"
+area_id = "area.slice_of_silent_movie"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2528, 5504],
+    [2559, 5504],
+    [2559, 5567],
+    [2528, 5567],
+]

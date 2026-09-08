@@ -1,0 +1,32 @@
+# Zamorak Zoo music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Zamorak Zoo.
+# Bounds x 2880-2943, z 5312-5375; 3136 tiles as 3 rectangles.
+
+[[area]]
+name = "Zamorak Zoo"
+area_id = "area.zamorak_zoo"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2912, 5312],
+    [2943, 5312],
+    [2943, 5375],
+    [2912, 5375],
+]
+
+[[area.polygons]]
+vertices = [
+    [2904, 5336],
+    [2911, 5336],
+    [2911, 5375],
+    [2904, 5375],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 5344],
+    [2903, 5344],
+    [2903, 5375],
+    [2880, 5375],
+]

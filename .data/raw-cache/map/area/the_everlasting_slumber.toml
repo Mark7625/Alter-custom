@@ -1,0 +1,16 @@
+# The Everlasting Slumber music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Everlasting Slumber.
+# Bounds x 3712-3903, z 9664-9855; 36864 tiles as 1 rectangles.
+
+[[area]]
+name = "The Everlasting Slumber"
+area_id = "area.the_everlasting_slumber"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3712, 9664],
+    [3903, 9664],
+    [3903, 9855],
+    [3712, 9855],
+]

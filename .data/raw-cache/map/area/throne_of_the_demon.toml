@@ -1,0 +1,16 @@
+# Throne of the Demon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Throne of the Demon (plus forgotten from wiki polygons sharing this footprint).
+# Bounds x 2688-2751, z 4864-4927; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Throne of the Demon"
+area_id = "area.throne_of_the_demon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2688, 4864],
+    [2751, 4864],
+    [2751, 4927],
+    [2688, 4927],
+]

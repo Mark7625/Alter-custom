@@ -1,0 +1,16 @@
+# The Lost Melody music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Lost Melody.
+# Bounds x 3264-3327, z 9600-9663; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Lost Melody"
+area_id = "area.the_lost_melody"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 9600],
+    [3327, 9600],
+    [3327, 9663],
+    [3264, 9663],
+]

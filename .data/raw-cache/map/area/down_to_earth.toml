@@ -1,0 +1,16 @@
+# Down to Earth music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Down to Earth.
+# Bounds x 2624-2687, z 4800-4863; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Down to Earth"
+area_id = "area.down_to_earth"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 4800],
+    [2687, 4800],
+    [2687, 4863],
+    [2624, 4863],
+]

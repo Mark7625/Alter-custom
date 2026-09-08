@@ -1,0 +1,16 @@
+# The Longramble Scramble music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Longramble Scramble.
+# Bounds x 2310-2359, z 3080-3135; 2800 tiles as 1 rectangles.
+
+[[area]]
+name = "The Longramble Scramble"
+area_id = "area.the_longramble_scramble"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2310, 3080],
+    [2359, 3080],
+    [2359, 3135],
+    [2310, 3135],
+]

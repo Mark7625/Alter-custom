@@ -1,0 +1,24 @@
+# The Rogues' Den music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Rogues' Den.
+# Bounds x 2944-3071, z 4928-5119; 16384 tiles as 2 rectangles.
+
+[[area]]
+name = "The Rogues' Den"
+area_id = "area.the_rogues_den"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 4928],
+    [3071, 4928],
+    [3071, 5055],
+    [3008, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2944, 4992],
+    [3007, 4992],
+    [3007, 5119],
+    [2944, 5119],
+]

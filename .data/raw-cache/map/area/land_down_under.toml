@@ -1,0 +1,16 @@
+# Land Down Under music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Land Down Under.
+# Bounds x 2496-2559, z 10240-10303; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Land Down Under"
+area_id = "area.land_down_under"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 10240],
+    [2559, 10240],
+    [2559, 10303],
+    [2496, 10303],
+]

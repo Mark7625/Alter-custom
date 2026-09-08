@@ -1,0 +1,16 @@
+# Wayward music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Wayward.
+# Bounds x 2432-2495, z 9344-9471; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Wayward"
+area_id = "area.wayward"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 9344],
+    [2495, 9344],
+    [2495, 9471],
+    [2432, 9471],
+]

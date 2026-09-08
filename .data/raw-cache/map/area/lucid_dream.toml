@@ -1,0 +1,16 @@
+# Lucid Dream music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lucid Dream.
+# Bounds x 1792-1855, z 5184-5212; 1856 tiles as 1 rectangles.
+
+[[area]]
+name = "Lucid Dream"
+area_id = "area.lucid_dream"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 5184],
+    [1855, 5184],
+    [1855, 5212],
+    [1792, 5212],
+]

@@ -1,13 +1,25 @@
+# The Mage Training Arena grounds directly north of Emir's Arena; the "Shine" music area.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 300 tiles moved to
+# neighbouring music areas.
+
 [[area]]
 name = "Mage Training Arena"
 area_id = "area.mage_training_arena"
 levels = [0, 1, 2, 3]
 
-# The Mage Training Arena grounds directly north of Emir's Arena; the "Shine" music area.
 [[area.polygons]]
 vertices = [
     [3330, 3292],
     [3395, 3292],
+    [3395, 3329],
+    [3330, 3329],
+]
+
+[[area.polygons]]
+vertices = [
+    [3380, 3330],
+    [3395, 3330],
     [3395, 3335],
-    [3330, 3335],
+    [3380, 3335],
 ]

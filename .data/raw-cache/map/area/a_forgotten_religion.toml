@@ -1,0 +1,16 @@
+# A Forgotten Religion music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: A Forgotten Religion.
+# Bounds x 1792-1855, z 9912-9983; 4608 tiles as 1 rectangles.
+
+[[area]]
+name = "A Forgotten Religion"
+area_id = "area.a_forgotten_religion"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 9912],
+    [1855, 9912],
+    [1855, 9983],
+    [1792, 9983],
+]

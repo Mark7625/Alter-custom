@@ -1,0 +1,16 @@
+# Rat a Tat Tat music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Rat a Tat Tat.
+# Bounds x 2880-2943, z 5056-5119; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Rat a Tat Tat"
+area_id = "area.rat_a_tat_tat"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2880, 5056],
+    [2943, 5056],
+    [2943, 5119],
+    [2880, 5119],
+]

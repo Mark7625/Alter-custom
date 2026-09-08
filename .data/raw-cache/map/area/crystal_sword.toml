@@ -1,0 +1,16 @@
+# Crystal Sword music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Crystal Sword.
+# Bounds x 2624-2687, z 9664-9727; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Crystal Sword"
+area_id = "area.crystal_sword"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 9664],
+    [2687, 9664],
+    [2687, 9727],
+    [2624, 9727],
+]

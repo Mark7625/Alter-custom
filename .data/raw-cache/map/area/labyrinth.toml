@@ -1,0 +1,16 @@
+# Labyrinth music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Labyrinth.
+# Bounds x 3264-3327, z 9216-9279; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Labyrinth"
+area_id = "area.labyrinth"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 9216],
+    [3327, 9216],
+    [3327, 9279],
+    [3264, 9279],
+]

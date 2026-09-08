@@ -1,13 +1,75 @@
+# The fenced guild grounds from the front gate to the north fence.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 1052 tiles moved to
+# neighbouring music areas.
+
 [[area]]
 name = "Legends' Guild"
 area_id = "area.legends_guild"
 levels = [0, 1, 2, 3]
 
-# The fenced guild grounds from the front gate to the north fence.
 [[area.polygons]]
 vertices = [
-    [2712, 3348],
-    [2748, 3348],
-    [2748, 3392],
-    [2712, 3392],
+    [2726, 3350],
+    [2731, 3350],
+    [2731, 3386],
+    [2726, 3386],
+]
+
+[[area.polygons]]
+vertices = [
+    [2748, 3354],
+    [2748, 3373],
+]
+
+[[area.polygons]]
+vertices = [
+    [2747, 3355],
+    [2747, 3368],
+]
+
+[[area.polygons]]
+vertices = [
+    [2746, 3357],
+    [2746, 3366],
+]
+
+[[area.polygons]]
+vertices = [
+    [2745, 3361],
+    [2745, 3365],
+]
+
+[[area.polygons]]
+vertices = [
+    [2720, 3362],
+    [2725, 3362],
+    [2725, 3386],
+    [2720, 3386],
+]
+
+[[area.polygons]]
+vertices = [
+    [2732, 3362],
+    [2736, 3362],
+    [2736, 3386],
+    [2732, 3386],
+]
+
+[[area.polygons]]
+vertices = [
+    [2719, 3363],
+    [2719, 3385],
+]
+
+[[area.polygons]]
+vertices = [
+    [2737, 3363],
+    [2737, 3385],
+]
+
+[[area.polygons]]
+vertices = [
+    [2738, 3364],
+    [2738, 3384],
 ]

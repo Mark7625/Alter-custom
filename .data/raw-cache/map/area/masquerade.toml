@@ -1,0 +1,16 @@
+# Masquerade music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Masquerade.
+# Bounds x 2688-2751, z 9920-10047; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Masquerade"
+area_id = "area.masquerade"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2688, 9920],
+    [2751, 9920],
+    [2751, 10047],
+    [2688, 10047],
+]

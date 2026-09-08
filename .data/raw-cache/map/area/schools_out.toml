@@ -1,0 +1,16 @@
+# School's Out music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: School's Out.
+# Bounds x 1856-1919, z 4992-5055; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "School's Out"
+area_id = "area.schools_out"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4992],
+    [1919, 4992],
+    [1919, 5055],
+    [1856, 5055],
+]

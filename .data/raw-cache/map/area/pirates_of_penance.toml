@@ -1,0 +1,16 @@
+# Pirates of Penance music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Pirates of Penance.
+# Bounds x 1856-1919, z 5376-5439; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Pirates of Penance"
+area_id = "area.pirates_of_penance"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 5376],
+    [1919, 5376],
+    [1919, 5439],
+    [1856, 5439],
+]

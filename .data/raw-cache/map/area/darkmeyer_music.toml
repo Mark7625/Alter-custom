@@ -1,0 +1,208 @@
+# Darkmeyer music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Darkmeyer.
+# Bounds x 3588-3668, z 3314-3397; 4993 tiles as 30 rectangles.
+
+[[area]]
+name = "Darkmeyer"
+area_id = "area.darkmeyer_music"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3594, 3314],
+    [3614, 3314],
+    [3614, 3397],
+    [3594, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3332],
+    [3660, 3332],
+    [3660, 3353],
+    [3615, 3353],
+]
+
+[[area.polygons]]
+vertices = [
+    [3588, 3333],
+    [3593, 3333],
+    [3593, 3349],
+    [3588, 3349],
+]
+
+[[area.polygons]]
+vertices = [
+    [3661, 3336],
+    [3665, 3336],
+    [3665, 3382],
+    [3661, 3382],
+]
+
+[[area.polygons]]
+vertices = [
+    [3590, 3350],
+    [3593, 3350],
+    [3593, 3383],
+    [3590, 3383],
+]
+
+[[area.polygons]]
+vertices = [
+    [3666, 3351],
+    [3668, 3351],
+    [3668, 3382],
+    [3666, 3382],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3354],
+    [3624, 3354],
+]
+
+[[area.polygons]]
+vertices = [
+    [3632, 3354],
+    [3660, 3354],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3355],
+    [3623, 3355],
+]
+
+[[area.polygons]]
+vertices = [
+    [3633, 3355],
+    [3660, 3355],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3356],
+    [3622, 3356],
+]
+
+[[area.polygons]]
+vertices = [
+    [3634, 3356],
+    [3660, 3356],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3357],
+    [3621, 3357],
+]
+
+[[area.polygons]]
+vertices = [
+    [3635, 3357],
+    [3660, 3357],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3358],
+    [3620, 3358],
+]
+
+[[area.polygons]]
+vertices = [
+    [3636, 3358],
+    [3660, 3358],
+]
+
+[[area.polygons]]
+vertices = [
+    [3637, 3359],
+    [3660, 3359],
+    [3660, 3390],
+    [3637, 3390],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3365],
+    [3620, 3365],
+    [3620, 3397],
+    [3615, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3636, 3365],
+    [3636, 3390],
+]
+
+[[area.polygons]]
+vertices = [
+    [3621, 3366],
+    [3621, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3635, 3366],
+    [3635, 3390],
+]
+
+[[area.polygons]]
+vertices = [
+    [3588, 3367],
+    [3589, 3367],
+    [3589, 3383],
+    [3588, 3383],
+]
+
+[[area.polygons]]
+vertices = [
+    [3622, 3367],
+    [3622, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3634, 3367],
+    [3634, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3623, 3368],
+    [3623, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3633, 3368],
+    [3633, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3624, 3369],
+    [3624, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3632, 3369],
+    [3632, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3625, 3370],
+    [3631, 3370],
+    [3631, 3397],
+    [3625, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3593, 3384],
+    [3593, 3397],
+]

@@ -1,0 +1,16 @@
+# Path of Peril music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Path of Peril.
+# Bounds x 2624-2751, z 5056-5119; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Path of Peril"
+area_id = "area.path_of_peril"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 5056],
+    [2751, 5056],
+    [2751, 5119],
+    [2624, 5119],
+]

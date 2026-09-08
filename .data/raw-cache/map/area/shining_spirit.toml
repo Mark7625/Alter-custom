@@ -1,0 +1,16 @@
+# Shining Spirit music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Shining Spirit.
+# Bounds x 2944-2971, z 4352-4415; 1792 tiles as 1 rectangles.
+
+[[area]]
+name = "Shining Spirit"
+area_id = "area.shining_spirit"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 4352],
+    [2971, 4352],
+    [2971, 4415],
+    [2944, 4415],
+]

@@ -1,0 +1,24 @@
+# Beyond music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Beyond.
+# Bounds x 2816-2943, z 9856-9983; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Beyond"
+area_id = "area.beyond"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 9856],
+    [2879, 9856],
+    [2879, 9983],
+    [2816, 9983],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 9920],
+    [2943, 9920],
+    [2943, 9983],
+    [2880, 9983],
+]

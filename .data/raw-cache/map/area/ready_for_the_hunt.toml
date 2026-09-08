@@ -1,0 +1,166 @@
+# Ready for the Hunt music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Ready for the Hunt.
+# Bounds x 1536-1599, z 3027-9471; 5622 tiles as 25 rectangles.
+
+[[area]]
+name = "Ready for the Hunt"
+area_id = "area.ready_for_the_hunt"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1548, 3027],
+    [1565, 3027],
+    [1565, 3064],
+    [1548, 3064],
+]
+
+[[area.polygons]]
+vertices = [
+    [1547, 3028],
+    [1547, 3064],
+]
+
+[[area.polygons]]
+vertices = [
+    [1566, 3028],
+    [1566, 3064],
+]
+
+[[area.polygons]]
+vertices = [
+    [1546, 3029],
+    [1546, 3064],
+]
+
+[[area.polygons]]
+vertices = [
+    [1567, 3029],
+    [1567, 3063],
+]
+
+[[area.polygons]]
+vertices = [
+    [1545, 3030],
+    [1545, 3063],
+]
+
+[[area.polygons]]
+vertices = [
+    [1568, 3030],
+    [1568, 3062],
+]
+
+[[area.polygons]]
+vertices = [
+    [1544, 3031],
+    [1544, 3062],
+]
+
+[[area.polygons]]
+vertices = [
+    [1569, 3031],
+    [1569, 3061],
+]
+
+[[area.polygons]]
+vertices = [
+    [1543, 3032],
+    [1543, 3061],
+]
+
+[[area.polygons]]
+vertices = [
+    [1570, 3032],
+    [1570, 3060],
+]
+
+[[area.polygons]]
+vertices = [
+    [1542, 3033],
+    [1542, 3060],
+]
+
+[[area.polygons]]
+vertices = [
+    [1571, 3033],
+    [1571, 3059],
+]
+
+[[area.polygons]]
+vertices = [
+    [1541, 3034],
+    [1541, 3059],
+]
+
+[[area.polygons]]
+vertices = [
+    [1572, 3034],
+    [1572, 3058],
+]
+
+[[area.polygons]]
+vertices = [
+    [1540, 3035],
+    [1540, 3058],
+]
+
+[[area.polygons]]
+vertices = [
+    [1573, 3035],
+    [1573, 3058],
+]
+
+[[area.polygons]]
+vertices = [
+    [1539, 3036],
+    [1539, 3057],
+]
+
+[[area.polygons]]
+vertices = [
+    [1574, 3036],
+    [1587, 3036],
+    [1587, 3055],
+    [1574, 3055],
+]
+
+[[area.polygons]]
+vertices = [
+    [1588, 3040],
+    [1589, 3040],
+    [1589, 3051],
+    [1588, 3051],
+]
+
+[[area.polygons]]
+vertices = [
+    [1588, 3052],
+    [1588, 3055],
+]
+
+[[area.polygons]]
+vertices = [
+    [1574, 3056],
+    [1582, 3056],
+]
+
+[[area.polygons]]
+vertices = [
+    [1574, 3057],
+    [1581, 3057],
+]
+
+[[area.polygons]]
+vertices = [
+    [1574, 3058],
+    [1580, 3058],
+]
+
+[[area.polygons]]
+vertices = [
+    [1536, 9408],
+    [1599, 9408],
+    [1599, 9471],
+    [1536, 9471],
+]

@@ -1,0 +1,195 @@
+# Quest music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Quest.
+# Bounds x 2129-2623, z 3525-4863; 4953 tiles as 30 rectangles.
+
+[[area]]
+name = "Quest"
+area_id = "area.quest"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2159, 3525],
+    [2163, 3525],
+    [2163, 3532],
+    [2159, 3532],
+]
+
+[[area.polygons]]
+vertices = [
+    [2157, 3526],
+    [2158, 3526],
+    [2158, 3542],
+    [2157, 3542],
+]
+
+[[area.polygons]]
+vertices = [
+    [2164, 3526],
+    [2164, 3531],
+]
+
+[[area.polygons]]
+vertices = [
+    [2156, 3527],
+    [2156, 3551],
+]
+
+[[area.polygons]]
+vertices = [
+    [2165, 3527],
+    [2165, 3530],
+]
+
+[[area.polygons]]
+vertices = [
+    [2155, 3528],
+    [2155, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2153, 3529],
+    [2154, 3529],
+    [2154, 3556],
+    [2153, 3556],
+]
+
+[[area.polygons]]
+vertices = [
+    [2148, 3530],
+    [2148, 3563],
+]
+
+[[area.polygons]]
+vertices = [
+    [2152, 3530],
+    [2152, 3559],
+]
+
+[[area.polygons]]
+vertices = [
+    [2147, 3531],
+    [2147, 3563],
+]
+
+[[area.polygons]]
+vertices = [
+    [2149, 3531],
+    [2151, 3531],
+    [2151, 3560],
+    [2149, 3560],
+]
+
+[[area.polygons]]
+vertices = [
+    [2145, 3532],
+    [2146, 3532],
+    [2146, 3564],
+    [2145, 3564],
+]
+
+[[area.polygons]]
+vertices = [
+    [2144, 3533],
+    [2144, 3565],
+]
+
+[[area.polygons]]
+vertices = [
+    [2159, 3533],
+    [2161, 3533],
+]
+
+[[area.polygons]]
+vertices = [
+    [2143, 3534],
+    [2143, 3565],
+]
+
+[[area.polygons]]
+vertices = [[2159, 3534]]
+
+[[area.polygons]]
+vertices = [
+    [2142, 3536],
+    [2142, 3565],
+]
+
+[[area.polygons]]
+vertices = [
+    [2137, 3537],
+    [2141, 3537],
+    [2141, 3565],
+    [2137, 3565],
+]
+
+[[area.polygons]]
+vertices = [
+    [2134, 3538],
+    [2136, 3538],
+    [2136, 3563],
+    [2134, 3563],
+]
+
+[[area.polygons]]
+vertices = [
+    [2133, 3539],
+    [2133, 3562],
+]
+
+[[area.polygons]]
+vertices = [
+    [2132, 3540],
+    [2132, 3561],
+]
+
+[[area.polygons]]
+vertices = [
+    [2157, 3543],
+    [2157, 3548],
+]
+
+[[area.polygons]]
+vertices = [
+    [2131, 3544],
+    [2131, 3559],
+]
+
+[[area.polygons]]
+vertices = [
+    [2130, 3548],
+    [2130, 3558],
+]
+
+[[area.polygons]]
+vertices = [
+    [2129, 3549],
+    [2129, 3552],
+]
+
+[[area.polygons]]
+vertices = [
+    [2153, 3557],
+    [2153, 3558],
+]
+
+[[area.polygons]]
+vertices = [
+    [2149, 3561],
+    [2150, 3561],
+]
+
+[[area.polygons]]
+vertices = [[2149, 3562]]
+
+[[area.polygons]]
+vertices = [[2136, 3564]]
+
+[[area.polygons]]
+vertices = [
+    [2560, 4800],
+    [2623, 4800],
+    [2623, 4863],
+    [2560, 4863],
+]

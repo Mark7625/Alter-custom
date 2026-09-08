@@ -1,0 +1,32 @@
+# Subterranea music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Subterranea.
+# Bounds x 1600-2559, z 9728-10175; 26624 tiles as 3 rectangles.
+
+[[area]]
+name = "Subterranea"
+area_id = "area.subterranea"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1600, 9728],
+    [1727, 9728],
+    [1727, 9855],
+    [1600, 9855],
+]
+
+[[area.polygons]]
+vertices = [
+    [2240, 9824],
+    [2303, 9824],
+    [2303, 9919],
+    [2240, 9919],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 10112],
+    [2559, 10112],
+    [2559, 10175],
+    [2496, 10175],
+]

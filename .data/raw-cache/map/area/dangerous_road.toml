@@ -1,0 +1,24 @@
+# Dangerous Road music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dangerous Road.
+# Bounds x 2816-2879, z 9536-9663; 6696 tiles as 2 rectangles.
+
+[[area]]
+name = "Dangerous Road"
+area_id = "area.dangerous_road"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 9536],
+    [2879, 9536],
+    [2879, 9619],
+    [2816, 9619],
+]
+
+[[area.polygons]]
+vertices = [
+    [2816, 9620],
+    [2845, 9620],
+    [2845, 9663],
+    [2816, 9663],
+]

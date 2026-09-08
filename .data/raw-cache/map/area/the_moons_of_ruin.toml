@@ -1,0 +1,32 @@
+# The Moons of Ruin music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Moons of Ruin.
+# Bounds x 1344-1535, z 9601-9727; 12160 tiles as 3 rectangles.
+
+[[area]]
+name = "The Moons of Ruin"
+area_id = "area.the_moons_of_ruin"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1344, 9601],
+    [1407, 9601],
+    [1407, 9663],
+    [1344, 9663],
+]
+
+[[area.polygons]]
+vertices = [
+    [1472, 9601],
+    [1535, 9601],
+    [1535, 9663],
+    [1472, 9663],
+]
+
+[[area.polygons]]
+vertices = [
+    [1408, 9664],
+    [1471, 9664],
+    [1471, 9727],
+    [1408, 9727],
+]

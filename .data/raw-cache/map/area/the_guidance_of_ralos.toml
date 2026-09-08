@@ -1,0 +1,200 @@
+# The Guidance of Ralos music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Guidance of Ralos.
+# Bounds x 1414-1467, z 3122-3217; 3400 tiles as 31 rectangles.
+
+[[area]]
+name = "The Guidance of Ralos"
+area_id = "area.the_guidance_of_ralos"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1447, 3122],
+    [1452, 3122],
+    [1452, 3210],
+    [1447, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [1418, 3123],
+    [1424, 3123],
+    [1424, 3150],
+    [1418, 3150],
+]
+
+[[area.polygons]]
+vertices = [
+    [1453, 3123],
+    [1453, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [1454, 3124],
+    [1454, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [1455, 3125],
+    [1455, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [1456, 3126],
+    [1456, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [1457, 3127],
+    [1457, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1458, 3128],
+    [1458, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1459, 3129],
+    [1459, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1460, 3130],
+    [1460, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1425, 3131],
+    [1446, 3131],
+    [1446, 3190],
+    [1425, 3190],
+]
+
+[[area.polygons]]
+vertices = [
+    [1461, 3131],
+    [1461, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1462, 3132],
+    [1462, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1463, 3133],
+    [1463, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1464, 3134],
+    [1464, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1417, 3143],
+    [1417, 3149],
+]
+
+[[area.polygons]]
+vertices = [
+    [1416, 3144],
+    [1416, 3148],
+]
+
+[[area.polygons]]
+vertices = [
+    [1415, 3145],
+    [1415, 3147],
+]
+
+[[area.polygons]]
+vertices = [[1414, 3146]]
+
+[[area.polygons]]
+vertices = [
+    [1419, 3151],
+    [1424, 3151],
+]
+
+[[area.polygons]]
+vertices = [
+    [1420, 3152],
+    [1424, 3152],
+]
+
+[[area.polygons]]
+vertices = [
+    [1421, 3153],
+    [1424, 3153],
+]
+
+[[area.polygons]]
+vertices = [
+    [1422, 3154],
+    [1424, 3154],
+]
+
+[[area.polygons]]
+vertices = [
+    [1423, 3155],
+    [1424, 3155],
+]
+
+[[area.polygons]]
+vertices = [[1424, 3156]]
+
+[[area.polygons]]
+vertices = [
+    [1465, 3185],
+    [1465, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1466, 3186],
+    [1466, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1467, 3187],
+    [1467, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [1434, 3191],
+    [1446, 3191],
+    [1446, 3212],
+    [1434, 3212],
+]
+
+[[area.polygons]]
+vertices = [
+    [1447, 3211],
+    [1451, 3211],
+    [1451, 3217],
+    [1447, 3217],
+]
+
+[[area.polygons]]
+vertices = [
+    [1444, 3213],
+    [1446, 3213],
+    [1446, 3217],
+    [1444, 3217],
+]

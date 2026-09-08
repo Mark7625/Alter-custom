@@ -1,0 +1,24 @@
+# Lower Depths music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lower Depths.
+# Bounds x 1152-3359, z 5696-9983; 10240 tiles as 2 rectangles.
+
+[[area]]
+name = "Lower Depths"
+area_id = "area.lower_depths"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 5696],
+    [3359, 5696],
+    [3359, 5759],
+    [3264, 5759],
+]
+
+[[area.polygons]]
+vertices = [
+    [1152, 9920],
+    [1215, 9920],
+    [1215, 9983],
+    [1152, 9983],
+]

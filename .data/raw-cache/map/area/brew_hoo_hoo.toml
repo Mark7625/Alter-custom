@@ -1,0 +1,16 @@
+# Brew Hoo Hoo! music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Brew Hoo Hoo!.
+# Bounds x 3648-3711, z 9920-9983; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Brew Hoo Hoo!"
+area_id = "area.brew_hoo_hoo"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 9920],
+    [3711, 9920],
+    [3711, 9983],
+    [3648, 9983],
+]

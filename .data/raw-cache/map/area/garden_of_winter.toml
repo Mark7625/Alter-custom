@@ -1,0 +1,16 @@
+# Garden of Winter music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Garden of Winter.
+# Bounds x 2887-2902, z 5465-5486; 352 tiles as 1 rectangles.
+
+[[area]]
+name = "Garden of Winter"
+area_id = "area.garden_of_winter"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2887, 5465],
+    [2902, 5465],
+    [2902, 5486],
+    [2887, 5486],
+]

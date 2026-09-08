@@ -1,0 +1,16 @@
+# The Sound of Guthix music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Sound of Guthix.
+# Bounds x 4032-4095, z 4544-4607; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Sound of Guthix"
+area_id = "area.the_sound_of_guthix"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [4032, 4544],
+    [4095, 4544],
+    [4095, 4607],
+    [4032, 4607],
+]

@@ -1,0 +1,112 @@
+# The Terrible Tower music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Terrible Tower.
+# Bounds x 3392-3455, z 3529-9983; 7099 tiles as 16 rectangles.
+
+[[area]]
+name = "The Terrible Tower"
+area_id = "area.the_terrible_tower"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3400, 3529],
+    [3419, 3529],
+    [3419, 3583],
+    [3400, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3437, 3529],
+    [3455, 3529],
+    [3455, 3583],
+    [3437, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3420, 3530],
+    [3420, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3436, 3530],
+    [3436, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3421, 3531],
+    [3421, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3435, 3531],
+    [3435, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3422, 3532],
+    [3422, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3434, 3532],
+    [3434, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3423, 3533],
+    [3423, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3433, 3533],
+    [3433, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3424, 3534],
+    [3424, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3432, 3534],
+    [3432, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3425, 3535],
+    [3425, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3431, 3535],
+    [3431, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3426, 3536],
+    [3430, 3536],
+    [3430, 3583],
+    [3426, 3583],
+]
+
+[[area.polygons]]
+vertices = [
+    [3392, 9920],
+    [3455, 9920],
+    [3455, 9983],
+    [3392, 9983],
+]

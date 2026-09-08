@@ -1,0 +1,16 @@
+# The Angel's Fury music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Angel's Fury.
+# Bounds x 2909-2943, z 5184-5247; 2240 tiles as 1 rectangles.
+
+[[area]]
+name = "The Angel's Fury"
+area_id = "area.the_angels_fury"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2909, 5184],
+    [2943, 5184],
+    [2943, 5247],
+    [2909, 5247],
+]

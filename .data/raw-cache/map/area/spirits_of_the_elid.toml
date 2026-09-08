@@ -1,0 +1,16 @@
+# Spirits of the Elid music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Spirits of the Elid.
+# Bounds x 3328-3391, z 9536-9599; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Spirits of the Elid"
+area_id = "area.spirits_of_the_elid"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3328, 9536],
+    [3391, 9536],
+    [3391, 9599],
+    [3328, 9599],
+]

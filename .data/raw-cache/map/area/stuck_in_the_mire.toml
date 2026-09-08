@@ -1,0 +1,264 @@
+# Stuck in the Mire music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Stuck in the Mire.
+# Bounds x 1152-1343, z 3568-3671; 13277 tiles as 41 rectangles.
+
+[[area]]
+name = "Stuck in the Mire"
+area_id = "area.stuck_in_the_mire"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1193, 3568],
+    [1199, 3568],
+    [1199, 3664],
+    [1193, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1192, 3569],
+    [1192, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1191, 3570],
+    [1191, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1190, 3571],
+    [1190, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1189, 3572],
+    [1189, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1188, 3573],
+    [1188, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1187, 3574],
+    [1187, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1186, 3575],
+    [1186, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1185, 3576],
+    [1185, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1184, 3577],
+    [1184, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1183, 3578],
+    [1183, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1182, 3579],
+    [1182, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1152, 3580],
+    [1181, 3580],
+    [1181, 3664],
+    [1152, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1278, 3593],
+    [1330, 3593],
+    [1330, 3650],
+    [1278, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1277, 3594],
+    [1277, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1331, 3594],
+    [1331, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1276, 3595],
+    [1276, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1332, 3595],
+    [1332, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1275, 3596],
+    [1275, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1333, 3596],
+    [1333, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1274, 3597],
+    [1274, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1334, 3597],
+    [1334, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1273, 3598],
+    [1273, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1335, 3598],
+    [1335, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1272, 3599],
+    [1272, 3650],
+]
+
+[[area.polygons]]
+vertices = [
+    [1336, 3599],
+    [1336, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1200, 3600],
+    [1271, 3600],
+    [1271, 3664],
+    [1200, 3664],
+]
+
+[[area.polygons]]
+vertices = [
+    [1337, 3600],
+    [1337, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1338, 3601],
+    [1338, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1339, 3602],
+    [1343, 3602],
+    [1343, 3652],
+    [1339, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1300, 3651],
+    [1330, 3651],
+]
+
+[[area.polygons]]
+vertices = [
+    [1301, 3652],
+    [1330, 3652],
+]
+
+[[area.polygons]]
+vertices = [
+    [1302, 3653],
+    [1314, 3653],
+]
+
+[[area.polygons]]
+vertices = [
+    [1303, 3654],
+    [1313, 3654],
+]
+
+[[area.polygons]]
+vertices = [
+    [1243, 3665],
+    [1271, 3665],
+]
+
+[[area.polygons]]
+vertices = [
+    [1244, 3666],
+    [1271, 3666],
+]
+
+[[area.polygons]]
+vertices = [
+    [1245, 3667],
+    [1271, 3667],
+]
+
+[[area.polygons]]
+vertices = [
+    [1246, 3668],
+    [1271, 3668],
+]
+
+[[area.polygons]]
+vertices = [
+    [1247, 3669],
+    [1271, 3669],
+]
+
+[[area.polygons]]
+vertices = [
+    [1248, 3670],
+    [1271, 3670],
+]
+
+[[area.polygons]]
+vertices = [
+    [1249, 3671],
+    [1271, 3671],
+]

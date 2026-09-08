@@ -1,0 +1,24 @@
+# Chamber music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Chamber.
+# Bounds x 2688-2815, z 4416-4543; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Chamber"
+area_id = "area.chamber"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2688, 4416],
+    [2751, 4416],
+    [2751, 4479],
+    [2688, 4479],
+]
+
+[[area.polygons]]
+vertices = [
+    [2752, 4480],
+    [2815, 4480],
+    [2815, 4543],
+    [2752, 4543],
+]

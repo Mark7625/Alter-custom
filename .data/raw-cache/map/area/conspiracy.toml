@@ -1,0 +1,16 @@
+# Conspiracy music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Conspiracy.
+# Bounds x 3584-3599, z 9664-9727; 1024 tiles as 1 rectangles.
+
+[[area]]
+name = "Conspiracy"
+area_id = "area.conspiracy"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3584, 9664],
+    [3599, 9664],
+    [3599, 9727],
+    [3584, 9727],
+]

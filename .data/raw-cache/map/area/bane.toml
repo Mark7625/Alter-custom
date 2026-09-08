@@ -1,0 +1,16 @@
+# Bane music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Bane.
+# Bounds x 2972-3007, z 4352-4415; 2304 tiles as 1 rectangles.
+
+[[area]]
+name = "Bane"
+area_id = "area.bane"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2972, 4352],
+    [3007, 4352],
+    [3007, 4415],
+    [2972, 4415],
+]

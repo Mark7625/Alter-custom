@@ -1,0 +1,16 @@
+# Down and Out music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Down and Out.
+# Bounds x 2336-2367, z 10352-10367; 512 tiles as 1 rectangles.
+
+[[area]]
+name = "Down and Out"
+area_id = "area.down_and_out"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2336, 10352],
+    [2367, 10352],
+    [2367, 10367],
+    [2336, 10367],
+]

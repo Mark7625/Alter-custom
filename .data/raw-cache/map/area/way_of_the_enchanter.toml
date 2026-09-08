@@ -1,0 +1,24 @@
+# Way of the Enchanter music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Way of the Enchanter.
+# Bounds x 2304-2367, z 10304-10367; 3584 tiles as 2 rectangles.
+
+[[area]]
+name = "Way of the Enchanter"
+area_id = "area.way_of_the_enchanter"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 10304],
+    [2367, 10304],
+    [2367, 10351],
+    [2304, 10351],
+]
+
+[[area.polygons]]
+vertices = [
+    [2304, 10352],
+    [2335, 10352],
+    [2335, 10367],
+    [2304, 10367],
+]

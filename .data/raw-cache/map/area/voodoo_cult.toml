@@ -1,0 +1,24 @@
+# Voodoo Cult music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Voodoo Cult.
+# Bounds x 2368-2943, z 4672-9343; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Voodoo Cult"
+area_id = "area.voodoo_cult"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 4672],
+    [2431, 4672],
+    [2431, 4735],
+    [2368, 4735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 9280],
+    [2943, 9280],
+    [2943, 9343],
+    [2880, 9343],
+]

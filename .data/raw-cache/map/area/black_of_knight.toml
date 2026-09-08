@@ -1,0 +1,40 @@
+# Black of Knight music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Black of Knight.
+# Bounds x 4096-4159, z 4672-4863; 11936 tiles as 4 rectangles.
+
+[[area]]
+name = "Black of Knight"
+area_id = "area.black_of_knight"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [4096, 4672],
+    [4159, 4672],
+    [4159, 4841],
+    [4096, 4841],
+]
+
+[[area.polygons]]
+vertices = [
+    [4096, 4842],
+    [4125, 4842],
+    [4125, 4863],
+    [4096, 4863],
+]
+
+[[area.polygons]]
+vertices = [
+    [4148, 4842],
+    [4159, 4842],
+    [4159, 4863],
+    [4148, 4863],
+]
+
+[[area.polygons]]
+vertices = [
+    [4126, 4858],
+    [4147, 4858],
+    [4147, 4863],
+    [4126, 4863],
+]

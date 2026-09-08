@@ -1,0 +1,183 @@
+# Zealot music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Zealot.
+# Bounds x 2465-2751, z 2694-4863; 4791 tiles as 28 rectangles.
+
+[[area]]
+name = "Zealot"
+area_id = "area.zealot"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2482, 2694],
+    [2484, 2694],
+    [2484, 2721],
+    [2482, 2721],
+]
+
+[[area.polygons]]
+vertices = [
+    [2471, 2695],
+    [2472, 2695],
+    [2472, 2724],
+    [2471, 2724],
+]
+
+[[area.polygons]]
+vertices = [
+    [2479, 2695],
+    [2481, 2695],
+    [2481, 2724],
+    [2479, 2724],
+]
+
+[[area.polygons]]
+vertices = [
+    [2485, 2695],
+    [2486, 2695],
+    [2486, 2715],
+    [2485, 2715],
+]
+
+[[area.polygons]]
+vertices = [
+    [2470, 2696],
+    [2470, 2723],
+]
+
+[[area.polygons]]
+vertices = [
+    [2473, 2696],
+    [2478, 2696],
+    [2478, 2726],
+    [2473, 2726],
+]
+
+[[area.polygons]]
+vertices = [
+    [2487, 2696],
+    [2487, 2712],
+]
+
+[[area.polygons]]
+vertices = [
+    [2468, 2697],
+    [2469, 2697],
+    [2469, 2721],
+    [2468, 2721],
+]
+
+[[area.polygons]]
+vertices = [
+    [2488, 2697],
+    [2488, 2710],
+]
+
+[[area.polygons]]
+vertices = [
+    [2467, 2698],
+    [2467, 2720],
+]
+
+[[area.polygons]]
+vertices = [
+    [2489, 2698],
+    [2489, 2707],
+]
+
+[[area.polygons]]
+vertices = [
+    [2466, 2700],
+    [2466, 2704],
+]
+
+[[area.polygons]]
+vertices = [
+    [2466, 2708],
+    [2466, 2718],
+]
+
+[[area.polygons]]
+vertices = [
+    [2465, 2709],
+    [2465, 2716],
+]
+
+[[area.polygons]]
+vertices = [[2485, 2716]]
+
+[[area.polygons]]
+vertices = [[2469, 2722]]
+
+[[area.polygons]]
+vertices = [
+    [2482, 2722],
+    [2483, 2722],
+]
+
+[[area.polygons]]
+vertices = [
+    [2482, 2723],
+    [2482, 2724],
+]
+
+[[area.polygons]]
+vertices = [[2472, 2725]]
+
+[[area.polygons]]
+vertices = [
+    [2479, 2725],
+    [2480, 2725],
+]
+
+[[area.polygons]]
+vertices = [
+    [2475, 2727],
+    [2475, 2737],
+]
+
+[[area.polygons]]
+vertices = [
+    [2478, 2730],
+    [2478, 2738],
+]
+
+[[area.polygons]]
+vertices = [
+    [2476, 2731],
+    [2477, 2731],
+    [2477, 2738],
+    [2476, 2738],
+]
+
+[[area.polygons]]
+vertices = [
+    [2479, 2731],
+    [2479, 2738],
+]
+
+[[area.polygons]]
+vertices = [
+    [2474, 2732],
+    [2474, 2735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2480, 2732],
+    [2480, 2738],
+]
+
+[[area.polygons]]
+vertices = [
+    [2481, 2735],
+    [2481, 2737],
+]
+
+[[area.polygons]]
+vertices = [
+    [2688, 4800],
+    [2751, 4800],
+    [2751, 4863],
+    [2688, 4863],
+]

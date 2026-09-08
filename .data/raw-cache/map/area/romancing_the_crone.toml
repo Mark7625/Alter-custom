@@ -1,0 +1,16 @@
+# Romancing the Crone music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Romancing the Crone.
+# Bounds x 2752-2815, z 3835-3875; 2624 tiles as 1 rectangles.
+
+[[area]]
+name = "Romancing the Crone"
+area_id = "area.romancing_the_crone"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 3835],
+    [2815, 3835],
+    [2815, 3875],
+    [2752, 3875],
+]

@@ -1,0 +1,117 @@
+# Pharaoh's Tomb music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Pharaoh's Tomb.
+# Bounds x 3346-3381, z 2823-2859; 1175 tiles as 18 rectangles.
+
+[[area]]
+name = "Pharaoh's Tomb"
+area_id = "area.pharaohs_tomb"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3354, 2823],
+    [3373, 2823],
+    [3373, 2858],
+    [3354, 2858],
+]
+
+[[area.polygons]]
+vertices = [
+    [3353, 2824],
+    [3353, 2857],
+]
+
+[[area.polygons]]
+vertices = [
+    [3374, 2824],
+    [3374, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [3352, 2825],
+    [3352, 2856],
+]
+
+[[area.polygons]]
+vertices = [
+    [3375, 2825],
+    [3375, 2858],
+]
+
+[[area.polygons]]
+vertices = [
+    [3376, 2826],
+    [3376, 2857],
+]
+
+[[area.polygons]]
+vertices = [
+    [3351, 2827],
+    [3351, 2855],
+]
+
+[[area.polygons]]
+vertices = [
+    [3377, 2827],
+    [3378, 2827],
+    [3378, 2855],
+    [3377, 2855],
+]
+
+[[area.polygons]]
+vertices = [
+    [3379, 2828],
+    [3379, 2854],
+]
+
+[[area.polygons]]
+vertices = [
+    [3350, 2829],
+    [3350, 2854],
+]
+
+[[area.polygons]]
+vertices = [
+    [3380, 2829],
+    [3380, 2853],
+]
+
+[[area.polygons]]
+vertices = [
+    [3349, 2830],
+    [3349, 2853],
+]
+
+[[area.polygons]]
+vertices = [
+    [3381, 2830],
+    [3381, 2852],
+]
+
+[[area.polygons]]
+vertices = [
+    [3348, 2832],
+    [3348, 2852],
+]
+
+[[area.polygons]]
+vertices = [
+    [3347, 2834],
+    [3347, 2851],
+]
+
+[[area.polygons]]
+vertices = [
+    [3346, 2835],
+    [3346, 2850],
+]
+
+[[area.polygons]]
+vertices = [[3377, 2856]]
+
+[[area.polygons]]
+vertices = [
+    [3355, 2859],
+    [3373, 2859],
+]

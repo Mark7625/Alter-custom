@@ -1,0 +1,16 @@
+# Power of the Shadow Realm music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Power of the Shadow Realm.
+# Bounds x 3264-3327, z 4288-4351; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Power of the Shadow Realm"
+area_id = "area.power_of_the_shadow_realm"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 4288],
+    [3327, 4288],
+    [3327, 4351],
+    [3264, 4351],
+]

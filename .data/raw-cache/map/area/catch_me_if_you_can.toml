@@ -1,0 +1,16 @@
+# Catch Me If You Can music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Catch Me If You Can.
+# Bounds x 2624-2687, z 9600-9663; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Catch Me If You Can"
+area_id = "area.catch_me_if_you_can"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 9600],
+    [2687, 9600],
+    [2687, 9663],
+    [2624, 9663],
+]

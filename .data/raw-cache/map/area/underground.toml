@@ -1,0 +1,16 @@
+# Underground music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Underground.
+# Bounds x 1920-2111, z 9152-9215; 12288 tiles as 1 rectangles.
+
+[[area]]
+name = "Underground"
+area_id = "area.underground"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1920, 9152],
+    [2111, 9152],
+    [2111, 9215],
+    [1920, 9215],
+]

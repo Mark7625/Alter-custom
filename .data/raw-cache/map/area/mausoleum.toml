@@ -1,0 +1,16 @@
+# Mausoleum music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Mausoleum.
+# Bounds x 3392-3455, z 9856-9919; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Mausoleum"
+area_id = "area.mausoleum"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3392, 9856],
+    [3455, 9856],
+    [3455, 9919],
+    [3392, 9919],
+]

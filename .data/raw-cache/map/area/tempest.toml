@@ -1,0 +1,16 @@
+# Tempest music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Tempest.
+# Bounds x 1664-1727, z 4544-4607; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Tempest"
+area_id = "area.tempest"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1664, 4544],
+    [1727, 4544],
+    [1727, 4607],
+    [1664, 4607],
+]

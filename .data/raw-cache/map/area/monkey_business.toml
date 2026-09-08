@@ -1,0 +1,16 @@
+# Monkey Business music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Monkey Business.
+# Bounds x 2048-2175, z 5632-5695; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Monkey Business"
+area_id = "area.monkey_business"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 5632],
+    [2175, 5632],
+    [2175, 5695],
+    [2048, 5695],
+]

@@ -1,0 +1,146 @@
+# Gaol music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Gaol.
+# Bounds x 2496-2559, z 3008-9471; 7464 tiles as 22 rectangles.
+
+[[area]]
+name = "Gaol"
+area_id = "area.gaol"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3008],
+    [2559, 3008],
+    [2559, 3050],
+    [2496, 3050],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3051],
+    [2537, 3051],
+]
+
+[[area.polygons]]
+vertices = [
+    [2543, 3051],
+    [2559, 3051],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3052],
+    [2536, 3052],
+]
+
+[[area.polygons]]
+vertices = [
+    [2544, 3052],
+    [2559, 3052],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3053],
+    [2535, 3053],
+]
+
+[[area.polygons]]
+vertices = [
+    [2545, 3053],
+    [2559, 3053],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3054],
+    [2534, 3054],
+]
+
+[[area.polygons]]
+vertices = [
+    [2547, 3054],
+    [2559, 3054],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3055],
+    [2533, 3055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2548, 3055],
+    [2559, 3055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3056],
+    [2532, 3056],
+]
+
+[[area.polygons]]
+vertices = [
+    [2551, 3056],
+    [2555, 3056],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3057],
+    [2531, 3057],
+]
+
+[[area.polygons]]
+vertices = [
+    [2552, 3057],
+    [2554, 3057],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3058],
+    [2530, 3058],
+    [2530, 3060],
+    [2496, 3060],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3061],
+    [2529, 3061],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3062],
+    [2528, 3062],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3063],
+    [2527, 3063],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3064],
+    [2525, 3064],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3065],
+    [2523, 3065],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9408],
+    [2559, 9408],
+    [2559, 9471],
+    [2496, 9471],
+]

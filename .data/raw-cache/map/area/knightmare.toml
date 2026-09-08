@@ -1,0 +1,113 @@
+# Knightmare music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Knightmare.
+# Bounds x 1856-3032, z 3504-4287; 4282 tiles as 15 rectangles.
+
+[[area]]
+name = "Knightmare"
+area_id = "area.knightmare"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3027, 3504],
+    [3030, 3504],
+    [3030, 3516],
+    [3027, 3516],
+]
+
+[[area.polygons]]
+vertices = [
+    [3031, 3505],
+    [3031, 3508],
+]
+
+[[area.polygons]]
+vertices = [
+    [3025, 3506],
+    [3026, 3506],
+    [3026, 3518],
+    [3025, 3518],
+]
+
+[[area.polygons]]
+vertices = [
+    [3032, 3506],
+    [3032, 3507],
+]
+
+[[area.polygons]]
+vertices = [
+    [3021, 3510],
+    [3024, 3510],
+    [3024, 3518],
+    [3021, 3518],
+]
+
+[[area.polygons]]
+vertices = [
+    [3008, 3513],
+    [3011, 3513],
+    [3011, 3518],
+    [3008, 3518],
+]
+
+[[area.polygons]]
+vertices = [
+    [3019, 3513],
+    [3020, 3513],
+    [3020, 3518],
+    [3019, 3518],
+]
+
+[[area.polygons]]
+vertices = [
+    [3012, 3514],
+    [3013, 3514],
+    [3013, 3516],
+    [3012, 3516],
+]
+
+[[area.polygons]]
+vertices = [
+    [3018, 3514],
+    [3018, 3517],
+]
+
+[[area.polygons]]
+vertices = [
+    [3014, 3515],
+    [3017, 3515],
+    [3017, 3516],
+    [3014, 3516],
+]
+
+[[area.polygons]]
+vertices = [[3012, 3517]]
+
+[[area.polygons]]
+vertices = [
+    [3015, 3517],
+    [3016, 3517],
+    [3016, 3519],
+    [3015, 3519],
+]
+
+[[area.polygons]]
+vertices = [
+    [3027, 3517],
+    [3029, 3517],
+]
+
+[[area.polygons]]
+vertices = [
+    [3027, 3518],
+    [3028, 3518],
+]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4224],
+    [1919, 4224],
+    [1919, 4287],
+    [1856, 4287],
+]

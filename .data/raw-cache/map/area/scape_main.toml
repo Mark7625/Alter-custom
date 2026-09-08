@@ -1,0 +1,16 @@
+# Scape Main music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Scape Main.
+# Bounds x 1600-1727, z 5632-5759; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "Scape Main"
+area_id = "area.scape_main"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1600, 5632],
+    [1727, 5632],
+    [1727, 5759],
+    [1600, 5759],
+]

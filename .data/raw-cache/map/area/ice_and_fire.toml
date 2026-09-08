@@ -1,0 +1,16 @@
+# Ice and Fire music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Ice and Fire.
+# Bounds x 1600-1663, z 3968-4031; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Ice and Fire"
+area_id = "area.ice_and_fire"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1600, 3968],
+    [1663, 3968],
+    [1663, 4031],
+    [1600, 4031],
+]

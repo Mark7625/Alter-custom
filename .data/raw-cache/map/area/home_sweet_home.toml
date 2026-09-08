@@ -1,0 +1,16 @@
+# Home Sweet Home music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Home Sweet Home.
+# Bounds x 1792-2047, z 5696-5823; 32768 tiles as 1 rectangles.
+
+[[area]]
+name = "Home Sweet Home"
+area_id = "area.home_sweet_home"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 5696],
+    [2047, 5696],
+    [2047, 5823],
+    [1792, 5823],
+]

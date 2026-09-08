@@ -1,0 +1,16 @@
+# Oh Rats! music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Oh Rats!.
+# Bounds x 3289-3310, z 9853-9878; 572 tiles as 1 rectangles.
+
+[[area]]
+name = "Oh Rats!"
+area_id = "area.oh_rats"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3289, 9853],
+    [3310, 9853],
+    [3310, 9878],
+    [3289, 9878],
+]

@@ -1,0 +1,174 @@
+# The Desolate Mage music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Desolate Mage.
+# Bounds x 1219-1270, z 3545-3578; 1424 tiles as 27 rectangles.
+
+[[area]]
+name = "The Desolate Mage"
+area_id = "area.the_desolate_mage"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1228, 3545],
+    [1241, 3545],
+    [1241, 3578],
+    [1228, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1227, 3546],
+    [1227, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1242, 3546],
+    [1242, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1226, 3547],
+    [1226, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1243, 3547],
+    [1243, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1225, 3548],
+    [1225, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1244, 3548],
+    [1244, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1224, 3549],
+    [1224, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1245, 3549],
+    [1245, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1223, 3550],
+    [1223, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1246, 3550],
+    [1258, 3550],
+    [1258, 3578],
+    [1246, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1222, 3551],
+    [1222, 3577],
+]
+
+[[area.polygons]]
+vertices = [
+    [1259, 3551],
+    [1259, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1221, 3552],
+    [1221, 3576],
+]
+
+[[area.polygons]]
+vertices = [
+    [1260, 3552],
+    [1260, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1220, 3553],
+    [1220, 3575],
+]
+
+[[area.polygons]]
+vertices = [
+    [1261, 3553],
+    [1261, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1219, 3554],
+    [1219, 3574],
+]
+
+[[area.polygons]]
+vertices = [
+    [1262, 3554],
+    [1262, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1263, 3555],
+    [1263, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1264, 3556],
+    [1264, 3578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1265, 3557],
+    [1265, 3570],
+]
+
+[[area.polygons]]
+vertices = [
+    [1266, 3563],
+    [1266, 3570],
+]
+
+[[area.polygons]]
+vertices = [
+    [1267, 3564],
+    [1267, 3570],
+]
+
+[[area.polygons]]
+vertices = [
+    [1268, 3565],
+    [1268, 3570],
+]
+
+[[area.polygons]]
+vertices = [
+    [1269, 3566],
+    [1269, 3569],
+]
+
+[[area.polygons]]
+vertices = [
+    [1270, 3567],
+    [1270, 3568],
+]

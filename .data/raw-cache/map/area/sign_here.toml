@@ -1,0 +1,16 @@
+# Sign Here music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sign Here.
+# Bounds x 1475-1535, z 10048-10111; 3904 tiles as 1 rectangles.
+
+[[area]]
+name = "Sign Here"
+area_id = "area.sign_here"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1475, 10048],
+    [1535, 10048],
+    [1535, 10111],
+    [1475, 10111],
+]

@@ -1,0 +1,64 @@
+# Stillness music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Stillness.
+# Bounds x 3072-3711, z 7424-9919; 21468 tiles as 7 rectangles.
+
+[[area]]
+name = "Stillness"
+area_id = "area.stillness"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3072, 7424],
+    [3135, 7424],
+    [3135, 7487],
+    [3072, 7487],
+]
+
+[[area.polygons]]
+vertices = [
+    [3169, 7445],
+    [3193, 7445],
+    [3193, 7469],
+    [3169, 7469],
+]
+
+[[area.polygons]]
+vertices = [
+    [3147, 7573],
+    [3177, 7573],
+    [3177, 7593],
+    [3147, 7593],
+]
+
+[[area.polygons]]
+vertices = [
+    [3648, 9728],
+    [3711, 9728],
+    [3711, 9791],
+    [3648, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3392, 9792],
+    [3511, 9792],
+    [3511, 9855],
+    [3392, 9855],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 9828],
+    [3519, 9828],
+    [3519, 9919],
+    [3512, 9919],
+]
+
+[[area.polygons]]
+vertices = [
+    [3456, 9856],
+    [3511, 9856],
+    [3511, 9919],
+    [3456, 9919],
+]

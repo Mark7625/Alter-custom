@@ -1,0 +1,16 @@
+# Trawler Minor music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Trawler Minor.
+# Bounds x 1920-2047, z 4800-4863; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Trawler Minor"
+area_id = "area.trawler_minor"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1920, 4800],
+    [2047, 4800],
+    [2047, 4863],
+    [1920, 4863],
+]

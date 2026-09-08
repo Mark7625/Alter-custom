@@ -1,0 +1,16 @@
+# The Genie music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Genie.
+# Bounds x 3328-3391, z 9280-9343; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Genie"
+area_id = "area.the_genie"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3328, 9280],
+    [3391, 9280],
+    [3391, 9343],
+    [3328, 9343],
+]

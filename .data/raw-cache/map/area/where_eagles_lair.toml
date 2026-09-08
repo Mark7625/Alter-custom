@@ -1,0 +1,24 @@
+# Where Eagles Lair music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Where Eagles Lair.
+# Bounds x 1920-2047, z 4864-4991; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Where Eagles Lair"
+area_id = "area.where_eagles_lair"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1920, 4864],
+    [1983, 4864],
+    [1983, 4927],
+    [1920, 4927],
+]
+
+[[area.polygons]]
+vertices = [
+    [1984, 4928],
+    [2047, 4928],
+    [2047, 4991],
+    [1984, 4991],
+]

@@ -1,0 +1,40 @@
+# Dreamstate music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dreamstate.
+# Bounds x 1728-1791, z 5056-5119; 3072 tiles as 4 rectangles.
+
+[[area]]
+name = "Dreamstate"
+area_id = "area.dreamstate"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1728, 5056],
+    [1791, 5056],
+    [1791, 5071],
+    [1728, 5071],
+]
+
+[[area.polygons]]
+vertices = [
+    [1728, 5072],
+    [1743, 5072],
+    [1743, 5119],
+    [1728, 5119],
+]
+
+[[area.polygons]]
+vertices = [
+    [1776, 5072],
+    [1791, 5072],
+    [1791, 5119],
+    [1776, 5119],
+]
+
+[[area.polygons]]
+vertices = [
+    [1744, 5104],
+    [1775, 5104],
+    [1775, 5119],
+    [1744, 5119],
+]

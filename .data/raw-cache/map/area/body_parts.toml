@@ -1,0 +1,16 @@
+# Body Parts music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Body Parts.
+# Bounds x 3456-3583, z 9920-9983; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Body Parts"
+area_id = "area.body_parts"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3456, 9920],
+    [3583, 9920],
+    [3583, 9983],
+    [3456, 9983],
+]

@@ -1,0 +1,16 @@
+# Troll Shuffle music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Troll Shuffle.
+# Bounds x 2688-2751, z 5760-5823; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Troll Shuffle"
+area_id = "area.troll_shuffle"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2688, 5760],
+    [2751, 5760],
+    [2751, 5823],
+    [2688, 5823],
+]

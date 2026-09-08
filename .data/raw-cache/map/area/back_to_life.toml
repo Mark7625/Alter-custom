@@ -1,0 +1,16 @@
+# Back to Life music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Back to Life.
+# Bounds x 2784-2815, z 5152-5183; 1024 tiles as 1 rectangles.
+
+[[area]]
+name = "Back to Life"
+area_id = "area.back_to_life"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2784, 5152],
+    [2815, 5152],
+    [2815, 5183],
+    [2784, 5183],
+]

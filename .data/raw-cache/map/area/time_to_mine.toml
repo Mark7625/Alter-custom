@@ -1,0 +1,16 @@
+# Time to Mine music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Time to Mine.
+# Bounds x 2816-2879, z 10112-10176; 4160 tiles as 1 rectangles.
+
+[[area]]
+name = "Time to Mine"
+area_id = "area.time_to_mine"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 10112],
+    [2879, 10112],
+    [2879, 10176],
+    [2816, 10176],
+]

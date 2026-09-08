@@ -1,0 +1,169 @@
+# Cannonballin' music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Cannonballin'.
+# Bounds x 2843-2871, z 2315-2343; 495 tiles as 26 rectangles.
+
+[[area]]
+name = "Cannonballin'"
+area_id = "area.cannonballin"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2860, 2315],
+    [2865, 2315],
+    [2865, 2331],
+    [2860, 2331],
+]
+
+[[area.polygons]]
+vertices = [
+    [2851, 2316],
+    [2859, 2316],
+    [2859, 2336],
+    [2851, 2336],
+]
+
+[[area.polygons]]
+vertices = [
+    [2866, 2316],
+    [2868, 2316],
+    [2868, 2329],
+    [2866, 2329],
+]
+
+[[area.polygons]]
+vertices = [
+    [2845, 2317],
+    [2850, 2317],
+    [2850, 2322],
+    [2845, 2322],
+]
+
+[[area.polygons]]
+vertices = [
+    [2869, 2317],
+    [2869, 2328],
+]
+
+[[area.polygons]]
+vertices = [
+    [2844, 2318],
+    [2844, 2322],
+]
+
+[[area.polygons]]
+vertices = [
+    [2870, 2318],
+    [2870, 2326],
+]
+
+[[area.polygons]]
+vertices = [[2843, 2320]]
+
+[[area.polygons]]
+vertices = [
+    [2871, 2320],
+    [2871, 2324],
+]
+
+[[area.polygons]]
+vertices = [
+    [2846, 2323],
+    [2850, 2323],
+]
+
+[[area.polygons]]
+vertices = [
+    [2847, 2324],
+    [2850, 2324],
+]
+
+[[area.polygons]]
+vertices = [
+    [2848, 2325],
+    [2850, 2325],
+]
+
+[[area.polygons]]
+vertices = [
+    [2849, 2326],
+    [2850, 2326],
+    [2850, 2333],
+    [2849, 2333],
+]
+
+[[area.polygons]]
+vertices = [
+    [2866, 2330],
+    [2867, 2330],
+]
+
+[[area.polygons]]
+vertices = [[2866, 2331]]
+
+[[area.polygons]]
+vertices = [
+    [2860, 2332],
+    [2864, 2332],
+    [2864, 2333],
+    [2860, 2333],
+]
+
+[[area.polygons]]
+vertices = [[2850, 2334]]
+
+[[area.polygons]]
+vertices = [
+    [2860, 2334],
+    [2863, 2334],
+]
+
+[[area.polygons]]
+vertices = [
+    [2860, 2335],
+    [2862, 2335],
+]
+
+[[area.polygons]]
+vertices = [
+    [2860, 2336],
+    [2861, 2336],
+]
+
+[[area.polygons]]
+vertices = [
+    [2852, 2337],
+    [2860, 2337],
+]
+
+[[area.polygons]]
+vertices = [
+    [2853, 2338],
+    [2860, 2338],
+]
+
+[[area.polygons]]
+vertices = [
+    [2854, 2339],
+    [2860, 2339],
+]
+
+[[area.polygons]]
+vertices = [
+    [2854, 2340],
+    [2859, 2340],
+    [2859, 2341],
+    [2854, 2341],
+]
+
+[[area.polygons]]
+vertices = [
+    [2855, 2342],
+    [2859, 2342],
+]
+
+[[area.polygons]]
+vertices = [
+    [2856, 2343],
+    [2857, 2343],
+]

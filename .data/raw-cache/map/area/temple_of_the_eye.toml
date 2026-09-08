@@ -1,0 +1,16 @@
+# Temple of the Eye music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Temple of the Eye.
+# Bounds x 3520-3711, z 9408-9482; 14400 tiles as 1 rectangles.
+
+[[area]]
+name = "Temple of the Eye"
+area_id = "area.temple_of_the_eye"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3520, 9408],
+    [3711, 9408],
+    [3711, 9482],
+    [3520, 9482],
+]

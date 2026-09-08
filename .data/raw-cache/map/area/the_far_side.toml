@@ -1,0 +1,16 @@
+# The Far Side music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Far Side.
+# Bounds x 3008-3071, z 5056-5119; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Far Side"
+area_id = "area.the_far_side"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5056],
+    [3071, 5056],
+    [3071, 5119],
+    [3008, 5119],
+]

@@ -1,0 +1,16 @@
+# Rest in Peace music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Rest in Peace.
+# Bounds x 3136-3199, z 5696-5759; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Rest in Peace"
+area_id = "area.rest_in_peace"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 5696],
+    [3199, 5696],
+    [3199, 5759],
+    [3136, 5759],
+]
