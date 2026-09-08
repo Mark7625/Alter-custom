@@ -1,20 +1,20 @@
 package org.rsmod.api.death
 
-import dev.or2.central.account.Rights
 import dev.openrune.ServerCacheManager
 import dev.openrune.rscm.RSCM
 import dev.openrune.rscm.RSCMType
+import dev.or2.central.account.Rights
 import jakarta.inject.Inject
 import jakarta.inject.Singleton
 import org.rsmod.api.area.checker.AreaChecker
 import org.rsmod.api.area.checker.isInWildernessBasic
+import org.rsmod.api.mechanics.toxins.Toxin.cureAllToxins
 import org.rsmod.api.player.death.DEATH_CAUSE_ATTR
 import org.rsmod.api.player.death.DeathCause
-import org.rsmod.api.player.hasProtectItemPrayer
-import org.rsmod.api.player.hook.TeleportType
-import org.rsmod.api.mechanics.toxins.Toxin.cureAllToxins
 import org.rsmod.api.player.deathResetTimers
 import org.rsmod.api.player.disablePrayers
+import org.rsmod.api.player.hasProtectItemPrayer
+import org.rsmod.api.player.hook.TeleportType
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.boolVarBit
 import org.rsmod.api.player.vars.intVarp
@@ -29,6 +29,7 @@ constructor(
     private val mapClock: MapClock,
     private val drops: PlayerDeathDrops,
     private val handlingResolver: PlayerDeathHandlingResolver,
+    private val storageHooks: Set<PlayerDeathStorageHook>,
     private val cleanupHooks: Set<PlayerDeathCleanupHook>,
     private val areaChecker: AreaChecker,
 ) {
@@ -92,7 +93,22 @@ constructor(
         val handling = handlingResolver.resolve(context)
 
         val result = drops.selectDrops(player, context, handling)
-        drops.applyDrops(player, result, handling, deathCoords)
+        var stored = false
+        for (hook in storageHooks) {
+            if (hook.store(context, result)) stored = true
+        }
+        val appliedResult =
+            if (stored) {
+                result.copy(
+                    supplyPile = emptyList(),
+                    lostTradeable = emptyList(),
+                    lostUntradeable = emptyList(),
+                    coinsForKiller = 0L,
+                )
+            } else {
+                result
+            }
+        drops.applyDrops(player, appliedResult, handling, deathCoords)
         drops.spawnRemains(deathCoords, handling)
 
         player.attr.remove(DEATH_KILLER_ATTR)
