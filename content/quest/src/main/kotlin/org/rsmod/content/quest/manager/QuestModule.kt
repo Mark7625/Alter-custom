@@ -3,6 +3,7 @@ package org.rsmod.content.quest.manager
 import org.rsmod.api.death.NpcAttackValidateHook
 import org.rsmod.content.quest.area.lumbridge.RuneMysteriesQuest
 import org.rsmod.content.quest.area.lumbridge.restlessghost.RestlessGhostQuest
+import org.rsmod.content.quest.area.rimmington.witchspotion.WitchsPotionQuest
 import org.rsmod.content.quest.area.varrock.demonslayer.DemonSlayerQuest
 import org.rsmod.content.quest.area.varrock.demonslayer.SilverlightAttackHook
 import org.rsmod.content.quest.area.varrock.demonslayer.StoneCircle
@@ -17,6 +18,7 @@ public class QuestModule : PluginModule() {
         bindInstance<DemonSlayerQuest>()
         bindInstance<GertrudesCatQuest>()
         bindInstance<RestlessGhostQuest>()
+        bindInstance<WitchsPotionQuest>()
         bindInstance<StoneCircle>()
         bindInstance<WallyVision>()
         addSetBinding<NpcAttackValidateHook>(SilverlightAttackHook::class.java)

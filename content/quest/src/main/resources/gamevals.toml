@@ -5,3 +5,5 @@ coffin_open = 54
 coffin_close = 53
 skeleton_resurrect = 1687
 ghost_disappear = 1598
+drink = 2390
+cauldron_bubbling = 2195

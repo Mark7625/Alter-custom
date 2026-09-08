@@ -1,0 +1,10 @@
+id = "Rat Drops"
+npcs = ["npc.rat", "npc.rat_indoors"]
+
+# Witch's Potion: every ordinary rat drops its tail, alongside its bones, while the quest is in
+# progress. Outside the quest rats drop nothing but bones.
+[[guaranteed]]
+obj = "obj.rats_tail"
+count = 1
+quest = "quest_witchspotion"
+quest_mode = "during"

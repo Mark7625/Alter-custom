@@ -47,6 +47,7 @@ object Music {
             modern("draynor_village", "start", "unknown_land", "wander"),
             modern("draynor_manor", "spooky"),
             modern("wizards_tower", "vision"),
+            modern("zanaris", "faerie", "crystal_cave"),
             modern(
                 "varrock",
                 "adventure",
