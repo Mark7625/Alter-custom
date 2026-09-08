@@ -1563,7 +1563,7 @@ constructor(
                 modifier = npcHitModifier,
                 sourceSecondary = spell,
             )
-        target.combatPlayDefendAnim(clientDelay)
+        // Targets never play their defend animation for a spell, only for melee and ranged.
         return hit
     }
 
@@ -1591,7 +1591,7 @@ constructor(
                 sourceSecondary = spell,
             )
         notifyPlayerHit(source, target)
-        target.combatPlayDefendAnim(clientDelay)
+        // Targets never play their defend animation for a spell, only for melee and ranged.
         return hit
     }
 

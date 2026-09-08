@@ -57,16 +57,28 @@ public fun ProtectedAccess.combatRetaliate(uid: PlayerUid, flinchDelay: Int) {
     opPlayer2(source)
 }
 
+/**
+ * Queues an npc's hit on this player. Melee and ranged hits play the defend animation (ranged
+ * after [defendClientDelay] client cycles, when the projectile lands); magic hits never do, as
+ * in the real game, so a spell cannot interrupt the target's own attack animation.
+ *
+ * @param defendClientDelay Client cycles (20ms) to wait before the defend animation plays.
+ */
 public fun Player.finishNpcHit(
     source: Npc,
     delay: Int,
     type: HitType,
     damage: Int,
     modifier: PlayerHitModifier,
+    defendClientDelay: Int = 0,
 ): Hit {
-    queueCombatRetaliate(source)
+    // Queued before the hit and with the same delay: the hit's strong queue interrupts whatever
+    // the player is doing when it lands, and the retaliation queued alongside it fights back.
+    queueCombatRetaliate(source, delay.coerceAtLeast(1))
     val hit = queueHit(source, delay, type, damage, modifier)
-    combatPlayDefendAnim()
+    if (type != HitType.Magic) {
+        combatPlayDefendAnim(defendClientDelay)
+    }
     return hit
 }
 

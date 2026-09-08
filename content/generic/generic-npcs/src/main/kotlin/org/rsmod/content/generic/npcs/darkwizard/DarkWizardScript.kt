@@ -6,7 +6,6 @@ import dev.openrune.rscm.RSCMType
 import jakarta.inject.Inject
 import org.rsmod.api.area.checker.AreaChecker
 import org.rsmod.api.combat.commons.npc.attackRate
-import org.rsmod.api.combat.commons.player.combatPlayDefendAnim
 import org.rsmod.api.combat.commons.player.finishNpcHit
 import org.rsmod.api.combat.commons.player.queueCombatRetaliate
 import org.rsmod.api.combat.formulas.AccuracyFormulae
@@ -27,6 +26,7 @@ import org.rsmod.api.player.vars.typeNpcUidVarp
 import org.rsmod.api.repo.world.WorldRepository
 import org.rsmod.api.script.onAiApPlayer2
 import org.rsmod.api.script.onAiOpPlayer2
+import org.rsmod.api.script.onPlayerSoftQueueWithArgs
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.npc.NpcUid
@@ -61,6 +61,16 @@ constructor(
         }
         for (npc in OLD_WIZARDS) {
             register(npc, EARTH_STRIKE, WEAKEN)
+        }
+        // The drain is queued to land with the projectile. A soft queue fires whatever the
+        // player is doing, as a spell that has already been cast should.
+        onPlayerSoftQueueWithArgs<CurseLanding>(CURSE_QUEUE) { player.applyCurse(args) }
+    }
+
+    private fun Player.applyCurse(landing: CurseLanding) {
+        // The curse only bites when the stat is at its base level; a lowered stat stays as it is.
+        if (stat(landing.stat) >= statBase(landing.stat)) {
+            statSub(landing.stat, constant = 0, percent = CURSE_DRAIN_PERCENT)
         }
     }
 
@@ -103,7 +113,7 @@ constructor(
         val damage = random.of(0..maxHit)
         target.spotanim(spell.impact, delay = proj.clientCycles, height = IMPACT_HEIGHT)
         worldRepo.soundArea(target, spell.hitSound, delay = proj.clientCycles, radius = SOUND_RADIUS)
-        target.finishNpcHit(npc, proj.serverCycles, HitType.Magic, damage, hitModifier)
+        target.finishNpcHit(npc, proj.serverCycles, HitType.Magic, damage, hitModifier, proj.clientCycles)
     }
 
     private fun StandardNpcAccess.castCurse(target: Player, spell: CurseSpell) {
@@ -118,12 +128,7 @@ constructor(
             worldRepo.soundArea(target, it, delay = proj.clientCycles, radius = SOUND_RADIUS)
         }
         target.queueCombatRetaliate(npc, delay = proj.serverCycles)
-        target.combatPlayDefendAnim(proj.clientCycles)
-
-        // The curse only bites when the stat is at its base level; a lowered stat stays as it is.
-        if (target.stat(spell.stat) >= target.statBase(spell.stat)) {
-            target.statSub(spell.stat, constant = 0, percent = CURSE_DRAIN_PERCENT)
-        }
+        target.softQueue(CURSE_QUEUE, proj.serverCycles, CurseLanding(spell.stat))
     }
 
     /** Plays the cast animation, graphic and sound, then launches the spell's projectile. */
@@ -143,7 +148,6 @@ constructor(
         target.spotanim(SPLASH_SPOT, delay = proj.clientCycles, height = IMPACT_HEIGHT)
         worldRepo.soundArea(target, SPLASH_SOUND, delay = proj.clientCycles, radius = SOUND_RADIUS)
         target.queueCombatRetaliate(npc, delay = proj.serverCycles)
-        target.combatPlayDefendAnim(proj.clientCycles)
     }
 
     private fun StandardNpcAccess.canAttack(target: Player): Boolean {
@@ -171,6 +175,9 @@ constructor(
         target.lastCombat = mapClock
         target.aggressiveNpc = npc.uid
     }
+
+    /** What a curse does to its target once its projectile lands. */
+    private data class CurseLanding(val stat: String)
 
     private sealed interface Spell {
         val casting: String
@@ -209,6 +216,7 @@ constructor(
         private const val SOUND_RADIUS = 10
         private const val SPLASH_SPOT = "spotanim.failedspell_impact"
         private const val SPLASH_SOUND = "synth.spellfail"
+        private const val CURSE_QUEUE = "queue.dark_wizard_curse"
 
         /** One cast in this many is a curse; the rest are strikes. */
         private const val CURSE_ONE_IN = 3
