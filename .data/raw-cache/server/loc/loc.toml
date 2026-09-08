@@ -2133,3 +2133,63 @@ contentGroup = "content.minnow_rowboat_to_island"
 id = "loc.minnow_rowboat_leave"
 inherit = "loc.minnow_rowboat_leave"
 contentGroup = "content.minnow_rowboat_to_guild"
+
+[[object]]
+id = "loc.hunting_ojibway_trap"
+inherit = "loc.hunting_ojibway_trap"
+contentGroup = "content.hunter_bird_snare"
+
+[[object]]
+id = "loc.hunting_ojibway_trap_broken"
+inherit = "loc.hunting_ojibway_trap_broken"
+contentGroup = "content.hunter_bird_snare"
+
+[[object]]
+id = "loc.hunting_ojibway_trap_full_desert"
+inherit = "loc.hunting_ojibway_trap_full_desert"
+contentGroup = "content.hunter_bird_snare"
+
+[[object]]
+id = "loc.hunting_ojibway_trap_full_jungle"
+inherit = "loc.hunting_ojibway_trap_full_jungle"
+contentGroup = "content.hunter_bird_snare"
+
+[[object]]
+id = "loc.hunting_ojibway_trap_full_polar"
+inherit = "loc.hunting_ojibway_trap_full_polar"
+contentGroup = "content.hunter_bird_snare"
+
+[[object]]
+id = "loc.hunting_ojibway_trap_full_woodland"
+inherit = "loc.hunting_ojibway_trap_full_woodland"
+contentGroup = "content.hunter_bird_snare"
+
+[[object]]
+id = "loc.hunting_boxtrap_empty"
+inherit = "loc.hunting_boxtrap_empty"
+contentGroup = "content.hunter_box_trap"
+
+[[object]]
+id = "loc.hunting_boxtrap_failed"
+inherit = "loc.hunting_boxtrap_failed"
+contentGroup = "content.hunter_box_trap"
+
+[[object]]
+id = "loc.hunting_boxtrap_full_chinchompa"
+inherit = "loc.hunting_boxtrap_full_chinchompa"
+contentGroup = "content.hunter_box_trap"
+
+[[object]]
+id = "loc.hunting_boxtrap_full_chinchompa_big"
+inherit = "loc.hunting_boxtrap_full_chinchompa_big"
+contentGroup = "content.hunter_box_trap"
+
+[[object]]
+id = "loc.hunting_boxtrap_full_chinchompa_black"
+inherit = "loc.hunting_boxtrap_full_chinchompa_black"
+contentGroup = "content.hunter_box_trap"
+
+[[object]]
+id = "loc.hunting_boxtrap_full_letvek"
+inherit = "loc.hunting_boxtrap_full_letvek"
+contentGroup = "content.hunter_box_trap"

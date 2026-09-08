@@ -1,0 +1,153 @@
+# creature	level	chance256   (base curve; the wiki's stated formula carries no bait term)
+# Extracted 2026-08-25 from the offline wiki snapshot 20260817 via the osrs-cache MCP
+# (get_wiki_sections -> get_wiki_section, section "Hunting technique > Hunting chance");
+# the chunks table was deliberately not used - it truncates the chart JSON.
+# Provenance oldids:
+#   Chinchompa (Hunter)        15199280  section 4
+#   Carnivorous chinchompa     15199287  section 5
+#   Black chinchompa (Hunter)  15272940  section 5
+#   Black chinchompa           15272952  (the ITEM/weapon page - no Hunter info, no chart;
+#                                         this is why a marker probe reported the chart
+#                                         absent. The creature lives at the "(Hunter)" title.)
+# All three creature pages embed the SAME {{Skilling success chart}}, titled "Chinchompa
+# catch chance", carrying three series: Grey (req 53), Red (req 63), Black (req 73). Each
+# page renders the identical JSON; only the prose above it differs. Every y value is an
+# exact 256th, so chance256 = y * 256 with no fitting.
+# Rows below are the solid (at-or-above-requirement) segment of each series, matching the
+# convention in deadfall-chance.tsv / magicbox-chance.tsv. The dashed below-requirement
+# segments are omitted; note the Red and Black dashed segments are display-clamped to 0
+# for levels 1-25, so the underlying low is negative and is NOT recoverable from the
+# rendered points below level 26.
+# Red and Black are the same curve - verified point-by-point over their level 73-99
+# overlap - and the prose on both pages says so outright. Black is Red with a higher
+# requirement, not a separate rate.
+#
+# Prose endpoints, verbatim:
+#   Chinchompa (Hunter), "Hunting chance":
+#     "The chance of success is approximately 145/255 beginning at level 53, and 268/255
+#      at level 99. The approximate formula for the chance of a successful catch (P) given
+#      hunter level (L) is: P(L) = (floor(262 x (L-1) / 98) + 6) / 255"
+#   Carnivorous chinchompa, "Hunting technique > Hunting chance":
+#     "The chance of successful catch is approximately 115/255 beginning at level 63, and
+#      228/255 at level 99. Carnivorous and Black Chinchompas have the same catch rate.
+#      The approximate formula for the chance of a successful catch (P) given hunter level
+#      (L) is: P(L) = (floor(306 x (L-1) / 98) - 78) / 255"
+#   Black chinchompa (Hunter), "Hunting technique > Hunting chance":
+#     "The chance of success is approximately 148/255 beginning at level 73, and 228/255
+#      at level 99. Carnivorous and Black Chinchompas have the same catch rate. The
+#      approximate formula for the chance of a successful catch (P) given hunter level (L)
+#      is: P(L) = (floor(306 x (L-1) / 98) - 78) / 255"
+#
+# The prose and the chart do not use the same denominator and do not agree exactly. Prose
+# is /255 and floors; the chart is /256 and rounds. Grey: prose 145/255 at L53 vs chart
+# 146/256; prose 268/255 at L99 vs a chart that has already saturated at 256/256 by L94.
+# Red: prose 115/255 at L63 vs chart 117/256. Black: prose 148/255 at L73 vs chart
+# 148/256. Both are recorded as found; neither was reconciled toward the other.
+# Point counts: chinchompa 42 (L53-94), carnivorous_chinchompa 37 (L63-99),
+# black_chinchompa 27 (L73-99).
+chinchompa	53	146
+chinchompa	54	149
+chinchompa	55	151
+chinchompa	56	154
+chinchompa	57	157
+chinchompa	58	159
+chinchompa	59	162
+chinchompa	60	165
+chinchompa	61	167
+chinchompa	62	170
+chinchompa	63	173
+chinchompa	64	175
+chinchompa	65	178
+chinchompa	66	181
+chinchompa	67	183
+chinchompa	68	186
+chinchompa	69	189
+chinchompa	70	191
+chinchompa	71	194
+chinchompa	72	197
+chinchompa	73	199
+chinchompa	74	202
+chinchompa	75	205
+chinchompa	76	208
+chinchompa	77	210
+chinchompa	78	213
+chinchompa	79	216
+chinchompa	80	218
+chinchompa	81	221
+chinchompa	82	224
+chinchompa	83	226
+chinchompa	84	229
+chinchompa	85	232
+chinchompa	86	234
+chinchompa	87	237
+chinchompa	88	240
+chinchompa	89	242
+chinchompa	90	245
+chinchompa	91	248
+chinchompa	92	250
+chinchompa	93	253
+chinchompa	94	256
+carnivorous_chinchompa	63	117
+carnivorous_chinchompa	64	120
+carnivorous_chinchompa	65	123
+carnivorous_chinchompa	66	126
+carnivorous_chinchompa	67	129
+carnivorous_chinchompa	68	132
+carnivorous_chinchompa	69	135
+carnivorous_chinchompa	70	138
+carnivorous_chinchompa	71	142
+carnivorous_chinchompa	72	145
+carnivorous_chinchompa	73	148
+carnivorous_chinchompa	74	151
+carnivorous_chinchompa	75	154
+carnivorous_chinchompa	76	157
+carnivorous_chinchompa	77	160
+carnivorous_chinchompa	78	163
+carnivorous_chinchompa	79	167
+carnivorous_chinchompa	80	170
+carnivorous_chinchompa	81	173
+carnivorous_chinchompa	82	176
+carnivorous_chinchompa	83	179
+carnivorous_chinchompa	84	182
+carnivorous_chinchompa	85	185
+carnivorous_chinchompa	86	188
+carnivorous_chinchompa	87	192
+carnivorous_chinchompa	88	195
+carnivorous_chinchompa	89	198
+carnivorous_chinchompa	90	201
+carnivorous_chinchompa	91	204
+carnivorous_chinchompa	92	207
+carnivorous_chinchompa	93	210
+carnivorous_chinchompa	94	213
+carnivorous_chinchompa	95	217
+carnivorous_chinchompa	96	220
+carnivorous_chinchompa	97	223
+carnivorous_chinchompa	98	226
+carnivorous_chinchompa	99	229
+black_chinchompa	73	148
+black_chinchompa	74	151
+black_chinchompa	75	154
+black_chinchompa	76	157
+black_chinchompa	77	160
+black_chinchompa	78	163
+black_chinchompa	79	167
+black_chinchompa	80	170
+black_chinchompa	81	173
+black_chinchompa	82	176
+black_chinchompa	83	179
+black_chinchompa	84	182
+black_chinchompa	85	185
+black_chinchompa	86	188
+black_chinchompa	87	192
+black_chinchompa	88	195
+black_chinchompa	89	198
+black_chinchompa	90	201
+black_chinchompa	91	204
+black_chinchompa	92	207
+black_chinchompa	93	210
+black_chinchompa	94	213
+black_chinchompa	95	217
+black_chinchompa	96	220
+black_chinchompa	97	223
+black_chinchompa	98	226
+black_chinchompa	99	229

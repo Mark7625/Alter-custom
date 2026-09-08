@@ -9,3 +9,12 @@ id = "varcon.woodcutting_tree_loc"
 
 [[varcon]]
 id = "varcon.firemaking_campfire_expiry_cycle"
+
+[[varcon]]
+id = "varcon.hunter_trap_owner"
+
+[[varcon]]
+id = "varcon.hunter_trap_family"
+
+[[varcon]]
+id = "varcon.hunter_trap_creature"

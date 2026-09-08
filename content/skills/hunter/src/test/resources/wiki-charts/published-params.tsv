@@ -1,0 +1,71 @@
+# page	oldid	series	low	high	req
+# The {{Skilling success chart}} template's OWN (low, high, req) parameters, read from the
+# Parsoid transclusion metadata in the offline wiki snapshot 20260817 (`pages.raw_content_zstd`,
+# the data-mw attribute) on 2026-08-25. These are the published values themselves, not a fit:
+# where a chart has few points many (low, high) pairs reproduce it, and only this pins the pair.
+# NOTE: the `chunks` table does NOT contain these - it stores rendered text. Earlier work here
+# searched chunks for `low1=` wikitext, found nothing, and wrongly concluded fitting was required.
+Crimson swift	15258753	Crimson swift	100	420	1
+Golden warbler	15196367	Golden warbler	92	400	5
+Copper longtail	15196354	Copper longtail	85	390	9
+Cerulean twitch	15196328	Cerulean twitch	82	380	11
+Tropical wagtail	15259195	Tropical wagtail	75	370	19
+Chinchompa (Hunter)	15199280	Grey	6	268	53
+Chinchompa (Hunter)	15199280	Red	-78	228	63
+Chinchompa (Hunter)	15199280	Black	-78	228	73
+Wild kebbit	15196478	Wild kebbit	29	385	23
+Wild kebbit	15196478	With bait	32	388	23
+Wild kebbit	15196478	With smoke	31	387	23
+Wild kebbit	15196478	Bait and smoke	34	390	23
+Barb-tailed kebbit	15196228	Barb-tailed kebbit	-220	1037	33
+Barb-tailed kebbit	15196228	With bait	-217	1040	33
+Barb-tailed kebbit	15196228	With smoke	-218	1039	33
+Barb-tailed kebbit	15196228	Bait and smoke	-215	1042	33
+Prickly kebbit	15196260	Prickly kebbit	-70	331	37
+Prickly kebbit	15196260	With bait	-67	334	37
+Prickly kebbit	15196260	With smoke	-68	333	37
+Prickly kebbit	15196260	Bait and smoke	-65	336	37
+Sabre-toothed kebbit	15196422	Sabre-toothed kebbit	-434	820	51
+Sabre-toothed kebbit	15196422	With bait	-431	823	51
+Sabre-toothed kebbit	15196422	With smoke	-432	822	51
+Sabre-toothed kebbit	15196422	Bait and smoke	-429	825	51
+Pyre fox	15197087	Pyre fox	-475	750	57
+Net trap	15272929	Swamp lizard	52	360	29
+Net trap	15272929	Orange salamander	16	288	47
+Net trap	15272929	Red salamander	0	240	59
+Net trap	15272929	Black salamander	0	212	67
+Net trap	15272929	Tecu salamander	1	212	79
+Imp	15271036	Imp	0	197	71
+Spotted kebbit	15225548	Spotted kebbit	26	310	43
+Dark kebbit	15288973	Dark kebbit	0	253	57
+Dashing kebbit	15225549	Dashing kebbit	0	205	69
+Black warlock	15288148	Butterfly net	20	296	45
+Black warlock	15288148	Barehanded or Magic butterfly net	40	316	45
+Sunlight Moth	15197088	Barehanded or butterfly net	20	296	65
+Sunlight Moth	15197088	Magic butterfly net	40	316	65
+Moonlight moth	15208105	Butterfly net	0	276	75
+Moonlight moth	15208105	Barehanded or magic butterfly net	20	286	75
+Baby impling	15297388	Butterfly net	79	402	17
+Baby impling	15297388	Barehanded or magic butterfly net	99	422	17
+Young impling	15297391	Butterfly net	69	351	22
+Young impling	15297391	Barehanded or magic butterfly net	89	371	22
+Gourmet impling	15297393	Butterfly net	61	325	28
+Gourmet impling	15297393	Barehanded or magic butterfly net	81	345	28
+Earth impling	15297396	Butterfly net	51	302	36
+Earth impling	15297396	Barehanded or magic butterfly net	71	322	36
+Essence impling	15297398	Butterfly net	40	275	42
+Essence impling	15297398	Barehanded or magic butterfly net	60	295	42
+Eclectic impling	15297390	Butterfly net	30	250	50
+Eclectic impling	15297390	Barehanded or magic butterfly net	50	270	50
+Nature impling	15297392	Butterfly net	20	200	58
+Nature impling	15297392	Barehanded or magic butterfly net	40	220	58
+Magpie impling	15297395	Butterfly net	15	177	65
+Magpie impling	15297395	Barehanded or magic butterfly net	35	197	65
+Ninja impling	15297397	Butterfly net	10	151	74
+Ninja impling	15297397	Barehanded or magic butterfly net	30	171	74
+Crystal impling	15250580	Butterfly net	8	141	80
+Crystal impling	15250580	Barehanded or magic butterfly net	28	161	80
+Dragon impling	15297400	Butterfly net	5	125	83
+Dragon impling	15297400	Barehanded or magic butterfly net	25	145	83
+Lucky impling	15297402	Butterfly net	3	100	89
+Lucky impling	15297402	Barehanded or magic butterfly net	23	120	89

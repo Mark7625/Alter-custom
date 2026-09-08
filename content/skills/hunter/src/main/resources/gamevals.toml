@@ -1,0 +1,39 @@
+[gamevals.dbtable]
+# 55543-55549 sit above the whole 555xx dbtable run in use today - mining's 55520 and firemaking's
+# 55535-55537 - with 55538-55542 left clear for the fletching tables.
+hunter_snare_creatures = 55543
+hunter_box_creatures = 55544
+
+# Append-only block, clear of the 555xx and 56[0-2]xx dbrow runs with headroom. Ids ascend in the
+# order the creatures appear in the combined list, which a sprung trap persists an index into, so
+# each technique takes the next free decade rather than filling the gap above it.
+[gamevals.dbrow]
+hunter_jungle_bird = 56300
+hunter_desert_bird = 56301
+hunter_woodland_bird = 56302
+hunter_polar_bird = 56303
+hunter_chinchompa = 56304
+hunter_carnivorous_chinchompa = 56305
+hunter_black_chinchompa = 56306
+
+[gamevals.controller]
+hunter_trap = 2
+
+[gamevals.varcon]
+hunter_trap_owner = 4
+hunter_trap_family = 5
+hunter_trap_creature = 6
+
+[gamevals.content]
+hunter_bird_snare = 54
+hunter_box_trap = 55
+
+# Custom varp ids grow downward from the low-water mark of the server-authored block: 65481-65501
+# is already claimed by runecrafting, sandstorm, slayer, instances, herblore and prayer, so hunter
+# takes the next five below it. Coords rather than a counter: see docs/hunter.md.
+[gamevals.varp]
+hunter_trap_coord_1 = 65480
+hunter_trap_coord_2 = 65479
+hunter_trap_coord_3 = 65478
+hunter_trap_coord_4 = 65477
+hunter_trap_coord_5 = 65476
