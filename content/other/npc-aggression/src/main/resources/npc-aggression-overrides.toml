@@ -1,0 +1,5 @@
+# Hand-maintained aggression corrections. Same format as npc-aggression.toml; applied after it.
+# Set `aggressive = false` to stop a generated entry hunting, or list an npc the wiki misses.
+
+npc = [
+]

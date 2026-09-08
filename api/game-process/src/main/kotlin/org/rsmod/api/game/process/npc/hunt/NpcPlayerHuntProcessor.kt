@@ -22,6 +22,7 @@ constructor(
     @CoreRandom private val random: GameRandom,
     private val mapClock: MapClock,
     private val hunt: Hunt,
+    private val tolerance: AggressionTolerance,
 ) {
     public fun process(npc: Npc) {
         if (!npc.isValidTarget() || npc.isDelayed) {
@@ -72,24 +73,27 @@ constructor(
                 if (player.combatLevel > type.combatLevel * 2 && !player.isInWilderness()) {
                     continue
                 }
+                // Monsters that respect the level rule also tire of a player who has stayed in
+                // their area for ten minutes; the always-aggressive modes never do.
+                if (tolerance.isTolerant(player, mapClock.cycle)) {
+                    continue
+                }
             }
 
             if (!player.isInMulti()) {
+                // Vars are stored by id, and the server-only combat varp the hunt modes point
+                // at has no entry in the cache varp table, so read both by id.
                 if (mode.checkNotCombat != -1) {
-                    val varp =
-                        ServerCacheManager.getVarp(mode.checkNotCombat)
-                            ?: error("Error finding varp")
-                    val delay = player.vars[varp] + constants.combat_activecombat_delay
+                    val lastCombat = player.vars.backing.getOrDefault(mode.checkNotCombat, 0)
+                    val delay = lastCombat + constants.combat_activecombat_delay
                     if (delay > mapClock.cycle) {
                         continue
                     }
                 }
 
                 if (mode.checkNotCombatSelf != -1) {
-                    val varn =
-                        ServerCacheManager.getVarn(mode.checkNotCombatSelf)
-                            ?: error("Unable to find varn: ${mode.checkNotCombatSelf}")
-                    val delay = vars[varn] + constants.combat_activecombat_delay
+                    val lastCombat = vars.backing.getOrDefault(mode.checkNotCombatSelf, 0)
+                    val delay = lastCombat + constants.combat_activecombat_delay
                     if (delay > mapClock.cycle) {
                         continue
                     }
@@ -161,8 +165,10 @@ constructor(
                 }
             }
 
+            // Reservoir sampling: the n-th eligible player replaces the pick with probability
+            // 1/n, so every eligible player is equally likely and one is always chosen.
             count++
-            if (random.of(minInclusive = 0, maxInclusive = count) == 0) {
+            if (random.of(minInclusive = 0, maxInclusive = count - 1) == 0) {
                 target = player.uid
             }
         }
@@ -177,9 +183,9 @@ constructor(
         return false
     }
 
-    // TODO(combat): Wilderness indicator.
+    // The wilderness plugin keeps this varbit in step with the player's area.
     private fun Player.isInWilderness(): Boolean {
-        return false
+        return vars["varbit.inside_wilderness"] == 1
     }
 
     // Hunt can be quite expensive if not careful. We are assuming that using a possibly delayed
