@@ -13,5 +13,8 @@ public class FreezeTimerScript : PluginScript() {
         onPlayerTimer("timer.combat_freeze_immunity") {
             CombatEffects.clearFreezeImmunity(player)
         }
+        onPlayerTimer("timer.combat_stun") {
+            CombatEffects.unstun(player)
+        }
     }
 }

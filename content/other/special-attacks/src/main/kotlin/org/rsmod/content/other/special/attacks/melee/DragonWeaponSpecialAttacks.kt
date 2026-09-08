@@ -269,7 +269,8 @@ constructor(private val worldRepo: WorldRepository, private val npcSearch: NpcSe
         override suspend fun ProtectedAccess.attack(target: Player, attack: CombatAttack.Melee): Boolean {
             shove(target)
             target.anim("seq.stunned_shove")
-            CombatEffects.freeze(target, STUN_TICKS)
+            // A stun, not a freeze: it ignores freeze immunity and grants none afterwards.
+            CombatEffects.stun(target, STUN_TICKS)
             manager.continueCombat(this, target)
             return true
         }

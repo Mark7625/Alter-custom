@@ -20,6 +20,9 @@ public class PlayerTimerMap(
         timers.remove(timer.asRSCM(RSCMType.TIMER).toShort())
     }
 
+    public operator fun contains(timer: String): Boolean =
+        timers.containsKey(timer.asRSCM(RSCMType.TIMER).toShort())
+
     @OptIn(InternalApi::class)
     public fun schedule(timer: String, mapClock: Int, interval: Int) {
         put(timer.asRSCM(RSCMType.TIMER).toShort(), mapClock, interval)
