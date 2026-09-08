@@ -52860,3 +52860,61 @@ weaponCategory="Blunt"
 "param.attack_anim_stance4"="seq.human_blunt_pound"
 "param.attack_sound_stance4"=2567
 "param.defend_anim"="seq.human_blunt_block"
+
+
+[[item]]
+id = "obj.roguesden_helm"
+inherit = "obj.roguesden_helm"
+[item.params]
+"param.statreq1_skill"=17
+"param.statreq1_level"=50
+"param.statreq2_skill"=16
+"param.statreq2_level"=50
+
+
+[[item]]
+id = "obj.roguesden_body"
+inherit = "obj.roguesden_body"
+[item.params]
+"param.statreq1_skill"=17
+"param.statreq1_level"=50
+"param.statreq2_skill"=16
+"param.statreq2_level"=50
+
+
+[[item]]
+id = "obj.roguesden_legs"
+inherit = "obj.roguesden_legs"
+[item.params]
+"param.statreq1_skill"=17
+"param.statreq1_level"=50
+"param.statreq2_skill"=16
+"param.statreq2_level"=50
+
+
+[[item]]
+id = "obj.roguesden_gloves"
+inherit = "obj.roguesden_gloves"
+[item.params]
+"param.statreq1_skill"=17
+"param.statreq1_level"=50
+"param.statreq2_skill"=16
+"param.statreq2_level"=50
+
+
+[[item]]
+id = "obj.roguesden_boots"
+inherit = "obj.roguesden_boots"
+[item.params]
+"param.statreq1_skill"=17
+"param.statreq1_level"=50
+"param.statreq2_skill"=16
+"param.statreq2_level"=50
+
+
+[[item]]
+id = "obj.hunting_silent_gloves"
+inherit = "obj.hunting_silent_gloves"
+[item.params]
+"param.statreq1_skill"=21
+"param.statreq1_level"=54
