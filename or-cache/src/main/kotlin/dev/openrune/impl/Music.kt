@@ -46,6 +46,7 @@ object Music {
             modern("lumbridge", "autumn_voyage", "book_of_spells", "dream", "flute_salad", "harmony", "yesteryear"),
             modern("draynor_village", "start", "unknown_land", "wander"),
             modern("draynor_manor", "spooky"),
+            modern("wizards_tower", "vision"),
             modern(
                 "varrock",
                 "adventure",
@@ -109,6 +110,8 @@ object Music {
             modern("barbarian_outpost", "legion"),
             modern("al_kharid", "al_kharid"),
             modern("port_sarim", "sea_shanty2"),
+            modern("mudskipper_point", "mudskipper_melody"),
+            modern("fishing_guild", "mellow"),
             modern("east_ardougne", "baroque", "knightly", "the_tower"),
             modern("west_ardougne", "sad_meadow"),
             modern("ardougne_sewers", "the_cellar_dwellers"),
@@ -117,6 +120,18 @@ object Music {
             modern("mourner_tunnels", "fight_or_flight"),
             modern("emirs_arena_music", "duelarena"),
             modern("mage_training_arena", "shine"),
+            // Since the February 2026 music rework the three stronghold tracks shuffle everywhere
+            // inside the walls, while Gnomeball is confined to the ball field, which is carved out
+            // of the stronghold polygon.
+            modern("tree_gnome_stronghold", "gnome_king", "gnome_village", "gnome_village2"),
+            modern("gnome_ball_field", "gnomeball"),
+            modern("yanille", "big_chords", "magic_dance"),
+            modern("yanille_chain", "long_ago"),
+            modern("yanille_agility_dungeon", "cavern"),
+            // "Castle Wars" plays in the lobby and the arena; "Ready for Battle" in the waiting
+            // rooms and the tunnels underneath.
+            modern("castle_wars", "castlewars"),
+            modern("castle_wars_underground", "ready_for_battle"),
         )
 
     fun musicModern() =

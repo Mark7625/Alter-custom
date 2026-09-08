@@ -1,0 +1,45 @@
+# Everything inside the Tree Gnome Stronghold walls (south gate at 2459,3383 up to the north
+# wall, the terrorbird pens in the west and the agility course in the east) except the Gnome Ball
+# field, which is its own music area (see gnome_ball_field.toml, x 2384-2405, z 3479-3497). Music
+# area for "Gnome King", "Gnome Village" and "Gnome Village 2".
+
+[[area]]
+name = "Tree Gnome Stronghold"
+area_id = "area.tree_gnome_stronghold"
+levels = [0, 1, 2, 3]
+
+# South of the ball field: the whole stronghold below z 3479.
+[[area.polygons]]
+vertices = [
+    [2375, 3383],
+    [2498, 3383],
+    [2498, 3478],
+    [2375, 3478],
+]
+
+# Strip between the west wall and the ball field gate.
+[[area.polygons]]
+vertices = [
+    [2375, 3479],
+    [2383, 3479],
+    [2383, 3497],
+    [2375, 3497],
+]
+
+# Everything east of the ball field, including the Grand Tree.
+[[area.polygons]]
+vertices = [
+    [2406, 3479],
+    [2498, 3479],
+    [2498, 3497],
+    [2406, 3497],
+]
+
+# North of the ball field up to the north wall.
+[[area.polygons]]
+vertices = [
+    [2375, 3498],
+    [2498, 3498],
+    [2498, 3519],
+    [2375, 3519],
+]

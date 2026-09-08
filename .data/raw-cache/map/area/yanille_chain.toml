@@ -1,0 +1,14 @@
+# The chain of islands east of Yanille where Hazelmere lives (his house is at 2677,3087, fairy
+# ring CLS behind it). Music area for "Long Ago".
+[[area]]
+name = "Yanille Chain"
+area_id = "area.yanille_chain"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3062],
+    [2700, 3062],
+    [2700, 3135],
+    [2633, 3135],
+]

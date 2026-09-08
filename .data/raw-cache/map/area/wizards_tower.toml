@@ -1,0 +1,22 @@
+# The Wizards' Tower and its island south of Draynor Village, plus the tower basement. Music
+# area for "Vision".
+[[area]]
+name = "Wizards' Tower"
+area_id = "area.wizards_tower"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3140],
+    [3130, 3140],
+    [3130, 3184],
+    [3090, 3184],
+]
+
+[[area.polygons]]
+vertices = [
+    [3092, 9552],
+    [3128, 9552],
+    [3128, 9590],
+    [3092, 9590],
+]

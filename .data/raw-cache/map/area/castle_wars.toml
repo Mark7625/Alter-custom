@@ -1,0 +1,25 @@
+# Castle Wars above ground: the arena map square with both castles and the lobby building with
+# the team portals (2436,3082-3096). Music area for "Castle Wars". The waiting rooms and tunnels
+# underneath are castle_wars_underground.toml.
+[[area]]
+name = "Castle Wars"
+area_id = "area.castle_wars"
+levels = [0, 1, 2, 3]
+
+# The arena.
+[[area.polygons]]
+vertices = [
+    [2368, 3072],
+    [2431, 3072],
+    [2431, 3135],
+    [2368, 3135],
+]
+
+# The lobby.
+[[area.polygons]]
+vertices = [
+    [2432, 3076],
+    [2450, 3076],
+    [2450, 3102],
+    [2432, 3102],
+]

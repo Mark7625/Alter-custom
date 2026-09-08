@@ -1,0 +1,15 @@
+# The peninsula south of Port Sarim (fairy ring AIQ, the Rimmington coast road). Music area for
+# "Mudskipper Melody". Port Sarim's polygon starts one tile north of this one so the two never
+# overlap.
+[[area]]
+name = "Mudskipper Point"
+area_id = "area.mudskipper_point"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 3072],
+    [3007, 3072],
+    [3007, 3141],
+    [2944, 3141],
+]

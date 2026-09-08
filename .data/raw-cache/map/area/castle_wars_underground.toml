@@ -1,0 +1,15 @@
+# Underneath Castle Wars: both team waiting rooms (portals at 2374,9486 and 2424,9529) and the
+# tunnels beneath the arena. Music area for "Ready for Battle". Starts at z 9475 so it stays clear
+# of the Smoke Devil Dungeon polygon (yanille_underground.toml).
+[[area]]
+name = "Castle Wars (underground)"
+area_id = "area.castle_wars_underground"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 9475],
+    [2431, 9475],
+    [2431, 9535],
+    [2368, 9535],
+]

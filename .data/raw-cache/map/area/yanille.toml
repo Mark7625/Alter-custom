@@ -1,0 +1,16 @@
+# Yanille and its surroundings: the walled city, the Watchtower, the Nightmare Zone and the
+# agility dungeon entrance house north of the walls. Stops one tile short of the Yanille Chain
+# islands (yanille_chain.toml) and of Port Khazard to the north. Music area for "Big Chords" and
+# "Magic Dance".
+[[area]]
+name = "Yanille"
+area_id = "area.yanille"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2516, 3062],
+    [2632, 3062],
+    [2632, 3132],
+    [2516, 3132],
+]
