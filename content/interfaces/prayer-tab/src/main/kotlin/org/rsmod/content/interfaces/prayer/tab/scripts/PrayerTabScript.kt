@@ -72,6 +72,9 @@ private constructor(
             return
         }
         if (player.prayerLvl == 0) {
+            // The client lit the button when it was clicked; put it back out.
+            player.resyncVar(prayer.enabled)
+            mes("You have run out of prayer points, you can recharge at an altar.")
             // Note: This is probably implicitly called by some other function, but as of now, we do
             // not know what that is.
             ClientScripts.pvpIconsComLevelRange(player, player.combatLevel)
