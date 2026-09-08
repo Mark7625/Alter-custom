@@ -10,17 +10,15 @@ import dev.openrune.types.HuntModeType
 import dev.openrune.types.MoveRestrict
 import dev.openrune.types.NpcMode
 import dev.openrune.types.NpcServerType
-import dev.openrune.types.SequenceServerType
-import dev.openrune.types.aconverted.SpotanimType
 import dev.openrune.util.BlockWalk
 import org.rsmod.annotations.InternalApi
+import org.rsmod.game.damage.DamageContributions
 import org.rsmod.game.entity.npc.NpcInfoProtocol
 import org.rsmod.game.entity.npc.NpcUid
 import org.rsmod.game.entity.npc.OpVisibility
 import org.rsmod.game.entity.player.PlayerUid
 import org.rsmod.game.entity.util.EntityFaceTarget
 import org.rsmod.game.entity.util.PathingEntityCommon
-import org.rsmod.game.damage.DamageContributions
 import org.rsmod.game.headbar.Headbar
 import org.rsmod.game.hero.HeroPoints
 import org.rsmod.game.hit.Hitmark
@@ -140,6 +138,7 @@ public class Npc(
     public val regenRate: Int = type.regenRate
 
     public var huntClock: Int = 0
+
     // `Obj` and `LocInfo` are lightweight, otherwise we would wrap them in `WeakReference`.
     public var huntObj: Obj? = null
     public var huntLoc: LocInfo? = null
@@ -422,6 +421,14 @@ public class Npc(
         infoProtocol.toggleOps(OpVisibility.showAll())
     }
 
+    public fun setHeadIcon(slot: Int, graphic: Int, index: Int) {
+        infoProtocol.setHeadIcon(slot, graphic, index)
+    }
+
+    public fun clearHeadIcon(slot: Int) {
+        infoProtocol.setHeadIcon(slot, -1, -1)
+    }
+
     public fun hideAllOps() {
         infoProtocol.toggleOps(OpVisibility.hideAll())
     }
@@ -506,6 +513,14 @@ public class Npc(
         transmog = null
         lifecycleChangeCycle = -1
         infoProtocol.resetTransmog(originalType = id)
+    }
+
+    public fun setBodyModel(model: Int) {
+        infoProtocol.setBodyModel(model)
+    }
+
+    public fun resetBodyModel() {
+        infoProtocol.resetBodyModel()
     }
 
     public fun copyStats(from: NpcServerType) {

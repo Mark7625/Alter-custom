@@ -39,6 +39,14 @@ class RspNpcInfo(val rspAvatar: NpcAvatar) : NpcInfoProtocol {
         rspAvatar.extendedInfo.setTransmogrification(originalType)
     }
 
+    override fun setBodyModel(model: Int) {
+        rspAvatar.extendedInfo.setBodyCustomisation(listOf(model), emptyList(), emptyList())
+    }
+
+    override fun resetBodyModel() {
+        rspAvatar.extendedInfo.resetBodyCustomisations()
+    }
+
     override fun showHeadbar(headbar: Headbar) {
         rspAvatar.extendedInfo.addHeadBar(
             sourceIndex = if (headbar.isNoSource) -1 else headbar.sourceSlot,

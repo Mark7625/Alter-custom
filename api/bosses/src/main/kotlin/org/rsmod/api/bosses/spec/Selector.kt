@@ -5,8 +5,8 @@ sealed interface Selector {
         val entries: List<WeightedRef> = emptyList(),
         val noRepeatBias: Double = 0.5,
     ) : Selector {
-        constructor(vararg entries: WeightedRef, noRepeatBias: Double = 0.5)
-            : this(entries.toList(), noRepeatBias)
+        constructor(vararg entries: WeightedRef, noRepeatBias: Double = 0.5) :
+            this(entries.toList(), noRepeatBias)
     }
 
     data class Rotation(val sequence: List<String>) : Selector

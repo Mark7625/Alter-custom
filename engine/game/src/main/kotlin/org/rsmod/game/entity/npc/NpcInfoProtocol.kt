@@ -18,6 +18,10 @@ public interface NpcInfoProtocol {
 
     public fun resetTransmog(originalType: Int)
 
+    public fun setBodyModel(model: Int)
+
+    public fun resetBodyModel()
+
     public fun showHeadbar(headbar: Headbar)
 
     public fun showHitmark(hitmark: Hitmark)
@@ -67,6 +71,10 @@ public data object NoopNpcInfo : NpcInfoProtocol {
     override fun setTransmog(type: Int) {}
 
     override fun resetTransmog(originalType: Int) {}
+
+    override fun setBodyModel(model: Int) {}
+
+    override fun resetBodyModel() {}
 
     override fun showHeadbar(headbar: Headbar) {}
 

@@ -7,6 +7,8 @@ import dev.openrune.cache.tools.CacheEnvironment
 import dev.openrune.cache.tools.CacheTool
 import dev.openrune.cache.tools.cacheTool
 import dev.openrune.cache.tools.cs2.PackCs2
+import dev.openrune.cache.tools.incremental.CacheVerification
+import dev.openrune.cache.tools.incremental.IncrementalSession
 import dev.openrune.cache.tools.iftype.PackIfType
 import dev.openrune.cache.tools.tasks.CacheTask
 import dev.openrune.cache.tools.tasks.TaskType
@@ -109,6 +111,13 @@ private fun freshInstall() {
         .initialize()
 
     File(getServerCacheLocation(), "xteas.json").delete()
+
+    IncrementalSession.clearState(File(getCacheLocation()), incrementalStateFile(TaskType.BUILD))
+    IncrementalSession.clearState(
+        File(getServerCacheLocation()),
+        incrementalStateFile(TaskType.SERVER_CACHE_BUILD),
+    )
+
     GamevalDumper.dumpGamevals(Cache.load(File(getCacheLocation()).toPath()), rev.first)
 }
 
@@ -118,7 +127,6 @@ fun buildCache(type: TaskType) {
     val packs = PluginPacks.discover(projectRoot)
     packs.validate()
     packs.syncCs2(DirectoryConstants.CS2_PATH.toFile())
-    GameValProvider.load("../")
 
     val packTasks = packs.buildPackTasks(tablesToPack())
     newCacheTool(type, packTasks).initialize()
@@ -215,8 +223,23 @@ private fun newCacheTool(type: TaskType, packTasks: List<CacheTask>): CacheTool 
         cache(getCacheLocation())
         serverCache(getServerCacheLocation())
         autoCert = true
+
+        incremental = true
+        incrementalDatabase(incrementalStateFile(type).path)
+
+        verification =
+            if (type == TaskType.SERVER_CACHE_BUILD) CacheVerification.OUTPUT_CRC
+            else CacheVerification.FINGERPRINT
+
+        progress = CombinedProgress()
+
         tasks { packTasks.forEach { +it } }
     }
+}
+
+private fun incrementalStateFile(type: TaskType): File {
+    val name = if (type == TaskType.SERVER_CACHE_BUILD) "incremental_server" else "incremental_live"
+    return File("../.data/cache", name)
 }
 
 fun readRevision(): Triple<Int, Int, String> {

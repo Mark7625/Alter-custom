@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Logging for cache-building entry points (:or-cache:buildCache, :or-cache:freshCache and the wiki
+  dumping tool). Without a config on this classpath logback defaults to DEBUG, which buries the pack
+  progress bars under netty allocator dumps and a line per decoded definition table.
+
+  The game server is unaffected: it does not depend on :or-cache and uses server/logging/logback.xml.
+-->
+<configuration>
+  <!--
+    The exec classpath carries both build/resources/main and the built or-cache jar, so logback finds this
+    file twice and prints its whole startup status as a warning. Both copies are this file, so the
+    duplication is harmless; silence the status printer rather than the build output.
+  -->
+  <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+  <!--
+    Bar-aware, and on stderr: the progress bar also writes to stderr, so sharing the stream keeps records
+    and bar redraws in order, and the appender erases the bar's line before each record.
+  -->
+  <appender name="STDOUT" class="dev.openrune.BarAwareAppender">
+    <target>System.err</target>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>%d{HH:mm:ss} [%level] - %msg%n</pattern>
+      <charset>utf8</charset>
+    </encoder>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <!-- Allocator and recycler settings dumped at DEBUG on first buffer use. -->
+  <logger name="io.netty" level="WARN" additivity="false" />
+
+  <!-- One INFO line per definition table every time a cache is opened for reading. -->
+  <logger name="dev.openrune.cache.filestore.definition" level="WARN" />
+
+  <!-- Set to DEBUG to have every repacked unit report why it was considered stale. -->
+  <logger name="dev.openrune.cache.tools.incremental" level="INFO" />
+
+  <!-- "BZIP2 Compression found" on every read of an unconverted archive. -->
+  <logger name="dev.openrune.filesystem.util.compress" level="WARN" />
+  <logger name="org.openrs2.compress.bzip2" level="WARN" additivity="false" />
+</configuration>

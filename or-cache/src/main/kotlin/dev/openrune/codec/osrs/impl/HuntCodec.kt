@@ -36,8 +36,8 @@ class HuntCodec(val custom: Map<Int, HuntModeType>? = emptyMap()) :
             add(DefinitionOpcode(6, enumType<NpcMode>(), HuntModeType::findNewMode))
             add(DefinitionOpcode(7, enumType<HuntNobodyNear>(), HuntModeType::nobodyNear))
 
-            add(DefinitionOpcode(8, OpcodeType.SHORT, HuntModeType::checkNotCombat))
-            add(DefinitionOpcode(9, OpcodeType.SHORT, HuntModeType::checkNotCombatSelf))
+            add(DefinitionOpcode(8, OpcodeType.USHORT, HuntModeType::checkNotCombat))
+            add(DefinitionOpcode(9, OpcodeType.USHORT, HuntModeType::checkNotCombatSelf))
 
             add(DefinitionOpcode(10, OpcodeType.BOOLEAN, HuntModeType::checkAfk))
 

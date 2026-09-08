@@ -42,6 +42,7 @@ constructor(
         return computeSpellHitChance(
             source = player,
             target = targetType,
+            npc = target,
             spell = spell,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
@@ -64,12 +65,13 @@ constructor(
         targetWeaknessPercent: Int,
         spellbook: Spellbook?,
         usedSunfireRune: Boolean,
+        npc: Npc? = null,
     ): Int {
         val spellAttributes =
             magicAttributes.spellCollect(source, spell, spellbook, usedSunfireRune, random)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val attackRoll =
             computeSpellAttackRoll(
@@ -90,7 +92,7 @@ constructor(
             )
         val defenceRoll = modifySpellDefenceRoll(baseDefenceRoll, spellAttributes)
 
-        return AccuracyOperations.calculateHitChance(attackRoll, defenceRoll)
+        return AccuracyOperations.calculateHitChance(attackRoll, defenceRoll, npcAttributes)
     }
 
     public fun computeSpellAttackRoll(
@@ -119,6 +121,7 @@ constructor(
         computeStaffHitChance(
             source = player,
             target = target.visType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -136,11 +139,12 @@ constructor(
         targetMagic: Int,
         attackStyle: MagicAttackStyle?,
         specialMultiplier: Double,
+        npc: Npc? = null,
     ): Int {
         val staffAttributes = magicAttributes.staffCollect(source, random)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val baseAttackRoll =
             computeStaffAttackRoll(source, attackStyle, staffAttributes, npcAttributes)
@@ -157,7 +161,7 @@ constructor(
             )
         val defenceRoll = modifyStaffDefenceRoll(baseDefenceRoll, staffAttributes)
 
-        return AccuracyOperations.calculateHitChance(attackRoll, defenceRoll)
+        return AccuracyOperations.calculateHitChance(attackRoll, defenceRoll, npcAttributes)
     }
 
     public fun computeStaffAttackRoll(

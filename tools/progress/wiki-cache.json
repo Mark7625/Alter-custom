@@ -218,14 +218,16 @@
     "Slayer": {
       "sections": [
         "Introduction",
+        "Slayer Partners",
+        "Assigning a partner",
+        "Receiving a task",
+        "Getting kills",
+        "Reward points",
         "Slayer Masters",
         "Slayer equipment",
         "Slayer monsters",
         "Where to slay monsters",
         "Boss Slayer",
-        "Slayer Partners",
-        "Receiving a Task",
-        "Completing a Task",
         "Slayer reward points",
         "Temporary boosts",
         "Quests",
@@ -235,6 +237,7 @@
         "Skill choice",
         "Level up messages",
         "Changes",
+        "Trivia",
         "See also"
       ],
       "image": "https://oldschool.runescape.wiki/images/Slayer_icon.png?cd34f"
@@ -728,7 +731,7 @@
         "Deadfall trapping",
         "Drift net fishing",
         "Falconry",
-        "Goat Hunting",
+        "Goat hunting",
         "Net trapping",
         "Magic box trapping",
         "Pitfall trapping",
@@ -839,7 +842,7 @@
       "image": "https://oldschool.runescape.wiki/images/thumb/Callisto.png/48px-Callisto.png?bfba7"
     },
     "Crazy archaeologist": {
-      "image": "https://oldschool.runescape.wiki/images/thumb/Crazy_archaeologist.png/48px-Crazy_archaeologist.png?3ecc9"
+      "image": "https://oldschool.runescape.wiki/images/thumb/Crazy_archaeologist.png/48px-Crazy_archaeologist.png?78fa1"
     },
     "Chaos Fanatic": {
       "image": "https://oldschool.runescape.wiki/images/thumb/Chaos_Fanatic.png/48px-Chaos_Fanatic.png?8871d"
@@ -1680,5 +1683,5 @@
       "Volcanic Mine"
     ]
   },
-  "fetched": "2026-08-31"
+  "fetched": "2026-09-07"
 }

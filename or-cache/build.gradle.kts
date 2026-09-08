@@ -24,6 +24,7 @@ dependencies {
     implementation(libs.jackson.dataformat.toml)
     implementation(libs.jackson.databind)
     implementation("dev.or2:toml-rsconfig:1.0")
+    compileOnly(libs.logback.classic)
     implementation(libs.fastutil)
     implementation(libs.classgraph)
 }

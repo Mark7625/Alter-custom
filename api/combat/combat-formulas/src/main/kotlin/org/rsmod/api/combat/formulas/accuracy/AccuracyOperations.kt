@@ -26,10 +26,20 @@ public object AccuracyOperations {
      * Calculates the hit chance based on the attacker's [attackRoll] and the target's
      * [defenceRoll].
      *
+     * @param npcAttributes When it contains [NpcAttr.GuaranteedHit] (e.g. a target that's currently
+     *   "defenceless"), the roll is skipped entirely and this returns a guaranteed `100%`. Only
+     *   meaningful for player-vs-npc accuracy; PvP/NvN/NvP callers can omit it.
      * @return An integer between `0` and `10,000`, where `0` represents a `0%` hit chance, `1`
      *   represents a `0.01%` hit chance, and `10,000` represents a `100%` hit chance.
      */
-    public fun calculateHitChance(attackRoll: Int, defenceRoll: Int): Int {
+    public fun calculateHitChance(
+        attackRoll: Int,
+        defenceRoll: Int,
+        npcAttributes: EnumSet<CombatNpcAttributes> = EnumSet.noneOf(CombatNpcAttributes::class.java),
+    ): Int {
+        if (NpcAttr.GuaranteedHit in npcAttributes) {
+            return HIT_CHANCE_SCALE
+        }
         return calculateHitRoll(attackRoll, defenceRoll)
     }
 

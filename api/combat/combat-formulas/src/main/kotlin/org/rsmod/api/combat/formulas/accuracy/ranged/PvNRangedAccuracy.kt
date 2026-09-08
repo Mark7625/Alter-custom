@@ -41,6 +41,7 @@ constructor(
         return computeHitChance(
             source = player,
             target = targetType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -65,11 +66,12 @@ constructor(
         attackStyle: RangedAttackStyle?,
         blockType: RangedAttackType?,
         specialMultiplier: Double,
+        npc: Npc? = null,
     ): Int {
         val rangeAttributes = rangedAttributes.collect(source, attackType, attackStyle)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val baseAttackRoll =
             computeAttackRoll(
@@ -92,7 +94,7 @@ constructor(
                 npcAttributes = npcAttributes,
             )
 
-        return AccuracyOperations.calculateHitChance(attackRoll, defenceRoll)
+        return AccuracyOperations.calculateHitChance(attackRoll, defenceRoll, npcAttributes)
     }
 
     public fun computeAttackRoll(

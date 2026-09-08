@@ -6,11 +6,11 @@ import dev.openrune.rscm.RSCMType
 import org.rsmod.api.bosses.spec.BossSpec
 import org.rsmod.api.bosses.validation.SpecValidator
 import org.rsmod.api.npc.access.StandardNpcAccess
+import org.rsmod.api.npc.events.NpcHitEvents
 import org.rsmod.api.script.onAiApPlayer2
 import org.rsmod.api.script.onAiOpPlayer2
 import org.rsmod.api.script.onEvent
 import org.rsmod.api.script.onModifyNpcHit
-import org.rsmod.api.npc.events.NpcHitEvents
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
 import org.rsmod.game.entity.npc.NpcStateEvents
@@ -97,12 +97,19 @@ object BossCombat {
         val encounter = deps.encounterRegistry.of(npc)
         if (encounter.currentPhase == null) return
         val tick = deps.mapClock.cycle
+        if (encounter.phaseEnteredTick < 0) {
+            encounter.phaseEnteredTick = tick
+        }
 
         checkAutoTransitions(this, target, encounter, tick, spec, deps)
         checkTriggers(this, target, spec, deps, encounter)
 
         val ticksSinceLastAttack = tick - encounter.lastAbilityTick
-        if (ticksSinceLastAttack < spec.stats.attackRate) return
+        val attackRate =
+            encounter.attackRateOverride
+                ?: encounter.currentPhase?.attackRate
+                ?: spec.stats.attackRate
+        if (ticksSinceLastAttack < attackRate) return
 
         val phase = encounter.currentPhase ?: return
         val abilityName = encounter.selectAbility(phase.selector, tick, target) ?: return

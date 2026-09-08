@@ -47,6 +47,7 @@ class BossSpecBuilder(private val npcTypes: List<String>) {
         exitAfter: Int? = null,
         nextPhase: String? = null,
         idleAnim: String? = null,
+        attackRate: Int? = null,
         block: PhaseBuilder.() -> Unit,
     ): PhaseRef {
         val builder = PhaseBuilder(name).apply(block)
@@ -59,6 +60,7 @@ class BossSpecBuilder(private val npcTypes: List<String>) {
                 exitAfter = exitAfter,
                 nextPhase = nextPhase,
                 idleAnim = idleAnim,
+                attackRate = attackRate ?: builder.attackRate,
                 entry = builder.entry,
                 exit = builder.exit,
                 selector = builder.selector,
@@ -358,6 +360,8 @@ class AbilityBuilder {
 class PhaseBuilder(private val name: String) {
     var entry: String? = null
     var exit: String? = null
+
+    var attackRate: Int? = null
     var selector: Selector = Selector.WeightedRandom()
     internal val forceAbilities = mutableListOf<ForcedAbility>()
 

@@ -198,7 +198,10 @@ public object MagicMaxHitOperations {
         }
 
         if (NpcAttr.TormentedDemonUnshielded in npcAttributes) {
-            val bonusDamage = max(0, (attackRate * attackRate) - 16)
+            var bonusDamage = max(0, (attackRate * attackRate) - 16)
+            if (NpcAttr.TormentedDemonOverheadMagic in npcAttributes) {
+                bonusDamage /= 3
+            }
             modifiedMax += bonusDamage
         }
 

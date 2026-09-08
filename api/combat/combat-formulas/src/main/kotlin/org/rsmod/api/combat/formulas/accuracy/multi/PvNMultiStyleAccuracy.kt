@@ -42,6 +42,7 @@ constructor(
         return computeMagicalMeleeHitChance(
             source = player,
             target = target.visType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -55,6 +56,7 @@ constructor(
     private fun computeMagicalMeleeHitChance(
         source: Player,
         target: NpcServerType,
+        npc: Npc?,
         targetDefence: Int,
         targetCurrHp: Int,
         targetMaxHp: Int,
@@ -66,7 +68,7 @@ constructor(
         val meleeAttributes = meleeAttributes.collect(source, attackType)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val baseAttackRoll =
             melee.computeAttackRoll(source, attackType, attackStyle, meleeAttributes, npcAttributes)
@@ -96,6 +98,7 @@ constructor(
         return computeRangedMeleeHitChance(
             source = player,
             target = target.visType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -109,6 +112,7 @@ constructor(
     private fun computeRangedMeleeHitChance(
         source: Player,
         target: NpcServerType,
+        npc: Npc?,
         targetDefence: Int,
         targetCurrHp: Int,
         targetMaxHp: Int,
@@ -120,7 +124,7 @@ constructor(
         val meleeAttributes = meleeAttributes.collect(source, attackType)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val baseAttackRoll =
             melee.computeAttackRoll(source, attackType, attackStyle, meleeAttributes, npcAttributes)
@@ -149,6 +153,7 @@ constructor(
         return computeRangedMagicHitChance(
             source = player,
             target = target.visType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -161,6 +166,7 @@ constructor(
     private fun computeRangedMagicHitChance(
         source: Player,
         target: NpcServerType,
+        npc: Npc?,
         targetDefence: Int,
         targetCurrHp: Int,
         targetMaxHp: Int,
@@ -169,7 +175,7 @@ constructor(
         specialMultiplier: Double,
     ): Int {
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         // TODO(combat): Should we use `computeSpellAttackRoll` instead to take elemental weakness
         // into account?
@@ -203,6 +209,7 @@ constructor(
         return computeMagicalRangedHitChance(
             source = player,
             target = targetType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -217,6 +224,7 @@ constructor(
     private fun computeMagicalRangedHitChance(
         source: Player,
         target: NpcServerType,
+        npc: Npc?,
         targetDefence: Int,
         targetCurrHp: Int,
         targetMaxHp: Int,
@@ -229,7 +237,7 @@ constructor(
         val rangeAttributes = rangedAttributes.collect(source, attackType, attackStyle)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val baseAttackRoll =
             ranged.computeAttackRoll(

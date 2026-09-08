@@ -83,6 +83,10 @@ constructor(
             return
         }
 
+        if (npc.ignoreCombatInteractions) {
+            return
+        }
+
         if (npc.huntMode == null) {
             return
         }

@@ -36,6 +36,7 @@ constructor(
         computeHitChance(
             source = player,
             target = target.visType,
+            npc = target,
             targetDefence = target.defenceLvl,
             targetCurrHp = target.hitpoints,
             targetMaxHp = target.baseHitpointsLvl,
@@ -55,11 +56,12 @@ constructor(
         attackStyle: MeleeAttackStyle?,
         blockType: MeleeAttackType?,
         specialMultiplier: Double,
+        npc: Npc? = null,
     ): Int {
         val meleeAttributes = meleeAttributes.collect(source, attackType)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val baseAttackRoll =
             computeAttackRoll(source, attackType, attackStyle, meleeAttributes, npcAttributes)
@@ -75,7 +77,7 @@ constructor(
                 npcAttributes = npcAttributes,
             )
 
-        val hitChance = AccuracyOperations.calculateHitChance(attackRoll, defenceRoll)
+        val hitChance = AccuracyOperations.calculateHitChance(attackRoll, defenceRoll, npcAttributes)
         return MeleeAccuracyOperations.modifyHitChance(
             hitChance = hitChance,
             attackRoll = attackRoll,

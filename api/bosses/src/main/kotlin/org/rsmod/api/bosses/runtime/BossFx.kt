@@ -17,6 +17,7 @@ fun BossDeps.bossProjectile(
     delay: Int,
     travel: Int,
     curve: Int,
+    progress: Int = 0,
 ): ProjAnim {
     val proj =
         ProjAnim(
@@ -26,7 +27,7 @@ fun BossDeps.bossProjectile(
             startTime = delay,
             endTime = delay + travel,
             angle = curve,
-            progress = 0,
+            progress = progress,
             sourceIndex = 0,
             targetIndex = 0,
             startCoord = src,
@@ -72,9 +73,20 @@ fun BossDeps.lob(
     landTicks: Int,
     landGfx: Int,
     landGfxHeight: Int = 0,
+    progress: Int = 0,
     onLand: (Player) -> Unit,
 ) {
-    bossProjectile(spotanim, npc.coords.translate(2, 2), targetTile, startHeight, endHeight, delay, travel, curve)
+    bossProjectile(
+        spotanim,
+        npc.coords.translate(2, 2),
+        targetTile,
+        startHeight,
+        endHeight,
+        delay,
+        travel,
+        curve,
+        progress,
+    )
     worldQueues.add(landTicks) {
         worldRepo.spotanimMap(SpotanimType(landGfx), targetTile, landGfxHeight)
         val player = targetUid.resolve(playerList) ?: return@add

@@ -143,7 +143,10 @@ public object RangedMaxHitOperations {
         val unshieldedTormentedDemon =
             RangeAttr.Heavy in rangeAttributes && NpcAttr.TormentedDemonUnshielded in npcAttributes
         if (unshieldedTormentedDemon) {
-            val bonusDamage = max(0, (attackRate * attackRate) - 16)
+            var bonusDamage = max(0, (attackRate * attackRate) - 16)
+            if (NpcAttr.TormentedDemonOverheadRanged in npcAttributes) {
+                bonusDamage /= 3
+            }
             modified += bonusDamage
         }
 

@@ -62,6 +62,7 @@ constructor(
             computeSpellMaxHit(
                 source = player,
                 target = targetType,
+                npc = target,
                 spell = spell,
                 targetCurrHp = target.hitpoints,
                 targetMaxHp = target.baseHitpointsLvl,
@@ -86,12 +87,13 @@ constructor(
         attackRate: Int,
         spellbook: Spellbook?,
         usedSunfireRune: Boolean,
+        npc: Npc? = null,
     ): IntRange {
         val spellAttributes =
             magicAttributes.spellCollect(source, spell, spellbook, usedSunfireRune, random)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val modifiedDamage =
             computeSpellModifiedDamage(source, baseMaxHit, spellAttributes, npcAttributes)
@@ -146,6 +148,7 @@ constructor(
             computeStaffMaxHit(
                 source = player,
                 target = target.visType,
+                npc = target,
                 targetCurrHp = target.hitpoints,
                 targetMaxHp = target.baseHitpointsLvl,
                 baseMaxHit = baseMaxHit,
@@ -162,11 +165,12 @@ constructor(
         targetMaxHp: Int,
         baseMaxHit: Int,
         specialMultiplier: Double,
+        npc: Npc? = null,
     ): Int {
         val staffAttributes = magicAttributes.staffCollect(source, random)
 
         val slayerTask = target.isSlayerTask(source)
-        val npcAttributes = npcAttributes.collect(target, targetCurrHp, targetMaxHp, slayerTask)
+        val npcAttributes = npcAttributes.collect(target, npc, targetCurrHp, targetMaxHp, slayerTask)
 
         val modifiedDamage =
             computeStaffModifiedDamage(source, baseMaxHit, staffAttributes, npcAttributes)

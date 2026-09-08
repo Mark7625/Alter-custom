@@ -4651,3 +4651,97 @@ inherit = "npc.kittens_mew"
 timer = 1
 moveRestrict = "NoMove"
 wanderRange = 0
+
+[[npc]]
+id = "npc.tormented_demon_1"
+inherit = "npc.tormented_demon_1"
+huntMode = 6
+huntRange = 30
+maxRange = 30
+defaultMode = "Wander"
+[npc.params]
+"param.tormented_demon"=1
+"param.attackrate"=4
+"param.attack_anim"="seq.luc2_undead_demon_melee"
+"param.attack_anim_stance1"="seq.luc2_undead_demon_melee"
+"param.attack_anim_stance2"="seq.luc2_undead_demon_firey_balls"
+"param.attack_anim_stance3"="seq.luc2_undead_demon_spare_ribs"
+"param.defend_anim"="seq.luc2_undead_demon_defend"
+"param.death_anim"="seq.luc2_undead_demon_death"
+"param.bas_readyanim"="seq.luc2_undead_demon_ready"
+"param.attack_sound_stance1"=9219
+"param.attack_sound_stance2"=9229
+"param.attack_sound_stance3"=9253
+"param.npc_attack_type"="category.attacktype_crush"
+
+[[npc]]
+id = "npc.tormented_demon_2"
+inherit = "npc.tormented_demon_2"
+huntMode = 6
+huntRange = 30
+maxRange = 30
+defaultMode = "Wander"
+[npc.params]
+"param.tormented_demon"=1
+"param.attackrate"=4
+"param.attack_anim"="seq.luc2_undead_demon_melee"
+"param.attack_anim_stance1"="seq.luc2_undead_demon_melee"
+"param.attack_anim_stance2"="seq.luc2_undead_demon_firey_balls"
+"param.attack_anim_stance3"="seq.luc2_undead_demon_spare_ribs"
+"param.defend_anim"="seq.luc2_undead_demon_defend"
+"param.death_anim"="seq.luc2_undead_demon_death"
+"param.bas_readyanim"="seq.luc2_undead_demon_ready"
+"param.attack_sound_stance1"=9219
+"param.attack_sound_stance2"=9229
+"param.attack_sound_stance3"=9253
+"param.npc_attack_type"="category.attacktype_crush"
+
+[[npc]]
+id = "npc.venenatis_singles"
+inherit = "npc.venenatis_singles"
+huntMode = 2
+huntRange = 30
+maxRange = 30
+attackRange = 10
+defaultMode = "Wander"
+[npc.params]
+"param.death_anim"="seq.npc_venenatis_death_01"
+"param.killcount_varp"="varp.total_spindel_kills"
+"param.boss_hp_bar_mode"=1
+
+[[npc]]
+id = "npc.spindel_spiderling"
+inherit = "npc.spindel_spiderling"
+huntMode = 6
+huntRange = 20
+maxRange = 25
+defaultMode = "Wander"
+[npc.params]
+"param.attack_anim"="seq.small_spider_update_attack"
+"param.defend_anim"="seq.small_spider_update_defend"
+"param.death_anim"="seq.small_spider_update_death"
+
+[[npc]]
+id = "npc.venenatis"
+inherit = "npc.venenatis"
+huntMode = 2
+huntRange = 30
+maxRange = 30
+attackRange = 10
+defaultMode = "Wander"
+[npc.params]
+"param.death_anim"="seq.npc_venenatis_death_01"
+"param.killcount_varp"="varp.total_venenatis_kills"
+"param.boss_hp_bar_mode"=1
+
+[[npc]]
+id = "npc.venenatis_spiderling"
+inherit = "npc.venenatis_spiderling"
+huntMode = 6
+huntRange = 20
+maxRange = 25
+defaultMode = "Wander"
+[npc.params]
+"param.attack_anim"="seq.small_spider_update_attack"
+"param.defend_anim"="seq.small_spider_update_defend"
+"param.death_anim"="seq.small_spider_update_death"

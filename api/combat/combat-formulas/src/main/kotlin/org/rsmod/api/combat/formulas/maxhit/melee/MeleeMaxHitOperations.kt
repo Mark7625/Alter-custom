@@ -171,7 +171,10 @@ public object MeleeMaxHitOperations {
         val unshieldedTormentedDemon =
             MeleeAttr.Crush in meleeAttributes && NpcAttr.TormentedDemonUnshielded in npcAttributes
         if (unshieldedTormentedDemon) {
-            val bonusDamage = max(0, (attackRate * attackRate) - 16)
+            var bonusDamage = max(0, (attackRate * attackRate) - 16)
+            if (NpcAttr.TormentedDemonOverheadMelee in npcAttributes) {
+                bonusDamage /= 3
+            }
             modified += bonusDamage
         }
 

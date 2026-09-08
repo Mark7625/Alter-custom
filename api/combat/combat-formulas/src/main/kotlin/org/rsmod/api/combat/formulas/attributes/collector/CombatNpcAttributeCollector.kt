@@ -5,10 +5,17 @@ import java.util.EnumSet
 import org.rsmod.api.combat.formulas.attributes.CombatNpcAttributes
 import org.rsmod.api.config.constants
 import org.rsmod.api.config.refs.params
+import org.rsmod.game.entity.Npc
 
 public class CombatNpcAttributeCollector {
+    /**
+     * @param npc the live npc being attacked, when available. Passing it lets branches that depend on
+     *   per-fight runtime state (e.g. the Tormented Demon fire shield) read npc vars rather than only
+     *   static npc-type params. Callers that only have a [NpcServerType] pass `null`.
+     */
     public fun collect(
         type: NpcServerType,
+        npc: Npc?,
         currHp: Int,
         maxHp: Int,
         slayerTask: Boolean,
@@ -100,8 +107,19 @@ public class CombatNpcAttributeCollector {
             attributes += CombatNpcAttributes.Vampyre
         }
 
-        if (type.param(params.tormented_demon) != 0 && !type.param(params.td_shield_active)) {
-            attributes += CombatNpcAttributes.TormentedDemonUnshielded
+        if (type.param(params.tormented_demon) != 0 && npc != null) {
+            if (npc.vars["varn.td_shield_up"] == 0) {
+                attributes += CombatNpcAttributes.TormentedDemonUnshielded
+            }
+            when (npc.vars["varn.td_overhead_style"]) {
+                1 -> attributes += CombatNpcAttributes.TormentedDemonOverheadMelee
+                2 -> attributes += CombatNpcAttributes.TormentedDemonOverheadRanged
+                3 -> attributes += CombatNpcAttributes.TormentedDemonOverheadMagic
+            }
+        }
+
+        if (npc != null && npc.vars["varn.guaranteed_hit"] == 1) {
+            attributes += CombatNpcAttributes.GuaranteedHit
         }
 
         if (type.isType("npc.corp_beast")) {

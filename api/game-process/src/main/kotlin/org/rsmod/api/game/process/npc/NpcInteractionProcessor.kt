@@ -274,6 +274,9 @@ constructor(
     }
 
     private fun Npc.isUnderTarget(interaction: InteractionNpc): Boolean {
+        if (level != interaction.target.coords.level) {
+            return false
+        }
         return boundValidator.collides(avatar, interaction.target.avatar)
     }
 
@@ -347,6 +350,9 @@ constructor(
     }
 
     private fun Npc.isUnderTarget(interaction: InteractionPlayer): Boolean {
+        if (level != interaction.target.coords.level) {
+            return false
+        }
         return boundValidator.collides(avatar, interaction.target.avatar)
     }
 

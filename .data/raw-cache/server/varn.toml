@@ -39,3 +39,15 @@ id = "varn.npc_poison_severity"
 
 [[varn]]
 id = "varn.gorilla_protect_switching"
+
+[[varn]]
+id = "varn.td_shield_up"
+
+[[varn]]
+id = "varn.td_overhead_style"
+
+[[varn]]
+id = "varn.guaranteed_hit"
+
+[[varn]]
+id = "varn.venenatis_attacks"

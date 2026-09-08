@@ -1,25 +1,34 @@
 package org.rsmod.api.bosses.runtime
 
+import kotlin.random.Random
 import org.rsmod.api.bosses.spec.*
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
-import kotlin.random.Random
 
 class BossEncounter(
     val npc: Npc,
     val spec: BossSpec,
 ) {
     var currentPhaseName: String = spec.phases.keys.firstOrNull() ?: ""
-    var phaseEnteredTick: Int = 0
+
+    var phaseEnteredTick: Int = -1
     var lastAbilityTick: Int = 0
     var lastAbilityName: String? = null
     var invulnerable: Boolean = false
     var damageScale: Double = 1.0
     var lethalHandled: Boolean = false
 
+    /**
+     * Per-encounter attack-rate override (ticks between ability uses). Takes precedence over
+     * [PhaseSpec.attackRate] and [BossStats.attackRate]. Null by default and recreated with the
+     * encounter on respawn, so bosses that never set it are unaffected.
+     */
+    var attackRateOverride: Int? = null
+
     internal val firedTriggers = mutableSetOf<Int>()
     internal val firedPhaseEntries = mutableSetOf<String>()
     private val cooldowns = mutableMapOf<String, Int>()
+    private val forcedTickLastFired = mutableMapOf<String, Int>()
     private var rotationCursor = 0
     private var basicAttackCount = 0
     private var forceAttackThreshold = -1
@@ -37,6 +46,7 @@ class BossEncounter(
         phaseEnteredTick = tick
         rotationCursor = 0
         cooldowns.clear()
+        forcedTickLastFired.clear()
         basicAttackCount = 0
         forceAttackThreshold = -1
 
@@ -55,8 +65,9 @@ class BossEncounter(
 
         for (forced in phase.forceAbilities) {
             if (forced.attackMin != null) continue
-            val elapsed = tick - phaseEnteredTick
-            if (elapsed > 0 && elapsed % forced.period == 0) {
+            val lastFired = forcedTickLastFired[forced.ability] ?: phaseEnteredTick
+            if (tick - lastFired >= forced.period) {
+                forcedTickLastFired[forced.ability] = tick
                 return forced.ability
             }
         }

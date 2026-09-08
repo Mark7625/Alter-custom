@@ -50,7 +50,7 @@ public class CombatMeleeAttributeCollector {
         }
 
         val weapon = player.righthand
-        if (weapon.isType("obj.arclight")) {
+        if (weapon.isAnyType("obj.arclight", "obj.emberlight")) {
             attributes += CombatMeleeAttributes.Arclight
         } else if (weapon.isType("obj.bone_claws")) {
             attributes += CombatMeleeAttributes.BurningClaws

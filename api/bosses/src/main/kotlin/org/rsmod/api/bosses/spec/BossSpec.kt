@@ -20,6 +20,12 @@ data class PhaseSpec(
     val entryHp: Double? = null,
     val transmog: String? = null,
     val lockMovement: Boolean = false,
+    /**
+     * Per-phase attack-rate default (ticks between ability uses). When set, it overrides
+     * [BossStats.attackRate] while this phase is active. A per-encounter
+     * [org.rsmod.api.bosses.runtime.BossEncounter.attackRateOverride] takes precedence over both.
+     */
+    val attackRate: Int? = null,
     val exitAfter: Int? = null,
     val nextPhase: String? = null,
     val idleAnim: String? = null,

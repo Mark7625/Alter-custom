@@ -4,11 +4,11 @@ import dev.openrune.rscm.RSCM
 import dev.openrune.rscm.RSCM.asRSCM
 import dev.openrune.rscm.RSCMType
 import dev.openrune.types.BasType
-import dev.or2.central.account.Rights
-import dev.or2.central.account.TwoFactorAuthData
-import dev.or2.central.account.TrustedDeviceData
 import dev.openrune.types.NpcServerType
 import dev.openrune.types.StatType
+import dev.or2.central.account.Rights
+import dev.or2.central.account.TrustedDeviceData
+import dev.or2.central.account.TwoFactorAuthData
 import it.unimi.dsi.fastutil.ints.IntArrayList
 import it.unimi.dsi.fastutil.ints.IntArraySet
 import it.unimi.dsi.fastutil.ints.IntList
@@ -25,12 +25,12 @@ import org.rsmod.game.client.Client
 import org.rsmod.game.client.ClientCycle
 import org.rsmod.game.client.NoopClient
 import org.rsmod.game.client.NoopClientCycle
+import org.rsmod.game.damage.DamageContributions
 import org.rsmod.game.entity.player.Appearance
 import org.rsmod.game.entity.player.PlayerUid
 import org.rsmod.game.entity.player.PublicMessage
 import org.rsmod.game.entity.util.EntityFaceAngle
 import org.rsmod.game.entity.util.PathingEntityCommon
-import org.rsmod.game.damage.DamageContributions
 import org.rsmod.game.headbar.Headbar
 import org.rsmod.game.hero.HeroPoints
 import org.rsmod.game.hit.Hitmark
@@ -241,6 +241,7 @@ public class Player(
     public var loggingOut: Boolean = false
     public var pendingCloseClient: Boolean = false
     public var closeClient: Boolean = false
+
     /** This flag should only be set when the game server is in the process of shutting down. */
     public var pendingShutdown: Boolean = false
 
