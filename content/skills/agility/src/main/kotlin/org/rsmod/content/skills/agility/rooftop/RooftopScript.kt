@@ -4,12 +4,15 @@ import jakarta.inject.Inject
 import org.rsmod.api.attr.AttributeKey
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.stat.agilityLvl
+import org.rsmod.api.script.onApLoc1
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.content.skills.agility.AgilityAnims
 import org.rsmod.content.skills.agility.balanceAlong
 import org.rsmod.content.skills.agility.climbTo
 import org.rsmod.content.skills.agility.fallTo
 import org.rsmod.content.skills.agility.leapTo
+import org.rsmod.content.skills.agility.seqGlideTicks
+import org.rsmod.content.skills.agility.seqTicks
 import org.rsmod.content.skills.agility.stepOnto
 import org.rsmod.content.skills.agility.successChance
 import org.rsmod.content.skills.agility.zipTo
@@ -31,6 +34,13 @@ class RooftopScript @Inject constructor(private val marks: MarksOfGrace) : Plugi
             for ((index, obstacle) in layout.obstacles.withIndex()) {
                 for (loc in obstacle.locs) {
                     onOpLoc1(loc) { attempt(layout, index, obstacle) }
+                    if (obstacle.apRange > 0) {
+                        onApLoc1(loc) {
+                            if (isWithinApRange(it.loc, obstacle.apRange)) {
+                                attempt(layout, index, obstacle)
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -82,13 +92,17 @@ class RooftopScript @Inject constructor(private val marks: MarksOfGrace) : Plugi
     /** Runs [move], or the failure sequence when [failure] is set. Returns `false` on a fail. */
     private suspend fun ProtectedAccess.perform(move: ObstacleMove, failure: ObstacleFailure?): Boolean {
         when (move) {
-            is ObstacleMove.Climb -> climbTo(move.dest, move.seq, move.ticks)
+            is ObstacleMove.Climb -> {
+                val ticks = move.ticks ?: seqTicks(move.seq, fallback = 2)
+                climbTo(move.dest, move.seq, ticks)
+            }
             is ObstacleMove.Leap -> {
                 if (failure != null) {
                     fallTo(failure.landing, move.seq, failure.minDamage, failure.maxDamage)
                     return false
                 }
-                leapTo(move.dest, move.seq, move.ticks)
+                val ticks = move.ticks ?: seqGlideTicks(move.seq, fallback = 2)
+                leapTo(move.dest, move.seq, ticks, glideLevel = move.glideLevel ?: coords.level)
             }
             is ObstacleMove.Zipline -> {
                 if (failure != null) {

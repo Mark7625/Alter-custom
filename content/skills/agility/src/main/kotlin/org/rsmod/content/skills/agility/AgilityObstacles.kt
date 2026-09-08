@@ -44,6 +44,11 @@ object AgilityAnims {
     const val PIPE_UNSQUEEZE = "seq.human_pipeunsqueeze"
     const val CRACK_ENTER = "seq.agility_shortcut_crack_enter"
     const val CRACK_LEAVE = "seq.agility_shortcut_crack_leave"
+
+    /** Drop into, shuffle along and climb out of an underwall tunnel. */
+    const val TUNNEL_ENTER = "seq.agilty_shortcut_enter_hole"
+    const val TUNNEL_WALK = "seq.agilty_shortcut_tunnel_walk"
+    const val TUNNEL_EXIT = "seq.agilty_shortcut_exit_hole"
     const val STEPPING_STONE = "seq.human_steppingstonejump"
 }
 
@@ -118,11 +123,25 @@ fun line(from: CoordGrid, to: CoordGrid): List<CoordGrid> {
     return tiles
 }
 
-/** Number of server ticks [seq] plays for, or [fallback] when the cache holds no duration. */
+/**
+ * Number of server ticks [seq] plays for, rounded up, or [fallback] when the cache holds no
+ * duration. Use it to wait for an animation to finish before moving the player.
+ */
 internal fun seqTicks(seq: String, fallback: Int): Int {
     val type = ServerCacheManager.getAnim(seq.asRSCM(RSCMType.SEQ))
     val ticks = type?.tickDuration ?: 0
     return if (ticks > 0) ticks else fallback
+}
+
+/**
+ * Number of whole server ticks [seq] plays for (rounded down, at least one), or [fallback] when the
+ * cache holds no duration. Use it for the length of a forced movement: the glide then ends while the
+ * closing frames of the animation are still playing, so the player never floats idle in mid-air.
+ */
+internal fun seqGlideTicks(seq: String, fallback: Int): Int {
+    val type = ServerCacheManager.getAnim(seq.asRSCM(RSCMType.SEQ))
+    val cycles = type?.totalDelay ?: 0
+    return if (cycles > 0) maxOf(1, cycles / CLIENT_CYCLES_PER_TICK) else fallback
 }
 
 /**
@@ -152,33 +171,54 @@ internal suspend fun ProtectedAccess.climbTo(dest: CoordGrid, seq: String, ticks
 /**
  * Moves the player from their current tile to [dest] with an `exactmove` lasting [ticks] cycles
  * while [seq] plays. The server position is updated immediately, so nothing can interrupt the
- * landing. When [dest] is on another level the visual glide runs on the starting level and the
- * level change is applied on landing, because the client cannot interpolate across levels.
+ * landing.
+ *
+ * The client cannot interpolate across levels, so a leap to another level glides entirely on
+ * [glideLevel], which defaults to the starting level; the level change is then applied on landing.
+ * Obstacles whose flight path was authored into the destination level's tile heights pass
+ * `glideLevel = dest.level` so the player is moved there first and the glide follows that terrain.
  */
-internal suspend fun ProtectedAccess.leapTo(dest: CoordGrid, seq: String, ticks: Int) {
+internal suspend fun ProtectedAccess.leapTo(
+    dest: CoordGrid,
+    seq: String,
+    ticks: Int,
+    glideLevel: Int = coords.level,
+) {
     val start = coords
-    val glideEnd = if (dest.level == start.level) dest else CoordGrid(dest.x, dest.z, start.level)
+    val glideStart = CoordGrid(start.x, start.z, glideLevel)
+    val glideEnd = CoordGrid(dest.x, dest.z, glideLevel)
     anim(seq)
     exactMove(
-        start = start,
+        start = glideStart,
         end = glideEnd,
         delay1 = 0,
         delay2 = ticks * CLIENT_CYCLES_PER_TICK,
         dir = emFaceTowards(start, dest),
         teleportType = TeleportType.Exempt,
     )
-    delay(ticks)
-    if (glideEnd != dest) {
-        telejump(dest, TeleportType.Exempt)
+    try {
+        delay(ticks)
+    } finally {
+        // A glide on another level than the destination parks the player on a tile of that level
+        // until it lands; if the script is torn down mid-flight (logout, interruption) they must
+        // still end up on the destination rather than saved on a roof or rope tile.
+        if (glideEnd != dest && player.coords != dest) {
+            telejump(dest, TeleportType.Exempt)
+        }
     }
 }
 
-/** Grabs a zip line and slides down it to [dest]. */
+/**
+ * Grabs a zip line and slides down it to [dest]. The grab sequence ends on a long held frame, so
+ * the slide starts once its motion has played out. The slide glides on the destination level: the
+ * tile heights along the rope are authored on that level so the player hangs one storey below the
+ * roof they left, exactly a reach below the rope, and touches down on the landing platform.
+ */
 internal suspend fun ProtectedAccess.zipTo(dest: CoordGrid, ticks: Int) {
     faceSquare(dest)
     anim(AgilityAnims.ZIPLINE_GRAB)
-    delay(1)
-    leapTo(dest, AgilityAnims.ZIPLINE_SLIDE, ticks)
+    delay(seqTicks(AgilityAnims.ZIPLINE_GRAB, fallback = 2))
+    leapTo(dest, AgilityAnims.ZIPLINE_SLIDE, ticks, glideLevel = dest.level)
 }
 
 internal fun ProtectedAccess.setBalanceStyle(style: BalanceStyle) {

@@ -9,6 +9,9 @@ import org.rsmod.content.skills.agility.BalanceStyle
 import org.rsmod.content.skills.agility.balanceAlong
 import org.rsmod.content.skills.agility.climbTo
 import org.rsmod.content.skills.agility.leapTo
+import org.rsmod.content.skills.agility.line
+import org.rsmod.content.skills.agility.seqGlideTicks
+import org.rsmod.content.skills.agility.seqTicks
 import org.rsmod.content.skills.agility.stepOnto
 import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
@@ -47,12 +50,31 @@ class AgilityShortcutScript : PluginScript() {
 
     private suspend fun ProtectedAccess.cross(move: ShortcutMove, dest: CoordGrid, fromA: Boolean) {
         when (move) {
-            is ShortcutMove.Climb -> climbTo(dest, move.seq, move.ticks)
-            is ShortcutMove.Jump -> leapTo(dest, move.seq, move.ticks)
+            is ShortcutMove.Climb -> {
+                val ticks = move.ticks ?: seqTicks(move.seq, fallback = 2)
+                climbTo(dest, move.seq, ticks)
+            }
+            is ShortcutMove.Jump -> {
+                val ticks = move.ticks ?: seqGlideTicks(move.seq, fallback = 2)
+                leapTo(dest, move.seq, ticks)
+            }
             is ShortcutMove.Squeeze -> {
                 faceSquare(dest)
                 anim(move.enter)
                 delay(move.ticks)
+                telejump(dest, TeleportType.Exempt)
+                anim(move.leave)
+            }
+            is ShortcutMove.Tunnel -> {
+                faceSquare(dest)
+                anim(move.enter)
+                delay(seqTicks(move.enter, fallback = 2))
+                val path = line(coords, dest)
+                for (tile in path.dropLast(1)) {
+                    teleport(tile, TeleportType.Exempt)
+                    anim(move.walk)
+                    delay(1)
+                }
                 telejump(dest, TeleportType.Exempt)
                 anim(move.leave)
             }

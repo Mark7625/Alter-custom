@@ -102,7 +102,9 @@ object RooftopCourses {
                         xp = 4.0,
                         lapBonusXp = 75.0,
                         start = tile(3101, 3261, 3),
-                        move = Leap(tile(3103, 3261, 0), seq = AgilityAnims.JUMP_DOWN),
+                        // Level 1 carries the height of the crate top, so the hop lands on it.
+                        move =
+                            Leap(tile(3103, 3261, 0), seq = AgilityAnims.JUMP_DOWN, glideLevel = 1),
                     ),
                 ),
             markTiles =
@@ -157,6 +159,8 @@ object RooftopCourses {
                         xp = 12.0,
                         start = tile(3318, 3165, 1),
                         move = Leap(tile(3317, 3175, 2), seq = AgilityAnims.ROPE_SWING, ticks = 3),
+                        // The zip line landing platform is railed off from the tree.
+                        apRange = 1,
                     ),
                     RooftopObstacle(
                         locs = listOf("loc.rooftops_kharid_wallclimb_2"),
@@ -218,7 +222,8 @@ object RooftopCourses {
                         name = "Gap",
                         xp = 19.0,
                         start = tile(3201, 3416, 3),
-                        move = Leap(tile(3193, 3416, 1), seq = AgilityAnims.JUMP_DOWN, ticks = 3),
+                        // The roof level has no terrain over the gap; the ruin level is flat.
+                        move = Leap(tile(3193, 3416, 1), glideLevel = 1),
                     ),
                     RooftopObstacle(
                         locs = listOf("loc.rooftops_varrock_wallswing"),
@@ -259,7 +264,7 @@ object RooftopCourses {
                         name = "Ledge",
                         xp = 3.5,
                         start = tile(3236, 3408, 3),
-                        move = Leap(tile(3236, 3410, 3), seq = AgilityAnims.JUMP_UP, ticks = 1),
+                        move = Leap(tile(3236, 3410, 3), seq = AgilityAnims.JUMP_UP),
                     ),
                     RooftopObstacle(
                         locs = listOf("loc.rooftops_varrock_finish"),
@@ -463,7 +468,8 @@ object RooftopCourses {
                         xp = 11.0,
                         lapBonusXp = 230.0,
                         start = tile(3024, 3332, 3),
-                        move = Leap(tile(3029, 3332, 0), seq = AgilityAnims.JUMP_DOWN),
+                        // The roof level ends a tile short of the landing; level 1 is flat there.
+                        move = Leap(tile(3029, 3332, 0), glideLevel = 1),
                     ),
                 ),
             markTiles =
@@ -612,7 +618,7 @@ object RooftopCourses {
                         xp = 20.0,
                         lapBonusXp = 520.0,
                         start = tile(3362, 3002, 2),
-                        move = Leap(tile(3363, 2998, 0), seq = AgilityAnims.JUMP_DOWN, ticks = 3),
+                        move = Leap(tile(3363, 2998, 0)),
                     ),
                 ),
             markTiles =
@@ -690,7 +696,9 @@ object RooftopCourses {
                         xp = 20.0,
                         lapBonusXp = 455.0,
                         start = tile(2655, 3676, 3),
-                        move = Leap(tile(2652, 3676, 0), seq = AgilityAnims.JUMP_DOWN),
+                        // The ground slopes down over the fish pile; the roof level rises past it.
+                        move =
+                            Leap(tile(2652, 3676, 0), seq = AgilityAnims.JUMP_DOWN, glideLevel = 0),
                     ),
                 ),
             markTiles =
@@ -763,7 +771,8 @@ object RooftopCourses {
                         xp = 25.0,
                         lapBonusXp = 600.0,
                         start = tile(2657, 3297, 3),
-                        move = Leap(tile(2668, 3297, 0), seq = AgilityAnims.JUMP_DOWN, ticks = 3),
+                        // The roof level rises once the last building ends; glide at ground level.
+                        move = Leap(tile(2668, 3297, 0), glideLevel = 0),
                     ),
                 ),
             markTiles =

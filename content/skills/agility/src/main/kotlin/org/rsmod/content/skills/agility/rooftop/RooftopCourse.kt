@@ -29,20 +29,32 @@ enum class RooftopCourse(
 sealed class ObstacleMove {
     abstract val destination: CoordGrid
 
-    /** Play [seq] for [ticks] cycles, then appear on [dest]. Used for walls, trees and crates. */
+    /**
+     * Play [seq] for [ticks] cycles, then appear on [dest]. Used for walls, trees and crates. When
+     * [ticks] is null the move waits for the whole animation.
+     */
     data class Climb(
         val dest: CoordGrid,
         val seq: String = AgilityAnims.WALL_CLIMB,
-        val ticks: Int = 2,
+        val ticks: Int? = null,
     ) : ObstacleMove() {
         override val destination: CoordGrid get() = dest
     }
 
-    /** Glide to [dest] over [ticks] cycles with an `exactmove`. Used for gaps, swings and edges. */
+    /**
+     * Glide to [dest] over [ticks] cycles with an `exactmove`. Used for gaps, swings and edges. When
+     * [ticks] is null the glide lasts as long as the animation, rounded down to whole ticks.
+     *
+     * A leap to another level glides on [glideLevel], the starting level unless given, and changes
+     * level on landing. Set it where the starting level has no terrain past the edge (the client
+     * then draws the glide rising instead of falling) or where the drop was authored into another
+     * level's tile heights.
+     */
     data class Leap(
         val dest: CoordGrid,
         val seq: String = AgilityAnims.JUMP,
-        val ticks: Int = 2,
+        val ticks: Int? = null,
+        val glideLevel: Int? = null,
     ) : ObstacleMove() {
         override val destination: CoordGrid get() = dest
     }
@@ -84,6 +96,10 @@ data class ObstacleFailure(
  * @param xp Experience granted every time the obstacle is completed.
  * @param lapBonusXp Extra experience granted when this obstacle completes a full, in-order lap.
  *   Only the final obstacle of a course has a bonus; it also rolls for a mark of grace.
+ * @param apRange When greater than zero the obstacle also starts once the player is within this
+ *   many tiles of the loc with a line of sight to it, without having to reach it. Needed where the
+ *   map fences the loc off from the tile it is used from (a railing between a landing platform
+ *   and the tree that is swung from), which makes the loc unreachable to the route finder.
  */
 data class RooftopObstacle(
     val locs: List<String>,
@@ -93,6 +109,7 @@ data class RooftopObstacle(
     val move: ObstacleMove,
     val failure: ObstacleFailure? = null,
     val lapBonusXp: Double = 0.0,
+    val apRange: Int = 0,
 ) {
     val isFinish: Boolean get() = lapBonusXp > 0.0
 

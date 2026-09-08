@@ -5,17 +5,33 @@ import org.rsmod.map.CoordGrid
 
 /** How a player crosses a shortcut. Paths are given from side A to side B and reversed as needed. */
 sealed class ShortcutMove {
-    /** Play [seq] for [ticks] cycles and appear on the far side. Rocks, chains, ladders. */
-    data class Climb(val seq: String = AgilityAnims.CLIMB, val ticks: Int = 2) : ShortcutMove()
+    /**
+     * Play [seq] for [ticks] cycles (the whole animation when null) and appear on the far side.
+     * Rocks, chains, ladders.
+     */
+    data class Climb(val seq: String = AgilityAnims.CLIMB, val ticks: Int? = null) : ShortcutMove()
 
-    /** Glide to the far side over [ticks] cycles while [seq] plays. Fences, walls, ledges. */
-    data class Jump(val seq: String = AgilityAnims.JUMP_UP, val ticks: Int = 1) : ShortcutMove()
+    /**
+     * Glide to the far side over [ticks] cycles (the length of the animation when null) while
+     * [seq] plays. Fences, walls, ledges.
+     */
+    data class Jump(val seq: String = AgilityAnims.JUMP_UP, val ticks: Int? = null) : ShortcutMove()
 
     /** Play [enter], pass through after [ticks] cycles and play [leave]. Tunnels, pipes, cracks. */
     data class Squeeze(
         val enter: String = AgilityAnims.CRACK_ENTER,
         val leave: String = AgilityAnims.CRACK_LEAVE,
         val ticks: Int = 2,
+    ) : ShortcutMove()
+
+    /**
+     * Drop into a hole, shuffle underground one tile per tick to the far side and climb out.
+     * Underwall tunnels.
+     */
+    data class Tunnel(
+        val enter: String = AgilityAnims.TUNNEL_ENTER,
+        val walk: String = AgilityAnims.TUNNEL_WALK,
+        val leave: String = AgilityAnims.TUNNEL_EXIT,
     ) : ShortcutMove()
 
     /** Balance across [tiles] (the tiles between the two sides) one per tick. Log balances. */

@@ -17,8 +17,9 @@ object AgilityShortcuts {
     private fun tile(x: Int, z: Int, level: Int = 0): CoordGrid = CoordGrid(x, z, level)
 
     private val crawl = Squeeze()
+    private val tunnel = ShortcutMove.Tunnel()
     private val pipe = ShortcutMove.PIPE
-    private val climbOver = Jump(AgilityAnims.WALL_CLIMB_OVER, ticks = 2)
+    private val climbOver = Jump(AgilityAnims.WALL_CLIMB_OVER)
 
     val all: List<AgilityShortcut> =
         listOf(
@@ -47,7 +48,7 @@ object AgilityShortcuts {
                 locs = listOf("loc.yanille_castlehole_sc", "loc.yanille_castlewall_sc"),
                 sideA = tile(2575, 3112),
                 sideB = tile(2575, 3107),
-                move = crawl,
+                move = tunnel,
             ),
             AgilityShortcut(
                 name = "Crack",
@@ -83,7 +84,7 @@ object AgilityShortcuts {
                 locs = listOf("loc.varrock_sc_tunnel_west", "loc.varrock_sc_tunnel_east"),
                 sideA = tile(3137, 3517),
                 sideB = tile(3142, 3512),
-                move = crawl,
+                move = tunnel,
             ),
             AgilityShortcut(
                 name = "Underwall tunnel",
@@ -92,7 +93,7 @@ object AgilityShortcuts {
                 locs = listOf("loc.falador_sc_castlewall_south", "loc.falador_sc_castlewall_north"),
                 sideA = tile(2948, 3309),
                 sideB = tile(2948, 3313),
-                move = crawl,
+                move = tunnel,
             ),
             AgilityShortcut(
                 name = "Rocks",
@@ -173,7 +174,7 @@ object AgilityShortcuts {
                 locs = listOf("loc.draynor_diary_under_wall_w", "loc.draynor_diary_under_wall_e"),
                 sideA = tile(3066, 3257),
                 sideB = tile(3070, 3257),
-                move = crawl,
+                move = tunnel,
             ),
             AgilityShortcut(
                 name = "Log balance",
@@ -357,7 +358,7 @@ object AgilityShortcuts {
                 locs = listOf("loc.taverly_dungeon_floor_spikes_sc"),
                 sideA = tile(2878, 9813),
                 sideB = tile(2880, 9813),
-                move = Jump(AgilityAnims.JUMP, ticks = 2),
+                move = Jump(AgilityAnims.JUMP),
             ),
             AgilityShortcut(
                 name = "Tunnel",
