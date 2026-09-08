@@ -139,6 +139,30 @@ public class PlayerQueueList {
         return false
     }
 
+    /**
+     * Whether any queue of [category] is due to fire on [cycle]: its remaining cycles, after the
+     * decrement the processor applies once per cycle, would reach zero.
+     */
+    public fun anyDue(category: QueueCategory, cycle: Int): Boolean {
+        if (isEmpty) {
+            return false
+        }
+
+        var current = first
+        while (current != null) {
+            val queue = current.queue
+            if (queue.category == category.id) {
+                val remaining =
+                    if (queue.processedCycle != cycle) queue.remainingCycles - 1 else queue.remainingCycles
+                if (remaining <= 0) {
+                    return true
+                }
+            }
+            current = current.next ?: break
+        }
+        return false
+    }
+
     public fun clear() {
         iterator?.cleanUp()
 

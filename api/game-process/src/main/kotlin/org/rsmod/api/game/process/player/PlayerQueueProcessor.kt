@@ -13,7 +13,9 @@ public class PlayerQueueProcessor
 @Inject
 constructor(private val eventBus: EventBus, private val protectedAccess: ProtectedAccessLauncher) {
     public fun process(player: Player) {
-        if (player.queueList.strongQueues > 0) {
+        // Only a strong queue that fires this cycle interrupts. A pending one (a spell that lands
+        // in three cycles, say) must leave the player free to keep fighting until it does.
+        if (player.queueList.strongQueues > 0 && player.hasStrongQueueDue()) {
             player.interruptForStrongQueue()
         }
         player.publishExpiredQueues()
@@ -29,6 +31,9 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
      * itself, for one) must not be cancelled by the very queue it is servicing. The strong queue
      * launches once the script has ended, which [canLaunchQueue] enforces.
      */
+    private fun Player.hasStrongQueueDue(): Boolean =
+        queueList.anyDue(QueueCategory.Strong, currentMapClock)
+
     private fun Player.interruptForStrongQueue() {
         ifClose(eventBus)
         // Delayed, or a coroutine is suspended: the same test [canLaunchQueue] applies.
@@ -130,7 +135,7 @@ constructor(private val eventBus: EventBus, private val protectedAccess: Protect
             }
             iterator.cleanUp()
 
-            if (processedNone || queueList.size == 1) {
+            if (processedNone || weakQueueList.size == 1) {
                 break
             }
         }
