@@ -264,7 +264,7 @@ constructor(private val ammunition: RangedAmmoManager, private val npcSearch: Np
             }
             val others =
                 npcSearch
-                    .findAllZone(target.coords, distance = 1, vis = HuntVis.Off)
+                    .findAllAny(target.coords, distance = 1, vis = HuntVis.Off)
                     .filter { it != target && it.isValidTarget() && it.type.hasOp(2) }
                     .take(ANNIHILATE_MAX_EXTRA_TARGETS)
             for (npc in others) {

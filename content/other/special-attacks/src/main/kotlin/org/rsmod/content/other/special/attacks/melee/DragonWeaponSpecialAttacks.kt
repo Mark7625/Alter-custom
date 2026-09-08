@@ -194,7 +194,7 @@ constructor(private val worldRepo: WorldRepository, private val npcSearch: NpcSe
             if (mapMultiway()) {
                 val others =
                     npcSearch
-                        .findAllZone(coords, distance = 1, vis = HuntVis.Off)
+                        .findAllAny(coords, distance = 1, vis = HuntVis.Off)
                         .filter { it != target && it.isValidTarget() && it.type.isAttackable() }
                         .take(POWERSTAB_MAX_EXTRA_TARGETS)
                 for (npc in others) {
