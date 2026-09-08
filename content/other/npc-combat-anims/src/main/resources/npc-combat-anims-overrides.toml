@@ -2,8 +2,8 @@
 # file and replace whatever the npc has, so use them for the npcs the generator gets wrong.
 #
 # Fields (all optional but id): attack_anim, defend_anim, death_anim (seq.*), attack_type
-# (category.attacktype_stab|slash|crush|standard|magic), attack_sound (synth id), proj_travel
-# (spotanim.*), proj_type (projanim.*), attack_range (tiles).
+# (category.attacktype_stab|slash|crush|standard|magic), attack_sound, defend_sound, death_sound
+# (synth ids), proj_travel (spotanim.*), proj_type (projanim.*), attack_range (tiles).
 #
 # Example:
 #     { id = "npc.wizard", attack_anim = "seq.human_caststrike", proj_travel = "spotanim.firestrike_travel" },
@@ -28,4 +28,11 @@ npc = [
     # Barrows brothers whose animation sets do not follow a family the generator understands.
     { id = "npc.barrows_guthan", attack_anim = "seq.barrow_guthan_crush", attack_type = "category.attacktype_crush", attack_sound = 2562, defend_anim = "seq.barrow_guthan_defend" },
     { id = "npc.barrows_torag", attack_anim = "seq.barrow_torag_crush", attack_type = "category.attacktype_crush", attack_sound = 2567, defend_anim = "seq.human_blunt_block" },
+    # The Dragon Slayer II ghosts share the ghost animation family but have their own voice
+    # (dragonslayer_ghost_attack/hit/death on the OSRS wiki sound id list).
+    { id = "npc.dragonslayer_ghost_1_key", attack_sound = 3755, defend_sound = 3757, death_sound = 3756 },
+    { id = "npc.dragonslayer_ghost_2", attack_sound = 3755, defend_sound = 3757, death_sound = 3756 },
+    { id = "npc.dragonslayer_ghost_3", attack_sound = 3755, defend_sound = 3757, death_sound = 3756 },
+    { id = "npc.dragonslayer_ghost_4", attack_sound = 3755, defend_sound = 3757, death_sound = 3756 },
+    { id = "npc.dragonslayer_ghost_5", attack_sound = 3755, defend_sound = 3757, death_sound = 3756 },
 ]

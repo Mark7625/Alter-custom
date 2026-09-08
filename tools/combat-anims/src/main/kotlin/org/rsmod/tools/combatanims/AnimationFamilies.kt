@@ -6,16 +6,42 @@ package org.rsmod.tools.combatanims
  * Jagex names an npc's animation set as a family: `giant_update_basic_ready`,
  * `giant_update_basic_attack`, `giant_update_basic_defend`, `giant_update_basic_death`. A variant
  * suffix on the ready animation carries over to the rest of the set: `zombie_update_ready_weapon`
- * pairs with `zombie_update_attack_weapon`. This object knows those conventions, and nothing else -
- * it works on plain sequence names so it can be tested without a cache.
+ * pairs with `zombie_update_attack_weapon`. This object knows those conventions, plus the sound
+ * effects of the families whose sounds the cache never attaches to the npc ([familySounds]) - it
+ * works on plain sequence names so it can be tested without a cache.
  *
  * Names are the bare gameval names (`giant_update_basic_ready`), without the `seq.` prefix.
  */
 object AnimationFamilies {
-    data class Family(val attack: String?, val defend: String?, val death: String?) {
+    data class Family(
+        val attack: String?,
+        val defend: String?,
+        val death: String?,
+        val attackSound: Int? = null,
+        val defendSound: Int? = null,
+        val deathSound: Int? = null,
+    ) {
         val isEmpty: Boolean
             get() = attack == null && defend == null && death == null
     }
+
+    /** The synth ids a family plays when it attacks, is hit and dies. */
+    data class Sounds(val attack: Int, val defend: Int, val death: Int)
+
+    /**
+     * Sound effects by family prefix, for the monster families whose npcs carry no `attack_sound`,
+     * `defend_sound` or `death_sound` params in the cache. The ids are the ones the cache does
+     * attach to a member of the family where one exists (the giant spider `npc.giantspider1` and
+     * the small `npc.spider`), and the OSRS wiki "List of sound IDs" names otherwise
+     * (`ghost_attack`, `ghost_hit`, `ghost_death`).
+     */
+    private val familySounds: Map<String, Sounds> =
+        mapOf(
+            "ghost_update_tendrill" to Sounds(attack = 436, defend = 439, death = 438),
+            "ghost_update_normal" to Sounds(attack = 436, defend = 439, death = 438),
+            "spider_update" to Sounds(attack = 537, defend = 539, death = 538),
+            "small_spider_update" to Sounds(attack = 3604, defend = 3609, death = 3608),
+        )
 
     /**
      * Suffixes that mark a sequence as an attack when the family does not use `_attack`:
@@ -33,10 +59,14 @@ object AnimationFamilies {
         if (splits.isEmpty()) {
             return Family(null, null, null)
         }
+        val sounds = splits.firstNotNullOfOrNull { (prefix, _) -> familySounds[prefix] }
         return Family(
             attack = splits.firstNotNullOfOrNull { attackFor(it, sequences) },
             defend = splits.firstNotNullOfOrNull { defendFor(it, sequences) },
             death = splits.firstNotNullOfOrNull { deathFor(it, sequences) },
+            attackSound = sounds?.attack,
+            defendSound = sounds?.defend,
+            deathSound = sounds?.death,
         )
     }
 

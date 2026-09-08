@@ -26,7 +26,9 @@ import org.rsmod.plugin.scripts.ScriptContext
  * to [NpcCombatAnimsFile.GENERATED_RESOURCE]. This script applies that file, then
  * [NpcCombatAnimsFile.OVERRIDES_RESOURCE] on top, to the cached npc types once at game startup.
  * The generated entries never replace a value the npc's own data declares; overrides always do.
- * Ranged and magic entries also raise the npc's attack range so it fights from a distance.
+ * Ranged and magic entries also raise the npc's attack range so it fights from a distance. Entries
+ * may carry the attack, block and death sounds too (`param.attack_sound`, `param.defend_sound`,
+ * `param.death_sound`) for families such as ghosts and spiders whose npcs the cache leaves mute.
  */
 class NpcCombatAnimsScript : PluginScript() {
     override fun ScriptContext.startup() {
@@ -74,6 +76,8 @@ class NpcCombatAnimsScript : PluginScript() {
         put(params.death_anim, entry.deathAnim?.asRSCM(RSCMType.SEQ))
         put(params.npc_attack_type, entry.attackType?.asRSCM(RSCMType.CATEGORY))
         put(params.attack_sound, entry.attackSound)
+        put(params.defend_sound, entry.defendSound)
+        put(params.death_sound, entry.deathSound)
         put(params.proj_travel, entry.projTravel?.asRSCM(RSCMType.SPOTANIM))
         put(params.proj_type, entry.projType?.asRSCM(RSCMType.PROJANIM))
 

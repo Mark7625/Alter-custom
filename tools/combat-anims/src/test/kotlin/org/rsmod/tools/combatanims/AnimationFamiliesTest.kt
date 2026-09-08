@@ -102,6 +102,32 @@ class AnimationFamiliesTest {
     }
 
     @Test
+    fun `families with a known voice carry their sounds and the large variant shares them`() {
+        val spiders =
+            sequences +
+                setOf(
+                    "spider_update_ready",
+                    "spider_update_attack",
+                    "spider_update_defend",
+                    "spider_update_death",
+                    "spider_update_ready_large",
+                    "spider_update_attack_large",
+                )
+        val spider = AnimationFamilies.resolve("spider_update_ready", spiders)
+        assertEquals(537, spider.attackSound)
+        assertEquals(539, spider.defendSound)
+        assertEquals(538, spider.deathSound)
+        val large = AnimationFamilies.resolve("spider_update_ready_large", spiders)
+        assertEquals("spider_update_attack_large", large.attack)
+        assertEquals(537, large.attackSound)
+        // Unknown families stay silent.
+        val giant = AnimationFamilies.resolve("giant_update_basic_ready", sequences)
+        assertNull(giant.attackSound)
+        assertNull(giant.defendSound)
+        assertNull(giant.deathSound)
+    }
+
+    @Test
     fun `long ready markers are stripped whole`() {
         val family = AnimationFamilies.resolve("cow_just_ready_update", sequences)
         assertEquals("cow_attack", family.attack)

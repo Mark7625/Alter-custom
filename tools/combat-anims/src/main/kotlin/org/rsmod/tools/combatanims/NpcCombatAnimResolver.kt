@@ -41,7 +41,9 @@ data class NpcCombatAnims(
     val attackType: String? = null,
     val attackSound: Int? = null,
     val defendAnim: String? = null,
+    val defendSound: Int? = null,
     val deathAnim: String? = null,
+    val deathSound: Int? = null,
     val projTravel: String? = null,
     val projType: String? = null,
     val attackRange: Int? = null,
@@ -424,8 +426,11 @@ object NpcCombatAnimResolver {
             npc = npc.rscm,
             source = "family:$ready",
             attackAnim = family.attack,
+            attackSound = family.attackSound,
             defendAnim = family.defend,
+            defendSound = family.defendSound,
             deathAnim = family.death,
+            deathSound = family.deathSound,
         )
     }
 }

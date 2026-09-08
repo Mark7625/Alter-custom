@@ -37,7 +37,9 @@ object NpcCombatAnimToml {
         entry.attackType?.let { fields += "attack_type = \"$it\"" }
         entry.attackSound?.let { fields += "attack_sound = $it" }
         entry.defendAnim?.let { fields += "defend_anim = \"seq.$it\"" }
+        entry.defendSound?.let { fields += "defend_sound = $it" }
         entry.deathAnim?.let { fields += "death_anim = \"seq.$it\"" }
+        entry.deathSound?.let { fields += "death_sound = $it" }
         entry.projTravel?.let { fields += "proj_travel = \"spotanim.$it\"" }
         entry.projType?.let { fields += "proj_type = \"projanim.$it\"" }
         entry.attackRange?.let { fields += "attack_range = $it" }
