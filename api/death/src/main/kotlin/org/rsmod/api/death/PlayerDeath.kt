@@ -130,6 +130,8 @@ constructor(
 
         player.specialAttackType = 0
         player.skullIcon = null
+        // Attributes flagged `resetOnDeath` (vengeance, toxin immunity, absorption) end here.
+        player.attr.removeIf { it.resetOnDeath }
 
         for (hook in cleanupHooks) {
             hook.cleanup(player)

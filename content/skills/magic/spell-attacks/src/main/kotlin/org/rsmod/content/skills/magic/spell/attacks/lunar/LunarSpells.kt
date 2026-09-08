@@ -153,7 +153,7 @@ class VengeanceOtherSpell : SpellAttackMap {
 }
 
 internal object Vengeance {
-    private val ARMED = AttributeKey<Boolean>()
+    private val ARMED = AttributeKey<Boolean>(resetOnDeath = true)
     private val LAST_CAST_TICK = AttributeKey<Int>()
     private const val COOLDOWN_TICKS = 50
 
