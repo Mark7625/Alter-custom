@@ -32,6 +32,7 @@ constructor(
     private val drops: PlayerDeathDrops,
     private val handlingResolver: PlayerDeathHandlingResolver,
     private val cleanupHooks: Set<PlayerDeathCleanupHook>,
+    private val itemHooks: Set<PlayerDeathItemHook>,
     private val respawnHooks: Set<PlayerRespawnHook>,
     private val areaChecker: AreaChecker,
     private val worldRepo: WorldRepository,
@@ -95,6 +96,10 @@ constructor(
 
         val context = buildContext(player, deathCoords, killer)
         val handling = handlingResolver.resolve(context)
+
+        for (hook in itemHooks) {
+            hook.beforeDrops(context, handling)
+        }
 
         val result = drops.selectDrops(player, context, handling)
         drops.applyDrops(player, result, handling, deathCoords)

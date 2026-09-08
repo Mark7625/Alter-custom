@@ -99,7 +99,7 @@ constructor(
         onIfModalDrag("component.bankside:wornops") { dragSideInv(it) }
         onIfModalDrag("component.bankmain:items", "component.bankmain:tabs") { dragIntoTab(it) }
 
-        val wornComponents = bank_equipment_tab_to_slots_map.filterValuesNotNull().map { it.key to RSCM.getReverseMapping(RSCMType.COMPONENT,it.value.packed) }
+        val wornComponents = bank_equipment_tab_to_slots_map.filterValuesNotNull().map { it.key to RSCM.getReverseMapping(RSCMType.COMPONENT, it.value.packed) }
         for ((slot, component) in wornComponents) {
             onIfModalButton(component) { wornOp(slot, it.op) }
         }
@@ -203,8 +203,11 @@ constructor(
                     input
                 }
                 IfButtonOp.Op8 -> Int.MAX_VALUE
+                // The client draws "View" (looting bag) and "Configure" (rune pouch) as op1 on
+                // bankside objs; they take the same content hook as the op9 extra op.
+                IfButtonOp.Op1,
                 IfButtonOp.Op9 -> {
-                    clickBanksideExtraOp(slot)
+                    clickBanksideExtraOp(slot, op)
                     return
                 }
                 else -> throw IllegalStateException("Invalid main inv op: $op")
@@ -1099,7 +1102,7 @@ constructor(
         player.setBankWornBonuses(wornBonuses, weaponSpeeds)
     }
 
-    private suspend fun ProtectedAccess.clickBanksideExtraOp(slot: Int) {
+    private suspend fun ProtectedAccess.clickBanksideExtraOp(slot: Int, op: IfButtonOp) {
         val obj = inv[slot] ?: return resendSlot(inv, 0)
         val type = getInvObj(obj)
 
@@ -1128,7 +1131,7 @@ constructor(
             return
         }
 
-        val event = HeldBanksideEvents.Type(player, slot, type)
+        val event = HeldBanksideEvents.Type(player, slot, type, op)
         publish(event)
     }
 

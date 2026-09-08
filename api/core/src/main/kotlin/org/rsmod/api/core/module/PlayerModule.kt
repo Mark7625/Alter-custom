@@ -2,15 +2,17 @@ package org.rsmod.api.core.module
 
 import com.google.inject.Provider
 import jakarta.inject.Inject
-import org.rsmod.api.player.music.MusicPlayer
 import org.rsmod.api.player.hook.GroundItemDropResolver
 import org.rsmod.api.player.hook.PlayerGroundItemDropHook
+import org.rsmod.api.player.hook.PlayerObjTakeRedirectHook
+import org.rsmod.api.player.hook.PlayerObjTakeRedirector
 import org.rsmod.api.player.hook.PlayerObjTakeValidateHook
 import org.rsmod.api.player.hook.PlayerObjTakeValidator
 import org.rsmod.api.player.hook.PlayerRestrictionHook
 import org.rsmod.api.player.hook.PlayerRestrictions
 import org.rsmod.api.player.hook.PlayerTeleportValidateHook
 import org.rsmod.api.player.hook.PlayerTeleportValidator
+import org.rsmod.api.player.music.MusicPlayer
 import org.rsmod.api.player.protect.ProtectedAccessContextFactory
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.game.entity.PlayerList
@@ -22,6 +24,7 @@ public object PlayerModule : ExtendedModule() {
         newSetBinding<PlayerTeleportValidateHook>()
         newSetBinding<PlayerGroundItemDropHook>()
         newSetBinding<PlayerObjTakeValidateHook>()
+        newSetBinding<PlayerObjTakeRedirectHook>()
         newSetBinding<PlayerRestrictionHook>()
         bindInstance<PlayerRestrictions>()
         bindInstance<MusicPlayer>()
@@ -30,6 +33,7 @@ public object PlayerModule : ExtendedModule() {
         bindInstance<PlayerTeleportValidator>()
         bindInstance<GroundItemDropResolver>()
         bindInstance<PlayerObjTakeValidator>()
+        bindInstance<PlayerObjTakeRedirector>()
         bindProvider(ShuffledPlayerListProvider::class.java)
     }
 
