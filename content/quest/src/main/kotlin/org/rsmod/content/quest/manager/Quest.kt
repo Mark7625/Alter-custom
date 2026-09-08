@@ -5,6 +5,7 @@ import dev.openrune.ServerCacheManager
 import dev.openrune.rscm.RSCM.asRSCM
 import dev.openrune.rscm.RSCMType
 import org.rsmod.api.attr.AttributeKey
+import org.rsmod.api.player.midiJingle
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.vars.intVarBit
 import org.rsmod.api.player.vars.intVarp
@@ -28,8 +29,8 @@ data class Quest(
     val questVarp: String,
     val rewards : QuestReward,
     val itemDisplay : ItemRewardDisplay,
-    /** Played when the quest is completed; see [QuestScript.completionJingle]. */
-    val completionJingle: String = DEFAULT_COMPLETION_JINGLE,
+    /** Js5 archive 11 group played when the quest is completed; see [QuestScript.completionJingle]. */
+    val completionJingle: Int = DEFAULT_COMPLETION_JINGLE,
 ) {
 
     private var Player.questState by intVarp(questVarp)
@@ -49,17 +50,28 @@ data class Quest(
         fun all(): Collection<Quest> = questsByKey.values
 
         /**
-         * "Quest Complete 3", the variant that plays for beginner and easy quests. Longer quests
-         * pass their own variant (`jingle.quest_complete_2` or `_1`) to [QuestScript].
+         * Js5 archive 11 groups of the three "Quest Complete" jingles. The client plays a jingle
+         * by its archive group, which is not the number the `jingle.*` gamevals resolve to; the
+         * groups are the "Cache ID" on each jingle's OSRS wiki page (see
+         * [org.rsmod.api.player.midiJingle]).
          */
-        const val DEFAULT_COMPLETION_JINGLE = "jingle.quest_complete_3"
+        /** "Quest Complete 1": usually master-level quests. */
+        const val QUEST_COMPLETE_1_JINGLE = 152
+
+        /** "Quest Complete 2": usually intermediate and expert quests. */
+        const val QUEST_COMPLETE_2_JINGLE = 153
+
+        /** "Quest Complete 3": usually beginner and easy quests. */
+        const val QUEST_COMPLETE_3_JINGLE = 154
+
+        const val DEFAULT_COMPLETION_JINGLE = QUEST_COMPLETE_3_JINGLE
 
         fun register(
             rowKey: String,
             varp: String,
             itemDisplay : ItemRewardDisplay,
             rewards : QuestReward,
-            completionJingle: String = DEFAULT_COMPLETION_JINGLE,
+            completionJingle: Int = DEFAULT_COMPLETION_JINGLE,
         ): Quest {
 
             val rowKeyID = "dbrow.${rowKey}".asRSCM()
@@ -193,7 +205,7 @@ data class Quest(
 
         access.player.questPoints += questPoints
         access.player.questsCompleted++
-        access.midiJingle(completionJingle)
+        access.player.midiJingle(completionJingle)
 
         access.ifOpenMain("interface.questscroll")
         access.ifSetText("component.questscroll:quest_title", "You have completed ${displayName}!")

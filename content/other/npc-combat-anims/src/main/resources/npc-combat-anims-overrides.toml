@@ -21,6 +21,10 @@ npc = [
     { id = "npc.fai_dark_wizard_old_2", proj_travel = "spotanim.earthstrike_travel" },
     { id = "npc.qip_ds_young_dark_wizard3", proj_travel = "spotanim.earthstrike_travel" },
     { id = "npc.qip_ds_young_dark_wizard4", proj_travel = "spotanim.earthstrike_travel" },
+    # The Restless Ghost's skeleton in the Wizards' Tower basement: its def carries human idle
+    # anims, so the generator leaves it silent; it swings a sword with the updated skeleton set
+    # every other skeleton uses.
+    { id = "npc.skull_skeleton", attack_anim = "seq.skeleton_update_attack_weapon", attack_type = "category.attacktype_slash", attack_sound = 776, defend_anim = "seq.skeleton_update_defend", defend_sound = 779, death_anim = "seq.skeleton_update_death", death_sound = 777 },
     # Barrows brothers whose animation sets do not follow a family the generator understands.
     { id = "npc.barrows_guthan", attack_anim = "seq.barrow_guthan_crush", attack_type = "category.attacktype_crush", attack_sound = 2562, defend_anim = "seq.barrow_guthan_defend" },
     { id = "npc.barrows_torag", attack_anim = "seq.barrow_torag_crush", attack_type = "category.attacktype_crush", attack_sound = 2567, defend_anim = "seq.human_blunt_block" },

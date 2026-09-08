@@ -1,0 +1,7 @@
+# Sound effects used by the quest plugins. The vanilla gamevals dump carries no synth names, so
+# the raw cache ids are declared here (ids taken from the OSRS wiki "List of sound IDs").
+[gamevals.synth]
+coffin_open = 54
+coffin_close = 53
+skeleton_resurrect = 1687
+ghost_disappear = 1598
