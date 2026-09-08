@@ -240,6 +240,8 @@ constructor(
         ifClose()
         actionDelay = mapClock + ACTION_DELAY
         anim(VANISH_ANIM)
+        spotanim(FLOWER_RING)
+        soundSynth(TELEPORT_SOUND)
         delay(VANISH_DELAY)
         val destination = ring.destination
         if (destination == null || destination == coords) {
@@ -276,6 +278,10 @@ constructor(
 
         private const val VANISH_ANIM = "seq.human_fairy_vanish"
         private const val APPEAR_ANIM = "seq.human_fairy_appear"
+
+        /** The ring of flowers that springs up around a player as the fairy magic takes them. */
+        private const val FLOWER_RING = "spotanim.fairy_flower_ring"
+        private const val TELEPORT_SOUND = "synth.fairy_teleport"
         private const val VANISH_DELAY = 2
         private const val ACTION_DELAY = 4
     }

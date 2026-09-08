@@ -1,0 +1,4 @@
+# Sound effects used by the fairy ring network. The vanilla gamevals dump carries no synth
+# names, so the raw cache id is declared here (from the OSRS wiki "List of sound IDs").
+[gamevals.synth]
+fairy_teleport = 1098
