@@ -72,7 +72,9 @@ public object PathingEntityCommon {
     }
 
     private fun CollisionFlagMap.move(entity: PathingEntity, from: CoordGrid, to: CoordGrid) {
-        entity.removeBlockWalkCollision(this, from)
+        if (isZoneValid(from)) {
+            entity.removeBlockWalkCollision(this, from)
+        }
         entity.addBlockWalkCollision(this, to)
     }
 

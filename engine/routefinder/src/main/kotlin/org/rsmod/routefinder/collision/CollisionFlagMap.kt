@@ -49,8 +49,9 @@ public class CollisionFlagMap(public val flags: Array<IntArray?> = arrayOfNulls(
     }
 
     public fun remove(absoluteX: Int, absoluteZ: Int, level: Int, mask: Int) {
-        val currentFlags = this[absoluteX, absoluteZ, level]
-        this[absoluteX, absoluteZ, level] = currentFlags and mask.inv()
+        val tiles = flags[zoneIndex(absoluteX, absoluteZ, level)] ?: return
+        val tileIndex = tileIndex(absoluteX, absoluteZ)
+        tiles[tileIndex] = tiles[tileIndex] and mask.inv()
     }
 
     /**
