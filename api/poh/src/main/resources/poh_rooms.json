@@ -1,0 +1,1811 @@
+{
+  "styles": [
+    {
+      "index": 0,
+      "key": "rimmington",
+      "region": 7534,
+      "extraRegion": 7535,
+      "level": 0,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_rimmington",
+      "doorRightLoc": "loc.poh_hotspot_doorr_rimmington"
+    },
+    {
+      "index": 1,
+      "key": "lumbridge",
+      "region": 7534,
+      "extraRegion": 7535,
+      "level": 1,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_lumbridge",
+      "doorRightLoc": "loc.poh_hotspot_doorr_lumbridge"
+    },
+    {
+      "index": 2,
+      "key": "pollnivneach",
+      "region": 7534,
+      "extraRegion": 7535,
+      "level": 2,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_pollnivneach",
+      "doorRightLoc": "loc.poh_hotspot_doorr_pollnivneach"
+    },
+    {
+      "index": 3,
+      "key": "rellekka",
+      "region": 7534,
+      "extraRegion": 7535,
+      "level": 3,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_rellekka",
+      "doorRightLoc": "loc.poh_hotspot_doorr_rellekka"
+    },
+    {
+      "index": 4,
+      "key": "brimhaven",
+      "region": 7790,
+      "extraRegion": 7791,
+      "level": 0,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_brimhaven",
+      "doorRightLoc": "loc.poh_hotspot_doorr_brimhaven"
+    },
+    {
+      "index": 5,
+      "key": "yanille",
+      "region": 7790,
+      "extraRegion": 7791,
+      "level": 1,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_yanille",
+      "doorRightLoc": "loc.poh_hotspot_doorr_yanille"
+    },
+    {
+      "index": 6,
+      "key": "deathly",
+      "region": 7790,
+      "extraRegion": 7791,
+      "level": 2,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_deathly",
+      "doorRightLoc": "loc.poh_hotspot_doorr_deathly"
+    },
+    {
+      "index": 7,
+      "key": "twisted",
+      "region": 7790,
+      "extraRegion": 7791,
+      "level": 3,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_twisted",
+      "doorRightLoc": "loc.poh_hotspot_doorr_twisted"
+    },
+    {
+      "index": 8,
+      "key": "hosidius",
+      "region": 8046,
+      "extraRegion": 8047,
+      "level": 0,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_hosidius",
+      "doorRightLoc": "loc.poh_hotspot_doorr_hosidius"
+    },
+    {
+      "index": 9,
+      "key": "xmas2020",
+      "region": 8046,
+      "extraRegion": 8047,
+      "level": 1,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_xmas2020",
+      "doorRightLoc": "loc.poh_hotspot_doorr_xmas2020"
+    },
+    {
+      "index": 10,
+      "key": "civitas",
+      "region": 8046,
+      "extraRegion": 8047,
+      "level": 2,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_civitas",
+      "doorRightLoc": "loc.poh_hotspot_doorr_civitas"
+    },
+    {
+      "index": 11,
+      "key": "canifis",
+      "region": 8046,
+      "extraRegion": 8047,
+      "level": 3,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_canifis",
+      "doorRightLoc": "loc.poh_hotspot_doorr_canifis"
+    },
+    {
+      "index": 12,
+      "key": "wilderness",
+      "region": 8302,
+      "extraRegion": 8303,
+      "level": 0,
+      "doorLeftLoc": "loc.poh_hotspot_doorl_lumbridge",
+      "doorRightLoc": "loc.poh_hotspot_doorr_lumbridge"
+    }
+  ],
+  "rooms": [
+    {
+      "index": 0,
+      "roomKey": "parlour",
+      "templateRegion": 7534,
+      "templateZoneX": 0,
+      "templateZoneZ": 7,
+      "doorEdges": [
+        "WEST",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 1,
+      "roomKey": "kitchen",
+      "templateRegion": 7534,
+      "templateZoneX": 2,
+      "templateZoneZ": 7,
+      "doorEdges": [
+        "WEST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 2,
+      "roomKey": "dining_room",
+      "templateRegion": 7534,
+      "templateZoneX": 4,
+      "templateZoneZ": 7,
+      "doorEdges": [
+        "WEST",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 3,
+      "roomKey": "bedroom",
+      "templateRegion": 7534,
+      "templateZoneX": 6,
+      "templateZoneZ": 7,
+      "doorEdges": [
+        "WEST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 4,
+      "roomKey": "skill_hall_stairs_up",
+      "templateRegion": 7534,
+      "templateZoneX": 1,
+      "templateZoneZ": 6,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 5,
+      "roomKey": "skill_hall_stairs_top",
+      "templateRegion": 7534,
+      "templateZoneX": 3,
+      "templateZoneZ": 6,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "UPPER"
+    },
+    {
+      "index": 6,
+      "roomKey": "quest_hall_stairs_up",
+      "templateRegion": 7534,
+      "templateZoneX": 5,
+      "templateZoneZ": 6,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 7,
+      "roomKey": "quest_hall_stairs_top",
+      "templateRegion": 7534,
+      "templateZoneX": 7,
+      "templateZoneZ": 6,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "UPPER"
+    },
+    {
+      "index": 8,
+      "roomKey": "workshop",
+      "templateRegion": 7534,
+      "templateZoneX": 0,
+      "templateZoneZ": 5,
+      "doorEdges": [
+        "NORTH",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 9,
+      "roomKey": "chapel",
+      "templateRegion": 7534,
+      "templateZoneX": 2,
+      "templateZoneZ": 5,
+      "doorEdges": [
+        "WEST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 10,
+      "roomKey": "study",
+      "templateRegion": 7534,
+      "templateZoneX": 4,
+      "templateZoneZ": 5,
+      "doorEdges": [
+        "WEST",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 11,
+      "roomKey": "throne_room",
+      "templateRegion": 7534,
+      "templateZoneX": 6,
+      "templateZoneZ": 5,
+      "doorEdges": [
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 12,
+      "roomKey": "portal_chamber",
+      "templateRegion": 7534,
+      "templateZoneX": 1,
+      "templateZoneZ": 4,
+      "doorEdges": [
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 13,
+      "roomKey": "combat_room",
+      "templateRegion": 7534,
+      "templateZoneX": 3,
+      "templateZoneZ": 4,
+      "doorEdges": [
+        "WEST",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 14,
+      "roomKey": "games_room",
+      "templateRegion": 7534,
+      "templateZoneX": 5,
+      "templateZoneZ": 4,
+      "doorEdges": [
+        "WEST",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 15,
+      "roomKey": "treasure_room",
+      "templateRegion": 7534,
+      "templateZoneX": 7,
+      "templateZoneZ": 4,
+      "doorEdges": [
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "DUNGEON"
+    },
+    {
+      "index": 16,
+      "roomKey": "dungeon_corridor",
+      "templateRegion": 7534,
+      "templateZoneX": 0,
+      "templateZoneZ": 3,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "DUNGEON"
+    },
+    {
+      "index": 17,
+      "roomKey": "dungeon_stairs",
+      "templateRegion": 7534,
+      "templateZoneX": 2,
+      "templateZoneZ": 3,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "DUNGEON"
+    },
+    {
+      "index": 18,
+      "roomKey": "dungeon_junction",
+      "templateRegion": 7534,
+      "templateZoneX": 4,
+      "templateZoneZ": 3,
+      "doorEdges": [
+        "NORTH",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        }
+      ],
+      "floor": "DUNGEON"
+    },
+    {
+      "index": 19,
+      "roomKey": "oubliette",
+      "templateRegion": 7534,
+      "templateZoneX": 6,
+      "templateZoneZ": 3,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "DUNGEON"
+    },
+    {
+      "index": 20,
+      "roomKey": "roof_a",
+      "templateRegion": 7534,
+      "templateZoneX": 1,
+      "templateZoneZ": 2,
+      "doorEdges": [],
+      "doorPlacements": [],
+      "floor": "GROUND"
+    },
+    {
+      "index": 21,
+      "roomKey": "roof_b",
+      "templateRegion": 7534,
+      "templateZoneX": 3,
+      "templateZoneZ": 2,
+      "doorEdges": [],
+      "doorPlacements": [],
+      "floor": "GROUND"
+    },
+    {
+      "index": 22,
+      "roomKey": "roof_c",
+      "templateRegion": 7534,
+      "templateZoneX": 5,
+      "templateZoneZ": 2,
+      "doorEdges": [],
+      "doorPlacements": [],
+      "floor": "GROUND"
+    },
+    {
+      "index": 23,
+      "roomKey": "menagerie_indoor",
+      "templateRegion": 7534,
+      "templateZoneX": 7,
+      "templateZoneZ": 2,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 24,
+      "roomKey": "garden",
+      "templateRegion": 7534,
+      "templateZoneX": 0,
+      "templateZoneZ": 1,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 25,
+      "roomKey": "formal_garden",
+      "templateRegion": 7534,
+      "templateZoneX": 2,
+      "templateZoneZ": 1,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 26,
+      "roomKey": "costume_room",
+      "templateRegion": 7534,
+      "templateZoneX": 6,
+      "templateZoneZ": 1,
+      "doorEdges": [
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 27,
+      "roomKey": "grass_filler",
+      "templateRegion": 7534,
+      "templateZoneX": 1,
+      "templateZoneZ": 0,
+      "doorEdges": [],
+      "doorPlacements": [],
+      "floor": "GROUND"
+    },
+    {
+      "index": 28,
+      "roomKey": "dungeon_filler",
+      "templateRegion": 7534,
+      "templateZoneX": 3,
+      "templateZoneZ": 0,
+      "doorEdges": [],
+      "doorPlacements": [],
+      "floor": "DUNGEON"
+    },
+    {
+      "index": 29,
+      "roomKey": "superior_garden",
+      "templateRegion": 7534,
+      "templateZoneX": 5,
+      "templateZoneZ": 0,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 30,
+      "roomKey": "menagerie_outdoor",
+      "templateRegion": 7534,
+      "templateZoneX": 7,
+      "templateZoneZ": 0,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 31,
+      "roomKey": "achievement_gallery",
+      "templateRegion": 7535,
+      "templateZoneX": 1,
+      "templateZoneZ": 0,
+      "doorEdges": [
+        "NORTH",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 32,
+      "roomKey": "portal_nexus",
+      "templateRegion": 7535,
+      "templateZoneX": 3,
+      "templateZoneZ": 0,
+      "doorEdges": [
+        "WEST",
+        "NORTH",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "RIGHT",
+          "localX": 3,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "NORTH",
+          "side": "LEFT",
+          "localX": 4,
+          "localZ": 7,
+          "rotation": 1
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    },
+    {
+      "index": 33,
+      "roomKey": "league_hall",
+      "templateRegion": 7535,
+      "templateZoneX": 5,
+      "templateZoneZ": 0,
+      "doorEdges": [
+        "WEST",
+        "EAST",
+        "SOUTH"
+      ],
+      "doorPlacements": [
+        {
+          "edge": "WEST",
+          "side": "RIGHT",
+          "localX": 0,
+          "localZ": 3,
+          "rotation": 0
+        },
+        {
+          "edge": "WEST",
+          "side": "LEFT",
+          "localX": 0,
+          "localZ": 4,
+          "rotation": 0
+        },
+        {
+          "edge": "SOUTH",
+          "side": "LEFT",
+          "localX": 3,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "SOUTH",
+          "side": "RIGHT",
+          "localX": 4,
+          "localZ": 0,
+          "rotation": 3
+        },
+        {
+          "edge": "EAST",
+          "side": "LEFT",
+          "localX": 7,
+          "localZ": 3,
+          "rotation": 2
+        },
+        {
+          "edge": "EAST",
+          "side": "RIGHT",
+          "localX": 7,
+          "localZ": 4,
+          "rotation": 2
+        }
+      ],
+      "floor": "GROUND"
+    }
+  ]
+}

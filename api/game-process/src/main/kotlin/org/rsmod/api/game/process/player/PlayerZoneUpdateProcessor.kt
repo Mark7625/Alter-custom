@@ -207,12 +207,22 @@ constructor(
             else -> backing
         }
 
+    /**
+     * Every zone within view range of this zone's column, across **all four levels**. Zone
+     * updates are level-addressed (`UpdateZoneFullFollows`/`UpdateZonePartialEnclosed` carry a
+     * level), and the client renders every level of the scene: a loc changed on another level -
+     * e.g. a house's dungeon staircase replacing its baked hotspot below the player - must reach
+     * observers on other levels or their client keeps showing the stale baked state until they
+     * happen to visit that level.
+     */
     private fun ZoneKey.computeVisibleNeighbouringZones(): IntList {
         val zones = IntArrayList(ZONE_VIEW_TOTAL_COUNT)
         for (x in -ZONE_VIEW_RADIUS..ZONE_VIEW_RADIUS) {
             for (z in -ZONE_VIEW_RADIUS..ZONE_VIEW_RADIUS) {
                 val zone = translate(x, z)
-                zones.add(zone.packed)
+                for (level in 0 until LEVEL_COUNT) {
+                    zones.add(ZoneKey(zone.x, zone.z, level).packed)
+                }
             }
         }
         return zones
@@ -234,8 +244,9 @@ constructor(
 
     public companion object {
         public const val ZONE_VIEW_RADIUS: Int = 3
+        public const val LEVEL_COUNT: Int = 4
         public const val ZONE_VIEW_TOTAL_COUNT: Int =
-            (2 * ZONE_VIEW_RADIUS + 1) * (2 * ZONE_VIEW_RADIUS + 1)
+            (2 * ZONE_VIEW_RADIUS + 1) * (2 * ZONE_VIEW_RADIUS + 1) * LEVEL_COUNT
 
         public val BUILD_AREA_BOUNDS: IntRange = 0 until BuildAreaUtils.SIZE
     }

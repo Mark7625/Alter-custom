@@ -1,0 +1,872 @@
+{
+  "windows": [
+    {
+      "roomKey": "parlour",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "parlour",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "kitchen",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "dining_room",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "dining_room",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "dining_room",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "dining_room",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "dining_room",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "dining_room",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "bedroom",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "skill_hall_stairs_up",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "skill_hall_stairs_top",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "quest_hall_stairs_up",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "quest_hall_stairs_top",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "workshop",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "study",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "study",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "study",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "study",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "study",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "study",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "study",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "study",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "throne_room",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "portal_chamber",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "combat_room",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "games_room",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "costume_room",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "costume_room",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "costume_room",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "costume_room",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "costume_room",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "costume_room",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 0,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 0,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 0
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 2,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 2,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 5,
+      "localZ": 0,
+      "shape": 0,
+      "rotation": 3
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 5,
+      "localZ": 7,
+      "shape": 0,
+      "rotation": 1
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 7,
+      "localZ": 2,
+      "shape": 0,
+      "rotation": 2
+    },
+    {
+      "roomKey": "portal_nexus",
+      "localX": 7,
+      "localZ": 5,
+      "shape": 0,
+      "rotation": 2
+    }
+  ]
+}

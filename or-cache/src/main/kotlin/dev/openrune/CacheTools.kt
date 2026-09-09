@@ -38,6 +38,7 @@ import dev.openrune.tables.consumables.food.FoodTable
 import dev.openrune.tables.consumables.potion.PotionEffectTable
 import dev.openrune.tables.consumables.potion.PotionTable
 import dev.openrune.tables.skills.Cooking
+import dev.openrune.tables.skills.Construction
 import dev.openrune.tables.skills.Firemaking
 import dev.openrune.tables.skills.Herblore
 import dev.openrune.tables.skills.Mining
@@ -188,6 +189,7 @@ fun tablesToPack(): List<DBTable> = listOf(
     StatComponents.statsComponents(),
     PickableObjects.pickableObjects(),
     Mining.rocks(),
+    Construction.furniture(),
     Cooking.foods(),
     Cooking.ales(),
     Herblore.unfinishedPotions(),

@@ -79,8 +79,14 @@ class PlayerZoneUpdateProcessorTest {
             }
 
             val startZone = ZoneKey.from(startCoords)
+            // Zone updates cover every level of the visible zone columns, not just the player's.
             val expectedZoneKeys =
-                zoneRange.flatMap { x -> zoneRange.map { z -> startZone.translate(x, z).packed } }
+                zoneRange.flatMap { x ->
+                    zoneRange.flatMap { z ->
+                        val zone = startZone.translate(x, z)
+                        (0 until 4).map { level -> ZoneKey(zone.x, zone.z, level).packed }
+                    }
+                }
 
             // Set a static map loc in loc registry; this loc should not be sent as a zone
             // update, or so we will verify.
@@ -119,7 +125,7 @@ class PlayerZoneUpdateProcessorTest {
             process()
 
             // `processNewVisibleZones`
-            assertEquals(49, captured.countOf<UpdateZoneFullFollows>())
+            assertEquals(49 * 4, captured.countOf<UpdateZoneFullFollows>())
 
             // `refreshVisibleZoneKeys`
             assertEquals(expectedZoneKeys.toSet(), visibleZoneKeys.toSet())

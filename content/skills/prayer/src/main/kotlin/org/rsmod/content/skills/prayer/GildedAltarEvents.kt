@@ -21,9 +21,6 @@ class GildedAltarEvents @Inject constructor(
 
         bones.forEach { row ->
             registerAltar("loc.chaosaltar", row, chaos = true)
-            GILDED_ALTARS.forEach { altar ->
-                registerAltar(altar, row, chaos = false)
-            }
         }
 
         onPlayerQueueWithArgs("queue.prayer_altar_sacrifice") {
@@ -107,12 +104,4 @@ class GildedAltarEvents @Inject constructor(
         val altar: BoundLocInfo,
         val chaos: Boolean,
     )
-
-    private companion object {
-        val GILDED_ALTARS = listOf(
-            "loc.poh_altar_saradomin_7",
-            "loc.poh_altar_zamorak_7",
-            "loc.poh_altar_gnomechild_7",
-        )
-    }
 }

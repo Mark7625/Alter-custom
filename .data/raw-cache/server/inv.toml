@@ -57,3 +57,83 @@ scope = "Perm"
 stack = "Always"
 protect = false
 
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_armour_inv"
+inherit = "inv.poh_costume_room_armour_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_capes_inv"
+inherit = "inv.poh_costume_room_capes_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_magic_wardrobe_inv"
+inherit = "inv.poh_costume_room_magic_wardrobe_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_holiday_items_inv"
+inherit = "inv.poh_costume_room_holiday_items_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_ame_inv"
+inherit = "inv.poh_costume_room_ame_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_treasure_trail_0_inv"
+inherit = "inv.poh_costume_room_treasure_trail_0_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_treasure_trail_1_inv"
+inherit = "inv.poh_costume_room_treasure_trail_1_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_treasure_trail_2_inv"
+inherit = "inv.poh_costume_room_treasure_trail_2_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
+
+[[inventory]]
+isServerOnly = true
+id = "inv.poh_costume_room_treasure_trail_3_inv"
+inherit = "inv.poh_costume_room_treasure_trail_3_inv"
+size = 100
+scope = "Perm"
+stack = "Always"
+protect = false
