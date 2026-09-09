@@ -1,0 +1,24 @@
+# Cave of the Goblins music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Cave of the Goblins.
+# Bounds x 2496-3263, z 5504-9599; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Cave of the Goblins"
+area_id = "area.cave_of_the_goblins"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 5504],
+    [2527, 5504],
+    [2527, 5631],
+    [2496, 5631],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9536],
+    [3263, 9536],
+    [3263, 9599],
+    [3136, 9599],
+]

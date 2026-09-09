@@ -1,0 +1,76 @@
+# Distillery Hilarity music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Distillery Hilarity.
+# Bounds x 3790-3835, z 3008-3031; 995 tiles as 11 rectangles.
+
+[[area]]
+name = "Distillery Hilarity"
+area_id = "area.distillery_hilarity"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3790, 3008],
+    [3835, 3008],
+    [3835, 3021],
+    [3790, 3021],
+]
+
+[[area.polygons]]
+vertices = [
+    [3791, 3022],
+    [3834, 3022],
+]
+
+[[area.polygons]]
+vertices = [
+    [3792, 3023],
+    [3833, 3023],
+]
+
+[[area.polygons]]
+vertices = [
+    [3793, 3024],
+    [3832, 3024],
+]
+
+[[area.polygons]]
+vertices = [
+    [3794, 3025],
+    [3831, 3025],
+]
+
+[[area.polygons]]
+vertices = [
+    [3795, 3026],
+    [3830, 3026],
+]
+
+[[area.polygons]]
+vertices = [
+    [3796, 3027],
+    [3829, 3027],
+]
+
+[[area.polygons]]
+vertices = [
+    [3797, 3028],
+    [3828, 3028],
+]
+
+[[area.polygons]]
+vertices = [
+    [3798, 3029],
+    [3827, 3029],
+]
+
+[[area.polygons]]
+vertices = [
+    [3799, 3030],
+    [3826, 3030],
+]
+
+[[area.polygons]]
+vertices = [
+    [3799, 3031],
+    [3825, 3031],
+]

@@ -1,0 +1,38 @@
+# 7th Realm music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: 7th Realm.
+# Bounds x 1856-1967, z 8960-9023; 7166 tiles as 4 rectangles.
+
+[[area]]
+name = "7th Realm"
+area_id = "area.seventh_realm"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 8960],
+    [1967, 8960],
+    [1967, 9004],
+    [1856, 9004],
+]
+
+[[area.polygons]]
+vertices = [
+    [1856, 9005],
+    [1900, 9005],
+    [1900, 9023],
+    [1856, 9023],
+]
+
+[[area.polygons]]
+vertices = [
+    [1902, 9005],
+    [1967, 9005],
+    [1967, 9023],
+    [1902, 9023],
+]
+
+[[area.polygons]]
+vertices = [
+    [1901, 9007],
+    [1901, 9023],
+]

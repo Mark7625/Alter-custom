@@ -1,0 +1,24 @@
+# Corridors of Power music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Corridors of Power.
+# Bounds x 2560-2623, z 10240-10303; 3584 tiles as 2 rectangles.
+
+[[area]]
+name = "Corridors of Power"
+area_id = "area.corridors_of_power"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 10240],
+    [2623, 10240],
+    [2623, 10271],
+    [2560, 10271],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 10272],
+    [2607, 10272],
+    [2607, 10303],
+    [2560, 10303],
+]

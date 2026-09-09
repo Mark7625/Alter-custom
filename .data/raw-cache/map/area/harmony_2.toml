@@ -1,0 +1,24 @@
+# Harmony 2 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Harmony 2.
+# Bounds x 3200-3263, z 9600-9727; 5376 tiles as 2 rectangles.
+
+[[area]]
+name = "Harmony 2"
+area_id = "area.harmony_2"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3200, 9600],
+    [3219, 9600],
+    [3219, 9727],
+    [3200, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [3220, 9664],
+    [3263, 9664],
+    [3263, 9727],
+    [3220, 9727],
+]

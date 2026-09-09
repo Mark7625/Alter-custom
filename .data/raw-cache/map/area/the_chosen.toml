@@ -1,0 +1,16 @@
+# The Chosen music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Chosen.
+# Bounds x 2432-2495, z 4928-4991; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Chosen"
+area_id = "area.the_chosen"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 4928],
+    [2495, 4928],
+    [2495, 4991],
+    [2432, 4991],
+]

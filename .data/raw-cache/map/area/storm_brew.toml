@@ -1,0 +1,16 @@
+# Storm Brew music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Storm Brew.
+# Bounds x 2624-2687, z 5184-5247; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Storm Brew"
+area_id = "area.storm_brew"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 5184],
+    [2687, 5184],
+    [2687, 5247],
+    [2624, 5247],
+]

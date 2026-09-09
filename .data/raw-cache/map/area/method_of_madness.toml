@@ -1,0 +1,24 @@
+# Method of Madness music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Method of Madness.
+# Bounds x 3040-3327, z 5184-9823; 2048 tiles as 2 rectangles.
+
+[[area]]
+name = "Method of Madness"
+area_id = "area.method_of_madness"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3040, 5184],
+    [3071, 5184],
+    [3071, 5215],
+    [3040, 5215],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 9792],
+    [3327, 9792],
+    [3327, 9823],
+    [3296, 9823],
+]

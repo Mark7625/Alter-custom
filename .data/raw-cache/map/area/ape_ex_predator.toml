@@ -1,0 +1,16 @@
+# Ape-ex Predator music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Ape-ex Predator.
+# Bounds x 3776-3839, z 5376-5439; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Ape-ex Predator"
+area_id = "area.ape_ex_predator"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3776, 5376],
+    [3839, 5376],
+    [3839, 5439],
+    [3776, 5439],
+]

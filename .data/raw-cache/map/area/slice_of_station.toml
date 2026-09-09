@@ -1,0 +1,16 @@
+# Slice of Station music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Slice of Station.
+# Bounds x 2432-2495, z 5504-5567; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Slice of Station"
+area_id = "area.slice_of_station"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5504],
+    [2495, 5504],
+    [2495, 5567],
+    [2432, 5567],
+]

@@ -1,0 +1,32 @@
+# Stagnant music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Stagnant.
+# Bounds x 1984-2367, z 4992-5023; 9216 tiles as 3 rectangles.
+
+[[area]]
+name = "Stagnant"
+area_id = "area.stagnant"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1984, 4992],
+    [2047, 4992],
+    [2047, 5023],
+    [1984, 5023],
+]
+
+[[area.polygons]]
+vertices = [
+    [2080, 4992],
+    [2111, 4992],
+    [2111, 5023],
+    [2080, 5023],
+]
+
+[[area.polygons]]
+vertices = [
+    [2176, 4992],
+    [2367, 4992],
+    [2367, 5023],
+    [2176, 5023],
+]

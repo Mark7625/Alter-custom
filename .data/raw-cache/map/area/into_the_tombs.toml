@@ -1,0 +1,16 @@
+# Into the Tombs music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Into the Tombs.
+# Bounds x 3328-3391, z 9088-9151; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Into the Tombs"
+area_id = "area.into_the_tombs"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3328, 9088],
+    [3391, 9088],
+    [3391, 9151],
+    [3328, 9151],
+]

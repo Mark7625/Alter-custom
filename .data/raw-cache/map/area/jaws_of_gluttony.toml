@@ -1,0 +1,16 @@
+# Jaws of Gluttony music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Jaws of Gluttony.
+# Bounds x 3904-3967, z 5376-5439; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Jaws of Gluttony"
+area_id = "area.jaws_of_gluttony"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3904, 5376],
+    [3967, 5376],
+    [3967, 5439],
+    [3904, 5439],
+]

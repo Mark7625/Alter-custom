@@ -1,0 +1,32 @@
+# Wrath and Ruin music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Wrath and Ruin.
+# Bounds x 2944-3135, z 5184-5311; 9216 tiles as 3 rectangles.
+
+[[area]]
+name = "Wrath and Ruin"
+area_id = "area.wrath_and_ruin"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 5184],
+    [3007, 5184],
+    [3007, 5247],
+    [2944, 5247],
+]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5216],
+    [3039, 5216],
+    [3039, 5247],
+    [3008, 5247],
+]
+
+[[area.polygons]]
+vertices = [
+    [3072, 5248],
+    [3135, 5248],
+    [3135, 5311],
+    [3072, 5311],
+]

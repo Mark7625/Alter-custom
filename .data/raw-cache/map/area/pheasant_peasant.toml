@@ -1,0 +1,16 @@
+# Pheasant Peasant music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Pheasant Peasant.
+# Bounds x 2560-2623, z 4736-4799; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Pheasant Peasant"
+area_id = "area.pheasant_peasant"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 4736],
+    [2623, 4736],
+    [2623, 4799],
+    [2560, 4799],
+]

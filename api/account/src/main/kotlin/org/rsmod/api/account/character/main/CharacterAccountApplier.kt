@@ -4,6 +4,7 @@ import jakarta.inject.Inject
 import java.time.LocalDateTime
 import org.rsmod.api.account.character.CharacterAccountLoginSegment
 import org.rsmod.api.account.character.CharacterDataStage
+import org.rsmod.api.account.character.appearance.CharacterAppearancePersistence
 import org.rsmod.game.entity.Player
 import org.rsmod.map.CoordGrid
 
@@ -28,7 +29,11 @@ public class CharacterAccountApplier @Inject constructor() :
         player.trustedDevices = d.trustedDevices.toMutableList()
         player.twoFactorAuth = d.twoFactorAuth
         player.lastKnownDevice = d.trustedDevices.maxByOrNull { it.verifiedAt }?.deviceId
-        player.members = c.members
+        // Every account is a member: all of the server's content is members content, and the
+        // client only counts rune pouch and combination runes (and draws member spells as
+        // castable) when the login response flags the player as a member. The stored flag is
+        // ignored and written back as `true` on the next save.
+        player.members = true
         player.username = d.accountName
         player.displayName = c.displayName ?: ""
         player.previousDisplayName = c.previousDisplayName ?: ""
@@ -40,9 +45,14 @@ public class CharacterAccountApplier @Inject constructor() :
         player.xpRate = c.xpRate
         player.lastLogin = LocalDateTime.now()
         player.vars.backing.putAll(c.varps)
-        if (c.attrs.isNotEmpty()) {
-            player.attr.putAllFromPersistence(c.attrs)
+        val attrs = c.attrs
+        // Appearance is stored under attribute keys but owned by `player.appearance`; keeping it
+        // out of the attribute map leaves a single source of truth for the next save.
+        val nonAppearanceAttrs = attrs - CharacterAppearancePersistence.persistenceKeys
+        if (nonAppearanceAttrs.isNotEmpty()) {
+            player.attr.putAllFromPersistence(nonAppearanceAttrs)
         }
+        CharacterAppearancePersistence.restore(player.appearance, attrs)
         player.modLevel = d.rights
     }
 }

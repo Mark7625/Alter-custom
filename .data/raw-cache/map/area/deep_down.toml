@@ -1,0 +1,24 @@
+# Deep Down music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Deep Down.
+# Bounds x 2688-2815, z 4480-4607; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Deep Down"
+area_id = "area.deep_down"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2688, 4480],
+    [2751, 4480],
+    [2751, 4607],
+    [2688, 4607],
+]
+
+[[area.polygons]]
+vertices = [
+    [2752, 4544],
+    [2815, 4544],
+    [2815, 4607],
+    [2752, 4607],
+]

@@ -1,0 +1,24 @@
+# Sarcophagus music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sarcophagus.
+# Bounds x 2752-3263, z 4928-9343; 16384 tiles as 2 rectangles.
+
+[[area]]
+name = "Sarcophagus"
+area_id = "area.sarcophagus"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 4928],
+    [2943, 4928],
+    [2943, 4991],
+    [2752, 4991],
+]
+
+[[area.polygons]]
+vertices = [
+    [3200, 9280],
+    [3263, 9280],
+    [3263, 9343],
+    [3200, 9343],
+]

@@ -1,0 +1,16 @@
+# Upper Depths music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Upper Depths.
+# Bounds x 3264-3359, z 5120-5471; 33792 tiles as 1 rectangles.
+
+[[area]]
+name = "Upper Depths"
+area_id = "area.upper_depths"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 5120],
+    [3359, 5120],
+    [3359, 5471],
+    [3264, 5471],
+]

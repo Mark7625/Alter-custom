@@ -1,0 +1,16 @@
+# The Gauntlet music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Gauntlet.
+# Bounds x 1856-1983, z 5632-5695; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "The Gauntlet"
+area_id = "area.the_gauntlet"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 5632],
+    [1983, 5632],
+    [1983, 5695],
+    [1856, 5695],
+]

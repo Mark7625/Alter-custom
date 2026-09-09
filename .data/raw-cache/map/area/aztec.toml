@@ -1,0 +1,16 @@
+# Aztec music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Aztec.
+# Bounds x 2752-2815, z 9536-9599; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Aztec"
+area_id = "area.aztec"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 9536],
+    [2815, 9536],
+    [2815, 9599],
+    [2752, 9599],
+]

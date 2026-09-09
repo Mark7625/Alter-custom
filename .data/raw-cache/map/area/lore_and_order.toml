@@ -1,0 +1,16 @@
+# Lore and Order music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lore and Order.
+# Bounds x 1792-1855, z 4224-4287; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Lore and Order"
+area_id = "area.lore_and_order"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 4224],
+    [1855, 4224],
+    [1855, 4287],
+    [1792, 4287],
+]

@@ -1,0 +1,39 @@
+# Trinity music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Trinity.
+# Bounds x 2688-2756, z 3387-9791; 4113 tiles as 5 rectangles.
+
+[[area]]
+name = "Trinity"
+area_id = "area.trinity"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 3387],
+    [2753, 3387],
+    [2753, 3391],
+    [2752, 3391],
+]
+
+[[area.polygons]]
+vertices = [
+    [2754, 3388],
+    [2754, 3391],
+]
+
+[[area.polygons]]
+vertices = [
+    [2755, 3390],
+    [2755, 3391],
+]
+
+[[area.polygons]]
+vertices = [[2756, 3391]]
+
+[[area.polygons]]
+vertices = [
+    [2688, 9728],
+    [2751, 9728],
+    [2751, 9791],
+    [2688, 9791],
+]

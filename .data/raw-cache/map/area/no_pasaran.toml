@@ -1,0 +1,16 @@
+# No Pasaran music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: No Pasaran.
+# Bounds x 2432-2495, z 6080-6207; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "No Pasaran"
+area_id = "area.no_pasaran"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 6080],
+    [2495, 6080],
+    [2495, 6207],
+    [2432, 6207],
+]

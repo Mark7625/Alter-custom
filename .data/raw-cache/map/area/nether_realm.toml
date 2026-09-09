@@ -1,0 +1,16 @@
+# Nether Realm music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Karamja Jam; 7th Realm; Pathways; Nether Realm.
+# Bounds x 2624-2751, z 9408-9599; 24576 tiles as 1 rectangles.
+
+[[area]]
+name = "Nether Realm"
+area_id = "area.nether_realm"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 9408],
+    [2751, 9408],
+    [2751, 9599],
+    [2624, 9599],
+]

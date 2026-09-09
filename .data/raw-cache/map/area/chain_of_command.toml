@@ -1,0 +1,16 @@
+# Chain of Command music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Chain of Command.
+# Bounds x 2624-2687, z 9728-9919; 12288 tiles as 1 rectangles.
+
+[[area]]
+name = "Chain of Command"
+area_id = "area.chain_of_command"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 9728],
+    [2687, 9728],
+    [2687, 9919],
+    [2624, 9919],
+]

@@ -1,0 +1,246 @@
+# The Talkasti People music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Talkasti People.
+# Bounds x 1346-1396, z 3010-9457; 2727 tiles as 36 rectangles.
+
+[[area]]
+name = "The Talkasti People"
+area_id = "area.the_talkasti_people"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1354, 3010],
+    [1366, 3010],
+    [1366, 3016],
+    [1354, 3016],
+]
+
+[[area.polygons]]
+vertices = [
+    [1360, 3017],
+    [1360, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1349, 3018],
+    [1350, 3018],
+    [1350, 3077],
+    [1349, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1348, 3019],
+    [1348, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1351, 3019],
+    [1352, 3019],
+    [1352, 3077],
+    [1351, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1369, 3019],
+    [1373, 3019],
+    [1373, 3077],
+    [1369, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1347, 3020],
+    [1347, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1353, 3020],
+    [1359, 3020],
+    [1359, 3077],
+    [1353, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1361, 3020],
+    [1368, 3020],
+    [1368, 3077],
+    [1361, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1374, 3020],
+    [1374, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1346, 3021],
+    [1346, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1375, 3021],
+    [1375, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1376, 3026],
+    [1377, 3026],
+    [1377, 3077],
+    [1376, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1378, 3027],
+    [1378, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1379, 3028],
+    [1379, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1380, 3030],
+    [1380, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1381, 3032],
+    [1381, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1382, 3033],
+    [1382, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1383, 3038],
+    [1383, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1389, 3039],
+    [1394, 3039],
+    [1394, 3044],
+    [1389, 3044],
+]
+
+[[area.polygons]]
+vertices = [
+    [1384, 3040],
+    [1384, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1395, 3040],
+    [1395, 3048],
+]
+
+[[area.polygons]]
+vertices = [
+    [1385, 3041],
+    [1385, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1396, 3041],
+    [1396, 3047],
+]
+
+[[area.polygons]]
+vertices = [
+    [1386, 3042],
+    [1388, 3042],
+    [1388, 3043],
+    [1386, 3043],
+]
+
+[[area.polygons]]
+vertices = [
+    [1390, 3045],
+    [1394, 3045],
+    [1394, 3047],
+    [1390, 3047],
+]
+
+[[area.polygons]]
+vertices = [
+    [1386, 3048],
+    [1386, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1392, 3048],
+    [1394, 3048],
+]
+
+[[area.polygons]]
+vertices = [
+    [1387, 3049],
+    [1387, 3077],
+]
+
+[[area.polygons]]
+vertices = [
+    [1388, 3051],
+    [1388, 3076],
+]
+
+[[area.polygons]]
+vertices = [
+    [1389, 3052],
+    [1389, 3075],
+]
+
+[[area.polygons]]
+vertices = [
+    [1390, 3053],
+    [1390, 3074],
+]
+
+[[area.polygons]]
+vertices = [
+    [1391, 3056],
+    [1391, 3073],
+]
+
+[[area.polygons]]
+vertices = [
+    [1392, 3057],
+    [1392, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [1393, 3062],
+    [1393, 3065],
+]
+
+[[area.polygons]]
+vertices = [
+    [1374, 9446],
+    [1388, 9446],
+    [1388, 9457],
+    [1374, 9457],
+]

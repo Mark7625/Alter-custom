@@ -1,0 +1,16 @@
+# City of the Dead music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: City of the Dead.
+# Bounds x 3264-3322, z 2748-2809; 3658 tiles as 1 rectangles.
+
+[[area]]
+name = "City of the Dead"
+area_id = "area.city_of_the_dead"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 2748],
+    [3322, 2748],
+    [3322, 2809],
+    [3264, 2809],
+]

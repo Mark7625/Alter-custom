@@ -1,0 +1,16 @@
+# Looking Back music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Looking Back.
+# Bounds x 1728-1791, z 4928-4991; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Looking Back"
+area_id = "area.looking_back"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1728, 4928],
+    [1791, 4928],
+    [1791, 4991],
+    [1728, 4991],
+]

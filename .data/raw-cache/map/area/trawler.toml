@@ -1,0 +1,16 @@
+# Trawler music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Trawler.
+# Bounds x 1856-1919, z 4800-4863; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Trawler"
+area_id = "area.trawler"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4800],
+    [1919, 4800],
+    [1919, 4863],
+    [1856, 4863],
+]

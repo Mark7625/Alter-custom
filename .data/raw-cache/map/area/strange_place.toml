@@ -1,0 +1,16 @@
+# Strange Place music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Strange Place.
+# Bounds x 1856-1919, z 4480-4543; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Strange Place"
+area_id = "area.strange_place"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4480],
+    [1919, 4480],
+    [1919, 4543],
+    [1856, 4543],
+]

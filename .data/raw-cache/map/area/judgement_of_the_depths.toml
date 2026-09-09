@@ -1,0 +1,16 @@
+# Judgement of the Depths music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Judgement of the Depths.
+# Bounds x 1600-1727, z 5888-5951; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Judgement of the Depths"
+area_id = "area.judgement_of_the_depths"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1600, 5888],
+    [1727, 5888],
+    [1727, 5951],
+    [1600, 5951],
+]

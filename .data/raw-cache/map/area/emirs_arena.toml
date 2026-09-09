@@ -1,0 +1,73 @@
+[[area]]
+name = "Emir's Arena"
+area_id = "area.emirs_arena"
+levels = [0, 1]
+
+# The whole complex north-east of Al Kharid: the welcome centre and ring of dueling landing on
+# the west side, the four walled combat areas with their spectator walkways, and the hospital,
+# chapel and bank along the north.
+[[area.polygons]]
+vertices = [
+    [3308, 3200],
+    [3392, 3200],
+    [3392, 3292],
+    [3308, 3292],
+]
+
+# Same footprint again under a second id for the music table: the music plugin registers its own
+# enter/exit handlers per music area, and the arena plugin already owns area.emirs_arena.
+[[area]]
+name = "Emir's Arena (music)"
+area_id = "area.emirs_arena_music"
+levels = [0, 1]
+
+[[area.polygons]]
+vertices = [
+    [3308, 3200],
+    [3392, 3200],
+    [3392, 3292],
+    [3308, 3292],
+]
+
+# Extension traced from the OSRS wiki music map (2066 tiles).
+
+[[area.polygons]]
+vertices = [
+    [3328, 3196],
+    [3330, 3196],
+    [3330, 3199],
+    [3328, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3326, 3197],
+    [3327, 3197],
+    [3327, 3199],
+    [3326, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3331, 3197],
+    [3331, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3332, 3198],
+    [3333, 3198],
+    [3333, 3199],
+    [3332, 3199],
+]
+
+[[area.polygons]]
+vertices = [[3334, 3199]]
+
+[[area.polygons]]
+vertices = [
+    [3393, 3200],
+    [3422, 3200],
+    [3422, 3267],
+    [3393, 3267],
+]

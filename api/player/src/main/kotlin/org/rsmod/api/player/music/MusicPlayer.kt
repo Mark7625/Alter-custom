@@ -3,7 +3,6 @@ package org.rsmod.api.player.music
 import dev.openrune.rscm.RSCM
 import dev.openrune.rscm.RSCM.asRSCM
 import dev.openrune.rscm.RSCMType
-import dev.openrune.types.aconverted.AreaType
 import jakarta.inject.Inject
 import org.rsmod.api.music.Music
 import org.rsmod.api.music.MusicRepository
@@ -24,7 +23,7 @@ import org.rsmod.game.entity.Player
 public class MusicPlayer
 @Inject
 internal constructor(private val random: GameRandom, private val repo: MusicRepository) {
-    private val Player.playMode by enumVarp<MusicPlayMode>("varp.musicplay")
+    private var Player.playMode by enumVarp<MusicPlayMode>("varp.musicplay")
     private val Player.areaMode by enumVarBit<MusicAreaMode>("varbit.music_area_mode")
 
     private var Player.lastMusicId by intVarBit("varbit.music_last_id")
@@ -36,6 +35,15 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
 
     private var Player.musicPlaylist by intVarp("varp.music_playlist")
     private var Player.unlockMessageDisabled by boolVarBit("varbit.music_unlock_text_toggle")
+
+    /** The `dbtable.music` row of the playing track. The music tab colours it as "playing". */
+    private var Player.currentTrackRow by intVarp("varp.music_current_track")
+
+    /** The playlist picked in the music tab dropdown: `0` for every track, otherwise `1..3`. */
+    private val Player.currentPlaylist by intVarBit("varbit.music_current_playlist")
+
+    private val Player.shuffleOnManualSelect by
+        boolVarBit("varbit.use_shuffle_mode_on_manual_music_selection")
 
     public fun unlockAndPlay(player: Player, musicRow: MusicRow) {
         val music = getUnlockableOrThrow(musicRow)
@@ -78,10 +86,69 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
             player.musicDuration = music.duration
         }
         player.currMusicId = music.id
+        player.currentTrackRow = music.rowId
 
         val fadeSpeed = if (currMusicId == 0) 0 else MUSIC_PLAY_FADE
         player.midiSong(music.midi.id, fadeOutSpeed = fadeSpeed, fadeInDelay = fadeSpeed)
         player.ifSetText("component.music:now_playing_text", music.displayName)
+    }
+
+    /**
+     * Plays [music] because the player picked it in the music tab. Returns `false` without playing
+     * anything when the track has not been unlocked.
+     *
+     * A manual pick switches the player to [MusicPlayMode.Manual] so the track loops, or to
+     * [MusicPlayMode.Random] when the "use shuffle mode on manual music selection" setting is on.
+     */
+    public fun playSelected(player: Player, music: Music): Boolean {
+        if (!hasUnlocked(player, music)) {
+            return false
+        }
+        player.playMode =
+            if (player.shuffleOnManualSelect) MusicPlayMode.Random else MusicPlayMode.Manual
+        play(player, music)
+        return true
+    }
+
+    /**
+     * Switches the player to [mode] the way the music tab's mode buttons do: area mode picks up
+     * the music of the area the player stands in, shuffle mode starts a random unlocked track and
+     * single mode keeps whatever is playing so it can loop.
+     */
+    public fun selectMode(player: Player, mode: MusicPlayMode) {
+        if (player.playMode == mode) {
+            return
+        }
+        player.playMode = mode
+        when (mode) {
+            MusicPlayMode.Area -> playNextArea(player)
+            MusicPlayMode.Random -> playNextRandom(player)
+            MusicPlayMode.Manual -> {}
+        }
+    }
+
+    /** Moves on to the next track in area or shuffle mode; the "Skip Track" tab button. */
+    public fun skipTrack(player: Player) {
+        when (player.playMode) {
+            MusicPlayMode.Area -> playNextArea(player)
+            MusicPlayMode.Random -> playNextRandom(player)
+            MusicPlayMode.Manual -> {}
+        }
+    }
+
+    /** Called when the playing track has run for its full duration. */
+    public fun trackEnded(player: Player) {
+        if (player.playMode != MusicPlayMode.Manual) {
+            stop(player)
+            return
+        }
+        val music = repo.forId(player.currMusicId)
+        if (music == null) {
+            stop(player)
+            return
+        }
+        player.currMusicId = 0 // Sends the midi song again so the client restarts it.
+        play(player, music)
     }
 
     public fun resume(player: Player) {
@@ -100,9 +167,20 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
         player.currMusicId = 0
         player.musicClocks = 0
         player.musicDuration = 0
+        player.currentTrackRow = NO_TRACK_ROW
         player.midiSong("midi.stop_music", fadeOutSpeed = MUSIC_END_FADE)
         if (player.playMode == MusicPlayMode.Manual) {
             setEmptyMusicText(player)
+        }
+    }
+
+    /** Re-sends the "Playing:" text, e.g. when the music tab is (re)opened. */
+    public fun updateNowPlayingText(player: Player) {
+        val music = repo.forId(player.currMusicId)
+        if (music == null) {
+            setEmptyMusicText(player)
+        } else {
+            player.ifSetText("component.music:now_playing_text", music.displayName)
         }
     }
 
@@ -126,11 +204,63 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
         return hasUnlocked(player, music)
     }
 
-    private fun hasUnlocked(player: Player, music: Music): Boolean {
+    public fun hasUnlocked(player: Player, music: Music): Boolean {
         val varp = music.unlockVarp ?: return false
         val unlockedValue = player.vars[varp] and music.unlockBitflag
         return unlockedValue != 0
     }
+
+    public fun isInPlaylist(player: Player, playlist: Int, music: Music): Boolean {
+        return playlistSlot(player, playlist, music) != null
+    }
+
+    /** The tracks stored in [playlist] (`1..3`), in slot order. */
+    public fun playlistTracks(player: Player, playlist: Int): List<Music> {
+        require(playlist in 1..PLAYLIST_COUNT) { "Playlist must be in range 1..$PLAYLIST_COUNT." }
+        val tracks = ArrayList<Music>()
+        for (slot in 1..PLAYLIST_SIZE) {
+            val value = player.vars[playlistSlotVarbit(playlist, slot)]
+            if (value == 0) {
+                continue
+            }
+            val music = repo.getAll().firstOrNull { it.canUnlock && it.playlistSlotValue == value }
+            if (music != null) {
+                tracks += music
+            }
+        }
+        return tracks
+    }
+
+    /** Adds [music] to [playlist]; returns `false` when the playlist has no free slot. */
+    public fun addToPlaylist(player: Player, playlist: Int, music: Music): Boolean {
+        require(music.canUnlock) { "Only unlockable tracks can be stored: '${music.displayName}'" }
+        if (isInPlaylist(player, playlist, music)) {
+            return true
+        }
+        val free = (1..PLAYLIST_SIZE).firstOrNull { player.vars[playlistSlotVarbit(playlist, it)] == 0 }
+        if (free == null) {
+            return false
+        }
+        VarPlayerIntMapSetter.set(player, playlistSlotVarbit(playlist, free), music.playlistSlotValue)
+        return true
+    }
+
+    public fun removeFromPlaylist(player: Player, playlist: Int, music: Music) {
+        val slot = playlistSlot(player, playlist, music) ?: return
+        VarPlayerIntMapSetter.set(player, playlistSlotVarbit(playlist, slot), 0)
+    }
+
+    private fun playlistSlot(player: Player, playlist: Int, music: Music): Int? {
+        require(playlist in 1..PLAYLIST_COUNT) { "Playlist must be in range 1..$PLAYLIST_COUNT." }
+        if (!music.canUnlock) {
+            return null
+        }
+        val value = music.playlistSlotValue
+        return (1..PLAYLIST_SIZE).firstOrNull { player.vars[playlistSlotVarbit(playlist, it)] == value }
+    }
+
+    private fun playlistSlotVarbit(playlist: Int, slot: Int): String =
+        "varbit.music_playlist_${playlist}_track_$slot"
 
     private fun setEmptyMusicText(player: Player) {
         player.ifSetText("component.music:now_playing_text", " ")
@@ -160,15 +290,20 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
         when (player.playMode) {
             MusicPlayMode.Area -> playNextArea(player)
             MusicPlayMode.Random -> playNextRandom(player)
-            MusicPlayMode.Manual -> {}
+            MusicPlayMode.Manual -> loopSelected(player)
         }
+    }
+
+    private fun loopSelected(player: Player) {
+        val music = repo.forId(player.lastMusicId) ?: return
+        play(player, music)
     }
 
     private fun playNextArea(player: Player) {
         if (player.currMusicArea == 0) {
             return
         }
-        val area = RSCM.getReverseMapping(RSCMType.AREA,player.currMusicArea - 1)
+        val area = RSCM.getReverseMapping(RSCMType.AREA, player.currMusicArea - 1)
         when (player.areaMode) {
             MusicAreaMode.Modern -> {
                 val modernMusic = repo.getModernArea(area)
@@ -193,10 +328,16 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
     }
 
     private fun playNextRandom(player: Player) {
-        val unlocked =
-            repo.getAll().filter { hasUnlocked(player, it) && it.id != player.currMusicId }
-        val random = random.pickOrNull(unlocked) ?: repo.getAll().first()
-        play(player, random)
+        val playlist = player.currentPlaylist
+        val candidates =
+            if (playlist in 1..PLAYLIST_COUNT) playlistTracks(player, playlist) else repo.getAll()
+        val unlocked = candidates.filter { hasUnlocked(player, it) && it.id != player.currMusicId }
+        val next =
+            random.pickOrNull(unlocked)
+                ?: repo.forId(player.currMusicId)
+                ?: repo.forId(player.lastMusicId)
+                ?: repo.getAll().first()
+        play(player, next)
     }
 
     public fun enterArea(player: Player, area: String) {
@@ -259,5 +400,14 @@ internal constructor(private val random: GameRandom, private val repo: MusicRepo
     public companion object {
         public const val MUSIC_PLAY_FADE: Int = 60
         public const val MUSIC_END_FADE: Int = 20
+
+        /** The number of custom playlists the music tab offers. */
+        public const val PLAYLIST_COUNT: Int = 3
+
+        /** The number of tracks a custom playlist can hold. */
+        public const val PLAYLIST_SIZE: Int = 100
+
+        /** `varp.music_current_track` value the music tab treats as "nothing playing". */
+        private const val NO_TRACK_ROW: Int = -1
     }
 }

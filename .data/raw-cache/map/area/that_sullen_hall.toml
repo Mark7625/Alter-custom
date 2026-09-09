@@ -1,0 +1,16 @@
+# That Sullen Hall music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: That Sullen Hall.
+# Bounds x 1280-1343, z 1216-1279; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "That Sullen Hall"
+area_id = "area.that_sullen_hall"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1280, 1216],
+    [1343, 1216],
+    [1343, 1279],
+    [1280, 1279],
+]

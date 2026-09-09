@@ -1,0 +1,142 @@
+# Thrall of the Serpent music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Thrall of the Serpent.
+# Bounds x 2176-2215, z 3040-3071; 1053 tiles as 20 rectangles.
+
+[[area]]
+name = "Thrall of the Serpent"
+area_id = "area.thrall_of_the_serpent"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2205, 3040],
+    [2215, 3040],
+    [2215, 3071],
+    [2205, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2204, 3041],
+    [2204, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2194, 3042],
+    [2197, 3042],
+    [2197, 3071],
+    [2194, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2193, 3043],
+    [2193, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2198, 3043],
+    [2200, 3043],
+    [2200, 3071],
+    [2198, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2203, 3043],
+    [2203, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2192, 3044],
+    [2192, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2201, 3044],
+    [2202, 3044],
+    [2202, 3071],
+    [2201, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2191, 3045],
+    [2191, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2190, 3046],
+    [2190, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2189, 3047],
+    [2189, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2188, 3049],
+    [2188, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2187, 3050],
+    [2187, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2184, 3051],
+    [2186, 3051],
+    [2186, 3071],
+    [2184, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [2179, 3052],
+    [2183, 3052],
+    [2183, 3068],
+    [2179, 3068],
+]
+
+[[area.polygons]]
+vertices = [
+    [2177, 3053],
+    [2178, 3053],
+    [2178, 3066],
+    [2177, 3066],
+]
+
+[[area.polygons]]
+vertices = [
+    [2176, 3054],
+    [2176, 3066],
+]
+
+[[area.polygons]]
+vertices = [
+    [2180, 3069],
+    [2183, 3069],
+]
+
+[[area.polygons]]
+vertices = [
+    [2181, 3070],
+    [2183, 3070],
+]
+
+[[area.polygons]]
+vertices = [
+    [2182, 3071],
+    [2183, 3071],
+]

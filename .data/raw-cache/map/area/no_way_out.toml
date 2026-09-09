@@ -1,0 +1,32 @@
+# No Way Out music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: No Way Out.
+# Bounds x 3008-3295, z 5184-9823; 3072 tiles as 3 rectangles.
+
+[[area]]
+name = "No Way Out"
+area_id = "area.no_way_out"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5184],
+    [3039, 5184],
+    [3039, 5215],
+    [3008, 5215],
+]
+
+[[area.polygons]]
+vertices = [
+    [3072, 5184],
+    [3103, 5184],
+    [3103, 5215],
+    [3072, 5215],
+]
+
+[[area.polygons]]
+vertices = [
+    [3264, 9792],
+    [3295, 9792],
+    [3295, 9823],
+    [3264, 9823],
+]

@@ -1,0 +1,78 @@
+# Arboretum music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Arboretum.
+# Bounds x 3615-3636, z 3354-3369; 242 tiles as 11 rectangles.
+
+[[area]]
+name = "Arboretum"
+area_id = "area.arboretum"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3625, 3354],
+    [3631, 3354],
+    [3631, 3369],
+    [3625, 3369],
+]
+
+[[area.polygons]]
+vertices = [
+    [3624, 3355],
+    [3624, 3368],
+]
+
+[[area.polygons]]
+vertices = [
+    [3632, 3355],
+    [3632, 3368],
+]
+
+[[area.polygons]]
+vertices = [
+    [3623, 3356],
+    [3623, 3367],
+]
+
+[[area.polygons]]
+vertices = [
+    [3633, 3356],
+    [3633, 3367],
+]
+
+[[area.polygons]]
+vertices = [
+    [3622, 3357],
+    [3622, 3366],
+]
+
+[[area.polygons]]
+vertices = [
+    [3634, 3357],
+    [3634, 3366],
+]
+
+[[area.polygons]]
+vertices = [
+    [3621, 3358],
+    [3621, 3365],
+]
+
+[[area.polygons]]
+vertices = [
+    [3635, 3358],
+    [3635, 3365],
+]
+
+[[area.polygons]]
+vertices = [
+    [3615, 3359],
+    [3620, 3359],
+    [3620, 3364],
+    [3615, 3364],
+]
+
+[[area.polygons]]
+vertices = [
+    [3636, 3359],
+    [3636, 3364],
+]

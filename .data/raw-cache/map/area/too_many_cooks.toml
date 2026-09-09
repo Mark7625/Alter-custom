@@ -1,0 +1,16 @@
+# Too Many Cooks... music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Too Many Cooks....
+# Bounds x 2944-3007, z 9856-9919; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Too Many Cooks..."
+area_id = "area.too_many_cooks"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 9856],
+    [3007, 9856],
+    [3007, 9919],
+    [2944, 9919],
+]

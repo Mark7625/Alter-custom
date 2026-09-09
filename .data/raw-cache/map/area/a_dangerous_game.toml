@@ -1,0 +1,16 @@
+# A Dangerous Game music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: A Dangerous Game.
+# Bounds x 3328-3455, z 10048-10175; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "A Dangerous Game"
+area_id = "area.a_dangerous_game"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3328, 10048],
+    [3455, 10048],
+    [3455, 10175],
+    [3328, 10175],
+]

@@ -1,0 +1,172 @@
+# Title Fight music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Title Fight.
+# Bounds x 3136-3199, z 9728-9791; 3862 tiles as 24 rectangles.
+
+[[area]]
+name = "Title Fight"
+area_id = "area.title_fight"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9728],
+    [3199, 9728],
+    [3199, 9751],
+    [3136, 9751],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9752],
+    [3165, 9752],
+]
+
+[[area.polygons]]
+vertices = [
+    [3171, 9752],
+    [3199, 9752],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9753],
+    [3161, 9753],
+]
+
+[[area.polygons]]
+vertices = [
+    [3174, 9753],
+    [3177, 9753],
+]
+
+[[area.polygons]]
+vertices = [
+    [3180, 9753],
+    [3199, 9753],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9754],
+    [3160, 9754],
+]
+
+[[area.polygons]]
+vertices = [
+    [3175, 9754],
+    [3176, 9754],
+]
+
+[[area.polygons]]
+vertices = [
+    [3181, 9754],
+    [3199, 9754],
+    [3199, 9757],
+    [3181, 9757],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9755],
+    [3158, 9755],
+]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9756],
+    [3157, 9756],
+    [3157, 9791],
+    [3136, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3182, 9758],
+    [3199, 9758],
+    [3199, 9791],
+    [3182, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3181, 9759],
+    [3181, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3158, 9761],
+    [3158, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3159, 9762],
+    [3160, 9762],
+    [3160, 9791],
+    [3159, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3175, 9762],
+    [3176, 9762],
+    [3176, 9791],
+    [3175, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3161, 9763],
+    [3161, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3174, 9763],
+    [3174, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3177, 9763],
+    [3177, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3180, 9763],
+    [3180, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3162, 9764],
+    [3165, 9764],
+    [3165, 9791],
+    [3162, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3171, 9764],
+    [3173, 9764],
+    [3173, 9791],
+    [3171, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3178, 9764],
+    [3179, 9764],
+    [3179, 9791],
+    [3178, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3166, 9765],
+    [3170, 9765],
+    [3170, 9791],
+    [3166, 9791],
+]

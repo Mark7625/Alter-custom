@@ -1,0 +1,279 @@
+# Lost Soul music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lost Soul.
+# Bounds x 2144-2303, z 3067-3115; 5814 tiles as 45 rectangles.
+
+[[area]]
+name = "Lost Soul"
+area_id = "area.lost_soul"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2164, 3067],
+    [2178, 3067],
+    [2178, 3109],
+    [2164, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2148, 3068],
+    [2150, 3068],
+    [2150, 3072],
+    [2148, 3072],
+]
+
+[[area.polygons]]
+vertices = [
+    [2163, 3068],
+    [2163, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2151, 3069],
+    [2151, 3073],
+]
+
+[[area.polygons]]
+vertices = [
+    [2161, 3069],
+    [2162, 3069],
+    [2162, 3109],
+    [2161, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2179, 3069],
+    [2179, 3109],
+]
+
+[[area.polygons]]
+vertices = [[2147, 3070]]
+
+[[area.polygons]]
+vertices = [
+    [2152, 3070],
+    [2152, 3073],
+]
+
+[[area.polygons]]
+vertices = [
+    [2180, 3070],
+    [2180, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2153, 3071],
+    [2153, 3073],
+]
+
+[[area.polygons]]
+vertices = [
+    [2160, 3071],
+    [2160, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2181, 3071],
+    [2181, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2154, 3072],
+    [2159, 3072],
+]
+
+[[area.polygons]]
+vertices = [
+    [2182, 3072],
+    [2255, 3072],
+    [2255, 3109],
+    [2182, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2280, 3072],
+    [2303, 3072],
+    [2303, 3109],
+    [2280, 3109],
+]
+
+[[area.polygons]]
+vertices = [[2150, 3073]]
+
+[[area.polygons]]
+vertices = [[2154, 3073]]
+
+[[area.polygons]]
+vertices = [
+    [2159, 3074],
+    [2159, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2158, 3075],
+    [2158, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2156, 3077],
+    [2157, 3077],
+    [2157, 3109],
+    [2156, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2155, 3078],
+    [2155, 3111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2154, 3079],
+    [2154, 3091],
+]
+
+[[area.polygons]]
+vertices = [
+    [2153, 3080],
+    [2153, 3088],
+]
+
+[[area.polygons]]
+vertices = [
+    [2256, 3080],
+    [2279, 3080],
+    [2279, 3109],
+    [2256, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2152, 3081],
+    [2152, 3087],
+]
+
+[[area.polygons]]
+vertices = [
+    [2151, 3082],
+    [2151, 3086],
+]
+
+[[area.polygons]]
+vertices = [
+    [2150, 3083],
+    [2150, 3086],
+]
+
+[[area.polygons]]
+vertices = [[2149, 3084]]
+
+[[area.polygons]]
+vertices = [
+    [2144, 3090],
+    [2153, 3090],
+    [2153, 3091],
+    [2144, 3091],
+]
+
+[[area.polygons]]
+vertices = [
+    [2154, 3095],
+    [2154, 3112],
+]
+
+[[area.polygons]]
+vertices = [
+    [2153, 3096],
+    [2153, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2151, 3097],
+    [2152, 3097],
+    [2152, 3114],
+    [2151, 3114],
+]
+
+[[area.polygons]]
+vertices = [
+    [2149, 3098],
+    [2150, 3098],
+    [2150, 3115],
+    [2149, 3115],
+]
+
+[[area.polygons]]
+vertices = [
+    [2147, 3099],
+    [2148, 3099],
+    [2148, 3102],
+    [2147, 3102],
+]
+
+[[area.polygons]]
+vertices = [
+    [2146, 3100],
+    [2146, 3101],
+]
+
+[[area.polygons]]
+vertices = [[2148, 3103]]
+
+[[area.polygons]]
+vertices = [
+    [2148, 3109],
+    [2148, 3115],
+]
+
+[[area.polygons]]
+vertices = [
+    [2147, 3110],
+    [2147, 3115],
+]
+
+[[area.polygons]]
+vertices = [[2156, 3110]]
+
+[[area.polygons]]
+vertices = [
+    [2291, 3110],
+    [2303, 3110],
+]
+
+[[area.polygons]]
+vertices = [
+    [2293, 3111],
+    [2303, 3111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2146, 3112],
+    [2146, 3113],
+]
+
+[[area.polygons]]
+vertices = [
+    [2295, 3112],
+    [2303, 3112],
+]
+
+[[area.polygons]]
+vertices = [
+    [2297, 3113],
+    [2303, 3113],
+]
+
+[[area.polygons]]
+vertices = [[2151, 3115]]

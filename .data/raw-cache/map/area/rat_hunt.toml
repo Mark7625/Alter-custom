@@ -1,0 +1,16 @@
+# Rat Hunt music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Rat Hunt.
+# Bounds x 2816-2879, z 5056-5119; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Rat Hunt"
+area_id = "area.rat_hunt"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 5056],
+    [2879, 5056],
+    [2879, 5119],
+    [2816, 5119],
+]

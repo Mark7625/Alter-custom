@@ -1,0 +1,16 @@
+# The Forsaken music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Forsaken.
+# Bounds x 1536-1599, z 5056-5119; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Forsaken"
+area_id = "area.the_forsaken"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1536, 5056],
+    [1599, 5056],
+    [1599, 5119],
+    [1536, 5119],
+]

@@ -1,0 +1,16 @@
+# Iban music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Iban.
+# Bounds x 2112-2175, z 4544-4735; 12288 tiles as 1 rectangles.
+
+[[area]]
+name = "Iban"
+area_id = "area.iban"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2112, 4544],
+    [2175, 4544],
+    [2175, 4735],
+    [2112, 4735],
+]

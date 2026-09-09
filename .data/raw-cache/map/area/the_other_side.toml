@@ -1,0 +1,215 @@
+# The Other Side music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Other Side.
+# Bounds x 3648-3719, z 3454-3554; 6175 tiles as 32 rectangles.
+
+[[area]]
+name = "The Other Side"
+area_id = "area.the_other_side"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3665, 3454],
+    [3673, 3454],
+    [3673, 3554],
+    [3665, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3694, 3454],
+    [3700, 3454],
+    [3700, 3523],
+    [3694, 3523],
+]
+
+[[area.polygons]]
+vertices = [
+    [3661, 3455],
+    [3664, 3455],
+    [3664, 3554],
+    [3661, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3674, 3455],
+    [3674, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3693, 3455],
+    [3693, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3455],
+    [3719, 3455],
+    [3719, 3504],
+    [3701, 3504],
+]
+
+[[area.polygons]]
+vertices = [
+    [3660, 3456],
+    [3660, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3675, 3456],
+    [3692, 3456],
+    [3692, 3554],
+    [3675, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3651, 3457],
+    [3659, 3457],
+    [3659, 3472],
+    [3651, 3472],
+]
+
+[[area.polygons]]
+vertices = [
+    [3650, 3458],
+    [3650, 3471],
+]
+
+[[area.polygons]]
+vertices = [
+    [3652, 3473],
+    [3659, 3473],
+]
+
+[[area.polygons]]
+vertices = [
+    [3653, 3474],
+    [3659, 3474],
+    [3659, 3554],
+    [3653, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3648, 3504],
+    [3652, 3504],
+    [3652, 3554],
+    [3648, 3554],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3505],
+    [3718, 3505],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3506],
+    [3717, 3506],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3507],
+    [3716, 3507],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3508],
+    [3715, 3508],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3509],
+    [3714, 3509],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3510],
+    [3713, 3510],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3511],
+    [3712, 3511],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3512],
+    [3711, 3512],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3513],
+    [3710, 3513],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3514],
+    [3709, 3514],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3515],
+    [3708, 3515],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3516],
+    [3707, 3516],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3517],
+    [3706, 3517],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3518],
+    [3705, 3518],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3519],
+    [3704, 3519],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3520],
+    [3703, 3520],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3521],
+    [3702, 3521],
+]
+
+[[area.polygons]]
+vertices = [[3701, 3522]]
+
+[[area.polygons]]
+vertices = [
+    [3694, 3524],
+    [3699, 3524],
+    [3699, 3554],
+    [3694, 3554],
+]

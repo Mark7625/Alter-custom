@@ -1,0 +1,24 @@
+# The Yanille Agility Dungeon map square (chaos druids, Salarin the Twisted, the poison spider
+# pit and the lower chamber). Music area for "Cavern".
+[[area]]
+name = "Yanille Agility Dungeon"
+area_id = "area.yanille_agility_dungeon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9472],
+    [2623, 9472],
+    [2623, 9535],
+    [2560, 9535],
+]
+
+# Extension traced from the OSRS wiki music map (4096 tiles).
+
+[[area.polygons]]
+vertices = [
+    [2560, 9536],
+    [2623, 9536],
+    [2623, 9599],
+    [2560, 9599],
+]

@@ -1,0 +1,16 @@
+# The Lost Tribe music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Lost Tribe.
+# Bounds x 3220-3263, z 9600-9663; 2816 tiles as 1 rectangles.
+
+[[area]]
+name = "The Lost Tribe"
+area_id = "area.the_lost_tribe"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3220, 9600],
+    [3263, 9600],
+    [3263, 9663],
+    [3220, 9663],
+]

@@ -41,7 +41,6 @@ import org.rsmod.api.player.interact.NpcTInteractions
 import org.rsmod.api.player.interact.PlayerInteractions
 import org.rsmod.api.player.interact.PlayerTInteractions
 import org.rsmod.api.player.ironman.shouldBlockNpcCombatXp
-import org.rsmod.api.player.output.soundSynth
 import org.rsmod.api.player.protect.clearPendingAction
 import org.rsmod.api.player.stat.hitpoints
 import org.rsmod.api.player.stat.statAdvance
@@ -58,6 +57,9 @@ import org.rsmod.game.proj.ProjAnim
 import org.rsmod.game.type.getInvObj
 import org.rsmod.game.type.getOrNull
 import org.rsmod.map.CoordGrid
+
+/** Radius, in tiles, that weapon and spell attack sounds are heard within. */
+private const val ATTACK_SOUND_RADIUS: Int = 10
 
 public class PlayerAttackManager
 @Inject
@@ -206,7 +208,7 @@ constructor(
             weapon?.paramOrNull(soundParam) ?: SynthType(defaultSound.asRSCM(RSCMType.SYNTH))
 
         player.anim(RSCM.getReverseMapping(RSCMType.SEQ, attackAnim.id), priority = 6)
-        player.soundSynth(attackSound)
+        playAttackSound(player, attackSound)
     }
 
     /**
@@ -224,8 +226,16 @@ constructor(
         val attackAnim = weapon.paramOrNull(params.attack_anim_stance1) ?: return false
         player.anim(RSCM.getReverseMapping(RSCMType.SEQ, attackAnim.id), priority = 6)
         val attackSound = weapon.paramOrNull(params.attack_sound_stance1)
-        attackSound?.let(player::soundSynth)
+        attackSound?.let { playAttackSound(player, it) }
         return true
+    }
+
+    /**
+     * Plays a weapon attack sound as an area sound around [player], so that nearby players hear
+     * the attack as well as the attacker - the official behaviour for combat sounds.
+     */
+    private fun playAttackSound(player: Player, synth: SynthType) {
+        worldRepo.soundArea(player, synth.id, radius = ATTACK_SOUND_RADIUS)
     }
 
     /**
@@ -1553,7 +1563,7 @@ constructor(
                 modifier = npcHitModifier,
                 sourceSecondary = spell,
             )
-        target.combatPlayDefendAnim(clientDelay)
+        // Targets never play their defend animation for a spell, only for melee and ranged.
         return hit
     }
 
@@ -1581,7 +1591,7 @@ constructor(
                 sourceSecondary = spell,
             )
         notifyPlayerHit(source, target)
-        target.combatPlayDefendAnim(clientDelay)
+        // Targets never play their defend animation for a spell, only for melee and ranged.
         return hit
     }
 
@@ -1671,7 +1681,14 @@ constructor(
         hitSound: String?,
     ) {
         if (castSound != null) {
-            source.soundSynth(castSound)
+            soundArea(
+                source = source.coords,
+                synth = castSound,
+                delay = 0,
+                loops = 1,
+                radius = ATTACK_SOUND_RADIUS,
+                size = 0,
+            )
         }
 
         if (hitSpot != null) {
@@ -1732,8 +1749,8 @@ constructor(
      *
      * @param clientDelay The delay in client cycles (`20ms` per cycle) before the splash spotanim
      *   and sound are played on [target]. Typically derived from the projectile's metadata.
-     * @param castSound The sound to play immediately. Plays as a `soundarea` if [target] is a
-     *   [Player], or a `soundsynth` if [target] is an [Npc]. If `null`, no cast sound is played.
+     * @param castSound The sound to play immediately as a `soundarea` around [source]. If `null`,
+     *   no cast sound is played.
      * @param soundRadius The radius to use for [castSound] when played as a `soundarea`.
      */
     public fun playMagicSplashFx(
@@ -1768,7 +1785,14 @@ constructor(
         castSound: String?,
     ) {
         if (castSound != null) {
-            source.soundSynth(castSound)
+            soundArea(
+                source = source.coords,
+                synth = castSound,
+                delay = 0,
+                loops = 1,
+                radius = ATTACK_SOUND_RADIUS,
+                size = 0,
+            )
         }
         target.spotanim("spotanim.failedspell_impact", delay = clientDelay, height = 124)
         soundArea(

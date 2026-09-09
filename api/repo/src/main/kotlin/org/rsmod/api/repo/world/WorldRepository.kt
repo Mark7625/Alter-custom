@@ -3,9 +3,7 @@ package org.rsmod.api.repo.world
 import dev.openrune.rscm.RSCM.asRSCM
 import dev.openrune.rscm.RSCMType
 import dev.openrune.types.ProjAnimType
-import dev.openrune.types.SequenceServerType
 import dev.openrune.types.aconverted.SpotanimType
-import dev.openrune.types.aconverted.SynthType
 import jakarta.inject.Inject
 import org.rsmod.api.registry.zone.ZoneUpdateMap
 import org.rsmod.game.entity.Npc
@@ -39,6 +37,27 @@ public class WorldRepository @Inject constructor(private val zoneUpdates: ZoneUp
     public fun soundArea(
         source: PathingEntity,
         synth: String,
+        delay: Int = 0,
+        loops: Int = 1,
+        radius: Int = 5,
+    ) {
+        soundArea(source.coords, synth, delay, loops, radius, source.size)
+    }
+
+    public fun soundArea(
+        source: CoordGrid,
+        synth: Int,
+        delay: Int = 0,
+        loops: Int = 1,
+        radius: Int = 5,
+        size: Int = 0,
+    ) {
+        zoneUpdates.soundArea(source, synth, delay, loops, radius, size)
+    }
+
+    public fun soundArea(
+        source: PathingEntity,
+        synth: Int,
         delay: Int = 0,
         loops: Int = 1,
         radius: Int = 5,

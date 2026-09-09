@@ -1,0 +1,16 @@
+# Major Miner music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Major Miner.
+# Bounds x 2368-2431, z 10176-10239; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Major Miner"
+area_id = "area.major_miner"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 10176],
+    [2431, 10176],
+    [2431, 10239],
+    [2368, 10239],
+]

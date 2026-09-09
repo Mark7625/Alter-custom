@@ -1,0 +1,16 @@
+# Dimension X music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dimension X.
+# Bounds x 3008-3071, z 5312-5375; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Dimension X"
+area_id = "area.dimension_x"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5312],
+    [3071, 5312],
+    [3071, 5375],
+    [3008, 5375],
+]

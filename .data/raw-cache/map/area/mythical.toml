@@ -1,0 +1,261 @@
+# Mythical music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Mythical.
+# Bounds x 2439-2472, z 2817-2865; 928 tiles as 41 rectangles.
+
+[[area]]
+name = "Mythical"
+area_id = "area.mythical"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2444, 2817],
+    [2448, 2817],
+    [2448, 2829],
+    [2444, 2829],
+]
+
+[[area.polygons]]
+vertices = [
+    [2443, 2818],
+    [2443, 2829],
+]
+
+[[area.polygons]]
+vertices = [
+    [2449, 2818],
+    [2449, 2863],
+]
+
+[[area.polygons]]
+vertices = [
+    [2450, 2819],
+    [2450, 2863],
+]
+
+[[area.polygons]]
+vertices = [
+    [2451, 2820],
+    [2451, 2822],
+]
+
+[[area.polygons]]
+vertices = [
+    [2442, 2821],
+    [2442, 2828],
+]
+
+[[area.polygons]]
+vertices = [[2452, 2821]]
+
+[[area.polygons]]
+vertices = [
+    [2441, 2823],
+    [2441, 2827],
+]
+
+[[area.polygons]]
+vertices = [
+    [2451, 2826],
+    [2451, 2862],
+]
+
+[[area.polygons]]
+vertices = [
+    [2452, 2829],
+    [2452, 2861],
+]
+
+[[area.polygons]]
+vertices = [
+    [2446, 2830],
+    [2448, 2830],
+]
+
+[[area.polygons]]
+vertices = [
+    [2453, 2830],
+    [2453, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [2447, 2831],
+    [2448, 2831],
+    [2448, 2834],
+    [2447, 2834],
+]
+
+[[area.polygons]]
+vertices = [
+    [2454, 2831],
+    [2457, 2831],
+    [2457, 2859],
+    [2454, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [2458, 2832],
+    [2461, 2832],
+    [2461, 2859],
+    [2458, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [2462, 2833],
+    [2462, 2859],
+]
+
+[[area.polygons]]
+vertices = [
+    [2463, 2834],
+    [2463, 2858],
+]
+
+[[area.polygons]]
+vertices = [
+    [2448, 2835],
+    [2448, 2863],
+]
+
+[[area.polygons]]
+vertices = [
+    [2464, 2836],
+    [2464, 2857],
+]
+
+[[area.polygons]]
+vertices = [
+    [2447, 2837],
+    [2447, 2864],
+]
+
+[[area.polygons]]
+vertices = [
+    [2445, 2838],
+    [2446, 2838],
+    [2446, 2865],
+    [2445, 2865],
+]
+
+[[area.polygons]]
+vertices = [
+    [2465, 2838],
+    [2467, 2838],
+    [2467, 2853],
+    [2465, 2853],
+]
+
+[[area.polygons]]
+vertices = [
+    [2442, 2839],
+    [2444, 2839],
+    [2444, 2849],
+    [2442, 2849],
+]
+
+[[area.polygons]]
+vertices = [
+    [2468, 2839],
+    [2468, 2852],
+]
+
+[[area.polygons]]
+vertices = [
+    [2440, 2840],
+    [2441, 2840],
+    [2441, 2846],
+    [2440, 2846],
+]
+
+[[area.polygons]]
+vertices = [
+    [2469, 2840],
+    [2470, 2840],
+    [2470, 2850],
+    [2469, 2850],
+]
+
+[[area.polygons]]
+vertices = [
+    [2471, 2841],
+    [2471, 2849],
+]
+
+[[area.polygons]]
+vertices = [[2439, 2842]]
+
+[[area.polygons]]
+vertices = [
+    [2472, 2842],
+    [2472, 2845],
+]
+
+[[area.polygons]]
+vertices = [
+    [2441, 2847],
+    [2441, 2848],
+]
+
+[[area.polygons]]
+vertices = [
+    [2443, 2850],
+    [2444, 2850],
+    [2444, 2864],
+    [2443, 2864],
+]
+
+[[area.polygons]]
+vertices = [
+    [2442, 2851],
+    [2442, 2853],
+]
+
+[[area.polygons]]
+vertices = [[2469, 2851]]
+
+[[area.polygons]]
+vertices = [
+    [2465, 2854],
+    [2466, 2854],
+]
+
+[[area.polygons]]
+vertices = [
+    [2442, 2855],
+    [2442, 2864],
+]
+
+[[area.polygons]]
+vertices = [
+    [2465, 2855],
+    [2465, 2856],
+]
+
+[[area.polygons]]
+vertices = [
+    [2441, 2856],
+    [2441, 2862],
+]
+
+[[area.polygons]]
+vertices = [
+    [2440, 2857],
+    [2440, 2861],
+]
+
+[[area.polygons]]
+vertices = [
+    [2455, 2860],
+    [2458, 2860],
+    [2458, 2861],
+    [2455, 2861],
+]
+
+[[area.polygons]]
+vertices = [[2459, 2861]]
+
+[[area.polygons]]
+vertices = [[2444, 2865]]

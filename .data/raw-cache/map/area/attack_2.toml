@@ -1,0 +1,16 @@
+# Attack 2 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Attack 2.
+# Bounds x 2846-2879, z 9620-9663; 1496 tiles as 1 rectangles.
+
+[[area]]
+name = "Attack 2"
+area_id = "area.attack_2"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2846, 9620],
+    [2879, 9620],
+    [2879, 9663],
+    [2846, 9663],
+]

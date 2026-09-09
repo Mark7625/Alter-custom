@@ -1,0 +1,16 @@
+# Dangerous Logic music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dangerous Logic.
+# Bounds x 4115-4149, z 4932-4985; 1890 tiles as 1 rectangles.
+
+[[area]]
+name = "Dangerous Logic"
+area_id = "area.dangerous_logic"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [4115, 4932],
+    [4149, 4932],
+    [4149, 4985],
+    [4115, 4985],
+]

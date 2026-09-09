@@ -1,0 +1,16 @@
+# The Bane of Ashihama music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Bane of Ashihama.
+# Bounds x 3840-3903, z 9920-9983; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Bane of Ashihama"
+area_id = "area.the_bane_of_ashihama"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3840, 9920],
+    [3903, 9920],
+    [3903, 9983],
+    [3840, 9983],
+]

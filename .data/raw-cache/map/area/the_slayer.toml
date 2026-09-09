@@ -1,0 +1,16 @@
+# The Slayer music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Slayer.
+# Bounds x 2752-2815, z 9984-10047; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Slayer"
+area_id = "area.the_slayer"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 9984],
+    [2815, 9984],
+    [2815, 10047],
+    [2752, 10047],
+]

@@ -34,6 +34,7 @@ include(
     "or-cache",
     "tools:osrs-mcp",
     "tools:wiki-dumping",
+    "tools:combat-anims",
 )
 
 includeProjects(project(":api"))

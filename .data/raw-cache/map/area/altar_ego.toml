@@ -1,0 +1,16 @@
+# Altar Ego music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Altar Ego.
+# Bounds x 3008-3071, z 5568-5631; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Altar Ego"
+area_id = "area.altar_ego"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5568],
+    [3071, 5568],
+    [3071, 5631],
+    [3008, 5631],
+]

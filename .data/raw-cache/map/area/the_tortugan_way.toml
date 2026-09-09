@@ -1,0 +1,16 @@
+# The Tortugan Way music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Elder Wisdom; The Tortugan Way.
+# Bounds x 3264-3327, z 8832-8895; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Tortugan Way"
+area_id = "area.the_tortugan_way"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 8832],
+    [3327, 8832],
+    [3327, 8895],
+    [3264, 8895],
+]

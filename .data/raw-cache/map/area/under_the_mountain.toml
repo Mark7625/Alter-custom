@@ -1,0 +1,122 @@
+# Under the Mountain music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Under the Mountain.
+# Bounds x 1392-1535, z 9496-9600; 13216 tiles as 18 rectangles.
+
+[[area]]
+name = "Under the Mountain"
+area_id = "area.under_the_mountain"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1392, 9496],
+    [1535, 9496],
+    [1535, 9559],
+    [1392, 9559],
+]
+
+[[area.polygons]]
+vertices = [
+    [1392, 9560],
+    [1495, 9560],
+    [1495, 9576],
+    [1392, 9576],
+]
+
+[[area.polygons]]
+vertices = [
+    [1393, 9577],
+    [1495, 9577],
+]
+
+[[area.polygons]]
+vertices = [
+    [1394, 9578],
+    [1495, 9578],
+]
+
+[[area.polygons]]
+vertices = [
+    [1395, 9579],
+    [1495, 9579],
+]
+
+[[area.polygons]]
+vertices = [
+    [1396, 9580],
+    [1495, 9580],
+]
+
+[[area.polygons]]
+vertices = [
+    [1397, 9581],
+    [1495, 9581],
+]
+
+[[area.polygons]]
+vertices = [
+    [1398, 9582],
+    [1495, 9582],
+]
+
+[[area.polygons]]
+vertices = [
+    [1399, 9583],
+    [1495, 9583],
+]
+
+[[area.polygons]]
+vertices = [
+    [1400, 9584],
+    [1495, 9584],
+]
+
+[[area.polygons]]
+vertices = [
+    [1401, 9585],
+    [1495, 9585],
+]
+
+[[area.polygons]]
+vertices = [
+    [1402, 9586],
+    [1495, 9586],
+]
+
+[[area.polygons]]
+vertices = [
+    [1403, 9587],
+    [1495, 9587],
+]
+
+[[area.polygons]]
+vertices = [
+    [1404, 9588],
+    [1495, 9588],
+]
+
+[[area.polygons]]
+vertices = [
+    [1405, 9589],
+    [1495, 9589],
+]
+
+[[area.polygons]]
+vertices = [
+    [1406, 9590],
+    [1495, 9590],
+]
+
+[[area.polygons]]
+vertices = [
+    [1407, 9591],
+    [1495, 9591],
+]
+
+[[area.polygons]]
+vertices = [
+    [1408, 9592],
+    [1495, 9592],
+    [1495, 9600],
+    [1408, 9600],
+]

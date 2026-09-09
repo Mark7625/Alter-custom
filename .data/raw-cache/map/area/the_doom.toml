@@ -1,0 +1,24 @@
+# The Doom music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Doom.
+# Bounds x 1280-3583, z 6400-9599; 14912 tiles as 2 rectangles.
+
+[[area]]
+name = "The Doom"
+area_id = "area.the_doom"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3392, 6400],
+    [3583, 6400],
+    [3583, 6463],
+    [3392, 6463],
+]
+
+[[area.polygons]]
+vertices = [
+    [1280, 9559],
+    [1343, 9559],
+    [1343, 9599],
+    [1280, 9599],
+]

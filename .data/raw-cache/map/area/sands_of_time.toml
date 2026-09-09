@@ -1,0 +1,16 @@
+# Sands of Time music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sands of Time.
+# Bounds x 3648-3711, z 5376-5439; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Sands of Time"
+area_id = "area.sands_of_time"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 5376],
+    [3711, 5376],
+    [3711, 5439],
+    [3648, 5439],
+]

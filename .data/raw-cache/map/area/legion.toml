@@ -1,0 +1,24 @@
+# Legion music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Legion.
+# Bounds x 2496-2623, z 5248-9983; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Legion"
+area_id = "area.legion"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 5248],
+    [2623, 5248],
+    [2623, 5311],
+    [2560, 5311],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9920],
+    [2559, 9920],
+    [2559, 9983],
+    [2496, 9983],
+]

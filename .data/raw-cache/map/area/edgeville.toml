@@ -1,0 +1,103 @@
+[[area]]
+name = "Edgeville"
+area_id = "area.edgeville"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3070, 3465],
+    [3130, 3465],
+    [3130, 3523],
+    [3070, 3523],
+]
+
+# Extension traced from the OSRS wiki music map (895 tiles).
+
+[[area.polygons]]
+vertices = [
+    [3066, 3456],
+    [3102, 3456],
+    [3102, 3464],
+    [3066, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3108, 3462],
+    [3119, 3462],
+    [3119, 3464],
+    [3108, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3107, 3463],
+    [3107, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3120, 3463],
+    [3120, 3464],
+]
+
+[[area.polygons]]
+vertices = [
+    [3103, 3464],
+    [3106, 3464],
+]
+
+[[area.polygons]]
+vertices = [[3121, 3464]]
+
+[[area.polygons]]
+vertices = [
+    [3066, 3465],
+    [3069, 3465],
+    [3069, 3522],
+    [3066, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3131, 3465],
+    [3131, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3132, 3466],
+    [3132, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3133, 3467],
+    [3133, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3134, 3468],
+    [3134, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3135, 3516],
+    [3141, 3516],
+    [3141, 3522],
+    [3135, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3142, 3517],
+    [3142, 3522],
+]
+
+[[area.polygons]]
+vertices = [
+    [3065, 3519],
+    [3065, 3522],
+]

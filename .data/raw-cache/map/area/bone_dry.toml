@@ -1,0 +1,16 @@
+# Bone Dry music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Bone Dry.
+# Bounds x 3136-3327, z 9344-9407; 12288 tiles as 1 rectangles.
+
+[[area]]
+name = "Bone Dry"
+area_id = "area.bone_dry"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 9344],
+    [3327, 9344],
+    [3327, 9407],
+    [3136, 9407],
+]

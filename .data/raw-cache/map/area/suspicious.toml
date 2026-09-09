@@ -1,0 +1,16 @@
+# Suspicious music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Suspicious.
+# Bounds x 2560-2687, z 4544-4607; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Suspicious"
+area_id = "area.suspicious"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 4544],
+    [2687, 4544],
+    [2687, 4607],
+    [2560, 4607],
+]

@@ -4,6 +4,8 @@ import dev.openrune.types.ItemServerType
 import jakarta.inject.Inject
 import org.rsmod.api.area.checker.AreaChecker
 import org.rsmod.api.area.checker.isInWilderness
+import org.rsmod.api.player.hook.PlayerRestrictions
+import org.rsmod.api.player.hook.RestrictedAction
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.script.onOpHeld1
 import org.rsmod.api.script.onOpHeld2
@@ -21,6 +23,7 @@ class ConsumePotionScript
 @Inject
 constructor(
     private val areaChecker: AreaChecker,
+    private val restrictions: PlayerRestrictions,
     private val effects: PotionEffectService,
     private val activityAccess: ConsumableActivityAccess,
 ) : PluginScript() {
@@ -165,6 +168,13 @@ constructor(
                 type = ConsumableType.POTION,
             )
         ) {
+            return
+        }
+
+        val restriction =
+            restrictions.check(player, RestrictedAction.Drink)
+        if (restriction != null) {
+            mes(restriction)
             return
         }
 

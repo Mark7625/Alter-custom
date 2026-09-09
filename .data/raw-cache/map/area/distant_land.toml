@@ -1,0 +1,392 @@
+# Distant Land music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Distant Land.
+# Bounds x 2048-3584, z 3160-5055; 14941 tiles as 62 rectangles.
+
+[[area]]
+name = "Distant Land"
+area_id = "area.distant_land"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3495, 3160],
+    [3584, 3160],
+    [3584, 3243],
+    [3495, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3494, 3161],
+    [3494, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3493, 3162],
+    [3493, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3492, 3163],
+    [3492, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3491, 3164],
+    [3491, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3490, 3165],
+    [3490, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3489, 3166],
+    [3489, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3488, 3167],
+    [3488, 3241],
+]
+
+[[area.polygons]]
+vertices = [
+    [3487, 3168],
+    [3487, 3242],
+]
+
+[[area.polygons]]
+vertices = [
+    [3486, 3169],
+    [3486, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3485, 3170],
+    [3485, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3484, 3171],
+    [3484, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3483, 3172],
+    [3483, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3482, 3173],
+    [3482, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3481, 3174],
+    [3481, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3480, 3175],
+    [3480, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3479, 3176],
+    [3479, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [3478, 3177],
+    [3478, 3242],
+]
+
+[[area.polygons]]
+vertices = [
+    [3477, 3178],
+    [3477, 3242],
+]
+
+[[area.polygons]]
+vertices = [
+    [3476, 3179],
+    [3476, 3240],
+]
+
+[[area.polygons]]
+vertices = [
+    [3475, 3180],
+    [3475, 3238],
+]
+
+[[area.polygons]]
+vertices = [
+    [3474, 3181],
+    [3474, 3218],
+]
+
+[[area.polygons]]
+vertices = [
+    [3473, 3182],
+    [3473, 3217],
+]
+
+[[area.polygons]]
+vertices = [
+    [3472, 3183],
+    [3472, 3216],
+]
+
+[[area.polygons]]
+vertices = [
+    [3471, 3184],
+    [3471, 3215],
+]
+
+[[area.polygons]]
+vertices = [
+    [3470, 3185],
+    [3470, 3214],
+]
+
+[[area.polygons]]
+vertices = [
+    [3469, 3186],
+    [3469, 3213],
+]
+
+[[area.polygons]]
+vertices = [
+    [3468, 3187],
+    [3468, 3212],
+]
+
+[[area.polygons]]
+vertices = [
+    [3467, 3188],
+    [3467, 3211],
+]
+
+[[area.polygons]]
+vertices = [
+    [3466, 3189],
+    [3466, 3210],
+]
+
+[[area.polygons]]
+vertices = [
+    [3465, 3190],
+    [3465, 3209],
+]
+
+[[area.polygons]]
+vertices = [
+    [3464, 3191],
+    [3464, 3208],
+]
+
+[[area.polygons]]
+vertices = [
+    [3463, 3192],
+    [3463, 3207],
+]
+
+[[area.polygons]]
+vertices = [
+    [3462, 3193],
+    [3462, 3206],
+]
+
+[[area.polygons]]
+vertices = [
+    [3461, 3194],
+    [3461, 3205],
+]
+
+[[area.polygons]]
+vertices = [
+    [3460, 3195],
+    [3460, 3204],
+]
+
+[[area.polygons]]
+vertices = [
+    [3459, 3196],
+    [3459, 3203],
+]
+
+[[area.polygons]]
+vertices = [
+    [3458, 3197],
+    [3458, 3202],
+]
+
+[[area.polygons]]
+vertices = [
+    [3457, 3198],
+    [3457, 3201],
+]
+
+[[area.polygons]]
+vertices = [
+    [3456, 3199],
+    [3456, 3200],
+]
+
+[[area.polygons]]
+vertices = [
+    [3474, 3220],
+    [3474, 3222],
+]
+
+[[area.polygons]]
+vertices = [
+    [3474, 3225],
+    [3474, 3236],
+]
+
+[[area.polygons]]
+vertices = [
+    [3473, 3228],
+    [3473, 3233],
+]
+
+[[area.polygons]]
+vertices = [
+    [3500, 3244],
+    [3511, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3519, 3244],
+    [3584, 3244],
+]
+
+[[area.polygons]]
+vertices = [
+    [3505, 3245],
+    [3506, 3245],
+]
+
+[[area.polygons]]
+vertices = [
+    [3521, 3245],
+    [3584, 3245],
+    [3584, 3254],
+    [3521, 3254],
+]
+
+[[area.polygons]]
+vertices = [
+    [3520, 3248],
+    [3520, 3251],
+]
+
+[[area.polygons]]
+vertices = [
+    [3522, 3255],
+    [3584, 3255],
+    [3584, 3256],
+    [3522, 3256],
+]
+
+[[area.polygons]]
+vertices = [
+    [3531, 3257],
+    [3584, 3257],
+    [3584, 3259],
+    [3531, 3259],
+]
+
+[[area.polygons]]
+vertices = [
+    [3533, 3260],
+    [3584, 3260],
+]
+
+[[area.polygons]]
+vertices = [
+    [3536, 3261],
+    [3584, 3261],
+]
+
+[[area.polygons]]
+vertices = [
+    [3541, 3262],
+    [3544, 3262],
+]
+
+[[area.polygons]]
+vertices = [
+    [3549, 3262],
+    [3555, 3262],
+]
+
+[[area.polygons]]
+vertices = [
+    [3559, 3262],
+    [3562, 3262],
+]
+
+[[area.polygons]]
+vertices = [
+    [3565, 3262],
+    [3584, 3262],
+]
+
+[[area.polygons]]
+vertices = [
+    [3551, 3263],
+    [3553, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3567, 3263],
+    [3569, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3573, 3263],
+    [3578, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [3581, 3263],
+    [3584, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [2112, 4992],
+    [2175, 4992],
+    [2175, 5055],
+    [2112, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2048, 5024],
+    [2055, 5024],
+    [2055, 5055],
+    [2048, 5055],
+]

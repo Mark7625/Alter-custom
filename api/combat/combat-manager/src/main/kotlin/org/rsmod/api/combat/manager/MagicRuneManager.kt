@@ -1,6 +1,5 @@
 package org.rsmod.api.combat.manager
 
-import dev.openrune.definition.type.VarBitType
 import dev.openrune.types.ItemServerType
 import jakarta.inject.Inject
 import kotlin.collections.any
@@ -9,6 +8,7 @@ import org.rsmod.api.combat.commons.magic.MagicSpell
 import org.rsmod.api.combat.commons.magic.Spellbook
 import org.rsmod.api.config.refs.BaseParams
 import org.rsmod.api.invtx.invDelAll
+import org.rsmod.api.player.cheat.adminInfiniteRunes
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.stat.magicLvl
 import org.rsmod.api.player.vars.VarPlayerIntMapSetter
@@ -161,9 +161,13 @@ constructor(
             consume += invObj.copy(count = required)
         }
 
-        val transaction = player.invDelAll(player.inv, consume, strict = true)
-        if (!transaction.success) {
-            return CastResult.Failure.NotEnoughInvObj
+        // A cast paid for entirely from a rune pouch has nothing to delete from the inventory.
+        // An empty transaction reports failure, so only run one when there are objs to consume.
+        if (consume.isNotEmpty()) {
+            val transaction = player.invDelAll(player.inv, consume, strict = true)
+            if (!transaction.success) {
+                return CastResult.Failure.NotEnoughInvObj
+            }
         }
 
         for (source in varbitSources) {
@@ -180,6 +184,12 @@ constructor(
     }
 
     public fun validateSpell(player: Player, spell: MagicSpell): List<MagicRunes.Validation> {
+        // Admin "infinite runes" cheat: treat every obj requirement as an unlimited source so
+        // nothing is consumed. Level and spellbook requirements are handled by `validateAccess`
+        // and remain in effect.
+        if (player.adminInfiniteRunes) {
+            return listOf(MagicRunes.Validation.Valid.Unlimited)
+        }
         val runePack = validateRunePack(player, spell.obj)
         return if (runePack != null) {
             listOf(runePack)

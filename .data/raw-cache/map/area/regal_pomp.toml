@@ -1,0 +1,16 @@
+# Regal Pomp music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Regal Pomp.
+# Bounds x 2048-2111, z 6144-6207; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Regal Pomp"
+area_id = "area.regal_pomp"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 6144],
+    [2111, 6144],
+    [2111, 6207],
+    [2048, 6207],
+]

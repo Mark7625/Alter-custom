@@ -1,0 +1,155 @@
+# Ambient Jungle music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Ambient Jungle.
+# Bounds x 2816-2879, z 2944-9407; 5892 tiles as 22 rectangles.
+
+[[area]]
+name = "Ambient Jungle"
+area_id = "area.ambient_jungle"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2841, 2944],
+    [2870, 2944],
+    [2870, 2945],
+    [2841, 2945],
+]
+
+[[area.polygons]]
+vertices = [
+    [2840, 2945],
+    [2840, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2821, 2946],
+    [2839, 2946],
+    [2839, 3006],
+    [2821, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2841, 2946],
+    [2869, 2946],
+]
+
+[[area.polygons]]
+vertices = [
+    [2820, 2947],
+    [2820, 3005],
+]
+
+[[area.polygons]]
+vertices = [
+    [2841, 2947],
+    [2868, 2947],
+    [2868, 2948],
+    [2841, 2948],
+]
+
+[[area.polygons]]
+vertices = [
+    [2817, 2948],
+    [2819, 2948],
+    [2819, 2974],
+    [2817, 2974],
+]
+
+[[area.polygons]]
+vertices = [
+    [2841, 2949],
+    [2867, 2949],
+    [2867, 3006],
+    [2841, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2868, 2957],
+    [2868, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2869, 2958],
+    [2870, 2958],
+    [2870, 3006],
+    [2869, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2871, 2959],
+    [2871, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2872, 2960],
+    [2873, 2960],
+    [2873, 3006],
+    [2872, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2874, 2961],
+    [2874, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2875, 2962],
+    [2875, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2876, 2963],
+    [2876, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2877, 2964],
+    [2877, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2878, 2965],
+    [2878, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2879, 2966],
+    [2879, 3006],
+]
+
+[[area.polygons]]
+vertices = [
+    [2818, 2975],
+    [2819, 2975],
+    [2819, 3003],
+    [2818, 3003],
+]
+
+[[area.polygons]]
+vertices = [
+    [2817, 2977],
+    [2817, 3002],
+]
+
+[[area.polygons]]
+vertices = [[2819, 3004]]
+
+[[area.polygons]]
+vertices = [
+    [2816, 9366],
+    [2867, 9366],
+    [2867, 9407],
+    [2816, 9407],
+]

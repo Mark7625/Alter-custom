@@ -1,0 +1,16 @@
+# Venture 2 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Venture 2.
+# Bounds x 3328-3391, z 9728-9855; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Venture 2"
+area_id = "area.venture_2"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3328, 9728],
+    [3391, 9728],
+    [3391, 9855],
+    [3328, 9855],
+]

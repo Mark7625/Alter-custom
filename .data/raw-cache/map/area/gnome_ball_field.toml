@@ -1,0 +1,15 @@
+# The Gnome Ball pitch inside its gates in the north-west of the Tree Gnome Stronghold (west gate
+# at 2383,3488, goal at 2404,3488). Music area for "Gnomeball"; the stronghold polygon leaves this
+# rectangle out.
+[[area]]
+name = "Gnome Ball field"
+area_id = "area.gnome_ball_field"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2384, 3479],
+    [2405, 3479],
+    [2405, 3497],
+    [2384, 3497],
+]

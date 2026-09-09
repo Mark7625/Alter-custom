@@ -1,0 +1,16 @@
+# Dragontooth Island music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dragontooth Island.
+# Bounds x 3776-3839, z 3520-3583; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Dragontooth Island"
+area_id = "area.dragontooth_island"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3776, 3520],
+    [3839, 3520],
+    [3839, 3583],
+    [3776, 3583],
+]

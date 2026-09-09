@@ -1,0 +1,16 @@
+# Pick & Shovel music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Pick & Shovel.
+# Bounds x 3712-3775, z 5632-5695; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Pick & Shovel"
+area_id = "area.pick_and_shovel"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3712, 5632],
+    [3775, 5632],
+    [3775, 5695],
+    [3712, 5695],
+]

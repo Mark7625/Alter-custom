@@ -1,0 +1,16 @@
+# Dusk in Yu'biusk music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dusk in Yu'biusk.
+# Bounds x 3456-3647, z 4288-4479; 36864 tiles as 1 rectangles.
+
+[[area]]
+name = "Dusk in Yu'biusk"
+area_id = "area.dusk_in_yubiusk"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3456, 4288],
+    [3647, 4288],
+    [3647, 4479],
+    [3456, 4479],
+]

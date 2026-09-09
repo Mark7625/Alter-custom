@@ -1,0 +1,24 @@
+# Marzipan music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Marzipan.
+# Bounds x 2752-2879, z 10048-10239; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Marzipan"
+area_id = "area.marzipan"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 10048],
+    [2879, 10048],
+    [2879, 10111],
+    [2816, 10111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2752, 10112],
+    [2815, 10112],
+    [2815, 10239],
+    [2752, 10239],
+]

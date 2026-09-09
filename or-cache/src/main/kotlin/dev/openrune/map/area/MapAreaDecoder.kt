@@ -30,8 +30,8 @@ public object MapAreaDecoder {
                 areas
             }
 
-        // Zone areas
-        cursor = buf.readUnsignedByte(cursor)
+        // Zone areas (up to 256 entries, so the count is a short)
+        cursor = buf.readShort(cursor)
         val zoneCount = cursor.value
         val zoneAreas: Byte2ObjectMap<ShortSet> =
             if (zoneCount == 0) {

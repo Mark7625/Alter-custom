@@ -1,0 +1,16 @@
+# Evil Bob's Island music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Evil Bob's Island.
+# Bounds x 2496-2559, z 4736-4799; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Evil Bob's Island"
+area_id = "area.evil_bobs_island"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 4736],
+    [2559, 4736],
+    [2559, 4799],
+    [2496, 4799],
+]

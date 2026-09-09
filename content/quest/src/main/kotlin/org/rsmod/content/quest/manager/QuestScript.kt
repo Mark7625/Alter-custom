@@ -75,12 +75,17 @@ abstract class QuestScript(
     val questKey: String,
     val questVarp : String,
     val rewards: QuestReward,
-    val completedQuestItemDisplay: ItemRewardDisplay
+    val completedQuestItemDisplay: ItemRewardDisplay,
+    /**
+     * Js5 group of the jingle played with the completion scroll (one of the `Quest.QUEST_COMPLETE_*`
+     * constants); longer quests pass their own variant.
+     */
+    val completionJingle: Int = Quest.DEFAULT_COMPLETION_JINGLE,
 ) : PluginScript() {
 
     private var Player.questState by intVarp(questVarp)
 
-    val quest = Quest.register(questKey, questVarp, completedQuestItemDisplay, rewards)
+    val quest = Quest.register(questKey, questVarp, completedQuestItemDisplay, rewards, completionJingle)
 
     abstract fun subTitle(): String
 

@@ -1,0 +1,24 @@
+# Little Cave of Horrors music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Little Cave of Horrors.
+# Bounds x 3712-3839, z 9344-9471; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Little Cave of Horrors"
+area_id = "area.little_cave_of_horrors"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3712, 9344],
+    [3775, 9344],
+    [3775, 9471],
+    [3712, 9471],
+]
+
+[[area.polygons]]
+vertices = [
+    [3776, 9408],
+    [3839, 9408],
+    [3839, 9471],
+    [3776, 9471],
+]

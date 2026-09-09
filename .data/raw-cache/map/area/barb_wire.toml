@@ -1,0 +1,24 @@
+# Barb Wire music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Barb Wire.
+# Bounds x 1536-1791, z 4864-5375; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Barb Wire"
+area_id = "area.barb_wire"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1536, 4864],
+    [1599, 4864],
+    [1599, 4927],
+    [1536, 4927],
+]
+
+[[area.polygons]]
+vertices = [
+    [1728, 5248],
+    [1791, 5248],
+    [1791, 5375],
+    [1728, 5375],
+]

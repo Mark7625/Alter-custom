@@ -1,0 +1,52 @@
+# Inside the plague walls, up to the main gate shared with East Ardougne.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 265 tiles moved to
+# neighbouring music areas and 476 tiles were added.
+
+[[area]]
+name = "West Ardougne"
+area_id = "area.west_ardougne"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2538, 3264],
+    [2558, 3264],
+    [2558, 3334],
+    [2538, 3334],
+]
+
+[[area.polygons]]
+vertices = [
+    [2511, 3265],
+    [2537, 3265],
+    [2537, 3334],
+    [2511, 3334],
+]
+
+[[area.polygons]]
+vertices = [
+    [2461, 3280],
+    [2510, 3280],
+    [2510, 3322],
+    [2461, 3322],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 3306],
+    [2460, 3306],
+    [2460, 3322],
+    [2432, 3322],
+]
+
+[[area.polygons]]
+vertices = [
+    [2464, 3323],
+    [2510, 3323],
+    [2510, 3334],
+    [2464, 3334],
+]
+
+[[area.polygons]]
+vertices = [[2558, 3335]]

@@ -35,7 +35,9 @@ public object MapAreaEncoder {
                 data.writeShort(area.toInt())
             }
 
-            data.writeByte(zoneAreas.size)
+            // A map square split between areas on every level has up to 256 zone entries,
+            // which does not fit in a byte.
+            data.writeShort(zoneAreas.size)
             for ((packed, areas) in zoneAreas) {
                 check(areas.isNotEmpty()) {
                     val localZone = LocalMapSquareZone(packed.toInt())

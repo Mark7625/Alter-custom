@@ -1,0 +1,24 @@
+# Last Man Standing music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Last Man Standing.
+# Bounds x 3392-3647, z 5760-6207; 61440 tiles as 2 rectangles.
+
+[[area]]
+name = "Last Man Standing"
+area_id = "area.last_man_standing"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3392, 5760],
+    [3519, 5760],
+    [3519, 5951],
+    [3392, 5951],
+]
+
+[[area.polygons]]
+vertices = [
+    [3456, 6016],
+    [3647, 6016],
+    [3647, 6207],
+    [3456, 6207],
+]

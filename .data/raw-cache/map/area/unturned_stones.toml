@@ -1,0 +1,16 @@
+# Unturned Stones music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Unturned Stones.
+# Bounds x 2752-2815, z 6400-6463; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Unturned Stones"
+area_id = "area.unturned_stones"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 6400],
+    [2815, 6400],
+    [2815, 6463],
+    [2752, 6463],
+]

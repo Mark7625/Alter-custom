@@ -1,0 +1,31 @@
+[[inventory]]
+isServerOnly = true
+id = "inv.pvpa_shop_inv"
+name = "PvP Arena Rewards"
+
+scope = "Shared"
+stack = "Always"
+
+sellMultiplier = 1000
+buyMultiplier = 0
+delta = 0
+
+size = 3
+
+protect = false
+runWeight = false
+restock = true
+allStock = false
+placeholders = false
+
+# Prices are in PvP Arena reward points, set by the Emir's Arena plugin's cost override rather
+# than the objs' coin values.
+[[inventory.stock]]
+obj = "obj.blighted_sack_surge"
+count = 5000
+restockCycles = 10
+
+[[inventory.stock]]
+obj = "obj.pvpa_imbuing_scroll"
+count = 100
+restockCycles = 10

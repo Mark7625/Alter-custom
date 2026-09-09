@@ -1,0 +1,16 @@
+# Claustrophobia music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Claustrophobia.
+# Bounds x 2304-2431, z 4928-4991; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Claustrophobia"
+area_id = "area.claustrophobia"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 4928],
+    [2431, 4928],
+    [2431, 4991],
+    [2304, 4991],
+]

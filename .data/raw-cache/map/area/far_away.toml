@@ -1,0 +1,16 @@
+# Far Away music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Far Away.
+# Bounds x 2306-2363, z 3144-3199; 3248 tiles as 1 rectangles.
+
+[[area]]
+name = "Far Away"
+area_id = "area.far_away"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2306, 3144],
+    [2363, 3144],
+    [2363, 3199],
+    [2306, 3199],
+]

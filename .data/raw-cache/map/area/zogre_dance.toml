@@ -1,0 +1,16 @@
+# Zogre Dance music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Zogre Dance.
+# Bounds x 2456-2495, z 3031-3063; 1320 tiles as 1 rectangles.
+
+[[area]]
+name = "Zogre Dance"
+area_id = "area.zogre_dance"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2456, 3031],
+    [2495, 3031],
+    [2495, 3063],
+    [2456, 3063],
+]

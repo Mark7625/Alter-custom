@@ -1,0 +1,16 @@
+# Mystics of Nature music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Mystics of Nature.
+# Bounds x 3008-3071, z 6080-6143; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Mystics of Nature"
+area_id = "area.mystics_of_nature"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 6080],
+    [3071, 6080],
+    [3071, 6143],
+    [3008, 6143],
+]

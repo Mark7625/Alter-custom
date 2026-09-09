@@ -1,0 +1,232 @@
+# Bloodbath music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Bloodbath.
+# Bounds x 3200-3775, z 3239-4863; 21139 tiles as 35 rectangles.
+
+[[area]]
+name = "Bloodbath"
+area_id = "area.bloodbath"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 3239],
+    [3679, 3239],
+    [3679, 3328],
+    [3648, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3680, 3264],
+    [3775, 3264],
+    [3775, 3380],
+    [3680, 3380],
+]
+
+[[area.polygons]]
+vertices = [
+    [3664, 3329],
+    [3679, 3329],
+    [3679, 3332],
+    [3664, 3332],
+]
+
+[[area.polygons]]
+vertices = [
+    [3669, 3333],
+    [3679, 3333],
+    [3679, 3347],
+    [3669, 3347],
+]
+
+[[area.polygons]]
+vertices = [
+    [3672, 3348],
+    [3679, 3348],
+    [3679, 3380],
+    [3672, 3380],
+]
+
+[[area.polygons]]
+vertices = [
+    [3697, 3381],
+    [3775, 3381],
+    [3775, 3388],
+    [3697, 3388],
+]
+
+[[area.polygons]]
+vertices = [
+    [3698, 3389],
+    [3775, 3389],
+]
+
+[[area.polygons]]
+vertices = [
+    [3699, 3390],
+    [3775, 3390],
+]
+
+[[area.polygons]]
+vertices = [
+    [3700, 3391],
+    [3775, 3391],
+]
+
+[[area.polygons]]
+vertices = [
+    [3701, 3392],
+    [3775, 3392],
+]
+
+[[area.polygons]]
+vertices = [
+    [3702, 3393],
+    [3775, 3393],
+]
+
+[[area.polygons]]
+vertices = [
+    [3703, 3394],
+    [3775, 3394],
+]
+
+[[area.polygons]]
+vertices = [
+    [3704, 3395],
+    [3775, 3395],
+]
+
+[[area.polygons]]
+vertices = [
+    [3705, 3396],
+    [3775, 3396],
+]
+
+[[area.polygons]]
+vertices = [
+    [3706, 3397],
+    [3775, 3397],
+]
+
+[[area.polygons]]
+vertices = [
+    [3707, 3398],
+    [3775, 3398],
+]
+
+[[area.polygons]]
+vertices = [
+    [3708, 3399],
+    [3775, 3399],
+]
+
+[[area.polygons]]
+vertices = [
+    [3709, 3400],
+    [3775, 3400],
+]
+
+[[area.polygons]]
+vertices = [
+    [3710, 3401],
+    [3775, 3401],
+]
+
+[[area.polygons]]
+vertices = [
+    [3711, 3402],
+    [3775, 3402],
+]
+
+[[area.polygons]]
+vertices = [
+    [3712, 3403],
+    [3775, 3403],
+]
+
+[[area.polygons]]
+vertices = [
+    [3713, 3404],
+    [3775, 3404],
+]
+
+[[area.polygons]]
+vertices = [
+    [3714, 3405],
+    [3775, 3405],
+]
+
+[[area.polygons]]
+vertices = [
+    [3715, 3406],
+    [3775, 3406],
+]
+
+[[area.polygons]]
+vertices = [
+    [3716, 3407],
+    [3775, 3407],
+]
+
+[[area.polygons]]
+vertices = [
+    [3717, 3408],
+    [3775, 3408],
+]
+
+[[area.polygons]]
+vertices = [
+    [3718, 3409],
+    [3775, 3409],
+]
+
+[[area.polygons]]
+vertices = [
+    [3719, 3410],
+    [3775, 3410],
+]
+
+[[area.polygons]]
+vertices = [
+    [3720, 3411],
+    [3775, 3411],
+]
+
+[[area.polygons]]
+vertices = [
+    [3721, 3412],
+    [3775, 3412],
+]
+
+[[area.polygons]]
+vertices = [
+    [3722, 3413],
+    [3775, 3413],
+]
+
+[[area.polygons]]
+vertices = [
+    [3723, 3414],
+    [3775, 3414],
+]
+
+[[area.polygons]]
+vertices = [
+    [3724, 3415],
+    [3775, 3415],
+]
+
+[[area.polygons]]
+vertices = [
+    [3725, 3416],
+    [3775, 3416],
+]
+
+[[area.polygons]]
+vertices = [
+    [3200, 4800],
+    [3263, 4800],
+    [3263, 4863],
+    [3200, 4863],
+]

@@ -1,0 +1,216 @@
+# Emotion music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Emotion.
+# Bounds x 2496-2815, z 3136-9599; 11616 tiles as 30 rectangles.
+
+[[area]]
+name = "Emotion"
+area_id = "area.emotion"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3136],
+    [2514, 3136],
+    [2514, 3144],
+    [2496, 3144],
+]
+
+[[area.polygons]]
+vertices = [
+    [2540, 3136],
+    [2550, 3136],
+    [2550, 3195],
+    [2540, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2538, 3137],
+    [2539, 3137],
+    [2539, 3195],
+    [2538, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2551, 3137],
+    [2552, 3137],
+    [2552, 3199],
+    [2551, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [2536, 3138],
+    [2537, 3138],
+    [2537, 3195],
+    [2536, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2553, 3138],
+    [2554, 3138],
+    [2554, 3199],
+    [2553, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [2535, 3139],
+    [2535, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2555, 3139],
+    [2555, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [2515, 3140],
+    [2520, 3140],
+    [2520, 3199],
+    [2515, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [2530, 3140],
+    [2534, 3140],
+    [2534, 3195],
+    [2530, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2521, 3141],
+    [2529, 3141],
+    [2529, 3195],
+    [2521, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2500, 3145],
+    [2514, 3145],
+    [2514, 3189],
+    [2500, 3189],
+]
+
+[[area.polygons]]
+vertices = [
+    [2498, 3157],
+    [2499, 3157],
+    [2499, 3173],
+    [2498, 3173],
+]
+
+[[area.polygons]]
+vertices = [
+    [2497, 3159],
+    [2497, 3172],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 3160],
+    [2496, 3171],
+]
+
+[[area.polygons]]
+vertices = [
+    [2501, 3190],
+    [2514, 3190],
+]
+
+[[area.polygons]]
+vertices = [
+    [2502, 3191],
+    [2514, 3191],
+]
+
+[[area.polygons]]
+vertices = [
+    [2556, 3191],
+    [2558, 3191],
+    [2558, 3199],
+    [2556, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [2503, 3192],
+    [2514, 3192],
+]
+
+[[area.polygons]]
+vertices = [
+    [2506, 3193],
+    [2514, 3193],
+    [2514, 3194],
+    [2506, 3194],
+]
+
+[[area.polygons]]
+vertices = [
+    [2507, 3195],
+    [2514, 3195],
+]
+
+[[area.polygons]]
+vertices = [
+    [2511, 3196],
+    [2514, 3196],
+    [2514, 3197],
+    [2511, 3197],
+]
+
+[[area.polygons]]
+vertices = [
+    [2521, 3196],
+    [2523, 3196],
+]
+
+[[area.polygons]]
+vertices = [
+    [2548, 3196],
+    [2550, 3196],
+    [2550, 3199],
+    [2548, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [2521, 3197],
+    [2522, 3197],
+]
+
+[[area.polygons]]
+vertices = [
+    [2513, 3198],
+    [2514, 3198],
+]
+
+[[area.polygons]]
+vertices = [[2521, 3198]]
+
+[[area.polygons]]
+vertices = [[2514, 3199]]
+
+[[area.polygons]]
+vertices = [
+    [2752, 4672],
+    [2815, 4672],
+    [2815, 4735],
+    [2752, 4735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9536],
+    [2559, 9536],
+    [2559, 9599],
+    [2496, 9599],
+]

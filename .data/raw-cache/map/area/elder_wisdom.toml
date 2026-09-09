@@ -1,0 +1,189 @@
+# Elder Wisdom music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Elder Wisdom.
+# Bounds x 3340-3371, z 2184-2217; 682 tiles as 29 rectangles.
+
+[[area]]
+name = "Elder Wisdom"
+area_id = "area.elder_wisdom"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3340, 2184],
+    [3341, 2184],
+    [3341, 2189],
+    [3340, 2189],
+]
+
+[[area.polygons]]
+vertices = [
+    [3342, 2185],
+    [3342, 2191],
+]
+
+[[area.polygons]]
+vertices = [
+    [3343, 2186],
+    [3346, 2186],
+    [3346, 2193],
+    [3343, 2193],
+]
+
+[[area.polygons]]
+vertices = [
+    [3347, 2187],
+    [3348, 2187],
+    [3348, 2212],
+    [3347, 2212],
+]
+
+[[area.polygons]]
+vertices = [
+    [3349, 2188],
+    [3349, 2213],
+]
+
+[[area.polygons]]
+vertices = [[3341, 2190]]
+
+[[area.polygons]]
+vertices = [
+    [3350, 2190],
+    [3351, 2190],
+    [3351, 2213],
+    [3350, 2213],
+]
+
+[[area.polygons]]
+vertices = [
+    [3352, 2191],
+    [3352, 2215],
+]
+
+[[area.polygons]]
+vertices = [
+    [3361, 2191],
+    [3363, 2191],
+    [3363, 2216],
+    [3361, 2216],
+]
+
+[[area.polygons]]
+vertices = [
+    [3353, 2192],
+    [3353, 2216],
+]
+
+[[area.polygons]]
+vertices = [
+    [3357, 2192],
+    [3360, 2192],
+    [3360, 2215],
+    [3357, 2215],
+]
+
+[[area.polygons]]
+vertices = [
+    [3354, 2193],
+    [3356, 2193],
+    [3356, 2216],
+    [3354, 2216],
+]
+
+[[area.polygons]]
+vertices = [
+    [3364, 2193],
+    [3364, 2217],
+]
+
+[[area.polygons]]
+vertices = [
+    [3344, 2194],
+    [3346, 2194],
+]
+
+[[area.polygons]]
+vertices = [
+    [3365, 2194],
+    [3365, 2217],
+]
+
+[[area.polygons]]
+vertices = [
+    [3345, 2195],
+    [3346, 2195],
+    [3346, 2209],
+    [3345, 2209],
+]
+
+[[area.polygons]]
+vertices = [
+    [3366, 2195],
+    [3366, 2216],
+]
+
+[[area.polygons]]
+vertices = [
+    [3367, 2196],
+    [3367, 2216],
+]
+
+[[area.polygons]]
+vertices = [
+    [3368, 2197],
+    [3368, 2214],
+]
+
+[[area.polygons]]
+vertices = [
+    [3344, 2198],
+    [3344, 2208],
+]
+
+[[area.polygons]]
+vertices = [
+    [3369, 2198],
+    [3369, 2213],
+]
+
+[[area.polygons]]
+vertices = [
+    [3343, 2200],
+    [3343, 2207],
+]
+
+[[area.polygons]]
+vertices = [
+    [3370, 2201],
+    [3370, 2211],
+]
+
+[[area.polygons]]
+vertices = [
+    [3342, 2203],
+    [3342, 2207],
+]
+
+[[area.polygons]]
+vertices = [
+    [3371, 2203],
+    [3371, 2210],
+]
+
+[[area.polygons]]
+vertices = [
+    [3346, 2210],
+    [3346, 2211],
+]
+
+[[area.polygons]]
+vertices = [[3348, 2213]]
+
+[[area.polygons]]
+vertices = [[3351, 2214]]
+
+[[area.polygons]]
+vertices = [
+    [3362, 2217],
+    [3363, 2217],
+]

@@ -1,0 +1,16 @@
+# Pinball Wizard music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Pinball Wizard.
+# Bounds x 1952-1983, z 5024-5055; 1024 tiles as 1 rectangles.
+
+[[area]]
+name = "Pinball Wizard"
+area_id = "area.pinball_wizard"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1952, 5024],
+    [1983, 5024],
+    [1983, 5055],
+    [1952, 5055],
+]

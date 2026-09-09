@@ -1,3 +1,6 @@
+# Regenerated as rectangles from the OSRS wiki music map: 291 tiles moved to
+# neighbouring music areas and 97 tiles were added.
+
 [[area]]
 name = "Brine Rat Cavern"
 area_id = "area.brineratcavern"
@@ -5,8 +8,26 @@ levels = [0, 1, 2, 3]
 
 [[area.polygons]]
 vertices = [
+    [2688, 10112],
+    [2751, 10112],
+    [2751, 10175],
+    [2688, 10175],
+]
+
+[[area.polygons]]
+vertices = [
+    [2687, 10125],
+    [2687, 10179],
+]
+
+[[area.polygons]]
+vertices = [
+    [2686, 10147],
+    [2686, 10179],
+]
+
+[[area.polygons]]
+vertices = [
+    [2685, 10169],
     [2685, 10179],
-    [2753, 10179],
-    [2749, 10112],
-    [2688, 10114],
 ]

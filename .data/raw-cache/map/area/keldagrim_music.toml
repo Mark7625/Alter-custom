@@ -1,0 +1,24 @@
+# Keldagrim music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Land of the Dwarves; Tale of Keldagrim.
+# Bounds x 2816-2943, z 10150-10239; 9792 tiles as 2 rectangles.
+
+[[area]]
+name = "Keldagrim"
+area_id = "area.keldagrim_music"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2880, 10150],
+    [2943, 10150],
+    [2943, 10239],
+    [2880, 10239],
+]
+
+[[area.polygons]]
+vertices = [
+    [2816, 10177],
+    [2879, 10177],
+    [2879, 10239],
+    [2816, 10239],
+]

@@ -1,0 +1,16 @@
+# In Between music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: In Between.
+# Bounds x 2496-2623, z 4928-4991; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "In Between"
+area_id = "area.in_between"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 4928],
+    [2623, 4928],
+    [2623, 4991],
+    [2496, 4991],
+]

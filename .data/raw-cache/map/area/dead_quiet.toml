@@ -1,0 +1,56 @@
+# Dead Quiet music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dead Quiet.
+# Bounds x 1984-2431, z 4992-5055; 9216 tiles as 6 rectangles.
+
+[[area]]
+name = "Dead Quiet"
+area_id = "area.dead_quiet"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 4992],
+    [2079, 4992],
+    [2079, 5023],
+    [2048, 5023],
+]
+
+[[area.polygons]]
+vertices = [
+    [2368, 4992],
+    [2431, 4992],
+    [2431, 5055],
+    [2368, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [1984, 5024],
+    [2015, 5024],
+    [2015, 5055],
+    [1984, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2176, 5024],
+    [2207, 5024],
+    [2207, 5055],
+    [2176, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2240, 5024],
+    [2271, 5024],
+    [2271, 5055],
+    [2240, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2304, 5024],
+    [2335, 5024],
+    [2335, 5055],
+    [2304, 5055],
+]

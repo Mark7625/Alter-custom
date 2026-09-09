@@ -1,0 +1,86 @@
+# Out at the Mines music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Out at the Mines.
+# Bounds x 1420-1527, z 3804-3903; 7765 tiles as 10 rectangles.
+
+[[area]]
+name = "Out at the Mines"
+area_id = "area.out_at_the_mines"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1420, 3804],
+    [1430, 3804],
+    [1430, 3903],
+    [1420, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1431, 3807],
+    [1439, 3807],
+    [1439, 3903],
+    [1431, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1440, 3812],
+    [1442, 3812],
+    [1442, 3903],
+    [1440, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1443, 3818],
+    [1444, 3818],
+    [1444, 3903],
+    [1443, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1445, 3823],
+    [1445, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1446, 3826],
+    [1447, 3826],
+    [1447, 3903],
+    [1446, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1448, 3831],
+    [1452, 3831],
+    [1452, 3903],
+    [1448, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1453, 3836],
+    [1455, 3836],
+    [1455, 3903],
+    [1453, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1470, 3840],
+    [1527, 3840],
+    [1527, 3903],
+    [1470, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1456, 3845],
+    [1469, 3845],
+    [1469, 3903],
+    [1456, 3903],
+]

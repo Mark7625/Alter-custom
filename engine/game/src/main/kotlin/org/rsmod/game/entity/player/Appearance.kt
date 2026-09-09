@@ -93,8 +93,16 @@ public class Appearance {
         this.rebuild = true
     }
 
+    /**
+     * @param identKit the ident-kit style for [index], or [NO_IDENT_KIT] to leave the slot empty.
+     *   The backing array already starts as [NO_IDENT_KIT], and the appearance encoder passes the
+     *   value straight through to a protocol that treats `-1` as "no model" - a body type B jaw,
+     *   for instance, has no model rather than a blank one.
+     */
     public fun setIdentKit(index: Int, identKit: Int) {
-        require(identKit in 0..65535) { "identKit must be in range [0..65535]. ($identKit)" }
+        require(identKit == NO_IDENT_KIT || identKit in 0..65535) {
+            "identKit must be $NO_IDENT_KIT (none) or in range [0..65535]. ($identKit)"
+        }
         this.identKit[index] = identKit.toShort()
         this.rebuild = true
     }
@@ -134,6 +142,9 @@ public class Appearance {
     }
 
     public companion object {
+        /** Leaves an ident-kit slot empty; the protocol encodes it as "no model". */
+        public const val NO_IDENT_KIT: Int = -1
+
         public const val PRONOUN_HE: Int = 0
         public const val PRONOUN_SHE: Int = 1
         public const val PRONOUN_THEY: Int = 2

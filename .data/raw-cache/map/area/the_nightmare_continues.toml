@@ -1,0 +1,16 @@
+# The Nightmare Continues music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Nightmare Continues.
+# Bounds x 3264-3327, z 4416-4479; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Nightmare Continues"
+area_id = "area.the_nightmare_continues"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 4416],
+    [3327, 4416],
+    [3327, 4479],
+    [3264, 4479],
+]

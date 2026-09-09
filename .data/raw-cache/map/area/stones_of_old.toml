@@ -1,0 +1,237 @@
+# Stones of Old music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Stones of Old.
+# Bounds x 1480-1531, z 3210-3263; 1633 tiles as 37 rectangles.
+
+[[area]]
+name = "Stones of Old"
+area_id = "area.stones_of_old"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3210],
+    [1511, 3210],
+    [1511, 3246],
+    [1489, 3246],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3211],
+    [1530, 3211],
+    [1530, 3215],
+    [1512, 3215],
+]
+
+[[area.polygons]]
+vertices = [
+    [1531, 3212],
+    [1531, 3215],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3216],
+    [1523, 3216],
+    [1523, 3234],
+    [1512, 3234],
+]
+
+[[area.polygons]]
+vertices = [
+    [1488, 3223],
+    [1488, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [1487, 3224],
+    [1487, 3241],
+]
+
+[[area.polygons]]
+vertices = [
+    [1486, 3225],
+    [1486, 3240],
+]
+
+[[area.polygons]]
+vertices = [
+    [1485, 3226],
+    [1485, 3239],
+]
+
+[[area.polygons]]
+vertices = [
+    [1484, 3227],
+    [1484, 3238],
+]
+
+[[area.polygons]]
+vertices = [
+    [1483, 3228],
+    [1483, 3237],
+]
+
+[[area.polygons]]
+vertices = [
+    [1482, 3229],
+    [1482, 3236],
+]
+
+[[area.polygons]]
+vertices = [
+    [1481, 3230],
+    [1481, 3235],
+]
+
+[[area.polygons]]
+vertices = [
+    [1480, 3231],
+    [1480, 3234],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3235],
+    [1520, 3235],
+    [1520, 3237],
+    [1512, 3237],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3238],
+    [1519, 3238],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3239],
+    [1518, 3239],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3240],
+    [1517, 3240],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3241],
+    [1516, 3241],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3242],
+    [1515, 3242],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3243],
+    [1514, 3243],
+]
+
+[[area.polygons]]
+vertices = [
+    [1512, 3244],
+    [1513, 3244],
+]
+
+[[area.polygons]]
+vertices = [[1512, 3245]]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3247],
+    [1502, 3247],
+    [1502, 3254],
+    [1489, 3254],
+]
+
+[[area.polygons]]
+vertices = [
+    [1487, 3248],
+    [1487, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [1486, 3249],
+    [1486, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [1485, 3250],
+    [1485, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [1484, 3251],
+    [1484, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [1483, 3252],
+    [1483, 3263],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3255],
+    [1501, 3255],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3256],
+    [1500, 3256],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3257],
+    [1499, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3258],
+    [1498, 3258],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3259],
+    [1497, 3259],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3260],
+    [1496, 3260],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3261],
+    [1495, 3261],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3262],
+    [1494, 3262],
+]
+
+[[area.polygons]]
+vertices = [
+    [1489, 3263],
+    [1493, 3263],
+]

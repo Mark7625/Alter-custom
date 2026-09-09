@@ -1,0 +1,163 @@
+# Lurking Threats music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lurking Threats.
+# Bounds x 2048-2943, z 8576-10495; 25034 tiles as 23 rectangles.
+
+[[area]]
+name = "Lurking Threats"
+area_id = "area.lurking_threats"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2573, 8576],
+    [2622, 8576],
+    [2622, 8588],
+    [2573, 8588],
+]
+
+[[area.polygons]]
+vertices = [
+    [2577, 8589],
+    [2622, 8589],
+]
+
+[[area.polygons]]
+vertices = [
+    [2578, 8590],
+    [2622, 8590],
+]
+
+[[area.polygons]]
+vertices = [
+    [2579, 8591],
+    [2622, 8591],
+]
+
+[[area.polygons]]
+vertices = [
+    [2580, 8592],
+    [2622, 8592],
+    [2622, 8599],
+    [2580, 8599],
+]
+
+[[area.polygons]]
+vertices = [
+    [2577, 8594],
+    [2579, 8594],
+    [2579, 8598],
+    [2577, 8598],
+]
+
+[[area.polygons]]
+vertices = [
+    [2578, 8599],
+    [2579, 8599],
+]
+
+[[area.polygons]]
+vertices = [
+    [2581, 8600],
+    [2622, 8600],
+]
+
+[[area.polygons]]
+vertices = [
+    [2582, 8601],
+    [2584, 8601],
+]
+
+[[area.polygons]]
+vertices = [
+    [2587, 8601],
+    [2622, 8601],
+]
+
+[[area.polygons]]
+vertices = [
+    [2588, 8602],
+    [2622, 8602],
+]
+
+[[area.polygons]]
+vertices = [
+    [2589, 8603],
+    [2622, 8603],
+    [2622, 8661],
+    [2589, 8661],
+]
+
+[[area.polygons]]
+vertices = [
+    [2582, 8605],
+    [2588, 8605],
+    [2588, 8606],
+    [2582, 8606],
+]
+
+[[area.polygons]]
+vertices = [
+    [2588, 8607],
+    [2588, 8661],
+]
+
+[[area.polygons]]
+vertices = [
+    [2586, 8608],
+    [2587, 8608],
+    [2587, 8610],
+    [2586, 8610],
+]
+
+[[area.polygons]]
+vertices = [[2587, 8611]]
+
+[[area.polygons]]
+vertices = [
+    [2587, 8616],
+    [2587, 8661],
+]
+
+[[area.polygons]]
+vertices = [
+    [2586, 8617],
+    [2586, 8661],
+]
+
+[[area.polygons]]
+vertices = [
+    [2585, 8618],
+    [2585, 8661],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 8619],
+    [2584, 8619],
+    [2584, 8661],
+    [2560, 8661],
+]
+
+[[area.polygons]]
+vertices = [
+    [2624, 8832],
+    [2751, 8832],
+    [2751, 8895],
+    [2624, 8895],
+]
+
+[[area.polygons]]
+vertices = [
+    [2048, 10048],
+    [2111, 10048],
+    [2111, 10111],
+    [2048, 10111],
+]
+
+[[area.polygons]]
+vertices = [
+    [2816, 10432],
+    [2943, 10432],
+    [2943, 10495],
+    [2816, 10495],
+]

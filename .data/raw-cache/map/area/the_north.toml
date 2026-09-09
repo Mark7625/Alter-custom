@@ -1,0 +1,16 @@
+# The North music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The North.
+# Bounds x 2816-2879, z 3840-3903; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The North"
+area_id = "area.the_north"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 3840],
+    [2879, 3840],
+    [2879, 3903],
+    [2816, 3903],
+]

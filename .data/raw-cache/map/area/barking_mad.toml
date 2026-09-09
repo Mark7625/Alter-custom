@@ -1,0 +1,16 @@
+# Barking Mad music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Barking Mad.
+# Bounds x 3520-3583, z 9856-9919; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Barking Mad"
+area_id = "area.barking_mad"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3520, 9856],
+    [3583, 9856],
+    [3583, 9919],
+    [3520, 9919],
+]

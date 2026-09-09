@@ -1,0 +1,16 @@
+# Garden of Summer music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Garden of Summer.
+# Bounds x 2905-2926, z 5481-5496; 352 tiles as 1 rectangles.
+
+[[area]]
+name = "Garden of Summer"
+area_id = "area.garden_of_summer"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2905, 5481],
+    [2926, 5481],
+    [2926, 5496],
+    [2905, 5496],
+]

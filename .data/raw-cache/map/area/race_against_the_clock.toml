@@ -1,0 +1,16 @@
+# Race Against the Clock music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Race Against the Clock.
+# Bounds x 2944-3007, z 5824-5887; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Race Against the Clock"
+area_id = "area.race_against_the_clock"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 5824],
+    [3007, 5824],
+    [3007, 5887],
+    [2944, 5887],
+]

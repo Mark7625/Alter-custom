@@ -1,0 +1,14 @@
+[[area]]
+name = "Grand Exchange"
+area_id = "area.grand_exchange"
+levels = [0, 1, 2, 3]
+
+# The exchange building, its plaza and the ring of walls around it in north-west Varrock. The
+# Varrock area polygon leaves this rectangle out so the music plugin only ever sees one area.
+[[area.polygons]]
+vertices = [
+    [3143, 3462],
+    [3187, 3462],
+    [3187, 3510],
+    [3143, 3510],
+]

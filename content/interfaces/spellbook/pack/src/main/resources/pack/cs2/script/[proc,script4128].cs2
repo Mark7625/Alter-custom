@@ -1,0 +1,5 @@
+// 4128
+// Overrides the vanilla per-spell quest requirement check. Spells are not locked behind quests on
+// this server, so the spell's `spell_questreq_struct` param is ignored and every spell is unlocked.
+[proc,script4128](obj $obj)(boolean)
+return(true);

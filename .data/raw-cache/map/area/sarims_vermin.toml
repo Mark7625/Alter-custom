@@ -1,0 +1,16 @@
+# Sarim's Vermin music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sarim's Vermin.
+# Bounds x 2944-3007, z 9600-9663; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Sarim's Vermin"
+area_id = "area.sarims_vermin"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 9600],
+    [3007, 9600],
+    [3007, 9663],
+    [2944, 9663],
+]

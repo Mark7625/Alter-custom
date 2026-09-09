@@ -1,0 +1,16 @@
+# Monkey Madness music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Monkey Madness.
+# Bounds x 2048-2111, z 5376-5439; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Monkey Madness"
+area_id = "area.monkey_madness"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2048, 5376],
+    [2111, 5376],
+    [2111, 5439],
+    [2048, 5439],
+]

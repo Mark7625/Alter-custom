@@ -1,0 +1,16 @@
+# Beneath Cursed Sands music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Beneath Cursed Sands.
+# Bounds x 3520-3583, z 5120-5183; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Beneath Cursed Sands"
+area_id = "area.beneath_cursed_sands"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3520, 5120],
+    [3583, 5120],
+    [3583, 5183],
+    [3520, 5183],
+]

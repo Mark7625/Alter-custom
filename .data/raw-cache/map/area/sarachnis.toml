@@ -1,0 +1,16 @@
+# Sarachnis music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sarachnis.
+# Bounds x 1792-1855, z 9856-9911; 3584 tiles as 1 rectangles.
+
+[[area]]
+name = "Sarachnis"
+area_id = "area.sarachnis"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 9856],
+    [1855, 9856],
+    [1855, 9911],
+    [1792, 9911],
+]

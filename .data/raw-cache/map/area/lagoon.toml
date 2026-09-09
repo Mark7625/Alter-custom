@@ -1,0 +1,16 @@
+# Lagoon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lagoon.
+# Bounds x 3712-3839, z 10240-10303; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Lagoon"
+area_id = "area.lagoon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3712, 10240],
+    [3839, 10240],
+    [3839, 10303],
+    [3712, 10303],
+]

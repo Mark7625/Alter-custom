@@ -1,0 +1,16 @@
+# Scar Tissue music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Scar Tissue.
+# Bounds x 1728-2239, z 6400-6463; 32768 tiles as 1 rectangles.
+
+[[area]]
+name = "Scar Tissue"
+area_id = "area.scar_tissue"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1728, 6400],
+    [2239, 6400],
+    [2239, 6463],
+    [1728, 6463],
+]

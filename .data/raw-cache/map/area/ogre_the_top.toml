@@ -1,0 +1,16 @@
+# Ogre the Top music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Ogre the Top.
+# Bounds x 2368-2431, z 10240-10303; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Ogre the Top"
+area_id = "area.ogre_the_top"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 10240],
+    [2431, 10240],
+    [2431, 10303],
+    [2368, 10303],
+]

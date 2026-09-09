@@ -1,0 +1,160 @@
+# Island Life music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Island Life.
+# Bounds x 1747-1776, z 2647-2679; 560 tiles as 24 rectangles.
+
+[[area]]
+name = "Island Life"
+area_id = "area.island_life"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1758, 2647],
+    [1760, 2647],
+    [1760, 2679],
+    [1758, 2679],
+]
+
+[[area.polygons]]
+vertices = [
+    [1765, 2647],
+    [1765, 2660],
+]
+
+[[area.polygons]]
+vertices = [
+    [1757, 2648],
+    [1757, 2679],
+]
+
+[[area.polygons]]
+vertices = [
+    [1761, 2648],
+    [1764, 2648],
+    [1764, 2676],
+    [1761, 2676],
+]
+
+[[area.polygons]]
+vertices = [
+    [1766, 2648],
+    [1766, 2658],
+]
+
+[[area.polygons]]
+vertices = [
+    [1755, 2649],
+    [1756, 2649],
+    [1756, 2679],
+    [1755, 2679],
+]
+
+[[area.polygons]]
+vertices = [
+    [1767, 2649],
+    [1768, 2649],
+    [1768, 2657],
+    [1767, 2657],
+]
+
+[[area.polygons]]
+vertices = [
+    [1753, 2650],
+    [1754, 2650],
+    [1754, 2679],
+    [1753, 2679],
+]
+
+[[area.polygons]]
+vertices = [
+    [1769, 2650],
+    [1775, 2650],
+    [1775, 2654],
+    [1769, 2654],
+]
+
+[[area.polygons]]
+vertices = [
+    [1776, 2651],
+    [1776, 2653],
+]
+
+[[area.polygons]]
+vertices = [
+    [1752, 2652],
+    [1752, 2678],
+]
+
+[[area.polygons]]
+vertices = [
+    [1751, 2654],
+    [1751, 2677],
+]
+
+[[area.polygons]]
+vertices = [
+    [1769, 2655],
+    [1772, 2655],
+]
+
+[[area.polygons]]
+vertices = [[1769, 2656]]
+
+[[area.polygons]]
+vertices = [
+    [1750, 2657],
+    [1750, 2658],
+]
+
+[[area.polygons]]
+vertices = [
+    [1750, 2662],
+    [1750, 2676],
+]
+
+[[area.polygons]]
+vertices = [
+    [1749, 2663],
+    [1749, 2674],
+]
+
+[[area.polygons]]
+vertices = [
+    [1748, 2666],
+    [1748, 2671],
+]
+
+[[area.polygons]]
+vertices = [
+    [1747, 2668],
+    [1747, 2670],
+]
+
+[[area.polygons]]
+vertices = [
+    [1765, 2669],
+    [1766, 2669],
+    [1766, 2671],
+    [1765, 2671],
+]
+
+[[area.polygons]]
+vertices = [
+    [1765, 2672],
+    [1765, 2675],
+]
+
+[[area.polygons]]
+vertices = [
+    [1761, 2677],
+    [1763, 2677],
+]
+
+[[area.polygons]]
+vertices = [
+    [1761, 2678],
+    [1762, 2678],
+]
+
+[[area.polygons]]
+vertices = [[1761, 2679]]

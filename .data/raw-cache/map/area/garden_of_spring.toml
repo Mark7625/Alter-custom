@@ -1,0 +1,16 @@
+# Garden of Spring music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Garden of Spring.
+# Bounds x 2921-2936, z 5457-5478; 352 tiles as 1 rectangles.
+
+[[area]]
+name = "Garden of Spring"
+area_id = "area.garden_of_spring"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2921, 5457],
+    [2936, 5457],
+    [2936, 5478],
+    [2921, 5478],
+]

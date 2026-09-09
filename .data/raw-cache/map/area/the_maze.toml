@@ -1,0 +1,80 @@
+# The Maze music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Maze.
+# Bounds x 2816-2943, z 3237-9663; 12640 tiles as 10 rectangles.
+
+[[area]]
+name = "The Maze"
+area_id = "area.the_maze"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2937, 3237],
+    [2939, 3237],
+    [2939, 3257],
+    [2937, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2927, 3238],
+    [2929, 3238],
+    [2929, 3257],
+    [2927, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2940, 3238],
+    [2940, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2930, 3239],
+    [2930, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2923, 3240],
+    [2926, 3240],
+    [2926, 3257],
+    [2923, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2931, 3240],
+    [2936, 3240],
+    [2936, 3257],
+    [2931, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2922, 3251],
+    [2922, 3256],
+]
+
+[[area.polygons]]
+vertices = [
+    [2921, 3252],
+    [2921, 3255],
+]
+
+[[area.polygons]]
+vertices = [
+    [2816, 9216],
+    [2879, 9216],
+    [2879, 9343],
+    [2816, 9343],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 9600],
+    [2943, 9600],
+    [2943, 9663],
+    [2880, 9663],
+]

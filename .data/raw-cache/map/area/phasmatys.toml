@@ -1,0 +1,16 @@
+# Phasmatys music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Phasmatys.
+# Bounds x 3648-3711, z 9856-9919; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Phasmatys"
+area_id = "area.phasmatys"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 9856],
+    [3711, 9856],
+    [3711, 9919],
+    [3648, 9919],
+]

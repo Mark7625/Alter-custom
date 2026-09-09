@@ -1,0 +1,48 @@
+# Wings of Madness music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Wings of Madness.
+# Bounds x 2523-2538, z 2210-2221; 170 tiles as 6 rectangles.
+
+[[area]]
+name = "Wings of Madness"
+area_id = "area.wings_of_madness"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2528, 2210],
+    [2536, 2210],
+    [2536, 2221],
+    [2528, 2221],
+]
+
+[[area.polygons]]
+vertices = [
+    [2525, 2211],
+    [2527, 2211],
+    [2527, 2220],
+    [2525, 2220],
+]
+
+[[area.polygons]]
+vertices = [
+    [2537, 2211],
+    [2537, 2220],
+]
+
+[[area.polygons]]
+vertices = [
+    [2524, 2212],
+    [2524, 2219],
+]
+
+[[area.polygons]]
+vertices = [
+    [2538, 2212],
+    [2538, 2219],
+]
+
+[[area.polygons]]
+vertices = [
+    [2523, 2213],
+    [2523, 2218],
+]

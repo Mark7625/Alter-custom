@@ -1,0 +1,105 @@
+# Both halves of the sewers, Elena's prison and the Carnillean mansion cellar.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 4265 tiles moved to
+# neighbouring music areas and 4096 tiles were added.
+
+[[area]]
+name = "Ardougne Sewers"
+area_id = "area.ardougne_sewers"
+levels = [0]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9600],
+    [2559, 9600],
+    [2559, 9693],
+    [2496, 9693],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9664],
+    [2623, 9664],
+    [2623, 9703],
+    [2560, 9703],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9694],
+    [2537, 9694],
+    [2537, 9727],
+    [2496, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2549, 9694],
+    [2559, 9694],
+    [2559, 9727],
+    [2549, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2542, 9698],
+    [2548, 9698],
+    [2548, 9727],
+    [2542, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2538, 9700],
+    [2541, 9700],
+    [2541, 9727],
+    [2538, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9704],
+    [2568, 9704],
+    [2568, 9706],
+    [2560, 9706],
+]
+
+[[area.polygons]]
+vertices = [
+    [2577, 9704],
+    [2623, 9704],
+    [2623, 9727],
+    [2577, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9707],
+    [2563, 9707],
+    [2563, 9727],
+    [2560, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2566, 9710],
+    [2568, 9710],
+    [2568, 9727],
+    [2566, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2564, 9713],
+    [2565, 9713],
+    [2565, 9727],
+    [2564, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [2569, 9716],
+    [2576, 9716],
+    [2576, 9727],
+    [2569, 9727],
+]

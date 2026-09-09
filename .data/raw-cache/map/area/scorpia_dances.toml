@@ -1,0 +1,16 @@
+# Scorpia Dances music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Scorpia Dances.
+# Bounds x 3200-3263, z 10304-10367; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Scorpia Dances"
+area_id = "area.scorpia_dances"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3200, 10304],
+    [3263, 10304],
+    [3263, 10367],
+    [3200, 10367],
+]

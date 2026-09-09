@@ -1,0 +1,199 @@
+# Soul Fall music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Soul Fall.
+# Bounds x 1773-1855, z 3840-3907; 4646 tiles as 32 rectangles.
+
+[[area]]
+name = "Soul Fall"
+area_id = "area.soul_fall"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 3840],
+    [1846, 3840],
+    [1846, 3903],
+    [1792, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1847, 3841],
+    [1847, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1848, 3842],
+    [1848, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1849, 3843],
+    [1849, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1850, 3844],
+    [1850, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1851, 3845],
+    [1851, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1852, 3846],
+    [1852, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1853, 3847],
+    [1853, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1854, 3848],
+    [1854, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1855, 3849],
+    [1855, 3903],
+]
+
+[[area.polygons]]
+vertices = [
+    [1791, 3868],
+    [1791, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1790, 3869],
+    [1790, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1789, 3870],
+    [1789, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1788, 3871],
+    [1788, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1787, 3872],
+    [1787, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1786, 3873],
+    [1786, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1785, 3874],
+    [1785, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1784, 3875],
+    [1784, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1783, 3876],
+    [1783, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1782, 3877],
+    [1782, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1781, 3878],
+    [1781, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1780, 3879],
+    [1780, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1779, 3880],
+    [1779, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1778, 3881],
+    [1778, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1777, 3882],
+    [1777, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1776, 3883],
+    [1776, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1775, 3884],
+    [1775, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1774, 3885],
+    [1774, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1773, 3886],
+    [1773, 3907],
+]
+
+[[area.polygons]]
+vertices = [
+    [1792, 3904],
+    [1794, 3904],
+]
+
+[[area.polygons]]
+vertices = [
+    [1792, 3905],
+    [1793, 3905],
+]
+
+[[area.polygons]]
+vertices = [[1792, 3906]]

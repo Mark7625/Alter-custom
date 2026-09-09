@@ -1,0 +1,16 @@
+# The Spurned Demon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Spurned Demon.
+# Bounds x 3008-3071, z 6016-6061; 2944 tiles as 1 rectangles.
+
+[[area]]
+name = "The Spurned Demon"
+area_id = "area.the_spurned_demon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 6016],
+    [3071, 6016],
+    [3071, 6061],
+    [3008, 6061],
+]

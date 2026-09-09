@@ -18,3 +18,13 @@ vertices = [
     [3030, 9599],
     [2983, 9599],
 ]
+
+# Extension traced from the OSRS wiki music map (2496 tiles).
+
+[[area.polygons]]
+vertices = [
+    [2944, 9536],
+    [2982, 9536],
+    [2982, 9599],
+    [2944, 9599],
+]

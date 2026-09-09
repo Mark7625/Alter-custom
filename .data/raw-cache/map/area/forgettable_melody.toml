@@ -1,0 +1,16 @@
+# Forgettable Melody music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Forgettable Melody (plus right_on_track from wiki polygons sharing this footprint).
+# Bounds x 1856-1919, z 4928-4991; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Forgettable Melody"
+area_id = "area.forgettable_melody"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4928],
+    [1919, 4928],
+    [1919, 4991],
+    [1856, 4991],
+]

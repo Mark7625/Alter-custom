@@ -1,0 +1,141 @@
+# East Ardougne music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Baroque; The Tower; Knightly.
+# Bounds x 2509-2576, z 9694-9774; 590 tiles as 20 rectangles.
+
+[[area]]
+name = "East Ardougne"
+area_id = "area.east_ardougne_music"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2538, 9694],
+    [2548, 9694],
+    [2548, 9697],
+    [2538, 9697],
+]
+
+[[area.polygons]]
+vertices = [
+    [2538, 9698],
+    [2541, 9698],
+    [2541, 9699],
+    [2538, 9699],
+]
+
+[[area.polygons]]
+vertices = [
+    [2569, 9704],
+    [2576, 9704],
+    [2576, 9715],
+    [2569, 9715],
+]
+
+[[area.polygons]]
+vertices = [
+    [2564, 9707],
+    [2568, 9707],
+    [2568, 9709],
+    [2564, 9709],
+]
+
+[[area.polygons]]
+vertices = [
+    [2564, 9710],
+    [2565, 9710],
+    [2565, 9712],
+    [2564, 9712],
+]
+
+[[area.polygons]]
+vertices = [
+    [2512, 9738],
+    [2515, 9738],
+    [2515, 9766],
+    [2512, 9766],
+]
+
+[[area.polygons]]
+vertices = [
+    [2511, 9739],
+    [2511, 9765],
+]
+
+[[area.polygons]]
+vertices = [
+    [2516, 9739],
+    [2516, 9770],
+]
+
+[[area.polygons]]
+vertices = [
+    [2510, 9740],
+    [2510, 9764],
+]
+
+[[area.polygons]]
+vertices = [
+    [2517, 9740],
+    [2517, 9771],
+]
+
+[[area.polygons]]
+vertices = [
+    [2509, 9741],
+    [2509, 9763],
+]
+
+[[area.polygons]]
+vertices = [
+    [2518, 9741],
+    [2518, 9772],
+]
+
+[[area.polygons]]
+vertices = [
+    [2519, 9742],
+    [2519, 9773],
+]
+
+[[area.polygons]]
+vertices = [
+    [2520, 9763],
+    [2522, 9763],
+    [2522, 9774],
+    [2520, 9774],
+]
+
+[[area.polygons]]
+vertices = [
+    [2523, 9764],
+    [2526, 9764],
+    [2526, 9774],
+    [2523, 9774],
+]
+
+[[area.polygons]]
+vertices = [
+    [2527, 9765],
+    [2527, 9773],
+]
+
+[[area.polygons]]
+vertices = [
+    [2528, 9766],
+    [2528, 9772],
+]
+
+[[area.polygons]]
+vertices = [
+    [2513, 9767],
+    [2515, 9767],
+]
+
+[[area.polygons]]
+vertices = [
+    [2514, 9768],
+    [2515, 9768],
+]
+
+[[area.polygons]]
+vertices = [[2515, 9769]]

@@ -1,0 +1,48 @@
+# Invader music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Invader.
+# Bounds x 2944-3135, z 4752-4863; 10176 tiles as 5 rectangles.
+
+[[area]]
+name = "Invader"
+area_id = "area.invader"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 4752],
+    [2983, 4752],
+    [2983, 4799],
+    [2944, 4799],
+]
+
+[[area.polygons]]
+vertices = [
+    [3096, 4752],
+    [3135, 4752],
+    [3135, 4799],
+    [3096, 4799],
+]
+
+[[area.polygons]]
+vertices = [
+    [2944, 4808],
+    [2975, 4808],
+    [2975, 4863],
+    [2944, 4863],
+]
+
+[[area.polygons]]
+vertices = [
+    [2976, 4816],
+    [3007, 4816],
+    [3007, 4863],
+    [2976, 4863],
+]
+
+[[area.polygons]]
+vertices = [
+    [3072, 4817],
+    [3135, 4817],
+    [3135, 4863],
+    [3072, 4863],
+]

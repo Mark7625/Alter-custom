@@ -1,0 +1,16 @@
+# Guardians of the Rift music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Guardians of the Rift.
+# Bounds x 3520-3711, z 9483-9535; 10176 tiles as 1 rectangles.
+
+[[area]]
+name = "Guardians of the Rift"
+area_id = "area.guardians_of_the_rift"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3520, 9483],
+    [3711, 9483],
+    [3711, 9535],
+    [3520, 9535],
+]

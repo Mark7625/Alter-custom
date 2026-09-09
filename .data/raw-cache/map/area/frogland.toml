@@ -1,0 +1,16 @@
+# Frogland music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Frogland.
+# Bounds x 2432-2495, z 4736-4799; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Frogland"
+area_id = "area.frogland"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 4736],
+    [2495, 4736],
+    [2495, 4799],
+    [2432, 4799],
+]

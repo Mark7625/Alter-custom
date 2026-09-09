@@ -1,0 +1,32 @@
+# Bandos Battalion music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Bandos Battalion.
+# Bounds x 2816-2879, z 5312-5375; 3136 tiles as 3 rectangles.
+
+[[area]]
+name = "Bandos Battalion"
+area_id = "area.bandos_battalion"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 5312],
+    [2847, 5312],
+    [2847, 5375],
+    [2816, 5375],
+]
+
+[[area.polygons]]
+vertices = [
+    [2848, 5336],
+    [2855, 5336],
+    [2855, 5375],
+    [2848, 5375],
+]
+
+[[area.polygons]]
+vertices = [
+    [2856, 5344],
+    [2879, 5344],
+    [2879, 5375],
+    [2856, 5375],
+]

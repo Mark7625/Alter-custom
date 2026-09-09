@@ -1,0 +1,16 @@
+# Hells Bells music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Hells Bells.
+# Bounds x 2752-2815, z 3712-3834; 7872 tiles as 1 rectangles.
+
+[[area]]
+name = "Hells Bells"
+area_id = "area.hells_bells"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 3712],
+    [2815, 3712],
+    [2815, 3834],
+    [2752, 3834],
+]

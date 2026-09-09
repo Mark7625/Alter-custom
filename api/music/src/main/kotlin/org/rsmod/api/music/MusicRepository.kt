@@ -12,13 +12,25 @@ import org.rsmod.api.table.MusicRow
 public class MusicRepository @Inject constructor(private val random: GameRandom) {
     private lateinit var musicRows: Int2ObjectMap<Music>
     private lateinit var musicIds: Int2ObjectMap<Music>
+    private lateinit var jukebox: List<Music>
 
     private lateinit var modernAreas: Int2ObjectMap<List<Music>>
     private lateinit var classicAreas: Int2ObjectMap<Music>
 
     public fun forRow(row: MusicRow): Music? = musicRows[row.rowId]
 
+    public fun forRowId(rowId: Int): Music? = musicRows[rowId]
+
     public fun forId(id: Int): Music? = musicIds[id]
+
+    /**
+     * The tracks in the order the music tab lists them. The client builds the jukebox from
+     * `db_find(dbcol.music:hidden = 0)` and the comsub it sends when a track is clicked is the
+     * index into that result, so this is every non-hidden row by ascending row id.
+     */
+    public fun jukeboxTracks(): List<Music> = jukebox
+
+    public fun jukeboxTrack(index: Int): Music? = jukebox.getOrNull(index)
 
     public fun getModernArea(area: String): List<Music>? {
         return modernAreas[area.asRSCM(RSCMType.AREA)]
@@ -41,6 +53,8 @@ public class MusicRepository @Inject constructor(private val random: GameRandom)
         val musicSlots = mapMusicById(musicRows)
         this.musicIds = Int2ObjectOpenHashMap(musicSlots)
 
+        this.jukebox = musicRows.values.filterNot(Music::hidden).sortedBy(Music::rowId)
+
         val modernAreas = loadModernAreas(musicRows)
         this.modernAreas = Int2ObjectOpenHashMap(modernAreas)
 
@@ -55,19 +69,23 @@ public class MusicRepository @Inject constructor(private val random: GameRandom)
         for (row in rows) {
             val variable = row.variable
             var unlockVarp: String? = null
+            var unlockVarpIndex = 0
             var unlockBitpos = -1
             if (variable.isNotEmpty()) {
                 unlockVarp = unlockVarps.getOrNull(variable[0] - 1)
+                unlockVarpIndex = variable[0]
                 unlockBitpos = variable[1]
             }
             mapped[row.rowId] =
                 Music(
                     id = currId++,
+                    rowId = row.rowId,
                     displayName = row.displayname,
                     unlockHint = row.unlockhint,
                     duration = row.duration,
                     midi = row.midi,
                     unlockVarp = unlockVarp,
+                    unlockVarpIndex = unlockVarpIndex,
                     unlockBitpos = unlockBitpos,
                     hidden = row.hidden ?: false,
                     secondary = null,
@@ -88,7 +106,7 @@ public class MusicRepository @Inject constructor(private val random: GameRandom)
             val trackRows = it.tracks
             val musicList = ArrayList<Music>(trackRows.size)
             for (trackRow in trackRows) {
-                val music = musicRows[trackRow.rowId]?: continue
+                val music = musicRows[trackRow.rowId] ?: continue
                 musicList += music
             }
             val mappedList = grouped.computeIfAbsent(area) { mutableListOf() }

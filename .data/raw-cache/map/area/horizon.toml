@@ -1,0 +1,16 @@
+# Horizon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Horizon.
+# Bounds x 1920-1945, z 5030-5055; 676 tiles as 1 rectangles.
+
+[[area]]
+name = "Horizon"
+area_id = "area.horizon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1920, 5030],
+    [1945, 5030],
+    [1945, 5055],
+    [1920, 5055],
+]

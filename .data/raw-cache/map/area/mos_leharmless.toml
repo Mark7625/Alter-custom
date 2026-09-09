@@ -1,0 +1,162 @@
+# Mos Le'Harmless music music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: In the Brine; Life's a Beach!.
+# Bounds x 3648-3859, z 2924-3071; 23885 tiles as 24 rectangles.
+
+[[area]]
+name = "Mos Le'Harmless music"
+area_id = "area.mos_leharmless"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 2924],
+    [3775, 2924],
+    [3775, 3071],
+    [3648, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3840, 2980],
+    [3859, 2980],
+    [3859, 3071],
+    [3840, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3776, 3008],
+    [3789, 3008],
+    [3789, 3071],
+    [3776, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3836, 3008],
+    [3839, 3008],
+    [3839, 3071],
+    [3836, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3790, 3022],
+    [3790, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3835, 3022],
+    [3835, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3791, 3023],
+    [3791, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3834, 3023],
+    [3834, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3792, 3024],
+    [3792, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3833, 3024],
+    [3833, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3793, 3025],
+    [3793, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3832, 3025],
+    [3832, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3794, 3026],
+    [3794, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3831, 3026],
+    [3831, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3795, 3027],
+    [3795, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3830, 3027],
+    [3830, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3796, 3028],
+    [3796, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3829, 3028],
+    [3829, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3797, 3029],
+    [3797, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3828, 3029],
+    [3828, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3798, 3030],
+    [3798, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3827, 3030],
+    [3827, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3826, 3031],
+    [3826, 3071],
+]
+
+[[area.polygons]]
+vertices = [
+    [3799, 3032],
+    [3825, 3032],
+    [3825, 3071],
+    [3799, 3071],
+]

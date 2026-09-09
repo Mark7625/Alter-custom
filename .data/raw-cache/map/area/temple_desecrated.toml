@@ -1,0 +1,16 @@
+# Temple Desecrated music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Temple Desecrated.
+# Bounds x 4032-4159, z 4352-4479; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "Temple Desecrated"
+area_id = "area.temple_desecrated"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [4032, 4352],
+    [4159, 4352],
+    [4159, 4479],
+    [4032, 4479],
+]

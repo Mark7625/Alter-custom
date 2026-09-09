@@ -1,0 +1,16 @@
+# Dance of Death music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dance of Death.
+# Bounds x 2304-2367, z 5184-5247; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Dance of Death"
+area_id = "area.dance_of_death"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 5184],
+    [2367, 5184],
+    [2367, 5247],
+    [2304, 5247],
+]

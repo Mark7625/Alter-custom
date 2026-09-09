@@ -1,0 +1,262 @@
+# Marooned music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Marooned.
+# Bounds x 2887-3071, z 2698-5503; 5749 tiles as 39 rectangles.
+
+[[area]]
+name = "Marooned"
+area_id = "area.marooned"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2924, 2698],
+    [2926, 2698],
+    [2926, 2737],
+    [2924, 2737],
+]
+
+[[area.polygons]]
+vertices = [
+    [2921, 2699],
+    [2923, 2699],
+    [2923, 2735],
+    [2921, 2735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2927, 2699],
+    [2928, 2699],
+    [2928, 2736],
+    [2927, 2736],
+]
+
+[[area.polygons]]
+vertices = [
+    [2920, 2700],
+    [2920, 2735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2929, 2700],
+    [2930, 2700],
+    [2930, 2735],
+    [2929, 2735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2919, 2701],
+    [2919, 2734],
+]
+
+[[area.polygons]]
+vertices = [
+    [2931, 2701],
+    [2932, 2701],
+    [2932, 2735],
+    [2931, 2735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2918, 2702],
+    [2918, 2733],
+]
+
+[[area.polygons]]
+vertices = [
+    [2933, 2702],
+    [2933, 2734],
+]
+
+[[area.polygons]]
+vertices = [
+    [2917, 2703],
+    [2917, 2733],
+]
+
+[[area.polygons]]
+vertices = [
+    [2934, 2703],
+    [2934, 2733],
+]
+
+[[area.polygons]]
+vertices = [
+    [2915, 2704],
+    [2916, 2704],
+    [2916, 2734],
+    [2915, 2734],
+]
+
+[[area.polygons]]
+vertices = [
+    [2914, 2705],
+    [2914, 2737],
+]
+
+[[area.polygons]]
+vertices = [
+    [2935, 2705],
+    [2935, 2732],
+]
+
+[[area.polygons]]
+vertices = [
+    [2911, 2706],
+    [2913, 2706],
+    [2913, 2738],
+    [2911, 2738],
+]
+
+[[area.polygons]]
+vertices = [
+    [2892, 2707],
+    [2894, 2707],
+    [2894, 2739],
+    [2892, 2739],
+]
+
+[[area.polygons]]
+vertices = [
+    [2910, 2707],
+    [2910, 2740],
+]
+
+[[area.polygons]]
+vertices = [
+    [2890, 2708],
+    [2891, 2708],
+    [2891, 2723],
+    [2890, 2723],
+]
+
+[[area.polygons]]
+vertices = [
+    [2895, 2708],
+    [2901, 2708],
+    [2901, 2740],
+    [2895, 2740],
+]
+
+[[area.polygons]]
+vertices = [
+    [2907, 2708],
+    [2909, 2708],
+    [2909, 2740],
+    [2907, 2740],
+]
+
+[[area.polygons]]
+vertices = [
+    [2936, 2708],
+    [2936, 2729],
+]
+
+[[area.polygons]]
+vertices = [
+    [2889, 2709],
+    [2889, 2722],
+]
+
+[[area.polygons]]
+vertices = [
+    [2902, 2709],
+    [2906, 2709],
+    [2906, 2740],
+    [2902, 2740],
+]
+
+[[area.polygons]]
+vertices = [
+    [2888, 2710],
+    [2888, 2721],
+]
+
+[[area.polygons]]
+vertices = [
+    [2937, 2711],
+    [2937, 2728],
+]
+
+[[area.polygons]]
+vertices = [
+    [2938, 2714],
+    [2938, 2724],
+]
+
+[[area.polygons]]
+vertices = [
+    [2887, 2715],
+    [2887, 2720],
+]
+
+[[area.polygons]]
+vertices = [
+    [2939, 2717],
+    [2939, 2721],
+]
+
+[[area.polygons]]
+vertices = [
+    [2891, 2724],
+    [2891, 2738],
+]
+
+[[area.polygons]]
+vertices = [
+    [2890, 2731],
+    [2890, 2737],
+]
+
+[[area.polygons]]
+vertices = [
+    [2889, 2733],
+    [2889, 2736],
+]
+
+[[area.polygons]]
+vertices = [
+    [2915, 2735],
+    [2915, 2736],
+]
+
+[[area.polygons]]
+vertices = [
+    [2922, 2736],
+    [2923, 2736],
+]
+
+[[area.polygons]]
+vertices = [[2929, 2736]]
+
+[[area.polygons]]
+vertices = [[2927, 2737]]
+
+[[area.polygons]]
+vertices = [
+    [2911, 2739],
+    [2912, 2739],
+]
+
+[[area.polygons]]
+vertices = [
+    [2893, 2740],
+    [2894, 2740],
+]
+
+[[area.polygons]]
+vertices = [
+    [2899, 2741],
+    [2904, 2741],
+]
+
+[[area.polygons]]
+vertices = [
+    [3008, 5440],
+    [3071, 5440],
+    [3071, 5503],
+    [3008, 5503],
+]

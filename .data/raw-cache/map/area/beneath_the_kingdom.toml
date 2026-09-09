@@ -1,0 +1,32 @@
+# Beneath the Kingdom music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Beneath the Kingdom.
+# Bounds x 1408-1791, z 9856-10111; 24576 tiles as 3 rectangles.
+
+[[area]]
+name = "Beneath the Kingdom"
+area_id = "area.beneath_the_kingdom"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1408, 9856],
+    [1471, 9856],
+    [1471, 9919],
+    [1408, 9919],
+]
+
+[[area.polygons]]
+vertices = [
+    [1600, 9984],
+    [1791, 9984],
+    [1791, 10047],
+    [1600, 10047],
+]
+
+[[area.polygons]]
+vertices = [
+    [1600, 10048],
+    [1727, 10048],
+    [1727, 10111],
+    [1600, 10111],
+]

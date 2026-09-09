@@ -1,0 +1,306 @@
+# Burning Desire music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Burning Desire.
+# Bounds x 1240-1359, z 3757-3871; 11559 tiles as 48 rectangles.
+
+[[area]]
+name = "Burning Desire"
+area_id = "area.burning_desire"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1338, 3757],
+    [1343, 3757],
+    [1343, 3871],
+    [1338, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1337, 3758],
+    [1337, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1336, 3759],
+    [1336, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1335, 3760],
+    [1335, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1334, 3761],
+    [1334, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1333, 3762],
+    [1333, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1332, 3763],
+    [1332, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1331, 3764],
+    [1331, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1330, 3765],
+    [1330, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1329, 3766],
+    [1329, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1328, 3767],
+    [1328, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1303, 3768],
+    [1313, 3768],
+    [1313, 3871],
+    [1303, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1327, 3768],
+    [1327, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1302, 3769],
+    [1302, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1314, 3769],
+    [1314, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1326, 3769],
+    [1326, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1301, 3770],
+    [1301, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1315, 3770],
+    [1315, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1325, 3770],
+    [1325, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1300, 3771],
+    [1300, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1316, 3771],
+    [1316, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1324, 3771],
+    [1324, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1263, 3772],
+    [1299, 3772],
+    [1299, 3871],
+    [1263, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1317, 3772],
+    [1323, 3772],
+    [1323, 3871],
+    [1317, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1262, 3773],
+    [1262, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1261, 3774],
+    [1261, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1260, 3775],
+    [1260, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1259, 3776],
+    [1259, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1258, 3777],
+    [1258, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1257, 3778],
+    [1257, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1256, 3779],
+    [1256, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1255, 3780],
+    [1255, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1254, 3781],
+    [1254, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1253, 3782],
+    [1253, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1252, 3783],
+    [1252, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1251, 3784],
+    [1251, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1250, 3785],
+    [1250, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1249, 3786],
+    [1249, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1248, 3787],
+    [1248, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1247, 3788],
+    [1247, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1246, 3789],
+    [1246, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1245, 3790],
+    [1245, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1244, 3791],
+    [1244, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1243, 3792],
+    [1243, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1242, 3793],
+    [1242, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1241, 3794],
+    [1241, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1240, 3795],
+    [1240, 3871],
+]
+
+[[area.polygons]]
+vertices = [
+    [1344, 3798],
+    [1359, 3798],
+    [1359, 3871],
+    [1344, 3871],
+]

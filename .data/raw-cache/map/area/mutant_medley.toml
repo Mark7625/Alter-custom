@@ -1,0 +1,16 @@
+# Mutant Medley music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Mutant Medley.
+# Bounds x 3008-3071, z 4352-4415; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Mutant Medley"
+area_id = "area.mutant_medley"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 4352],
+    [3071, 4352],
+    [3071, 4415],
+    [3008, 4415],
+]

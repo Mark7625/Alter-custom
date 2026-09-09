@@ -1,0 +1,16 @@
+# Revenants music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Revenants.
+# Bounds x 3136-3263, z 10048-10239; 24576 tiles as 1 rectangles.
+
+[[area]]
+name = "Revenants"
+area_id = "area.revenants"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 10048],
+    [3263, 10048],
+    [3263, 10239],
+    [3136, 10239],
+]

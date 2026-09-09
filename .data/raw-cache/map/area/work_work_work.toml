@@ -1,0 +1,181 @@
+# Work Work Work music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Work Work Work.
+# Bounds x 2635-2660, z 3207-3233; 455 tiles as 27 rectangles.
+
+[[area]]
+name = "Work Work Work"
+area_id = "area.work_work_work"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2648, 3207],
+    [2649, 3207],
+    [2649, 3212],
+    [2648, 3212],
+]
+
+[[area.polygons]]
+vertices = [
+    [2646, 3208],
+    [2647, 3208],
+    [2647, 3212],
+    [2646, 3212],
+]
+
+[[area.polygons]]
+vertices = [
+    [2650, 3208],
+    [2656, 3208],
+    [2656, 3212],
+    [2650, 3212],
+]
+
+[[area.polygons]]
+vertices = [
+    [2645, 3209],
+    [2645, 3213],
+]
+
+[[area.polygons]]
+vertices = [
+    [2657, 3209],
+    [2657, 3226],
+]
+
+[[area.polygons]]
+vertices = [
+    [2638, 3210],
+    [2644, 3210],
+    [2644, 3214],
+    [2638, 3214],
+]
+
+[[area.polygons]]
+vertices = [
+    [2658, 3210],
+    [2658, 3225],
+]
+
+[[area.polygons]]
+vertices = [
+    [2659, 3211],
+    [2659, 3225],
+]
+
+[[area.polygons]]
+vertices = [
+    [2637, 3213],
+    [2637, 3231],
+]
+
+[[area.polygons]]
+vertices = [
+    [2652, 3213],
+    [2656, 3213],
+]
+
+[[area.polygons]]
+vertices = [
+    [2636, 3214],
+    [2636, 3230],
+]
+
+[[area.polygons]]
+vertices = [
+    [2653, 3214],
+    [2656, 3214],
+]
+
+[[area.polygons]]
+vertices = [
+    [2635, 3215],
+    [2635, 3229],
+]
+
+[[area.polygons]]
+vertices = [
+    [2638, 3215],
+    [2643, 3215],
+    [2643, 3231],
+    [2638, 3231],
+]
+
+[[area.polygons]]
+vertices = [
+    [2654, 3215],
+    [2656, 3215],
+]
+
+[[area.polygons]]
+vertices = [
+    [2655, 3216],
+    [2656, 3216],
+    [2656, 3227],
+    [2655, 3227],
+]
+
+[[area.polygons]]
+vertices = [
+    [2654, 3221],
+    [2654, 3230],
+]
+
+[[area.polygons]]
+vertices = [
+    [2644, 3222],
+    [2644, 3233],
+]
+
+[[area.polygons]]
+vertices = [
+    [2653, 3222],
+    [2653, 3230],
+]
+
+[[area.polygons]]
+vertices = [
+    [2645, 3223],
+    [2645, 3233],
+]
+
+[[area.polygons]]
+vertices = [
+    [2652, 3223],
+    [2652, 3232],
+]
+
+[[area.polygons]]
+vertices = [
+    [2646, 3224],
+    [2651, 3224],
+    [2651, 3232],
+    [2646, 3232],
+]
+
+[[area.polygons]]
+vertices = [[2660, 3224]]
+
+[[area.polygons]]
+vertices = [
+    [2655, 3228],
+    [2655, 3229],
+]
+
+[[area.polygons]]
+vertices = [
+    [2639, 3232],
+    [2643, 3232],
+]
+
+[[area.polygons]]
+vertices = [
+    [2640, 3233],
+    [2643, 3233],
+]
+
+[[area.polygons]]
+vertices = [
+    [2646, 3233],
+    [2647, 3233],
+]

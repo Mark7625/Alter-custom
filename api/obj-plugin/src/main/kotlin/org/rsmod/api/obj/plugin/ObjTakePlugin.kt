@@ -1,9 +1,11 @@
 package org.rsmod.api.obj.plugin
 
 import dev.openrune.ServerCacheManager
+import dev.openrune.types.ItemServerType
 import jakarta.inject.Inject
 import org.rsmod.api.config.Constants
 import org.rsmod.api.invtx.invAdd
+import org.rsmod.api.player.hook.PlayerObjTakeRedirector
 import org.rsmod.api.player.hook.PlayerObjTakeValidator
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
@@ -21,6 +23,7 @@ public class ObjTakePlugin
 constructor(
     private val repo: ObjRepository,
     private val takeValidator: PlayerObjTakeValidator,
+    private val takeRedirector: PlayerObjTakeRedirector,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         onDefaultOpObj3 { triggerTake(it.obj) }
@@ -33,33 +36,44 @@ constructor(
             mes(denial)
             return
         }
-        if (!player.hasInvSpace(obj)) {
+        val redirected = takeRedirector.find(player, obj, type) != null
+        if (!redirected && !player.hasInvSpace(obj)) {
             player.mes(Constants.dm_take_invspace)
             return
         }
         player.resetAnim()
         if (player.coords != obj.coords) {
-            takeFar(obj)
+            takeFar(obj, type)
         } else {
             soundSynth("synth.pick2")
-            player.takeClose(obj)
+            player.takeClose(obj, type)
         }
     }
 
-    private suspend fun ProtectedAccess.takeFar(obj: Obj) {
+    private suspend fun ProtectedAccess.takeFar(obj: Obj, type: ItemServerType) {
         delay(1)
         anim("seq.human_pickuptable")
         soundSynth("synth.pick2")
-        player.takeClose(obj)
+        player.takeClose(obj, type)
     }
 
-    private fun Player.takeClose(obj: Obj) {
+    private fun Player.takeClose(obj: Obj, type: ItemServerType) {
+        val redirect = takeRedirector.find(this, obj, type)
+        val take = transaction(obj)
+        if (redirect == null && take.failure) {
+            mes(Constants.dm_take_invspace)
+            return
+        }
         val removed = repo.del(obj)
         if (!removed) {
             mes(Constants.dm_take_taken)
             return
         }
-        val take = transaction(obj)
+        if (redirect != null && redirect.take(this, obj, type)) {
+            return
+        }
+        // The redirect container refused after all; fall back to the inventory transaction that
+        // was prepared before the obj left the ground.
         if (take.failure) {
             mes(Constants.dm_take_invspace)
         } else {

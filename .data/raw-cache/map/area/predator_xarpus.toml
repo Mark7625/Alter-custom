@@ -1,0 +1,16 @@
+# Predator Xarpus music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Predator Xarpus (plus xarpus_combat from wiki polygons sharing this footprint).
+# Bounds x 3136-3199, z 4352-4415; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Predator Xarpus"
+area_id = "area.predator_xarpus"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 4352],
+    [3199, 4352],
+    [3199, 4415],
+    [3136, 4415],
+]

@@ -1,0 +1,31 @@
+[[area]]
+name = "Barbarian Village"
+area_id = "area.barbarian_village"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3060, 3395],
+    [3118, 3395],
+    [3118, 3450],
+    [3060, 3450],
+]
+
+# Extension traced from the OSRS wiki music map (179 tiles).
+
+[[area.polygons]]
+vertices = [
+    [3068, 3451],
+    [3102, 3451],
+    [3102, 3455],
+    [3068, 3455],
+]
+
+[[area.polygons]]
+vertices = [
+    [3067, 3453],
+    [3067, 3455],
+]
+
+[[area.polygons]]
+vertices = [[3066, 3455]]

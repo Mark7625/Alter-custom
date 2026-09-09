@@ -1,0 +1,32 @@
+# Insect Queen music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Insect Queen.
+# Bounds x 3264-3519, z 9472-9599; 16384 tiles as 3 rectangles.
+
+[[area]]
+name = "Insect Queen"
+area_id = "area.insect_queen"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3264, 9472],
+    [3391, 9472],
+    [3391, 9535],
+    [3264, 9535],
+]
+
+[[area.polygons]]
+vertices = [
+    [3456, 9472],
+    [3519, 9472],
+    [3519, 9535],
+    [3456, 9535],
+]
+
+[[area.polygons]]
+vertices = [
+    [3264, 9536],
+    [3327, 9536],
+    [3327, 9599],
+    [3264, 9599],
+]

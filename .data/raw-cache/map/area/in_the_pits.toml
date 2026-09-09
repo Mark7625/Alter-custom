@@ -1,0 +1,264 @@
+# In the Pits music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: In the Pits.
+# Bounds x 2432-2943, z 5120-9599; 7314 tiles as 39 rectangles.
+
+[[area]]
+name = "In the Pits"
+area_id = "area.in_the_pits"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2456, 5120],
+    [2457, 5120],
+    [2457, 5183],
+    [2456, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2435, 5121],
+    [2436, 5121],
+    [2436, 5183],
+    [2435, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2449, 5121],
+    [2451, 5121],
+    [2451, 5183],
+    [2449, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2455, 5121],
+    [2455, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2458, 5121],
+    [2459, 5121],
+    [2459, 5183],
+    [2458, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2434, 5122],
+    [2434, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2437, 5122],
+    [2437, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2447, 5122],
+    [2448, 5122],
+    [2448, 5183],
+    [2447, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2452, 5122],
+    [2454, 5122],
+    [2454, 5183],
+    [2452, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2460, 5122],
+    [2464, 5122],
+    [2464, 5183],
+    [2460, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5123],
+    [2433, 5123],
+    [2433, 5183],
+    [2432, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2438, 5123],
+    [2446, 5123],
+    [2446, 5183],
+    [2438, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2465, 5133],
+    [2465, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2466, 5134],
+    [2466, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2467, 5135],
+    [2467, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2468, 5136],
+    [2468, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2469, 5137],
+    [2469, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2470, 5138],
+    [2470, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2473, 5138],
+    [2474, 5138],
+    [2474, 5183],
+    [2473, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2471, 5139],
+    [2472, 5139],
+    [2472, 5183],
+    [2471, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2475, 5139],
+    [2477, 5139],
+    [2477, 5183],
+    [2475, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2478, 5140],
+    [2478, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2479, 5141],
+    [2479, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2480, 5142],
+    [2480, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2481, 5143],
+    [2481, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2482, 5144],
+    [2482, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2483, 5145],
+    [2483, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2484, 5146],
+    [2484, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2485, 5147],
+    [2485, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2486, 5148],
+    [2488, 5148],
+    [2488, 5183],
+    [2486, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2489, 5149],
+    [2489, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2490, 5150],
+    [2490, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2491, 5151],
+    [2491, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2492, 5152],
+    [2492, 5162],
+]
+
+[[area.polygons]]
+vertices = [
+    [2493, 5153],
+    [2493, 5161],
+]
+
+[[area.polygons]]
+vertices = [[2494, 5157]]
+
+[[area.polygons]]
+vertices = [
+    [2492, 5172],
+    [2492, 5178],
+]
+
+[[area.polygons]]
+vertices = [[2493, 5174]]
+
+[[area.polygons]]
+vertices = [
+    [2880, 9536],
+    [2943, 9536],
+    [2943, 9599],
+    [2880, 9599],
+]

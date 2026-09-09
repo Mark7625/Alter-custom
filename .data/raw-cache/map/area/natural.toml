@@ -1,0 +1,102 @@
+# Natural music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Natural.
+# Bounds x 2016-3450, z 3331-5055; 4326 tiles as 14 rectangles.
+
+[[area]]
+name = "Natural"
+area_id = "area.natural"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3435, 3331],
+    [3446, 3331],
+    [3446, 3343],
+    [3435, 3343],
+]
+
+[[area.polygons]]
+vertices = [
+    [3434, 3332],
+    [3434, 3342],
+]
+
+[[area.polygons]]
+vertices = [
+    [3447, 3332],
+    [3447, 3342],
+]
+
+[[area.polygons]]
+vertices = [
+    [3433, 3333],
+    [3433, 3341],
+]
+
+[[area.polygons]]
+vertices = [
+    [3448, 3333],
+    [3448, 3341],
+]
+
+[[area.polygons]]
+vertices = [
+    [3432, 3334],
+    [3432, 3340],
+]
+
+[[area.polygons]]
+vertices = [
+    [3449, 3334],
+    [3449, 3340],
+]
+
+[[area.polygons]]
+vertices = [
+    [3450, 3335],
+    [3450, 3339],
+]
+
+[[area.polygons]]
+vertices = [
+    [3436, 3344],
+    [3444, 3344],
+]
+
+[[area.polygons]]
+vertices = [
+    [3437, 3345],
+    [3442, 3345],
+]
+
+[[area.polygons]]
+vertices = [
+    [2016, 5024],
+    [2047, 5024],
+    [2047, 5055],
+    [2016, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2208, 5024],
+    [2239, 5024],
+    [2239, 5055],
+    [2208, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2272, 5024],
+    [2303, 5024],
+    [2303, 5055],
+    [2272, 5055],
+]
+
+[[area.polygons]]
+vertices = [
+    [2336, 5024],
+    [2367, 5024],
+    [2367, 5055],
+    [2336, 5055],
+]

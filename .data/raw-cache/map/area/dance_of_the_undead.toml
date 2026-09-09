@@ -1,0 +1,270 @@
+# Dance of the Undead music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dance of the Undead.
+# Bounds x 3514-3584, z 3257-3341; 4153 tiles as 38 rectangles.
+
+[[area]]
+name = "Dance of the Undead"
+area_id = "area.dance_of_the_undead"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3530, 3257],
+    [3530, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3529, 3258],
+    [3529, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3528, 3259],
+    [3528, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3527, 3260],
+    [3527, 3272],
+]
+
+[[area.polygons]]
+vertices = [
+    [3531, 3260],
+    [3532, 3260],
+    [3532, 3328],
+    [3531, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3526, 3261],
+    [3526, 3270],
+]
+
+[[area.polygons]]
+vertices = [
+    [3533, 3261],
+    [3535, 3261],
+    [3535, 3328],
+    [3533, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3525, 3262],
+    [3525, 3268],
+]
+
+[[area.polygons]]
+vertices = [
+    [3536, 3262],
+    [3540, 3262],
+    [3540, 3328],
+    [3536, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3545, 3262],
+    [3548, 3262],
+    [3548, 3328],
+    [3545, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3556, 3262],
+    [3558, 3262],
+    [3558, 3328],
+    [3556, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3563, 3262],
+    [3564, 3262],
+    [3564, 3328],
+    [3563, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3524, 3263],
+    [3524, 3266],
+]
+
+[[area.polygons]]
+vertices = [
+    [3541, 3263],
+    [3544, 3263],
+    [3544, 3328],
+    [3541, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3549, 3263],
+    [3550, 3263],
+    [3550, 3328],
+    [3549, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3554, 3263],
+    [3555, 3263],
+    [3555, 3328],
+    [3554, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3559, 3263],
+    [3562, 3263],
+    [3562, 3328],
+    [3559, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3565, 3263],
+    [3566, 3263],
+    [3566, 3328],
+    [3565, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3570, 3263],
+    [3572, 3263],
+    [3572, 3328],
+    [3570, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3579, 3263],
+    [3580, 3263],
+    [3580, 3328],
+    [3579, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3551, 3264],
+    [3553, 3264],
+    [3553, 3328],
+    [3551, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3567, 3264],
+    [3569, 3264],
+    [3569, 3328],
+    [3567, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3573, 3264],
+    [3578, 3264],
+    [3578, 3328],
+    [3573, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3581, 3264],
+    [3584, 3264],
+    [3584, 3328],
+    [3581, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3527, 3288],
+    [3527, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3526, 3290],
+    [3526, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3525, 3292],
+    [3525, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3524, 3294],
+    [3524, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3523, 3314],
+    [3523, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3522, 3315],
+    [3522, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [3521, 3316],
+    [3521, 3329],
+]
+
+[[area.polygons]]
+vertices = [
+    [3520, 3317],
+    [3520, 3330],
+]
+
+[[area.polygons]]
+vertices = [
+    [3519, 3318],
+    [3519, 3336],
+]
+
+[[area.polygons]]
+vertices = [
+    [3518, 3319],
+    [3518, 3340],
+]
+
+[[area.polygons]]
+vertices = [
+    [3517, 3320],
+    [3517, 3341],
+]
+
+[[area.polygons]]
+vertices = [
+    [3516, 3321],
+    [3516, 3341],
+]
+
+[[area.polygons]]
+vertices = [
+    [3515, 3322],
+    [3515, 3341],
+]
+
+[[area.polygons]]
+vertices = [
+    [3514, 3323],
+    [3514, 3341],
+]

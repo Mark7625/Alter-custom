@@ -1,0 +1,24 @@
+# Below the Conch music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Below the Conch.
+# Bounds x 3072-3263, z 8832-8895; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Below the Conch"
+area_id = "area.below_the_conch"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3072, 8832],
+    [3135, 8832],
+    [3135, 8895],
+    [3072, 8895],
+]
+
+[[area.polygons]]
+vertices = [
+    [3200, 8832],
+    [3263, 8832],
+    [3263, 8895],
+    [3200, 8895],
+]

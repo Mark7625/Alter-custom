@@ -1,0 +1,211 @@
+# Fenkenstrain's Refrain music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Fenkenstrain's Refrain.
+# Bounds x 3535-3562, z 3536-3567; 555 tiles as 31 rectangles.
+
+[[area]]
+name = "Fenkenstrain's Refrain"
+area_id = "area.fenkenstrains_refrain"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3547, 3536],
+    [3549, 3536],
+    [3549, 3542],
+    [3547, 3542],
+]
+
+[[area.polygons]]
+vertices = [
+    [3546, 3537],
+    [3546, 3541],
+]
+
+[[area.polygons]]
+vertices = [
+    [3550, 3537],
+    [3550, 3541],
+]
+
+[[area.polygons]]
+vertices = [
+    [3551, 3538],
+    [3551, 3540],
+]
+
+[[area.polygons]]
+vertices = [
+    [3539, 3540],
+    [3541, 3540],
+    [3541, 3545],
+    [3539, 3545],
+]
+
+[[area.polygons]]
+vertices = [
+    [3555, 3540],
+    [3557, 3540],
+    [3557, 3561],
+    [3555, 3561],
+]
+
+[[area.polygons]]
+vertices = [
+    [3538, 3541],
+    [3538, 3544],
+]
+
+[[area.polygons]]
+vertices = [
+    [3542, 3541],
+    [3542, 3561],
+]
+
+[[area.polygons]]
+vertices = [
+    [3554, 3541],
+    [3554, 3563],
+]
+
+[[area.polygons]]
+vertices = [
+    [3558, 3541],
+    [3558, 3544],
+]
+
+[[area.polygons]]
+vertices = [
+    [3543, 3542],
+    [3543, 3564],
+]
+
+[[area.polygons]]
+vertices = [
+    [3559, 3542],
+    [3559, 3543],
+]
+
+[[area.polygons]]
+vertices = [
+    [3548, 3543],
+    [3549, 3543],
+    [3549, 3567],
+    [3548, 3567],
+]
+
+[[area.polygons]]
+vertices = [
+    [3547, 3544],
+    [3547, 3567],
+]
+
+[[area.polygons]]
+vertices = [
+    [3553, 3544],
+    [3553, 3564],
+]
+
+[[area.polygons]]
+vertices = [
+    [3544, 3545],
+    [3546, 3545],
+    [3546, 3565],
+    [3544, 3565],
+]
+
+[[area.polygons]]
+vertices = [
+    [3550, 3545],
+    [3552, 3545],
+    [3552, 3566],
+    [3550, 3566],
+]
+
+[[area.polygons]]
+vertices = [
+    [3540, 3546],
+    [3541, 3546],
+    [3541, 3561],
+    [3540, 3561],
+]
+
+[[area.polygons]]
+vertices = [
+    [3536, 3549],
+    [3539, 3549],
+    [3539, 3557],
+    [3536, 3557],
+]
+
+[[area.polygons]]
+vertices = [
+    [3558, 3549],
+    [3560, 3549],
+    [3560, 3557],
+    [3558, 3557],
+]
+
+[[area.polygons]]
+vertices = [
+    [3561, 3550],
+    [3561, 3557],
+]
+
+[[area.polygons]]
+vertices = [
+    [3535, 3552],
+    [3535, 3557],
+]
+
+[[area.polygons]]
+vertices = [
+    [3562, 3553],
+    [3562, 3556],
+]
+
+[[area.polygons]]
+vertices = [
+    [3539, 3558],
+    [3539, 3562],
+]
+
+[[area.polygons]]
+vertices = [
+    [3558, 3558],
+    [3558, 3561],
+]
+
+[[area.polygons]]
+vertices = [
+    [3538, 3559],
+    [3538, 3561],
+]
+
+[[area.polygons]]
+vertices = [
+    [3559, 3560],
+    [3559, 3561],
+]
+
+[[area.polygons]]
+vertices = [[3540, 3562]]
+
+[[area.polygons]]
+vertices = [
+    [3556, 3562],
+    [3557, 3562],
+]
+
+[[area.polygons]]
+vertices = [
+    [3545, 3566],
+    [3546, 3566],
+    [3546, 3567],
+    [3545, 3567],
+]
+
+[[area.polygons]]
+vertices = [
+    [3550, 3567],
+    [3551, 3567],
+]

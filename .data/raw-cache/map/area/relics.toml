@@ -1,0 +1,32 @@
+# Relics music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Relics.
+# Bounds x 2240-3583, z 9664-10495; 16384 tiles as 3 rectangles.
+
+[[area]]
+name = "Relics"
+area_id = "area.relics"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2816, 9664],
+    [2879, 9664],
+    [2879, 9727],
+    [2816, 9727],
+]
+
+[[area.polygons]]
+vertices = [
+    [3520, 10368],
+    [3583, 10368],
+    [3583, 10495],
+    [3520, 10495],
+]
+
+[[area.polygons]]
+vertices = [
+    [2240, 10432],
+    [2303, 10432],
+    [2303, 10495],
+    [2240, 10495],
+]

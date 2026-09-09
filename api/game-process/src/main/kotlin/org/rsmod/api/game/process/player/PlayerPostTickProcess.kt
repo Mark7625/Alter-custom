@@ -3,6 +3,7 @@ package org.rsmod.api.game.process.player
 import jakarta.inject.Inject
 import org.rsmod.api.account.autosave.PlayerAutosaveOrchestrator
 import org.rsmod.api.game.process.GameLifecycle
+import org.rsmod.api.game.process.npc.hunt.AggressionTolerance
 import org.rsmod.api.player.forceDisconnect
 import org.rsmod.api.player.hook.PlayerPostTickHook
 import org.rsmod.api.player.output.MiscOutput
@@ -30,6 +31,7 @@ constructor(
     private val exceptionHandler: GameExceptionHandler,
     private val playerAutosave: PlayerAutosaveOrchestrator,
     private val postTickHooks: Set<PlayerPostTickHook>,
+    private val tolerance: AggressionTolerance,
 ) {
     public fun process() {
         computeSharedBuffers()
@@ -104,6 +106,7 @@ constructor(
     }
 
     private fun Player.processPostTickHooks() {
+        tolerance.tick(this, currentMapClock)
         for (hook in postTickHooks) {
             hook.onPostTick(this)
         }

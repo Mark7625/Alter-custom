@@ -1,0 +1,16 @@
+# The Guardian of Tapoyauik music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Guardian of Tapoyauik.
+# Bounds x 1344-1407, z 4480-4543; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Guardian of Tapoyauik"
+area_id = "area.the_guardian_of_tapoyauik"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1344, 4480],
+    [1407, 4480],
+    [1407, 4543],
+    [1344, 4543],
+]

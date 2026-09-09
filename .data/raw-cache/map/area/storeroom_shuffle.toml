@@ -1,0 +1,16 @@
+# Storeroom Shuffle music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Storeroom Shuffle.
+# Bounds x 2752-2815, z 4224-4287; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Storeroom Shuffle"
+area_id = "area.storeroom_shuffle"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2752, 4224],
+    [2815, 4224],
+    [2815, 4287],
+    [2752, 4287],
+]

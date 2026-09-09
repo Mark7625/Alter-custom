@@ -1,0 +1,16 @@
+# The Consortium music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Consortium.
+# Bounds x 1984-2047, z 4480-4543; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Consortium"
+area_id = "area.the_consortium"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1984, 4480],
+    [2047, 4480],
+    [2047, 4543],
+    [1984, 4543],
+]

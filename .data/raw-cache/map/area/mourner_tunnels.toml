@@ -1,3 +1,6 @@
+# Regenerated as rectangles from the OSRS wiki music map: 4096 tiles moved to
+# neighbouring music areas.
+
 [[area]]
 name = "Mourner Tunnels"
 area_id = "area.mourner_tunnels"
@@ -5,8 +8,8 @@ levels = [0, 1, 2, 3]
 
 [[area.polygons]]
 vertices = [
-    [1856, 4608],
+    [1920, 4608],
     [2047, 4608],
     [2047, 4671],
-    [1856, 4671],
+    [1920, 4671],
 ]

@@ -1,0 +1,50 @@
+# Magic Magic Magic music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Magic Magic Magic.
+# Bounds x 2644-2654, z 3213-3223; 30 tiles as 10 rectangles.
+
+[[area]]
+name = "Magic Magic Magic"
+area_id = "area.magic_magic_magic"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2646, 3213],
+    [2651, 3213],
+]
+
+[[area.polygons]]
+vertices = [[2645, 3214]]
+
+[[area.polygons]]
+vertices = [[2652, 3214]]
+
+[[area.polygons]]
+vertices = [
+    [2644, 3215],
+    [2644, 3221],
+]
+
+[[area.polygons]]
+vertices = [[2653, 3215]]
+
+[[area.polygons]]
+vertices = [
+    [2654, 3216],
+    [2654, 3220],
+]
+
+[[area.polygons]]
+vertices = [[2653, 3221]]
+
+[[area.polygons]]
+vertices = [[2645, 3222]]
+
+[[area.polygons]]
+vertices = [[2652, 3222]]
+
+[[area.polygons]]
+vertices = [
+    [2646, 3223],
+    [2651, 3223],
+]

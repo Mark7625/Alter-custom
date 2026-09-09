@@ -1,0 +1,16 @@
+# Itsy Bitsy... music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Itsy Bitsy....
+# Bounds x 3648-3711, z 9792-9855; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Itsy Bitsy..."
+area_id = "area.itsy_bitsy"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3648, 9792],
+    [3711, 9792],
+    [3711, 9855],
+    [3648, 9855],
+]

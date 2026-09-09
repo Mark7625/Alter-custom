@@ -1,0 +1,89 @@
+# Victory is Mine music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Victory is Mine.
+# Bounds x 3158-3181, z 9752-9764; 234 tiles as 12 rectangles.
+
+[[area]]
+name = "Victory is Mine"
+area_id = "area.victory_is_mine"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3166, 9752],
+    [3170, 9752],
+    [3170, 9764],
+    [3166, 9764],
+]
+
+[[area.polygons]]
+vertices = [
+    [3162, 9753],
+    [3165, 9753],
+    [3165, 9763],
+    [3162, 9763],
+]
+
+[[area.polygons]]
+vertices = [
+    [3171, 9753],
+    [3173, 9753],
+    [3173, 9763],
+    [3171, 9763],
+]
+
+[[area.polygons]]
+vertices = [
+    [3178, 9753],
+    [3179, 9753],
+    [3179, 9763],
+    [3178, 9763],
+]
+
+[[area.polygons]]
+vertices = [
+    [3161, 9754],
+    [3161, 9762],
+]
+
+[[area.polygons]]
+vertices = [
+    [3174, 9754],
+    [3174, 9762],
+]
+
+[[area.polygons]]
+vertices = [
+    [3177, 9754],
+    [3177, 9762],
+]
+
+[[area.polygons]]
+vertices = [
+    [3180, 9754],
+    [3180, 9762],
+]
+
+[[area.polygons]]
+vertices = [
+    [3159, 9755],
+    [3160, 9755],
+    [3160, 9761],
+    [3159, 9761],
+]
+
+[[area.polygons]]
+vertices = [
+    [3175, 9755],
+    [3176, 9755],
+    [3176, 9761],
+    [3175, 9761],
+]
+
+[[area.polygons]]
+vertices = [
+    [3158, 9756],
+    [3158, 9760],
+]
+
+[[area.polygons]]
+vertices = [[3181, 9758]]

@@ -1,0 +1,48 @@
+# The Terrible Tunnels music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Terrible Tunnels.
+# Bounds x 3512-3647, z 9664-9827; 12864 tiles as 5 rectangles.
+
+[[area]]
+name = "The Terrible Tunnels"
+area_id = "area.the_terrible_tunnels"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3600, 9664],
+    [3647, 9664],
+    [3647, 9680],
+    [3600, 9680],
+]
+
+[[area.polygons]]
+vertices = [
+    [3600, 9681],
+    [3615, 9681],
+    [3615, 9791],
+    [3600, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 9728],
+    [3599, 9728],
+    [3599, 9791],
+    [3512, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3616, 9728],
+    [3647, 9728],
+    [3647, 9791],
+    [3616, 9791],
+]
+
+[[area.polygons]]
+vertices = [
+    [3512, 9792],
+    [3583, 9792],
+    [3583, 9827],
+    [3512, 9827],
+]

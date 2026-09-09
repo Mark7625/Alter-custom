@@ -1,0 +1,273 @@
+# Yanille and its surroundings: the walled city, the Watchtower, the Nightmare Zone and the
+# agility dungeon entrance house north of the walls. Stops one tile short of the Yanille Chain
+# islands (yanille_chain.toml) and of Port Khazard to the north. Music area for "Big Chords" and
+# "Magic Dance".
+#
+# Regenerated as rectangles from the OSRS wiki music map: 2436 tiles moved to
+# neighbouring music areas and 793 tiles were added.
+
+[[area]]
+name = "Yanille"
+area_id = "area.yanille"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2615, 3062],
+    [2632, 3062],
+]
+
+[[area.polygons]]
+vertices = [
+    [2617, 3063],
+    [2632, 3063],
+]
+
+[[area.polygons]]
+vertices = [
+    [2618, 3064],
+    [2632, 3064],
+]
+
+[[area.polygons]]
+vertices = [
+    [2619, 3065],
+    [2632, 3065],
+]
+
+[[area.polygons]]
+vertices = [
+    [2620, 3066],
+    [2632, 3066],
+    [2632, 3067],
+    [2620, 3067],
+]
+
+[[area.polygons]]
+vertices = [
+    [2621, 3068],
+    [2632, 3068],
+]
+
+[[area.polygons]]
+vertices = [
+    [2622, 3069],
+    [2632, 3069],
+    [2632, 3155],
+    [2622, 3155],
+]
+
+[[area.polygons]]
+vertices = [
+    [2582, 3071],
+    [2589, 3071],
+    [2589, 3135],
+    [2582, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2581, 3072],
+    [2581, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2590, 3072],
+    [2590, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2541, 3073],
+    [2580, 3073],
+    [2580, 3110],
+    [2541, 3110],
+]
+
+[[area.polygons]]
+vertices = [
+    [2591, 3073],
+    [2621, 3073],
+    [2621, 3136],
+    [2591, 3136],
+]
+
+[[area.polygons]]
+vertices = [
+    [2540, 3074],
+    [2540, 3109],
+]
+
+[[area.polygons]]
+vertices = [
+    [2536, 3075],
+    [2539, 3075],
+    [2539, 3108],
+    [2536, 3108],
+]
+
+[[area.polygons]]
+vertices = [
+    [2535, 3081],
+    [2535, 3102],
+]
+
+[[area.polygons]]
+vertices = [
+    [2534, 3082],
+    [2534, 3101],
+]
+
+[[area.polygons]]
+vertices = [
+    [2533, 3083],
+    [2533, 3100],
+]
+
+[[area.polygons]]
+vertices = [
+    [2543, 3111],
+    [2580, 3111],
+    [2580, 3135],
+    [2543, 3135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2551, 3136],
+    [2557, 3136],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3136],
+    [2646, 3136],
+    [2646, 3137],
+    [2633, 3137],
+]
+
+[[area.polygons]]
+vertices = [
+    [2553, 3137],
+    [2556, 3137],
+]
+
+[[area.polygons]]
+vertices = [
+    [2592, 3137],
+    [2621, 3137],
+]
+
+[[area.polygons]]
+vertices = [[2555, 3138]]
+
+[[area.polygons]]
+vertices = [
+    [2593, 3138],
+    [2621, 3138],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3138],
+    [2645, 3138],
+]
+
+[[area.polygons]]
+vertices = [
+    [2620, 3139],
+    [2621, 3139],
+    [2621, 3160],
+    [2620, 3160],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3139],
+    [2644, 3139],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3140],
+    [2641, 3140],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3141],
+    [2640, 3141],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3142],
+    [2639, 3142],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3143],
+    [2637, 3143],
+    [2637, 3144],
+    [2633, 3144],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3145],
+    [2636, 3145],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3146],
+    [2635, 3146],
+    [2635, 3151],
+    [2633, 3151],
+]
+
+[[area.polygons]]
+vertices = [
+    [2619, 3151],
+    [2619, 3155],
+]
+
+[[area.polygons]]
+vertices = [
+    [2618, 3152],
+    [2618, 3154],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 3152],
+    [2633, 3153],
+]
+
+[[area.polygons]]
+vertices = [
+    [2622, 3156],
+    [2631, 3156],
+]
+
+[[area.polygons]]
+vertices = [
+    [2622, 3157],
+    [2629, 3157],
+]
+
+[[area.polygons]]
+vertices = [
+    [2622, 3158],
+    [2628, 3158],
+    [2628, 3159],
+    [2622, 3159],
+]
+
+[[area.polygons]]
+vertices = [
+    [2622, 3160],
+    [2627, 3160],
+]

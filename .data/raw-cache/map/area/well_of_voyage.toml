@@ -1,0 +1,24 @@
+# Well of Voyage music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Well of Voyage.
+# Bounds x 1984-2367, z 4672-9663; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Well of Voyage"
+area_id = "area.well_of_voyage"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1984, 4672],
+    [2047, 4672],
+    [2047, 4735],
+    [1984, 4735],
+]
+
+[[area.polygons]]
+vertices = [
+    [2304, 9536],
+    [2367, 9536],
+    [2367, 9663],
+    [2304, 9663],
+]

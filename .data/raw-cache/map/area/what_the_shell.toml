@@ -1,0 +1,16 @@
+# What the Shell! music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: What the Shell!.
+# Bounds x 3136-3199, z 8832-8895; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "What the Shell!"
+area_id = "area.what_the_shell"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 8832],
+    [3199, 8832],
+    [3199, 8895],
+    [3136, 8895],
+]

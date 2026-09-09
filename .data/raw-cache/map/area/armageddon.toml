@@ -1,0 +1,40 @@
+# Armageddon music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Armageddon.
+# Bounds x 2848-3071, z 5280-10175; 7936 tiles as 4 rectangles.
+
+[[area]]
+name = "Armageddon"
+area_id = "area.armageddon"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2856, 5280],
+    [2903, 5280],
+    [2903, 5343],
+    [2856, 5343],
+]
+
+[[area.polygons]]
+vertices = [
+    [2848, 5288],
+    [2855, 5288],
+    [2855, 5335],
+    [2848, 5335],
+]
+
+[[area.polygons]]
+vertices = [
+    [2904, 5288],
+    [2911, 5288],
+    [2911, 5335],
+    [2904, 5335],
+]
+
+[[area.polygons]]
+vertices = [
+    [3008, 10112],
+    [3071, 10112],
+    [3071, 10175],
+    [3008, 10175],
+]

@@ -1,0 +1,16 @@
+# Chickened Out music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Chickened Out.
+# Bounds x 2432-2495, z 4352-4415; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Chickened Out"
+area_id = "area.chickened_out"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 4352],
+    [2495, 4352],
+    [2495, 4415],
+    [2432, 4415],
+]

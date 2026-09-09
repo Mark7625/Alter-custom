@@ -1,0 +1,32 @@
+# Strength of Saradomin music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Strength of Saradomin.
+# Bounds x 2880-2943, z 5248-5311; 3136 tiles as 3 rectangles.
+
+[[area]]
+name = "Strength of Saradomin"
+area_id = "area.strength_of_saradomin"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2880, 5248],
+    [2943, 5248],
+    [2943, 5279],
+    [2880, 5279],
+]
+
+[[area.polygons]]
+vertices = [
+    [2904, 5280],
+    [2943, 5280],
+    [2943, 5287],
+    [2904, 5287],
+]
+
+[[area.polygons]]
+vertices = [
+    [2912, 5288],
+    [2943, 5288],
+    [2943, 5311],
+    [2912, 5311],
+]

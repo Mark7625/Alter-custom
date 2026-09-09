@@ -1,0 +1,24 @@
+# Xenophobe music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Xenophobe.
+# Bounds x 1856-2943, z 4352-4479; 12288 tiles as 2 rectangles.
+
+[[area]]
+name = "Xenophobe"
+area_id = "area.xenophobe"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4352],
+    [1919, 4352],
+    [1919, 4415],
+    [1856, 4415],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 4352],
+    [2943, 4352],
+    [2943, 4479],
+    [2880, 4479],
+]

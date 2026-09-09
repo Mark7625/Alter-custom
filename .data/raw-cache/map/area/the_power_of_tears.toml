@@ -1,0 +1,16 @@
+# The Power of Tears music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Power of Tears.
+# Bounds x 3254-3263, z 9472-9535; 640 tiles as 1 rectangles.
+
+[[area]]
+name = "The Power of Tears"
+area_id = "area.the_power_of_tears"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3254, 9472],
+    [3263, 9472],
+    [3263, 9535],
+    [3254, 9535],
+]

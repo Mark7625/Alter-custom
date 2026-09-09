@@ -1,0 +1,16 @@
+# Clanliness music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Clanliness.
+# Bounds x 1728-1791, z 5440-5503; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Clanliness"
+area_id = "area.clanliness"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1728, 5440],
+    [1791, 5440],
+    [1791, 5503],
+    [1728, 5503],
+]

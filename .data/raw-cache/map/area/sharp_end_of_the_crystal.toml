@@ -1,0 +1,16 @@
+# Sharp End of the Crystal music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sharp End of the Crystal.
+# Bounds x 3136-3263, z 12352-12479; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "Sharp End of the Crystal"
+area_id = "area.sharp_end_of_the_crystal"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3136, 12352],
+    [3263, 12352],
+    [3263, 12479],
+    [3136, 12479],
+]

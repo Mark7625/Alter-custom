@@ -1,0 +1,70 @@
+# The Wizards' Tower and its island south of Draynor Village, plus the tower basement. Music
+# area for "Vision".
+[[area]]
+name = "Wizards' Tower"
+area_id = "area.wizards_tower"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3140],
+    [3130, 3140],
+    [3130, 3184],
+    [3090, 3184],
+]
+
+[[area.polygons]]
+vertices = [
+    [3092, 9552],
+    [3128, 9552],
+    [3128, 9590],
+    [3092, 9590],
+]
+
+# Extension traced from the OSRS wiki music map (1692 tiles).
+
+[[area.polygons]]
+vertices = [
+    [3112, 3185],
+    [3115, 3185],
+    [3115, 3199],
+    [3112, 3199],
+]
+
+[[area.polygons]]
+vertices = [
+    [3116, 3195],
+    [3116, 3197],
+]
+
+[[area.polygons]]
+vertices = [
+    [3088, 9536],
+    [3135, 9536],
+    [3135, 9551],
+    [3088, 9551],
+]
+
+[[area.polygons]]
+vertices = [
+    [3088, 9552],
+    [3091, 9552],
+    [3091, 9599],
+    [3088, 9599],
+]
+
+[[area.polygons]]
+vertices = [
+    [3129, 9552],
+    [3135, 9552],
+    [3135, 9599],
+    [3129, 9599],
+]
+
+[[area.polygons]]
+vertices = [
+    [3092, 9591],
+    [3128, 9591],
+    [3128, 9599],
+    [3092, 9599],
+]

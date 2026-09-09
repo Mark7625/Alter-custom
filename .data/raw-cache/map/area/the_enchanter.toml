@@ -1,0 +1,16 @@
+# The Enchanter music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Enchanter (plus roll_the_bones, golden_touch from wiki polygons sharing this footprint).
+# Bounds x 3328-3391, z 9600-9663; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Enchanter"
+area_id = "area.the_enchanter"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3328, 9600],
+    [3391, 9600],
+    [3391, 9663],
+    [3328, 9663],
+]

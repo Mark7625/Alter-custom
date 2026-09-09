@@ -1,0 +1,56 @@
+# Into the Abyss music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Into the Abyss.
+# Bounds x 2944-3135, z 4736-4927; 18432 tiles as 6 rectangles.
+
+[[area]]
+name = "Into the Abyss"
+area_id = "area.into_the_abyss"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2944, 4736],
+    [3135, 4736],
+    [3135, 4751],
+    [2944, 4751],
+]
+
+[[area.polygons]]
+vertices = [
+    [2984, 4752],
+    [3095, 4752],
+    [3095, 4815],
+    [2984, 4815],
+]
+
+[[area.polygons]]
+vertices = [
+    [2944, 4800],
+    [2983, 4800],
+    [2983, 4807],
+    [2944, 4807],
+]
+
+[[area.polygons]]
+vertices = [
+    [3096, 4800],
+    [3135, 4800],
+    [3135, 4815],
+    [3096, 4815],
+]
+
+[[area.polygons]]
+vertices = [
+    [2976, 4808],
+    [2983, 4808],
+    [2983, 4815],
+    [2976, 4815],
+]
+
+[[area.polygons]]
+vertices = [
+    [3008, 4816],
+    [3071, 4816],
+    [3071, 4927],
+    [3008, 4927],
+]

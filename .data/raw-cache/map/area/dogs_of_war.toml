@@ -1,0 +1,16 @@
+# Dogs of War music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dogs of War.
+# Bounds x 1856-1919, z 5184-5247; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Dogs of War"
+area_id = "area.dogs_of_war"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 5184],
+    [1919, 5184],
+    [1919, 5247],
+    [1856, 5247],
+]

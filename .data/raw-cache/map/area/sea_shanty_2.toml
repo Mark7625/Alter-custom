@@ -1,0 +1,16 @@
+# Sea Shanty 2 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Sea Shanty 2.
+# Bounds x 2157-2164, z 3325-3326; 16 tiles as 1 rectangles.
+
+[[area]]
+name = "Sea Shanty 2"
+area_id = "area.sea_shanty_2"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2157, 3325],
+    [2164, 3325],
+    [2164, 3326],
+    [2157, 3326],
+]

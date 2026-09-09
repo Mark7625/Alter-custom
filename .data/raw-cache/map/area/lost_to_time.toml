@@ -1,0 +1,152 @@
+# Lost to Time music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lost to Time.
+# Bounds x 1344-1727, z 9500-9744; 30304 tiles as 22 rectangles.
+
+[[area]]
+name = "Lost to Time"
+area_id = "area.lost_to_time"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1344, 9500],
+    [1391, 9500],
+    [1391, 9600],
+    [1344, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1496, 9560],
+    [1535, 9560],
+    [1535, 9600],
+    [1496, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1392, 9577],
+    [1392, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1393, 9578],
+    [1393, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1394, 9579],
+    [1394, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1395, 9580],
+    [1395, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1396, 9581],
+    [1396, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1397, 9582],
+    [1397, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1398, 9583],
+    [1398, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1399, 9584],
+    [1399, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1400, 9585],
+    [1400, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1401, 9586],
+    [1401, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1402, 9587],
+    [1402, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1403, 9588],
+    [1403, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1404, 9589],
+    [1404, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1405, 9590],
+    [1405, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1406, 9591],
+    [1406, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1407, 9592],
+    [1407, 9600],
+]
+
+[[area.polygons]]
+vertices = [
+    [1568, 9600],
+    [1727, 9600],
+    [1727, 9663],
+    [1568, 9663],
+]
+
+[[area.polygons]]
+vertices = [
+    [1408, 9601],
+    [1471, 9601],
+    [1471, 9663],
+    [1408, 9663],
+]
+
+[[area.polygons]]
+vertices = [
+    [1344, 9664],
+    [1407, 9664],
+    [1407, 9744],
+    [1344, 9744],
+]
+
+[[area.polygons]]
+vertices = [
+    [1472, 9664],
+    [1535, 9664],
+    [1535, 9727],
+    [1472, 9727],
+]

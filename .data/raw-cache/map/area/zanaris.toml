@@ -1,3 +1,6 @@
+# Regenerated as rectangles from the OSRS wiki music map: 4096 tiles moved to
+# neighbouring music areas.
+
 [[area]]
 name = "Zanaris"
 area_id = "area.zanaris"
@@ -5,12 +8,16 @@ levels = [0, 1, 2, 3]
 
 [[area.polygons]]
 vertices = [
-    [2304, 4416],
-    [2368, 4416],
     [2368, 4352],
     [2431, 4352],
-    [2431, 4416],
+    [2431, 4479],
+    [2368, 4479],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 4416],
     [2495, 4416],
     [2495, 4479],
-    [2304, 4479],
+    [2432, 4479],
 ]

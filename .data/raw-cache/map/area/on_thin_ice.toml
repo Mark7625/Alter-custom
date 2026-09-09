@@ -1,0 +1,22 @@
+# On Thin Ice music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: On Thin Ice.
+# Bounds x 2261-2283, z 4054-4076; 527 tiles as 2 rectangles.
+
+[[area]]
+name = "On Thin Ice"
+area_id = "area.on_thin_ice"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2261, 4054],
+    [2282, 4054],
+    [2282, 4076],
+    [2261, 4076],
+]
+
+[[area.polygons]]
+vertices = [
+    [2283, 4055],
+    [2283, 4075],
+]

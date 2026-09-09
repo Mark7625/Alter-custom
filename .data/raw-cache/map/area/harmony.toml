@@ -1,0 +1,16 @@
+# Harmony music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Harmony (plus chef_surprise from wiki polygons sharing this footprint).
+# Bounds x 1856-1919, z 5312-5375; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Harmony"
+area_id = "area.harmony"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 5312],
+    [1919, 5312],
+    [1919, 5375],
+    [1856, 5375],
+]

@@ -1,0 +1,16 @@
+# Underground Pass music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Underground Pass.
+# Bounds x 2368-2431, z 9536-9663; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Underground Pass"
+area_id = "area.underground_pass"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 9536],
+    [2431, 9536],
+    [2431, 9663],
+    [2368, 9663],
+]

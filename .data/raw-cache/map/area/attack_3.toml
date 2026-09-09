@@ -1,0 +1,16 @@
+# Attack 3 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Attack 3.
+# Bounds x 3008-3071, z 10240-10303; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Attack 3"
+area_id = "area.attack_3"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 10240],
+    [3071, 10240],
+    [3071, 10303],
+    [3008, 10303],
+]

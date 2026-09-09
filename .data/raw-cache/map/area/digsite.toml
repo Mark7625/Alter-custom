@@ -1,0 +1,248 @@
+# Digsite music music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lullaby; Venture.
+# Bounds x 3296-3401, z 3329-3457; 11660 tiles as 37 rectangles.
+
+[[area]]
+name = "Digsite music"
+area_id = "area.digsite"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3312, 3329],
+    [3315, 3329],
+    [3315, 3352],
+    [3312, 3352],
+]
+
+[[area.polygons]]
+vertices = [
+    [3316, 3330],
+    [3318, 3330],
+    [3318, 3457],
+    [3316, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3322, 3330],
+    [3379, 3330],
+    [3379, 3457],
+    [3322, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3319, 3331],
+    [3321, 3331],
+    [3321, 3457],
+    [3319, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3313, 3353],
+    [3315, 3353],
+    [3315, 3457],
+    [3313, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3312, 3355],
+    [3312, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3311, 3359],
+    [3311, 3455],
+]
+
+[[area.polygons]]
+vertices = [
+    [3304, 3360],
+    [3310, 3360],
+    [3310, 3362],
+    [3304, 3362],
+]
+
+[[area.polygons]]
+vertices = [
+    [3305, 3363],
+    [3310, 3363],
+    [3310, 3455],
+    [3305, 3455],
+]
+
+[[area.polygons]]
+vertices = [
+    [3304, 3365],
+    [3304, 3455],
+]
+
+[[area.polygons]]
+vertices = [
+    [3380, 3374],
+    [3380, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3381, 3375],
+    [3381, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3382, 3376],
+    [3382, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3383, 3377],
+    [3383, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3384, 3378],
+    [3384, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3385, 3379],
+    [3385, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3386, 3380],
+    [3386, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3387, 3381],
+    [3387, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3388, 3382],
+    [3388, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3303, 3383],
+    [3303, 3455],
+]
+
+[[area.polygons]]
+vertices = [
+    [3389, 3383],
+    [3389, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3384],
+    [3302, 3384],
+    [3302, 3437],
+    [3296, 3437],
+]
+
+[[area.polygons]]
+vertices = [
+    [3390, 3384],
+    [3390, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3391, 3385],
+    [3391, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3392, 3386],
+    [3392, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3393, 3387],
+    [3393, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3394, 3388],
+    [3394, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3395, 3389],
+    [3395, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3396, 3390],
+    [3396, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3397, 3391],
+    [3397, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3398, 3392],
+    [3398, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3399, 3393],
+    [3399, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3400, 3394],
+    [3400, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3401, 3395],
+    [3401, 3457],
+]
+
+[[area.polygons]]
+vertices = [
+    [3297, 3438],
+    [3302, 3438],
+    [3302, 3455],
+    [3297, 3455],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3440],
+    [3296, 3448],
+]
+
+[[area.polygons]]
+vertices = [
+    [3296, 3451],
+    [3296, 3455],
+]

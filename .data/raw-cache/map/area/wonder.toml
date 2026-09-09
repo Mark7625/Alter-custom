@@ -1,0 +1,259 @@
+# Wonder music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Wonder.
+# Bounds x 2628-2665, z 2384-2426; 1109 tiles as 41 rectangles.
+
+[[area]]
+name = "Wonder"
+area_id = "area.wonder"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2638, 2384],
+    [2646, 2384],
+    [2646, 2421],
+    [2638, 2421],
+]
+
+[[area.polygons]]
+vertices = [
+    [2651, 2384],
+    [2657, 2384],
+    [2657, 2397],
+    [2651, 2397],
+]
+
+[[area.polygons]]
+vertices = [
+    [2636, 2385],
+    [2637, 2385],
+    [2637, 2421],
+    [2636, 2421],
+]
+
+[[area.polygons]]
+vertices = [
+    [2647, 2385],
+    [2650, 2385],
+    [2650, 2426],
+    [2647, 2426],
+]
+
+[[area.polygons]]
+vertices = [
+    [2658, 2385],
+    [2659, 2385],
+    [2659, 2395],
+    [2658, 2395],
+]
+
+[[area.polygons]]
+vertices = [
+    [2635, 2386],
+    [2635, 2421],
+]
+
+[[area.polygons]]
+vertices = [
+    [2660, 2386],
+    [2660, 2395],
+]
+
+[[area.polygons]]
+vertices = [
+    [2634, 2387],
+    [2634, 2421],
+]
+
+[[area.polygons]]
+vertices = [
+    [2661, 2387],
+    [2662, 2387],
+    [2662, 2394],
+    [2661, 2394],
+]
+
+[[area.polygons]]
+vertices = [
+    [2633, 2388],
+    [2633, 2420],
+]
+
+[[area.polygons]]
+vertices = [
+    [2663, 2388],
+    [2663, 2395],
+]
+
+[[area.polygons]]
+vertices = [
+    [2632, 2389],
+    [2632, 2419],
+]
+
+[[area.polygons]]
+vertices = [
+    [2631, 2390],
+    [2631, 2418],
+]
+
+[[area.polygons]]
+vertices = [
+    [2664, 2390],
+    [2664, 2395],
+]
+
+[[area.polygons]]
+vertices = [
+    [2630, 2391],
+    [2630, 2403],
+]
+
+[[area.polygons]]
+vertices = [
+    [2629, 2392],
+    [2629, 2400],
+]
+
+[[area.polygons]]
+vertices = [
+    [2665, 2392],
+    [2665, 2395],
+]
+
+[[area.polygons]]
+vertices = [[2662, 2395]]
+
+[[area.polygons]]
+vertices = [
+    [2628, 2396],
+    [2628, 2399],
+]
+
+[[area.polygons]]
+vertices = [[2658, 2396]]
+
+[[area.polygons]]
+vertices = [
+    [2651, 2398],
+    [2656, 2398],
+]
+
+[[area.polygons]]
+vertices = [
+    [2651, 2399],
+    [2655, 2399],
+]
+
+[[area.polygons]]
+vertices = [
+    [2651, 2400],
+    [2653, 2400],
+]
+
+[[area.polygons]]
+vertices = [
+    [2651, 2401],
+    [2652, 2401],
+    [2652, 2403],
+    [2651, 2403],
+]
+
+[[area.polygons]]
+vertices = [
+    [2651, 2404],
+    [2651, 2426],
+]
+
+[[area.polygons]]
+vertices = [
+    [2630, 2407],
+    [2630, 2408],
+]
+
+[[area.polygons]]
+vertices = [
+    [2652, 2410],
+    [2652, 2426],
+]
+
+[[area.polygons]]
+vertices = [
+    [2630, 2411],
+    [2630, 2416],
+]
+
+[[area.polygons]]
+vertices = [
+    [2629, 2412],
+    [2629, 2414],
+]
+
+[[area.polygons]]
+vertices = [
+    [2653, 2414],
+    [2653, 2426],
+]
+
+[[area.polygons]]
+vertices = [
+    [2654, 2416],
+    [2655, 2416],
+    [2655, 2426],
+    [2654, 2426],
+]
+
+[[area.polygons]]
+vertices = [
+    [2656, 2417],
+    [2656, 2426],
+]
+
+[[area.polygons]]
+vertices = [
+    [2657, 2418],
+    [2660, 2418],
+    [2660, 2424],
+    [2657, 2424],
+]
+
+[[area.polygons]]
+vertices = [
+    [2661, 2419],
+    [2661, 2423],
+]
+
+[[area.polygons]]
+vertices = [[2662, 2420]]
+
+[[area.polygons]]
+vertices = [
+    [2637, 2422],
+    [2639, 2422],
+]
+
+[[area.polygons]]
+vertices = [
+    [2643, 2422],
+    [2646, 2422],
+    [2646, 2423],
+    [2643, 2423],
+]
+
+[[area.polygons]]
+vertices = [
+    [2644, 2424],
+    [2646, 2424],
+]
+
+[[area.polygons]]
+vertices = [[2646, 2425]]
+
+[[area.polygons]]
+vertices = [
+    [2657, 2425],
+    [2659, 2425],
+]
+
+[[area.polygons]]
+vertices = [[2657, 2426]]

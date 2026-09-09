@@ -1,0 +1,16 @@
+# Waterfall music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Waterfall.
+# Bounds x 2496-2559, z 9792-9855; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Waterfall"
+area_id = "area.waterfall"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9792],
+    [2559, 9792],
+    [2559, 9855],
+    [2496, 9855],
+]

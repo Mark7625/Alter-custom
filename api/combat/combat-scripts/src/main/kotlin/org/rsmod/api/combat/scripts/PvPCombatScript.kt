@@ -14,6 +14,7 @@ import org.rsmod.api.combat.weapon.styles.AttackStyles
 import org.rsmod.api.combat.weapon.types.AttackTypes
 import org.rsmod.api.death.PvPAttackValidateHook
 import org.rsmod.api.death.PvPAttackValidateResult
+import org.rsmod.api.player.clearInteractionRoute
 import org.rsmod.api.player.isInPvpCombat
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.righthand
@@ -134,6 +135,14 @@ constructor(
                 is PvPAttackValidateResult.Deny -> {
                     spam(result.message)
                     clearPendingAction()
+                    return false
+                }
+                is PvPAttackValidateResult.Silent -> {
+                    // The hook acted on the click itself (it may have opened an interface), so
+                    // only drop the attack interaction: no `clearPendingAction`, which would close
+                    // whatever the hook just opened.
+                    player.clearInteractionRoute()
+                    player.resetFaceEntity()
                     return false
                 }
             }

@@ -1,0 +1,16 @@
+# Trouble Brewing music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Trouble Brewing.
+# Bounds x 3776-3839, z 2944-3007; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Trouble Brewing"
+area_id = "area.trouble_brewing"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3776, 2944],
+    [3839, 2944],
+    [3839, 3007],
+    [3776, 3007],
+]

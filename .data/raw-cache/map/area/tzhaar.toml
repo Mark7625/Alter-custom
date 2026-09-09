@@ -1,0 +1,16 @@
+# TzHaar! music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: TzHaar!.
+# Bounds x 2368-2431, z 5056-5119; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "TzHaar!"
+area_id = "area.tzhaar"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 5056],
+    [2431, 5056],
+    [2431, 5119],
+    [2368, 5119],
+]

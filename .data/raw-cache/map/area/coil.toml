@@ -1,0 +1,16 @@
+# Coil music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Coil.
+# Bounds x 2256-2279, z 3066-3079; 336 tiles as 1 rectangles.
+
+[[area]]
+name = "Coil"
+area_id = "area.coil"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2256, 3066],
+    [2279, 3066],
+    [2279, 3079],
+    [2256, 3079],
+]

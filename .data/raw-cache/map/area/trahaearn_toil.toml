@@ -1,0 +1,32 @@
+# Trahaearn Toil music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Trahaearn Toil.
+# Bounds x 3008-3327, z 6062-12543; 9344 tiles as 3 rectangles.
+
+[[area]]
+name = "Trahaearn Toil"
+area_id = "area.trahaearn_toil"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3008, 6062],
+    [3071, 6062],
+    [3071, 6079],
+    [3008, 6079],
+]
+
+[[area.polygons]]
+vertices = [
+    [3264, 12416],
+    [3327, 12416],
+    [3327, 12479],
+    [3264, 12479],
+]
+
+[[area.polygons]]
+vertices = [
+    [3200, 12480],
+    [3263, 12480],
+    [3263, 12543],
+    [3200, 12543],
+]

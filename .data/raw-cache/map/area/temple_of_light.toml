@@ -1,0 +1,16 @@
+# Temple of Light music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Temple of Light.
+# Bounds x 1856-1919, z 4608-4671; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Temple of Light"
+area_id = "area.temple_of_light"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1856, 4608],
+    [1919, 4608],
+    [1919, 4671],
+    [1856, 4671],
+]

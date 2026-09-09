@@ -1,0 +1,16 @@
+# Time Out music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Time Out.
+# Bounds x 2880-2943, z 4544-4607; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Time Out"
+area_id = "area.time_out"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2880, 4544],
+    [2943, 4544],
+    [2943, 4607],
+    [2880, 4607],
+]

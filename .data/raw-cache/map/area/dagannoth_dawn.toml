@@ -1,0 +1,24 @@
+# Dagannoth Dawn music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dagannoth Dawn.
+# Bounds x 1792-1983, z 4352-4415; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Dagannoth Dawn"
+area_id = "area.dagannoth_dawn"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 4352],
+    [1855, 4352],
+    [1855, 4415],
+    [1792, 4415],
+]
+
+[[area.polygons]]
+vertices = [
+    [1920, 4352],
+    [1983, 4352],
+    [1983, 4415],
+    [1920, 4415],
+]

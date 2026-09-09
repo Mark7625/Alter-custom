@@ -1,0 +1,158 @@
+# Warriors' Guild music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Warriors' Guild.
+# Bounds x 2828-2876, z 3534-3556; 892 tiles as 23 rectangles.
+
+[[area]]
+name = "Warriors' Guild"
+area_id = "area.warriors_guild"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2849, 3534],
+    [2859, 3534],
+    [2859, 3555],
+    [2849, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2839, 3536],
+    [2840, 3536],
+    [2840, 3555],
+    [2839, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2845, 3536],
+    [2846, 3536],
+    [2846, 3555],
+    [2845, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2865, 3536],
+    [2866, 3536],
+    [2866, 3556],
+    [2865, 3556],
+]
+
+[[area.polygons]]
+vertices = [
+    [2871, 3536],
+    [2872, 3536],
+    [2872, 3556],
+    [2871, 3556],
+]
+
+[[area.polygons]]
+vertices = [
+    [2837, 3537],
+    [2838, 3537],
+    [2838, 3555],
+    [2837, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2841, 3537],
+    [2844, 3537],
+    [2844, 3555],
+    [2841, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2847, 3537],
+    [2848, 3537],
+    [2848, 3555],
+    [2847, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2860, 3537],
+    [2864, 3537],
+    [2864, 3555],
+    [2860, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2867, 3537],
+    [2870, 3537],
+    [2870, 3555],
+    [2867, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2873, 3537],
+    [2875, 3537],
+    [2875, 3555],
+    [2873, 3555],
+]
+
+[[area.polygons]]
+vertices = [
+    [2835, 3538],
+    [2836, 3538],
+    [2836, 3553],
+    [2835, 3553],
+]
+
+[[area.polygons]]
+vertices = [
+    [2833, 3539],
+    [2834, 3539],
+    [2834, 3551],
+    [2833, 3551],
+]
+
+[[area.polygons]]
+vertices = [
+    [2831, 3540],
+    [2832, 3540],
+    [2832, 3549],
+    [2831, 3549],
+]
+
+[[area.polygons]]
+vertices = [[2876, 3540]]
+
+[[area.polygons]]
+vertices = [
+    [2829, 3541],
+    [2830, 3541],
+    [2830, 3547],
+    [2829, 3547],
+]
+
+[[area.polygons]]
+vertices = [
+    [2828, 3542],
+    [2828, 3546],
+]
+
+[[area.polygons]]
+vertices = [
+    [2876, 3545],
+    [2876, 3547],
+]
+
+[[area.polygons]]
+vertices = [[2830, 3548]]
+
+[[area.polygons]]
+vertices = [[2832, 3550]]
+
+[[area.polygons]]
+vertices = [[2834, 3552]]
+
+[[area.polygons]]
+vertices = [[2876, 3552]]
+
+[[area.polygons]]
+vertices = [[2836, 3554]]

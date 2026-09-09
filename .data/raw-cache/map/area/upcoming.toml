@@ -1,0 +1,16 @@
+# Upcoming music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Upcoming.
+# Bounds x 1824-1855, z 4896-4927; 1024 tiles as 1 rectangles.
+
+[[area]]
+name = "Upcoming"
+area_id = "area.upcoming"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1824, 4896],
+    [1855, 4896],
+    [1855, 4927],
+    [1824, 4927],
+]

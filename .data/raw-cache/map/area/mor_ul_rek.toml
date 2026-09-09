@@ -1,0 +1,244 @@
+# Mor Ul Rek music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Mor Ul Rek.
+# Bounds x 2432-2559, z 5056-5183; 13166 tiles as 38 rectangles.
+
+[[area]]
+name = "Mor Ul Rek"
+area_id = "area.mor_ul_rek"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5056],
+    [2559, 5056],
+    [2559, 5119],
+    [2432, 5119],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5120],
+    [2455, 5120],
+]
+
+[[area.polygons]]
+vertices = [
+    [2458, 5120],
+    [2559, 5120],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5121],
+    [2434, 5121],
+]
+
+[[area.polygons]]
+vertices = [
+    [2437, 5121],
+    [2448, 5121],
+]
+
+[[area.polygons]]
+vertices = [
+    [2452, 5121],
+    [2454, 5121],
+]
+
+[[area.polygons]]
+vertices = [
+    [2460, 5121],
+    [2559, 5121],
+]
+
+[[area.polygons]]
+vertices = [
+    [2432, 5122],
+    [2433, 5122],
+]
+
+[[area.polygons]]
+vertices = [
+    [2438, 5122],
+    [2446, 5122],
+]
+
+[[area.polygons]]
+vertices = [
+    [2465, 5122],
+    [2559, 5122],
+    [2559, 5132],
+    [2465, 5132],
+]
+
+[[area.polygons]]
+vertices = [
+    [2466, 5133],
+    [2559, 5133],
+]
+
+[[area.polygons]]
+vertices = [
+    [2467, 5134],
+    [2559, 5134],
+]
+
+[[area.polygons]]
+vertices = [
+    [2468, 5135],
+    [2559, 5135],
+]
+
+[[area.polygons]]
+vertices = [
+    [2469, 5136],
+    [2559, 5136],
+]
+
+[[area.polygons]]
+vertices = [
+    [2470, 5137],
+    [2559, 5137],
+]
+
+[[area.polygons]]
+vertices = [
+    [2471, 5138],
+    [2472, 5138],
+]
+
+[[area.polygons]]
+vertices = [
+    [2475, 5138],
+    [2559, 5138],
+]
+
+[[area.polygons]]
+vertices = [
+    [2478, 5139],
+    [2559, 5139],
+]
+
+[[area.polygons]]
+vertices = [
+    [2479, 5140],
+    [2559, 5140],
+]
+
+[[area.polygons]]
+vertices = [
+    [2480, 5141],
+    [2559, 5141],
+]
+
+[[area.polygons]]
+vertices = [
+    [2481, 5142],
+    [2559, 5142],
+]
+
+[[area.polygons]]
+vertices = [
+    [2482, 5143],
+    [2559, 5143],
+]
+
+[[area.polygons]]
+vertices = [
+    [2483, 5144],
+    [2559, 5144],
+]
+
+[[area.polygons]]
+vertices = [
+    [2484, 5145],
+    [2559, 5145],
+]
+
+[[area.polygons]]
+vertices = [
+    [2485, 5146],
+    [2559, 5146],
+]
+
+[[area.polygons]]
+vertices = [
+    [2486, 5147],
+    [2559, 5147],
+]
+
+[[area.polygons]]
+vertices = [
+    [2489, 5148],
+    [2559, 5148],
+]
+
+[[area.polygons]]
+vertices = [
+    [2490, 5149],
+    [2559, 5149],
+]
+
+[[area.polygons]]
+vertices = [
+    [2491, 5150],
+    [2559, 5150],
+]
+
+[[area.polygons]]
+vertices = [
+    [2492, 5151],
+    [2559, 5151],
+]
+
+[[area.polygons]]
+vertices = [
+    [2493, 5152],
+    [2559, 5152],
+]
+
+[[area.polygons]]
+vertices = [
+    [2494, 5153],
+    [2559, 5153],
+    [2559, 5156],
+    [2494, 5156],
+]
+
+[[area.polygons]]
+vertices = [
+    [2495, 5157],
+    [2559, 5157],
+    [2559, 5183],
+    [2495, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2494, 5158],
+    [2494, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2493, 5162],
+    [2493, 5173],
+]
+
+[[area.polygons]]
+vertices = [
+    [2492, 5163],
+    [2492, 5171],
+]
+
+[[area.polygons]]
+vertices = [
+    [2493, 5175],
+    [2493, 5183],
+]
+
+[[area.polygons]]
+vertices = [
+    [2492, 5179],
+    [2492, 5183],
+]

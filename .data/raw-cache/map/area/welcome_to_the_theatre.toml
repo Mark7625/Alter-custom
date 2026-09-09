@@ -1,0 +1,72 @@
+# Welcome to the Theatre music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Welcome to the Theatre.
+# Bounds x 3638-3698, z 3200-3238; 2075 tiles as 10 rectangles.
+
+[[area]]
+name = "Welcome to the Theatre"
+area_id = "area.welcome_to_the_theatre"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3642, 3200],
+    [3682, 3200],
+    [3682, 3238],
+    [3642, 3238],
+]
+
+[[area.polygons]]
+vertices = [
+    [3641, 3201],
+    [3641, 3237],
+]
+
+[[area.polygons]]
+vertices = [
+    [3683, 3201],
+    [3683, 3237],
+]
+
+[[area.polygons]]
+vertices = [
+    [3640, 3202],
+    [3640, 3236],
+]
+
+[[area.polygons]]
+vertices = [
+    [3684, 3202],
+    [3684, 3236],
+]
+
+[[area.polygons]]
+vertices = [
+    [3639, 3203],
+    [3639, 3235],
+]
+
+[[area.polygons]]
+vertices = [
+    [3685, 3203],
+    [3685, 3235],
+]
+
+[[area.polygons]]
+vertices = [
+    [3638, 3204],
+    [3638, 3234],
+]
+
+[[area.polygons]]
+vertices = [
+    [3686, 3204],
+    [3686, 3234],
+]
+
+[[area.polygons]]
+vertices = [
+    [3687, 3211],
+    [3698, 3211],
+    [3698, 3227],
+    [3687, 3227],
+]

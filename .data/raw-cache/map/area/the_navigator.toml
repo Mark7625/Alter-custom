@@ -1,0 +1,16 @@
+# The Navigator music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: The Navigator.
+# Bounds x 2624-2687, z 9984-10047; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "The Navigator"
+area_id = "area.the_navigator"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 9984],
+    [2687, 9984],
+    [2687, 10047],
+    [2624, 10047],
+]

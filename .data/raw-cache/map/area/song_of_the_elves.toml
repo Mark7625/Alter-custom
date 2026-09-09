@@ -1,0 +1,16 @@
+# Song of the Elves music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Song of the Elves.
+# Bounds x 2560-2687, z 6080-6207; 16384 tiles as 1 rectangles.
+
+[[area]]
+name = "Song of the Elves"
+area_id = "area.song_of_the_elves"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 6080],
+    [2687, 6080],
+    [2687, 6207],
+    [2560, 6207],
+]

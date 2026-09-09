@@ -1,0 +1,16 @@
+# Attack 6 music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Attack 6.
+# Bounds x 2560-2623, z 9408-9471; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Attack 6"
+area_id = "area.attack_6"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2560, 9408],
+    [2623, 9408],
+    [2623, 9471],
+    [2560, 9471],
+]

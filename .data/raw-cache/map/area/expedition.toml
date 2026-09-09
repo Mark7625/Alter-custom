@@ -1,0 +1,24 @@
+# Expedition music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Expedition.
+# Bounds x 2304-2943, z 9344-10047; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Expedition"
+area_id = "area.expedition"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2304, 9344],
+    [2367, 9344],
+    [2367, 9407],
+    [2304, 9407],
+]
+
+[[area.polygons]]
+vertices = [
+    [2880, 9984],
+    [2943, 9984],
+    [2943, 10047],
+    [2880, 10047],
+]

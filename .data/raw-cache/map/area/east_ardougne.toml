@@ -1,0 +1,172 @@
+# Inside the city walls: castle, market, zoo, docks and the north gate road.
+#
+# Regenerated as rectangles from the OSRS wiki music map: 670 tiles moved to
+# neighbouring music areas.
+
+[[area]]
+name = "East Ardougne"
+area_id = "area.east_ardougne"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3263],
+    [2690, 3263],
+    [2690, 3264],
+    [2559, 3264],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3265],
+    [2688, 3265],
+    [2688, 3268],
+    [2559, 3268],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3269],
+    [2687, 3269],
+    [2687, 3287],
+    [2559, 3287],
+]
+
+[[area.polygons]]
+vertices = [
+    [2688, 3272],
+    [2688, 3273],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3288],
+    [2686, 3288],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3289],
+    [2685, 3289],
+    [2685, 3329],
+    [2559, 3329],
+]
+
+[[area.polygons]]
+vertices = [
+    [2686, 3298],
+    [2686, 3328],
+]
+
+[[area.polygons]]
+vertices = [
+    [2687, 3299],
+    [2687, 3310],
+]
+
+[[area.polygons]]
+vertices = [
+    [2687, 3314],
+    [2687, 3327],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3330],
+    [2684, 3330],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3331],
+    [2683, 3331],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3332],
+    [2682, 3332],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3333],
+    [2681, 3333],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3334],
+    [2672, 3334],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3335],
+    [2671, 3335],
+]
+
+[[area.polygons]]
+vertices = [
+    [2559, 3336],
+    [2670, 3336],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 3337],
+    [2669, 3337],
+]
+
+[[area.polygons]]
+vertices = [
+    [2560, 3338],
+    [2668, 3338],
+]
+
+[[area.polygons]]
+vertices = [
+    [2561, 3339],
+    [2667, 3339],
+]
+
+[[area.polygons]]
+vertices = [
+    [2562, 3340],
+    [2622, 3340],
+]
+
+[[area.polygons]]
+vertices = [
+    [2563, 3341],
+    [2622, 3341],
+]
+
+[[area.polygons]]
+vertices = [
+    [2598, 3342],
+    [2622, 3342],
+    [2622, 3349],
+    [2598, 3349],
+]
+
+[[area.polygons]]
+vertices = [
+    [2597, 3345],
+    [2597, 3349],
+]
+
+[[area.polygons]]
+vertices = [
+    [2596, 3347],
+    [2596, 3349],
+]
+
+[[area.polygons]]
+vertices = [
+    [2595, 3348],
+    [2595, 3349],
+]
+
+[[area.polygons]]
+vertices = [[2594, 3349]]

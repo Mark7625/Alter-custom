@@ -1,0 +1,16 @@
+# Lair music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Lair.
+# Bounds x 3456-3519, z 9664-9727; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Lair"
+area_id = "area.lair"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3456, 9664],
+    [3519, 9664],
+    [3519, 9727],
+    [3456, 9727],
+]

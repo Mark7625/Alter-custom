@@ -1,0 +1,24 @@
+# Waking Dream music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Waking Dream.
+# Bounds x 1744-1855, z 5056-5119; 5120 tiles as 2 rectangles.
+
+[[area]]
+name = "Waking Dream"
+area_id = "area.waking_dream"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [1792, 5056],
+    [1855, 5056],
+    [1855, 5119],
+    [1792, 5119],
+]
+
+[[area.polygons]]
+vertices = [
+    [1744, 5072],
+    [1775, 5072],
+    [1775, 5103],
+    [1744, 5103],
+]

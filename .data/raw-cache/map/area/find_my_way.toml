@@ -1,0 +1,16 @@
+# Find My Way music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Find My Way.
+# Bounds x 2688-2815, z 9088-9151; 8192 tiles as 1 rectangles.
+
+[[area]]
+name = "Find My Way"
+area_id = "area.find_my_way"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2688, 9088],
+    [2815, 9088],
+    [2815, 9151],
+    [2688, 9151],
+]

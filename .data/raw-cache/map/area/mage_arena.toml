@@ -1,0 +1,144 @@
+# Mage Arena music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Mage Arena.
+# Bounds x 2496-3126, z 3914-4735; 5560 tiles as 22 rectangles.
+
+[[area]]
+name = "Mage Arena"
+area_id = "area.mage_arena"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3092, 3914],
+    [3117, 3914],
+    [3117, 3949],
+    [3092, 3949],
+]
+
+[[area.polygons]]
+vertices = [
+    [3091, 3915],
+    [3091, 3948],
+]
+
+[[area.polygons]]
+vertices = [
+    [3118, 3915],
+    [3118, 3949],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3916],
+    [3090, 3947],
+]
+
+[[area.polygons]]
+vertices = [
+    [3119, 3916],
+    [3119, 3948],
+]
+
+[[area.polygons]]
+vertices = [
+    [3089, 3917],
+    [3089, 3946],
+]
+
+[[area.polygons]]
+vertices = [
+    [3120, 3917],
+    [3120, 3947],
+]
+
+[[area.polygons]]
+vertices = [
+    [3088, 3918],
+    [3088, 3945],
+]
+
+[[area.polygons]]
+vertices = [
+    [3121, 3918],
+    [3121, 3946],
+]
+
+[[area.polygons]]
+vertices = [
+    [3087, 3919],
+    [3087, 3944],
+]
+
+[[area.polygons]]
+vertices = [
+    [3122, 3919],
+    [3122, 3945],
+]
+
+[[area.polygons]]
+vertices = [
+    [3086, 3920],
+    [3086, 3943],
+]
+
+[[area.polygons]]
+vertices = [
+    [3123, 3920],
+    [3123, 3944],
+]
+
+[[area.polygons]]
+vertices = [
+    [3085, 3921],
+    [3085, 3942],
+]
+
+[[area.polygons]]
+vertices = [
+    [3124, 3921],
+    [3124, 3943],
+]
+
+[[area.polygons]]
+vertices = [
+    [3084, 3922],
+    [3084, 3941],
+]
+
+[[area.polygons]]
+vertices = [
+    [3125, 3922],
+    [3125, 3942],
+]
+
+[[area.polygons]]
+vertices = [
+    [3126, 3923],
+    [3126, 3941],
+]
+
+[[area.polygons]]
+vertices = [
+    [3093, 3950],
+    [3117, 3950],
+]
+
+[[area.polygons]]
+vertices = [
+    [3094, 3951],
+    [3116, 3951],
+]
+
+[[area.polygons]]
+vertices = [
+    [3095, 3952],
+    [3115, 3952],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 4672],
+    [2559, 4672],
+    [2559, 4735],
+    [2496, 4735],
+]

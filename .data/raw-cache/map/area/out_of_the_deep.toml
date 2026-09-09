@@ -1,0 +1,24 @@
+# Out of the Deep music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Out of the Deep.
+# Bounds x 2496-2559, z 4608-10047; 8192 tiles as 2 rectangles.
+
+[[area]]
+name = "Out of the Deep"
+area_id = "area.out_of_the_deep"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2496, 4608],
+    [2559, 4608],
+    [2559, 4671],
+    [2496, 4671],
+]
+
+[[area.polygons]]
+vertices = [
+    [2496, 9984],
+    [2559, 9984],
+    [2559, 10047],
+    [2496, 10047],
+]

@@ -1,0 +1,16 @@
+# Dangerous Way music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Dangerous Way.
+# Bounds x 3520-3583, z 9664-9727; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Dangerous Way"
+area_id = "area.dangerous_way"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3520, 9664],
+    [3583, 9664],
+    [3583, 9727],
+    [3520, 9727],
+]

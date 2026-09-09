@@ -1,0 +1,16 @@
+# Espionage music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Espionage.
+# Bounds x 2624-2687, z 10368-10431; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Espionage"
+area_id = "area.espionage"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2624, 10368],
+    [2687, 10368],
+    [2687, 10431],
+    [2624, 10431],
+]

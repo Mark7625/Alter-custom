@@ -1,0 +1,270 @@
+# Regenerated as rectangles from the OSRS wiki music map: 208 tiles moved to
+# neighbouring music areas and 1048 tiles were added.
+
+[[area]]
+name = "Rimmington"
+area_id = "area.rimmington"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2925, 3185],
+    [2983, 3185],
+    [2983, 3190],
+    [2925, 3190],
+]
+
+[[area.polygons]]
+vertices = [
+    [2925, 3191],
+    [2982, 3191],
+    [2982, 3236],
+    [2925, 3236],
+]
+
+[[area.polygons]]
+vertices = [
+    [2983, 3194],
+    [2983, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2984, 3195],
+    [2984, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2985, 3196],
+    [2985, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2986, 3197],
+    [2986, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2987, 3198],
+    [2987, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2988, 3199],
+    [2988, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2989, 3200],
+    [2989, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2990, 3201],
+    [2990, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2923, 3205],
+    [2924, 3205],
+    [2924, 3217],
+    [2923, 3217],
+]
+
+[[area.polygons]]
+vertices = [
+    [2922, 3206],
+    [2922, 3211],
+]
+
+[[area.polygons]]
+vertices = [
+    [2921, 3208],
+    [2921, 3210],
+]
+
+[[area.polygons]]
+vertices = [[2922, 3213]]
+
+[[area.polygons]]
+vertices = [
+    [2924, 3218],
+    [2924, 3239],
+]
+
+[[area.polygons]]
+vertices = [
+    [2912, 3220],
+    [2920, 3220],
+    [2920, 3222],
+    [2912, 3222],
+]
+
+[[area.polygons]]
+vertices = [
+    [2921, 3221],
+    [2921, 3251],
+]
+
+[[area.polygons]]
+vertices = [
+    [2923, 3221],
+    [2923, 3239],
+]
+
+[[area.polygons]]
+vertices = [
+    [2922, 3222],
+    [2922, 3250],
+]
+
+[[area.polygons]]
+vertices = [
+    [2915, 3223],
+    [2920, 3223],
+    [2920, 3238],
+    [2915, 3238],
+]
+
+[[area.polygons]]
+vertices = [
+    [2907, 3225],
+    [2914, 3225],
+    [2914, 3226],
+    [2907, 3226],
+]
+
+[[area.polygons]]
+vertices = [
+    [2909, 3227],
+    [2914, 3227],
+    [2914, 3231],
+    [2909, 3231],
+]
+
+[[area.polygons]]
+vertices = [
+    [2906, 3229],
+    [2908, 3229],
+    [2908, 3231],
+    [2906, 3231],
+]
+
+[[area.polygons]]
+vertices = [
+    [2914, 3233],
+    [2914, 3235],
+]
+
+[[area.polygons]]
+vertices = [
+    [2925, 3237],
+    [2936, 3237],
+]
+
+[[area.polygons]]
+vertices = [
+    [2940, 3237],
+    [2982, 3237],
+]
+
+[[area.polygons]]
+vertices = [
+    [2925, 3238],
+    [2926, 3238],
+    [2926, 3239],
+    [2925, 3239],
+]
+
+[[area.polygons]]
+vertices = [
+    [2930, 3238],
+    [2936, 3238],
+]
+
+[[area.polygons]]
+vertices = [
+    [2941, 3238],
+    [2982, 3238],
+    [2982, 3256],
+    [2941, 3256],
+]
+
+[[area.polygons]]
+vertices = [
+    [2916, 3239],
+    [2920, 3239],
+    [2920, 3240],
+    [2916, 3240],
+]
+
+[[area.polygons]]
+vertices = [
+    [2931, 3239],
+    [2936, 3239],
+]
+
+[[area.polygons]]
+vertices = [
+    [2917, 3241],
+    [2920, 3241],
+    [2920, 3253],
+    [2917, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2916, 3245],
+    [2916, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2915, 3246],
+    [2915, 3253],
+]
+
+[[area.polygons]]
+vertices = [
+    [2914, 3248],
+    [2914, 3249],
+]
+
+[[area.polygons]]
+vertices = [
+    [2945, 3257],
+    [2982, 3257],
+]
+
+[[area.polygons]]
+vertices = [
+    [2945, 3258],
+    [2956, 3258],
+    [2956, 3259],
+    [2945, 3259],
+]
+
+[[area.polygons]]
+vertices = [
+    [2945, 3260],
+    [2955, 3260],
+]
+
+[[area.polygons]]
+vertices = [
+    [2945, 3261],
+    [2954, 3261],
+]
+
+[[area.polygons]]
+vertices = [
+    [2946, 3262],
+    [2953, 3262],
+]

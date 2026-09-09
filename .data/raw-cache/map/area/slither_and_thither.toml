@@ -1,0 +1,16 @@
+# Slither and Thither music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Slither and Thither.
+# Bounds x 2608-2623, z 10272-10303; 512 tiles as 1 rectangles.
+
+[[area]]
+name = "Slither and Thither"
+area_id = "area.slither_and_thither"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2608, 10272],
+    [2623, 10272],
+    [2623, 10303],
+    [2608, 10303],
+]

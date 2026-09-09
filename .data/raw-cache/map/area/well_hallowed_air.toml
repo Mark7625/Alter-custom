@@ -1,0 +1,16 @@
+# Well Hallowed Air music area, traced from the OSRS wiki music map
+# (Map:Music tracks). Plays: Well Hallowed Air.
+# Bounds x 2368-2431, z 5952-6015; 4096 tiles as 1 rectangles.
+
+[[area]]
+name = "Well Hallowed Air"
+area_id = "area.well_hallowed_air"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [2368, 5952],
+    [2431, 5952],
+    [2431, 6015],
+    [2368, 6015],
+]

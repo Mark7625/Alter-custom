@@ -1,0 +1,138 @@
+[[area]]
+name = "Draynor Manor"
+area_id = "area.draynor_manor"
+levels = [0, 1, 2, 3]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3320],
+    [3130, 3320],
+    [3130, 3375],
+    [3090, 3375],
+]
+
+# Extension traced from the OSRS wiki music map (634 tiles).
+
+[[area.polygons]]
+vertices = [
+    [3085, 3331],
+    [3089, 3331],
+    [3089, 3348],
+    [3085, 3348],
+]
+
+[[area.polygons]]
+vertices = [
+    [3084, 3332],
+    [3084, 3337],
+]
+
+[[area.polygons]]
+vertices = [
+    [3084, 3340],
+    [3084, 3347],
+]
+
+[[area.polygons]]
+vertices = [
+    [3086, 3349],
+    [3089, 3349],
+    [3089, 3385],
+    [3086, 3385],
+]
+
+[[area.polygons]]
+vertices = [
+    [3085, 3353],
+    [3085, 3384],
+]
+
+[[area.polygons]]
+vertices = [
+    [3084, 3358],
+    [3084, 3364],
+]
+
+[[area.polygons]]
+vertices = [
+    [3084, 3370],
+    [3084, 3378],
+]
+
+[[area.polygons]]
+vertices = [
+    [3083, 3371],
+    [3083, 3377],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3376],
+    [3125, 3376],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3377],
+    [3124, 3377],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3378],
+    [3123, 3378],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3379],
+    [3122, 3379],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3380],
+    [3121, 3380],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3381],
+    [3120, 3381],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3382],
+    [3119, 3382],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3383],
+    [3118, 3383],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3384],
+    [3117, 3384],
+]
+
+[[area.polygons]]
+vertices = [
+    [3090, 3385],
+    [3106, 3385],
+]
+
+[[area.polygons]]
+vertices = [
+    [3087, 3386],
+    [3101, 3386],
+]
+
+[[area.polygons]]
+vertices = [
+    [3091, 3387],
+    [3097, 3387],
+]
