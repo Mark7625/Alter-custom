@@ -317,7 +317,7 @@ Found the same way `settings.gradle.kts` finds them: any dir with a `build.gradl
 | `interfaces/spellbook` | 1 | 45 | 0 | 0 | 2026-06-18 |
 | `interfaces/worldmap` | 1 | 104 | 0 | 0 | 2026-07-04 |
 | `interfaces/xp-drops` | 1 | 42 | 0 | 0 | 2026-08-19 |
-| `other/commands` | 4 | 1,156 | 0 | 0 | 2026-09-08 |
+| `other/commands` | 4 | 1,223 | 0 | 0 | 2026-09-10 |
 | `other/consumables` | 38 | 8,687 | 0 | 0 | 2026-08-04 |
 | `other/dave/pack` | 1 | 6 | 0 | 0 | 2026-08-27 |
 | `other/discord` | 2 | 80 | 0 | 0 | 2026-07-01 |
