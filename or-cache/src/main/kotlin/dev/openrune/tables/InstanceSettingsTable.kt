@@ -177,5 +177,30 @@ object InstanceSettingsTable {
             )
         }
 
+        row("dbrow.instance_vardorvis") {
+            column(KEY, "vardorvis")
+            columnCoord(EXIT_COORD, CoordGrid(1117, 3431, 0))
+            columnCoord(ENTER_COORD, CoordGrid(1119, 3428, 0))
+            column(FEE, 0)
+            column(MAX_PLAYERS, 1)
+            column(TIME_LIMIT_MINUTES, 0)
+            column(GRACE_MINUTES, 10)
+            columnRSCM(BOSS_NPC, "npc.vardorvis")
+            column(BOSS_NAME, "Vardorvis")
+            column(RECOMMENDED_COMBAT, 100, 126)
+            column(TEAM_SIZE, 1)
+            column(LOOT_MULTIPLIER, "x1.0")
+            column(
+                DESCRIPTION,
+                "The axe-bound horror at the heart of the Stranglewood ritual site.",
+            )
+            columnRSCM(
+                ENTER_OBJECT,
+                "loc.dt2_stranglewood_boss_entry",
+                "loc.dt2_stranglewood_boss_entry_op",
+            )
+            columnRSCM(EXIT_OBJECT, "loc.vardorvis_exit")
+        }
+
     }
 }

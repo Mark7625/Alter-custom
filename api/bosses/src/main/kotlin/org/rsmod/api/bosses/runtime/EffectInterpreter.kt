@@ -328,8 +328,24 @@ class EffectInterpreter(
         when (expr) {
             is DamageExpr.Roll -> if (expr.range.isEmpty()) 0 else expr.range.last
             is DamageExpr.Fixed -> expr.value
+            is DamageExpr.NpcMaxHit -> npcFormulaMaxHit(expr, hitType, t)
             else -> evaluateDamage(expr, hitType, t)
         }
+
+    private fun npcFormulaMaxHit(expr: DamageExpr.NpcMaxHit, hitType: BossHitType, t: Player): Int {
+        val raw =
+            when (hitType) {
+                BossHitType.Ranged -> deps.maxHit.getRangedMaxHit(npc, t)
+                BossHitType.Magic,
+                BossHitType.Dragonfire,
+                BossHitType.DragonfireMetal,
+                BossHitType.WyvernIce -> deps.maxHit.getMagicMaxHit(npc, t)
+                BossHitType.Melee,
+                BossHitType.Typeless -> deps.maxHit.getMeleeMaxHit(npc, t, expr.meleeAttackType)
+            }
+        val scaled = if (expr.scale == 1.0) raw else (raw * expr.scale).toInt()
+        return scaled.coerceAtLeast(0)
+    }
 
     private fun dragonfireType(t: BossHitType): DragonfireProtection.DragonfireType? =
         when (t) {
@@ -350,6 +366,11 @@ class EffectInterpreter(
             is DamageExpr.Accuracy -> {
                 val landed = rollAccuracy(hitType, t, expr.meleeAttackType)
                 evaluateDamage(if (landed) expr.on else expr.miss, hitType, t)
+            }
+            is DamageExpr.NpcMaxHit -> {
+                val max = npcFormulaMaxHit(expr, hitType, t)
+                val lo = expr.minHit.coerceIn(0, max)
+                if (max <= 0) 0 else lo + deps.random.of(max - lo + 1)
             }
             is DamageExpr.PercentOfTargetHp -> (t.hitpoints * expr.fraction).toInt()
             is DamageExpr.Min -> minOf(evaluateDamage(expr.a, hitType, t), evaluateDamage(expr.b, hitType, t))

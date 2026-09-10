@@ -14,4 +14,10 @@ sealed interface DamageExpr {
     data class PercentOfTargetHp(val fraction: Double) : DamageExpr
     data class Min(val a: DamageExpr, val b: DamageExpr) : DamageExpr
     data class Max(val a: DamageExpr, val b: DamageExpr) : DamageExpr
+
+    data class NpcMaxHit(
+        val meleeAttackType: MeleeAttackType? = null,
+        val scale: Double = 1.0,
+        val minHit: Int = 0,
+    ) : DamageExpr
 }

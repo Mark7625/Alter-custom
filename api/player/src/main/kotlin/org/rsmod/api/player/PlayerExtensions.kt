@@ -9,6 +9,8 @@ import org.rsmod.api.player.output.UpdateInventory
 import org.rsmod.api.player.output.clearMapFlag
 import org.rsmod.api.player.stat.hitpoints
 import org.rsmod.api.player.vars.enabledPrayers
+import org.rsmod.api.player.vars.intVarBit
+import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.player.vars.prayerDrainCounter
 import org.rsmod.api.player.vars.usingQuickPrayers
 import org.rsmod.game.entity.Player
@@ -36,6 +38,44 @@ public fun Player.combatClearQueue() {
 }
 
 public fun Player.hasProtectItemPrayer(): Boolean = vars["varbit.prayer_protectitem"] == 1
+
+private var Player.overheadLockExpiration by intVarp("varp.overhead_lock_expiration")
+
+private var Player.protectFromMelee by intVarBit("varbit.prayer_protectfrommelee")
+private var Player.protectFromMissiles by intVarBit("varbit.prayer_protectfrommissiles")
+private var Player.protectFromMagic by intVarBit("varbit.prayer_protectfrommagic")
+private var Player.quickPrayerActive by intVarBit("varbit.quickprayer_active")
+
+public val overheadProtectionPrayerVarbits: List<String> =
+    listOf(
+        "varbit.prayer_protectfrommelee",
+        "varbit.prayer_protectfrommissiles",
+        "varbit.prayer_protectfrommagic",
+    )
+
+public fun Player.lockOverheads(cycles: Int) {
+    require(cycles > 0) { "`cycles` must be greater than 0. (cycles=$cycles)" }
+
+    val hadProtection = protectFromMelee != 0 || protectFromMissiles != 0 || protectFromMagic != 0
+    protectFromMelee = 0
+    protectFromMissiles = 0
+    protectFromMagic = 0
+    if (hadProtection) {
+        if (constants.isOverhead(appearance.overheadIcon)) {
+            appearance.overheadIcon = null
+        }
+        if (enabledPrayers == 0) {
+            quickPrayerActive = 0
+            prayerDrainCounter = 0
+            clearSoftTimer("timer.prayer_drain")
+        }
+    }
+
+    overheadLockExpiration = currentMapClock + cycles
+}
+
+public val Player.overheadsLocked: Boolean
+    get() = currentMapClock < overheadLockExpiration
 
 public fun Player.disablePrayers() {
     enabledPrayers = 0
@@ -159,4 +199,3 @@ public fun Player.hasAtLeast99s(requiredCount: Int): Boolean {
         return statMap.getBaseLevel("stat.${enum.value?.lowercase()}") >= 99
     } >= requiredCount
 }
-

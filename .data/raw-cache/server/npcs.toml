@@ -1360,6 +1360,41 @@ huntRange = 10
 "param.death_anim"="seq.giant_rat_update_death"
 
 [[npc]]
+id = "npc.vardorvis"
+inherit = "npc.vardorvis"
+defaultMode = "None"
+maxRange = 40
+respawnRate = 30
+[npc.params]
+"param.killcount_varp"="varp.total_vardorvis_kills"
+"param.boss_hp_bar_mode"=2
+"param.death_anim"="seq.npc_vardorvis_01_death_01"
+"param.melee_strength"=9
+
+[[npc]]
+id = "npc.vardorvis_head_tentacle"
+inherit = "npc.vardorvis_head_tentacle"
+defaultMode = "None"
+
+[[npc]]
+id = "npc.vardorvis_big_tentacle"
+inherit = "npc.vardorvis_big_tentacle"
+defaultMode = "None"
+blockWalk = "None"
+
+[[npc]]
+id = "npc.vardorvis_axe"
+inherit = "npc.vardorvis_axe"
+defaultMode = "None"
+blockWalk = "None"
+
+[[npc]]
+id = "npc.vardorvis_axe_static"
+inherit = "npc.vardorvis_axe_static"
+defaultMode = "None"
+blockWalk = "None"
+
+[[npc]]
 id = "npc.king_dragon"
 inherit = "npc.king_dragon"
 huntMode = 6

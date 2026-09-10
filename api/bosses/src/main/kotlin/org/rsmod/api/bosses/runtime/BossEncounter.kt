@@ -152,7 +152,24 @@ class BossEncounter(
             is Condition.OnPhaseTick -> false
             is Condition.IncomingHitDamageAtLeast -> false
             is Condition.PlayerEnterRange -> false
-            is Condition.TargetPraying -> false
+            is Condition.TargetPraying -> target != null && target.isProtectingFrom(condition.type)
         }
+    }
+
+    private fun Player.isProtectingFrom(type: HitType): Boolean =
+        when (type) {
+            HitType.Melee -> vars[PROTECT_FROM_MELEE] > 0
+            HitType.Ranged -> vars[PROTECT_FROM_MISSILES] > 0
+            HitType.Magic,
+            HitType.Dragonfire,
+            HitType.DragonfireMetal,
+            HitType.WyvernIce -> vars[PROTECT_FROM_MAGIC] > 0
+            HitType.Typeless -> false
+        }
+
+    private companion object {
+        private const val PROTECT_FROM_MELEE = "varbit.prayer_protectfrommelee"
+        private const val PROTECT_FROM_MISSILES = "varbit.prayer_protectfrommissiles"
+        private const val PROTECT_FROM_MAGIC = "varbit.prayer_protectfrommagic"
     }
 }
