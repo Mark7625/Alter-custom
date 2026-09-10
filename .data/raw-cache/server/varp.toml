@@ -827,3 +827,9 @@ isServerOnly = true
 id = "varp.drew_sandstone"
 scope = "Perm"
 transmit = "Never"
+
+[[varp]]
+isServerOnly = true
+id = "varp.overhead_lock_expiration"
+scope = "Temp"
+transmit = "Never"

@@ -6,6 +6,8 @@ import jakarta.inject.Inject
 import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.output.soundSynth
+import org.rsmod.api.player.overheadProtectionPrayerVarbits
+import org.rsmod.api.player.overheadsLocked
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.prayerLvl
@@ -32,7 +34,7 @@ private constructor(
     private val protectedAccess: ProtectedAccessLauncher,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
-        for ((component, prayer) in repo.prayerComponents.map { RSCM.getReverseMapping(RSCMType.COMPONENT,it.key.packed) to it.value }) {
+        for ((component, prayer) in repo.prayerComponents.map { RSCM.getReverseMapping(RSCMType.COMPONENT, it.key.packed) to it.value }) {
             onIfOverlayButton(component) { player.selectPrayer(prayer) }
         }
         onPlayerQueueWithArgs("queue.prayer_toggle") { togglePrayer(it.args) }
@@ -62,6 +64,12 @@ private constructor(
     }
 
     private suspend fun ProtectedAccess.enablePrayer(prayer: Prayer) {
+        if (prayer.enabled in overheadProtectionPrayerVarbits && player.overheadsLocked) {
+            player.resyncVar(prayer.enabled)
+            mes("You've been injured and can't use protection prayers!")
+            soundSynth("synth.prayer_disable")
+            return
+        }
         if (player.prayerLvl == 0) {
             // Note: This is probably implicitly called by some other function, but as of now, we do
             // not know what that is.

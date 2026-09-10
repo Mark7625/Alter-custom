@@ -18,6 +18,7 @@ fun BossDeps.bossProjectile(
     travel: Int,
     curve: Int,
     progress: Int = 0,
+    homing: Player? = null,
 ): ProjAnim {
     val proj =
         ProjAnim(
@@ -29,9 +30,9 @@ fun BossDeps.bossProjectile(
             angle = curve,
             progress = progress,
             sourceIndex = 0,
-            targetIndex = 0,
+            targetIndex = homing?.let { -(it.slotId + 1) } ?: 0,
             startCoord = src,
-            endCoord = target,
+            endCoord = homing?.coords ?: target,
         )
     worldRepo.projAnim(proj)
     return proj

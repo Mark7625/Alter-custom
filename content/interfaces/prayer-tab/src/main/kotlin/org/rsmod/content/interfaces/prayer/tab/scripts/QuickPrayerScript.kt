@@ -6,6 +6,8 @@ import dev.openrune.types.aconverted.interf.IfSubType
 import jakarta.inject.Inject
 import org.rsmod.api.config.constants
 import org.rsmod.api.player.output.mes
+import org.rsmod.api.player.overheadProtectionPrayerVarbits
+import org.rsmod.api.player.overheadsLocked
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.protect.ProtectedAccessLauncher
 import org.rsmod.api.player.stat.prayerLvl
@@ -97,22 +99,43 @@ constructor(
             return
         }
 
+        val quickPrayers = repo.toPrayerList(quickPrayerVars)
+        val lockedProtection =
+            player.overheadsLocked &&
+                quickPrayers.any { it.enabled in overheadProtectionPrayerVarbits }
+        val grantedPrayers =
+            if (lockedProtection) {
+                quickPrayers.filter { it.enabled !in overheadProtectionPrayerVarbits }
+            } else {
+                quickPrayers
+            }
+
+        if (grantedPrayers.isEmpty()) {
+            mes("You've been injured and can't use protection prayers!")
+            soundSynth("synth.prayer_disable")
+            player.resyncVar("varbit.quickprayer_active")
+            return
+        }
+
         val enabledPrayers = repo.toPrayerList(vars["varbit.prayer_allactive"])
         for (prayer in enabledPrayers) {
             disablePrayerStatRegen(prayer)
         }
         disableOverhead()
-        vars["varbit.prayer_allactive"] = quickPrayerVars
+        vars["varbit.prayer_allactive"] = grantedPrayers.fold(0) { acc, p -> acc or (1 shl p.id) }
         vars["varbit.quickprayer_active"] = 1
 
-        val quickPrayers = repo.toPrayerList(quickPrayerVars)
-        for (prayer in quickPrayers) {
+        for (prayer in grantedPrayers) {
             vars[prayer.enabled] = 1
             soundSynth(prayer.sound)
             enablePrayerStatRegen(prayer)
             if (prayer.overhead != null) {
                 player.overheadIcon = prayer.overhead
             }
+        }
+        if (lockedProtection) {
+            mes("You've been injured and can't use protection prayers!")
+            soundSynth("synth.prayer_disable")
         }
         enablePrayerDrain()
     }
