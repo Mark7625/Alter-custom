@@ -42,6 +42,12 @@ fun IntRange.roll(): DamageExpr.Roll = DamageExpr.Roll(this)
 /** Alias of [roll] for boss hit specs. */
 fun IntRange.randomRoll(): DamageExpr.Roll = DamageExpr.Roll(this)
 
+fun npcMaxHit(
+    meleeAttackType: MeleeAttackType? = null,
+    scale: Double = 1.0,
+    minHit: Int = 0,
+): DamageExpr.NpcMaxHit = DamageExpr.NpcMaxHit(meleeAttackType, scale, minHit)
+
 fun projectile(
     spotanim: String,
     travel: String? = null,
@@ -173,6 +179,7 @@ class RotationBuilder internal constructor() {
 typealias Roll = DamageExpr.Roll
 typealias Accuracy = DamageExpr.Accuracy
 typealias Fixed = DamageExpr.Fixed
+typealias NpcMaxHit = DamageExpr.NpcMaxHit
 typealias HpBelow = Condition.HpBelow
 typealias IncomingHitDamageAtLeast = Condition.IncomingHitDamageAtLeast
 typealias PlayerEnterRange = Condition.PlayerEnterRange
