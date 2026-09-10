@@ -1,6 +1,7 @@
 package dev.openrune.types.enums
 
 import dev.openrune.definition.type.EnumType
+import dev.openrune.literal.BaseStringVarCodec
 import dev.openrune.literal.CacheVarCodec
 import dev.openrune.literal.CacheVarTypeMap
 
@@ -19,6 +20,15 @@ public class EnumTypeMap<K : Any, V : Any>(private val raw: EnumType) : Iterable
             key to value
         }
     }
+
+    private val declaredDefault: Any?
+        get() =
+            when (valueCodec) {
+                is BaseStringVarCodec<*> -> raw.defaultString.ifEmpty { null }
+                else -> raw.defaultInt.takeIf { it != 0 }
+            }
+
+    public val default: V? by lazy { declaredDefault?.let(valueCodec::decode) }
 
     public val backing: Map<K, V?>
         get() = entries

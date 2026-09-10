@@ -29,7 +29,7 @@ public class EnumTypeNonNullMap<K : Any, V : Any>(
                     .filterValues { it != null }
                     .mapValues { it.value!! }
 
-            return EnumTypeNonNullMap(filtered, null)
+            return EnumTypeNonNullMap(filtered, other.default)
         }
     }
 }
