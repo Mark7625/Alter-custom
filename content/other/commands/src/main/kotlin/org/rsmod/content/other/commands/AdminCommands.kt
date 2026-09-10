@@ -56,6 +56,7 @@ import org.rsmod.game.loc.LocAngle
 import org.rsmod.game.loc.LocEntity
 import org.rsmod.game.loc.LocInfo
 import org.rsmod.game.loc.LocShape
+import org.rsmod.game.map.Direction
 import org.rsmod.game.stat.PlayerSkillXPTable
 import org.rsmod.map.CoordGrid
 import org.rsmod.map.square.MapSquareGrid
@@ -103,6 +104,15 @@ constructor(
         onCommand("down", "Teleport down levels", ::down) {
             invalidArgs = "Use as ::down [amount] (ex: ::down 2)"
         }
+        onCommand("forward", "Teleport north tiles (ex: ::forward or ::forward 5)", ::forward)
+        onCommand(
+            "backwards",
+            "Teleport south tiles (ex: ::back or ::backwards 5)",
+            ::backwards,
+            aliases = listOf("back"),
+        )
+        onCommand("left", "Teleport west tiles (ex: ::left or ::left 5)", ::left)
+        onCommand("right", "Teleport east tiles (ex: ::right or ::right 5)", ::right)
         onCommand("anim", "Play animation", ::anim)
         onCommand("spot", "Play spotanim", ::spotanim) {
             invalidArgs = "Use as ::spot spotanimDebugNameOrId (ex: fx_emote_party01_active)"
@@ -363,6 +373,55 @@ constructor(
                 return@with
             }
             val dest = current.copy(level = destLevel)
+            protectedAccess.launch(player) {
+                player.mes("Teleported to $dest.")
+                telejump(dest, TeleportType.Exempt)
+            }
+        }
+    }
+
+    private fun forward(cheat: Cheat) {
+        teleStep(cheat, Direction.North)
+    }
+
+    private fun backwards(cheat: Cheat) {
+        teleStep(cheat, Direction.South)
+    }
+
+    private fun left(cheat: Cheat) {
+        teleStep(cheat, Direction.West)
+    }
+
+    private fun right(cheat: Cheat) {
+        teleStep(cheat, Direction.East)
+    }
+
+    private fun teleStep(cheat: Cheat, direction: Direction) {
+        with(cheat) {
+            val amount =
+                when {
+                    args.isEmpty() -> 1
+                    else -> {
+                        val parsed = args[0].toIntOrNull()
+                        if (parsed == null) {
+                            player.mes("Invalid amount: '${args[0]}'")
+                            return@with
+                        }
+                        parsed
+                    }
+                }
+            if (amount <= 0) {
+                player.mes("Amount must be positive.")
+                return@with
+            }
+            val current = player.coords
+            val destX = current.x + direction.xOff * amount
+            val destZ = current.z + direction.zOff * amount
+            if (destX !in 0..CoordGrid.X_BIT_MASK || destZ !in 0..CoordGrid.Z_BIT_MASK) {
+                player.mes("Cannot move $amount tile(s) $direction from $current.")
+                return@with
+            }
+            val dest = CoordGrid(destX, destZ, current.level)
             protectedAccess.launch(player) {
                 player.mes("Teleported to $dest.")
                 telejump(dest, TeleportType.Exempt)
