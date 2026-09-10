@@ -51,3 +51,16 @@ public const val RECENT_PVP_HIT_TICKS: Int = 600
 public interface PlayerDeathHook {
     public fun handleDeath(context: PlayerDeathContext): PlayerDeathHandling?
 }
+
+/**
+ * Stores the items a player would otherwise lose on death.
+ *
+ * Returning true claims the lost portion of [result], preventing it from being placed on the
+ * ground. Kept items are still returned to the player's inventory by the standard death flow.
+ */
+public interface PlayerDeathStorageHook {
+    public fun store(
+        context: PlayerDeathContext,
+        result: PlayerDeathDrops.DeathDropResult,
+    ): Boolean
+}
